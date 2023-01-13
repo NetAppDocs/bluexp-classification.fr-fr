@@ -22,6 +22,12 @@ Découvrez les nouveautés du Cloud Data sens.
 
 
 
+=== Possibilité d'afficher un graphique de fichiers contenant des données sensibles et qui sont trop permissives
+
+Le tableau de bord gouvernance a ajouté une nouvelle zone données et autorisations larges_ qui fournit une carte thermique de fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["En savoir plus >>"].
+
+
+
 === Trois nouveaux filtres sont disponibles dans la page Data Investigation
 
 De nouveaux filtres sont disponibles pour affiner les résultats affichés dans la page recherche de données :
@@ -32,6 +38,12 @@ De nouveaux filtres sont disponibles pour affiner les résultats affichés dans 
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
+
+
+
+=== Le capteur de données peut identifier le numéro individuel japonais
+
+Data Sense peut identifier et classer les fichiers contenant le numéro individuel japonais (également appelé mon numéro). Cela inclut à la fois le numéro mon personnel et celui de l'entreprise. https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Consultez tous les types de données personnelles que Data Sense peut identifier dans vos données"].
 
 
 
@@ -267,7 +279,7 @@ Dans le cadre des fonctions d'autorisations Data Sense, vous pouvez maintenant a
 === Deux nouveaux filtres ont été ajoutés à la page recherche de données
 
 * Le filtre "Type de répertoire" vous permet de raffiner vos données pour afficher uniquement les dossiers ou les partages. Les résultats s'afficheront dans le nouvel onglet *répertoires*.
-* Le filtre « autorisations utilisateur/groupe » vous permet de répertorier les fichiers, dossiers et partages auxquels un utilisateur ou un groupe possède des autorisations de lecture et/ou d'écriture. Vous pouvez sélectionner plusieurs utilisateurs et/ou noms de groupe ou entrer un nom partiel. T
+* Le filtre « autorisations utilisateur/groupe » vous permet de répertorier les fichiers, dossiers et partages auxquels un utilisateur ou un groupe possède des autorisations de lecture et/ou d'écriture. Vous pouvez sélectionner plusieurs utilisateurs et/ou noms de groupe ou entrer un nom partiel.
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
@@ -316,7 +328,7 @@ Il est possible de lire les autorisations existantes pour les fichiers analysés
 
 === Prise en charge de l'analyse des données OneDrive et SharePoint lorsqu'elles sont déployées sur un site sombre
 
-Lorsque vous avez déployé Cloud Data sur un hôte d'un site sur site qui ne dispose pas d'un accès Internet, vous pouvez désormais analyser les données locales à partir de comptes OneDrive ou de comptes SharePoint. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Vous devez autoriser l'accès aux points de terminaison suivants."]
+Lorsque vous avez déployé Cloud Data sur un hôte situé sur un site qui ne dispose pas d'un accès Internet, vous pouvez désormais analyser les données locales à partir des comptes OneDrive ou des comptes SharePoint. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Vous devez autoriser l'accès aux points de terminaison suivants."]
 
 
 

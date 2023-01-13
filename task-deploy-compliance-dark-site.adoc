@@ -359,7 +359,7 @@ Procédez comme suit lors de l'installation du logiciel Data Sense sur plusieurs
 
 
 .Étapes
-. Suivez les étapes 1 à 8 du link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["Installation avec un seul hôte"] sur le nœud gestionnaire.
+. Suivez les étapes 1 à 8 du link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["Installation avec un seul hôte"] sur le nœud gestionnaire.
 . Comme indiqué à l'étape 9, lorsque le programme d'installation vous le demande, vous pouvez entrer les valeurs requises dans une série d'invites, ou vous pouvez fournir les paramètres requis comme arguments de ligne de commande au programme d'installation.
 +
 En plus des variables disponibles pour une installation à un seul hôte, une nouvelle option *-n <node_ip>* est utilisée pour spécifier les adresses IP des nœuds du scanner. Plusieurs adresses IP de nœud sont séparées par une virgule.
@@ -399,7 +399,7 @@ Vous pouvez également link:task-licensing-datasense.html#use-a-cloud-data-sense
 Le logiciel Data Sense étant mis à jour régulièrement avec de nouvelles fonctionnalités, vous devez rechercher régulièrement de nouvelles versions afin de vous assurer que vous utilisez les derniers logiciels et fonctionnalités. Vous devrez mettre à niveau le logiciel Data Sense manuellement car il n'y a pas de connexion Internet pour effectuer la mise à niveau automatiquement.
 
 .Avant de commencer
-* Le logiciel Data Sense peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.15.x est installée, vous ne pouvez effectuer la mise à niveau que vers la version 1.16.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
+* Le logiciel Data Sense peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.17.x est installée, vous ne pouvez effectuer la mise à niveau que vers la version 1.18.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
 * Vérifiez que votre logiciel On-site Connector a été mis à niveau vers la dernière version disponible. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Reportez-vous aux étapes de mise à niveau du connecteur"^].
 
 

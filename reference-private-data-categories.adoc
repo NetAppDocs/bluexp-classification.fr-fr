@@ -27,7 +27,7 @@ Les données personnelles contenues dans les dossiers peuvent être des données
 
 Les éléments de cette catégorie peuvent être reconnus dans n'importe quelle langue.
 
-Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers si vous scannez un serveur de base de données. La fonction _Data Fusion_ vous permet de choisir les identifiants supplémentaires que Cloud Data SENSE recherche dans ses acquisitions en sélectionnant des colonnes dans une table de base de données. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à l'aide de Data Fusion"^] pour plus d'informations.
+Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous scannez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir les identifiants supplémentaires que Cloud Data Sense recherche dans ses acquisitions en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos acquisitions de détection de données"^] pour plus d'informations.
 
 [cols="20,50,18"]
 |===
@@ -52,7 +52,7 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Mot de passe | Oui. 
 
 
-.50+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. 
+.51+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. 
 
 
 | Permis de conduire australien | Oui. 
@@ -137,6 +137,9 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 
 
 | Numéro d'identification fiscal italien | Oui. 
+
+
+| Numéro d'identification personnel japonais (personnel et entreprise) | Oui. 
 
 
 | Carte d'identité lettone | Oui. 

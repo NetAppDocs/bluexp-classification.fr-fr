@@ -41,7 +41,7 @@ Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir h
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Passer en revue les prérequis
 [role="quick-margin-para"]
-Assurez-vous que votre environnement est conforme aux conditions préalables. Cela inclut l'accès Internet sortant pour l'instance, la connectivité entre le connecteur et Cloud Data SENSE sur le port 443, etc. <<Vérifier les prérequis BlueXP et Data Sense,Voir la liste complète>>.
+Assurez-vous que votre environnement est conforme aux conditions préalables. Cela inclut l'accès Internet sortant pour l'instance, la connectivité entre le connecteur et Cloud Data SENSE sur le port 443, etc. <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,Voir la liste complète>>.
 
 [role="quick-margin-para"]
 Vous avez également besoin d'un système Linux qui répond à <<Préparez le système hôte Linux,exigences suivantes>>.

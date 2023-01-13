@@ -17,8 +17,8 @@ summary: 'Avec Cloud Data Sense, vous pouvez gérer vos données privées de plu
 Avec Cloud Data Sense, vous pouvez gérer vos données privées de plusieurs façons. Certaines fonctionnalités facilitent la préparation de la migration des données, tandis que d'autres vous permettent de modifier ces dernières.
 
 * Vous pouvez copier des fichiers vers un partage NFS de destination si vous souhaitez effectuer une copie de certaines données et les déplacer vers un autre emplacement NFS.
-* Vous pouvez cloner un volume ONTAP sur un nouveau volume, tout en incluant uniquement les fichiers sélectionnés du volume source dans le nouveau volume cloné. Ceci est utile dans les situations où vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine.
-* Vous pouvez copier et synchroniser des fichiers d'un référentiel source vers un répertoire dans un emplacement de destination spécifique. Cela est utile dans les situations où vous migrez des données d'un système source vers un autre alors qu'il y a encore une activité finale sur les fichiers source.
+* Vous pouvez cloner un volume ONTAP sur un nouveau volume, tout en incluant uniquement les fichiers sélectionnés du volume source dans le nouveau volume cloné. Cette fonction est utile lorsque vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine.
+* Vous pouvez copier et synchroniser des fichiers d'un référentiel source vers un répertoire dans un emplacement de destination spécifique. Cette fonction s'avère utile dans les cas où vous migrez des données d'un système source vers un autre alors que les fichiers source continuent à avoir une activité finale.
 * Vous pouvez déplacer les fichiers source que Data Sense analyse vers n'importe quel partage NFS.
 * Vous pouvez supprimer des fichiers qui semblent non sécurisés ou trop risqués pour l'éviter dans votre système de stockage, ou que vous avez identifiés comme doublons.
 
@@ -42,7 +42,7 @@ Cette fonction est utile pour effectuer une copie de certaines données et les d
 
 * *Cloner un volume ONTAP* sur un nouveau volume dans le même agrégat, mais inclure uniquement les fichiers sélectionnés du volume source dans le nouveau volume cloné.
 +
-Cette fonction est utile lorsque vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine. Cette action utilise le link:https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone ®"^] fonctionnalité permettant de dupliquer rapidement le volume, puis de supprimer les fichiers que vous avez sélectionnés.
+Cette fonction est utile lorsque vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine. Cette action utilise le https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone ®"^] fonctionnalité permettant de dupliquer rapidement le volume, puis de supprimer les fichiers que vous avez sélectionnés.
 
 * *Copier et synchroniser des fichiers* à partir d'un référentiel source unique (volume ONTAP, compartiment S3, partage NFS, etc.) vers un répertoire dans un emplacement de destination spécifique (cible).
 +
@@ -73,7 +73,7 @@ image:screenshot_compliance_copy_multi_files.png["Capture d'écran indiquant com
 +
 ** Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (image:button_backup_1_volume.png[""]).
 ** Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]).
-** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
+** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png["a propos de la sélection de tous les fichiers"], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
 
 
 . Dans la boîte de dialogue _Copy Files_, sélectionnez l'onglet *Regular Copy*.
@@ -124,7 +124,7 @@ image:screenshot_compliance_copy_multi_files.png["Capture d'écran indiquant com
 +
 ** Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (image:button_backup_1_volume.png[""]).
 ** Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]).
-** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
+** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png["a propos de la sélection de tous les fichiers"], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
 
 
 . Dans la boîte de dialogue _Copy Files_, sélectionnez l'onglet *FlexClone*. Cette page affiche le nombre total de fichiers qui seront clonés à partir du volume (fichiers que vous avez sélectionnés) et le nombre de fichiers qui ne sont pas inclus/supprimés (fichiers que vous n'avez pas sélectionnés) du volume cloné.
@@ -172,7 +172,7 @@ image:screenshot_compliance_filter_1_repo.png["Capture d'écran de la création 
 +
 Appliquez tous les autres filtres de sorte que vous ne voyez que les fichiers que vous voulez copier et synchroniser vers le système de destination.
 
-. Dans le volet Résultats de l'enquête, sélectionnez tous les fichiers sur toutes les pages en cochant la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""] Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*, puis sur *Copier*.
+. Dans le volet Résultats de l'enquête, sélectionnez tous les fichiers sur toutes les pages en cochant la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png["a propos de la sélection de tous les fichiers"] Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*, puis sur *Copier*.
 +
 image:screenshot_compliance_sync_multi_files.png["Capture d'écran indiquant comment sélectionner les fichiers à copier et le bouton Copier dans la page recherche de données."]
 
@@ -187,7 +187,7 @@ L'interface utilisateur Cloud Sync est ouverte dans BlueXP.
 +
 Vous êtes invité à définir la relation de synchronisation. Le système source est pré-rempli en fonction du référentiel et des fichiers que vous avez déjà sélectionnés dans le champ logique de données.
 
-. Vous devez sélectionner le système cible, puis sélectionner (ou créer) le courtier de données que vous prévoyez d'utiliser. Vérifiez les exigences Cloud Sync en commençant par le link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["Description de Quick Start"^].
+. Vous devez sélectionner le système cible, puis sélectionner (ou créer) le courtier de données que vous prévoyez d'utiliser. Vérifiez les exigences Cloud Sync en commençant par le link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Description de Quick Start"^].
 
 
 .Résultat
@@ -227,7 +227,7 @@ image:screenshot_compliance_move_multi_files.png["Capture d'écran indiquant com
 +
 ** Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (image:button_backup_1_volume.png[""]).
 ** Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]).
-** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
+** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png["a propos de la sélection de tous les fichiers"], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
 
 
 . Dans la barre de boutons, cliquez sur *déplacer*.
@@ -278,7 +278,7 @@ image:screenshot_compliance_delete_multi_files.png["Capture d'écran indiquant c
 +
 ** Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (image:button_backup_1_volume.png[""]).
 ** Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]).
-** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
+** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png["a propos de la sélection de tous les fichiers"], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
 
 
 . Dans la barre de boutons, cliquez sur *Supprimer*.

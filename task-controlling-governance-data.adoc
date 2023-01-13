@@ -16,7 +16,7 @@ summary: Maîtrisez les coûts liés aux données stockées sur les ressources d
 [role="lead"]
 Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. Cloud Data SENSE identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux dans vos systèmes. Vous pouvez ainsi décider si vous souhaitez supprimer ou hiérarchiser certains fichiers dans un stockage objet moins coûteux.
 
-En outre, si vous prévoyez de migrer les données depuis des emplacements sur site vers le cloud, vous pouvez vérifier la taille des données et si chacune d'entre elles contient des informations sensibles avant de les transférer.
+En outre, si vous prévoyez de migrer des données depuis des emplacements sur site vers le cloud, vous pouvez vérifier la taille des données et si chacune d'entre elles contient des informations sensibles avant de les transférer.
 
 
 
@@ -51,7 +51,7 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 
 === Règles avec le plus grand nombre de résultats
 
-Cliquez sur le nom d'une police dans la zone _Policy_ pour afficher les résultats dans la page Investigation. Cliquez sur *Afficher tout* pour afficher la liste de toutes les stratégies disponibles.
+Dans la zone _Policies_, les politiques avec le plus grand nombre de résultats apparaissent en haut de la liste. Cliquez sur le nom d'une police pour afficher les résultats dans la page Investigation. Cliquez sur *Afficher tout* pour afficher la liste de toutes les stratégies disponibles.
 
 Cliquez sur link:task-org-private-data.html#controlling-your-data-using-policies["ici"] Pour en savoir plus sur les politiques.
 
@@ -59,15 +59,15 @@ Cliquez sur link:task-org-private-data.html#controlling-your-data-using-policies
 
 === Présentation des données
 
-Présentation rapide de toutes les données en cours de numérisation. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous les environnements de travail et toutes les sources de données. Voir link:task-generating-compliance-reports.html#data-mapping-report["Rapport de mappage de données"] pour plus d'informations.
+La section _Data Overview_ fournit un aperçu rapide de toutes les données en cours d'acquisition. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous vos environnements de travail et toutes vos sources de données. Voir link:task-generating-compliance-reports.html#data-mapping-report["Rapport de mappage de données"^] pour plus d'informations sur ce rapport.
 
 
 
 === Principaux référentiels de données répertoriés par sensibilité des données
 
-La zone _Top Data Repositories by Sensitivity Level_ répertorie jusqu'aux quatre principaux référentiels de données (environnements de travail et sources de données) contenant les éléments les plus sensibles. Le graphique à barres de chaque environnement de travail est divisé en :
+La zone _Top Data Repositories by Sensitivity Level_ répertorie les quatre principaux référentiels de données (environnements de travail et sources de données) qui contiennent les éléments les plus sensibles. Le graphique à barres de chaque environnement de travail est divisé en :
 
-* Données non personnelles
+* Données non sensibles
 * Données personnelles
 * Données personnelles sensibles
 
@@ -78,11 +78,28 @@ Cliquez sur chaque zone pour afficher les résultats filtrés dans la page Inves
 
 
 
+=== Données répertoriées par sensibilité et par autorisations larges
+
+La zone « données sensibles » et « autorisations larges » fournit une carte thermique de fichiers contenant des données sensibles (y compris les données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles.
+
+Les fichiers sont classés en fonction du nombre d'utilisateurs autorisés à accéder aux fichiers sur l'axe X (le plus bas au plus haut) et du nombre d'identificateurs sensibles dans les fichiers de l'axe y (le plus bas au plus haut). Les blocs représentent le nombre de fichiers correspondant aux éléments des axes X et Y. Le bloc de couleur plus claire est bon, avec moins d'utilisateurs pouvant accéder aux fichiers et avec moins d'identificateurs sensibles par fichier. Les blocs plus sombres sont les éléments que vous pouvez souhaiter examiner. Par exemple, l'écran ci-dessous montre le texte de la souris pour le bloc bleu foncé. Il montre que vous avez 1,500 fichiers où 751-100 utilisateurs ont accès, et où il y a 501-100 identificateurs sensibles par fichier.
+
+image:screenshot_compliance_sensitive_data.png["Capture d'écran affichant les données affichées lorsque vous placez le curseur sur un élément de ce panneau."]
+
+Vous pouvez cliquer sur le bloc qui vous intéresse pour afficher les résultats filtrés des fichiers affectés dans la page Investigation afin que vous puissiez en rechercher davantage.
+
+Aucune donnée ne s'affiche dans ce panneau si vous n'avez pas intégré de service d'identité avec Data Sense. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec Data Sense"^].
+
+
+TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Il n'existe actuellement pas de prise en charge pour les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
+
+
+
 === Données répertoriées par type d'autorisations ouvertes
 
 La zone _Ouvrir autorisations_ affiche le pourcentage pour chaque type d'autorisations existant pour tous les fichiers en cours d'analyse. Le graphique montre les types d'autorisations suivants :
 
-* Aucun accès ouvert
+* Aucune autorisation ouverte
 * Ouvert à l'organisation
 * Ouvert au public
 * Accès inconnu

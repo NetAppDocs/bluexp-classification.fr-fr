@@ -142,7 +142,7 @@ Le rapport HIPAA (Health Insurance Portability and Accountability Act) peut vous
 * Modèle de référence de santé
 * Code médical ICD-10-cm
 * Code médical ICD-9-cm
-* RH – catégorie Santé
+* RH - Catégorie Santé
 * Catégorie données d'application de santé
 
 
@@ -203,7 +203,7 @@ image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du 
 .Résultat
 Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
 
-Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*.
+Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 
 
