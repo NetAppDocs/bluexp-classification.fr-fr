@@ -48,7 +48,7 @@ Le sens des données permet d'identifier les données susceptibles d'être consu
 * Respectez les règles de conservation des données.
 * Utilisez _Policies_ pour avertir automatiquement le personnel de sécurité de nouveaux problèmes de sécurité afin qu'il puisse agir immédiatement.
 * Ajoutez des balises personnalisées aux fichiers (par exemple, "doit être déplacé") et affectez un utilisateur BlueXP pour que cette personne puisse posséder des mises à jour des fichiers.
-* Afficher et modifier link:https://azure.microsoft.com/en-us/services/information-protection/["Étiquettes Azure information protection (AIP)"^] dans vos fichiers.
+* Afficher et modifier https://azure.microsoft.com/en-us/services/information-protection/["Étiquettes Azure information protection (AIP)"^] dans vos fichiers.
 
 
 
@@ -165,8 +165,9 @@ Dans les régions où n2-standard-16 n'est pas disponible, Data Sense s'exécute
 
 * L'instance s'appelle _CloudCompliance_ avec un hachage (UUID) généré concaténé. Par exemple : _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Une seule instance de détection des données est déployée par connecteur.
-* Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance a accès à Internet.
 
+
+Vous pouvez également déployer Data Sense sur un hôte Linux sur site ou sur un hôte dans votre fournisseur de cloud préféré. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie. Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance a accès à Internet.
 
 
 TIP: L'instance doit rester en cours d'exécution à tout moment, car Cloud Data SENSE analyse en continu les données.
@@ -269,6 +270,14 @@ Le tableau ci-dessous présente certaines des différences :
 |===
 
 
+=== La rapidité avec laquelle les données de détection sont-elles à l'examen
+
+Data Sense peut analyser entre 15-40 To de données par jour et par nœud de scanner. La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
+
+link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["En savoir plus sur le déploiement de plusieurs nœuds de numérisation pour analyser vos données"^].
+
+
+
 == Informations fournies par Cloud Data Sense
 
 Data Sense collecte, index et attribue des catégories à vos données (fichiers). Les données que les index Data Sense incluent les éléments suivants :
@@ -278,7 +287,7 @@ Données personnelles:: Informations personnelles identifiables telles que les a
 Données personnelles sensibles:: Des types spéciaux d'informations sensibles, comme les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le RGPD et d'autres réglementations sur la confidentialité. link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["En savoir plus sur les données personnelles sensibles"^].
 Catégories:: Cloud Data SENSE répartit les données analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:task-controlling-private-data.html#viewing-files-by-categories["En savoir plus sur les catégories"^].
 Types:: Cloud Data SENSE affecte les données analysées et les divise par type de fichier. link:task-controlling-private-data.html#viewing-files-by-file-types["En savoir plus sur les types"^].
-Reconnaissance de l'entité de nom:: Cloud Data Sense utilise l'IA pour extraire les noms des personnes physiques des documents. link:task-responding-to-dsar.html["Découvrez comment répondre aux demandes d'accès aux données"^].
+Reconnaissance de l'entité de nom:: Cloud Data Sense exploite l'IA pour extraire le nom des personnes physiques à partir des documents. link:task-responding-to-dsar.html["Découvrez comment répondre aux demandes d'accès aux données"^].
 
 
 

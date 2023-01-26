@@ -23,192 +23,194 @@ TIP: Si vous avez besoin que les données cloud soient utiles pour identifier d'
 
 == Types de données personnelles
 
-Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne indique si le logiciel Cloud Data sens utilise link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
+Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous identifie si Cloud Data SENSE utilise ou non link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
-Les éléments de cette catégorie peuvent être reconnus dans n'importe quelle langue.
+Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
 
-Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous scannez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir les identifiants supplémentaires que Cloud Data Sense recherche dans ses acquisitions en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos acquisitions de détection de données"^] pour plus d'informations.
+Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous scannez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir des identifiants supplémentaires que Cloud Data Sense recherche dans ses ' scans en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos acquisitions de détection de données"^] pour plus d'informations.
 
-[cols="20,50,18"]
+[cols="13,37,10,8,8,8,8,8"]
 |===
-| Type | Identificateur | Validation de proximité ? 
+| Type | Identificateur | Validation de proximité ? | Anglais | Allemand | Espagnol | Français | Japonais 
 
 
-.6+| Généralités | Adresse électronique | Non 
+.6+| Généralités | Adresse électronique | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Numéro de carte de crédit | Non 
+| Numéro de carte de crédit | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Sujets de données | Non 
+| Sujets de données | Non | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro IBAN (Numéro de compte bancaire international) | Non 
+| Numéro IBAN (Numéro de compte bancaire international) | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Adresse IP | Non 
+| Adresse IP | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Mot de passe | Oui. 
+| Mot de passe | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.51+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. 
+.51+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire australien | Oui. 
+| Permis de conduire australien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'assurance-maladie australien | Oui. 
+| Numéro d'assurance-maladie australien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro de passeport australien | Oui. 
+| Numéro de passeport australien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| SSN autrichien | Oui. 
+| SSN autrichien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Carte d'identité belge (Numero National) | Oui. 
+| Carte d'identité belge (Numero National) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID brésilien (CPF) | Oui. 
+| ID brésilien (CPF) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Passeport britannique | Oui. 
+| Passeport britannique | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID bulgare (UCN) | Oui. 
+| ID bulgare (UCN) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire californien | Oui. 
+| Permis de conduire californien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID croate (OIB) | Oui. 
+| ID croate (OIB) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Chypre Numéro d'identification fiscale (TIC) | Oui. 
+| Chypre Numéro d'identification fiscale (TIC) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Tchèque/slovaque ID | Oui. 
+| Tchèque/slovaque ID | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID danois (RCP) | Oui. 
+| ID danois (RCP) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID néerlandais (BSN) | Oui. 
+| ID néerlandais (BSN) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID estonien | Oui. 
+| ID estonien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID finlandais (HETU) | Oui. 
+| ID finlandais (HETU) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire français | Oui. 
+| Permis de conduire français | Oui. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| ID en français | Oui. 
+| ID en français | Oui. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| INSEE français | Oui. 
+| INSEE français | Oui. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Numéro de sécurité sociale en français | Oui. 
+| Numéro de sécurité sociale en français | Oui. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Numéro d'identification fiscale (SPI) | Oui. 
+| Numéro d'identification fiscale (SPI) | Oui. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Numéro d'identification fiscale allemand (identifiant Steierliche) | Oui. 
+| Numéro d'identification fiscale allemand (identifiant Steierliche) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Pièce d'identité grecque | Oui. 
+| Pièce d'identité grecque | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'identification fiscale hongrois | Oui. 
+| Numéro d'identification fiscale hongrois | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire Indiana | Oui. 
+| Permis de conduire Indiana | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Irish ID (PPS) | Oui. 
+| Irish ID (PPS) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID israélien | Oui. 
+| ID israélien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'identification fiscal italien | Oui. 
+| Numéro d'identification fiscal italien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'identification personnel japonais (personnel et entreprise) | Oui. 
+| Numéro d'identification personnel japonais (personnel et entreprise) | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Carte d'identité lettone | Oui. 
+| Carte d'identité lettone | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Carte d'identité lituanienne | Oui. 
+| Carte d'identité lituanienne | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Luxembourg ID | Oui. 
+| Luxembourg ID | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Identifiant maltais | Oui. 
+| Identifiant maltais | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro du Service national de santé (NHS) | Oui. 
+| Numéro du Service national de santé (NHS) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire de New York | Oui. 
+| Permis de conduire de New York | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Compte bancaire de la Nouvelle-Zélande | Oui. 
+| Compte bancaire de la Nouvelle-Zélande | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire de la Nouvelle-Zélande | Oui. 
+| Permis de conduire de la Nouvelle-Zélande | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro IRD de Nouvelle-Zélande (ID taxe) | Oui. 
+| Numéro IRD de Nouvelle-Zélande (ID taxe) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro NHI (National Health Index) de la Nouvelle-Zélande | Oui. 
+| Numéro NHI (National Health Index) de la Nouvelle-Zélande | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro de passeport de la Nouvelle-Zélande | Oui. 
+| Numéro de passeport de la Nouvelle-Zélande | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID polonais (PESEL) | Oui. 
+| ID polonais (PESEL) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'identification fiscale portugais (FNI) | Oui. 
+| Numéro d'identification fiscale portugais (FNI) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID roumain (CNP) | Oui. 
+| ID roumain (CNP) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ID slovène (EMSO) | Oui. 
+| ID slovène (EMSO) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Carte d'identité sud-africaine | Oui. 
+| Carte d'identité sud-africaine | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro d'identification fiscale espagnol | Oui. 
+| Numéro d'identification fiscale espagnol | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Carte d'identité suédoise | Oui. 
+| Carte d'identité suédoise | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire Texas | Oui. 
+| Permis de conduire Texas | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| ROYAUME-UNI ID (NINO) | Oui. 
+| ROYAUME-UNI ID (NINO) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Numéro de sécurité sociale des États-Unis (SSN) | Oui. 
+| Numéro de sécurité sociale des États-Unis (SSN) | Oui. | ✓ | ✓ | ✓ |  |  
 |===
 
 
 == Types de données personnelles sensibles
 
-Les données personnelles sensibles que Cloud Data Sense peuvent trouver dans les fichiers incluent la liste suivante. Les éléments de cette catégorie ne peuvent être reconnus qu'en anglais pour le moment.
+Les données personnelles sensibles que Cloud Data Sense peuvent trouver dans les fichiers incluent la liste suivante.
+
+Les éléments de cette catégorie ne peuvent être reconnus qu'en anglais pour le moment.
 
 Référence des procédures pénales:: Données concernant les condamnations et infractions pénales d'une personne physique.
 Référence ethnique:: Données concernant l'origine raciale ou ethnique d'une personne physique.
@@ -225,7 +227,9 @@ Référence de la vie sexuelle ou de l'orientation:: Données concernant la vie 
 
 == Types de catégories
 
-Il classe les données dans le cloud comme suit. La plupart de ces catégories peuvent être reconnues en anglais, allemand et espagnol.
+Il classe les données dans le cloud comme suit.
+
+La plupart de ces catégories peuvent être reconnues en anglais, allemand et espagnol.
 
 [cols="25,25,15,15,15"]
 |===

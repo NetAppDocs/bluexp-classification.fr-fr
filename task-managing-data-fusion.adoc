@@ -21,6 +21,8 @@ Data Sense offre de nombreuses façons d'ajouter une liste personnalisée de « 
 * Vous pouvez ajouter un motif personnel à l'aide d'une expression régulière (regex) -- le regex est ajouté aux motifs prédéfinis existants.
 
 
+Tous ces mécanismes pour ajouter des critères de numérisation personnalisés sont pris en charge dans toutes les langues.
+
 
 NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
 
