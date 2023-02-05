@@ -159,7 +159,7 @@ Voici la liste des éléments suivants pour l'instance par défaut :
 Dans les régions où m5.4xlarge n'est pas disponible, Data Sense s'exécute sur une instance m4.4xlarge au lieu de.
 
 * Dans Azure, Cloud Data Sense s'exécute sur un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^] Avec un disque de 512 Go. L'image du système d'exploitation est CentOS 7.8.
-* Dans GCP, Cloud Data Sense s'exécute sur un link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["n2-standard-16 VM"^] Avec disque persistant standard de 512 Go. L'image du système d'exploitation est CentOS 7.9.
+* Dans GCP, Cloud Data Sense s'exécute sur un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] Avec disque persistant standard de 512 Go. L'image du système d'exploitation est CentOS 7.9.
 +
 Dans les régions où n2-standard-16 n'est pas disponible, Data Sense s'exécute sur une machine virtuelle n2d-standard-16 ou n1-standard-16.
 
@@ -272,7 +272,7 @@ Le tableau ci-dessous présente certaines des différences :
 
 === La rapidité avec laquelle les données de détection sont-elles à l'examen
 
-Data Sense peut analyser entre 15-40 To de données par jour et par nœud de scanner. La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
+Il est possible d'analyser entre 15-40 tibides de données par jour et par nœud du scanner. La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["En savoir plus sur le déploiement de plusieurs nœuds de numérisation pour analyser vos données"^].
 

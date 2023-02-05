@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: Déployez ce sens en quelques étapes dans le cloud. 
+summary: 'Déployez ce sens en quelques étapes dans le cloud. L"instance Data Sense sera déployée dans le même réseau de fournisseur cloud que BlueXP Connector.' 
 ---
 = Déployez les données du cloud dans le cloud
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Déployez ce sens en quelques étapes dans le cloud.
 
 
 [role="lead"]
-Déployez ce sens en quelques étapes dans le cloud.
+Déployez ce sens en quelques étapes dans le cloud. L'instance Data Sense sera déployée dans le même réseau de fournisseur cloud que BlueXP Connector.
 
-Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Déployer Data Sense sur un hôte Linux avec accès à Internet"]. Le type d'installation peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
+Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Déployer Data Sense sur un hôte Linux avec accès à Internet"]. Ce type d'installation peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
 
 
@@ -174,7 +174,7 @@ Voici la procédure à suivre pour déployer une instance de Cloud Data Sense da
 +
 image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant de sélectionner le bouton pour activer le détection de données cloud."]
 
-. Cliquez sur *Activer Data Sense* pour démarrer l'assistant de déploiement du cloud.
+. Cliquez sur *déployer* pour démarrer l'assistant de déploiement de cloud.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Capture d'écran indiquant le bouton de déploiement des données cloud dans le cloud."]
 

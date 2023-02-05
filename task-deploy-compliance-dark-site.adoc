@@ -106,7 +106,7 @@ Notez que vous pouvez déployer Data Sense sur un système avec moins de process
 
 * *Logiciel supplémentaire*: Vous devez installer le logiciel suivant sur l'hôte avant d'installer Data Sense:
 +
-** Docker Engine version 19 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
+** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
 ** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
@@ -266,7 +266,7 @@ image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant d
 +
 image:screenshot_cloud_compliance_deploy_darksite.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur site."]
 
-. Dans la boîte de dialogue _Deploy Data Sense on local_, copiez la commande fournie et collez-la dans un fichier texte afin que vous puissiez l'utiliser ultérieurement, puis cliquez sur *Fermer*. Par exemple :
+. La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie et collez-la dans un fichier texte afin que vous puissiez l'utiliser ultérieurement, puis cliquez sur *Fermer*. Par exemple :
 +
 `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`
 
@@ -399,7 +399,7 @@ Vous pouvez également link:task-licensing-datasense.html#use-a-cloud-data-sense
 Le logiciel Data Sense étant mis à jour régulièrement avec de nouvelles fonctionnalités, vous devez rechercher régulièrement de nouvelles versions afin de vous assurer que vous utilisez les derniers logiciels et fonctionnalités. Vous devrez mettre à niveau le logiciel Data Sense manuellement car il n'y a pas de connexion Internet pour effectuer la mise à niveau automatiquement.
 
 .Avant de commencer
-* Le logiciel Data Sense peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.17.x est installée, vous ne pouvez effectuer la mise à niveau que vers la version 1.18.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
+* Le logiciel Data Sense peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.18.x est installée, vous ne pouvez effectuer la mise à niveau que vers la version 1.19.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
 * Vérifiez que votre logiciel On-site Connector a été mis à niveau vers la dernière version disponible. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Reportez-vous aux étapes de mise à niveau du connecteur"^].
 
 
@@ -410,7 +410,7 @@ Le logiciel Data Sense étant mis à jour régulièrement avec de nouvelles fonc
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
 ----
 +
 Ceci extrait le fichier d'installation *cc_onsite_installer.tar.gz*.

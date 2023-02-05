@@ -83,6 +83,72 @@ image:screenshot_compliance_delete_data_fusion.png["Capture d'écran montrant co
 
 
 
+== Ajoutez des identificateurs de données personnelles personnalisés à l'aide d'un regex
+
+Vous pouvez ajouter un modèle personnel pour identifier des informations spécifiques dans vos données à l'aide d'une expression régulière personnalisée (regex). Cela vous permet de créer un nouveau regex personnalisé pour identifier de nouveaux éléments d'informations personnelles qui n'existent pas encore dans le système. Le regex est ajouté aux modèles prédéfinis que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
+
+Par exemple, vous pouvez voir où vos ID de produit internes sont mentionnés dans tous vos fichiers. Si l'ID de produit a une structure claire, par exemple, il s'agit d'un numéro à 12 chiffres commençant par 201, vous pouvez utiliser la fonction regex personnalisée pour la rechercher dans vos fichiers. L'expression régulière de cet exemple est *\b201\d{9}\b*.
+
+Après avoir ajouté la fenêtre regex, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats s'affichent dans le tableau de bord de conformité de détection des données, sous la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
+
+.Étapes
+. Dans l'onglet _Custom Classificateurs_, cliquez sur *Add New Classificateur* pour lancer l'assistant _Add Custom Classificateur_.
++
+image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant comment lancer l'assistant Ajouter un classificateur personnalisé."]
+
+. Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Personal identifier*, puis cliquez sur *Next*.
++
+Le nom que vous entrez apparaîtra dans l'interface utilisateur de détection de données comme en-tête pour les fichiers scannés qui correspondent aux exigences du classificateur. Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros complets de carte de crédit ou des données personnelles similaires.
+
++
+image:screenshot_select_classifier_type.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
+
+. Dans la page _Select Data Analysis Tool_, sélectionnez *Custom Regular expression* comme méthode à utiliser pour définir le classificateur, puis cliquez sur *Next*.
++
+image:screenshot_select_classifier_tool.png["Capture d'écran montrant la sélection de l'expression régulière personnalisée comme outil utilisé par Data Sense pour créer le motif."]
+
+. Dans la page _Create Logic_, entrez l'expression régulière et les mots de proximité, puis cliquez sur *Done*.
++
+.. Vous pouvez entrer n'importe quelle expression régulière légale. Cliquez sur le bouton *Validate* pour que Data Sense vérifie que l'expression régulière est valide et qu'elle n'est pas trop large -- ce qui signifie qu'elle renvoie trop de résultats.
+.. Vous pouvez également saisir des mots de proximité pour vous aider à affiner la précision des résultats. Il s'agit de mots qui se trouvent généralement dans les 300 caractères du motif que vous recherchez (avant ou après le motif trouvé). Entrez chaque mot ou expression sur une ligne distincte.
++
+image:screenshot_select_classifier_create_logic.png["Capture d'écran de saisie des mots de regex et de proximité pour votre classificateur de client."]
+
+
+
+
+
+.Résultat
+Le classificateur est ajouté et le capteur de données commence à analyser toutes vos sources de données. Vous revenez à la page Classificateurs personnalisés où vous pouvez afficher le nombre de fichiers correspondant à votre nouveau classificateur. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
+
+image:screenshot_personal_info_regex_added.png["Une capture d'écran montrant les résultats d'un nouveau classificateur regex ajouté au système avec l'acquisition en cours."]
+
+
+
+=== Afficher les résultats de vos classificateurs personnalisés
+
+Vous pouvez afficher les résultats de n'importe lequel de vos classificateurs personnalisés dans le tableau de bord de conformité et dans la page Investigation. Par exemple, cette capture d'écran affiche les informations correspondantes dans le tableau de bord de conformité, sous la section « Résultats personnels ».
+
+image:screenshot_add_regex_result.png["Capture d'écran montrant un exemple de résultats regex personnalisés dans le volet Résultats de l'enquête."]
+
+Cliquez sur le bouton image:button_arrow_investigate.png["cercle avec une flèche"] Pour afficher les résultats détaillés dans la page Investigation.
+
+En outre, tous les résultats de votre classificateur personnalisé apparaissent dans l'onglet Classificateurs personnalisés, et les 6 meilleurs résultats de classificateur personnalisé sont affichés dans le tableau de bord de conformité, comme illustré ci-dessous.
+
+image:screenshot_custom_classifier_top_5.png["Une capture d'écran montrant les 3 premiers classificateurs personnalisés basés sur les résultats retournés."]
+
+
+
+=== Gérer les classificateurs personnalisés
+
+Vous pouvez modifier n'importe lequel des classificateurs personnalisés que vous avez créés à l'aide du bouton *Edit Classificateur*.
+
+Et si vous décidez ultérieurement que vous n'avez pas besoin de détection de données pour identifier les modèles personnalisés que vous avez ajoutés, vous pouvez utiliser le bouton *Supprimer classificateur* pour supprimer chaque élément.
+
+image:screenshot_custom_classifiers_manage.png["Capture d'écran de la page Classificateurs personnalisés avec les boutons pour modifier et supprimer un classificateur."]
+
+
+
 == Ajoutez des mots-clés personnalisés à partir d'un fichier texte
 
 Vous pouvez ajouter des mots-clés personnalisés à Data Sense afin qu'ils identifient des informations spécifiques dans vos données. Vous ajoutez les mots clés d'un fichier texte que vous définissez. Les mots-clés sont ajoutés aux mots-clés prédéfinis existants que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
@@ -117,7 +183,7 @@ Prenez en compte les conditions suivantes :
 
 
 
-=== Accès à la ligne de commande
+=== Accéder à la ligne de commande
 
 Vous devrez accéder au système Data Sense pour lancer la commande afin d'ajouter des mots-clés personnalisés.
 
@@ -193,73 +259,3 @@ Par exemple, pour supprimer les mots clés définis dans le fichier *Internal_PR
 [user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
-
-
-== Ajoutez des identificateurs de données personnelles personnalisés à l'aide d'un regex
-
-Vous pouvez ajouter un modèle personnel pour identifier des informations spécifiques dans vos données à l'aide d'une expression régulière personnalisée (regex). Le regex est ajouté aux modèles prédéfinis que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
-
-Par exemple, vous pouvez voir où vos ID de produit internes sont mentionnés dans tous vos fichiers. Si l'ID de produit a une structure claire, par exemple, il s'agit d'un numéro à 12 chiffres commençant par 201, vous pouvez utiliser la fonction regex personnalisée pour la rechercher dans vos fichiers.
-
-Après avoir ajouté la fenêtre regex, Data Sense redémarre l'acquisition de toutes les sources de données ; les nouveaux résultats apparaissent dans le message logique de données une fois l'analyse terminée.
-
-
-
-=== Syntaxe de commande pour ajouter le regex
-
-Vous devrez accéder au système Data Sense pour ajouter le fichier contenant les modèles de mots-clés personnalisés et lancer la commande pour ajouter les mots-clés personnalisés. <<Accès à la ligne de commande,Voir comment accéder à la ligne de commande>> Que vous ayez installé Data Sense dans votre site ou dans le cloud.
-
-La syntaxe de commande permettant d'ajouter un regex personnalisé est la suivante :
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
-* <nom_modèle> = nom qui apparaîtra dans l'interface utilisateur de détection de données. Assurez-vous que le nom identifie ce que le regex est conçu pour trouver. Le nom doit contenir au moins une lettre et peut comporter jusqu'à 70 caractères.
-* <Regular_expression> = ce peut être n'importe quelle expression régulière légale.
-* <proximity_words> = mots se trouvant à moins de 300 caractères du motif que vous recherchez (avant ou après le motif trouvé) pour aider à affiner la précision des résultats. Chaque mot est séparé par une virgule (,).
-
-
-Vous exécutez la commande à partir du chemin */opt/netapp/Datase/*.
-
-Notez que nous testons chaque nouveau regex pour vérifier s'il est trop large et qu'il renverrait trop de correspondances. Si c'est le cas, le message suivant apparaît :
-
- log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-Vous pouvez utiliser l'option *-f* à la fin de la ligne de commande si vous voulez ajouter avec force le regex à Data Sense - même si nous pensons qu'il est trop large. Vous pouvez également utiliser l'option "-p" pour essayer de raffiner les résultats de la recherche.
-
-
-
-=== Exemple
-
-L'ID du produit est un numéro à 12 chiffres commençant par 201, par exemple "201123456789". L'expression régulière est donc *\b201\d{9}\b*. Et vous voulez que le texte dans l'interface utilisateur de Data Sense identifie ce modèle comme *ID produit interne*. Et nous allons ajouter les mots de proximité "ID produit" et "identifiant".
-
-Pour voir où vos ID de produit internes sont mentionnés dans tous vos fichiers, entrez les commandes suivantes.
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
-----
-La sortie de cette commande est :
-
-....
-[+] Adding Custom Regex to Data Sense
-log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
-....
-.Résultats
-Après l'analyse suivante, les résultats incluent ces nouvelles informations dans le tableau de bord de conformité sous la section « Résultats personnels » et dans la page Investigation du filtre « données personnelles ».
-
-image:screenshot_add_regex_result.png["Capture d'écran montrant un exemple de résultats regex personnalisés dans le volet Résultats de l'enquête."]
-
-
-
-=== Désactivez un regex personnalisé
-
-Si vous décidez ultérieurement que vous n'avez pas besoin de détection de données pour identifier les modèles personnalisés que vous avez entrés en tant que regex, utilisez l'option *deactivate* de la commande pour supprimer chaque regex.
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
-Par exemple, pour supprimer le * ID produit interne* regex :
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
-----
- log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

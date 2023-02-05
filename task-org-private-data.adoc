@@ -16,7 +16,7 @@ summary: Avec Cloud Data Sense, vous pouvez gérer et organiser vos données pri
 [role="lead"]
 Avec Cloud Data Sense, vous pouvez gérer et organiser vos données privées de plusieurs façons. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
 
-* Si vous êtes abonné à link:https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser Cloud Data Sense pour gérer ces étiquettes AIP.
+* Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser Cloud Data Sense pour gérer ces étiquettes AIP.
 * Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.
 * Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.
 * Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous une comparaison du balisage Data Sense et de l'étique
 
 == Catégorisation de vos données à l'aide de libellés AIP
 
-Vous pouvez gérer les étiquettes AIP dans les fichiers que Cloud Data SENSE analyse si vous vous êtes abonné link:https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. Data Sense vous permet d'afficher les étiquettes déjà affectées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
+Vous pouvez gérer les étiquettes AIP dans les fichiers que Cloud Data SENSE analyse si vous vous êtes abonné https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. Data Sense vous permet d'afficher les étiquettes déjà affectées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
 
 Cloud Data SENSE prend en charge les libellés AIP dans les types de fichiers suivants : .DOC, .DOCX, .PDF, .PPTX, .XLS, XLSX.
 
@@ -356,7 +356,7 @@ Les règles offrent les fonctionnalités suivantes :
 * <<Liste des stratégies prédéfinies,Stratégies prédéfinies>> De NetApp en fonction des demandes des utilisateurs
 * Possibilité de créer vos propres règles personnalisées
 * Lancez la page Investigation avec les résultats de vos polices en un seul clic
-* Envoyez des alertes par e-mail à des utilisateurs BlueXP lorsque certaines stratégies critiques renvoient des résultats afin que vous puissiez obtenir des notifications pour protéger vos données
+* Envoyez des alertes par e-mail aux utilisateurs BlueXP ou à toute autre adresse e-mail lorsque certaines stratégies critiques renvoient des résultats afin que vous puissiez obtenir des notifications pour protéger vos données
 * Attribuez automatiquement des étiquettes AIP (Azure information protection) à tous les fichiers qui correspondent aux critères définis dans une stratégie
 * Supprimez des fichiers automatiquement (une fois par jour) lorsque certaines stratégies renvoient des résultats pour protéger vos données automatiquement
 
@@ -394,6 +394,7 @@ image:screenshot_compliance_save_as_highlight.png["Capture d'écran indiquant co
 .. Entrez un nom et une description uniques.
 .. Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers qui correspondent aux paramètres de la stratégie. En savoir plus sur link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["suppression de fichiers source à l'aide d'une stratégie"].
 .. Si vous voulez envoyer des e-mails de notification aux utilisateurs BlueXP de votre compte, cochez la case correspondante et choisissez l'intervalle d'envoi de l'e-mail. En savoir plus sur link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["envoi d'alertes par e-mail en fonction des résultats de règles"].
+.. Si vous souhaitez envoyer des e-mails de notification à d'autres utilisateurs, cochez la case correspondante, saisissez jusqu'à 20 adresses e-mail et choisissez l'intervalle d'envoi de l'e-mail.
 .. Si vous le souhaitez, cochez la case pour attribuer automatiquement des libellés AIP aux fichiers qui correspondent aux paramètres de la stratégie, puis sélectionnez le libellé. (Uniquement si vous avez déjà intégré des étiquettes AIP. En savoir plus sur link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Libellés AIP"].)
 .. Cliquez sur *Créer une stratégie*.
 +
@@ -410,7 +411,7 @@ La nouvelle stratégie s'affiche dans l'onglet stratégies.
 
 === Envoi d'alertes par e-mail lorsque des données non conformes sont trouvées
 
-Cloud Data SENSE peut envoyer des alertes par e-mail à des utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats afin que vous puissiez obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois.
+Cloud Data SENSE peut envoyer des alertes par e-mail à des utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats afin que vous puissiez obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois. Vous pouvez également choisir d'envoyer des alertes par e-mail à n'importe quelle adresse e-mail - jusqu'à 20 adresses e-mail - pas dans votre compte BlueXP.
 
 Vous pouvez configurer ce paramètre lors de la création de la stratégie ou lors de la modification d'une stratégie.
 
@@ -424,6 +425,7 @@ image:screenshot_compliance_add_email_alert_1.png["Capture d'écran indiquant co
 . Dans la page Modifier la stratégie :
 +
 .. Cochez la case « Envoyer tous les utilisateurs dans ce compte » si vous souhaitez envoyer des e-mails de notification aux utilisateurs de votre compte BlueXP, puis choisissez l'intervalle d'envoi de l'e-mail (par exemple, *tous les jours*).
+.. Cochez la case « Envoyer un e-mail » si vous souhaitez envoyer des e-mails de notification à d'autres utilisateurs, choisissez l'intervalle d'envoi de l'e-mail et saisissez jusqu'à 20 adresses e-mail.
 +
 image:screenshot_compliance_add_email_alert_2.png["Capture d'écran indiquant comment choisir les critères d'e-mail à envoyer pour la police."]
 

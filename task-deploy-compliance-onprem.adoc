@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 'Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte Linux de votre réseau, ou un hôte Linux dans le cloud, qui dispose d"un accès Internet.' 
+summary: 'Suivez quelques étapes pour déployer Cloud Data SENSE sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet.' 
 ---
 = Déployez Cloud Data Sense sur un hôte Linux avec accès Internet
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte L
 
 
 [role="lead"]
-Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte Linux de votre réseau, ou un hôte Linux dans le cloud, qui dispose d'un accès Internet.
+Suivez quelques étapes pour déployer Cloud Data SENSE sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet.
 
 L'installation sur site peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
@@ -22,7 +22,7 @@ Les installations sur site classiques comportent les composants et les connexion
 
 image:diagram_deploy_onprem_overview.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 
-Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lorsque vous utilisez plusieurs systèmes hôtes, le système principal est appelé nœud Manager et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés nœuds de scanner.
+Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
 Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Déployer Data Sense dans un site sur site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
 
@@ -34,7 +34,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas encore de connecteur, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud.
+Si vous n'avez pas encore de connecteur, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud.
 
 [role="quick-margin-para"]
 Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Création d'un connecteur dans GCP"^].
@@ -88,28 +88,31 @@ Le logiciel de détection des données doit être exécuté sur un hôte qui ré
 
 Assurez-vous de continuer d'exécuter le contrôle des données cloud. Le serveur Cloud Data Sense doit rester activé pour analyser en continu vos données.
 
+* *CPU* : 16 cœurs
+* *RAM* : 64 Go (la mémoire d'échange doit être désactivée sur l'hôte)
+* *Disque* : SSD avec 500 Gio disponible sur /, ou
++
+** 100 Gio disponible sur /opt
+** 400 Gio disponible sur /var
+** 5 Gio sur /tmp
++
+Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
+
+
+
+* *Type d'instance EC2 AWS* : type d'instance qui répond aux exigences de CPU et de RAM ci-dessus. Nous vous recommandons https://aws.amazon.com/ec2/instance-types/m5/["m5.4xlarge"^].
+* *Taille de VM Azure* : type d'instance qui répond aux exigences de CPU et de RAM ci-dessus. Nous vous recommandons https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^].
+* *Type de machine GCP* : type d'instance qui répond aux exigences de CPU et de RAM ci-dessus. Nous vous recommandons https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16"^].
 * *Système d'exploitation* : Red Hat Enterprise Linux ou CentOS versions 8.0 à 8.7
 +
 ** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
 ** Le système d'exploitation doit pouvoir installer le moteur docker
 
 
-* *Disque* : SSD avec 500 Gio disponible sur /, ou
-+
-** 100 Gio disponible sur /opt
-** 400 Gio disponible sur /var
-** 5 Gio sur /tmp
-
-
-* *RAM* : 64 Go (la mémoire d'échange doit être désactivée sur l'hôte)
-* *CPU* : 16 cœurs
-+
-Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
-
 * *Gestion des abonnements Red Hat* : un système Red Hat Enterprise Linux doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis au cours de l'installation.
 * *Logiciel supplémentaire*: Vous devez installer le logiciel suivant sur l'hôte avant d'installer Data Sense:
 +
-** Docker Engine version 19 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
+** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
 ** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
@@ -124,7 +127,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-Si vous prévoyez d'utiliser d'autres hôtes Data Sense, ajoutez ces règles à votre système principal à l'heure actuelle :
+Si vous prévoyez d'utiliser des hôtes Data Sense supplémentaires comme nœuds de scanner, ajoutez ces règles à votre système principal à l'heure actuelle :
 
 +
 ....
@@ -262,11 +265,11 @@ Suivez ces étapes pour installer le logiciel Data Sense sur un hôte sur site u
 +
 image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant de sélectionner le bouton pour activer le détection de données cloud."]
 
-. Cliquez sur *Activer Data Sense* pour démarrer l'assistant de déploiement sur site.
+. Selon que vous déployez une instance dans le cloud ou une instance de votre site, cliquez sur le bouton *déployer* approprié pour démarrer l'assistant de déploiement Data Sense.
 +
-image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur site."]
+image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur une machine dans le cloud ou sur site."]
 
-. Dans la boîte de dialogue _Deploy Data Sense on local_, copiez la commande fournie et collez-la dans un fichier texte afin que vous puissiez l'utiliser ultérieurement, puis cliquez sur *Fermer*. Par exemple :
+. La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie et collez-la dans un fichier texte afin que vous puissiez l'utiliser ultérieurement, puis cliquez sur *Fermer*. Par exemple :
 +
 `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`
 
@@ -316,7 +319,7 @@ Valeurs variables :
 
 
 .Résultat
-Le programme d'installation de Cloud Data Sense installe des packages, installe docker, enregistre l'installation et installe Data Sense. L'installation peut prendre entre 10 et 20 minutes.
+Le programme d'installation de Cloud Data Sense installe les packages, enregistre l'installation et installe Data Sense. L'installation peut prendre entre 10 et 20 minutes.
 
 S'il y a une connectivité sur le port 8080 entre la machine hôte et l'instance de connecteur, vous verrez la progression de l'installation dans l'onglet détection de données de BlueXP.
 
@@ -334,7 +337,7 @@ Vous pouvez ajouter d'autres nœuds de numérisation si vous trouvez que vous av
 Il existe deux façons d'ajouter des nœuds de scanner supplémentaires :
 
 * ajoutez un nœud pour faciliter la numérisation de toutes les sources de données
-* ajoutez un nœud pour faciliter l'analyse d'une source de données spécifique ou d'un groupe spécifique de sources de données
+* ajout d'un nœud pour faciliter l'analyse d'une source de données spécifique ou d'un groupe spécifique de sources de données (généralement basé sur l'emplacement)
 
 
 Par défaut, tous les nouveaux nœuds de scanner que vous ajoutez sont ajoutés au pool général de ressources de numérisation. Il s'agit du « groupe de scanner par défaut ». Dans l'image ci-dessous, il y a 1 nœud Manager et 3 nœuds de scanner dans le groupe « par défaut » qui sont tous des données de numérisation provenant des 6 sources de données.
@@ -375,7 +378,7 @@ Procédez comme suit pour installer d'autres nœuds du scanner Data Sense :
 * Vérifiez que votre environnement répond aux exigences requises <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,autorisations et connectivité>>.
 * Vous devez disposer des adresses IP des hôtes du nœud scanner que vous ajoutez.
 * Vous devez disposer de l'adresse IP du système hôte du nœud Data Sense Manager
-* Vous devez disposer de l'adresse IP ou du nom d'hôte du système Connector, de votre ID de compte NetApp, de votre ID de client Connector et du jeton d'accès utilisateur. Si vous prévoyez d'utiliser des groupes de scanner, vous devrez connaître l'ID de l'environnement de travail pour chaque source de données de votre compte. Voir les _étapes préalables_ ci-dessous pour obtenir ces informations.
+* Vous devez disposer de l'adresse IP ou du nom d'hôte du système Connector, de votre ID de compte NetApp, de votre ID de client Connector et du jeton d'accès utilisateur. Si vous prévoyez d'utiliser des groupes de scanner, vous devrez connaître l'ID de l'environnement de travail pour chaque source de données de votre compte. Voir *_étapes préalables_* ci-dessous pour obtenir ces informations.
 * Les ports et protocoles suivants doivent être activés sur tous les hôtes :
 +
 [cols="15,20,55"]
@@ -521,7 +524,7 @@ C'est possible link:task-licensing-datasense.html["Configurez les licences pour 
 
 Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_ et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
-Procédez comme suit lors de l'installation du logiciel Data Sense sur plusieurs hôtes sur site.
+Procédez comme suit lors de l'installation simultanée du logiciel Data Sense sur plusieurs hôtes sur site. Notez que vous ne pouvez pas utiliser de « groupes de scanner » lors du déploiement de plusieurs hôtes de cette façon.
 
 .Ce dont vous avez besoin
 * Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
@@ -582,7 +585,7 @@ Une fois l'installation terminée sur tous les nœuds du scanner et qu'ils ont �
 
 
 .Résultat
-Le programme d'installation de Cloud Data Sense termine l'installation des packages, de docker et enregistre l'installation. L'installation peut prendre entre 10 et 20 minutes.
+Le programme d'installation de Cloud Data Sense termine l'installation des packages et enregistre l'installation. L'installation peut prendre entre 10 et 20 minutes.
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.

@@ -217,7 +217,7 @@ image:screenshot_compliance_investigation_filtered.png["Capture d'écran des fil
 * Les commandes situées en haut de chaque colonne vous permettent de trier les résultats par ordre numérique ou alphabétique.
 * Les filtres du volet gauche vous permettent d'affiner les résultats en sélectionnant parmi les attributs suivants :
 +
-[cols="35,65"]
+[cols="30,65"]
 |===
 | Filtre | Détails 
 

@@ -14,17 +14,18 @@ summary: 'Lorsque vous exécutez une action à partir du volet Résultats de l"e
 
 
 [role="lead"]
-Lorsque vous exécutez une action à partir du volet Résultats de l'enquête sur de nombreux fichiers, par exemple la suppression de 100 fichiers, le processus peut prendre un certain temps. Vous pouvez surveiller l'état de ces actions asynchrones dans le volet _action Status_ pour savoir quand elles ont été appliquées à tous les fichiers.
+Lorsque vous exécutez une action asynchrone à partir du volet Résultats de l'enquête sur de nombreux fichiers, par exemple le déplacement ou la suppression de 100 fichiers, le processus peut prendre un certain temps. Vous pouvez contrôler l'état de ces actions dans le volet _action Status_ pour savoir quand elles ont été appliquées à tous les fichiers.
 
 Cela vous permet de voir les actions effectuées avec succès, celles en cours et celles qui ont échoué pour diagnostiquer et résoudre tout problème.
 
 Le statut peut être :
 
-* Terminé
-* En cours
-* En file d'attente
-* Annulée
-* Échec
+* Succès - une action détection de données est terminée et tous les éléments ont réussi.
+* Réussite partielle - une action détection de données est terminée et certains éléments ont échoué et certains ont réussi.
+* En cours - l'action est toujours en cours.
+* En file d'attente - l'action n'a pas démarré.
+* Annulé : l'action a été annulée.
+* Echec - l'action a échoué.
 
 
 Notez que vous pouvez annuler toutes les actions ayant le statut « en attente » ou « en cours ».

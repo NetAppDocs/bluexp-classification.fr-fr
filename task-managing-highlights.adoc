@@ -216,7 +216,7 @@ TIP: Vous ne pouvez pas déplacer les fichiers qui résident dans les bases de d
 * Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour déplacer des fichiers.
 * Les fichiers source peuvent se trouver dans les sources de données suivantes : systèmes ONTAP sur site, Cloud Volumes ONTAP, Azure NetApp Files, partages de fichiers et SharePoint Online.
 * Le déplacement de fichiers nécessite que le partage NFS autorise l'accès à partir de l'adresse IP de l'instance Data Sense.
-* Vous pouvez déplacer un maximum de 100,000 fichiers à la fois.
+* Vous pouvez déplacer jusqu'à 15 millions de fichiers à la fois.
 
 
 .Étapes
