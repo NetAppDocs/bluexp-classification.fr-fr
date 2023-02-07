@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: reference-collected-metadata.html 
+keywords: compliance, metadata, permissions, time stamps, privacy 
+summary: 'Data Sense collecte certaines métadonnées lors de l"analyse de classification des données à partir de vos sources de données et de vos environnements de travail. Le sens des données peut accéder à la plupart des métadonnées dont nous avons besoin pour classer vos données, mais certaines sources nous sont incapables d"accéder aux données dont nous avons besoin.' 
+---
+= Métadonnées collectées à partir des sources de données
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense collecte certaines métadonnées lors de l'analyse de classification des données à partir de vos sources de données et de vos environnements de travail. Le sens des données peut accéder à la plupart des métadonnées dont nous avons besoin pour classer vos données, mais certaines sources nous sont incapables d'accéder aux données dont nous avons besoin.
+
+|===
+|  | *Métadonnées* | *CIFS* | *NFS* 
+
+
+.3+| *Timbres horaires* | *Heure de création* | Disponibilité | Non disponible (non pris en charge sous Linux) 
+
+
+| *Heure du dernier accès* | Disponibilité | Disponibilité 
+
+
+| *Dernière modification de l'heure* | Disponibilité | Disponibilité 
+
+
+.2+| *Autorisations* | *Autorisations d'ouverture* | Si le groupe « TOUT LE MONDE » a accès au fichier, il est considéré comme « ouvert à l'entreprise ». | Si les « autres » ont accès au fichier, il est considéré comme « ouvert à l'entreprise ». 
+
+
+| *Utilisateurs/accès de groupe* | Les informations relatives aux utilisateurs et aux groupes sont extraites du protocole LDAP | Non disponible (les utilisateurs NFS sont généralement gérés localement sur le serveur, par conséquent, la même personne peut avoir un UID différent sur chaque serveur) 
+|===

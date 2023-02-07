@@ -52,7 +52,7 @@ link:concept-cloud-compliance.html["Découvrez le fonctionnement de Cloud Data S
 * Respectez les règles de conservation des données.
 
 
-https://cloud.netapp.com/netapp-cloud-data-sense["Pour en savoir plus sur les utilisations de Cloud Data Sense"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["Pour en savoir plus sur les utilisations de Cloud Data Sense"^].
 
 
 
@@ -115,10 +115,10 @@ Les sources de données peuvent être représentées visuellement, et les relati
 Oui. Les informations offertes par Cloud Data SENSE peuvent être pertinentes pour les autres parties prenantes de votre entreprise. Nous vous permettons donc de générer des rapports pour partager les informations exploitables. Les rapports suivants sont disponibles pour Data Sense :
 
 Rapport d'évaluation des risques pour la confidentialité:: Fournit des informations sur la confidentialité à partir de vos données et un score de risque lié à la confidentialité. link:task-generating-compliance-reports.html#privacy-risk-assessment-report["En savoir plus >>"^].
-Rapport de demande d'accès au sujet des données:: Vous permet d'extraire un rapport de tous les fichiers contenant des informations concernant le nom spécifique ou l'identifiant personnel d'un sujet de données. link:task-responding-to-dsar.html["En savoir plus >>"^].
+Rapport de demande d'accès au sujet des données:: Vous permet d'extraire un rapport de tous les fichiers contenant des informations concernant le nom spécifique ou l'identifiant personnel d'un sujet de données. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["En savoir plus >>"^].
 Rapport PCI DSS:: Vous aide à identifier la distribution des informations de carte de crédit dans vos dossiers. link:task-generating-compliance-reports.html#pci-dss-report["En savoir plus >>"^].
 Rapport HIPAA:: Vous aide à identifier la distribution de l'information sur la santé dans vos dossiers. link:task-generating-compliance-reports.html#hipaa-report["En savoir plus >>"^].
-Rapport de mappage de données:: Fournit des informations sur la taille et le nombre de fichiers dans vos environnements de travail. Cela inclut la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers. link:task-generating-compliance-reports.html#data-mapping-report["En savoir plus >>"^].
+Rapport de mappage de données:: Fournit des informations sur la taille et le nombre de fichiers dans vos environnements de travail. Cela inclut la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers. link:task-controlling-governance-data.html#data-mapping-report["En savoir plus >>"^].
 Rapports sur un type d'information spécifique:: Des rapports sont disponibles, incluant des détails sur les fichiers identifiés qui contiennent des données personnelles et des données personnelles sensibles. Vous pouvez également voir les fichiers dérépartis par catégorie et par type de fichier. link:task-controlling-private-data.html["En savoir plus >>"^].
 
 
@@ -201,7 +201,7 @@ L'analyse de conformité ne chauffe pas les données inactives : elles restent i
 
 === Cloud Data SENSE peut-il envoyer des notifications à mon entreprise ?
 
-Oui. En association avec la fonction stratégies, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP (tous les jours, toutes les semaines ou tous les mois) ou à toute autre adresse e-mail lorsqu'une police renvoie des résultats pour que vous puissiez obtenir des notifications afin de protéger vos données. En savoir plus sur link:task-org-private-data.html#controlling-your-data-using-policies["Stratégies"^].
+Oui. En association avec la fonction stratégies, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP (tous les jours, toutes les semaines ou tous les mois) ou à toute autre adresse e-mail lorsqu'une police renvoie des résultats pour que vous puissiez obtenir des notifications afin de protéger vos données. En savoir plus sur link:task-using-policies.html["Stratégies"^].
 
 Vous pouvez également télécharger des rapports de statut à partir de la page gouvernance et de la page Investigation que vous pouvez partager en interne dans votre organisation.
 
@@ -317,7 +317,7 @@ Le coût d'utilisation des données du cloud SENSE dépend de la quantité de do
 * Modèle BYOL (Bring Your Own License) de NetApp
 
 
-Voir https://cloud.netapp.com/netapp-cloud-data-sense#Pricing["tarifs"^] pour plus d'informations.
+Voir https://bluexp.netapp.com/pricing["tarifs"^] pour plus d'informations.
 
 
 
@@ -359,7 +359,7 @@ Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Déployez le connecteur sur un hôte Linux sur site qui n'a pas accès à Internet"^]. Vous pouvez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales et analyser les données à l'aide de Data Sense.
+Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pouvez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales et analyser les données à l'aide de Data Sense.
 
 
 

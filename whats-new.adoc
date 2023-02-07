@@ -26,7 +26,7 @@ Découvrez les nouveautés du Cloud Data sens.
 
 Dans les versions antérieures de Cloud Data SENSE, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats. Cette fonction vous permet d'obtenir des notifications pour protéger vos données lorsque vous n'êtes pas en ligne. Vous pouvez désormais envoyer des alertes par e-mail à partir de stratégies à tous les autres utilisateurs - jusqu'à 20 adresses e-mail - qui ne sont pas dans votre compte BlueXP.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
 
 
 
@@ -75,7 +75,7 @@ De nouveaux filtres sont disponibles pour affiner les résultats affichés dans 
 * Le filtre "chemin du fichier" vous permet maintenant de spécifier les chemins que vous souhaitez exclure des résultats de la requête filtrée. Si vous entrez des chemins pour inclure et exclure certaines données, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
 
 
 

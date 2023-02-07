@@ -249,7 +249,7 @@ image:screenshot_compliance_move_file.png["Capture d'écran montrant la sélecti
 
 Vous pouvez supprimer de manière définitive les fichiers source qui semblent non sécurisés ou trop risqués pour laisser dans votre système de stockage, ou que vous avez identifiés comme un doublon. Cette action est permanente et il n'y a pas d'annulation ou de restauration.
 
-Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation ou automatiquement à l'aide de stratégies.
+Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou link:task-using-policies.html#deleting-source-files-automatically-using-policies["Utiliser automatiquement des règles"^].
 
 
 TIP: Vous ne pouvez pas supprimer les fichiers qui résident dans les bases de données.
@@ -290,34 +290,3 @@ Vous pouvez afficher la progression de l'opération de suppression dans link:tas
 Notez que vous pouvez également supprimer un fichier individuel lors de l'affichage des détails de métadonnées d'un fichier. Cliquez simplement sur *Supprimer le fichier*.
 
 image:screenshot_compliance_delete_file.png["Capture d'écran montrant la sélection du bouton Supprimer le fichier dans les détails de métadonnées d'un fichier dans la page recherche de données."]
-
-
-
-=== Suppression automatique des fichiers source à l'aide de stratégies
-
-Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez vouloir supprimer des fichiers contenant des informations sensibles et ayant été découverts par Data Sense au cours des 30 derniers jours.
-
-Seuls les administrateurs de compte peuvent créer une stratégie de suppression automatique des fichiers.
-
-
-NOTE: Tous les fichiers qui correspondent à la stratégie seront définitivement supprimés une fois par jour.
-
-.Étapes
-. Dans la page recherche de données, définissez votre recherche en sélectionnant tous les filtres que vous souhaitez utiliser. Voir link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Filtrage des données dans la page Data Investigation"^] pour plus d'informations.
-. Une fois que vous avez toutes les caractéristiques de filtre comme vous le souhaitez, cliquez sur *Créer une stratégie à partir de cette recherche*.
-. Nommez la stratégie et sélectionnez d'autres actions pouvant être effectuées par la stratégie :
-+
-.. Entrez un nom et une description uniques.
-.. Cochez la case "Supprimer automatiquement les fichiers qui correspondent à cette stratégie" et tapez *Supprimer définitivement* pour confirmer que vous voulez que les fichiers soient définitivement supprimés par cette stratégie.
-.. Cliquez sur *Créer une stratégie*.
-+
-image:screenshot_compliance_delete_files_using_policies.png["Capture d'écran indiquant comment configurer la stratégie et l'enregistrer."]
-
-
-
-
-
-.Résultat
-La nouvelle stratégie s'affiche dans l'onglet stratégies. Les fichiers qui correspondent à la stratégie sont supprimés une fois par jour au moment de l'exécution de la stratégie.
-
-Vous pouvez afficher la liste des fichiers qui ont été supprimés dans le link:task-view-compliance-actions.html["Volet État des actions"].

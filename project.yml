@@ -61,18 +61,20 @@ sidebar:
       url: "/task-controlling-governance-data.html"
     - title: Affichez les détails de conformité de vos données
       url: "/task-controlling-private-data.html"
+    - title: Catégories de données privées
+      url: "/reference-private-data-categories.html"
+    - title: Examiner vos données
+      url: "/task-investigate-data.html"
     - title: Organisez vos données privées
       url: "/task-org-private-data.html"
+    - title: Attribuez des règles à vos données
+      url: "/task-using-policies.html"
     - title: Gérez vos données privées
       url: "/task-managing-highlights.html"
     - title: Modifier les paramètres de numérisation
       url: task-managing-repo-scanning.html
     - title: Générer des rapports
       url: "/task-generating-compliance-reports.html"
-    - title: Répondre à un DSAR
-      url: "/task-responding-to-dsar.html"
-    - title: Catégories de données privées
-      url: "/reference-private-data-categories.html"
   - title: Gérez les données cloud comme vous le pouvez
     entries:
     - title: Ajoutez des identifiants de données personnels personnalisés
@@ -87,6 +89,10 @@ sidebar:
       url: "/task-managing-compliance.html"
     - title: Désinstaller Data Sense
       url: "/task-uninstall-data-sense.html"
+  - title: Référence
+    entries:
+    - title: Métadonnées collectées à partir des sources de données
+      url: "/reference-collected-metadata.html"
   - title: Connaissances et support
     entries:
     - title: S'inscrire pour obtenir de l'aide
@@ -144,11 +150,11 @@ homepage:
     - title: Afficher les fichiers contenant des informations privées
       url: task-controlling-private-data.html
     - title: Afficher les fichiers dupliqués dans votre espace de stockage
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+      url: task-investigate-data.html#checking-for-duplicate-files-in-your-storage-systems
     - title: Filtrez vos données pour afficher des fichiers spécifiques
-      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+      url: task-investigate-data.html
     - title: Créez des règles pour afficher vos meilleures recherches
-      url: task-org-private-data.html#controlling-your-data-using-policies
+      url: task-using-policies.html
     - title: Générer des rapports de conformité
       url: task-generating-compliance-reports.html
   - title: Organisez vos données privées
@@ -169,9 +175,9 @@ homepage:
     - title: Supprimer les fichiers source
       url: task-managing-highlights.html#deleting-source-files
     - title: Créez des alertes par e-mail lorsque des données non conformes sont trouvées
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+      url: task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found
     - title: Répondre à une demande d'accès à un sujet de données
-      url: task-responding-to-dsar.html
+      url: task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports
   - title: Communauté sur les blogs
     links:
     - title: Communauté NetApp

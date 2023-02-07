@@ -182,7 +182,7 @@ Pour scanner les compartiments S3 qui se trouvent dans un autre compte AWS, vous
 .Étapes
 . Accédez au compte AWS cible où vous voulez analyser les compartiments S3 et créer un rôle IAM en sélectionnant *un autre compte AWS*.
 +
-image:screenshot_iam_create_role.gif[""]
+image:screenshot_iam_create_role.gif["Capture d'écran de la page AWS pour créer un rôle IAM."]
 
 +
 Assurez-vous de faire ce qui suit :
@@ -247,7 +247,7 @@ Le compte d'instance Cloud Data SENSE a désormais accès au compte AWS supplém
 
 
 
-. Accédez à la page *Amazon S3 Configuration* et le nouveau compte AWS s'affiche. Notez que la synchronisation de l'environnement de travail du nouveau compte peut prendre quelques minutes avec Cloud Data Sense.
+. Accédez à la page *Amazon S3 Configuration* et le nouveau compte AWS s'affiche. Notez que la synchronisation de l'environnement de travail du nouveau compte prend quelques minutes avec Cloud Data SENSE.
 +
 image:screenshot_activate_and_select_buckets.png["Capture d'écran indiquant comment activer la détection de données."]
 

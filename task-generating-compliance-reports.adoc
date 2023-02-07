@@ -174,119 +174,52 @@ Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à
 
 
 
-== Rapport de mappage de données
+== Qu'est-ce qu'une demande d'accès aux données ?
 
-Le rapport de mappage de données offre une vue d'ensemble des données stockées dans les sources de données de votre entreprise pour vous aider à prendre des décisions concernant la migration, la sauvegarde, la sécurité et les processus de conformité. Ce rapport répertorie d'abord un rapport de présentation résumant tous vos environnements de travail et vos sources de données, puis fournit une répartition pour chaque environnement de travail.
+Les réglementations en matière de confidentialité, telles que le RGPD européen, accordent à des sujets de données (clients ou employés, par exemple) le droit d'accéder à leurs données personnelles. Lorsqu'un sujet de données demande cette information, elle est appelée DSAR (Data Subject Access request). Les organisations sont tenues de répondre à ces demandes "sans délai excessif" et au plus tard dans un mois suivant la réception.
 
-Le rapport contient les informations suivantes :
-
-Capacité d'utilisation:: Pour tous les environnements de travail : indique le nombre de fichiers et la capacité utilisée pour chaque environnement de travail. Pour les environnements de travail uniques : répertorie les fichiers qui utilisent la capacité la plus élevée.
-Âge des données:: Fournit trois graphiques pour la date de création, la dernière modification ou le dernier accès aux fichiers. Répertorie le nombre de fichiers et leur capacité utilisée, en fonction de certaines plages de dates.
-Taille des données:: Répertorie le nombre de fichiers qui existent dans certaines plages de tailles dans vos environnements de travail.
-Types de fichiers:: Indique le nombre total de fichiers et la capacité utilisée pour chaque type de fichier stocké dans vos environnements de travail.
+Vous pouvez répondre à un DSAR en recherchant le nom complet ou l'identifiant connu d'un sujet (par exemple une adresse e-mail), puis en téléchargeant un rapport. Ce rapport est conçu pour aider votre entreprise à respecter le RGPD ou les autres lois similaires sur la confidentialité des données.
 
 
 
+=== Comment le « Cloud Data SENSE » peut-il vous aider à répondre à un SAR ?
 
-=== Génération du rapport de mappage de données
+Lorsque vous effectuez une recherche dans l'objet de données, Cloud Data SENSE trouve tous les fichiers, compartiments, OneDrive et comptes SharePoint qui contiennent le nom ou l'identifiant de cette personne. Data Sense vérifie les dernières données pré-indexées pour le nom ou l'identifiant. Il ne lance pas de nouvelle acquisition.
 
-Accédez à l'onglet détection de données pour générer le rapport.
+Une fois la recherche terminée, vous pouvez télécharger la liste des fichiers d'un rapport de demande d'accès aux données. Le rapport rassemble les informations issues des données et les place en termes juridiques que vous pouvez renvoyer à la personne.
+
+
+NOTE: La recherche de sujet de données n'est pas prise en charge actuellement dans les bases de données.
+
+
+
+=== Recherche de sujets de données et téléchargement de rapports
+
+Recherchez le nom complet ou l'identifiant connu du sujet de données, puis téléchargez un rapport de liste de fichiers ou un rapport DSAR. Vous pouvez effectuer une recherche par link:reference-private-data-categories.html#types-of-personal-data["tout type d'informations personnelles"^].
+
+
+NOTE: L'anglais, l'allemand et l'espagnol sont pris en charge lors de la recherche de noms de sujets de données. La prise en charge d'autres langues sera ajoutée ultérieurement.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *gouvernance*, puis cliquez sur le bouton *Rapport de la vue d'ensemble de la cartographie de données complète* dans le tableau de bord de gouvernance.
+. Cliquez sur *sujets de données*.
+. Recherchez le nom complet ou l'identifiant connu du sujet de données.
 +
-image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
-
-
-
-.Résultat
-Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
-
-Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
-
-
-
-== Rapport d'enquête de données
-
-Le rapport d'enquête de données est un téléchargement du contenu de la page d'enquête de données. link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["En savoir plus sur la page Data Investigation"].
-
-Vous pouvez enregistrer le rapport sur la machine locale en tant que fichier .CSV (qui peut inclure jusqu'à 5,000 lignes de données), ou en tant que fichier .JSON que vous exportez vers un partage NFS (qui peut inclure un nombre illimité de lignes). Si Data Sense analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) ou des bases de données (données structurées), il peut y avoir jusqu'à trois fichiers de rapports téléchargés.
-
-Lors de l'exportation vers un partage de fichiers, assurez-vous que Data Sense dispose des autorisations appropriées pour l'accès à l'exportation.
-
-
-
-=== Génération du rapport d'investigation des données
-
-.Étapes
-. Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
-. Indiquez si vous souhaitez télécharger un rapport .CSV ou .JSON de données, puis cliquez sur *Télécharger le rapport*.
-+
-image:screenshot_compliance_investigation_report.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
+Voici un exemple qui montre une recherche du nom _john Doe_:
 
 +
-Lors de la sélection d'un rapport .JSON, entrez le nom du partage NFS dans lequel le rapport sera téléchargé au format `<host_name>:/<share_path>`.
+image:screenshot_dsar_search.gif["Une capture d'écran qui montre une recherche du nom \"John Doe\" pour un DSAR."]
 
-
-
-.Résultat
-Une boîte de dialogue affiche un message indiquant que les rapports sont en cours de téléchargement.
-
-Vous pouvez afficher la progression de la génération du rapport JSON dans le link:task-view-compliance-actions.html["Volet État des actions"].
-
-
-
-=== Ce qui est inclus dans chaque rapport d'enquête de données
-
-Le *non structuré fichier de données* contient les informations suivantes sur vos fichiers :
-
-* Nom du fichier
-* Type d'emplacement
-* Nom de l'environnement de travail
-* Référentiel de stockage (par exemple, un volume, un compartiment, des partages)
-* Type d'environnement de travail
-* Chemin des fichiers
-* Type de fichier
-* Taille du fichier
-* Heure de création
-* Dernière modification
-* Dernier accès
-* Propriétaire du fichier
-* Catégorie
-* Informations personnelles
-* Informations personnelles sensibles
-* Date de détection de suppression
+. Choisissez l'une des options disponibles :
 +
-Une date de détection de suppression identifie la date à laquelle le fichier a été supprimé ou déplacé. Cela vous permet d'identifier le moment où des fichiers sensibles ont été déplacés. Les fichiers supprimés ne font pas partie du nombre de fichiers qui s'affiche dans le tableau de bord ou sur la page Investigation. Les fichiers n'apparaissent que dans les rapports CSV.
+** *Télécharger le rapport DSAR* : réponse officielle à la demande d'accès que vous pouvez envoyer au sujet des données. Ce rapport contient des informations générées automatiquement en fonction des données que Cloud Data SENSE trouve sur le sujet des données et qui sont conçues pour être utilisées comme modèle. Vous devez remplir le formulaire et le revoir en interne avant de l'envoyer au sujet des données.
+** *Étudier les résultats* : une page qui vous permet d'examiner les données en recherchant, en triant, en développant les détails d'un fichier spécifique et en téléchargeant la liste de fichiers.
++
+
+NOTE: S'il y a plus de 10,000 résultats, seuls les 10,000 premiers apparaissent dans la liste de fichiers.
 
 
 
-Le *Rapport de données de répertoires non structurés* inclut les informations suivantes sur vos dossiers et partages de fichiers :
-
-* Nom de l'environnement de travail
-* Référentiel de stockage (par exemple, un dossier ou des partages de fichiers)
-* Type d'environnement de travail
-* Chemin du fichier (nom du répertoire)
-* Propriétaire du fichier
-* Heure de création
-* Heure découverte
-* Dernière modification
-* Dernier accès
-* Ouvrez les autorisations
-* Type de répertoire
-
-
-Le *Rapport de données structurées* comprend les informations suivantes sur vos tables de bases de données :
-
-* NOM de la table DB
-* Type d'emplacement
-* Nom de l'environnement de travail
-* Référentiel de stockage (par exemple, un schéma)
-* Nombre de colonnes
-* Nombre de lignes
-* Informations personnelles
-* Informations personnelles sensibles
 
 
 

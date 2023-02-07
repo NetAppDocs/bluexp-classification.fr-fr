@@ -25,7 +25,7 @@ image:screenshot_compliance_dashboard.png["Capture d'écran du tableau de bord C
 
 Si vous ne souhaitez voir des données que pour certains environnements de travail, <<Affichage des données du tableau de bord pour des environnements de travail spécifiques,sélectionnez ces environnements de travail>>.
 
-Vous pouvez également filtrer les résultats à partir de la page Data Investigation et télécharger un rapport des résultats sous forme de fichier CSV. Voir <<Filtrage des données dans la page Data Investigation,Filtrage des données dans la page Data Investigation>> pour plus d'informations.
+Vous pouvez également filtrer les résultats à partir de la page Data Investigation et télécharger un rapport des résultats sous forme de fichier CSV. Voir link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["Filtrage des données dans la page Data Investigation"] pour plus d'informations.
 
 
 
@@ -124,72 +124,6 @@ image:screenshot_file_types.gif["Capture d'écran de la boîte de dialogue types
 
 
 
-== Affichage des métadonnées de fichier
-
-Dans le volet Résultats de l'enquête de données, vous pouvez cliquer sur image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit.
-
-image:screenshot_compliance_file_details.png["Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."]
-
-En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP intégré dans le cloud Data SENSE"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-org-private-data.html#creating-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
-
-Notez que toutes les informations ne sont pas disponibles pour toutes les sources de données, ce qui est juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume, les autorisations et les libellés AIP ne sont pas pertinents pour les fichiers de base de données.
-
-Lors de l'affichage des détails d'un seul fichier, vous pouvez effectuer quelques actions sur le fichier :
-
-* Vous pouvez déplacer ou copier le fichier dans n'importe quel partage NFS. Voir link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["Déplacement des fichiers source vers un partage NFS"] et link:task-managing-highlights.html#copying-source-files["Copie des fichiers source vers un partage NFS"] pour plus d'informations.
-* Vous pouvez supprimer le fichier. Voir link:task-managing-highlights.html#deleting-source-files["Suppression des fichiers source"] pour plus d'informations.
-* Vous pouvez affecter un certain état au fichier. Voir link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Application de balises"] pour plus d'informations.
-* Vous pouvez affecter le fichier à un utilisateur BlueXP pour être responsable de toutes les actions de suivi qui doivent être effectuées sur le fichier. Voir link:task-org-private-data.html#assigning-users-to-manage-certain-files["Affectation d'utilisateurs à un fichier"] pour plus d'informations.
-* Si vous avez intégré des étiquettes AIP avec Cloud Data SENSE, vous pouvez attribuer un libellé à ce fichier ou modifier un libellé différent si celui-ci existe déjà. Voir link:task-org-private-data.html#assigning-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
-
-
-
-
-== Affichage des autorisations pour les fichiers et les répertoires
-
-Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est disponible uniquement pour les données des partages CIFS, SharePoint Online, SharePoint sur site et OneDrive.
-
-Notez que si vous voyez des SID (identificateurs de sécurité) au lieu des noms d'utilisateurs et de groupes, vous devez intégrer Active Directory dans Data Sense. link:task-add-active-directory-datasense.html["Découvrez comment faire"].
-
-image:screenshot_compliance_permissions.png["Capture d'écran affichant des autorisations détaillées sur les fichiers."]
-
-Vous pouvez cliquer sur image:button_down_caret.png["le bas-caret"] pour tous les groupes pour voir la liste des utilisateurs qui font partie du groupe.
-
-En outre, Vous pouvez cliquer sur le nom d'un utilisateur ou d'un groupe et la page Investigation s'affiche avec le nom de cet utilisateur ou groupe renseigné dans le filtre "autorisations utilisateur/groupe" pour que vous puissiez voir tous les fichiers et répertoires auxquels l'utilisateur ou le groupe a accès.
-
-
-
-== Recherche de fichiers en double dans vos systèmes de stockage
-
-Vous pouvez afficher si des fichiers dupliqués sont stockés dans vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il peut également être utile de s'assurer que certains fichiers possédant des autorisations spécifiques ou des informations sensibles ne sont pas inutilement dupliqués dans vos systèmes de stockage.
-
-Data Sense utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
-
-Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#deleting-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
-
-
-
-=== Affichage de tous les fichiers dupliqués
-
-Si vous voulez une liste de tous les fichiers dupliqués dans les environnements de travail et les sources de données que vous scannez, vous pouvez utiliser le filtre *Duplicates > a des doublons* dans la page recherche de données.
-
-Tous les fichiers avec des doublons de tous les types de fichiers (sans les bases de données), d'une taille minimale de 50 Mo et/ou contenant des informations personnelles ou sensibles, s'affichent dans la page Résultats.
-
-
-
-=== Affichage si un fichier spécifique est dupliqué
-
-Si vous souhaitez voir si un seul fichier contient des doublons, vous pouvez cliquer sur dans le volet Résultats de l'enquête de données image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit. Si un fichier est en double, ces informations apparaissent à côté du champ _Duplicates_.
-
-Pour afficher la liste des fichiers dupliqués et leur emplacement, cliquez sur *Afficher les détails*. Dans la page suivante, cliquez sur *Afficher les doublons* pour afficher les fichiers de la page Investigation.
-
-image:screenshot_compliance_duplicate_file.png["Capture d'écran indiquant comment afficher l'emplacement des fichiers dupliqués."]
-
-
-TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette page et la saisir directement dans la page Investigation pour rechercher un fichier en double spécifique à tout moment, ou vous pouvez l'utiliser dans une police.
-
-
-
 == Affichage des données du tableau de bord pour des environnements de travail spécifiques
 
 Vous pouvez filtrer le contenu du tableau de bord Cloud Data Sense afin d'afficher les données de conformité pour tous les environnements de travail et bases de données, ou pour des environnements de travail spécifiques uniquement.
@@ -201,108 +135,4 @@ Lorsque vous filtrez le tableau de bord, Data SENSE évalue les données de conf
 +
 image:screenshot_cloud_compliance_filter.gif["Capture d'écran montrant comment filtrer les résultats de l'enquête pour des environnements de travail spécifiques."]
 
-
-
-
-
-== Filtrage des données dans la page Data Investigation
-
-Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir. Il s'agit d'une fonctionnalité très puissante car une fois les données raffinées, vous pouvez utiliser la barre de boutons en haut de la page pour effectuer diverses actions, notamment copier des fichiers, déplacer des fichiers, ajouter une balise ou une étiquette AIP aux fichiers, et bien plus encore.
-
-Si vous souhaitez télécharger le contenu de la page en tant que rapport après l'avoir affiné, cliquez sur le bouton image:button_download.png["bouton télécharger"] bouton. Vous pouvez enregistrer le rapport localement sous la forme d'un fichier .CSV (qui peut inclure jusqu'à 5,000 lignes de données) ou sous la forme d'un fichier .JSON que vous exportez vers un partage NFS (qui peut inclure un nombre illimité de lignes). link:task-generating-compliance-reports.html#data-investigation-report["Cliquez ici pour plus de détails sur les rapports d'enquête de données"].
-
-image:screenshot_compliance_investigation_filtered.png["Capture d'écran des filtres disponibles lors du raffinage des résultats dans la page d'enquête."]
-
-* Les onglets de niveau supérieur vous permettent d'afficher des données à partir de fichiers (données non structurées), de répertoires (dossiers et partages de fichiers) ou de bases de données (données structurées).
-* Les commandes situées en haut de chaque colonne vous permettent de trier les résultats par ordre numérique ou alphabétique.
-* Les filtres du volet gauche vous permettent d'affiner les résultats en sélectionnant parmi les attributs suivants :
-+
-[cols="30,65"]
-|===
-| Filtre | Détails 
-
-
-| Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-org-private-data.html#controlling-your-data-using-policies["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
-
-
-| État de l'analyse | Sélectionnez une option pour afficher la liste des fichiers en attente de première numérisation, terminés en cours de numérisation, en attente de numérisation ou qui n'ont pas pu être numérisés. 
-
-
-| Ouvrez autorisations | Sélectionnez le type d'autorisations dans les données et dans les dossiers/partages. 
-
-
-| Nombre d'utilisateurs ayant accès | Sélectionnez une ou plusieurs plages de catégories pour afficher les fichiers et dossiers ouverts à un certain nombre d'utilisateurs. 
-
-
-| Autorisations utilisateur/groupe | Sélectionnez un ou plusieurs noms d'utilisateur et/ou de groupe ou entrez un nom partiel. 
-
-
-| Propriétaire du fichier | Entrez le nom du propriétaire du fichier. 
-
-
-| Étiquette | Sélectionnez link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 
-
-
-| Type d'environnement de travail | Sélectionnez le type d'environnement de travail. OneDrive, SharePoint et Google Drive sont classés dans « applications ». 
-
-
-| Nom de l'environnement de travail | Sélectionner des environnements de travail spécifiques. 
-
-
-| Référentiel de stockage | Sélectionnez le référentiel de stockage, par exemple un volume ou un schéma. 
-
-
-| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. 
-
-
-| Catégorie | Sélectionner link:reference-private-data-categories.html#types-of-categories["types de catégories"^]. 
-
-
-| Niveau de sensibilité | Sélectionnez le niveau de sensibilité : personnel, personnel sensible ou non sensible. 
-
-
-| Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, Data Sense totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers). 
-
-
-| Données personnelles | Sélectionner link:reference-private-data-categories.html#types-of-personal-data["types de données personnelles"^]. 
-
-
-| Données personnelles sensibles | Sélectionner link:reference-private-data-categories.html#types-of-sensitive-personal-data["types de données personnelles sensibles"^]. 
-
-
-| Sujet de données | Saisissez le nom complet ou l'identifiant connu d'un sujet de données. 
-
-
-| Type de répertoire | Sélectionnez le type de répertoire : « partager » ou « dossier ». 
-
-
-| Type de fichier | Sélectionner link:reference-private-data-categories.html#types-of-files["types de fichiers"^]. 
-
-
-| Taille du fichier | Sélectionnez la plage de tailles de fichier. 
-
-
-| Heure de création | Sélectionnez une plage horaire au moment de la création du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
-
-
-| Heure découverte | Sélectionnez une plage horaire lorsque le fichier est détecté par le capteur de données. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
-
-
-| Dernière modification | Sélectionnez une plage horaire pour la dernière modification du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
-
-
-| Dernier accès | Sélectionnez une plage horaire pour la dernière fois où le fichier a été accédé. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par Data Sense, il s'agit de la dernière analyse du fichier par Data Sense. 
-
-
-| Doublons | Indiquez si le fichier est dupliqué dans les référentiels. 
-
-
-| Hachage de fichiers | Entrez le hachage du fichier pour trouver un fichier spécifique, même si le nom est différent. 
-
-
-| Étiquettes | Sélectionnez link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["la ou les balises"] qui sont affectés à vos fichiers. 
-
-
-| Affecté à | Sélectionnez le nom de la personne à laquelle le fichier est affecté. 
-|===
 

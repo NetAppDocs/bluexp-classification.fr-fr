@@ -16,7 +16,7 @@ summary: Cloud Data Sense est un service de gouvernance des données pour BlueXP
 [role="lead"]
 Cloud Data Sense est un service de gouvernance des données pour BlueXP (anciennement Cloud Manager) qui analyse vos sources de données sur site et dans le cloud de votre entreprise pour mapper et classer les données, et identifier des informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données.
 
-https://cloud.netapp.com/netapp-cloud-data-sense["Découvrez les utilisations de Cloud Data Sense"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["Découvrez les utilisations de Cloud Data Sense"^].
 
 
 
@@ -34,7 +34,7 @@ Data SENSE fournit plusieurs outils qui peuvent vous aider dans vos efforts de c
 * Identifier une vaste portée des données personnelles sensibles, conformément aux réglementations en matière de confidentialité, RGPD, CCPA, PCI et HIPAA.
 * Répondez aux demandes d'accès aux données (DSAR, Data Subject Access Requests) en fonction de votre nom ou de votre adresse e-mail.
 * Identifiez si des identificateurs uniques de vos bases de données se trouvent dans des fichiers d'autres référentiels, en faisant simplement votre propre liste de « données personnelles » identifiées dans les analyses de détection de données.
-* Avertir certains utilisateurs par e-mail lorsque des fichiers contiennent certains RP (vous définissez ce critère à l'aide de link:task-org-private-data.html#controlling-your-data-using-policies["Stratégies"^]) de sorte que vous puissiez décider d'un plan d'action.
+* Avertir certains utilisateurs par e-mail lorsque des fichiers contiennent certains RP (vous définissez ce critère à l'aide de link:task-using-policies.html["Stratégies"^]) de sorte que vous puissiez décider d'un plan d'action.
 
 
 
@@ -125,7 +125,7 @@ Data Sense prend en charge les versions NFS 3.x, 4.0 et 4.1 et CIFS 1.x, 2.0, 2.
 
 == Le coût
 
-* Le coût d'utilisation des données du cloud SENSE dépend de la quantité de données que vous scannez. Les 1 premiers To de données analysés par Data Sense dans un espace de travail BlueXP sont gratuits pendant 30 jours. Cela inclut toutes les données issues de tous les environnements de travail et de toutes les sources de données. Un abonnement à AWS, Azure, GCP Marketplace ou une licence BYOL de NetApp est requis pour continuer l'analyse des données après ce point. Voir https://cloud.netapp.com/netapp-cloud-data-sense["tarifs"^] pour plus d'informations.
+* Le coût d'utilisation des données du cloud SENSE dépend de la quantité de données que vous scannez. Les 1 premiers To de données analysés par Data Sense dans un espace de travail BlueXP sont gratuits pendant 30 jours. Cela inclut toutes les données issues de tous les environnements de travail et de toutes les sources de données. Un abonnement à AWS, Azure, GCP Marketplace ou une licence BYOL de NetApp est requis pour continuer l'analyse des données après ce point. Voir https://bluexp.netapp.com/netapp-cloud-data-sense["tarifs"^] pour plus d'informations.
 +
 link:task-licensing-datasense.html["Découvrez comment obtenir des licences Cloud Data Sense"^].
 
@@ -189,7 +189,7 @@ Vous pouvez déployer Data Sense sur un système avec moins de processeurs et mo
 | Moyen | 8 PROCESSEURS, 32 GO DE RAM, 200 GO DE SSD | Numérisation plus lente et numérisation jusqu'à 1 million de fichiers uniquement. 
 
 
-| Petit | 8 PROCESSEURS, 16 GO DE RAM, 100 GO DE SSD | Mêmes limites que « Moyen », plus la capacité d'identifier link:task-responding-to-dsar.html["noms des sujets de données"] les fichiers internes sont désactivés. 
+| Petit | 8 PROCESSEURS, 16 GO DE RAM, 100 GO DE SSD | Mêmes limites que « Moyen », plus la capacité d'identifier link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["noms des sujets de données"] les fichiers internes sont désactivés. 
 |===
 Si vous souhaitez utiliser l'un de ces systèmes plus petits, envoyez un e-mail à l'adresse ng-contact-data-sense@netapp.com pour obtenir de l'aide. Nous devons nous aider à déployer ces plus petites configurations cloud.
 
@@ -248,7 +248,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Âge et taille des fichiers | Oui. | Oui. 
 
 
-| Exécution d'un link:task-generating-compliance-reports.html#data-mapping-report["Rapport de mappage de données"] | Oui. | Oui. 
+| Exécution d'un link:task-controlling-governance-data.html#data-mapping-report["Rapport de mappage de données"] | Oui. | Oui. 
 
 
 | Page Data Investigation pour afficher les détails du fichier | Oui. | Non 
@@ -257,7 +257,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Rechercher des noms dans les fichiers | Oui. | Non 
 
 
-| Création link:task-org-private-data.html#controlling-your-data-using-policies["stratégies"] fournissant des résultats de recherche personnalisés | Oui. | Non 
+| Création link:task-using-policies.html["stratégies"] fournissant des résultats de recherche personnalisés | Oui. | Non 
 
 
 | Catégoriser les données à l'aide d'étiquettes AIP et de balises d'état | Oui. | Non 
@@ -272,7 +272,11 @@ Le tableau ci-dessous présente certaines des différences :
 
 === La rapidité avec laquelle les données de détection sont-elles à l'examen
 
-Il est possible d'analyser entre 15-40 tibides de données par jour et par nœud du scanner. La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
+La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
+
+* Lors de l'exécution d'analyses de mappage, Data SENSE peut analyser entre 100-150 tibites de données par jour et par nœud du scanner.
+* Lors de l'exécution d'acquisitions de classification, Data Sense peut analyser entre 15-40 tibides de données par jour et par nœud d'analyse.
+
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["En savoir plus sur le déploiement de plusieurs nœuds de numérisation pour analyser vos données"^].
 
@@ -287,7 +291,7 @@ Données personnelles:: Informations personnelles identifiables telles que les a
 Données personnelles sensibles:: Des types spéciaux d'informations sensibles, comme les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le RGPD et d'autres réglementations sur la confidentialité. link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["En savoir plus sur les données personnelles sensibles"^].
 Catégories:: Cloud Data SENSE répartit les données analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:task-controlling-private-data.html#viewing-files-by-categories["En savoir plus sur les catégories"^].
 Types:: Cloud Data SENSE affecte les données analysées et les divise par type de fichier. link:task-controlling-private-data.html#viewing-files-by-file-types["En savoir plus sur les types"^].
-Reconnaissance de l'entité de nom:: Cloud Data Sense exploite l'IA pour extraire le nom des personnes physiques à partir des documents. link:task-responding-to-dsar.html["Découvrez comment répondre aux demandes d'accès aux données"^].
+Reconnaissance de l'entité de nom:: Cloud Data Sense exploite l'IA pour extraire le nom des personnes physiques à partir des documents. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Découvrez comment répondre aux demandes d'accès aux données"^].
 
 
 

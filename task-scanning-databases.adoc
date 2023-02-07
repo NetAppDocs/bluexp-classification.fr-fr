@@ -73,7 +73,7 @@ Toutes les bases de données connectée à l'instance Cloud Data SENSE peuvent �
 * Nom du service (uniquement pour l'accès aux bases de données Oracle)
 * Références permettant l'accès en lecture aux schémas
 +
-Lorsque vous choisissez un nom d'utilisateur et un mot de passe, il est important de choisir un nom qui dispose des autorisations de lecture complètes pour tous les schémas et tables que vous souhaitez numériser. Nous vous recommandons de créer un utilisateur dédié pour le système Cloud Data SENSE avec toutes les autorisations requises.
+Lors du choix d'un nom d'utilisateur et d'un mot de passe, il est important de choisir celui qui dispose des autorisations de lecture complètes pour tous les schémas et tables que vous souhaitez numériser. Nous vous recommandons de créer un utilisateur dédié pour le système Cloud Data SENSE avec toutes les autorisations requises.
 
 
 
@@ -137,4 +137,4 @@ image:screenshot_compliance_select_schemas.png["Capture d'écran de la page Conf
 
 
 .Résultat
-Cloud Data SENSE commence à analyser les schémas de base de données que vous avez activés. S’il y a des erreurs, elles apparaîtront dans la colonne État, ainsi que l’action requise pour corriger l’erreur.
+Cloud Data SENSE commence à analyser les schémas de base de données que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.

@@ -44,7 +44,7 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 ** Divers (catégorie « autre » générale)
 
 
-* *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-controlling-private-data.html#viewing-all-duplicated-files["Voir quels types de fichiers dupliqués sont affichés"].
+* *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#viewing-all-duplicated-files["Voir quels types de fichiers dupliqués sont affichés"].
 
 
 
@@ -53,13 +53,13 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 
 Dans la zone _Policies_, les politiques avec le plus grand nombre de résultats apparaissent en haut de la liste. Cliquez sur le nom d'une police pour afficher les résultats dans la page Investigation. Cliquez sur *Afficher tout* pour afficher la liste de toutes les stratégies disponibles.
 
-Cliquez sur link:task-org-private-data.html#controlling-your-data-using-policies["ici"] Pour en savoir plus sur les politiques.
+Cliquez sur link:task-using-policies.html["ici"] Pour en savoir plus sur les politiques.
 
 
 
 === Présentation des données
 
-La section _Data Overview_ fournit un aperçu rapide de toutes les données en cours d'acquisition. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous vos environnements de travail et toutes vos sources de données. Voir link:task-generating-compliance-reports.html#data-mapping-report["Rapport de mappage de données"^] pour plus d'informations sur ce rapport.
+La section _Data Overview_ fournit un aperçu rapide de toutes les données en cours d'acquisition. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous vos environnements de travail et toutes vos sources de données. Voir <<Rapport de mappage de données,Rapport de mappage de données>> pour plus d'informations sur ce rapport.
 
 
 
@@ -148,3 +148,36 @@ Voir link:task-controlling-private-data.html#viewing-files-by-file-types["Affich
 Si vous vous êtes abonné à Azure information protection (AIP), vous pouvez classer et protéger les documents et les fichiers en appliquant des étiquettes au contenu. La vérification des étiquettes AIP les plus utilisées qui sont attribuées aux fichiers vous permet de voir les étiquettes les plus utilisées dans vos fichiers.
 
 Voir link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Etiquettes AIP"^] pour en savoir plus.
+
+
+
+=== Rapport de mappage de données
+
+Le rapport de mappage de données offre une vue d'ensemble des données stockées dans les sources de données de votre entreprise pour vous aider à prendre des décisions concernant la migration, la sauvegarde, la sécurité et les processus de conformité. Ce rapport répertorie d'abord un rapport de présentation résumant tous vos environnements de travail et vos sources de données, puis fournit une répartition pour chaque environnement de travail.
+
+Le rapport contient les informations suivantes :
+
+Capacité d'utilisation:: Pour tous les environnements de travail : indique le nombre de fichiers et la capacité utilisée pour chaque environnement de travail. Pour les environnements de travail uniques : répertorie les fichiers qui utilisent la capacité la plus élevée.
+Âge des données:: Fournit trois graphiques pour la date de création, la dernière modification ou le dernier accès aux fichiers. Répertorie le nombre de fichiers et leur capacité utilisée, en fonction de certaines plages de dates.
+Taille des données:: Répertorie le nombre de fichiers qui existent dans certaines plages de tailles dans vos environnements de travail.
+Types de fichiers:: Indique le nombre total de fichiers et la capacité utilisée pour chaque type de fichier stocké dans vos environnements de travail.
+
+
+
+
+==== Génération du rapport de mappage de données
+
+Accédez à l'onglet détection de données pour générer le rapport.
+
+.Étapes
+. Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
+. Cliquez sur *gouvernance*, puis cliquez sur le bouton *Rapport de la vue d'ensemble de la cartographie de données complète* dans le tableau de bord de gouvernance.
++
+image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
+
+
+
+.Résultat
+Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
+
+Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.

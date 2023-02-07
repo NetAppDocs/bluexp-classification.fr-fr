@@ -95,7 +95,7 @@ Utilisez la page porte-monnaie numérique de BlueXP pour gérer les licences BYO
 
 Une fois que vous avez acheté votre licence Cloud Data Sense, vous activez la licence dans BlueXP en saisissant le numéro de série Cloud Data Sense et le compte NSS, ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
 
-Si vous avez déployé Cloud Data SENSE sur un hôte d'un site sur site qui n'a pas accès à Internet, vous devez obtenir le fichier de licence d'un système connecté à Internet. L'activation de la licence à l'aide du numéro de série et du compte NSS n'est pas disponible pour les installations sur site sombre.
+Si vous avez déployé Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d'un accès Internet, vous devez obtenir le fichier de licence d'un système connecté à Internet. L'activation de la licence à l'aide du numéro de série et du compte NSS n'est pas disponible pour les installations sur site sombre.
 
 .Étapes
 . Connectez-vous au https://mysupport.netapp.com["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.

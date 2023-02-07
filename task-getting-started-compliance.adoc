@@ -48,8 +48,8 @@ Lorsque Cloud Data SENSE est activé, assurez-vous qu'il peut accéder à tous l
 * Les groupes de sécurité pour Cloud Volumes ONTAP doivent autoriser les connexions entrantes à partir de l'instance de détection de données.
 * Assurez-vous que ces ports sont ouverts à l'instance de détection de données :
 +
-** Pour NFS – ports 111 et 2049.
-** Pour CIFS – ports 139 et 445.
+** Pour NFS - ports 111 et 2049.
+** Pour CIFS : ports 139 et 445.
 
 
 * Les règles d'exportation de volumes NFS doivent autoriser l'accès à partir de l'instance Data Sense.
@@ -123,8 +123,8 @@ Vous pouvez soit ouvrir le groupe de sécurité pour le trafic à partir de l'ad
 
 . Assurez-vous que les ports suivants sont ouverts à l'instance de détection de données :
 +
-** Pour NFS – ports 111 et 2049.
-** Pour CIFS – ports 139 et 445.
+** Pour NFS - ports 111 et 2049.
+** Pour CIFS : ports 139 et 445.
 
 
 . Assurez-vous que les règles d'exportation de volume NFS incluent l'adresse IP de l'instance Data Sense afin qu'elle puisse accéder aux données sur chaque volume.
