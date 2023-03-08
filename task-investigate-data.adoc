@@ -117,7 +117,7 @@ Utilisez les filtres suivants pour afficher les données en fonction de l'emplac
 | Filtre | Détails 
 
 
-| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. Notez que l'inclusion de "*" dans ce filtre n'a aucun effet ; vous devrez rechercher des fichiers et des sous-dossiers spécifiques en utilisant des chemins complets. 
+| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. Notez que l'utilisation de "*" dans ce filtre n'a aucun effet et que vous ne pouvez pas exclure des dossiers spécifiques de l'analyse - tous les répertoires et fichiers d'un partage configuré seront analysés. 
 
 
 | Type de répertoire | Sélectionnez le type de répertoire : « partager » ou « dossier ». 

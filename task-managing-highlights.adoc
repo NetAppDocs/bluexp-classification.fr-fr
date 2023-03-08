@@ -62,7 +62,7 @@ TIP: Vous ne pouvez pas copier les fichiers qui résident dans les bases de donn
 .De formation
 * Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour copier des fichiers.
 * La copie de fichiers requiert que le partage NFS de destination autorise l'accès à partir de l'instance Data Sense.
-* Vous pouvez copier un maximum de 100,000 fichiers à la fois.
+* Vous pouvez copier entre 1 et 100,000 fichiers à la fois.
 
 
 .Étapes
@@ -104,6 +104,7 @@ Le nouveau volume est créé dans le même agrégat que le volume source. Assure
 
 .De formation
 * Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour copier des fichiers.
+* Vous devez sélectionner au moins 20 fichiers.
 * Tous les fichiers sélectionnés doivent se trouver dans le même volume et le volume doit être en ligne.
 * Le volume doit correspondre à un système Cloud Volumes ONTAP ou ONTAP sur site. Aucune autre source de données n'est actuellement prise en charge.
 * La licence FlexClone doit être installée sur le cluster. Cette licence est installée par défaut sur les systèmes Cloud Volumes ONTAP.
@@ -157,6 +158,7 @@ TIP: Vous ne pouvez pas copier et synchroniser les fichiers qui résident dans l
 
 .De formation
 * Vous devez disposer du rôle Administrateur de compte ou Administrateur d'espace de travail pour copier et synchroniser les fichiers.
+* Vous devez sélectionner au moins 20 fichiers.
 * Tous les fichiers sélectionnés doivent se trouver dans le même référentiel source (volume ONTAP, compartiment S3, partage NFS ou CIFS, etc.).
 * Vous devrez activer le service Cloud Sync et configurer au moins un courtier de données qui peut être utilisé pour transférer des fichiers entre les systèmes source et cible. Vérifiez les exigences Cloud Sync en commençant par le https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Description de Quick Start"^].
 +
