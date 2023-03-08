@@ -101,7 +101,10 @@ Voir <<Activation et désactivation des analyses de conformité sur les volumes,
 
 
 .Résultat
-Cloud Data SENSE commence à analyser les volumes que vous avez sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que Cloud Data SENSE aura terminé les analyses initiales. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
+Cloud Data SENSE commence à analyser les volumes que vous avez sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que Data Sense aura terminé les analyses initiales. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
+
+
+NOTE: Par défaut, si Data Sense ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou si vous n'avez pas d'autorisations d'écriture dans NFS, le système ne scanne pas les fichiers de vos volumes car Data Sense ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Si vous ne vous souciez pas de réinitialiser l'heure du dernier accès, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*. Cette page dispose d'un paramètre que vous pouvez activer pour que Data Sense analyse les volumes indépendamment des autorisations.
 
 
 
@@ -133,7 +136,7 @@ image:screenshot_cifs_credentials.gif["Capture d'écran de l'onglet conformité 
 Les informations d'identification peuvent être en lecture seule, mais fournir des informations d'identification admin garantit que Data Sense peut lire toutes les données qui requièrent des autorisations élevées. Les identifiants sont stockés sur l'instance Cloud Data Sense.
 
 +
-Si vous voulez vous assurer que vos fichiers “dernières heures d’accès” sont inchangés par les analyses de classification de détection de données, nous recommandons à l’utilisateur de disposer de l’autorisation Write Attributes. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification Data Sense, nous vous recommandons de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 +
 Une fois les informations d'identification saisies, un message indiquant que tous les volumes CIFS ont été authentifiés avec succès s'affiche.
@@ -157,6 +160,8 @@ image:screenshot_compliance_volume_details.gif["Capture d'écran de la page View
 == Activation et désactivation des analyses de conformité sur les volumes
 
 Vous pouvez démarrer ou arrêter des analyses de mappage uniquement, ou des analyses de mappage et de classification, dans un environnement de travail à tout moment à partir de la page Configuration. Vous pouvez également passer des acquisitions avec mappage uniquement à des acquisitions avec mappage et classification, et inversement. Nous vous recommandons de scanner tous les volumes.
+
+Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si Data Sense ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne scanne pas les fichiers car Data Sense ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 image:screenshot_volume_compliance_selection.png["Capture d'écran de la page Configuration dans laquelle vous pouvez activer ou désactiver la numérisation de volumes individuels."]
 

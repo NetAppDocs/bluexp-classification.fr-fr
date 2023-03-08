@@ -188,6 +188,8 @@ image:screenshot_cloud_compliance_wizard_start.png["Capture d'écran de l'assist
 .Résultat
 BlueXP déploie l'instance Cloud Data Sense dans votre fournisseur cloud.
 
+Les mises à niveau du connecteur BlueXP et du logiciel Data Sense sont automatisées tant que les instances disposent d'une connectivité Internet.
+
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
 

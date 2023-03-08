@@ -19,6 +19,7 @@ Data Sense offre de nombreuses façons d'ajouter une liste personnalisée de « 
 * Vous pouvez ajouter des identificateurs uniques basés sur des colonnes spécifiques dans les bases de données que vous numérisez.
 * Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte -- ces mots sont identifiés dans vos données.
 * Vous pouvez ajouter un motif personnel à l'aide d'une expression régulière (regex) -- le regex est ajouté aux motifs prédéfinis existants.
+* Vous pouvez ajouter des catégories personnalisées afin d'identifier l'emplacement de catégories d'informations spécifiques dans vos données.
 
 
 Tous ces mécanismes pour ajouter des critères de numérisation personnalisés sont pris en charge dans toutes les langues.
@@ -83,6 +84,52 @@ image:screenshot_compliance_delete_data_fusion.png["Capture d'écran montrant co
 
 
 
+== Ajoutez des mots clés personnalisés à partir d'une liste de mots
+
+Vous pouvez ajouter des mots-clés personnalisés à Data Sense afin qu'il identifie l'emplacement de ces informations dans vos données. Vous pouvez ajouter les mots-clés en saisissant chaque mot que vous souhaitez que Data Sense reconnaisse. Les mots-clés sont ajoutés aux mots-clés prédéfinis existants que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
+
+Par exemple, vous pouvez voir où les noms de produits internes sont mentionnés dans tous vos fichiers pour vous assurer que ces noms ne sont pas accessibles dans des emplacements qui ne sont pas sécurisés.
+
+Après la mise à jour des mots-clés personnalisés, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats s'affichent dans le tableau de bord de conformité de détection des données, sous la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
+
+.Étapes
+. Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.
++
+image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant comment lancer l'assistant Ajouter un classificateur personnalisé."]
+
+. Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Personal identifier*, puis cliquez sur *Next*.
++
+Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur, et comme nom du filtre dans la page Investigation.
+
++
+Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros de carte de crédit complets ou des données personnelles similaires (le masque apparaîtra dans l'interface utilisateur comme ceci: "Pass:[****] pass:[****] pass:[****] pass:[****]" 3434).
+
++
+image:screenshot_select_classifier_type2.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
+
+. Dans la page _Select Data Analysis Tool_, sélectionnez *Custom Keywords* comme méthode à utiliser pour définir le classificateur, puis cliquez sur *Next*.
++
+image:screenshot_select_classifier_tool_keywords.png["Capture d'écran montrant la sélection de mots-clés personnalisés comme outil que Data Sense utilisera pour créer le motif."]
+
+. Dans la page _Create Logic_, entrez les mots-clés que vous voulez reconnaître - chaque mot sur une ligne séparée - et cliquez sur *Validate*.
++
+La capture d'écran ci-dessous montre les noms de produits internes (différents types de wls). La recherche de données SENSE pour ces éléments n'est pas sensible à la casse.
+
++
+image:screenshot_select_classifier_create_logic_keyword.png["Capture d'écran de saisie des mots-clés de votre classificateur de client."]
+
+. Cliquez sur *terminé* et Data Sense commence à renumériser vos données.
+
+
+.Résultats
+Une fois l'analyse terminée, les résultats incluront ces nouvelles informations dans le tableau de bord de conformité sous la section « Résultats personnels » et dans la page enquête du filtre « données personnelles ».
+
+image:screenshot_add_keywords_result.png["Une capture d'écran montrant un exemple de résultats de mot-clé personnalisé se trouve dans le volet Résultats de l'enquête."]
+
+Comme vous pouvez le voir, le nom du classificateur est utilisé comme nom dans le panneau Résultats personnels. De cette manière, vous pouvez activer de nombreux groupes de mots-clés et voir les résultats pour chaque groupe.
+
+
+
 == Ajoutez des identificateurs de données personnelles personnalisés à l'aide d'un regex
 
 Vous pouvez ajouter un modèle personnel pour identifier des informations spécifiques dans vos données à l'aide d'une expression régulière personnalisée (regex). Cela vous permet de créer un nouveau regex personnalisé pour identifier de nouveaux éléments d'informations personnelles qui n'existent pas encore dans le système. Le regex est ajouté aux modèles prédéfinis que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
@@ -91,41 +138,93 @@ Par exemple, vous pouvez voir où vos ID de produit internes sont mentionnés da
 
 Après avoir ajouté la fenêtre regex, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats s'affichent dans le tableau de bord de conformité de détection des données, sous la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
 
+Voir https://regex101.com/[] si vous avez besoin d'aide pour construire l'expression régulière que vous avez besoin.
+
 .Étapes
-. Dans l'onglet _Custom Classificateurs_, cliquez sur *Add New Classificateur* pour lancer l'assistant _Add Custom Classificateur_.
+. Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.
 +
 image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant comment lancer l'assistant Ajouter un classificateur personnalisé."]
 
 . Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Personal identifier*, puis cliquez sur *Next*.
 +
-Le nom que vous entrez apparaîtra dans l'interface utilisateur de détection de données comme en-tête pour les fichiers scannés qui correspondent aux exigences du classificateur. Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros complets de carte de crédit ou des données personnelles similaires.
+Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur, et comme nom du filtre dans la page Investigation. Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros complets de carte de crédit ou des données personnelles similaires.
 
 +
 image:screenshot_select_classifier_type.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
 
 . Dans la page _Select Data Analysis Tool_, sélectionnez *Custom Regular expression* comme méthode à utiliser pour définir le classificateur, puis cliquez sur *Next*.
 +
-image:screenshot_select_classifier_tool.png["Capture d'écran montrant la sélection de l'expression régulière personnalisée comme outil utilisé par Data Sense pour créer le motif."]
+image:screenshot_select_classifier_tool_regex.png["Capture d'écran montrant la sélection de l'expression régulière personnalisée comme outil utilisé par Data Sense pour créer le motif."]
 
 . Dans la page _Create Logic_, entrez l'expression régulière et les mots de proximité, puis cliquez sur *Done*.
 +
 .. Vous pouvez entrer n'importe quelle expression régulière légale. Cliquez sur le bouton *Validate* pour que Data Sense vérifie que l'expression régulière est valide et qu'elle n'est pas trop large -- ce qui signifie qu'elle renvoie trop de résultats.
 .. Vous pouvez également saisir des mots de proximité pour vous aider à affiner la précision des résultats. Il s'agit de mots qui se trouvent généralement dans les 300 caractères du motif que vous recherchez (avant ou après le motif trouvé). Entrez chaque mot ou expression sur une ligne distincte.
 +
-image:screenshot_select_classifier_create_logic.png["Capture d'écran de saisie des mots de regex et de proximité pour votre classificateur de client."]
+image:screenshot_select_classifier_create_logic_regex.png["Capture d'écran de saisie des mots de regex et de proximité pour votre classificateur de client."]
 
 
 
 
 
-.Résultat
+.Résultats
 Le classificateur est ajouté et le capteur de données commence à analyser toutes vos sources de données. Vous revenez à la page Classificateurs personnalisés où vous pouvez afficher le nombre de fichiers correspondant à votre nouveau classificateur. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
 
 image:screenshot_personal_info_regex_added.png["Une capture d'écran montrant les résultats d'un nouveau classificateur regex ajouté au système avec l'acquisition en cours."]
 
 
 
-=== Afficher les résultats de vos classificateurs personnalisés
+== Ajouter des catégories personnalisées
+
+Data Sense récupère les données qu'il analyse et les divise en différents types de catégories. Ces catégories sont des thèmes basés sur l'analyse par intelligence artificielle du contenu et des métadonnées de chaque fichier. link:reference-private-data-categories.html#types-of-categories["Voir la liste des catégories prédéfinies"].
+
+Les catégories peuvent vous aider à comprendre ce qui se passe avec vos données en vous montrant les types d'informations dont vous disposez. Par exemple, une catégorie telle que _CV_ ou _contrats d'employés_ peut inclure des données sensibles. Lorsque vous étudiez les résultats, vous pouvez constater que les contrats d'employés sont stockés dans un emplacement non sécurisé. Vous pouvez ensuite corriger ce problème.
+
+Vous pouvez ajouter des catégories personnalisées à Data Sense pour identifier dans vos données les catégories d'informations spécifiques à votre patrimoine. Pour ajouter chaque catégorie, vous créez des fichiers d'entraînement qui contiennent les catégories de données que vous souhaitez identifier, puis vous devez faire passer Data Sense en revue ces fichiers pour les « apprendre » via l'IA afin qu'il puisse identifier ces données dans vos sources de données. Les catégories sont ajoutées aux catégories prédéfinies existantes que Data Sense identifie déjà et les résultats sont visibles dans la section catégories.
+
+Par exemple, vous pouvez voir où se trouvent les fichiers d'installation compressés au format .gz dans vos fichiers afin que vous puissiez les supprimer, si nécessaire.
+
+Après la mise à jour des catégories personnalisées, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité Data Sense, sous la section « catégories », et dans la page Investigation du filtre « Catégorie ». link:task-controlling-private-data.html#viewing-files-by-categories["Voir comment afficher les fichiers par catégories"].
+
+.Ce dont vous avez besoin
+Vous devrez créer au moins 25 fichiers de formation contenant des exemples des catégories de données que Data Sense doit reconnaître. Les types de fichiers suivants sont pris en charge :
+
+`+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+
+Les fichiers doivent être d'au moins 100 octets et ils doivent se trouver dans un dossier accessible par Data Sense.
+
+.Étapes
+. Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.
++
+image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant comment lancer l'assistant Ajouter un classificateur personnalisé."]
+
+. Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Catégorie*, puis cliquez sur *Suivant*.
++
+Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés correspondant à la catégorie de données que vous définissez, et comme nom du filtre dans la page Investigation.
+
++
+image:screenshot_select_classifier_category.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
+
+. Dans la page _Créer logique_, assurez-vous que les fichiers d'apprentissage sont préparés, puis cliquez sur *Sélectionner les fichiers*.
++
+image:screenshot_category_create_logic.png["Capture d'écran de la page Créer une logique dans laquelle vous ajoutez les fichiers contenant les données dont vous souhaitez que Data Sense puisse apprendre."]
+
+. Entrez l'adresse IP du volume et le chemin où se trouvent les fichiers de formation, puis cliquez sur *Ajouter*.
++
+image:screenshot_category_add_files.png["Une capture d'écran montrant comment saisir l'emplacement des fichiers de formation."]
+
+. Vérifier que les fichiers de formation ont été reconnus par Data Sense. Cliquez sur *x* pour supprimer tous les fichiers de formation qui ne répondent pas aux exigences. Cliquez ensuite sur *terminé*.
++
+image:screenshot_category_files_added.png["Capture d'écran montrant les fichiers que Data Sense utilisera comme fichiers d'entraînement définissant la nouvelle catégorie."]
+
+
+
+.Résultats
+La nouvelle catégorie est créée telle que définie par les fichiers de formation et ajoutée à Data Sense. Ensuite, Data Sense commence à analyser toutes vos sources de données pour identifier les fichiers qui s'intègrent à cette nouvelle catégorie. Vous êtes renvoyé à la page Classifications personnalisées où vous pouvez afficher le nombre de fichiers correspondant à votre nouvelle catégorie. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
+
+
+
+== Afficher les résultats de vos classificateurs personnalisés
 
 Vous pouvez afficher les résultats de n'importe lequel de vos classificateurs personnalisés dans le tableau de bord de conformité et dans la page Investigation. Par exemple, cette capture d'écran affiche les informations correspondantes dans le tableau de bord de conformité, sous la section « Résultats personnels ».
 
@@ -139,123 +238,10 @@ image:screenshot_custom_classifier_top_5.png["Une capture d'écran montrant les 
 
 
 
-=== Gérer les classificateurs personnalisés
+== Gérer les classificateurs personnalisés
 
 Vous pouvez modifier n'importe lequel des classificateurs personnalisés que vous avez créés à l'aide du bouton *Edit Classificateur*.
 
 Et si vous décidez ultérieurement que vous n'avez pas besoin de détection de données pour identifier les modèles personnalisés que vous avez ajoutés, vous pouvez utiliser le bouton *Supprimer classificateur* pour supprimer chaque élément.
 
 image:screenshot_custom_classifiers_manage.png["Capture d'écran de la page Classificateurs personnalisés avec les boutons pour modifier et supprimer un classificateur."]
-
-
-
-== Ajoutez des mots-clés personnalisés à partir d'un fichier texte
-
-Vous pouvez ajouter des mots-clés personnalisés à Data Sense afin qu'ils identifient des informations spécifiques dans vos données. Vous ajoutez les mots clés d'un fichier texte que vous définissez. Les mots-clés sont ajoutés aux mots-clés prédéfinis existants que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
-
-Par exemple, vous pouvez voir où les noms de produits internes sont mentionnés dans tous vos fichiers pour vous assurer que ces noms ne sont pas accessibles dans des emplacements qui ne sont pas sécurisés.
-
-Après la mise à jour des mots-clés personnalisés, Data Sense redémarre l'analyse de toutes les sources de données. Les nouveaux résultats apparaissent dans Data Sense une fois l'analyse terminée.
-
-Vous devez ajouter, ou créer, les fichiers texte qui incluent les mots clés personnalisés à l'emplacement suivant sur le système Data Sense :
-
- /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
-Vous pouvez créer un seul fichier avec plusieurs mots-clés, ou vous pouvez ajouter de nombreux fichiers qui contiennent chacun certains mots-clés. Le format du fichier est un mot sur chaque ligne, par exemple, les noms de produits internes qui sont des types de hiboux sont répertoriés ci-dessous :
-
-_internal_product_names.txt_
-
-....
-barred
-barn
-horned
-snowy
-screech
-....
-La recherche de données SENSE pour ces éléments n'est pas sensible à la casse.
-
-Prenez en compte les conditions suivantes :
-
-* Le nom de fichier ne doit pas contenir de chiffres.
-* Chaque fichier peut contenir un maximum de 100,000 mots. S'il y a plus de mots, seuls les 100,000 premiers sont ajoutés.
-* Chaque mot doit comporter au moins 3 caractères. Les mots plus courts sont ignorés.
-* Les mots en double ne sont ajoutés qu'une seule fois.
-
-
-
-
-=== Accéder à la ligne de commande
-
-Vous devrez accéder au système Data Sense pour lancer la commande afin d'ajouter des mots-clés personnalisés.
-
-Lorsque Data Sense est installé sur votre site, vous pouvez accéder directement à la ligne de commande.
-
-Lorsque Data Sense est déployé dans le cloud, vous devez utiliser SSH vers l'instance Data Sense. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = emplacement des clés d'authentification ssh
-* <machine_utilisateur> :
-+
-** Pour AWS : utilisez <utilisateur ec2>
-** Pour Azure : utilisez l'utilisateur créé pour l'instance BlueXP
-** Pour GCP : utilisez l'utilisateur créé pour l'instance BlueXP
-
-
-* <dataense_ip> = adresse IP de l'instance de la machine virtuelle
-
-
-Notez que vous devrez modifier les règles entrantes du groupe de sécurité pour accéder au système sur le cloud. Pour plus de détails, voir :
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Règles de groupe de sécurité dans Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
-
-
-
-
-=== Syntaxe de commande pour ajouter des mots-clés personnalisés
-
-La syntaxe de commande permettant d'ajouter des mots-clés personnalisés à partir d'un fichier est la suivante :
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f <file_name>.txt
-* <nom_fichier> = nom du fichier contenant les mots-clés.
-
-
-Vous exécutez la commande à partir du chemin */opt/netapp/Datase/*.
-
-Si vous avez créé de nombreux fichiers contenant des mots-clés personnalisés, vous pouvez ajouter les mots-clés de tous les fichiers en même temps à l'aide de la commande suivante :
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
-
-
-=== Exemple
-
-Pour voir où vos noms de produits internes sont mentionnés dans tous vos fichiers, entrez la commande suivante.
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 126 | 1 | None | upload_custom_keywords_126 | All legal keywords were successfully inserted
-.Résultats
-Après l'analyse suivante, les résultats incluent ces nouvelles informations dans le tableau de bord de conformité sous la section « Résultats personnels » et dans la page Investigation du filtre « données personnelles ».
-
-image:screenshot_add_keywords_result.png["Une capture d'écran montrant un exemple de résultats de mot-clé personnalisé se trouve dans le volet Résultats de l'enquête."]
-
-Comme vous pouvez le voir, le nom du fichier texte est utilisé comme nom dans le panneau des résultats personnels. De cette manière, vous pouvez activer des mots-clés à partir de différents fichiers texte et voir les résultats pour chaque type de mot-clé.
-
-
-
-=== Désactiver les mots clés personnalisés
-
-Si vous décidez ultérieurement que vous n'avez pas besoin de détection de données pour identifier certains mots-clés personnalisés que vous avez ajoutés précédemment, utilisez l'option *deactivate* de la commande pour supprimer les mots-clés qui sont définis dans le fichier texte.
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
-Par exemple, pour supprimer les mots clés définis dans le fichier *Internal_PRODUCT_Names.txt* :
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully

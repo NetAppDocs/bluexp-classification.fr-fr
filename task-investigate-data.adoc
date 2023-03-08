@@ -104,7 +104,7 @@ Utilisez les filtres suivants pour afficher les données en fonction des critèr
 | Dernière modification | Sélectionnez une plage horaire pour la dernière modification du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
 
 
-| Dernier accès | Sélectionnez une plage horaire pour la dernière fois où le fichier a été accédé. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par Data Sense, il s'agit de la dernière analyse du fichier par Data Sense. 
+| Dernier accès | Sélectionnez une plage horaire lors du dernier accès au fichier ou au répertoire (CIFS ou NFS uniquement). Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par Data Sense, il s'agit de la dernière analyse du fichier par Data Sense. 
 |===
 
 
@@ -117,7 +117,7 @@ Utilisez les filtres suivants pour afficher les données en fonction de l'emplac
 | Filtre | Détails 
 
 
-| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. 
+| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. Notez que l'inclusion de "*" dans ce filtre n'a aucun effet ; vous devrez rechercher des fichiers et des sous-dossiers spécifiques en utilisant des chemins complets. 
 
 
 | Type de répertoire | Sélectionnez le type de répertoire : « partager » ou « dossier ». 
@@ -184,7 +184,12 @@ Utilisez le filtre suivant pour afficher les données en fonction de l'état d'a
 
 
 | État de l'analyse | Sélectionnez une option pour afficher la liste des fichiers en attente de première numérisation, terminés en cours de numérisation, en attente de numérisation ou qui n'ont pas pu être numérisés. 
+
+
+| Événement d'analyse d'acquisition | Indiquez si vous souhaitez afficher les fichiers qui n'ont pas été classés car Data Sense n'a pas pu revenir à l'heure du dernier accès ou les fichiers classifiés même si Data Sense n'a pas pu rétablir l'heure du dernier accès. 
 |===
+link:reference-collected-metadata.html#last-access-time-timestamp["Voir les détails sur l'horodatage de la « dernière heure d'accès »"] Pour plus d'informations sur les éléments qui apparaissent dans la page Investigation lors du filtrage à l'aide de l'événement Scan Analysis.
+
 
 
 === Filtrer les données par doublons

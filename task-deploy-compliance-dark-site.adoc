@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: 'Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d"un accès Internet. Ce type d"installation est parfait pour vos sites sécurisés.' 
+summary: 'Effectuez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d"un accès Internet. Ce type d"installation est parfait pour vos sites sécurisés.' 
 ---
-= Déploiement des données cloud sur site sans accès Internet
+= Déployez Cloud Data Sense sur un hôte sans accès Internet
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte d
 
 
 [role="lead"]
-Suivez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d'un accès Internet. Ce type d'installation est parfait pour vos sites sécurisés.
+Effectuez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d'un accès Internet. Ce type d'installation est parfait pour vos sites sécurisés.
 
 Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Déployer Data Sense dans un site sur site qui dispose d'un accès Internet"].
 
@@ -48,7 +48,7 @@ La plupart des fonctions de détection de données fonctionnent lorsqu'elles son
 * Réception des commentaires de l'utilisateur
 * Mises à niveau logicielles automatisées depuis BlueXP
 +
-Le connecteur BlueXP et Data Sense nécessitent tous deux des mises à niveau manuelles régulières pour activer de nouvelles fonctionnalités. Vous pouvez voir la version de détection de données au bas des pages de l'interface utilisateur de détection de données. Vérifier le link:whats-new.html["Notes de version de Cloud Data Sense"] pour voir les nouvelles fonctionnalités dans chaque version et si vous voulez ou non ces fonctionnalités. Vous pouvez ensuite suivre les étapes à <<Mettre à niveau le logiciel Data Sense,Mettez à niveau votre logiciel Data Sense>>.
+Le connecteur BlueXP et Data Sense nécessitent tous deux des mises à niveau manuelles régulières pour activer de nouvelles fonctionnalités. Vous pouvez voir la version de détection de données au bas des pages de l'interface utilisateur de détection de données. Vérifier le link:whats-new.html["Notes de version de Cloud Data Sense"] pour voir les nouvelles fonctionnalités dans chaque version et si vous voulez ou non ces fonctionnalités. Vous pouvez ensuite suivre les étapes à https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Mettez à niveau le connecteur BlueXP"^] et <<Mettre à niveau le logiciel Data Sense,Mettez à niveau votre logiciel Data Sense>>.
 
 
 
@@ -88,6 +88,7 @@ Le logiciel de détection des données doit être exécuté sur un hôte qui ré
 
 * *Système d'exploitation* : Red Hat Enterprise Linux ou CentOS versions 8.0 à 8.7
 +
+** CentOS Stream 8 est également pris en charge
 ** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
 ** Le système d'exploitation doit pouvoir installer le moteur Docker
 
@@ -252,7 +253,7 @@ Procédez comme suit lors de l'installation du logiciel Data Sense sur un hôte 
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 Ceci extrait le logiciel requis et le fichier d'installation réel *cc_onsite_installer.tar.gz*.
@@ -410,7 +411,7 @@ Le logiciel Data Sense étant mis à jour régulièrement avec de nouvelles fonc
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 Ceci extrait le fichier d'installation *cc_onsite_installer.tar.gz*.

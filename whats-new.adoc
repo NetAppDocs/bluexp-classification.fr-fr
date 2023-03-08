@@ -18,6 +18,66 @@ Découvrez les nouveautés du Cloud Data sens.
 
 
 
+== 7 mars 2023 (version 1.21)
+
+
+
+=== Nouvelle fonctionnalité permettant d'ajouter vos propres catégories personnalisées à partir de l'interface utilisateur Data Sense
+
+Data Sense vous permet désormais d'ajouter vos propres catégories personnalisées afin que Data Sense identifie les fichiers qui correspondent à ces catégories. Data Sense en a beaucoup https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["catégories prédéfinies"], cette fonction vous permet d'ajouter des catégories personnalisées pour identifier l'endroit où les informations propres à votre organisation se trouvent dans vos données.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["En savoir plus >>"^].
+
+
+
+=== Vous pouvez maintenant ajouter des mots clés personnalisés à partir de l'interface utilisateur Data Sense
+
+Data Sense a eu la possibilité d'ajouter des mots clés personnalisés que Data Sense identifiera dans les analyses futures pendant un certain temps. Cependant, vous devez vous connecter à l'hôte Data Sense Linux et utiliser une interface de ligne de commande pour ajouter les mots clés. Dans cette version, la possibilité d'ajouter des mots-clés personnalisés se trouve dans l'interface utilisateur Data Sense, ce qui facilite l'ajout et la modification de ces mots-clés.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["En savoir plus sur l'ajout de mots-clés personnalisés à partir de l'interface utilisateur Data Sense"^].
+
+
+
+=== Possibilité d'avoir des fichiers d'analyse de Data Sense *NOT* lorsque l'heure du dernier accès sera modifiée
+
+Par défaut, si Data Sense ne dispose pas des autorisations d'écriture adéquates, le système n'analyse pas les fichiers de vos volumes, car Data Sense ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Cependant, si vous ne vous souciez pas de réinitialiser l'heure du dernier accès à l'heure d'origine dans vos fichiers, vous pouvez remplacer ce comportement dans la page Configuration afin que Data Sense analyse les volumes sans tenir compte des autorisations.
+
+Grâce à cette fonctionnalité, et un nouveau filtre nommé « Scan Analysis Event » a été ajouté pour vous permettre d'afficher les fichiers qui n'ont pas été classés car Data Sense n'a pas pu revenir à l'heure du dernier accès, ou les fichiers qui ont été classés même si Data Sense n'a pas pu revenir à l'heure du dernier accès.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["En savoir plus sur l'horodatage du dernier accès et les autorisations requises par Data Sense"].
+
+
+
+=== Data Sense identifie trois nouveaux types de données personnelles
+
+Data Sense peut identifier et catégoriser les fichiers contenant les types de données suivants :
+
+* Numéro de carte d'identité Botswana (Omang)
+* Botswana Numéro de passeport
+* Carte d'identité nationale d'enregistrement de Singapour (NRIC)
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Consultez tous les types de données personnelles que Data Sense peut identifier dans vos données"].
+
+
+
+=== Mise à jour des fonctionnalités des répertoires
+
+* L'option « Rapport CSV léger » pour les rapports d'investigation de données inclut désormais des informations provenant des répertoires.
+* Le filtre heure « dernier accès » affiche désormais l'heure du dernier accès pour les fichiers et les répertoires.
+
+
+
+
+=== Améliorations apportées à l'installation
+
+* Data Sense peut être installé sur des hôtes Linux qui exécutent CentOS Stream 8.
+* Le programme d'installation de Data Sense pour les sites sans accès à Internet (sites invisibles) effectue désormais un pré-contrôle pour s'assurer que vos exigences système et réseau sont en place pour une installation réussie.
+* Les fichiers journaux d'audit d'installation sont enregistrés maintenant ; ils sont écrits dans `/ops/netapp/install_logs`.
+
+
+
+
 == 5 février 2023 (version 1.20)
 
 
@@ -30,7 +90,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 
 
-=== Vous pouvez maintenant ajouter des modèles personnels que Data Sense identifiera à partir de l'interface utilisateur
+=== Vous pouvez désormais ajouter des modèles personnels à partir de l'interface utilisateur de Data Sense
 
 Data Sense a la possibilité d'ajouter des « données personnelles » personnalisées que Data Sense identifiera pendant un certain temps dans les futures analyses. Cependant, vous devez vous connecter à l'hôte Data Sense Linux et utiliser une ligne de commande pour ajouter les modèles personnalisés. Dans cette version, la possibilité d'ajouter des motifs personnels à l'aide d'un regex se trouve dans l'interface utilisateur de Data Sense, ce qui facilite l'ajout et la modification de ces modèles personnalisés.
 
@@ -425,195 +485,3 @@ En plus des informations d'identification Active Directory que vous entrez afin 
 === Les « règles » de Data Sense peuvent désormais être utilisées pour supprimer des fichiers
 
 Data Sense peut supprimer automatiquement des fichiers correspondant à la requête que vous définissez dans une stratégie. link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["Voir comment créer des stratégies personnalisées"].
-
-
-
-== 16 décembre 2021
-
-
-
-=== Capacité de détection de données à analyser les données sur des sites sombres
-
-Cloud Manager (le connecteur) et Cloud Data SENSE peuvent être déployés sur un site sur site qui ne dispose pas d'un accès Internet. Vos sites sécurisés peuvent désormais utiliser Cloud Manager pour gérer vos clusters ONTAP sur site, répliquer les données entre les clusters et analyser les données issues de ces clusters à l'aide de Cloud Data Sense.
-
-link:task-deploy-compliance-dark-site.html["Découvrez comment déployer des données cloud sur un site sans accès à Internet"^].
-
-
-
-== 28 novembre 2021
-
-
-
-=== Il est possible d'utiliser Data Sense pour cloner un volume à partir d'un système ONTAP
-
-Vous pouvez utiliser détection des données pour cloner un volume ONTAP, mais inclure uniquement les fichiers sélectionnés à partir du volume source dans le nouveau volume cloné. Cela est utile dans les situations où vous migrez des données et que vous souhaitez exclure certains fichiers ou si vous souhaitez créer une copie d'un volume pour le test.
-
-link:task-managing-highlights.html#cloning-volume-data-to-a-new-volume["Voir comment cloner un volume"].
-
-
-
-=== L'abonnement GCP Marketplace pour Cloud Manager inclut désormais la prise en charge de Cloud Data Sense
-
-Le https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Abonnement GCP Marketplace pour Cloud Manager"^] Inclut désormais la prise en charge de Cloud Data SENSE. Vous pouvez désormais utiliser cet abonnement avec paiement basé sur l'utilisation pour analyser les données de systèmes Cloud Volumes ONTAP déployés sur Google Cloud en plus d'utiliser une licence BYOL de NetApp.
-
-
-
-=== Possibilité de consulter l'état de vos actions de conformité à long terme
-
-Lorsque vous exécutez une action à partir du volet Résultats de l'enquête sur de nombreux fichiers, par exemple la suppression de 50 fichiers, le processus peut prendre un certain temps. Vous pouvez maintenant surveiller l’état de ces actions asynchrones pour savoir quand elles ont été appliquées à tous les fichiers.
-
-link:task-view-compliance-actions.html["Découvrez comment afficher l'état de vos actions de conformité en cours"].
-
-
-
-=== Deux autres types de données personnelles peuvent être identifiés par Data Sense
-
-Data Sense peut maintenant trouver les types de données personnelles « British Passport » et « National Health Service Number » dans les fichiers. link:reference-private-data-categories.html#types-of-personal-data["Consultez la liste de tous les types de données personnelles que Data Sense trouve dans les analyses"].
-
-
-
-=== Nouveau filtre pour afficher les fichiers appartenant à des types spécifiques d'environnements de travail
-
-Lors du filtrage des données dans la page Data Investigation, un nouveau filtre pour “Working Environment Type” a été ajouté. Cela vous permet de filtrer les résultats pour les systèmes Cloud Volumes ONTAP, FSX pour les systèmes ONTAP, les systèmes ONTAP sur site, etc.
-
-
-
-== 7 novembre 2021
-
-
-
-=== Vous pouvez désormais mapper ou classer des volumes individuels dans vos environnements de travail
-
-Auparavant, vous pouviez mapper tous les volumes ou classifier tous les volumes dans chaque environnement de travail. Vous pouvez désormais mapper _ou_ des volumes individuels et les classer. Cette option est disponible pour les volumes Cloud Volumes ONTAP, les volumes ANF, les volumes ONTAP sur site et FSX pour les volumes ONTAP.
-
-
-
-=== Il permet de copier les fichiers depuis une source de données vers un partage NFS de destination
-
-Vous pouvez copier tous les fichiers source que Data Sense analyse vers un partage NFS de destination. Ceci est utile si vous voulez faire une copie de certaines données et les déplacer vers un autre emplacement NFS. link:task-managing-highlights.html#copying-source-files-to-an-nfs-share["En savoir plus >>"].
-
-
-
-=== Capacité à analyser les volumes de protection des données sur FSX pour les systèmes de fichiers ONTAP
-
-Vous pouvez désormais analyser les volumes de protection des données sur FSX pour les systèmes de fichiers ONTAP. link:task-scanning-fsx.html#scanning-data-protection-volumes["En savoir plus >>"].
-
-
-
-=== Nouveau filtre pour afficher les fichiers en fonction de la plage de dates lorsque Data Sense les a découverts pour la première fois
-
-Un nouveau filtre dans la page Investigation appelé « heure découverte » vous permet d'afficher les fichiers selon la plage de dates lorsque Data Sense a découvert les fichiers pour la première fois. L'heure découverte a également été ajoutée à la page Détails du fichier et aux rapports que vous avez sortis au format CSV pour un fichier.
-
-
-
-=== Certification SOC 2 Type 2
-
-Un cabinet d'experts-comptables indépendant et certifié des services, a examiné Cloud Data Sense et a affirmé qu'il avait atteint les rapports SOC 2 de type 2 en fonction des critères de services de confiance applicables.
-
-https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rapports SOC 2 de NetApp"^].
-
-
-
-== 4 octobre 2021
-
-
-
-=== Support pour les licences BYOL de NetApp
-
-Outre la gestion des licences par le biais de marchés de votre fournisseur cloud, vous pouvez désormais acheter un modèle BYOL (Bring Your Own License) auprès de NetApp, que vous pouvez utiliser sur l'ensemble des environnements de travail et des sources de données de votre compte Cloud Manager.
-
-link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["En savoir plus sur la nouvelle licence BYOL Cloud Data Sense"].
-
-
-
-=== Prise en charge de Google Cloud Platform
-
-Cloud Data Sense peut analyser les données depuis vos systèmes Cloud Volumes ONTAP déployés sur GCP. Les données SENSE doivent être déployées sur GCP, et le connecteur doit être déployé sur GCP ou sur site. Le compte de service GCP associé au connecteur requiert les dernières autorisations pour déployer le cloud Data Sense vers GCP.
-
-
-
-=== Capacité à analyser les volumes CIFS sur FSX pour les systèmes de fichiers ONTAP
-
-Data Sense peut désormais analyser les volumes CIFS depuis FSX pour les systèmes ONTAP. link:task-scanning-fsx.html["Découvrez comment analyser Amazon FSX pour les volumes ONTAP"].
-
-
-
-== 2 septembre 2021
-
-
-
-=== Capacité à analyser les volumes NFS sur FSX pour les systèmes de fichiers ONTAP
-
-Ajout de la prise en charge de l'analyse des données sur les volumes NFS sur Amazon FSX pour les systèmes ONTAP. link:task-scanning-fsx.html["Découvrez comment configurer l'analyse de vos systèmes FSX pour ONTAP"].
-
-
-
-=== Les entrées « Etat » de détection de données ont été remplacées par des entrées « étiquettes »
-
-La fonctionnalité permettant d'ajouter des informations d'état à vos fichiers à l'aide de Data Sense a changé la terminologie en « balises ». Il s'agit de balises de niveau fichier, pour ne pas confondre avec le balisage des niveaux de ressources qui peut être appliqué aux volumes, aux instances EC2, aux machines virtuelles, etc link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["En savoir plus sur les balises au niveau des fichiers"].
-
-
-
-== 1er août 2021
-
-
-
-=== Capacité à gérer les paramètres de fichiers pour plusieurs fichiers à la fois
-
-Dans les versions antérieures de Cloud Data SENSE, vous pouvez effectuer les actions suivantes sur un fichier à la fois : ajouter une balise d'état, attribuer un utilisateur et ajouter une étiquette AIP. Vous pouvez maintenant sélectionner plusieurs fichiers à partir de la page recherche de données et effectuer chacune de ces actions sur plusieurs fichiers.
-
-
-
-=== Le tableau de bord sur la gouvernance affiche les données à leur création ou à leur date de dernier accès
-
-Lors de l'affichage du graphique Age of Data dans le tableau de bord gouvernance, en plus de l'affichage des données en fonction de la dernière modification, vous pouvez maintenant afficher les données par le moment où elles ont été créées ou par le dernier accès (lorsqu'elles ont été lues). Cette information est également fournie dans le rapport de mappage de données.
-
-
-
-=== Possibilité d'utiliser plusieurs hôtes pour une puissance de traitement supplémentaire lors de la numérisation de grandes configurations
-
-Lorsque vous déployez Data Sense sur site, vous pouvez désormais installer un logiciel de numérisation sur des hôtes supplémentaires sur site lorsque vous prévoyez de scanner des configurations incluant des pétaoctets de données. Ces _nœuds du scanner_ supplémentaires fournissent une puissance de traitement accrue lors de la numérisation de très grandes configurations.
-
-Découvrez comment link:task-deploy-compliance-onprem.html#multi-host-installation-for-large-configurations["Déployez le logiciel Data Sense sur plusieurs hôtes"].
-
-
-
-== 7 juillet 2021
-
-
-
-=== Il est possible de déplacer les fichiers d'une source de données vers un partage NFS de destination
-
-Une nouvelle fonction vous permet link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["Déplacement des fichiers source que Data Sense effectue des analyses vers n'importe quel partage NFS"]. Cela vous permet de déplacer des fichiers sensibles ou liés à la sécurité vers une zone spéciale afin de pouvoir effectuer davantage d'analyses.
-
-
-
-=== Possibilité de classer rapidement les données au lieu d'effectuer une analyse de classification complète
-
-Vous pouvez désormais choisir de mapper rapidement les données en catégories au lieu d'effectuer une analyse de classification complète. Cela vous permet de link:task-generating-compliance-reports.html#data-mapping-report["Afficher le rapport de mappage de données"] Dans le tableau de bord de gouvernance pour obtenir un aperçu de vos données lorsque certaines sources de données sont disponibles, vous n'avez pas besoin d'exécuter une analyse complète.
-
-
-
-=== Possibilité d'attribuer des fichiers aux utilisateurs de Cloud Manager
-
-Aujourd'hui c'est possible link:task-org-private-data.html#assigning-users-to-manage-certain-files["Attribuez un fichier à un utilisateur Cloud Manager spécifique"] afin que cette personne puisse être responsable de toutes les actions de suivi qui doivent être effectuées sur le dossier. Cette fonctionnalité peut être utilisée avec la fonction existante pour ajouter des balises personnalisées à un fichier.
-
-Un nouveau filtre dans la page Investigation vous permet également d'afficher facilement tous les fichiers qui ont la même personne dans le champ « assigné à ».
-
-
-
-=== Possibilité d'utiliser une instance Cloud Data Sense plus petite
-
-Certains utilisateurs avec des exigences d'analyse plus faibles ont besoin de pouvoir utiliser une instance Cloud Data SENSE plus petite. Aujourd'hui c'est possible. L'utilisation de ces instances plus petites est limitée link:concept-cloud-compliance.html#using-a-smaller-instance-type["découvrez en premier lieu ces restrictions"].
-
-
-
-=== Capacité à effectuer des acquisitions lentes
-
-L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Toutefois, si vous vous préoccupez d'un impact minime, vous pouvez configurer Data Sense pour effectuer des acquisitions « lentes » maintenant. link:task-reduce-scan-speed.html["Découvrez comment"].
-
-
-
-=== La détection des données suit la dernière fois qu'un fichier a été accédé
-
-La dernière valeur de temps d'accès a été ajoutée à la page Détails du fichier et aux rapports que vous avez sortis au format CSV afin de voir quand les utilisateurs ont accédé pour la dernière fois au fichier.

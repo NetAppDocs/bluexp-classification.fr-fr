@@ -34,13 +34,13 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Type | Identificateur | Validation de proximité ? | Anglais | Allemand | Espagnol | Français | Japonais 
 
 
-.6+| Généralités | Adresse électronique | Non | ✓ | ✓ | ✓ |  | ✓ 
-
-
-| Numéro de carte de crédit | Non | ✓ | ✓ | ✓ |  | ✓ 
+.6+| Généralités | Numéro de carte de crédit | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Sujets de données | Non | ✓ | ✓ | ✓ |  |  
+
+
+| Adresse électronique | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Numéro IBAN (Numéro de compte bancaire international) | Non | ✓ | ✓ | ✓ |  | ✓ 
@@ -52,7 +52,7 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Mot de passe | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.51+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
+.54+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Permis de conduire australien | Oui. | ✓ | ✓ | ✓ |  |  
@@ -70,6 +70,12 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Carte d'identité belge (Numero National) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
+| Numéro de carte d'identité Botswana (Omang) | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Botswana Numéro de passeport | Oui. | ✓ | ✓ | ✓ |  |  
+
+
 | ID brésilien (CPF) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
@@ -77,9 +83,6 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 
 
 | ID bulgare (UCN) | Oui. | ✓ | ✓ | ✓ |  |  
-
-
-| Permis de conduire californien | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | ID croate (OIB) | Oui. | ✓ | ✓ | ✓ |  |  
@@ -127,9 +130,6 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Numéro d'identification fiscale hongrois | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire Indiana | Oui. | ✓ | ✓ | ✓ |  |  
-
-
 | Irish ID (PPS) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
@@ -157,9 +157,6 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Numéro du Service national de santé (NHS) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire de New York | Oui. | ✓ | ✓ | ✓ |  |  
-
-
 | Compte bancaire de la Nouvelle-Zélande | Oui. | ✓ | ✓ | ✓ |  |  
 
 
@@ -184,6 +181,9 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | ID roumain (CNP) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
+| Carte d'identité nationale d'enregistrement de Singapour (NRIC) | Oui. | ✓ | ✓ | ✓ |  |  
+
+
 | ID slovène (EMSO) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
@@ -200,6 +200,15 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 
 
 | ROYAUME-UNI ID (NINO) | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Permis de conduire de Californie aux États-Unis | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Permis de conduire de l'Indiana des États-Unis | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Permis de conduire New York aux États-Unis | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Numéro de sécurité sociale des États-Unis (SSN) | Oui. | ✓ | ✓ | ✓ |  |  
