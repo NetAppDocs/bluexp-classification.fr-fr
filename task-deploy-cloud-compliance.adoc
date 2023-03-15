@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: 'Déployez ce sens en quelques étapes dans le cloud. L"instance Data Sense sera déployée dans le même réseau de fournisseur cloud que BlueXP Connector.' 
+summary: 'Déployez ce sens en quelques étapes dans le cloud. BlueXP déploie l"instance Data Sense dans le même réseau de fournisseur cloud que le connecteur BlueXP.' 
 ---
-= Déployez les données du cloud dans le cloud
+= Déployez Cloud Data Sense dans le cloud à l'aide de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 'Déployez ce sens en quelques étapes dans le cloud. L"instance Data S
 
 
 [role="lead"]
-Déployez ce sens en quelques étapes dans le cloud. L'instance Data Sense sera déployée dans le même réseau de fournisseur cloud que BlueXP Connector.
+Déployez ce sens en quelques étapes dans le cloud. BlueXP déploie l'instance Data Sense dans le même réseau de fournisseur cloud que le connecteur BlueXP.
 
-Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Déployer Data Sense sur un hôte Linux avec accès à Internet"]. Ce type d'installation peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
+Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Installez Data Sense sur un hôte Linux disposant d'un accès Internet"]. Ce type d'installation peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
 
 

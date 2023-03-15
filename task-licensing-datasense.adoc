@@ -185,9 +185,9 @@ Lors de l'utilisation d'une licence BYOL Cloud Data Sense, BlueXP affiche un ave
 
 Utilisez l'icône de chat en bas à droite de l'interface BlueXP pour renouveler votre licence lorsque vous voyez ces avertissements.
 
-Si votre licence expire, Data Sense continue à fonctionner, mais l'accès aux tableaux de bord est bloqué afin que vous ne puissiez pas afficher les informations concernant vos données numérisées. Seule la page _Configuration_ est disponible au cas où vous souhaitez réduire le nombre de volumes analysés afin d'augmenter votre capacité de stockage sous la limite de licence.
+Si votre licence expire ou si vous avez atteint la limite BYOL, Data Sense continue de s'exécuter, mais l'accès aux tableaux de bord est bloqué afin que vous ne puissiez pas afficher les informations relatives à vos données numérisées. Seule la page _Configuration_ est disponible au cas où vous souhaitez réduire le nombre de volumes analysés afin d'augmenter votre capacité de stockage sous la limite de licence.
 
 Une fois que vous renouvelez votre licence BYOL, BlueXP met automatiquement à jour la licence dans le porte-monnaie numérique et offre un accès complet à tous les tableaux de bord. Si BlueXP ne parvient pas à accéder au fichier de licence via la connexion Internet sécurisée (par exemple, lorsqu'il est installé sur un site sombre), vous pouvez obtenir le fichier vous-même et le télécharger manuellement vers BlueXP. Pour obtenir des instructions, reportez-vous à la section <<Mise à jour d'une licence BYOL Cloud Data Sense,Comment mettre à jour une licence Cloud Data Sense>>.
 
 
-TIP: Si le compte que vous utilisez possède à la fois une licence BYOL et un abonnement PAYGO, Data Sense _ne_ pas passer à l'abonnement PAYGO lorsque la licence BYOL expire. Vous devez renouveler la licence BYOL.
+NOTE: Si le compte que vous utilisez possède à la fois une licence BYOL et un abonnement PAYGO, Data Sense _ne_ pas passer à l'abonnement PAYGO lorsque la licence BYOL expire. Vous devez renouveler la licence BYOL.

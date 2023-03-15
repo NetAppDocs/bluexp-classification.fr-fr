@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 'Suivez quelques étapes pour déployer Cloud Data SENSE sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet.' 
+summary: 'Effectuez quelques étapes pour déployer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet.' 
 ---
-= Déployez Cloud Data Sense sur un hôte disposant d'un accès Internet
+= Installez Data Sense sur un hôte disposant d'un accès Internet
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,21 @@ summary: 'Suivez quelques étapes pour déployer Cloud Data SENSE sur un hôte L
 
 
 [role="lead"]
-Suivez quelques étapes pour déployer Cloud Data SENSE sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet.
+Effectuez quelques étapes pour déployer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet.
 
 L'installation sur site peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
-Les installations sur site classiques comportent les composants et les connexions suivants.
+L'installation type sur un hôte Linux de votre site comporte les composants et les connexions suivants.
 
 image:diagram_deploy_onprem_overview.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 
+L'installation type sur un hôte Linux dans le cloud comprend les composants et connexions suivants.
+
+image:diagram_deploy_onprem_cloud_instance.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
+
 Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
-Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Déployer Data Sense dans un site sur site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Installez Data Sense sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
 
 
 
@@ -97,6 +101,8 @@ Assurez-vous de continuer d'exécuter le contrôle des données cloud. Le serveu
 ** 5 Gio sur /tmp
 +
 Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
+
+
 
 
 
@@ -227,7 +233,7 @@ Si vous utilisez plusieurs hôtes Data Sense pour fournir une puissance de trait
 
 
 
-== Déployer des solutions Data Sense sur site
+== Installez Data Sense sur l'hôte Linux
 
 Pour les configurations standard, le logiciel est installé sur un système hôte unique. <<Installation à un seul hôte pour les configurations courantes,Découvrez ces étapes ici>>.
 
@@ -261,26 +267,23 @@ Suivez ces étapes pour installer le logiciel Data Sense sur un hôte sur site u
 .Étapes
 . Téléchargez le logiciel Cloud Data SENSE sur le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
 . Copiez le fichier d'installation sur l'hôte Linux que vous envisagez d'utiliser (à l'aide de `scp` ou une autre méthode).
-. Dans BlueXP, sélectionnez *gouvernance > Classification*.
-. Cliquez sur *Activer détection de données*.
-+
-image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant de sélectionner le bouton pour activer le détection de données cloud."]
-
-. Selon que vous déployez une instance dans le cloud ou une instance de votre site, cliquez sur le bouton *déployer* approprié pour démarrer l'assistant de déploiement Data Sense.
-+
-image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur une machine dans le cloud ou sur site."]
-
-. La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie et collez-la dans un fichier texte afin que vous puissiez l'utiliser ultérieurement, puis cliquez sur *Fermer*. Par exemple :
-+
-`sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`
-
 . Décompressez le fichier d'installation sur la machine hôte, par exemple :
 +
 [source, cli]
 ----
 tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
 ----
-. Lorsque le programme d'installation vous le demande, vous pouvez entrer les valeurs requises dans une série d'invites, ou vous pouvez fournir les paramètres requis comme arguments de ligne de commande au programme d'installation.
+. Dans BlueXP, sélectionnez *gouvernance > Classification*.
+. Cliquez sur *Activer détection de données*.
++
+image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant de sélectionner le bouton pour activer le détection de données cloud."]
+
+. Selon que vous installez Data Sense sur une instance préparée dans le cloud ou sur une instance préparée dans votre environnement sur site, cliquez sur le bouton *Deploy* approprié pour démarrer l'installation de Data Sense.
++
+image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur une machine dans le cloud ou sur site."]
+
+. La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie (par exemple : `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) et collez-le dans un fichier texte pour pouvoir l'utiliser ultérieurement. Cliquez ensuite sur *Fermer* pour fermer la boîte de dialogue.
+. Sur la machine hôte, entrez la commande que vous avez copiée, puis suivez une série d'invites, ou vous pouvez fournir la commande complète incluant tous les paramètres requis comme arguments de ligne de commande.
 +
 Notez que le programme d'installation effectue une pré-vérification afin de s'assurer que vos exigences système et réseau sont en place pour une installation réussie.
 
@@ -291,7 +294,7 @@ Notez que le programme d'installation effectue une pré-vérification afin de s'
 
 
  a| 
-.. Coller les informations copiées à partir de l'étape 6 :
+.. Coller les informations copiées à partir de l'étape 7 :
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
 .. Entrez l'adresse IP ou le nom d'hôte de la machine hôte Data Sense afin qu'elle soit accessible par l'instance de connecteur.
 .. Entrez l'adresse IP ou le nom d'hôte de la machine hôte BlueXP Connector afin qu'elle soit accessible par l'instance Data Sense.
@@ -464,10 +467,7 @@ Valeurs variables :
 ** _User_token_ = jeton d'accès utilisateur JWT
 
 
-. Avant la fin du script add_scanner_node, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande et enregistrez-la dans un fichier texte. Par exemple :
-+
-`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`
-
+. Avant la fin du script add_scanner_node, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple : `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`) et enregistrez-le dans un fichier texte.
 . Sur *chaque hôte de nœud du scanner* :
 +
 .. Copiez le fichier d'installation de Data Sense (*DATASENNSE-INSTALLER-<version>.tar.gz*) sur la machine hôte (à l'aide de `scp` ou une autre méthode).
@@ -569,10 +569,7 @@ En plus des variables disponibles pour une installation à un seul hôte, une no
 Par exemple, cette commande ajoute 3 nœuds de scanner :
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
 
-. Avant la fin de l'installation du nœud Manager, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande et enregistrez-la dans un fichier texte. Par exemple :
-+
-`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`
-
+. Avant la fin de l'installation du nœud Manager, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple, `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) et enregistrez-le dans un fichier texte.
 . Sur *chaque hôte de nœud du scanner* :
 +
 .. Copiez le fichier d'installation de Data Sense (*DATASENNSE-INSTALLER-<version>.tar.gz*) sur la machine hôte (à l'aide de `scp` ou une autre méthode).

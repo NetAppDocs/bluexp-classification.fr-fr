@@ -21,11 +21,11 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: Déployez des données adaptées au cloud
       entries:
-      - title: Déploiement dans le cloud
+      - title: Déployez dans le cloud à l'aide de BlueXP
         url: "/task-deploy-cloud-compliance.html"
-      - title: Déploiement sur un hôte Linux avec accès à Internet
+      - title: Installez sur un hôte Linux avec accès à Internet
         url: "/task-deploy-compliance-onprem.html"
-      - title: Déploiement sur site sans accès Internet
+      - title: Installation sur site sans accès à Internet
         url: "/task-deploy-compliance-dark-site.html"
     - title: Activez la numérisation sur vos sources de données
       entries:
@@ -109,7 +109,7 @@ homepage:
       url: concept-cloud-compliance.html
     - title: Nouveautés
       url: whats-new.html
-    - title: Déployez votre sens des données dans le cloud
+    - title: Déployez automatiquement Data Sense dans le cloud
       url: task-deploy-cloud-compliance.html
     - title: Déploiement de Data Sense sur un hôte Linux avec Internet
       url: task-deploy-compliance-onprem.html
