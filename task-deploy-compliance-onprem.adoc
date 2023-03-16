@@ -92,19 +92,23 @@ Le logiciel de détection des données doit être exécuté sur un hôte qui ré
 
 Assurez-vous de continuer d'exécuter le contrôle des données cloud. Le serveur Cloud Data Sense doit rester activé pour analyser en continu vos données.
 
-* *CPU* : 16 cœurs
-* *RAM* : 64 Go (la mémoire d'échange doit être désactivée sur l'hôte)
-* *Disque* : SSD avec 500 Gio disponible sur /, ou
+* Selon la taille du jeu de données que vous prévoyez d'analyser, le système hôte peut être spécifié en trois tailles.
 +
-** 100 Gio disponible sur /opt
-** 400 Gio disponible sur /var
-** 5 Gio sur /tmp
+[cols="18,18,26,30"]
+|===
+| Taille du système | CPU | RAM (la mémoire d'échange doit être désactivée) | Disque 
+
+
+| Grand | 16 processeurs | 64 GO DE RAM | SSD de 500 Go sur /, ou * 100 Go disponibles sur /opt * 395 Go disponibles sur /var * 5 Go sur /tmp 
+
+
+| Moyen | 8 processeurs | 32 GO DE RAM | SSD de 200 Go sur /, ou * 50 Go disponibles sur /opt * 145 Go disponibles sur /var * 5 Go sur /tmp 
+
+
+| Petit | 8 processeurs | 16 GO DE RAM | SSD de 100 Go sur /, ou * 50 Go disponibles sur /opt * 45 Go disponibles sur /var * 5 Go sur /tmp 
+|===
 +
-Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
-
-
-
-
+Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
 * *Type d'instance EC2 AWS* : type d'instance qui répond aux exigences de CPU et de RAM ci-dessus. Nous vous recommandons https://aws.amazon.com/ec2/instance-types/m5/["m5.4xlarge"^].
 * *Taille de VM Azure* : type d'instance qui répond aux exigences de CPU et de RAM ci-dessus. Nous vous recommandons https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^].
@@ -260,7 +264,12 @@ Suivez ces étapes pour installer le logiciel Data Sense sur un hôte sur site u
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
 * Assurez-vous que les deux packages logiciels prérequis du système sont installés (Docker Engine et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur le système Linux.
-* Si vous utilisez un proxy et qu'il effectue une interception TLS, vous devez connaître le chemin d'accès sur le système Linux Data Sense où sont stockés les certificats CA TLS.
+* Si vous utilisez un proxy pour accéder à Internet :
++
+** Vous aurez besoin des informations du serveur proxy (adresse IP ou nom d'hôte, port de connexion, schéma de connexion : https ou http, nom d'utilisateur et mot de passe).
+** Si le proxy exécute l'interception TLS, vous devez connaître le chemin d'accès sur le système Data Sense Linux où sont stockés les certificats TLS CA.
+
+
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,autorisations et connectivité>>.
 
 
