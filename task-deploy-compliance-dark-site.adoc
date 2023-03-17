@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: 'Effectuez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d"un accès Internet. Ce type d"installation est parfait pour vos sites sécurisés.' 
+summary: 'Procédez en quelques étapes pour installer Data Sense sur un hôte Linux dans un site sur site qui ne dispose pas d"un accès Internet. Ce type d"installation est parfait pour vos sites sécurisés.' 
 ---
 = Installez Data Sense sur un hôte sans accès à Internet
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Effectuez quelques étapes pour déployer Cloud Data Sense sur un hôt
 
 
 [role="lead"]
-Effectuez quelques étapes pour déployer Cloud Data Sense sur un hôte dans un site sur site qui ne dispose pas d'un accès Internet. Ce type d'installation est parfait pour vos sites sécurisés.
+Procédez en quelques étapes pour installer Data Sense sur un hôte Linux dans un site sur site qui ne dispose pas d'un accès Internet. Ce type d'installation est parfait pour vos sites sécurisés.
 
 Notez que vous pouvez également link:task-deploy-compliance-onprem.html["Déployer Data Sense dans un site sur site qui dispose d'un accès Internet"].
 

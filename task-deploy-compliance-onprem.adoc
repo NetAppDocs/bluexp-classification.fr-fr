@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 'Effectuez quelques étapes pour déployer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet.' 
+summary: 'Procédez en quelques étapes pour installer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet. Dans le cadre de cette installation, vous devrez déployer l"hôte Linux manuellement sur votre réseau ou dans le cloud.' 
 ---
 = Installez Data Sense sur un hôte disposant d'un accès Internet
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 'Effectuez quelques étapes pour déployer Data Sense sur un hôte Linu
 
 
 [role="lead"]
-Effectuez quelques étapes pour déployer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet.
+Procédez en quelques étapes pour installer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet. Dans le cadre de cette installation, vous devrez déployer l'hôte Linux manuellement sur votre réseau ou dans le cloud.
 
 L'installation sur site peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
-L'installation type sur un hôte Linux de votre site comporte les composants et les connexions suivants.
+L'installation typique sur un hôte Linux _dans vos locaux_ comporte les composants et les connexions suivants.
 
 image:diagram_deploy_onprem_overview.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 
-L'installation type sur un hôte Linux dans le cloud comprend les composants et connexions suivants.
+L'installation typique sur un hôte Linux _dans le cloud_ comporte les composants et les connexions suivants.
 
 image:diagram_deploy_onprem_cloud_instance.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 

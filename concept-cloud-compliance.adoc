@@ -278,7 +278,7 @@ La vitesse de analyse est affectée par la latence du réseau, la latence des di
 * Lors de l'exécution d'acquisitions de classification, Data Sense peut analyser entre 15-40 tibides de données par jour et par nœud d'analyse.
 
 
-link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["En savoir plus sur le déploiement de plusieurs nœuds de numérisation pour analyser vos données"^].
+link:task-deploy-compliance-onprem.html#install-data-sense-on-the-linux-host["En savoir plus sur le déploiement de plusieurs nœuds de numérisation pour analyser vos données"^].
 
 
 

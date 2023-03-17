@@ -467,21 +467,3 @@ Data Sense peut maintenant trouver des numéros de sécurité sociale en frança
 === Port du groupe de sécurité modifié pour la communication de détection de données vers le connecteur
 
 Le groupe de sécurité du connecteur Cloud Manager utilise le port 443 au lieu du port 80 pour le trafic entrant et sortant vers et depuis l'instance Data Sense pour une sécurité accrue. Les deux ports restent ouverts à ce moment, donc vous ne devriez pas voir de problèmes, mais vous devez mettre à jour le groupe de sécurité dans les déploiements plus anciens du connecteur car le port 80 sera obsolète dans une version ultérieure.
-
-
-
-== 2 janvier 2022
-
-
-
-=== Capacité à intégrer un Active Directory global pour identifier les propriétaires de fichiers et les autorisations
-
-Vous pouvez désormais intégrer un Active Directory global avec Cloud Data SENSE pour améliorer les résultats des rapports Data SENSE sur les propriétaires de fichiers et pour quels utilisateurs et groupes ont accès à vos fichiers.
-
-En plus des informations d'identification Active Directory que vous entrez afin que Data Sense puisse analyser des volumes CIFS à partir de certaines sources de données, cette nouvelle intégration fournit une intégration supplémentaire pour d'autres utilisateurs et systèmes. Data Sense recherche dans tous les répertoires actifs intégrés les détails de l'utilisateur et de l'autorisation. link:task-add-active-directory-datasense.html["Découvrez comment configurer votre Active Directory global"].
-
-
-
-=== Les « règles » de Data Sense peuvent désormais être utilisées pour supprimer des fichiers
-
-Data Sense peut supprimer automatiquement des fichiers correspondant à la requête que vous définissez dans une stratégie. link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["Voir comment créer des stratégies personnalisées"].
