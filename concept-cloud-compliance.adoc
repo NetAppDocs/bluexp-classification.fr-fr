@@ -154,15 +154,10 @@ image:diagram_cloud_compliance_instance.png["Un diagramme présentant une instan
 
 Voici la liste des éléments suivants pour l'instance par défaut :
 
-* Dans AWS, Cloud Data Sense s'exécute sur un link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4xlarge instance"^] Avec un disque GP2 de 500 Go. L'image du système d'exploitation est Amazon Linux 2 (Red Hat 7.3.1).
-+
-Dans les régions où m5.4xlarge n'est pas disponible, Data Sense s'exécute sur une instance m4.4xlarge au lieu de.
-
-* Dans Azure, Cloud Data Sense s'exécute sur un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^] Avec un disque de 512 Go. L'image du système d'exploitation est CentOS 7.8.
-* Dans GCP, Cloud Data Sense s'exécute sur un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] Avec disque persistant standard de 512 Go. L'image du système d'exploitation est CentOS 7.9.
-+
-Dans les régions où n2-standard-16 n'est pas disponible, Data Sense s'exécute sur une machine virtuelle n2d-standard-16 ou n1-standard-16.
-
+* Dans AWS, Cloud Data Sense s'exécute sur un https://aws.amazon.com/ec2/instance-types/m6i/["instance m6i.4xlarge"^] Avec un disque GP2 de 500 Gio. L'image du système d'exploitation est Amazon Linux 2.
+* Dans Azure, Cloud Data Sense s'exécute sur un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^] Avec un disque de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
+* Dans GCP, Cloud Data Sense s'exécute sur un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] Avec un disque persistant standard de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
+* Dans les régions où l'instance par défaut n'est pas disponible, Data Sense s'exécute sur une autre instance. link:reference-instance-types.html["Voir les autres types d'instances"].
 * L'instance s'appelle _CloudCompliance_ avec un hachage (UUID) généré concaténé. Par exemple : _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Une seule instance de détection des données est déployée par connecteur.
 
@@ -183,15 +178,15 @@ Vous pouvez déployer Data Sense sur un système avec moins de processeurs et mo
 | Taille du système | Caractéristiques | Limites 
 
 
-| Grand (par défaut) | 16 PROCESSEURS, 64 GO DE RAM, 500 GO DE SSD | Aucune 
+| Grand (par défaut) | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | Aucune 
 
 
-| Moyen | 8 PROCESSEURS, 32 GO DE RAM, 200 GO DE SSD | Numérisation plus lente et numérisation jusqu'à 1 million de fichiers uniquement. 
+| Moyen | 8 processeurs, 32 Go de RAM, SSD de 200 Gio | Numérisation plus lente et numérisation jusqu'à 1 million de fichiers uniquement. 
 
 
-| Petit | 8 PROCESSEURS, 16 GO DE RAM, 100 GO DE SSD | Mêmes limites que « Moyen », plus la capacité d'identifier link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["noms des sujets de données"] les fichiers internes sont désactivés. 
+| Petit | 8 processeurs, 16 Go de RAM, SSD de 100 Gio | Mêmes limites que « Moyen », plus la capacité d'identifier link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["noms des sujets de données"] les fichiers internes sont désactivés. 
 |===
-Si vous souhaitez utiliser l'un de ces systèmes plus petits, envoyez un e-mail à l'adresse ng-contact-data-sense@netapp.com pour obtenir de l'aide. Nous devons nous aider à déployer ces plus petites configurations cloud.
+Lorsque vous déployez Data Sense dans le cloud sur AWS, vous pouvez choisir une instance de grande, moyenne et petite taille. Lorsque vous déployez Data Sense dans Azure ou GCP, envoyez un e-mail à l'adresse ng-contact-data-sense@netapp.com pour obtenir de l'aide si vous souhaitez utiliser l'un de ces systèmes plus petits. Nous devons nous aider à déployer ces plus petites configurations cloud.
 
 Pour déployer Data Sense sur site, il vous suffit d'utiliser un hôte Linux avec des spécifications moindres. Vous n'avez pas besoin de contacter NetApp pour obtenir de l'aide.
 

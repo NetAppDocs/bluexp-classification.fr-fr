@@ -79,7 +79,7 @@ Déployez Cloud Data si aucune instance n'est déjà déployée.
 
 Si vous numérisez des systèmes Cloud Volumes ONTAP et ONTAP sur site accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez les données du cloud dans le cloud"^] ou link:task-deploy-compliance-onprem.html["dans un emplacement sur site avec accès à internet"^].
 
-Si vous numérisez des systèmes ONTAP sur site qui ont été installés sur un site sombre et ne disposant pas d'accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez les données cloud sur site qui ne disposent pas d'un accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
+Si vous numérisez des systèmes ONTAP sur site qui ont été installés sur un site sombre et ne disposant pas d'accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez Data Sense sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
 Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
 

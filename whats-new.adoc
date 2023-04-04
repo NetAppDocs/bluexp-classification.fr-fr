@@ -18,6 +18,34 @@ Découvrez les nouveautés du Cloud Data sens.
 
 
 
+== 3 avril 2023 (version 1.22)
+
+
+
+=== Nouveau rapport d'évaluation de découverte de données
+
+Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de votre environnement analysé afin de mettre en évidence les résultats du système et de montrer les points préoccupants et les étapes de correction potentielles. L'objectif de ce rapport est de sensibiliser les clients aux préoccupations liées à la gouvernance des données, à l'exposition aux risques en matière de sécurité des données et aux lacunes de conformité de leurs jeux de données. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Découvrez comment générer et utiliser le rapport d'évaluation de découverte de données"].
+
+
+
+=== Possibilité de déployer Data Sense sur des instances plus petites dans le cloud
+
+Lors du déploiement de Data Sense à partir d'un connecteur BlueXP dans un environnement AWS, vous pouvez désormais choisir entre deux types d'instances plus petits que ceux disponibles avec l'instance par défaut. Si vous analysez un petit environnement, vous pouvez réduire vos coûts liés au cloud. Cependant, il existe des restrictions lors de l'utilisation de la plus petite instance. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["Voir les types d'instances et les limites disponibles"].
+
+
+
+=== Un script autonome est désormais disponible pour vérifier que votre système Linux est qualifié pour installer Data Sense
+
+Si vous souhaitez vérifier que votre système Linux remplit toutes les conditions requises indépendamment de l'exécution de l'installation de Data Sense, vous pouvez télécharger un script distinct qui ne teste que les conditions préalables. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Découvrez comment vérifier si votre hôte Linux est prêt à installer Data Sense"].
+
+
+
+=== Les licences Data Sense BYOL sont désormais prises en charge sur les sites invisibles
+
+Vous pouvez désormais télécharger votre licence Data Sense BYOL dans le portefeuille digital, dans un site invisible, pour être averti lorsque le niveau de licence est faible. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Découvrez comment obtenir et télécharger votre licence Data Sense BYOL"].
+
+
+
 == 7 mars 2023 (version 1.21)
 
 

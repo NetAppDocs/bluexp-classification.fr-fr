@@ -1,0 +1,157 @@
+---
+sidebar: sidebar 
+permalink: task-manage-file-access-events.html 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: 'Vous pouvez configurer Data Sense pour consigner les événements dans un fichier chaque fois que vous avez accédé à l"un des fichiers que vous numérisez ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d"audit de l"accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.' 
+---
+= Contrôlez et gérez les événements d'accès aux fichiers
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez configurer Data Sense pour consigner les événements dans un fichier chaque fois que vous avez accédé à l'un des fichiers que vous numérisez ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d'audit de l'accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.
+
+Par exemple, si vous souhaitez suivre les modifications apportées à vos fichiers personnels sensibles ou aux fichiers de paie, vous pouvez activer cette fonction sur les volumes où résident ces fichiers. Vous pouvez ensuite afficher le journal d'audit de l'accès aux fichiers pour voir si ces fichiers ont été modifiés. S'ils ont été modifiés, vous pourrez voir le nom de la personne qui a effectué la modification et la date à laquelle elle a été effectuée.
+
+Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Vos systèmes ONTAP utilisent votre système Data Sense comme serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
+
+Data Sense capture actuellement des événements pour les actions suivantes sur vos fichiers et répertoires :
+
+* Création
+* Lecture
+* Écriture
+* Renommer
+* Supprimer
+* Modifier le propriétaire/les autorisations
+* Modifier SACL/DACL (modifications de la liste de contrôle d'accès)
+
+
+Les utilisateurs BlueXP avec les rôles « Admin compte » ou « Admin d'espace de travail » peuvent configurer des volumes pour la journalisation d'audit d'accès aux fichiers et afficher et télécharger les journaux d'audit. Les utilisateurs ayant le rôle « Visionneuse de conformité » peuvent uniquement afficher et télécharger les journaux d'audit.
+
+
+
+== Sources de données prises en charge
+
+Data Sense peut enregistrer les événements d'accès aux fichiers pour les fichiers résidant sur les sources de données suivantes :
+
+* ONTAP sur site
+* Cloud Volumes ONTAP
+* Azure NetApp Files
+* FSX pour ONTAP
+
+
+Vous devez avoir configuré Active Directory pour ces sources de données afin que Data Sense puisse identifier le nom de la personne qui a accédé aux fichiers.
+
+
+
+== Configurez les volumes pour la journalisation des audits d'accès aux fichiers
+
+Vous pouvez activer la journalisation d'audit d'accès aux fichiers sur des volumes individuels pour suivre les modifications apportées aux fichiers et aux répertoires.
+
+CONSEIL:: À ce stade, vous pouvez configurer l'audit de l'accès aux fichiers pour un maximum de 5 volumes sur chaque système ONTAP.
+
+
+.Étapes
+. Dans la page _Scan Configuration_ de la source de données, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le volume et sélectionnez *Configure File Access Audit*.
++
+image:screenshot_compliance_file_access_audit_button.png["Capture d'écran de la sélection d'un volume sur lequel vous souhaitez activer la journalisation des accès aux fichiers."]
+
+. Dans la boîte de dialogue _Configure File Access Audit_, cochez la case *Enable logging of file Access events* et cliquez sur *Save*.
++
+Notez à ce stade que toutes les actions de journalisation potentielles sont sélectionnées par défaut -- elles ne sont pas modifiables.
+
++
+image:screenshot_compliance_file_access_audit_dialog.png["Capture d'écran de la boîte de dialogue permettant d'activer et de désactiver la journalisation d'un volume et de sélectionner les actions à consigner."]
+
+. Vous verrez que l'audit de l'accès aux fichiers est désormais activé pour ce volume.
++
+image:screenshot_compliance_file_access_audit_done.png["Une capture d'écran montrant que la journalisation de l'audit de l'accès aux fichiers est activée pour un volume spécifique."]
+
+
+
+.Résultat
+Tous les événements d'accès aux fichiers générés pour les fichiers sur les volumes activés seront ajoutés au fichier journal. Vérifiez le fichier journal de temps en temps pour voir les types d'événements que vous recevez.
+
+
+
+== Contenu du fichier journal
+
+Un fichier journal est créé pour chaque volume que vous avez configuré pour suivre les événements d'accès aux fichiers. Chaque ligne du journal d'audit contient des informations dans ce format :
+
+`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+
+* Timestamp : date et heure de l'événement
+* Volume name : nom du volume
+* Type d'événement - Créer, Lire, écrire, Renommer, Supprimer, Modifiez le propriétaire/les autorisations et modifiez SACL/DACL
+* Nom du fichier : chemin complet et nom du fichier
+* Nom d'utilisateur (ou ID) : nom ou ID de la personne qui a effectué l'action
+* Résultat de l'action : indique si l'action a réussi ou si elle a échoué, ainsi que la raison du succès ou de l'échec
+* Détails de l'action - ce qui a été fait : dépend de l'action
+
+
+Par exemple, les lignes suivantes du fichier journal indiquent une opération de copie réussie et une opération de copie ayant échoué.
+
+....
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== Accédez aux fichiers journaux d'audit d'accès aux fichiers
+
+Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine Data Sense dans : `/opt/netapp/audit_logs/`
+
+Les fichiers journaux sont nommés « File_Access_Audit_<volume_name>_<timestamp>.log », par exemple « File Access Audit_MedicalData_20230205092321.log ». Le <timestamp> est le moment où Data Sense écrit le premier journal dans le fichier. Chaque fichier est configuré par défaut pour contenir un maximum de 50,000 événements. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Une fois ce maximum atteint, un nouveau fichier journal est créé pour ce volume. Le nouveau fichier aura un horodatage plus récent.
+
+La taille totale de tous les fichiers journaux du répertoire est définie sur une valeur par défaut de 50 Go. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Lorsque cette limite est atteinte, les fichiers journaux les plus anciens sont automatiquement supprimés.
+
+Lorsque Data Sense est installé sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez naviguer directement vers les fichiers journaux.
+
+Lorsque Data Sense est déployé dans le cloud, vous devez établir une connexion SSH avec l'instance Data Sense. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh_key> = emplacement des clés d'authentification ssh
+* <machine_utilisateur> :
++
+** Pour AWS : utilisez <utilisateur ec2>
+** Pour Azure : utilisez l'utilisateur créé pour l'instance BlueXP
+** Pour GCP : utilisez l'utilisateur créé pour l'instance BlueXP
+
+
+* <dataense_ip> = adresse IP de l'instance de la machine virtuelle
+
+
+Notez que vous devrez modifier les règles entrantes du groupe de sécurité pour accéder au système dans le cloud. Pour plus de détails, voir :
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Règles de groupe de sécurité dans Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
+
+
+
+
+== Configurer les paramètres du journal d'audit de l'accès aux fichiers
+
+Vous pouvez configurer trois options pour les journaux de fichiers d'audit d'accès aux fichiers. Ces paramètres s'appliquent à toutes les sources de données qui ont configuré la journalisation d'audit d'accès aux fichiers sur cette instance de Data Sense. Vous pouvez configurer ces paramètres à partir de la section _fichier Access Audit Log_ de la page Data Sense _Configuration_.
+
+image:screenshot_compliance_file_access_audit_config.png["Capture d'écran montrant le paramètre de configuration des journaux d'audit dans la page Configuration de Data Sense."]
+
+[cols="30,50"]
+|===
+| Option Journal d'audit | Description 
+
+
+| Emplacement du fichier journal | L'emplacement est actuellement codé en dur pour écrire les fichiers journaux dans `/opt/netapp/audit_logs/` 
+
+
+| Allocation de stockage maximale pour les journaux d'audit | La taille totale de tous les fichiers journaux du répertoire est actuellement codée en dur sur une valeur par défaut de 50 Go. Lorsque cette limite est atteinte, les fichiers journaux les plus anciens sont automatiquement supprimés. 
+
+
+| Nombre maximal d'événements d'audit par fichier d'audit | Chaque fichier est actuellement codé en dur pour contenir un maximum de 50,000 événements. Une fois ce maximum atteint, un nouveau fichier journal est créé pour ce volume. Le nouveau fichier aura un horodatage plus récent. 
+|===
+Notez que ces paramètres sont actuellement codés en dur sur les paramètres par défaut. Ils ne peuvent pas être modifiés.

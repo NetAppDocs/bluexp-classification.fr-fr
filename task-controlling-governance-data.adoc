@@ -151,33 +151,88 @@ Voir link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Et
 
 
 
-=== Rapport de mappage de données
+== Rapport de mappage de données
 
-Le rapport de mappage de données offre une vue d'ensemble des données stockées dans les sources de données de votre entreprise pour vous aider à prendre des décisions concernant la migration, la sauvegarde, la sécurité et les processus de conformité. Ce rapport répertorie d'abord un rapport de présentation résumant tous vos environnements de travail et vos sources de données, puis fournit une répartition pour chaque environnement de travail.
+Le rapport de mappage de données offre une vue d'ensemble des données stockées dans les sources de données de votre entreprise pour vous aider à prendre des décisions concernant la migration, la sauvegarde, la sécurité et les processus de conformité. Le rapport présente d'abord une vue d'ensemble de tous vos environnements de travail et sources de données, puis une description de chaque environnement de travail.
 
 Le rapport contient les informations suivantes :
 
-Capacité d'utilisation:: Pour tous les environnements de travail : indique le nombre de fichiers et la capacité utilisée pour chaque environnement de travail. Pour les environnements de travail uniques : répertorie les fichiers qui utilisent la capacité la plus élevée.
-Âge des données:: Fournit trois graphiques pour la date de création, la dernière modification ou le dernier accès aux fichiers. Répertorie le nombre de fichiers et leur capacité utilisée, en fonction de certaines plages de dates.
-Taille des données:: Répertorie le nombre de fichiers qui existent dans certaines plages de tailles dans vos environnements de travail.
-Types de fichiers:: Indique le nombre total de fichiers et la capacité utilisée pour chaque type de fichier stocké dans vos environnements de travail.
+[cols="25,65"]
+|===
+| Catégorie | Description 
 
 
+| Capacité d'utilisation | Pour tous les environnements de travail : indique le nombre de fichiers et la capacité utilisée pour chaque environnement de travail. Pour les environnements de travail uniques : répertorie les fichiers qui utilisent la capacité la plus élevée. 
 
 
-==== Génération du rapport de mappage de données
+| Âge des données | Fournit trois graphiques pour la date de création, la dernière modification ou le dernier accès aux fichiers. Répertorie le nombre de fichiers et leur capacité utilisée, en fonction de certaines plages de dates. 
 
-Accédez à l'onglet détection de données pour générer le rapport.
+
+| Taille des données | Répertorie le nombre de fichiers qui existent dans certaines plages de tailles dans vos environnements de travail. 
+
+
+| Types de fichiers | Indique le nombre total de fichiers et la capacité utilisée pour chaque type de fichier stocké dans vos environnements de travail. 
+|===
+
+
+=== Génération du rapport de mappage de données
+
+Vous générez ce rapport à partir de l'onglet gouvernance dans Data Sense.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *gouvernance*, puis cliquez sur le bouton *Rapport de la vue d'ensemble de la cartographie de données complète* dans le tableau de bord de gouvernance.
+. Cliquez sur *gouvernance*, puis sur le bouton *Rapport de mappage des données*.
 +
 image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
 
 
 
 .Résultat
-Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
+Data Sense génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
+
+Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
+
+
+
+== Rapport d'évaluation de découverte de données
+
+Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de l'environnement analysé afin de mettre en évidence les résultats du système et de montrer les points préoccupants et les étapes de correction potentielles. Les résultats sont basés à la fois sur le mappage et la classification de vos données. L'objectif de ce rapport est de sensibiliser les clients à trois aspects importants de votre ensemble de données :
+
+[cols="25,65"]
+|===
+| Fonction | Description 
+
+
+| Problèmes de gouvernance des données | Une vue d'ensemble détaillée de toutes les données que vous possédez et des zones dans lesquelles vous pouvez réduire la quantité de données pour réduire les coûts. 
+
+
+| Risques liés à la sécurité des données | Zones où vos données sont accessibles pour les attaques internes ou externes en raison d'autorisations d'accès étendues. 
+
+
+| Lacunes en matière de conformité des données | Où se trouvent vos informations personnelles ou sensibles à des fins de sécurité et pour les DSAR (demandes d'accès des sujets de données). 
+|===
+Après l'évaluation, ce rapport identifie les domaines dans lesquels vous pouvez :
+
+* Réduction des coûts du stockage en modifiant votre règle de conservation, ou en déplaçant ou en supprimant certaines données (obsolètes, dupliquées ou non stratégiques)
+* Protégez vos données qui disposent de larges autorisations en modifiant les stratégies de gestion de groupe globales
+* Protégez vos données personnelles ou sensibles en déplaçant vos IIP vers des magasins de données plus sécurisés
+
+
+
+
+=== Génération du rapport d'évaluation de découverte de données
+
+Vous générez ce rapport à partir de l'onglet gouvernance dans Data Sense.
+
+.Étapes
+. Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
+. Cliquez sur *gouvernance*, puis sur le bouton *Rapport d'évaluation de la découverte de données*.
++
+image:screenshot_compliance_data_discovery_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport d'évaluation de découverte de données."]
+
+
+
+.Résultat
+Data Sense génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
 
 Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.

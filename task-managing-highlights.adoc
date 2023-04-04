@@ -254,7 +254,7 @@ Vous pouvez supprimer de manière définitive les fichiers source qui semblent n
 Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou link:task-using-policies.html#deleting-source-files-automatically-using-policies["Utiliser automatiquement des règles"^].
 
 
-TIP: Vous ne pouvez pas supprimer les fichiers qui résident dans les bases de données.
+TIP: Vous ne pouvez pas supprimer les fichiers qui résident dans les bases de données. Toutes les autres sources de données sont prises en charge.
 
 La suppression de fichiers nécessite les autorisations suivantes :
 

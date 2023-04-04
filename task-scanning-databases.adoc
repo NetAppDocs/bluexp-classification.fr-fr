@@ -138,3 +138,5 @@ image:screenshot_compliance_select_schemas.png["Capture d'écran de la page Conf
 
 .Résultat
 Cloud Data SENSE commence à analyser les schémas de base de données que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+
+Notez que Data Sense analyse vos bases de données une fois par jour. Les bases de données ne sont pas continuellement analysées comme d'autres sources de données.

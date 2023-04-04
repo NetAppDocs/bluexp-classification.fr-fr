@@ -119,6 +119,7 @@ Rapport de demande d'accès au sujet des données:: Vous permet d'extraire un ra
 Rapport PCI DSS:: Vous aide à identifier la distribution des informations de carte de crédit dans vos dossiers. link:task-generating-compliance-reports.html#pci-dss-report["En savoir plus >>"^].
 Rapport HIPAA:: Vous aide à identifier la distribution de l'information sur la santé dans vos dossiers. link:task-generating-compliance-reports.html#hipaa-report["En savoir plus >>"^].
 Rapport de mappage de données:: Fournit des informations sur la taille et le nombre de fichiers dans vos environnements de travail. Cela inclut la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers. link:task-controlling-governance-data.html#data-mapping-report["En savoir plus >>"^].
+Rapport d'évaluation de la découverte des données:: Fournit une analyse de haut niveau de l'environnement analysé afin de mettre en évidence les résultats du système et de montrer les points préoccupants et les étapes de correction potentielles. link:task-controlling-governance-data.html#data-discovery-assessment-report["Mode apprentissage"^].
 Rapports sur un type d'information spécifique:: Des rapports sont disponibles, incluant des détails sur les fichiers identifiés qui contiennent des données personnelles et des données personnelles sensibles. Vous pouvez également voir les fichiers dérépartis par catégorie et par type de fichier. link:task-controlling-private-data.html["En savoir plus >>"^].
 
 
@@ -353,7 +354,7 @@ Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez
 
 === Puis-je déployer le connecteur sur mon propre hôte ?
 
-Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Si vous envisagez de déployer Data Sense sur site, vous pouvez aussi installer le connecteur sur site, mais ce n'est pas obligatoire.
+Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous envisagez de déployer Data Sense sur site, vous pouvez aussi installer le connecteur sur site, mais ce n'est pas obligatoire.
 
 
 
@@ -379,9 +380,9 @@ BlueXP permet à l'utilisateur d'effectuer des analyses et des rapports sur des 
 
 Quand link:task-deploy-cloud-compliance.html["déploiement dans le cloud"]:
 
-* Dans AWS, Cloud Data SENSE s'exécute sur une instance m5.4xlarge avec un disque GP2 de 500 Go.
-* Dans Azure, Cloud Data Sense s'exécute sur une machine virtuelle standard_D16s_v3 avec un disque de 512 Go.
-* Dans GCP, Cloud Data Sense s'exécute sur une machine virtuelle n2-standard-16 avec un disque persistant standard de 512 Go.
+* Dans AWS, Cloud Data Sense s'exécute sur une instance m6i.4xlarge avec un disque GP2 de 500 Gio. Vous pouvez sélectionner un type d'instance plus petit pendant le déploiement.
+* Dans Azure, Cloud Data Sense s'exécute sur une VM Standard_D16s_v3 avec un disque de 500 Gio.
+* Dans GCP, Cloud Data Sense s'exécute sur une machine virtuelle n2-standard-16 avec un disque persistant standard de 500 Gio.
 
 
 Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
