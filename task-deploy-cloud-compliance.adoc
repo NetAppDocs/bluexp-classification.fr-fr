@@ -26,7 +26,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas encore de connecteur, créez-en un maintenant. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Création d'un connecteur dans GCP"^].
+Si vous n'avez pas encore de connecteur, créez-en un maintenant. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 [role="quick-margin-para"]
 Vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud.
@@ -47,7 +47,7 @@ Les 1 premiers To de données analysés par Cloud Data Sense dans BlueXP sont gr
 
 == Créer un connecteur
 
-Si vous n'avez pas encore de connecteur, créez-en un chez votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Création d'un connecteur dans AWS"^] ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Création d'un connecteur dans GCP"^]. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer le Cloud Data SENSE https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Si vous n'avez pas encore de connecteur, créez-en un chez votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^] ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^]. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer le Cloud Data SENSE https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
@@ -62,7 +62,7 @@ Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisse
 
 Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
 
-Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer Data Sense sur site peuvent également choisir d'installer le connecteur sur site.
+Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer Data Sense sur site peuvent également choisir d'installer le connecteur sur site.
 
 Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
 
@@ -192,7 +192,7 @@ Notez que vous pouvez déployer Data Sense sur une instance dans les environneme
 
 Voici la procédure à suivre pour déployer une instance de Cloud Data Sense dans le cloud. Le connecteur va déployer l'instance dans le cloud, puis installer le logiciel Data Sense sur cette instance.
 
-Notez que lors du déploiement de Data Sense à partir d'un connecteur BlueXP dans un environnement AWS, vous pouvez sélectionner la taille d'instance par défaut ou choisir l'un des deux petits types d'instances. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Voir les types d'instances et les limites disponibles"].
+Notez que lors du déploiement de Data Sense à partir d'un connecteur BlueXP dans un environnement AWS, vous pouvez sélectionner la taille d'instance par défaut ou choisir l'un des deux petits types d'instances. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Voir les types d'instances et les limites disponibles"]. Dans les régions où le type d'instance par défaut n'est pas disponible, Data Sense s'exécute sur un link:reference-instance-types.html["autre type d'instance"].
 
 [role="tabbed-block"]
 ====

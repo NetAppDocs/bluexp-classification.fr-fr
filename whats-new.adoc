@@ -40,12 +40,6 @@ Si vous souhaitez vérifier que votre système Linux remplit toutes les conditio
 
 
 
-=== Les licences Data Sense BYOL sont désormais prises en charge sur les sites invisibles
-
-Vous pouvez désormais télécharger votre licence Data Sense BYOL dans le portefeuille digital, dans un site invisible, pour être averti lorsque le niveau de licence est faible. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Découvrez comment obtenir et télécharger votre licence Data Sense BYOL"].
-
-
-
 == 7 mars 2023 (version 1.21)
 
 
