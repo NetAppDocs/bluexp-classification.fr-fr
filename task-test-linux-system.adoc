@@ -24,7 +24,7 @@ Il existe également un script de test prérequis qui fait partie du script d'in
 
 Vous effectuerez les tâches suivantes.
 
-. Facultatif. Installez un connecteur BlueXP si vous n'en avez pas déjà installé. Vous pouvez exécuter le script de test sans avoir installé de connecteur, mais le script vérifie la connectivité entre le connecteur et la machine hôte Data Sense. Il est donc recommandé de disposer d'un connecteur.
+. Si vous ne l'avez pas déjà installé, installez un connecteur BlueXP. Vous pouvez exécuter le script de test sans avoir installé de connecteur, mais le script vérifie la connectivité entre le connecteur et la machine hôte Data Sense. Il est donc recommandé de disposer d'un connecteur.
 . Préparer le porteur et vérifier qu'il répond à toutes les exigences.
 . Activez l'accès Internet sortant à partir de la machine hôte Data Sense.
 . Vérifiez que tous les ports requis sont activés sur tous les systèmes.
@@ -175,21 +175,23 @@ Procédez comme suit pour exécuter le script Data Sense Prerequisites.
 
 
 .Étapes
-. Téléchargez le script Data Sense Prerequisites à partir du https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *test_datasense_prerequisites_<version>*.
+. Téléchargez le script Data Sense Prerequisites à partir du https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *standalone-pre-tester-<version>*.
 . Copiez le fichier sur l'hôte Linux que vous souhaitez utiliser (à l'aide de `scp` ou une autre méthode).
 . Attribuez des autorisations pour exécuter le script.
 +
 [source, cli]
 ----
-chmod +x test_datasense_prerequisites_1_0
+chmod +x standalone-pre-requisite-tester-v1.21.0
 ----
 . Exécutez le script à l'aide de la commande suivante.
 +
-./test_datasense_prerequisites_1_0 &#8592;-darksite>
 [source, cli]
 ----
-Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+ ./standalone-pre-requisite-tester-v1.21.0 <--darksite>
 ----
++
+Ajoutez l'option "--darksite" uniquement si vous exécutez le script sur un hôte qui n'a pas accès à Internet. Certains tests préalables sont ignorés lorsque l'hôte n'est pas connecté à Internet.
+
 . Le script vous demande l'adresse IP de la machine hôte Data Sense.
 +
 ** Entrez l'adresse IP ou le nom d'hôte.
@@ -201,7 +203,7 @@ Add the option "--darksite" only if you are running the script on a host that do
 ** Entrez *y* si vous avez un connecteur installé. Puis entrez l'adresse IP ou le nom d'hôte du connecteur BlueXP afin que le script de test puisse tester cette connectivité.
 
 
-. Le script exécute une variété de tests sur le système et affiche les résultats au fur et à mesure qu'il progresse. Une fois terminé, il écrit un journal de la session dans un fichier.
+. Le script exécute une variété de tests sur le système et affiche les résultats au fur et à mesure qu'il progresse. Une fois terminé, il écrit un journal de la session dans un fichier nommé `prerequisites-test-<timestamp>.log` dans le répertoire `/opt/netapp/install_logs`.
 
 
 .Résultat

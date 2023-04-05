@@ -58,8 +58,6 @@ Il peut y avoir un sens des données link:task-deploy-cloud-compliance.html["dé
 
 Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
 
-Il est également possible de détecter des données link:task-deploy-compliance-dark-site.html["déploiement dans un emplacement sur site qui ne dispose pas d'un accès internet"^]. Cependant, vous devez fournir un accès Internet à quelques points de terminaison sélectionnés pour analyser vos fichiers OneDrive locaux. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Voir la liste des points finaux requis ici"].
-
 
 
 == Ajout du compte OneDrive
