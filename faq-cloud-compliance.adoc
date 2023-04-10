@@ -354,13 +354,13 @@ Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez
 
 === Puis-je déployer le connecteur sur mon propre hôte ?
 
-Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous envisagez de déployer Data Sense sur site, vous pouvez aussi installer le connecteur sur site, mais ce n'est pas obligatoire.
+Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous envisagez de déployer Data Sense sur site, vous pouvez aussi installer le connecteur sur site, mais ce n'est pas obligatoire.
 
 
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pouvez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales et analyser les données à l'aide de Data Sense.
+Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pouvez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales et analyser les données à l'aide de Data Sense.
 
 
 

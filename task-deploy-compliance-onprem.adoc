@@ -309,14 +309,17 @@ Notez que le programme d'installation effectue une pré-vérification afin de s'
 
 
  a| 
-.. Coller les informations copiées à partir de l'étape 7 :
+.. Collez la commande que vous avez copiée à partir de l'étape 7 :
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
++
+Si vous installez sur une instance cloud (pas sur site), ajoutez `--manual-cloud-install <cloud_provider>`.
+
 .. Entrez l'adresse IP ou le nom d'hôte de la machine hôte Data Sense afin qu'elle soit accessible par l'instance de connecteur.
 .. Entrez l'adresse IP ou le nom d'hôte de la machine hôte BlueXP Connector afin qu'elle soit accessible par l'instance Data Sense.
 .. Entrez les détails du proxy comme vous y êtes invité. Si votre connecteur BlueXP utilise déjà un proxy, il n'est pas nécessaire de saisir à nouveau ces informations ici car Data Sense utilisera automatiquement le proxy utilisé par le connecteur.
 
 | Vous pouvez également créer l'ensemble de la commande à l'avance, en fournissant les paramètres d'hôte et de proxy nécessaires :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
 |===
 +
 Valeurs variables :
@@ -327,6 +330,7 @@ Valeurs variables :
 ** _token_ = jeton utilisateur jwt
 ** _Ds_host_ = adresse IP ou nom d'hôte du système Data Sense Linux.
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs BlueXP.
+** _Cloud_Provider_ = lors de l'installation sur une instance cloud, entrez « AWS », « Azure » ou « GCP » en fonction du fournisseur de cloud.
 ** _Proxy_host_ = IP ou nom d'hôte du serveur proxy si l'hôte est derrière un serveur proxy.
 ** _Proxy_port_ = Port pour se connecter au serveur proxy (80 par défaut).
 ** _Proxy_schéma_ = schéma de connexion : https ou http (par défaut : http).
