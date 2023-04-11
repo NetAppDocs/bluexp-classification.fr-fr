@@ -34,7 +34,7 @@ Lors du déploiement de Data Sense à partir d'un connecteur BlueXP dans un envi
 
 
 
-=== Un script autonome est désormais disponible pour vérifier que votre système Linux est qualifié pour installer Data Sense
+=== Un script autonome est désormais disponible pour qualifier votre système Linux avant l'installation de Data Sense
 
 Si vous souhaitez vérifier que votre système Linux remplit toutes les conditions requises indépendamment de l'exécution de l'installation de Data Sense, vous pouvez télécharger un script distinct qui ne teste que les conditions préalables. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Découvrez comment vérifier si votre hôte Linux est prêt à installer Data Sense"].
 
@@ -419,27 +419,3 @@ Data Sense peut identifier et classer les fichiers contenant le TFN australien (
 === Le serveur Active Directory global peut maintenant être un serveur LDAP
 
 Le serveur Active Directory global que vous intégrez à Data Sense peut désormais être un serveur LDAP en plus du serveur DNS pris en charge précédemment. link:task-add-active-directory-datasense.html["Cliquez ici pour plus d'informations"].
-
-
-
-== 15 mars 2022 (version 1.10.0)
-
-
-
-=== Nouveau filtre pour afficher les fichiers auxquels un utilisateur ou un groupe a des autorisations de lecture ou d'écriture
-
-Un nouveau filtre appelé « autorisations utilisateur/groupe » a été ajouté pour vous permettre de répertorier les fichiers auxquels un utilisateur ou un groupe a des autorisations de lecture et/ou d'écriture. Vous pouvez sélectionner un ou plusieurs noms d'utilisateur et/ou de groupe ou entrer un nom partiel. Cette fonctionnalité est disponible pour les volumes sur Cloud Volumes ONTAP, ONTAP sur site, Azure NetApp Files, Amazon FSX pour ONTAP et les partages de fichiers.
-
-
-
-=== Il permet de déterminer les autorisations pour les fichiers des comptes SharePoint et OneDrive
-
-Il est possible de lire les autorisations existantes pour les fichiers analysés dans les comptes OneDrive et SharePoint. Ces informations s'affichent dans le volet Investigation des détails relatifs aux fichiers et dans la zone Ouvrir les autorisations du tableau de bord de gouvernance.
-
-
-
-=== Deux autres types de données personnelles peuvent être identifiés par Data Sense
-
-* INSEE français - le code INSEE est un code numérique utilisé par l'Institut national français de statistique et d'études économiques (INSEE) pour identifier diverses entités.
-* Mots de passe : ces informations sont identifiées via la validation de proximité en recherchant les permutations du mot de passe à côté d'une chaîne alphanumérique. Le nombre d'éléments trouvés sera indiqué sous « Résultats personnels » dans le tableau de bord de conformité. Vous pouvez rechercher des fichiers contenant des mots de passe dans le volet Investigation en utilisant le filtre *données personnelles > Mot de passe*.
-

@@ -54,7 +54,7 @@ Par exemple, les lignes suivantes du fichier journal indiquent une opération de
 
 Les fichiers journaux d'audit de gestion se trouvent sur la machine Data Sense dans : `/opt/netapp/audit_logs/`
 
-Les fichiers journaux d'audit d'installation sont écrits dans `/ops/netapp/install_logs`
+Les fichiers journaux d'audit d'installation sont écrits dans `/opt/netapp/install_logs/`
 
 Chaque fichier journal peut avoir une taille maximale de 10 Mo. Lorsque cette limite est atteinte, un nouveau fichier journal démarre. Les fichiers journaux sont nommés « DataSense_audit.log », « DataSense_audit.log.1 », « DataSense_audit.log.2 », etc. Un maximum de 100 fichiers journaux sont conservés sur le système. Les anciens fichiers journaux sont supprimés automatiquement une fois le maximum atteint.
 
