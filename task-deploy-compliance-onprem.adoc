@@ -466,7 +466,8 @@ image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de
 +
 image:screenshot_client_access_token.png["Capture d'écran de la page Documentation de l'API avec un lien vers les instructions d'authentification."]
 
-. Suivez les instructions d'authentification et copiez le _Access token_ à partir de la réponse.
+. Suivez les instructions d'authentification, en utilisant le nom d'utilisateur et le mot de passe de l'administrateur du compte dans les paramètres "nom d'utilisateur" et "mot de passe".
+. Copiez ensuite le _jeton d'accès_ de la réponse.
 
 
 .Étapes

@@ -45,6 +45,10 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 
 
 * *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#viewing-all-duplicated-files["Voir quels types de fichiers dupliqués sont affichés"].
++
+REMARQUE:: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données obsolètes_.
+
+
 
 
 
@@ -91,7 +95,7 @@ Vous pouvez cliquer sur le bloc qui vous intéresse pour afficher les résultats
 Aucune donnée ne s'affiche dans ce panneau si vous n'avez pas intégré de service d'identité avec Data Sense. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec Data Sense"^].
 
 
-TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Il n'existe actuellement pas de prise en charge pour les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
+TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Actuellement, il n'est pas compatible avec les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
 
 
 
@@ -117,6 +121,10 @@ Vous pouvez passer le curseur sur un point dans les graphiques pour afficher des
 
 * *Age of Data Graph* - catégorise les données en fonction de l'heure de création, de la dernière fois où il a été accédé ou de la dernière fois qu'il a été modifié.
 * *Taille du graphique de données* - classe les données en fonction de leur taille.
++
+REMARQUE:: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans le graphique _Age of Data_.
+
+
 
 
 

@@ -34,7 +34,7 @@ link:task-deploy-cloud-compliance.html["Déployez des données adaptées au clou
 [role="quick-margin-para"]
 Le groupe est un conteneur pour les partages de fichiers que vous souhaitez analyser et il est utilisé comme nom d'environnement de travail pour ces partages de fichiers.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Ajoutez les partages de fichiers et sélectionnez les partages à analyser
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Ajoutez les partages de fichiers au groupe
 [role="quick-margin-para"]
 Ajoutez la liste des partages de fichiers que vous souhaitez numériser et sélectionnez le type de numérisation. Vous pouvez ajouter jusqu'à 100 partages de fichiers à la fois.
 
@@ -44,7 +44,10 @@ Ajoutez la liste des partages de fichiers que vous souhaitez numériser et séle
 
 Avant d'activer le Cloud Data sens, lisez les conditions préalables suivantes pour vérifier que la configuration est prise en charge.
 
-* Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Il s'agit de partages de fichiers qui résident sur des systèmes de stockage non NetApp.
+* Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Dans la plupart des cas, il s'agit de partages de fichiers qui résident sur des systèmes de stockage non NetApp. Toutefois, les partages CIFS d'anciens systèmes de stockage NetApp 7-mode peuvent être analysés en tant que partages de fichiers.
++
+Data Sense ne peut pas extraire les autorisations ou l'heure du dernier accès des systèmes 7-mode. En outre, il existe un problème connu dans lequel le montage des partages CIFS sur SMB version 2 n'est pas pris en charge pour Linux.
+
 * Il faut une connectivité réseau entre l'instance Data Sense et les partages.
 * Assurez-vous que ces ports sont ouverts à l'instance de détection de données :
 +

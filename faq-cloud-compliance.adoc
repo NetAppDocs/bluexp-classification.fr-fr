@@ -194,9 +194,9 @@ Non Les données privées envoyées entre votre navigateur et l'instance Data Se
 
 === Que se passe-t-il si le Tiering des données est activé sur vos volumes ONTAP ?
 
-Vous pouvez activer la détection des données cloud sur les systèmes ONTAP qui transférant les données inactives vers le stockage objet. Lorsque le Tiering est activé, Data Sense analyse toutes les données (sur des disques et les données inactives hiérarchisées vers le stockage objet).
+Lorsque Data Sense analyse les volumes dont les données inactives sont envoyées vers le stockage objet, il analyse toutes les données, c'est-à-dire les données qui se trouvent sur des disques locaux et les données inactives envoyées vers le stockage objet. C'est également le cas pour les produits non-NetApp qui implémentent la hiérarchisation.
 
-L'analyse de conformité ne chauffe pas les données inactives : elles restent inactives et hiérarchisées vers le stockage objet.
+L'analyse ne chauffe pas les données inactives, elles restent inactives et restent dans le stockage objet.
 
 
 

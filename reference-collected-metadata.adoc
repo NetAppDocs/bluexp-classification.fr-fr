@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy 
+keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: 'Data Sense collecte certaines métadonnées lors de l"analyse de classification des données à partir de vos sources de données et de vos environnements de travail. Le sens des données peut accéder à la plupart des métadonnées dont nous avons besoin pour classer vos données, mais certaines sources nous sont incapables d"accéder aux données dont nous avons besoin.' 
 ---
 = Métadonnées collectées à partir des sources de données
@@ -16,6 +16,7 @@ summary: 'Data Sense collecte certaines métadonnées lors de l"analyse de class
 [role="lead"]
 Data Sense collecte certaines métadonnées lors de l'analyse de classification des données à partir de vos sources de données et de vos environnements de travail. Le sens des données peut accéder à la plupart des métadonnées dont nous avons besoin pour classer vos données, mais certaines sources nous sont incapables d'accéder aux données dont nous avons besoin.
 
+[cols="15,25,25,25"]
 |===
 |  | *Métadonnées* | *CIFS* | *NFS* 
 
@@ -38,7 +39,7 @@ Data Sense collecte certaines métadonnées lors de l'analyse de classification 
 
 == Horodatage du dernier accès
 
-Lorsque Data Sense extrait des données de partages de fichiers, le système d'exploitation considère qu'il accède aux données et modifie l'« heure du dernier accès » en conséquence. Après l'analyse, Data Sense tente de rétablir l'heure du dernier accès à l'horodatage d'origine. Si Data Sense ne dispose pas des autorisations d'attributs d'écriture dans CIFS, ou si les autorisations d'écriture dans NFS sont accordées, le système ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine.
+Lorsque Data Sense extrait des données de partages de fichiers, le système d'exploitation considère qu'il accède aux données et modifie l'« heure du dernier accès » en conséquence. Après l'analyse, Data Sense tente de rétablir l'heure du dernier accès à l'horodatage d'origine. Si Data Sense ne dispose pas des autorisations d'attributs d'écriture dans CIFS, ou si les autorisations d'écriture dans NFS sont accordées, le système ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Les volumes ONTAP configurés avec SnapLock disposent d'autorisations en lecture seule et ne peuvent pas non plus rétablir l'horodatage du dernier accès.
 
 Par défaut, si Data Sense ne dispose pas de ces autorisations, le système ne scannera pas ces fichiers dans vos volumes, car Data Sense ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Cependant, si vous ne vous souciez pas si l'heure du dernier accès est réinitialisée à l'heure d'origine dans vos fichiers, vous pouvez cliquer sur le commutateur *Scan en cas d'autorisations d'écriture d'attributs manquantes* en bas de la page de configuration pour que Data Sense analyse les volumes indépendamment des autorisations.
 
