@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-investigate-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: 'Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez accéder à cette page à partir de nombreuses zones de l"interface utilisateur Data Sense, y compris les tableaux de bord gouvernance et conformité.' 
+summary: 'Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu"à cette page à partir de plusieurs sections de l"interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.' 
 ---
 = Examinez les données stockées dans votre organisation
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Vous pouvez examiner les données de votre organisation en affichant l
 
 
 [role="lead"]
-Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez accéder à cette page à partir de nombreuses zones de l'interface utilisateur Data Sense, y compris les tableaux de bord gouvernance et conformité.
+Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu'à cette page à partir de plusieurs sections de l'interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.
 
 
 NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
@@ -51,7 +51,7 @@ Utilisez les filtres suivants pour afficher la quantité d'informations sensible
 | Niveau de sensibilité | Sélectionnez le niveau de sensibilité : personnel, personnel sensible ou non sensible. 
 
 
-| Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, Data Sense totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers). 
+| Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, la classification BlueXP totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers). 
 
 
 | Données personnelles | Sélectionner link:reference-private-data-categories.html#types-of-personal-data["types de données personnelles"^]. 
@@ -98,13 +98,13 @@ Utilisez les filtres suivants pour afficher les données en fonction des critèr
 | Heure de création | Sélectionnez une plage horaire au moment de la création du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
 
 
-| Heure découverte | Sélectionnez une plage horaire lorsque le fichier est détecté par le capteur de données. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
+| Heure découverte | Sélectionnez une plage horaire lorsque la classification BlueXP a détecté le fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
 
 
 | Dernière modification | Sélectionnez une plage horaire pour la dernière modification du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
 
 
-| Dernier accès | Sélectionnez une plage horaire lors du dernier accès au fichier ou au répertoire (CIFS ou NFS uniquement). Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par Data Sense, il s'agit de la dernière analyse du fichier par Data Sense. 
+| Dernier accès | Sélectionnez une plage horaire lors du dernier accès au fichier ou au répertoire (CIFS ou NFS uniquement). Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par le système de classification BlueXP, il s'agit de la dernière fois que le fichier a été analysé par le système de classification BlueXP. 
 |===
 
 
@@ -117,7 +117,7 @@ Utilisez les filtres suivants pour afficher les données en fonction de l'emplac
 | Filtre | Détails 
 
 
-| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois inclure des chemins d'accès et exclure des chemins, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. Notez que l'utilisation de "*" dans ce filtre n'a aucun effet et que vous ne pouvez pas exclure des dossiers spécifiques de l'analyse - tous les répertoires et fichiers d'un partage configuré seront analysés. 
+| Chemin du fichier | Saisissez jusqu'à 20 chemins partiels ou complets que vous souhaitez inclure ou exclure de la requête. Si vous entrez à la fois les chemins d'inclusion et d'exclusion, la classification BlueXP recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats. Notez que l'utilisation de "*" dans ce filtre n'a aucun effet et que vous ne pouvez pas exclure des dossiers spécifiques de l'analyse - tous les répertoires et fichiers d'un partage configuré seront analysés. 
 
 
 | Type de répertoire | Sélectionnez le type de répertoire : « partager » ou « dossier ». 
@@ -176,7 +176,7 @@ Utilisez les filtres suivants pour afficher les données par étiquettes ou éti
 
 === Filtrez les données par état d'analyse
 
-Utilisez le filtre suivant pour afficher les données en fonction de l'état d'acquisition de détection de données.
+Utilisez le filtre suivant pour afficher les données en fonction de l'état d'analyse de classification BlueXP.
 
 [cols="30,60"]
 |===
@@ -186,7 +186,7 @@ Utilisez le filtre suivant pour afficher les données en fonction de l'état d'a
 | État de l'analyse | Sélectionnez une option pour afficher la liste des fichiers en attente de première numérisation, terminés en cours de numérisation, en attente de numérisation ou qui n'ont pas pu être numérisés. 
 
 
-| Événement d'analyse d'acquisition | Indiquez si vous souhaitez afficher les fichiers qui n'ont pas été classés car Data Sense n'a pas pu revenir à l'heure du dernier accès ou les fichiers classifiés même si Data Sense n'a pas pu rétablir l'heure du dernier accès. 
+| Événement d'analyse d'acquisition | Indiquez si vous souhaitez afficher les fichiers non classés car la classification BlueXP n'a pas pu rétablir l'heure du dernier accès ou les fichiers classés même si la classification BlueXP n'a pas pu rétablir l'heure du dernier accès. 
 |===
 link:reference-collected-metadata.html#last-access-time-timestamp["Voir les détails sur l'horodatage de la « dernière heure d'accès »"] Pour plus d'informations sur les éléments qui apparaissent dans la page Investigation lors du filtrage à l'aide de l'événement Scan Analysis.
 
@@ -211,7 +211,7 @@ Dans le volet Résultats de l'enquête de données, vous pouvez cliquer sur imag
 
 image:screenshot_compliance_file_details.png["Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."]
 
-En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP intégré dans le cloud Data SENSE"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#creating-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
+En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP intégré dans la classification BlueXP"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#creating-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
 Notez que toutes les informations ne sont pas disponibles pour toutes les sources de données, ce qui est juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume, les autorisations et les libellés AIP ne sont pas pertinents pour les fichiers de base de données.
 
@@ -221,7 +221,7 @@ Lors de l'affichage des détails d'un seul fichier, vous pouvez effectuer quelqu
 * Vous pouvez supprimer le fichier. Voir link:task-managing-highlights.html#deleting-source-files["Suppression des fichiers source"] pour plus d'informations.
 * Vous pouvez affecter un certain état au fichier. Voir link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Application de balises"] pour plus d'informations.
 * Vous pouvez affecter le fichier à un utilisateur BlueXP pour être responsable de toutes les actions de suivi qui doivent être effectuées sur le fichier. Voir link:task-org-private-data.html#assigning-users-to-manage-certain-files["Affectation d'utilisateurs à un fichier"] pour plus d'informations.
-* Si vous avez intégré des étiquettes AIP avec Cloud Data SENSE, vous pouvez attribuer un libellé à ce fichier ou modifier un libellé différent si celui-ci existe déjà. Voir link:task-org-private-data.html#assigning-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
+* Si vous avez intégré des étiquettes d'AIP à la classification BlueXP, vous pouvez attribuer une étiquette à ce fichier ou modifier cette étiquette s'il en existe déjà une. Voir link:task-org-private-data.html#assigning-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
 
 
 
@@ -230,7 +230,7 @@ Lors de l'affichage des détails d'un seul fichier, vous pouvez effectuer quelqu
 
 Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est disponible uniquement pour les données des partages CIFS, SharePoint Online, SharePoint sur site et OneDrive.
 
-Notez que si vous voyez des SID (identificateurs de sécurité) au lieu des noms d'utilisateurs et de groupes, vous devez intégrer Active Directory dans Data Sense. link:task-add-active-directory-datasense.html["Découvrez comment faire"].
+Notez que si vous voyez des SID (identificateurs de sécurité) au lieu des noms d'utilisateur et de groupe, vous devez intégrer votre Active Directory dans la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment faire"].
 
 image:screenshot_compliance_permissions.png["Capture d'écran affichant des autorisations détaillées sur les fichiers."]
 
@@ -244,7 +244,7 @@ En outre, Vous pouvez cliquer sur le nom d'un utilisateur ou d'un groupe et la p
 
 Vous pouvez afficher si des fichiers dupliqués sont stockés dans vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il peut également être utile de s'assurer que certains fichiers possédant des autorisations spécifiques ou des informations sensibles ne sont pas inutilement dupliqués dans vos systèmes de stockage.
 
-Data Sense utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
+La classification BlueXP utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
 
 Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#deleting-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
 
@@ -275,9 +275,9 @@ TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette pag
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Vous pouvez enregistrer le rapport sur la machine locale en tant que fichier .CSV (qui peut inclure jusqu'à 5,000 lignes de données), ou en tant que fichier .JSON que vous exportez vers un partage NFS (qui peut inclure un nombre illimité de lignes). Si Data Sense analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) ou des bases de données (données structurées), il peut y avoir jusqu'à trois fichiers de rapports téléchargés.
+Vous pouvez enregistrer le rapport sur la machine locale en tant que fichier .CSV (qui peut inclure jusqu'à 5,000 lignes de données), ou en tant que fichier .JSON que vous exportez vers un partage NFS (qui peut inclure un nombre illimité de lignes). Si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) ou des bases de données (données structurées), il peut y avoir jusqu'à trois fichiers de rapport téléchargés.
 
-Lors de l'exportation vers un partage de fichiers, assurez-vous que Data Sense dispose des autorisations appropriées pour l'accès à l'exportation.
+Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
 
 
 

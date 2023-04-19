@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, Data Sense 
-summary: 'Suivez quelques étapes pour commencer à analyser les données dans le stockage objet directement avec Cloud Data Sense. La fonction Data Sense peut analyser les données depuis n"importe quel service de stockage objet utilisant le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.' 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
+summary: 'Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n"importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.' 
 ---
 = Analyse du stockage objet à l'aide du protocole S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Suivez quelques étapes pour commencer à analyser les données dans l
 
 
 [role="lead"]
-Suivez quelques étapes pour commencer à analyser les données dans le stockage objet directement avec Cloud Data Sense. La fonction Data Sense peut analyser les données depuis n'importe quel service de stockage objet utilisant le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.
+Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n'importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.
 
 
 
@@ -27,46 +27,46 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 Vous devez disposer de l'URL du terminal pour vous connecter au service de stockage objet.
 
 [role="quick-margin-para"]
-Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet pour que le Cloud Data SENSE puisse accéder aux compartiments.
+Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet pour que la classification BlueXP puisse accéder aux compartiments.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance Cloud Data SENSE
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez des données adaptées au cloud"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Ajoutez le service de stockage objet
 [role="quick-margin-para"]
-Ajoutez le service de stockage objet au sens des données dans le cloud.
+Ajoutez le service de stockage objet à la classification BlueXP.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Sélectionnez les compartiments à numériser
 [role="quick-margin-para"]
-Sélectionnez les compartiments que vous souhaitez analyser et Cloud Data SENSE commence à les analyser.
+Sélectionnez les compartiments que vous souhaitez analyser et la classification BlueXP commencera à les analyser.
 
 
 
 == Examen des besoins en stockage objet
 
-Avant d'activer le Cloud Data sens, lisez les conditions préalables suivantes pour vérifier que la configuration est prise en charge.
+Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
 * Vous devez disposer de l'URL du terminal pour vous connecter au service de stockage objet.
-* Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet afin que Data Sense puisse accéder aux compartiments.
+* Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet pour que la classification BlueXP puisse accéder aux compartiments.
 * La prise en charge d'Azure Blob requiert que vous utilisiez le link:https://min.io/["Service MiniO"^].
 
 
 
 
-== Déploiement de l'instance Cloud Data Sense
+== Déploiement de l'instance de classification BlueXP
 
-Déployez Cloud Data si aucune instance n'est déjà déployée.
+Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
-Si vous analysant des données à partir du stockage objet S3 accessible via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez les données du cloud dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployer Data Sense dans un emplacement sur site avec accès Internet"^].
+Si vous analysant des données à partir du stockage objet S3 accessible via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployez la classification BlueXP dans un emplacement sur site disposant d'un accès Internet"^].
 
-Si vous analysant les données à partir du stockage objet S3 qui a été installé dans un site sombre mais qui n'a pas d'accès à Internet, vous devez link:task-deploy-compliance-dark-site.html["Déployez les données cloud sur site qui ne disposent pas d'un accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
+Si vous analysant les données à partir du stockage objet S3 qui a été installé dans un site sombre mais qui n'a pas d'accès à Internet, vous devez link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
-== Ajout du service de stockage objet au sens Cloud Data
+== Ajout du service de stockage objet à la classification BlueXP
 
 Ajoutez le service de stockage objet.
 
@@ -79,7 +79,7 @@ image:screenshot_compliance_add_object_storage_button.png["Capture d'écran de l
 +
 .. Entrez le nom que vous souhaitez utiliser pour l'environnement de travail. Ce nom doit correspondre au nom du service de stockage objet auquel vous vous connectez.
 .. Entrez l'URL du point final pour accéder au service de stockage d'objets.
-.. Entrez la clé d'accès et la clé secrète pour que le cloud Data SENSE puisse accéder aux compartiments du stockage objet.
+.. Entrez la clé d'accès et la clé secrète pour que la classification BlueXP puisse accéder aux compartiments du stockage objet.
 +
 image:screenshot_compliance_add_object_storage.png["Capture d'écran de la boîte de dialogue dans laquelle vous saisissez les valeurs pour accéder au service de stockage objet."]
 
@@ -94,7 +94,7 @@ Le nouveau service de stockage objet est ajouté à la liste des environnements 
 
 == Activation et désactivation des analyses de conformité dans les compartiments de stockage objet
 
-Une fois que vous avez activé le contrôle des données dans le cloud sur votre service de stockage objet, l'étape suivante consiste à configurer les compartiments à analyser. Data Sense détecte ces compartiments et les affiche dans l'environnement de travail que vous avez créé.
+Après avoir activé la classification BlueXP sur votre service de stockage objet, l'étape suivante consiste à configurer les compartiments à analyser. La classification BlueXP détecte ces compartiments et les affiche dans l'environnement de travail que vous avez créé.
 
 .Étapes
 . Dans la page Configuration, cliquez sur *Configuration* dans l'environnement de travail Object Storage Service.
@@ -122,4 +122,4 @@ image:screenshot_compliance_object_storage_select_buckets.png["Capture d'écran 
 
 
 .Résultat
-Cloud Data Sense commence l'analyse des compartiments que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+La classification BlueXP commence à analyser les compartiments que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.

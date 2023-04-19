@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
-summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. Cloud Data SENSE identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux dans vos systèmes. Vous pouvez ainsi décider si vous souhaitez supprimer ou hiérarchiser certains fichiers dans un stockage objet moins coûteux. 
+summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux. 
 ---
 = Affichage des détails de gouvernance concernant les données stockées dans votre organisation
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Maîtrisez les coûts liés aux données stockées sur les ressources d
 
 
 [role="lead"]
-Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. Cloud Data SENSE identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux dans vos systèmes. Vous pouvez ainsi décider si vous souhaitez supprimer ou hiérarchiser certains fichiers dans un stockage objet moins coûteux.
+Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux.
 
 En outre, si vous prévoyez de migrer des données depuis des emplacements sur site vers le cloud, vous pouvez vérifier la taille des données et si chacune d'entre elles contient des informations sensibles avant de les transférer.
 
@@ -24,7 +24,7 @@ En outre, si vous prévoyez de migrer des données depuis des emplacements sur s
 
 Le tableau de bord de gouvernance fournit des informations vous permettant d'améliorer votre efficacité et de contrôler les coûts liés aux données stockées sur vos ressources de stockage.
 
-image:screenshot_compliance_governance_dashboard.png["Capture d'écran du tableau de bord Cloud Data Sense Governance."]
+image:screenshot_compliance_governance_dashboard.png["Capture d'écran du tableau de bord BlueXP classification Governance."]
 
 
 
@@ -92,7 +92,7 @@ image:screenshot_compliance_sensitive_data.png["Capture d'écran affichant les d
 
 Vous pouvez cliquer sur le bloc qui vous intéresse pour afficher les résultats filtrés des fichiers affectés dans la page Investigation afin que vous puissiez en rechercher davantage.
 
-Aucune donnée ne s'affiche dans ce panneau si vous n'avez pas intégré de service d'identité avec Data Sense. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec Data Sense"^].
+Aucune donnée n'est affichée dans ce panneau si vous n'avez pas intégré de service d'identité avec la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec la classification BlueXP"^].
 
 
 TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Actuellement, il n'est pas compatible avec les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
@@ -185,7 +185,7 @@ Le rapport contient les informations suivantes :
 
 === Génération du rapport de mappage de données
 
-Vous générez ce rapport à partir de l'onglet gouvernance dans Data Sense.
+Ce rapport est généré à partir de l'onglet gouvernance de la classification BlueXP.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
@@ -196,9 +196,9 @@ image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du 
 
 
 .Résultat
-Data Sense génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
-Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
+Notez que vous pouvez personnaliser le nom de l'entreprise qui apparaît sur la première page du rapport en partant du haut de la page de classification BlueXP en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 
 
@@ -230,7 +230,7 @@ Après l'évaluation, ce rapport identifie les domaines dans lesquels vous pouve
 
 === Génération du rapport d'évaluation de découverte de données
 
-Vous générez ce rapport à partir de l'onglet gouvernance dans Data Sense.
+Ce rapport est généré à partir de l'onglet gouvernance de la classification BlueXP.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
@@ -241,6 +241,6 @@ image:screenshot_compliance_data_discovery_report_button.png["Capture d'écran d
 
 
 .Résultat
-Data Sense génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
-Notez que vous pouvez personnaliser le nom de la société qui apparaît sur la première page du rapport en haut de la page détection de données en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
+Notez que vous pouvez personnaliser le nom de l'entreprise qui apparaît sur la première page du rapport en partant du haut de la page de classification BlueXP en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.

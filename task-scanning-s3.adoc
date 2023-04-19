@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-s3.html 
 keywords: cloud compliance, amazon s3, s3 buckets, amazon s3 buckets, scan s3 buckets, scan amazon s3 buckets, enable compliance s3, enable compliance on s3, s3 working environment, data sense 
-summary: 'Cloud Data Sense peut analyser vos compartiments Amazon S3 pour identifier les données personnelles et sensibles qui résident dans le stockage objet S3. Cloud Data Sense peut scanner n"importe quel compartiment du compte, indépendamment de sa création pour une solution NetApp.' 
+summary: 'La classification BlueXP peut analyser vos compartiments Amazon S3 pour identifier les données personnelles et sensibles qui résident dans le stockage objet S3. La classification BlueXP peut analyser n"importe quel compartiment du compte, qu"il ait été créé pour une solution NetApp.' 
 ---
-= Mise en route de Cloud Data Sense pour Amazon S3
+= Mise en route de la classification BlueXP pour Amazon S3
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Cloud Data Sense peut analyser vos compartiments Amazon S3 pour identi
 
 
 [role="lead"]
-Cloud Data Sense peut analyser vos compartiments Amazon S3 pour identifier les données personnelles et sensibles qui résident dans le stockage objet S3. Cloud Data Sense peut scanner n'importe quel compartiment du compte, indépendamment de sa création pour une solution NetApp.
+La classification BlueXP peut analyser vos compartiments Amazon S3 pour identifier les données personnelles et sensibles qui résident dans le stockage objet S3. La classification BlueXP peut analyser n'importe quel compartiment du compte, qu'il ait été créé pour une solution NetApp.
 
 
 
@@ -24,19 +24,19 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Configurez les exigences S3 dans votre environnement cloud
 [role="quick-margin-para"]
-Assurez-vous que votre environnement cloud répond aux exigences du Cloud Data SENSE, notamment la préparation d'un rôle IAM et la configuration de la connectivité depuis Data Sense vers S3. <<Vérification des prérequis S3,Voir la liste complète>>.
+Assurez-vous que votre environnement cloud répond aux exigences de classification BlueXP, notamment en préparant un rôle IAM et en configurant la connectivité entre la classification BlueXP et S3. <<Vérification des prérequis S3,Voir la liste complète>>.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance Cloud Data SENSE
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez des données adaptées au cloud"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Activation de Data Sense dans votre environnement de travail S3
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Activez la classification BlueXP dans votre environnement de travail S3
 [role="quick-margin-para"]
 Sélectionnez l'environnement de travail Amazon S3, cliquez sur *Activer* et sélectionnez un rôle IAM qui inclut les autorisations requises.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Sélectionnez les compartiments à numériser
 [role="quick-margin-para"]
-Sélectionnez les compartiments que vous souhaitez analyser et Cloud Data SENSE commence à les analyser.
+Sélectionnez les compartiments que vous souhaitez analyser et la classification BlueXP commencera à les analyser.
 
 
 
@@ -45,7 +45,7 @@ Sélectionnez les compartiments que vous souhaitez analyser et Cloud Data SENSE 
 Les exigences suivantes sont spécifiques à l'analyse des compartiments S3.
 
 [[policy-requirements]]
-Configurez un rôle IAM pour l'instance Cloud Data Sense:: Cloud Data SENSE a besoin d'autorisations pour se connecter aux compartiments S3 de votre compte et pour les analyser. Configurez un rôle IAM qui inclut les autorisations répertoriées ci-dessous. BlueXP vous invite à sélectionner un rôle IAM lorsque vous activez Data Sense dans l'environnement de travail Amazon S3.
+Configurez un rôle IAM pour l'instance de classification BlueXP:: La classification BlueXP nécessite des autorisations pour se connecter aux compartiments S3 de votre compte et les analyser. Configurez un rôle IAM qui inclut les autorisations répertoriées ci-dessous. BlueXP vous invite à sélectionner un rôle IAM lorsque vous activez la classification BlueXP dans l'environnement de travail Amazon S3.
 +
 --
 [source, json]
@@ -78,10 +78,10 @@ Configurez un rôle IAM pour l'instance Cloud Data Sense:: Cloud Data SENSE a be
 }
 ----
 --
-Connectivité entre le maillage Cloud Data Sense et Amazon S3:: Cloud Data SENSE a besoin d'une connexion à Amazon S3. Pour assurer cette connexion, le meilleur moyen consiste à utiliser un terminal VPC pour le service S3. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
+Connectivité de la classification BlueXP à Amazon S3:: La classification BlueXP doit être connectée à Amazon S3. Pour assurer cette connexion, le meilleur moyen consiste à utiliser un terminal VPC pour le service S3. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
 +
 --
-Lorsque vous créez le point de terminaison VPC, veillez à sélectionner la région, le VPC et la table de routage correspondant à l'instance Cloud Data Sense. Vous devez également modifier le groupe de sécurité pour ajouter une règle HTTPS sortante qui active le trafic vers le terminal S3. Dans le cas contraire, Data Sense ne peut pas se connecter au service S3.
+Lorsque vous créez le terminal VPC, veillez à sélectionner la région, le VPC et la table de routage correspondant à l'instance de classification BlueXP. Vous devez également modifier le groupe de sécurité pour ajouter une règle HTTPS sortante qui active le trafic vers le terminal S3. Sinon, la classification BlueXP ne peut pas se connecter au service S3.
 
 Si vous rencontrez des problèmes, reportez-vous à la section https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^]
 
@@ -95,21 +95,21 @@ NOTE: Vous ne pouvez pas utiliser de proxy pour accéder à S3 sur Internet.
 
 
 
-== Déploiement de l'instance Cloud Data Sense
+== Déploiement de l'instance de classification BlueXP
 
-link:task-deploy-cloud-compliance.html["Déployez Cloud Data Sense dans BlueXP"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans BlueXP"^] si aucune instance n'est déjà déployée.
 
 Vous devez déployer l'instance à l'aide d'un connecteur déployé dans AWS. BlueXP détecte automatiquement les compartiments S3 dans ce compte AWS et les affiche dans un environnement de travail Amazon S3.
 
-*Remarque :* le déploiement de Cloud Data SENSE dans un emplacement sur site n'est pas pris en charge actuellement lors de l'analyse des compartiments S3.
+*Remarque :* le déploiement de la classification BlueXP dans un emplacement sur site n'est actuellement pas pris en charge lors de l'analyse des compartiments S3.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
-== Activation de Data Sense dans votre environnement de travail S3
+== Activation de la classification BlueXP sur votre environnement de travail S3
 
-Activez Cloud Data SENSE sur Amazon S3 après avoir vérifié les prérequis.
+Activez la classification BlueXP sur Amazon S3 après avoir vérifié les prérequis.
 
 .Étapes
 . Dans le menu de navigation de gauche de BlueXP, cliquez sur *stockage > Canvas*.
@@ -119,17 +119,17 @@ image:screenshot_s3_we.gif["Copie d'écran d'une icône d'environnement de trava
 
 . Dans le volet Services à droite, cliquez sur *Activer* en regard de *Classification*.
 +
-image:screenshot_s3_enable_compliance.png["Capture d'écran du service Cloud Data Sense dans le panneau Services"]
+image:screenshot_s3_enable_compliance.png["Capture d'écran de l'activation du service de classification BlueXP depuis le panneau Services"]
 
-. Attribuez un rôle IAM à l'instance Cloud Data SENSE qui dispose de <<Vérification des prérequis S3,les autorisations requises>>.
+. Lorsque vous y êtes invité, attribuez un rôle IAM à l'instance de classification BlueXP qui dispose de <<Vérification des prérequis S3,les autorisations requises>>.
 +
-image:screenshot_s3_compliance_iam_role.png["Capture d'écran de l'entrée du rôle IAM AWS pour le sens des données cloud"]
+image:screenshot_s3_compliance_iam_role.png["Capture d'écran d'entrée du rôle IAM AWS pour la classification BlueXP"]
 
 . Cliquez sur *Activer*.
 
 
 
-TIP: Vous pouvez également activer les analyses de conformité pour un environnement de travail à partir de la page Configuration en cliquant sur image:screenshot_gallery_options.gif[""] Et en sélectionnant *Activer détection de données*.
+TIP: Vous pouvez également activer les analyses de conformité pour un environnement de travail à partir de la page Configuration en cliquant sur image:screenshot_gallery_options.gif[""] Et en sélectionnant *Activer la classification BlueXP*.
 
 .Résultat
 BlueXP affecte le rôle IAM à l'instance.
@@ -138,11 +138,11 @@ BlueXP affecte le rôle IAM à l'instance.
 
 == Activation et désactivation des analyses de conformité dans les compartiments S3
 
-Une fois que BlueXP a activé Cloud Data Sense sur Amazon S3, l'étape suivante consiste à configurer les compartiments que vous souhaitez numériser.
+Une fois que BlueXP a activé la classification BlueXP sur Amazon S3, l'étape suivante consiste à configurer les compartiments à analyser.
 
 Lorsque BlueXP est exécuté dans le compte AWS doté des compartiments S3 que vous souhaitez analyser, il détecte ces compartiments et les affiche dans un environnement de travail Amazon S3.
 
-Cloud Data Sense peut également être <<Analyse des compartiments à partir de comptes AWS supplémentaires,Analysez les compartiments S3 qui se trouvent dans différents comptes AWS>>.
+La classification BlueXP peut également être utilisée <<Analyse des compartiments à partir de comptes AWS supplémentaires,Analysez les compartiments S3 qui se trouvent dans différents comptes AWS>>.
 
 .Étapes
 . Sélectionnez l'environnement de travail Amazon S3.
@@ -171,13 +171,13 @@ image:screenshot_s3_select_buckets.png["Capture d'écran de la sélection des co
 
 
 .Résultat
-Cloud Data Sense commence l'analyse des compartiments S3 que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+La classification BlueXP commence à analyser les compartiments S3 que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
 
 
 
 == Analyse des compartiments à partir de comptes AWS supplémentaires
 
-Pour scanner les compartiments S3 qui se trouvent dans un autre compte AWS, vous devez attribuer un rôle à partir de ce compte pour accéder à l'instance Cloud Data Sense existante.
+Vous pouvez analyser les compartiments S3 situés sous un autre compte AWS en attribuant un rôle à partir de ce compte pour accéder à l'instance de classification BlueXP existante.
 
 .Étapes
 . Accédez au compte AWS cible où vous voulez analyser les compartiments S3 et créer un rôle IAM en sélectionnant *un autre compte AWS*.
@@ -188,9 +188,9 @@ image:screenshot_iam_create_role.gif["Capture d'écran de la page AWS pour crée
 Assurez-vous de faire ce qui suit :
 
 +
-** Entrez l'ID du compte sur lequel réside l'instance Cloud Data SENSE.
+** Entrez l'ID du compte où réside l'instance de classification BlueXP.
 ** Modifiez la durée * maximale de la session CLI/API* de 1 heure à 12 heures et enregistrez cette modification.
-** Joignez la politique IAM de détection des données cloud. Assurez-vous qu'il dispose des autorisations requises.
+** Reliez la règle IAM de classification BlueXP. Assurez-vous qu'il dispose des autorisations requises.
 +
 [source, json]
 ----
@@ -211,7 +211,7 @@ Assurez-vous de faire ce qui suit :
 ----
 
 
-. Accédez au compte AWS source sur lequel réside l'instance Data Sense et sélectionnez le rôle IAM associé à l'instance.
+. Accédez au compte AWS source sur lequel réside l'instance de classification BlueXP et sélectionnez le rôle IAM qui est associé à l'instance.
 +
 .. Modifiez la durée * maximale de la session CLI/API* de 1 heure à 12 heures et enregistrez cette modification.
 .. Cliquez sur *attacher des stratégies*, puis sur *Créer une stratégie*.
@@ -243,16 +243,16 @@ Assurez-vous de faire ce qui suit :
 }
 ----
 +
-Le compte d'instance Cloud Data SENSE a désormais accès au compte AWS supplémentaire.
+Le compte de profil d'instance de classification BlueXP a désormais accès au compte AWS supplémentaire.
 
 
 
-. Accédez à la page *Amazon S3 Configuration* et le nouveau compte AWS s'affiche. Notez que la synchronisation de l'environnement de travail du nouveau compte prend quelques minutes avec Cloud Data SENSE.
+. Accédez à la page *Amazon S3 Configuration* et le nouveau compte AWS s'affiche. Notez que la classification BlueXP peut prendre quelques minutes pour synchroniser l'environnement de travail du nouveau compte et afficher ces informations.
 +
-image:screenshot_activate_and_select_buckets.png["Capture d'écran indiquant comment activer la détection de données."]
+image:screenshot_activate_and_select_buckets.png["Copie d'écran montrant comment activer la classification BlueXP."]
 
-. Cliquez sur *Activer la détection des données et sélectionnez les rubriques* et sélectionnez les rubriques que vous souhaitez numériser.
+. Cliquez sur *Activer la classification BlueXP et sélectionner les compartiments* et sélectionnez les compartiments à analyser.
 
 
 .Résultat
-Cloud Data Sense commence l'analyse des nouveaux compartiments S3 que vous avez activés.
+La classification BlueXP commence à analyser les nouveaux compartiments S3 que vous avez activés.

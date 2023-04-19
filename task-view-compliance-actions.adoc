@@ -20,8 +20,8 @@ Cela vous permet de voir les actions effectuées avec succès, celles en cours e
 
 Le statut peut être :
 
-* Succès - une action détection de données est terminée et tous les éléments ont réussi.
-* Réussite partielle - une action détection de données est terminée et certains éléments ont échoué et certains ont réussi.
+* Réussite : Une action de classification BlueXP est terminée et tous les éléments ont réussi.
+* Réussite partielle : Une action de classification BlueXP est terminée, certains éléments ont échoué et d'autres ont réussi.
 * En cours - l'action est toujours en cours.
 * En file d'attente - l'action n'a pas démarré.
 * Annulé : l'action a été annulée.
@@ -31,7 +31,7 @@ Le statut peut être :
 Notez que vous pouvez annuler toutes les actions ayant le statut « en attente » ou « en cours ».
 
 .Étapes
-. Dans le coin inférieur droit de l'interface utilisateur de détection de données, vous pouvez voir le bouton *actions Status* image:button_actions_status.png[""].
+. En bas à droite de l'interface utilisateur de classification BlueXP, vous pouvez voir le bouton *actions Status* image:button_actions_status.png[""].
 . Cliquez sur ce bouton et les 20 actions les plus récentes sont répertoriées.
 +
 image:screenshot_compliance_action_status.png["Capture d'écran présentant les 20 dernières actions et leur état dans la page Configuration."]

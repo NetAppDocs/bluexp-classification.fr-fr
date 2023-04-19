@@ -16,13 +16,13 @@ summary: 'Vous pouvez gérer les données en cours d"analyse dans chacun de vos 
 [role="lead"]
 Vous pouvez gérer les données en cours d'analyse dans chacun de vos environnements de travail et de vos sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.
 
-Certaines des choses que vous pouvez changer sont les scannées ou non d'un référentiel et si Data SENSE effectue une link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["acquisition de mappage ou cartographie etamp ; acquisition de classification"]. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.
+Vous pouvez modifier le type d'analyse d'un référentiel et déterminer si celui-ci exécute une link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["acquisition de mappage ou cartographie etamp ; acquisition de classification"]. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.
 
 
 
 == Affichage de l'état de numérisation de vos référentiels
 
-Vous pouvez afficher les référentiels individuels où Data Sense effectue des analyses (volumes, compartiments, etc.) pour chaque environnement de travail et chaque source de données. De plus, vous pouvez voir combien ont été « mappés » et combien ont été « classés ». Le classement est plus rapide lorsque l'identification complète de l'IA est effectuée sur toutes les données.
+Vous pouvez afficher les référentiels individuels que la classification BlueXP analyse (volumes, compartiments, etc.) pour chaque environnement de travail et source de données. De plus, vous pouvez voir combien ont été « mappés » et combien ont été « classés ». Le classement est plus rapide lorsque l'identification complète de l'IA est effectuée sur toutes les données.
 
 .Étapes
 . Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
@@ -67,7 +67,7 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 == Interruption et reprise de la numérisation pour un référentiel
 
-Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Ce n'est pas le même que la désactivation de la numérisation. Lorsque la numérisation est désactivée, toutes les informations et l'indexation relatives à ce volume sont supprimées du système. La mise en pause de l'analyse signifie que Data Sense n'effectue aucune analyse future pour les modifications ou ajouts au référentiel, mais que tous les résultats actuels seront toujours affichés dans le système.
+Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Ce n'est pas le même que la désactivation de la numérisation. Lorsque la numérisation est désactivée, toutes les informations et l'indexation relatives à ce volume sont supprimées du système. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système.
 
 Vous pouvez reprendre la numérisation à tout moment.
 
@@ -92,9 +92,9 @@ image:screenshot_compliance_repo_pause_resume2.png["Capture d'écran montrant co
 
 == Renumérisation des données d'un référentiel existant
 
-Data Sense analyse en continu vos données pour détecter les modifications incrémentielles dans les référentiels que vous avez ajoutés. Cependant, il faut du temps pour analyser tous les environnements et il n'existe aucune méthode pour contrôler l'ordre des référentiels analysés. Si vous devez relancer une nouvelle analyse d'un référentiel particulier immédiatement afin que les modifications soient répercutées dans le système, vous pouvez sélectionner le référentiel et le relancer. Cela vous permet de hiérarchiser la numérisation de certaines données avant d'autres données. Après l'action de nouvelle analyse, le référentiel sélectionné revient à être numérisé dans le programme normal de détection des données.
+La classification BlueXP analyse en continu vos données pour détecter les modifications incrémentielles dans les référentiels que vous avez ajoutés. Cependant, il faut du temps pour analyser tous les environnements et il n'existe aucune méthode pour contrôler l'ordre des référentiels analysés. Si vous devez relancer une nouvelle analyse d'un référentiel particulier immédiatement afin que les modifications soient répercutées dans le système, vous pouvez sélectionner le référentiel et le relancer. Cela vous permet de hiérarchiser la numérisation de certaines données avant d'autres données. Après l'action de nouvelle analyse, le référentiel sélectionné revient à être analysé selon la planification de classification BlueXP normale.
 
-Data Sense prend en charge l'analyse des répertoires sur tous les types de sources de données, à l'exception d'Amazon S3 et des bases de données. Actuellement, nous prenons en charge la réanalyse d'un seul répertoire (dossier ou partage) ou de plusieurs répertoires. La prise en charge future comprendra la réanalyse de types de référentiel supplémentaires (fichiers, bases de données, etc.).
+La classification BlueXP prend en charge les répertoires d'analyse sur tous les types de sources de données, à l'exception d'Amazon S3 et des bases de données. Actuellement, nous prenons en charge la réanalyse d'un seul répertoire (dossier ou partage) ou de plusieurs répertoires. La prise en charge future comprendra la réanalyse de types de référentiel supplémentaires (fichiers, bases de données, etc.).
 
 * Lors de la recréation d'un répertoire, tous les fichiers du répertoire sont réarchivés, mais les sous-dossiers du répertoire ne sont pas réprédéfinis.
 * Lors du recanning d'un partage, seules les métadonnées du partage sont réprédéfinies.

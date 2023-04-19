@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-file-shares.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
-summary: 'Procédez comme suit pour lancer l"analyse des partages de fichiers NFS ou CIFS non NetApp directement avec Cloud Data SENSE. Ces partages de fichiers peuvent résider sur site ou dans le cloud.' 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: 'Procédez en quelques étapes pour commencer l"analyse des partages de fichiers NFS ou CIFS non NetApp directement avec la classification BlueXP. Ces partages de fichiers peuvent résider sur site ou dans le cloud.' 
 ---
 = Analyse des partages de fichiers
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Procédez comme suit pour lancer l"analyse des partages de fichiers NF
 
 
 [role="lead"]
-Procédez comme suit pour lancer l'analyse des partages de fichiers NFS ou CIFS non NetApp directement avec Cloud Data SENSE. Ces partages de fichiers peuvent résider sur site ou dans le cloud.
+Procédez en quelques étapes pour commencer l'analyse des partages de fichiers NFS ou CIFS non NetApp directement avec la classification BlueXP. Ces partages de fichiers peuvent résider sur site ou dans le cloud.
 
 
 
@@ -26,9 +26,9 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 [role="quick-margin-para"]
 Pour les partages CIFS (SMB), assurez-vous que vous disposez des identifiants pour accéder aux partages.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance Cloud Data SENSE
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez des données adaptées au cloud"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Créez un groupe pour conserver les partages de fichiers
 [role="quick-margin-para"]
@@ -42,37 +42,37 @@ Ajoutez la liste des partages de fichiers que vous souhaitez numériser et séle
 
 == Vérification des exigences relatives au partage de fichiers
 
-Avant d'activer le Cloud Data sens, lisez les conditions préalables suivantes pour vérifier que la configuration est prise en charge.
+Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
 * Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Dans la plupart des cas, il s'agit de partages de fichiers qui résident sur des systèmes de stockage non NetApp. Toutefois, les partages CIFS d'anciens systèmes de stockage NetApp 7-mode peuvent être analysés en tant que partages de fichiers.
 +
-Data Sense ne peut pas extraire les autorisations ou l'heure du dernier accès des systèmes 7-mode. En outre, il existe un problème connu dans lequel le montage des partages CIFS sur SMB version 2 n'est pas pris en charge pour Linux.
+Notez que la classification BlueXP ne peut pas extraire les autorisations, ni l'heure du dernier accès des systèmes 7-mode. En outre, en raison d'un problème connu entre certaines versions de Linux et certains partages CIFS sur les systèmes 7-mode, vous devez configurer le partage pour qu'il n'utilise que SMB v1 avec l'authentification NTLM activée.
 
-* Il faut une connectivité réseau entre l'instance Data Sense et les partages.
-* Assurez-vous que ces ports sont ouverts à l'instance de détection de données :
+* Il doit y avoir une connectivité réseau entre l'instance de classification BlueXP et les partages.
+* Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP :
 +
 ** Pour NFS – ports 111 et 2049.
 ** Pour CIFS – ports 139 et 445.
 
 
 * Vous aurez besoin de la liste des partages que vous souhaitez ajouter au format `<host_name>:/<share_path>`. Vous pouvez entrer les partages individuellement ou fournir une liste séparée par des lignes des partages de fichiers que vous souhaitez scanner.
-* Pour les partages CIFS (SMB), assurez-vous que vous disposez des identifiants Active Directory qui fournissent un accès en lecture aux partages. Les identifiants d'administrateur sont à privilégier dans le cas où Cloud Data SENSE doit analyser toutes les données qui exigent des autorisations élevées.
+* Pour les partages CIFS (SMB), assurez-vous que vous disposez des identifiants Active Directory qui fournissent un accès en lecture aux partages. Les identifiants d'administration sont préférés si la classification BlueXP doit analyser les données nécessitant des autorisations élevées.
 +
-Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification Data Sense, nous vous recommandons de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 
 
 
 
-== Déploiement de l'instance Cloud Data Sense
+== Déploiement de l'instance de classification BlueXP
 
-Déployez Cloud Data si aucune instance n'est déjà déployée.
+Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
-Si vous scannez des partages de fichiers NFS ou CIFS non NetApp accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez les données du cloud dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployer Data Sense dans un emplacement sur site avec accès Internet"^].
+Si vous scannez des partages de fichiers NFS ou CIFS non NetApp accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployez la classification BlueXP dans un emplacement sur site disposant d'un accès Internet"^].
 
-Si vous scannez des partages de fichiers NFS ou CIFS non NetApp installés dans un site sombre qui n'offrent pas d'accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez les données cloud sur site qui ne disposent pas d'un accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
+Si vous scannez des partages de fichiers NFS ou CIFS non NetApp installés dans un site sombre qui n'offrent pas d'accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
@@ -96,7 +96,7 @@ Le nouveau groupe de partages de fichiers est ajouté à la liste des environnem
 
 == Ajout de partages de fichiers à un groupe
 
-Vous ajoutez des partages de fichiers au groupe de partages de fichiers afin que les fichiers de ces partages soient analysés par Cloud Data Sense. Vous ajoutez les partages au format `<host_name>:/<share_path>`.
+Vous ajoutez des partages de fichiers au groupe partages de fichiers afin que les fichiers de ces partages soient analysés par la classification BlueXP. Vous ajoutez les partages au format `<host_name>:/<share_path>`.
 
 Vous pouvez ajouter des partages de fichiers individuels, ou vous pouvez fournir une liste séparée par des lignes des partages de fichiers que vous souhaitez analyser. Vous pouvez ajouter jusqu'à 100 partages à la fois.
 
@@ -146,12 +146,12 @@ Si la boîte de dialogue répertorie tous les partages qui n'ont pas pu être aj
 | Désactiver l'analyse sur les partages de fichiers | Cliquez sur *Off* 
 |===
 +
-Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si Data Sense ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne scanne pas les fichiers car Data Sense ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
+Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 
 
 .Résultat
-Cloud Data Sense commence à analyser les fichiers dans les partages de fichiers que vous avez ajoutés, et les résultats sont affichés dans le Tableau de bord et à d'autres emplacements.
+La classification BlueXP commence à analyser les fichiers des partages de fichiers que vous avez ajoutés. Les résultats s'affichent dans le tableau de bord et à d'autres emplacements.
 
 
 

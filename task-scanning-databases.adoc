@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-databases.html 
-keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, Data Sense 
-summary: 'Suivez quelques étapes pour commencer à scanner vos schémas de base de données à l"aide de Cloud Data Sense.' 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
+summary: Procédez en quelques étapes pour commencer à analyser vos schémas de base de données avec la classification BlueXP. 
 ---
 = Analyse des schémas de base de données
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Suivez quelques étapes pour commencer à scanner vos schémas de base
 
 
 [role="lead"]
-Suivez quelques étapes pour commencer à scanner vos schémas de base de données à l'aide de Cloud Data Sense.
+Procédez en quelques étapes pour commencer à analyser vos schémas de base de données avec la classification BlueXP.
 
 
 
@@ -26,9 +26,9 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 [role="quick-margin-para"]
 Assurez-vous que votre base de données est prise en charge et que vous disposez des informations nécessaires pour vous connecter à la base de données.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance Cloud Data SENSE
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez des données adaptées au cloud"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Ajoutez le serveur de base de données
 [role="quick-margin-para"]
@@ -42,13 +42,13 @@ Sélectionnez les schémas à numériser.
 
 == Vérification des prérequis
 
-Avant d'activer le Cloud Data sens, lisez les conditions préalables suivantes pour vérifier que la configuration est prise en charge.
+Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
 
 
 === Bases de données prises en charge
 
-Cloud Data SENSE peut scanner des schémas à partir des bases de données suivantes :
+La classification BlueXP peut analyser les schémas à partir des bases de données suivantes :
 
 * Amazon Relational Database Service (Amazon RDS)
 * MongoDB
@@ -66,14 +66,14 @@ CAUTION: La fonction de collecte de statistiques *doit être activée* dans la b
 
 === Configuration requise pour les bases de données
 
-Toutes les bases de données connectée à l'instance Cloud Data SENSE peuvent être analysées, quel que soit l'endroit où elles sont hébergées. Pour vous connecter à la base de données, il vous suffit de disposer des informations suivantes :
+N'importe quelle base de données connectée à l'instance de classification BlueXP peut être analysée, quel que soit son emplacement d'hébergement. Pour vous connecter à la base de données, il vous suffit de disposer des informations suivantes :
 
 * Adresse IP ou nom d'hôte
 * Port
 * Nom du service (uniquement pour l'accès aux bases de données Oracle)
 * Références permettant l'accès en lecture aux schémas
 +
-Lors du choix d'un nom d'utilisateur et d'un mot de passe, il est important de choisir celui qui dispose des autorisations de lecture complètes pour tous les schémas et tables que vous souhaitez numériser. Nous vous recommandons de créer un utilisateur dédié pour le système Cloud Data SENSE avec toutes les autorisations requises.
+Lors du choix d'un nom d'utilisateur et d'un mot de passe, il est important de choisir celui qui dispose des autorisations de lecture complètes pour tous les schémas et tables que vous souhaitez numériser. Nous vous recommandons de créer un utilisateur dédié pour le système de classification BlueXP avec toutes les autorisations requises.
 
 
 
@@ -81,15 +81,15 @@ Lors du choix d'un nom d'utilisateur et d'un mot de passe, il est important de c
 
 
 
-== Déploiement de l'instance Cloud Data Sense
+== Déploiement de l'instance de classification BlueXP
 
-Déployez Cloud Data si aucune instance n'est déjà déployée.
+Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
-Si vous numérisez des schémas de base de données accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez les données du cloud dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployer Data Sense dans un emplacement sur site avec accès Internet"^].
+Si vous numérisez des schémas de base de données accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployez la classification BlueXP dans un emplacement sur site disposant d'un accès Internet"^].
 
-Si vous numérisez des schémas de base de données qui ont été installés sur un site sombre sans accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez les données cloud sur site qui ne disposent pas d'un accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
+Si vous numérisez des schémas de base de données qui ont été installés sur un site sombre sans accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
@@ -106,7 +106,7 @@ image:screenshot_compliance_add_db_server_button.png["Capture d'écran de la pag
 .. Sélectionnez le type de base de données.
 .. Entrez le port et le nom d'hôte ou l'adresse IP pour vous connecter à la base de données.
 .. Pour les bases de données Oracle, entrez le nom du service.
-.. Entrez les identifiants afin que Cloud Data SENSE puisse accéder au serveur.
+.. Entrez les identifiants pour que la classification BlueXP puisse accéder au serveur.
 .. Cliquez sur *Ajouter serveur DB*.
 +
 image:screenshot_compliance_add_db_server_dialog.png["Capture d'écran de la page Ajouter un serveur de base de données pour identifier la base de données."]
@@ -137,6 +137,6 @@ image:screenshot_compliance_select_schemas.png["Capture d'écran de la page Conf
 
 
 .Résultat
-Cloud Data SENSE commence à analyser les schémas de base de données que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+La classification BlueXP commence à analyser les schémas de base de données que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
 
-Notez que Data Sense analyse vos bases de données une fois par jour. Les bases de données ne sont pas continuellement analysées comme d'autres sources de données.
+Notez que la classification BlueXP analyse vos bases de données une fois par jour. Les bases de données ne sont pas continuellement analysées comme d'autres sources de données.

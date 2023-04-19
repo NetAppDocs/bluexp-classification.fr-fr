@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-audit-data-sense-actions.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Data Sense consigne les activités de gestion qui ont été effectuées sur des fichiers de tous les environnements de travail et des sources de données que Data Sense est en train d"analyser. Data Sense consigne également les activités lors du déploiement de l"instance Data Sense.' 
+summary: 'Les activités de gestion des journaux de classification BlueXP qui ont été effectuées sur des fichiers depuis tous les environnements de travail et toutes les sources de données que la classification BlueXP analyse. La classification BlueXP consigne également les activités liées au déploiement de l"instance de classification BlueXP.' 
 ---
-= Audit de l'historique des actions de détection de données
+= Audit de l'historique des actions de classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 'Data Sense consigne les activités de gestion qui ont été effectuée
 
 
 [role="lead"]
-Data Sense consigne les activités de gestion qui ont été effectuées sur des fichiers de tous les environnements de travail et des sources de données que Data Sense est en train d'analyser. Data Sense consigne également les activités lors du déploiement de l'instance Data Sense.
+Les activités de gestion des journaux de classification BlueXP qui ont été effectuées sur des fichiers depuis tous les environnements de travail et toutes les sources de données que la classification BlueXP analyse. La classification BlueXP consigne également les activités liées au déploiement de l'instance de classification BlueXP.
 
-Vous pouvez afficher le contenu des fichiers journaux d'audit de détection de données ou les télécharger pour voir quels changements de fichier ont eu lieu, et quand. Par exemple, vous pouvez voir quelle demande a été émise, l'heure de la demande et des détails tels que l'emplacement source en cas de suppression d'un fichier ou l'emplacement source et de destination en cas de déplacement d'un fichier.
+Vous pouvez afficher le contenu des fichiers journaux d'audit de classification BlueXP ou les télécharger pour voir quelles modifications de fichier ont été apportées et à quelle date. Par exemple, vous pouvez voir quelle demande a été émise, l'heure de la demande et des détails tels que l'emplacement source en cas de suppression d'un fichier ou l'emplacement source et de destination en cas de déplacement d'un fichier.
 
 
 
@@ -52,15 +52,15 @@ Par exemple, les lignes suivantes du fichier journal indiquent une opération de
 
 == Accédez au fichier journal
 
-Les fichiers journaux d'audit de gestion se trouvent sur la machine Data Sense dans : `/opt/netapp/audit_logs/`
+Les fichiers journaux d'audit de gestion se trouvent sur la machine de classification BlueXP dans : `/opt/netapp/audit_logs/`
 
 Les fichiers journaux d'audit d'installation sont écrits dans `/opt/netapp/install_logs/`
 
 Chaque fichier journal peut avoir une taille maximale de 10 Mo. Lorsque cette limite est atteinte, un nouveau fichier journal démarre. Les fichiers journaux sont nommés « DataSense_audit.log », « DataSense_audit.log.1 », « DataSense_audit.log.2 », etc. Un maximum de 100 fichiers journaux sont conservés sur le système. Les anciens fichiers journaux sont supprimés automatiquement une fois le maximum atteint.
 
-Lorsque Data Sense est installé sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez naviguer directement vers le fichier journal.
+Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier journal.
 
-Lorsque Data Sense est déployé dans le cloud, vous devez utiliser SSH vers l'instance Data Sense. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
+Lorsque la classification BlueXP est déployée dans le cloud, vous devez établir une connexion SSH avec l'instance de classification BlueXP. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path_to_the_ssh_key> = emplacement des clés d'authentification ssh

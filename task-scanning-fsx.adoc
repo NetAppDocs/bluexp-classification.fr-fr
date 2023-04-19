@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: 'Suivez quelques étapes pour commencer l"analyse d"Amazon FSX pour les volumes ONTAP avec Cloud Data Sense.' 
+summary: Suivez ces étapes pour commencer à analyser le volume Amazon FSX pour ONTAP avec la classification BlueXP. 
 ---
-= Lancez-vous avec Cloud Data Sense for Amazon FSX pour ONTAP
+= Commencez à utiliser la classification BlueXP pour Amazon FSX pour ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: 'Suivez quelques étapes pour commencer l"analyse d"Amazon FSX pour les
 
 
 [role="lead"]
-Suivez quelques étapes pour commencer l'analyse d'Amazon FSX pour les volumes ONTAP avec Cloud Data Sense.
+Suivez ces étapes pour commencer à analyser le volume Amazon FSX pour ONTAP avec la classification BlueXP.
 
 
 
 == Avant de commencer
 
-* Vous avez besoin d'un connecteur actif dans AWS pour déployer et gérer Data Sense.
-* Le groupe de sécurité que vous avez sélectionné lors de la création de l'environnement de travail doit autoriser le trafic à partir de l'instance Cloud Data SENSE. Vous pouvez trouver le groupe de sécurité associé à l'aide de l'ENI connecté au système de fichiers FSX pour ONTAP et le modifier à l'aide de la console de gestion AWS.
+* Vous avez besoin d'un connecteur actif dans AWS pour déployer et gérer la classification BlueXP.
+* Le groupe de sécurité que vous avez sélectionné lors de la création de l'environnement de travail doit autoriser le trafic à partir de l'instance de classification BlueXP. Vous pouvez trouver le groupe de sécurité associé à l'aide de l'ENI connecté au système de fichiers FSX pour ONTAP et le modifier à l'aide de la console de gestion AWS.
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Groupes de sécurité AWS pour les instances Linux"^]
 
@@ -43,33 +43,33 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler vers le bas pou
 [role="quick-margin-para"]
 Avant de pouvoir analyser FSX pour des volumes ONTAP, https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["Vous devez disposer d'un environnement de travail FSX avec des volumes configurés"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance Cloud Data SENSE
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez Cloud Data Sense dans BlueXP"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans BlueXP"^] si aucune instance n'est déjà déployée.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Activez Cloud Data SENSE et sélectionnez les volumes à analyser
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Activez la classification BlueXP et sélectionnez les volumes à analyser
 [role="quick-margin-para"]
-Cliquez sur *Data Sense*, sélectionnez l'onglet *Configuration* et activez les analyses de conformité pour les volumes dans des environnements de travail spécifiques.
+Sélectionnez l'onglet *Configuration* et activez les analyses de conformité pour les volumes dans des environnements de travail spécifiques.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Vérifiez l'accès aux volumes
 [role="quick-margin-para"]
-Lorsque Cloud Data SENSE est activé, assurez-vous qu'il peut accéder à tous les volumes.
+Une fois la classification BlueXP activée, assurez-vous qu'elle peut accéder à tous les volumes.
 
 [role="quick-margin-list"]
-* L'instance Cloud Data SENSE doit disposer d'une connexion réseau à chaque sous-réseau FSX pour ONTAP.
-* Assurez-vous que les ports suivants sont ouverts à l'instance de détection de données :
+* L'instance de classification BlueXP nécessite une connexion réseau à chaque sous-réseau FSX pour ONTAP.
+* Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP :
 +
 ** Pour NFS – ports 111 et 2049.
 ** Pour CIFS – ports 139 et 445.
 
 
-* Les règles d'exportation de volumes NFS doivent autoriser l'accès à partir de l'instance Data Sense.
-* La détection de données a besoin des identifiants Active Directory pour analyser les volumes CIFS. + cliquez sur *conformité* > *Configuration* > *Modifier les informations d'identification CIFS* et fournissez les informations d'identification.
+* Les règles d'exportation des volumes NFS doivent autoriser l'accès à partir de l'instance de classification BlueXP.
+* La classification BlueXP requiert des informations d'identification Active Directory pour analyser les volumes CIFS. + cliquez sur *conformité* > *Configuration* > *Modifier les informations d'identification CIFS* et fournissez les informations d'identification.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinq"] Gérer les volumes à analyser
 [role="quick-margin-para"]
-Sélectionnez ou désélectionnez les volumes que vous souhaitez analyser et Cloud Data SENSE démarre ou arrête l'acquisition.
+Sélectionnez ou désélectionnez les volumes à analyser ; la classification BlueXP démarre ou arrête leur analyse.
 
 
 
@@ -81,25 +81,25 @@ https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-work
 
 
 
-== Déploiement de l'instance Cloud Data Sense
+== Déploiement de l'instance de classification BlueXP
 
-link:task-deploy-cloud-compliance.html["Déployez des données adaptées au cloud"^] si aucune instance n'est déjà déployée.
+link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
-Vous devez déployer Data Sense dans le même réseau AWS que le connecteur pour AWS et les volumes FSX que vous souhaitez analyser.
+Vous devez déployer la classification BlueXP dans le même réseau AWS que le connecteur pour AWS et les volumes FSX que vous souhaitez analyser.
 
-*Remarque :* le déploiement de Cloud Data SENSE dans un emplacement sur site n'est pas pris en charge actuellement lors de l'analyse de volumes FSX.
+*Remarque :* le déploiement de la classification BlueXP dans un emplacement sur site n'est actuellement pas pris en charge lors de l'analyse des volumes FSX.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
-== Activation des données cloud dans vos environnements de travail
+== Activation de la classification BlueXP dans vos environnements de travail
 
-Vous pouvez activer Cloud Data Sense pour FSX pour les volumes ONTAP.
+Vous pouvez activer la classification BlueXP pour les volumes FSX pour ONTAP.
 
 . Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*, puis sélectionnez l'onglet *Configuration*.
 +
-image:screenshot_fsx_scanning_activate.png["Une capture d'écran de l'onglet Configuration immédiatement après le déploiement de l'instance Cloud Data Sense."]
+image:screenshot_fsx_scanning_activate.png["Capture d'écran de l'onglet Configuration immédiatement après le déploiement de l'instance de classification BlueXP."]
 
 . Sélectionnez le mode de numérisation des volumes dans chaque environnement de travail. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["En savoir plus sur les acquisitions de mappage et de classification"]:
 +
@@ -111,52 +111,52 @@ Voir <<Activation et désactivation des analyses de conformité sur les volumes,
 
 
 
-. Dans la boîte de dialogue de confirmation, cliquez sur *approuver* pour que Data Sense commence à analyser vos volumes.
+. Dans la boîte de dialogue de confirmation, cliquez sur *Approve* pour que la classification BlueXP commence à analyser vos volumes.
 
 
 .Résultat
-Cloud Data SENSE commence à analyser les volumes que vous avez sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que Cloud Data SENSE aura terminé les analyses initiales. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
+La classification BlueXP démarre l'analyse des volumes sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que les analyses initiales seront terminées par la classification BlueXP. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
 
 
-NOTE: Par défaut, si Data Sense ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou si vous n'avez pas d'autorisations d'écriture dans NFS, le système ne scanne pas les fichiers de vos volumes car Data Sense ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Si vous ne vous souciez pas de réinitialiser l'heure du dernier accès, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*. Cette page dispose d'un paramètre que vous pouvez activer pour que Data Sense analyse les volumes indépendamment des autorisations.
+NOTE: Par défaut, si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers de vos volumes. En effet, la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Si vous ne vous souciez pas de réinitialiser l'heure du dernier accès, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*. Cette page dispose d'un paramètre que vous pouvez activer afin que la classification BlueXP analyse les volumes indépendamment des autorisations.
 
 
 
-== Vérifier que le sens des données cloud a accès aux volumes
+== Vérification de l'accès aux volumes par la classification BlueXP
 
-Assurez-vous que Cloud Data peut détecter l'accès aux volumes en vérifiant vos groupes de sécurité et vos règles de mise en réseau et d'exportation.
+Assurez-vous que la classification BlueXP peut accéder aux volumes en vérifiant votre réseau, vos groupes de sécurité et vos règles d'exportation.
 
-Vous devez fournir un « logique de données » avec des identifiants CIFS pour pouvoir accéder aux volumes CIFS.
+Vous devez fournir une classification BlueXP avec des informations d'identification CIFS pour pouvoir accéder aux volumes CIFS.
 
 .Étapes
 . Sur la page _Configuration_, cliquez sur *Afficher les détails* pour vérifier l'état et corriger les erreurs.
 +
-Par exemple, l'image suivante montre qu'un volume Cloud Data SENSE ne peut pas se scanner en raison de problèmes de connectivité réseau entre l'instance Data Sense et le volume.
+Par exemple, l'image suivante montre qu'une classification de volume BlueXP ne peut pas analyser en raison de problèmes de connectivité réseau entre l'instance de classification BlueXP et le volume.
 
 +
-image:screenshot_fsx_scanning_no_network_error.png["Capture d'écran de la page View Details de la configuration de numérisation indiquant que le volume n'est pas analysé en raison de la connectivité réseau entre Data Sense et le volume."]
+image:screenshot_fsx_scanning_no_network_error.png["Capture d'écran de la page Afficher les détails de la configuration d'analyse montrant le volume n'étant pas analysé en raison de la connectivité réseau entre la classification BlueXP et le volume."]
 
-. Vérifiez qu'il existe une connexion réseau entre l'instance Cloud Data Sense et chaque réseau incluant des volumes pour FSX pour ONTAP.
+. Assurez-vous qu'il existe une connexion réseau entre l'instance de classification BlueXP et chaque réseau incluant des volumes pour FSX pour ONTAP.
 +
 
-NOTE: Pour FSX pour ONTAP, Cloud Data SENSE ne peut analyser les volumes que dans la même région que BlueXP.
+NOTE: Dans le cas de FSX pour ONTAP, la classification BlueXP ne peut analyser les volumes que dans la même région que BlueXP.
 
-. Assurez-vous que les ports suivants sont ouverts à l'instance de détection de données.
+. Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP.
 +
 ** Pour NFS – ports 111 et 2049.
 ** Pour CIFS – ports 139 et 445.
 
 
-. Assurez-vous que les règles d'exportation de volume NFS incluent l'adresse IP de l'instance Data Sense afin qu'elle puisse accéder aux données sur chaque volume.
-. Si vous utilisez le protocole CIFS, fournissez Data Sense avec des identifiants Active Directory afin qu'il puisse analyser les volumes CIFS.
+. Assurez-vous que les règles d'exportation des volumes NFS incluent l'adresse IP de l'instance de classification BlueXP afin qu'elle puisse accéder aux données de chaque volume.
+. Si vous utilisez CIFS, fournissez la classification BlueXP avec les informations d'identification Active Directory pour qu'il puisse analyser les volumes CIFS.
 +
 .. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*, puis sélectionnez l'onglet *Configuration*.
-.. Pour chaque environnement de travail, cliquez sur *Modifier les informations d'identification CIFS* et entrez le nom d'utilisateur et le mot de passe dont Data Sense a besoin pour accéder aux volumes CIFS sur le système.
+.. Pour chaque environnement de travail, cliquez sur *Modifier les informations d'identification CIFS* et entrez le nom d'utilisateur et le mot de passe dont la classification BlueXP a besoin pour accéder aux volumes CIFS du système.
 +
-Les informations d'identification peuvent être en lecture seule, mais fournir des informations d'identification admin garantit que Data Sense peut lire toutes les données qui requièrent des autorisations élevées. Les identifiants sont stockés sur l'instance Cloud Data Sense.
+Les identifiants peuvent être en lecture seule, mais il est possible de fournir des identifiants d'administrateur pour que la classification BlueXP puisse lire toutes les données qui nécessitent des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
 +
-Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification Data Sense, nous vous recommandons de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 +
 Une fois les informations d'identification saisies, un message indiquant que tous les volumes CIFS ont été authentifiés avec succès s'affiche.
@@ -171,7 +171,7 @@ Une fois les informations d'identification saisies, un message indiquant que tou
 
 Vous pouvez démarrer ou arrêter des analyses de mappage uniquement, ou des analyses de mappage et de classification, dans un environnement de travail à tout moment à partir de la page Configuration. Vous pouvez également passer des acquisitions avec mappage uniquement à des acquisitions avec mappage et classification, et inversement. Nous vous recommandons de scanner tous les volumes.
 
-Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si Data Sense ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne scanne pas les fichiers car Data Sense ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
+Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 image:screenshot_volume_compliance_selection.png["Capture d'écran de la page Configuration dans laquelle vous pouvez activer ou désactiver la numérisation de volumes individuels."]
 
@@ -207,7 +207,7 @@ NOTE: Les nouveaux volumes ajoutés à l'environnement de travail sont automatiq
 
 == Analyse des volumes de protection des données
 
-Par défaut, les volumes DP ne sont pas analysés parce qu'ils ne sont pas exposés en externe et que Cloud Data SENSE ne peut pas y accéder. Il s'agit des volumes de destination pour les opérations SnapMirror à partir d'un système de fichiers FSX pour ONTAP.
+Par défaut, les volumes de protection des données (DP) ne sont pas analysés, car ils ne sont pas exposés en externe et la classification BlueXP ne peut pas y accéder. Il s'agit des volumes de destination pour les opérations SnapMirror à partir d'un système de fichiers FSX pour ONTAP.
 
 Initialement, la liste de volumes identifie ces volumes comme _Type_ *DP* avec _Status_ *Not Scanning* et la _Requited action_ *Enable Access to DP volumes*.
 
@@ -220,7 +220,7 @@ Pour analyser ces volumes de protection des données :
 . Vérifiez le message de confirmation et cliquez à nouveau sur *Activer l'accès aux volumes DP*.
 +
 ** Les volumes initialement créés en tant que volumes NFS dans le système de fichiers FSX source pour ONTAP sont activés.
-** Les volumes initialement créés en tant que volumes CIFS dans le système de fichiers FSX source pour ONTAP nécessitent que vous saisiez des informations d'identification CIFS pour scanner ces volumes DP. Si vous avez déjà saisi les informations d'identification Active Directory afin que Cloud Data SENSE puisse analyser des volumes CIFS, vous pouvez utiliser ces informations d'identification ou spécifier un autre ensemble d'informations d'identification Admin.
+** Les volumes initialement créés en tant que volumes CIFS dans le système de fichiers FSX source pour ONTAP nécessitent que vous saisiez des informations d'identification CIFS pour scanner ces volumes DP. Si vous avez déjà saisi des informations d'identification Active Directory pour que la classification BlueXP puisse analyser les volumes CIFS, vous pouvez utiliser ces informations d'identification ou spécifier un autre ensemble d'informations d'identification d'administration.
 +
 image:screenshot_compliance_dp_cifs_volumes.png["Capture d'écran des deux options d'activation des volumes de protection des données CIFS."]
 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Capture d'écran des deux optio
 
 
 .Résultat
-Une fois activée, Cloud Data Sense crée un partage NFS à partir de chaque volume DP activé pour l'analyse. Les règles d'exportation de partage autorisent uniquement l'accès à partir de l'instance de détection de données.
+Une fois activé, la classification BlueXP crée un partage NFS à partir de chaque volume DP activé pour l'analyse. Les règles d'exportation de partage autorisent uniquement l'accès à partir de l'instance de classification BlueXP.
 
 *Remarque :* si vous ne aviez pas de volumes de protection des données CIFS lorsque vous avez activé l'accès initial aux volumes DP, puis en ajoutant d'autres, le bouton *Activer l'accès à CIFS DP* s'affiche en haut de la page Configuration. Cliquez sur ce bouton et ajoutez des identifiants CIFS pour permettre l'accès à ces volumes CIFS DP.
 

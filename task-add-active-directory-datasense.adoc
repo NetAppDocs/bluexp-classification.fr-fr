@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-add-active-directory-datasense.html 
 keywords: active directory, ad, data sense, cloud data sense 
-summary: Vous pouvez intégrer Active Directory global avec Cloud Data Sense pour améliorer les résultats de Data SENSE rapports sur les propriétaires de fichiers et quels utilisateurs et groupes ont accès à vos fichiers. 
+summary: Vous pouvez intégrer un Active Directory global avec la classification BlueXP pour améliorer les résultats des rapports de classification BlueXP sur les propriétaires de fichiers et les utilisateurs et groupes qui ont accès à vos fichiers. 
 ---
-= Intégrez Active Directory avec le sens des données dans le cloud
+= Intégrez votre Active Directory avec la classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: Vous pouvez intégrer Active Directory global avec Cloud Data Sense pou
 
 
 [role="lead"]
-Vous pouvez intégrer Active Directory global avec Cloud Data Sense pour améliorer les résultats de Data SENSE rapports sur les propriétaires de fichiers et quels utilisateurs et groupes ont accès à vos fichiers.
+Vous pouvez intégrer un Active Directory global avec la classification BlueXP pour améliorer les résultats des rapports de classification BlueXP sur les propriétaires de fichiers et les utilisateurs et groupes qui ont accès à vos fichiers.
 
-Lorsque vous configurez certaines sources de données (répertoriées ci-dessous), vous devez entrer les informations d'identification Active Directory pour que Data Sense puisse analyser les volumes CIFS. Cette intégration fournit des informations sur le propriétaire des fichiers et les autorisations des données qui résident dans ces sources. L'Active Directory saisi pour ces sources de données peut être différent des informations d'identification Active Directory globales que vous saisissez ici. Data Sense recherche dans tous les répertoires actifs intégrés les détails de l'utilisateur et de l'autorisation.
+Lorsque vous configurez certaines sources de données (répertoriées ci-dessous), vous devez entrer les informations d'identification Active Directory pour que la classification BlueXP analyse les volumes CIFS. Cette intégration permet la classification BlueXP avec le propriétaire de fichier et les détails d'autorisations pour les données qui résident dans ces sources de données. L'Active Directory saisi pour ces sources de données peut être différent des informations d'identification Active Directory globales que vous saisissez ici. La classification BlueXP recherche les détails des utilisateurs et des autorisations dans tous les Active Directory intégrés.
 
-Cette intégration fournit des informations supplémentaires aux emplacements suivants dans Data Sense :
+Cette intégration fournit des informations supplémentaires aux emplacements suivants de la classification BlueXP :
 
 * Vous pouvez utiliser le « propriétaire de fichier » link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["filtre"] Et voir les résultats dans les métadonnées du fichier dans le volet Investigation. Au lieu du propriétaire du fichier contenant le SID (identificateur de sécurité), il est renseigné avec le nom d'utilisateur réel.
 * Vous pouvez voir link:task-investigate-data.html#viewing-permissions-for-files-and-directories["autorisations complètes sur les fichiers"] Pour chaque fichier et répertoire lorsque vous cliquez sur le bouton « Afficher toutes les autorisations ».
@@ -32,7 +32,7 @@ NOTE: Les SID des utilisateurs locaux et les SID des domaines inconnus ne sont p
 
 == Sources de données prises en charge
 
-Une intégration d'Active Directory avec Cloud Data SENSE peut identifier les données à partir de ces sources :
+Une intégration d'Active Directory avec la classification BlueXP permet d'identifier les données à partir des sources de données suivantes :
 
 * Systèmes ONTAP sur site
 * Cloud Volumes ONTAP
@@ -49,11 +49,11 @@ Il n'est pas possible de prendre en charge l'identification des informations d'u
 
 == Connexion à votre serveur Active Directory
 
-Une fois que vous avez déployé Data Sense et activé l'analyse sur vos sources de données, vous pouvez intégrer Data Sense à votre Active Directory. Il est possible d'accéder à Active Directory à l'aide d'une adresse IP de serveur DNS ou d'une adresse IP de serveur LDAP.
+Une fois que vous avez déployé la classification BlueXP et activé l'analyse de vos sources de données, vous pouvez intégrer la classification BlueXP à votre Active Directory. Il est possible d'accéder à Active Directory à l'aide d'une adresse IP de serveur DNS ou d'une adresse IP de serveur LDAP.
 
-Les informations d'identification Active Directory peuvent être en lecture seule, mais fournir des informations d'identification d'administrateur garantit que Data Sense peut lire toutes les données qui requièrent des autorisations élevées. Les identifiants sont stockés sur l'instance Cloud Data Sense.
+Les identifiants Active Directory peuvent être en lecture seule, mais la fourniture d'identifiants d'administration permet à la classification BlueXP de lire toutes les données nécessitant des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
-Pour les volumes/partages de fichiers CIFS, si vous voulez vous assurer que les « dernières heures d'accès » de vos fichiers ne sont pas modifiées par les analyses de classification de détection de données, nous recommandons à l'utilisateur de disposer des droits Write Attributes. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Pour les volumes CIFS/partages de fichiers, si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers sont inchangées par les analyses de classification BlueXP, nous vous recommandons de disposer de l'autorisation Write Attributes. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 .De formation
 * Un Active Directory doit déjà être configuré pour les utilisateurs de votre entreprise.
@@ -72,7 +72,7 @@ Adresse IP du serveur LDAP, ou adresses IP multiples
 ** Port serveur LDAP (généralement 389 pour LDAP et 636 pour LDAP sécurisé)
 
 
-* Les ports suivants doivent être ouverts pour les communications sortantes par l'instance de détection de données :
+* Les ports suivants doivent être ouverts pour les communications sortantes par l'instance de classification BlueXP :
 +
 [cols="20,20,30,30"]
 |===
@@ -93,22 +93,22 @@ Adresse IP du serveur LDAP, ou adresses IP multiples
 
 
 .Étapes
-. Dans la page Configuration de la détection des données du Cloud, cliquez sur *Ajouter Active Directory*.
+. Sur la page Configuration de la classification BlueXP, cliquez sur *Ajouter Active Directory*.
 +
-image:screenshot_compliance_integrate_active_directory.png["Une capture d'écran qui montre que vous cliquez sur le bouton pour ajouter un serveur Active Directory dans Cloud Data Sense."]
+image:screenshot_compliance_integrate_active_directory.png["Capture d'écran affichant un clic sur le bouton pour ajouter un serveur Active Directory à la classification BlueXP."]
 
 . Dans la boîte de dialogue connexion à Active Directory, entrez les détails d'Active Directory et cliquez sur *connexion*.
 +
 Si nécessaire, vous pouvez ajouter plusieurs adresses IP en cliquant sur *Ajouter IP*.
 
 +
-image:screenshot_compliance_active_directory_dialog.png["Capture d'écran de la boîte de dialogue dans laquelle vous définissez Active Directory que vous souhaitez intégrer à Data Sense."]
+image:screenshot_compliance_active_directory_dialog.png["Capture d'écran de la boîte de dialogue dans laquelle vous définissez Active Directory que vous souhaitez intégrer à la classification BlueXP."]
 
 +
-Data Sense s'intègre à Active Directory et une nouvelle section est ajoutée à la page Configuration.
+La classification BlueXP s'intègre à Active Directory. Une nouvelle section est ajoutée à la page Configuration.
 
 +
-image:screenshot_compliance_active_directory_added.png["Capture d'écran montrant le nouvel Active Directory intégré dans Data Sense."]
+image:screenshot_compliance_active_directory_added.png["Copie d'écran montrant la nouvelle architecture Active Directory intégrée dans la classification BlueXP."]
 
 
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-instance-types.html 
-keywords: data sense, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
-summary: 'Le logiciel de détection des données doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d"exploitation, de la RAM, des exigences logicielles, etc. Lors du déploiement de Data Sense dans le cloud, nous vous recommandons d"utiliser un système présentant les caractéristiques « grandes » pour bénéficier de fonctionnalités complètes.' 
+keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: 'Le logiciel de classification BlueXP doit s"exécuter sur un hôte répondant à des exigences spécifiques en termes de système d"exploitation, de RAM, de logiciels, etc. Lors du déploiement de la classification BlueXP dans le cloud, nous vous recommandons d"utiliser un système présentant les caractéristiques « grandes » pour bénéficier de fonctionnalités complètes.' 
 ---
-= Types d'instances Data Sense pris en charge
+= Types d'instances de classification BlueXP pris en charge
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 'Le logiciel de détection des données doit être exécuté sur un hô
 
 
 [role="lead"]
-Le logiciel de détection des données doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des exigences logicielles, etc. Lors du déploiement de Data Sense dans le cloud, nous vous recommandons d'utiliser un système présentant les caractéristiques « grandes » pour bénéficier de fonctionnalités complètes.
+Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à des exigences spécifiques en termes de système d'exploitation, de RAM, de logiciels, etc. Lors du déploiement de la classification BlueXP dans le cloud, nous vous recommandons d'utiliser un système présentant les caractéristiques « grandes » pour bénéficier de fonctionnalités complètes.
 
-Vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il ya certaines limites quand l'utilisation de ces systèmes moins puissants. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Découvrez ces limites"^].
+Vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM, mais l'utilisation de systèmes moins puissants comporte certaines limitations. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Découvrez ces limites"^].
 
-Dans les tableaux suivants, si le système marqué par défaut n'est pas disponible dans la région où vous installez Data Sense, le système suivant de la table sera déployé.
+Dans les tableaux suivants, si le système marqué comme « par défaut » n'est pas disponible dans la région dans laquelle vous installez la classification BlueXP, le système suivant du tableau sera déployé.
 
 
 

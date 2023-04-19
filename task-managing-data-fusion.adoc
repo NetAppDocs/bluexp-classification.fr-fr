@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-data-fusion.html 
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
-summary: 'Data Sense offre de nombreuses façons d"ajouter une liste personnalisée des « données personnelles » que Data Sense identifiera dans les futures analyses, vous permettant ainsi d"avoir une vision globale de l"emplacement des données potentiellement sensibles dans les fichiers de votre entreprise.' 
+summary: 'La classification BlueXP offre de nombreuses façons d"ajouter une liste personnalisée des « données personnelles » que la classification BlueXP identifiera dans les analyses futures. Vous disposez ainsi d"une vue d"ensemble sur l"emplacement des données potentiellement sensibles dans tous les fichiers de votre entreprise.' 
 ---
-= Ajout d'identifiants de données personnels à vos acquisitions de détection de données
+= Ajout d'identifiants de données personnels à vos analyses de classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Data Sense offre de nombreuses façons d"ajouter une liste personnalis
 
 
 [role="lead"]
-Data Sense offre de nombreuses façons d'ajouter une liste personnalisée de « données personnelles » que Data Sense identifiera dans les futures analyses, vous donnant une idée complète de l'emplacement des données potentiellement sensibles dans les fichiers _All_ de votre entreprise.
+La classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée des « données personnelles » que la classification BlueXP identifiera dans les analyses futures. Vous disposez ainsi d'une vue d'ensemble sur l'emplacement des données potentiellement sensibles dans _tous_ les fichiers de votre entreprise.
 
 * Vous pouvez ajouter des identificateurs uniques basés sur des colonnes spécifiques dans les bases de données que vous numérisez.
 * Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte -- ces mots sont identifiés dans vos données.
@@ -31,16 +31,16 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 == Ajoutez des identifiants de données personnelles personnalisés à partir de vos bases de données
 
-Une fonctionnalité que nous appelons _Data Fusion_ vous permet d'analyser les données de votre organisation pour identifier si des identificateurs uniques de vos bases de données sont trouvés dans l'une de vos autres sources de données. Vous pouvez choisir les identificateurs supplémentaires que Data Sense recherche dans ses acquisitions en sélectionnant une colonne ou des colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.
+Une fonctionnalité que nous appelons _Data Fusion_ vous permet d'analyser les données de votre organisation pour identifier si des identificateurs uniques de vos bases de données sont trouvés dans l'une de vos autres sources de données. Vous pouvez choisir les identifiants supplémentaires que recherche la classification BlueXP dans ses analyses en sélectionnant une ou plusieurs colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.
 
 image:diagram_compliance_data_fusion.png["Un diagramme montrant comment le contenu de vos bases de données peut être utilisé comme source pour identifier les fichiers qui contiennent les mêmes données."]
 
 Comme vous pouvez le voir, deux ID de client uniques ont été trouvés sur deux volumes et dans un compartiment S3. Toutes les correspondances dans les tables de base de données seront également identifiées.
 
-Notez que puisque vous scannez vos propres bases de données, quelle que soit la langue dans laquelle vos données sont stockées, vous pourrez identifier les données dans les futures analyses de détection de données.
+Notez que, puisque vous scannez vos propres bases de données, quelle que soit la langue dans laquelle vos données sont stockées, elles seront utilisées pour identifier les données lors des futures analyses de classification BlueXP.
 
 .Étapes
-Vous devez avoir link:task-scanning-databases.html#adding-the-database-server["ajout d'au moins un serveur de base de données"^] À Data Sense avant d'ajouter des sources de données Fusion.
+Vous devez avoir link:task-scanning-databases.html#adding-the-database-server["ajout d'au moins un serveur de base de données"^] À la classification BlueXP avant d'ajouter des sources de données Fusion.
 
 . Dans la page Configuration, cliquez sur *gérer Fusion de données* dans la base de données où résident les données source.
 +
@@ -62,7 +62,7 @@ image:screenshot_compliance_add_data_fusion.png["Capture d'écran permettant d'i
 
 . Cliquez sur *Ajouter une source de données Fusion*.
 +
-La page d'inventaire de Data Fusion affiche les colonnes source de la base de données que vous avez configurées détection des données à analyser.
+La page d'inventaire Data Fusion affiche les colonnes source de la base de données que vous avez configuré pour l'analyse de la classification BlueXP.
 
 +
 image:screenshot_compliance_data_fusion_list.png["Capture d'écran de toutes les références de source de données que vous avez configurées avec Data Fusion."]
@@ -86,11 +86,11 @@ image:screenshot_compliance_delete_data_fusion.png["Capture d'écran montrant co
 
 == Ajoutez des mots clés personnalisés à partir d'une liste de mots
 
-Vous pouvez ajouter des mots-clés personnalisés à Data Sense afin qu'il identifie l'emplacement de ces informations dans vos données. Vous pouvez ajouter les mots-clés en saisissant chaque mot que vous souhaitez que Data Sense reconnaisse. Les mots-clés sont ajoutés aux mots-clés prédéfinis existants que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
+Vous pouvez ajouter des mots-clés personnalisés à la classification BlueXP pour identifier l'emplacement où se trouvent les informations. Pour ajouter ces mots-clés, entrez simplement les mots que vous souhaitez que la classification BlueXP reconnaisse. Les mots-clés sont ajoutés aux mots-clés prédéfinis que la classification BlueXP utilise déjà et les résultats sont visibles dans la section modèles personnels.
 
 Par exemple, vous pouvez voir où les noms de produits internes sont mentionnés dans tous vos fichiers pour vous assurer que ces noms ne sont pas accessibles dans des emplacements qui ne sont pas sécurisés.
 
-Après la mise à jour des mots-clés personnalisés, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats s'affichent dans le tableau de bord de conformité de détection des données, sous la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
+Après la mise à jour des mots-clés personnalisés, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP, dans la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
 
 .Étapes
 . Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.
@@ -99,7 +99,7 @@ image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant
 
 . Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Personal identifier*, puis cliquez sur *Next*.
 +
-Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur, et comme nom du filtre dans la page Investigation.
+Le nom que vous entrez s'affiche dans l'interface de classification BlueXP en tant qu'en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur et en tant que nom du filtre dans la page Investigation.
 
 +
 Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros de carte de crédit complets ou des données personnelles similaires (le masque apparaîtra dans l'interface utilisateur comme ceci: "Pass:[****] pass:[****] pass:[****] pass:[****]" 3434).
@@ -109,16 +109,16 @@ image:screenshot_select_classifier_type2.png["Capture d'écran indiquant comment
 
 . Dans la page _Select Data Analysis Tool_, sélectionnez *Custom Keywords* comme méthode à utiliser pour définir le classificateur, puis cliquez sur *Next*.
 +
-image:screenshot_select_classifier_tool_keywords.png["Capture d'écran montrant la sélection de mots-clés personnalisés comme outil que Data Sense utilisera pour créer le motif."]
+image:screenshot_select_classifier_tool_keywords.png["Capture d'écran montrant la sélection de mots-clés personnalisés comme outil utilisé par la classification BlueXP pour créer le modèle."]
 
 . Dans la page _Create Logic_, entrez les mots-clés que vous voulez reconnaître - chaque mot sur une ligne séparée - et cliquez sur *Validate*.
 +
-La capture d'écran ci-dessous montre les noms de produits internes (différents types de wls). La recherche de données SENSE pour ces éléments n'est pas sensible à la casse.
+La capture d'écran ci-dessous montre les noms de produits internes (différents types de wls). La recherche de classification BlueXP pour ces éléments n'est pas sensible à la casse.
 
 +
 image:screenshot_select_classifier_create_logic_keyword.png["Capture d'écran de saisie des mots-clés de votre classificateur de client."]
 
-. Cliquez sur *terminé* et Data Sense commence à renumériser vos données.
+. Cliquez sur *terminé* et la classification BlueXP commence à analyser à nouveau vos données.
 
 
 .Résultats
@@ -132,11 +132,11 @@ Comme vous pouvez le voir, le nom du classificateur est utilisé comme nom dans 
 
 == Ajoutez des identificateurs de données personnelles personnalisés à l'aide d'un regex
 
-Vous pouvez ajouter un modèle personnel pour identifier des informations spécifiques dans vos données à l'aide d'une expression régulière personnalisée (regex). Cela vous permet de créer un nouveau regex personnalisé pour identifier de nouveaux éléments d'informations personnelles qui n'existent pas encore dans le système. Le regex est ajouté aux modèles prédéfinis que Data Sense utilise déjà et les résultats seront visibles sous la section motifs personnels.
+Vous pouvez ajouter un modèle personnel pour identifier des informations spécifiques dans vos données à l'aide d'une expression régulière personnalisée (regex). Cela vous permet de créer un nouveau regex personnalisé pour identifier de nouveaux éléments d'informations personnelles qui n'existent pas encore dans le système. Le regex est ajouté aux modèles prédéfinis existants que la classification BlueXP utilise déjà, et les résultats seront visibles dans la section modèles personnels.
 
 Par exemple, vous pouvez voir où vos ID de produit internes sont mentionnés dans tous vos fichiers. Si l'ID de produit a une structure claire, par exemple, il s'agit d'un numéro à 12 chiffres commençant par 201, vous pouvez utiliser la fonction regex personnalisée pour la rechercher dans vos fichiers. L'expression régulière de cet exemple est *\b201\d{9}\b*.
 
-Après avoir ajouté la fenêtre regex, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats s'affichent dans le tableau de bord de conformité de détection des données, sous la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
+Une fois le regex ajouté, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP, dans la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
 
 Voir https://regex101.com/[] si vous avez besoin d'aide pour construire l'expression régulière que vous avez besoin.
 
@@ -147,18 +147,18 @@ image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant
 
 . Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Personal identifier*, puis cliquez sur *Next*.
 +
-Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur, et comme nom du filtre dans la page Investigation. Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros complets de carte de crédit ou des données personnelles similaires.
+Le nom que vous entrez s'affiche dans l'interface de classification BlueXP en tant qu'en-tête pour les fichiers numérisés qui correspondent aux exigences du classificateur et en tant que nom du filtre dans la page Investigation. Vous pouvez également cocher la case « Masquer les résultats détectés dans le système » pour que le résultat complet n'apparaisse pas dans l'interface utilisateur. Par exemple, vous pouvez vouloir le faire pour masquer les numéros complets de carte de crédit ou des données personnelles similaires.
 
 +
 image:screenshot_select_classifier_type.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
 
 . Dans la page _Select Data Analysis Tool_, sélectionnez *Custom Regular expression* comme méthode à utiliser pour définir le classificateur, puis cliquez sur *Next*.
 +
-image:screenshot_select_classifier_tool_regex.png["Capture d'écran montrant la sélection de l'expression régulière personnalisée comme outil utilisé par Data Sense pour créer le motif."]
+image:screenshot_select_classifier_tool_regex.png["Capture d'écran montrant la sélection de l'expression régulière personnalisée comme outil utilisé par la classification BlueXP pour créer le modèle."]
 
 . Dans la page _Create Logic_, entrez l'expression régulière et les mots de proximité, puis cliquez sur *Done*.
 +
-.. Vous pouvez entrer n'importe quelle expression régulière légale. Cliquez sur le bouton *Validate* pour que Data Sense vérifie que l'expression régulière est valide et qu'elle n'est pas trop large -- ce qui signifie qu'elle renvoie trop de résultats.
+.. Vous pouvez entrer n'importe quelle expression régulière légale. Cliquez sur le bouton *Valider* pour que la classification BlueXP vérifie que l'expression régulière est valide et qu'elle n'est pas trop large, ce qui signifie qu'elle renvoie trop de résultats.
 .. Vous pouvez également saisir des mots de proximité pour vous aider à affiner la précision des résultats. Il s'agit de mots qui se trouvent généralement dans les 300 caractères du motif que vous recherchez (avant ou après le motif trouvé). Entrez chaque mot ou expression sur une ligne distincte.
 +
 image:screenshot_select_classifier_create_logic_regex.png["Capture d'écran de saisie des mots de regex et de proximité pour votre classificateur de client."]
@@ -168,7 +168,7 @@ image:screenshot_select_classifier_create_logic_regex.png["Capture d'écran de s
 
 
 .Résultats
-Le classificateur est ajouté et le capteur de données commence à analyser toutes vos sources de données. Vous revenez à la page Classificateurs personnalisés où vous pouvez afficher le nombre de fichiers correspondant à votre nouveau classificateur. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
+Le classificateur est ajouté et la classification BlueXP commence à analyser à nouveau toutes vos sources de données. Vous revenez à la page Classificateurs personnalisés où vous pouvez afficher le nombre de fichiers correspondant à votre nouveau classificateur. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
 
 image:screenshot_personal_info_regex_added.png["Une capture d'écran montrant les résultats d'un nouveau classificateur regex ajouté au système avec l'acquisition en cours."]
 
@@ -176,22 +176,22 @@ image:screenshot_personal_info_regex_added.png["Une capture d'écran montrant le
 
 == Ajouter des catégories personnalisées
 
-Data Sense récupère les données qu'il analyse et les divise en différents types de catégories. Ces catégories sont des thèmes basés sur l'analyse par intelligence artificielle du contenu et des métadonnées de chaque fichier. link:reference-private-data-categories.html#types-of-categories["Voir la liste des catégories prédéfinies"].
+La classification BlueXP récupère les données qu'il analyse et les divise en différents types de catégories. Ces catégories sont des thèmes basés sur l'analyse par intelligence artificielle du contenu et des métadonnées de chaque fichier. link:reference-private-data-categories.html#types-of-categories["Voir la liste des catégories prédéfinies"].
 
 Les catégories peuvent vous aider à comprendre ce qui se passe avec vos données en vous montrant les types d'informations dont vous disposez. Par exemple, une catégorie telle que _CV_ ou _contrats d'employés_ peut inclure des données sensibles. Lorsque vous étudiez les résultats, vous pouvez constater que les contrats d'employés sont stockés dans un emplacement non sécurisé. Vous pouvez ensuite corriger ce problème.
 
-Vous pouvez ajouter des catégories personnalisées à Data Sense pour identifier dans vos données les catégories d'informations spécifiques à votre patrimoine. Pour ajouter chaque catégorie, vous créez des fichiers d'entraînement qui contiennent les catégories de données que vous souhaitez identifier, puis vous devez faire passer Data Sense en revue ces fichiers pour les « apprendre » via l'IA afin qu'il puisse identifier ces données dans vos sources de données. Les catégories sont ajoutées aux catégories prédéfinies existantes que Data Sense identifie déjà et les résultats sont visibles dans la section catégories.
+Vous pouvez ajouter des catégories personnalisées à la classification BlueXP pour identifier où se trouvent les catégories d'informations spécifiques à votre patrimoine de données. Vous ajoutez chaque catégorie en créant des fichiers d'entraînement qui contiennent les catégories de données que vous souhaitez identifier, puis analysez ces fichiers pour les analyser par le biais de l'IA afin qu'il puisse identifier les données dans vos sources de données. Les catégories sont ajoutées aux catégories prédéfinies existantes identifiées par la classification BlueXP et les résultats sont visibles dans la section catégories.
 
 Par exemple, vous pouvez voir où se trouvent les fichiers d'installation compressés au format .gz dans vos fichiers afin que vous puissiez les supprimer, si nécessaire.
 
-Après la mise à jour des catégories personnalisées, Data Sense redémarre l'analyse de toutes les sources de données. Une fois l'acquisition terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité Data Sense, sous la section « catégories », et dans la page Investigation du filtre « Catégorie ». link:task-controlling-private-data.html#viewing-files-by-categories["Voir comment afficher les fichiers par catégories"].
+Après la mise à jour des catégories personnalisées, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP sous la section « catégories » et dans la page Investigation du filtre « Catégorie ». link:task-controlling-private-data.html#viewing-files-by-categories["Voir comment afficher les fichiers par catégories"].
 
 .Ce dont vous avez besoin
-Vous devrez créer au moins 25 fichiers de formation contenant des exemples des catégories de données que Data Sense doit reconnaître. Les types de fichiers suivants sont pris en charge :
+Vous devez créer au moins 25 fichiers d'entraînement contenant des échantillons des catégories de données que vous voulez que la classification BlueXP reconnaisse. Les types de fichiers suivants sont pris en charge :
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
-Les fichiers doivent être d'au moins 100 octets et ils doivent se trouver dans un dossier accessible par Data Sense.
+Les fichiers doivent être d'au moins 100 octets et doivent se trouver dans un dossier accessible par la classification BlueXP.
 
 .Étapes
 . Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.
@@ -200,27 +200,27 @@ image:screenshot_compliance_add_classifier_button.png["Capture d'écran montrant
 
 . Dans la page _Select type_, entrez le nom du classificateur, fournissez une brève description, sélectionnez *Catégorie*, puis cliquez sur *Suivant*.
 +
-Le nom que vous entrez apparaît dans l'interface utilisateur Data Sense comme en-tête pour les fichiers numérisés correspondant à la catégorie de données que vous définissez, et comme nom du filtre dans la page Investigation.
+Le nom que vous entrez s'affiche dans l'interface de classification BlueXP en tant qu'en-tête des fichiers numérisés correspondant à la catégorie de données que vous définissez, et en tant que nom du filtre dans la page Investigation.
 
 +
 image:screenshot_select_classifier_category.png["Capture d'écran indiquant comment nommer le classificateur et sélectionner le type de classificateur."]
 
 . Dans la page _Créer logique_, assurez-vous que les fichiers d'apprentissage sont préparés, puis cliquez sur *Sélectionner les fichiers*.
 +
-image:screenshot_category_create_logic.png["Capture d'écran de la page Créer une logique dans laquelle vous ajoutez les fichiers contenant les données dont vous souhaitez que Data Sense puisse apprendre."]
+image:screenshot_category_create_logic.png["Capture d'écran de la page Créer une logique dans laquelle vous ajoutez les fichiers contenant les données à partir desquelles vous souhaitez que la classification BlueXP s'en forme."]
 
 . Entrez l'adresse IP du volume et le chemin où se trouvent les fichiers de formation, puis cliquez sur *Ajouter*.
 +
 image:screenshot_category_add_files.png["Une capture d'écran montrant comment saisir l'emplacement des fichiers de formation."]
 
-. Vérifier que les fichiers de formation ont été reconnus par Data Sense. Cliquez sur *x* pour supprimer tous les fichiers de formation qui ne répondent pas aux exigences. Cliquez ensuite sur *terminé*.
+. Vérifiez que les fichiers d'entraînement ont été reconnus par la classification BlueXP. Cliquez sur *x* pour supprimer tous les fichiers de formation qui ne répondent pas aux exigences. Cliquez ensuite sur *terminé*.
 +
-image:screenshot_category_files_added.png["Capture d'écran montrant les fichiers que Data Sense utilisera comme fichiers d'entraînement définissant la nouvelle catégorie."]
+image:screenshot_category_files_added.png["Copie d'écran affichant les fichiers que la classification BlueXP utilisera comme fichiers d'entraînement pour définir la nouvelle catégorie."]
 
 
 
 .Résultats
-La nouvelle catégorie est créée telle que définie par les fichiers de formation et ajoutée à Data Sense. Ensuite, Data Sense commence à analyser toutes vos sources de données pour identifier les fichiers qui s'intègrent à cette nouvelle catégorie. Vous êtes renvoyé à la page Classifications personnalisées où vous pouvez afficher le nombre de fichiers correspondant à votre nouvelle catégorie. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
+La nouvelle catégorie est créée telle que définie par les fichiers d'entraînement et ajoutée à la classification BlueXP. La classification BlueXP commence ensuite à analyser à nouveau toutes vos sources de données pour identifier les fichiers qui s'intègrent à cette nouvelle catégorie. Vous êtes renvoyé à la page Classifications personnalisées où vous pouvez afficher le nombre de fichiers correspondant à votre nouvelle catégorie. Les résultats de l'analyse de toutes vos sources de données prennent du temps en fonction du nombre de fichiers à numériser.
 
 
 
@@ -242,6 +242,6 @@ image:screenshot_custom_classifier_top_5.png["Une capture d'écran montrant les 
 
 Vous pouvez modifier n'importe lequel des classificateurs personnalisés que vous avez créés à l'aide du bouton *Edit Classificateur*.
 
-Et si vous décidez ultérieurement que vous n'avez pas besoin de détection de données pour identifier les modèles personnalisés que vous avez ajoutés, vous pouvez utiliser le bouton *Supprimer classificateur* pour supprimer chaque élément.
+Et si vous décidez ultérieurement que vous n'avez pas besoin de la classification BlueXP pour identifier les modèles personnalisés que vous avez ajoutés, vous pouvez utiliser le bouton *Supprimer le classificateur* pour supprimer chaque élément.
 
 image:screenshot_custom_classifiers_manage.png["Capture d'écran de la page Classificateurs personnalisés avec les boutons pour modifier et supprimer un classificateur."]

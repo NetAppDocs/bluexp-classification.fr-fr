@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Vous pouvez configurer Data Sense pour consigner les événements dans un fichier chaque fois que vous avez accédé à l"un des fichiers que vous numérisez ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d"audit de l"accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.' 
+summary: 'Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l"un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d"audit de l"accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.' 
 ---
 = Contrôlez et gérez les événements d'accès aux fichiers
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 'Vous pouvez configurer Data Sense pour consigner les événements dans
 
 
 [role="lead"]
-Vous pouvez configurer Data Sense pour consigner les événements dans un fichier chaque fois que vous avez accédé à l'un des fichiers que vous numérisez ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d'audit de l'accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.
+Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l'un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d'audit de l'accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.
 
 Par exemple, si vous souhaitez suivre les modifications apportées à vos fichiers personnels sensibles ou aux fichiers de paie, vous pouvez activer cette fonction sur les volumes où résident ces fichiers. Vous pouvez ensuite afficher le journal d'audit de l'accès aux fichiers pour voir si ces fichiers ont été modifiés. S'ils ont été modifiés, vous pourrez voir le nom de la personne qui a effectué la modification et la date à laquelle elle a été effectuée.
 
-Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Vos systèmes ONTAP utilisent votre système Data Sense comme serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
+Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
 
-Data Sense capture actuellement des événements pour les actions suivantes sur vos fichiers et répertoires :
+La classification BlueXP capture actuellement les événements pour les actions suivantes sur vos fichiers et répertoires :
 
 * Création
 * Lecture
@@ -37,7 +37,7 @@ Les utilisateurs BlueXP avec les rôles « Admin compte » ou « Admin d'espace 
 
 == Sources de données prises en charge
 
-Data Sense peut enregistrer les événements d'accès aux fichiers pour les fichiers résidant sur les sources de données suivantes :
+La classification BlueXP peut enregistrer les événements d'accès aux fichiers pour les fichiers résidant sur les sources de données suivantes :
 
 * ONTAP sur site
 * Cloud Volumes ONTAP
@@ -45,7 +45,7 @@ Data Sense peut enregistrer les événements d'accès aux fichiers pour les fich
 * FSX pour ONTAP
 
 
-Vous devez avoir configuré Active Directory pour ces sources de données afin que Data Sense puisse identifier le nom de la personne qui a accédé aux fichiers.
+Vous devez avoir configuré Active Directory pour ces sources de données pour que la classification BlueXP puisse identifier le nom de la personne qui a accédé aux fichiers.
 
 
 
@@ -104,15 +104,15 @@ Par exemple, les lignes suivantes du fichier journal indiquent une opération de
 
 == Accédez aux fichiers journaux d'audit d'accès aux fichiers
 
-Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine Data Sense dans : `/opt/netapp/audit_logs/`
+Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine de classification BlueXP dans : `/opt/netapp/audit_logs/`
 
-Les fichiers journaux sont nommés « File_Access_Audit_<volume_name>_<timestamp>.log », par exemple « File Access Audit_MedicalData_20230205092321.log ». Le <timestamp> est le moment où Data Sense écrit le premier journal dans le fichier. Chaque fichier est configuré par défaut pour contenir un maximum de 50,000 événements. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Une fois ce maximum atteint, un nouveau fichier journal est créé pour ce volume. Le nouveau fichier aura un horodatage plus récent.
+Les fichiers journaux sont nommés « File_Access_Audit_<volume_name>_<timestamp>.log », par exemple « File Access Audit_MedicalData_20230205092321.log ». <timestamp> est le moment où la classification BlueXP a écrit le premier journal dans le fichier. Chaque fichier est configuré par défaut pour contenir un maximum de 50,000 événements. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Une fois ce maximum atteint, un nouveau fichier journal est créé pour ce volume. Le nouveau fichier aura un horodatage plus récent.
 
 La taille totale de tous les fichiers journaux du répertoire est définie sur une valeur par défaut de 50 Go. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Lorsque cette limite est atteinte, les fichiers journaux les plus anciens sont automatiquement supprimés.
 
-Lorsque Data Sense est installé sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez naviguer directement vers les fichiers journaux.
+Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement aux fichiers journaux.
 
-Lorsque Data Sense est déployé dans le cloud, vous devez établir une connexion SSH avec l'instance Data Sense. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
+Lorsque la classification BlueXP est déployée dans le cloud, vous devez établir une connexion SSH avec l'instance de classification BlueXP. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path_to_the_ssh_key> = emplacement des clés d'authentification ssh
@@ -137,9 +137,9 @@ Notez que vous devrez modifier les règles entrantes du groupe de sécurité pou
 
 == Configurer les paramètres du journal d'audit de l'accès aux fichiers
 
-Vous pouvez configurer trois options pour les journaux de fichiers d'audit d'accès aux fichiers. Ces paramètres s'appliquent à toutes les sources de données qui ont configuré la journalisation d'audit d'accès aux fichiers sur cette instance de Data Sense. Vous pouvez configurer ces paramètres à partir de la section _fichier Access Audit Log_ de la page Data Sense _Configuration_.
+Vous pouvez configurer trois options pour les journaux de fichiers d'audit d'accès aux fichiers. Ces paramètres s'appliquent à toutes les sources de données qui ont configuré la journalisation d'audit d'accès aux fichiers sur cette instance de classification BlueXP. Vous pouvez configurer ces paramètres à partir de la section _Journal d'audit d'accès aux fichiers_ de la page de classification BlueXP _Configuration_.
 
-image:screenshot_compliance_file_access_audit_config.png["Capture d'écran montrant le paramètre de configuration des journaux d'audit dans la page Configuration de Data Sense."]
+image:screenshot_compliance_file_access_audit_config.png["Capture d'écran montrant le paramètre de configuration des journaux d'audit sur la page Configuration de la classification BlueXP."]
 
 [cols="30,50"]
 |===

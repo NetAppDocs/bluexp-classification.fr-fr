@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. Cloud Data Sense fournit un ensemble de règles prédéfinies en fonction des demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation. 
+summary: Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation. 
 ---
 = L'attribution de règles à vos données
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Les stratégies sont comme une liste de favoris de filtres personnalis�
 
 
 [role="lead"]
-Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. Cloud Data Sense fournit un ensemble de règles prédéfinies en fonction des demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation.
+Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation.
 
 Les règles offrent les fonctionnalités suivantes :
 
@@ -26,9 +26,9 @@ Les règles offrent les fonctionnalités suivantes :
 * Supprimez des fichiers automatiquement (une fois par jour) lorsque certaines stratégies renvoient des résultats pour protéger vos données automatiquement
 
 
-L'onglet *Policies* du tableau de bord de conformité répertorie toutes les stratégies prédéfinies et personnalisées disponibles sur cette instance de Cloud Data Sense.
+L'onglet *stratégies* du tableau de bord de conformité répertorie toutes les règles prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP.
 
-image:screenshot_compliance_highlights_tab.png["Capture d'écran de l'onglet « règles » du tableau de bord Cloud Data Sense."]
+image:screenshot_compliance_highlights_tab.png["Capture d'écran de l'onglet règles du tableau de bord de classification BlueXP."]
 
 De plus, les polices apparaissent dans la liste des filtres de la page Investigation.
 
@@ -76,7 +76,7 @@ La nouvelle stratégie s'affiche dans l'onglet stratégies.
 
 == Envoi d'alertes par e-mail lorsque des données non conformes sont trouvées
 
-Cloud Data SENSE peut envoyer des alertes par e-mail à des utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats afin que vous puissiez obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois. Vous pouvez également choisir d'envoyer des alertes par e-mail à n'importe quelle adresse e-mail - jusqu'à 20 adresses e-mail - pas dans votre compte BlueXP.
+La classification BlueXP peut envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines règles stratégiques renvoient des résultats pour vous permettre d'obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois. Vous pouvez également choisir d'envoyer des alertes par e-mail à n'importe quelle adresse e-mail - jusqu'à 20 adresses e-mail - pas dans votre compte BlueXP.
 
 Vous pouvez configurer ce paramètre lors de la création de la stratégie ou lors de la modification d'une stratégie.
 
@@ -106,7 +106,7 @@ Le premier e-mail est envoyé dès maintenant s'il y a des résultats de la poli
 
 == Suppression automatique des fichiers source à l'aide de stratégies
 
-Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez vouloir supprimer des fichiers contenant des informations sensibles et ayant été découverts par Data Sense au cours des 30 derniers jours.
+Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez supprimer des fichiers qui contiennent des informations sensibles et qui ont été découverts par la classification BlueXP au cours des 30 derniers jours.
 
 Seuls les administrateurs de compte peuvent créer une stratégie de suppression automatique des fichiers.
 
@@ -139,7 +139,7 @@ Vous pouvez afficher la liste des fichiers qui ont été supprimés dans le link
 
 Vous pouvez affecter un libellé AIP à tous les fichiers qui répondent aux critères de la stratégie. Vous pouvez spécifier l'étiquette AIP lors de la création de la stratégie ou ajouter l'étiquette lors de la modification d'une stratégie.
 
-Les étiquettes sont ajoutées ou mises à jour dans les fichiers en continu lors de l'analyse de vos fichiers par Cloud Data SENSE.
+Des étiquettes sont ajoutées ou mises à jour en continu dans les fichiers au fur et à mesure que le système de classification BlueXP analyse vos fichiers.
 
 Selon qu'une étiquette est déjà appliquée à un fichier et le niveau de classification de l'étiquette, les actions suivantes sont prises lors de la modification d'une étiquette :
 
@@ -220,7 +220,7 @@ Pour supprimer une stratégie, cliquez sur image:screenshot_gallery_options.gif[
 
 == Liste des stratégies prédéfinies
 
-Cloud Data Sense fournit plusieurs règles définies par le système :
+La classification BlueXP inclut les règles définies par le système suivantes :
 
 [cols="25,40,40"]
 |===

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
-summary: 'Cloud Data SENSE fournit des rapports qui vous aideront à mieux comprendre l"état du programme de confidentialité des données de votre entreprise.' 
+summary: 'La classification BlueXP fournit des rapports qui vous permettent de mieux comprendre l"état du programme de confidentialité des données de votre entreprise.' 
 ---
 = Affichage des rapports de conformité
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: 'Cloud Data SENSE fournit des rapports qui vous aideront à mieux compr
 
 
 [role="lead"]
-Cloud Data SENSE fournit des rapports qui vous aideront à mieux comprendre l'état du programme de confidentialité des données de votre entreprise.
+La classification BlueXP fournit des rapports qui vous permettent de mieux comprendre l'état du programme de confidentialité des données de votre entreprise.
 
-Par défaut, les tableaux de bord Cloud Data Sense affichent des données de conformité et de gouvernance pour tous les environnements de travail, bases de données et sources de données. Si vous souhaitez afficher des rapports contenant des données pour certains environnements de travail uniquement, <<Sélection des environnements de travail pour les rapports,sélectionnez ces environnements de travail>>.
+Par défaut, les tableaux de bord de classification BlueXP affichent les données de conformité et de gouvernance pour tous les environnements de travail, bases de données et sources de données. Si vous souhaitez afficher des rapports contenant des données pour certains environnements de travail uniquement, <<Sélection des environnements de travail pour les rapports,sélectionnez ces environnements de travail>>.
 
 [NOTE]
 ====
 * Les rapports décrits dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une acquisition avec mappage uniquement peuvent uniquement générer le rapport de mappage de données.
-* NetApp ne garantit pas une précision de 100 % des données personnelles et des données personnelles sensibles que Cloud Data sens identifie. Vous devez toujours valider les informations en examinant les données.
+* NetApp ne peut pas garantir l'exactitude à 100 % des données personnelles et des données personnelles sensibles identifiées par la classification BlueXP. Vous devez toujours valider les informations en examinant les données.
 
 
 ====
@@ -40,7 +40,7 @@ Sujets de données dans cette évaluation:: Nombre de personnes, par lieu, pour 
 
 === Génération du rapport d'évaluation des risques pour la confidentialité
 
-Accédez à l'onglet détection de données pour générer le rapport.
+Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
@@ -51,13 +51,13 @@ image:screenshot_privacy_risk_assessment.gif["Capture d'écran de l'onglet confo
 
 
 .Résultat
-Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
 
 
 === Indice de gravité
 
-Cloud Data Sense calcule le score de gravité pour le rapport d'évaluation des risques pour la confidentialité sur la base de trois variables :
+La classification BlueXP calcule l'indice de gravité du rapport d'évaluation des risques en matière de confidentialité sur la base de trois variables :
 
 * Pourcentage de données personnelles sur toutes les données.
 * Le pourcentage de données personnelles sensibles hors de toutes les données.
@@ -120,7 +120,7 @@ Distribution des informations de carte de crédit:: Les environnements de travai
 
 === Génération du rapport PCI DSS
 
-Accédez à l'onglet détection de données pour générer le rapport.
+Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
@@ -131,13 +131,13 @@ image:screenshot_pci_dss.gif["Capture d'écran de l'onglet conformité dans Blue
 
 
 .Résultat
-Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
 
 
 == Rapport HIPAA
 
-Le rapport HIPAA (Health Insurance Portability and Accountability Act) peut vous aider à identifier les fichiers contenant des informations sur la santé. Il est conçu pour aider votre organisation à respecter les lois HIPAA en matière de confidentialité des données. Le « Cloud Data SENSE » inclut plusieurs aspects :
+Le rapport HIPAA (Health Insurance Portability and Accountability Act) peut vous aider à identifier les fichiers contenant des informations sur la santé. Il est conçu pour aider votre organisation à respecter les lois HIPAA en matière de confidentialité des données. Voici les informations que recherche la classification BlueXP :
 
 * Modèle de référence de santé
 * Code médical ICD-10-cm
@@ -159,7 +159,7 @@ Distribution des renseignements sur la santé:: Les environnements de travail da
 
 === Génération du rapport HIPAA
 
-Accédez à l'onglet détection de données pour générer le rapport.
+Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
@@ -170,7 +170,7 @@ image:screenshot_hipaa.gif["Capture d'écran de l'onglet conformité dans BlueXP
 
 
 .Résultat
-Cloud Data SENSE génère un rapport PDF que vous pouvez consulter et envoyer à d'autres groupes, le cas échéant.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
 
 
@@ -182,9 +182,9 @@ Vous pouvez répondre à un DSAR en recherchant le nom complet ou l'identifiant 
 
 
 
-=== Comment le « Cloud Data SENSE » peut-il vous aider à répondre à un SAR ?
+=== Comment la classification BlueXP peut-elle vous aider à répondre à un DSAR ?
 
-Lorsque vous effectuez une recherche dans l'objet de données, Cloud Data SENSE trouve tous les fichiers, compartiments, OneDrive et comptes SharePoint qui contiennent le nom ou l'identifiant de cette personne. Data Sense vérifie les dernières données pré-indexées pour le nom ou l'identifiant. Il ne lance pas de nouvelle acquisition.
+Lorsque vous effectuez une recherche relative à une personne concernée, le système de classification BlueXP trouve tous les fichiers, compartiments, OneDrive et comptes SharePoint contenant le nom ou l'identifiant de cette personne. La classification BlueXP vérifie le nom ou l'identifiant des données pré-indexées les plus récentes. Il ne lance pas de nouvelle acquisition.
 
 Une fois la recherche terminée, vous pouvez télécharger la liste des fichiers d'un rapport de demande d'accès aux données. Le rapport rassemble les informations issues des données et les place en termes juridiques que vous pouvez renvoyer à la personne.
 
@@ -212,7 +212,7 @@ image:screenshot_dsar_search.gif["Une capture d'écran qui montre une recherche 
 
 . Choisissez l'une des options disponibles :
 +
-** *Télécharger le rapport DSAR* : réponse officielle à la demande d'accès que vous pouvez envoyer au sujet des données. Ce rapport contient des informations générées automatiquement en fonction des données que Cloud Data SENSE trouve sur le sujet des données et qui sont conçues pour être utilisées comme modèle. Vous devez remplir le formulaire et le revoir en interne avant de l'envoyer au sujet des données.
+** *Télécharger le rapport DSAR* : réponse officielle à la demande d'accès que vous pouvez envoyer au sujet des données. Ce rapport contient des informations générées automatiquement en fonction des données classées par BlueXP situées sur l'objet des données et qui sont conçues pour être utilisées comme modèle. Vous devez remplir le formulaire et le revoir en interne avant de l'envoyer au sujet des données.
 ** *Étudier les résultats* : une page qui vous permet d'examiner les données en recherchant, en triant, en développant les détails d'un fichier spécifique et en téléchargeant la liste de fichiers.
 +
 
@@ -226,9 +226,9 @@ NOTE: S'il y a plus de 10,000 résultats, seuls les 10,000 premiers apparaissent
 
 == Sélection des environnements de travail pour les rapports
 
-Vous pouvez filtrer le contenu du tableau de bord Cloud Data Sense Compliance pour consulter les données de conformité pour tous les environnements de travail et bases de données, ou pour des environnements de travail spécifiques uniquement.
+Vous pouvez filtrer le contenu du tableau de bord BlueXP Classification Compliance pour afficher les données de conformité pour tous les environnements de travail et bases de données, ou pour seulement des environnements de travail spécifiques.
 
-Lorsque vous filtrez le tableau de bord, Data SENSE évalue les données de conformité et les rapports aux environnements de travail que vous avez sélectionnés.
+Lorsque vous filtrez le tableau de bord, la classification BlueXP évalue les données et les rapports de conformité pour les environnements de travail que vous avez sélectionnés.
 
 .Étapes
 . Cliquez sur la liste déroulante du filtre, sélectionnez les environnements de travail pour lesquels vous souhaitez afficher les données, puis cliquez sur *Afficher*.

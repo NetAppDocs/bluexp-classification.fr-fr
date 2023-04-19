@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Prenez le contrôle de vos données privées en affichant les détails sur les données personnelles et les données personnelles sensibles de votre organisation. Vous pouvez également consulter les catégories et les types de fichiers que Cloud Data trouve dans vos données. 
+summary: Prenez le contrôle de vos données privées en affichant les détails sur les données personnelles et les données personnelles sensibles de votre organisation. Vous pouvez également gagner en visibilité en passant en revue les catégories et les types de fichiers classés par BlueXP dans vos données. 
 ---
 = Affichage des détails de conformité concernant les données stockées dans votre organisation
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Prenez le contrôle de vos données privées en affichant les détails 
 
 
 [role="lead"]
-Prenez le contrôle de vos données privées en affichant les détails sur les données personnelles et les données personnelles sensibles de votre organisation. Vous pouvez également consulter les catégories et les types de fichiers que Cloud Data trouve dans vos données.
+Prenez le contrôle de vos données privées en affichant les détails sur les données personnelles et les données personnelles sensibles de votre organisation. Vous pouvez également gagner en visibilité en passant en revue les catégories et les types de fichiers classés par BlueXP dans vos données.
 
 
 NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
 
-Par défaut, le tableau de bord Cloud Data Sense affiche les données de conformité pour tous les environnements et bases de données de travail.
+Par défaut, le tableau de bord de classification BlueXP affiche les données de conformité pour tous les environnements de travail et bases de données.
 
-image:screenshot_compliance_dashboard.png["Capture d'écran du tableau de bord Cloud Data Sense"]
+image:screenshot_compliance_dashboard.png["Capture d'écran du tableau de bord de classification BlueXP"]
 
 Si vous ne souhaitez voir des données que pour certains environnements de travail, <<Affichage des données du tableau de bord pour des environnements de travail spécifiques,sélectionnez ces environnements de travail>>.
 
@@ -31,11 +31,11 @@ Vous pouvez également filtrer les résultats à partir de la page Data Investig
 
 == Affichage des fichiers contenant des données personnelles
 
-Cloud Data Sense identifie automatiquement des mots, des chaînes et des motifs spécifiques (Regex) dans les données. Par exemple, les renseignements d'identification personnelle (RP), les numéros de carte de crédit, les numéros de sécurité sociale, les numéros de compte bancaire, les mots de passe, entre autres. link:reference-private-data-categories.html#types-of-personal-data["Voir la liste complète"^]. Data Sense identifie ce type d'information dans des fichiers individuels, dans des fichiers dans des répertoires (partages et dossiers) et dans des tables de bases de données.
+La classification BlueXP identifie automatiquement des mots, des chaînes et des modèles spécifiques (Regex) à l'intérieur des données. Par exemple, les renseignements d'identification personnelle (RP), les numéros de carte de crédit, les numéros de sécurité sociale, les numéros de compte bancaire, les mots de passe, entre autres. link:reference-private-data-categories.html#types-of-personal-data["Voir la liste complète"^]. La classification BlueXP identifie ce type d'informations dans des fichiers individuels, dans des fichiers dans des répertoires (partages et dossiers) et dans des tables de bases de données.
 
 En outre, si vous avez ajouté un serveur de base de données à scanner, la fonction _Data Fusion_ vous permet de numériser vos fichiers afin d'identifier si des identificateurs uniques de vos bases de données se trouvent dans ces fichiers ou d'autres bases de données. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à l'aide de Data Fusion"^] pour plus d'informations.
 
-Pour certains types de données personnelles, Data Sense utilise _la validation de proximité_ pour valider ses conclusions. La validation se produit en recherchant un ou plusieurs mots clés prédéfinis à proximité des données personnelles trouvées. Par exemple, Data Sense identifie un américain Numéro de sécurité sociale (SSN) comme numéro de sécurité sociale s'il y a un mot de proximité, par exemple, _SSN_ ou _social Security_. link:reference-private-data-categories.html#types-of-personal-data["Le tableau des données personnelles"^] Indique quand Data SENSE utilise la validation de proximité.
+Pour certains types de données personnelles, la classification BlueXP utilise la _validation de proximité_ pour valider ses résultats. La validation se produit en recherchant un ou plusieurs mots clés prédéfinis à proximité des données personnelles trouvées. Par exemple, la classification BlueXP identifie un agent américain Numéro de sécurité sociale (SSN) comme numéro de sécurité sociale s'il y a un mot de proximité, par exemple, _SSN_ ou _social Security_. link:reference-private-data-categories.html#types-of-personal-data["Le tableau des données personnelles"^] Indique quand la classification BlueXP utilise la validation de proximité.
 
 .Étapes
 . Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > classement*, puis sur l'onglet *conformité*.
@@ -63,11 +63,11 @@ image:screenshot_compliance_investigation_page_directory.png["Capture d'écran d
 
 == Affichage des fichiers contenant des données personnelles sensibles
 
-Cloud Data Sense identifie automatiquement des types spéciaux d'informations personnelles sensibles, comme définis par les réglementations en matière de confidentialité, telles que https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Les articles 9 et 10 du RGPD"^]. Par exemple, des renseignements concernant la santé d'une personne, son origine ethnique ou son orientation sexuelle. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Voir la liste complète"^]. Data Sense identifie ce type d'information dans des fichiers individuels, dans des fichiers dans des répertoires (partages et dossiers) et dans des tables de bases de données.
+La classification BlueXP identifie automatiquement des types spéciaux d'informations personnelles sensibles, tels que définis par les réglementations en matière de confidentialité, notamment https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Les articles 9 et 10 du RGPD"^]. Par exemple, des renseignements concernant la santé d'une personne, son origine ethnique ou son orientation sexuelle. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Voir la liste complète"^]. La classification BlueXP identifie ce type d'informations dans des fichiers individuels, dans des fichiers dans des répertoires (partages et dossiers) et dans des tables de bases de données.
 
-Cloud Data Sense utilise l'intelligence artificielle (IA), le traitement du langage naturel (NLP), l'apprentissage machine (ML) et l'informatique cognitive (CC) pour comprendre la signification du contenu qu'il analyse afin d'extraire des entités et de le catégoriser en conséquence.
+La classification BlueXP utilise l'intelligence artificielle (IA), le traitement du langage naturel (NLP), le machine learning (ML) et l'informatique cognitive (CC) pour comprendre la signification du contenu qu'il analyse afin d'extraire des entités et le catégoriser en conséquence.
 
-Par exemple, une catégorie de données sensibles du RGPD est l'origine ethnique. Du fait de ses capacités NLP, Data Sense peut distinguer une phrase qui lit « George est mexicain » (en indiquant des données sensibles comme indiqué à l'article 9 du RGPD), et « George mange de la nourriture mexicaine ».
+Par exemple, une catégorie de données sensibles du RGPD est l'origine ethnique. Du fait de ses capacités NLP, le classement BlueXP peut faire la différence entre la phrase « George est mexicain » (indiquant des données sensibles comme spécifié dans l'article 9 du RGPD) et « George mange mexicain ».
 
 
 NOTE: Seul l'anglais est pris en charge lors de la recherche de données personnelles sensibles. La prise en charge d'autres langues sera ajoutée ultérieurement.
@@ -89,7 +89,7 @@ image:screenshot_sensitive_personal_files.gif["Capture d'écran de la boîte de 
 
 == Affichage des fichiers par catégories
 
-Cloud Data SENSE répartit les données analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:reference-private-data-categories.html#types-of-categories["Voir la liste des catégories"^].
+La classification BlueXP récupère les données qu'il a analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:reference-private-data-categories.html#types-of-categories["Voir la liste des catégories"^].
 
 Les catégories peuvent vous aider à comprendre ce qui se passe avec vos données en vous montrant les types d'informations dont vous disposez. Par exemple, une catégorie comme les CV ou les contrats d'employés peut inclure des données sensibles. Lorsque vous étudiez les résultats, vous pouvez constater que les contrats d'employés sont stockés dans un emplacement non sécurisé. Vous pouvez ensuite corriger ce problème.
 
@@ -109,7 +109,7 @@ image:screenshot_categories.gif["Capture d'écran de la boîte de dialogue caté
 
 == Affichage des fichiers par type de fichier
 
-Cloud Data SENSE affecte les données analysées et les divise par type de fichier. La vérification de vos types de fichiers peut vous aider à contrôler vos données sensibles car il se peut que certains types de fichiers ne soient pas stockés correctement. link:reference-private-data-categories.html#types-of-files["Voir la liste des types de fichiers"^].
+La classification BlueXP répartit les données analysées par type de fichier. La vérification de vos types de fichiers peut vous aider à contrôler vos données sensibles car il se peut que certains types de fichiers ne soient pas stockés correctement. link:reference-private-data-categories.html#types-of-files["Voir la liste des types de fichiers"^].
 
 Par exemple, vous pouvez stocker des fichiers CAO qui contiennent des informations très sensibles sur votre organisation. S'ils ne sont pas sécurisés, vous pouvez prendre le contrôle des données sensibles en limitant les autorisations ou en déplaçant les fichiers vers un autre emplacement.
 
@@ -126,9 +126,9 @@ image:screenshot_file_types.gif["Capture d'écran de la boîte de dialogue types
 
 == Affichage des données du tableau de bord pour des environnements de travail spécifiques
 
-Vous pouvez filtrer le contenu du tableau de bord Cloud Data Sense afin d'afficher les données de conformité pour tous les environnements de travail et bases de données, ou pour des environnements de travail spécifiques uniquement.
+Vous pouvez filtrer le contenu du tableau de bord de classification BlueXP pour afficher les données de conformité de tous les environnements de travail et bases de données, ou pour seulement des environnements de travail spécifiques.
 
-Lorsque vous filtrez le tableau de bord, Data SENSE évalue les données de conformité et les rapports aux environnements de travail que vous avez sélectionnés.
+Lorsque vous filtrez le tableau de bord, la classification BlueXP évalue les données et les rapports de conformité pour les environnements de travail que vous avez sélectionnés.
 
 .Étapes
 . Cliquez sur la liste déroulante du filtre, sélectionnez les environnements de travail pour lesquels vous souhaitez afficher les données, puis cliquez sur *Afficher*.

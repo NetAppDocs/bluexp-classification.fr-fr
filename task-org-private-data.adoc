@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-org-private-data.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Avec Cloud Data Sense, vous pouvez gérer et organiser vos données privées de plusieurs façons. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes. 
+summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et d"organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.' 
 ---
 = Organiser vos données privées
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Avec Cloud Data Sense, vous pouvez gérer et organiser vos données pri
 
 
 [role="lead"]
-Avec Cloud Data Sense, vous pouvez gérer et organiser vos données privées de plusieurs façons. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
+La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
 
-* Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser Cloud Data Sense pour gérer ces étiquettes AIP.
+* Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.
 * Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.
 * Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.
 * Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.
@@ -30,23 +30,23 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 == Dois-je utiliser des étiquettes ou des étiquettes ?
 
-Vous trouverez ci-dessous une comparaison du balisage Data Sense et de l'étiquetage Azure information protection.
+Vous trouverez ci-dessous une comparaison du balisage de classification BlueXP et de l'étiquetage Azure information protection.
 
 [cols="50,50"]
 |===
 | Étiquettes | Étiquettes 
 
 
-| Les balises de fichier font partie intégrante de Data Sense. | Vous devez vous être abonné à Azure information protection (AIP). 
+| Les balises de fichier font partie intégrante du classement BlueXP. | Vous devez vous être abonné à Azure information protection (AIP). 
 
 
-| La balise est conservée uniquement dans la base de données de détection des données - elle n'est pas écrite dans le fichier. Il ne modifie pas le fichier, ni les heures d'accès ou de modification du fichier. | Le libellé fait partie du fichier et, lorsque le libellé change, le fichier change. Cette modification modifie également les heures d'accès et de modification du fichier. 
+| La balise n'est conservée que dans la base de données de classification BlueXP, mais pas dans le fichier. Il ne modifie pas le fichier, ni les heures d'accès ou de modification du fichier. | Le libellé fait partie du fichier et, lorsque le libellé change, le fichier change. Cette modification modifie également les heures d'accès et de modification du fichier. 
 
 
 | Vous pouvez avoir plusieurs balises sur un seul fichier. | Vous pouvez avoir une étiquette sur un seul fichier. 
 
 
-| Cette balise peut être utilisée pour une action interne de détection des données, telle que copie, déplacement, suppression, exécution d'une règle, etc | Les autres systèmes qui peuvent lire le fichier peuvent voir l'étiquette, qui peut être utilisée pour une automatisation supplémentaire. 
+| La balise peut être utilisée pour les actions de classification BlueXP internes, telles que la copie, le déplacement, la suppression, l'exécution d'une règle, etc | Les autres systèmes qui peuvent lire le fichier peuvent voir l'étiquette, qui peut être utilisée pour une automatisation supplémentaire. 
 
 
 | Un seul appel API est utilisé pour voir si un fichier a une balise. |  
@@ -55,15 +55,15 @@ Vous trouverez ci-dessous une comparaison du balisage Data Sense et de l'étique
 
 == Catégorisation de vos données à l'aide de libellés AIP
 
-Vous pouvez gérer les étiquettes AIP dans les fichiers que Cloud Data SENSE analyse si vous vous êtes abonné https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. Data Sense vous permet d'afficher les étiquettes déjà affectées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
+Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. La classification BlueXP vous permet d'afficher les étiquettes déjà attribuées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
 
-Cloud Data SENSE prend en charge les libellés AIP dans les types de fichiers suivants : .DOC, .DOCX, .PDF, .PPTX, .XLS, XLSX.
+La classification BlueXP prend en charge les étiquettes AIP dans les types de fichiers suivants : .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.
 
 [NOTE]
 ====
 * Vous ne pouvez pas modifier actuellement les étiquettes dans des fichiers de plus de 30 Mo. Pour OneDrive, SharePoint et Google Drive, la taille maximale de fichier est de 4 Mo.
-* Si un fichier a un libellé qui n'existe plus dans AIP, Cloud Data SENSE le considère comme un fichier sans étiquette.
-* Si vous avez déployé Data Sense dans une région gouvernementale ou dans un emplacement sur site sans accès à Internet (également connu sous le nom de site sombre), la fonctionnalité AIP label n'est pas disponible.
+* Si un fichier possède une étiquette qui n'existe plus dans AIP, la classification BlueXP la considère comme un fichier sans étiquette.
+* Si vous avez déployé la classification BlueXP dans une région gouvernementale ou dans un emplacement sur site qui n'a pas d'accès à Internet (également appelé site invisible), la fonctionnalité d'étiquette AIP n'est pas disponible.
 
 
 ====
@@ -71,7 +71,7 @@ Cloud Data SENSE prend en charge les libellés AIP dans les types de fichiers su
 
 === Intégration des libellés AIP dans votre espace de travail
 
-Avant de gérer les étiquettes AIP, vous devez intégrer la fonctionnalité AIP label dans Cloud Data Sense en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous link:concept-cloud-compliance.html#supported-data-sources["sources des données"^] Dans votre espace de travail BlueXP.
+Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous link:concept-cloud-compliance.html#supported-data-sources["sources des données"^] Dans votre espace de travail BlueXP.
 
 .De formation
 * Vous devez disposer d'un compte et d'une licence Azure information protection.
@@ -80,13 +80,13 @@ Avant de gérer les étiquettes AIP, vous devez intégrer la fonctionnalité AIP
 
 
 .Étapes
-. Dans la page Configuration de la détection des données du cloud, cliquez sur *intégrer des étiquettes AIP*.
+. Sur la page Configuration de la classification BlueXP, cliquez sur *intégrer les étiquettes d'AIP*.
 +
-image:screenshot_compliance_integrate_aip_labels.png["Une capture d'écran qui montre que vous cliquez sur le bouton pour intégrer la fonctionnalité AIP labels dans Cloud Data SENSE."]
+image:screenshot_compliance_integrate_aip_labels.png["Capture d'écran montrant comment cliquer sur le bouton pour intégrer la fonctionnalité d'étiquettes AIP dans la classification BlueXP."]
 
 . Dans la boîte de dialogue intégrer des libellés AIP, cliquez sur *connexion à Azure*.
 . Sur la page Microsoft qui s'affiche, sélectionnez le compte et saisissez les informations d'identification requises.
-. Revenez à l'onglet Cloud Data Sense et le message «_AIP Labels a été intégré avec succès au compte <Account_name>_ ».
+. Revenez à l'onglet de classification BlueXP et le message «_AIP Labels ont été intégrés avec le compte <account_name>_ » s'affiche.
 . Cliquez sur *Fermer* et vous verrez le texte _AIP Labels Integrated_ en haut de la page.
 +
 image:screenshot_compliance_aip_labels_int.png["Une capture d'écran qui montre les étiquettes AIP a été intégrée avec succès."]
@@ -110,7 +110,7 @@ image:screenshot_compliance_show_label.png["Capture d'écran présentant les dé
 
 === Attribution manuelle d'étiquettes AIP
 
-Vous pouvez ajouter, modifier et supprimer des étiquettes AIP de vos fichiers à l'aide de Cloud Data Sense.
+Vous pouvez ajouter, modifier et supprimer des étiquettes d'AIP de vos fichiers à l'aide de la classification BlueXP.
 
 Procédez comme suit pour attribuer un libellé AIP à un seul fichier.
 
@@ -150,14 +150,14 @@ L'étiquette AIP est ajoutée aux métadonnées pour tous les fichiers sélectio
 
 === Suppression de l'intégration AIP
 
-Si vous ne souhaitez plus pouvoir gérer les étiquettes AIP dans des fichiers, vous pouvez supprimer le compte AIP de l'interface Cloud Data SENSE.
+Si vous ne souhaitez plus pouvoir gérer les étiquettes AIP dans les fichiers, vous pouvez supprimer le compte AIP de l'interface de classification BlueXP.
 
-Notez qu'aucune modification n'est apportée aux étiquettes que vous avez ajoutées à l'aide de Data Sense. Les étiquettes qui existent dans les fichiers resteront telles qu'elles existent actuellement.
+Notez qu'aucune modification n'est apportée aux étiquettes que vous avez ajoutées à l'aide de la classification BlueXP. Les étiquettes qui existent dans les fichiers resteront telles qu'elles existent actuellement.
 
 .Étapes
 . Dans la page _Configuration_, cliquez sur *libellés AIP intégrés > Supprimer intégration*.
 +
-image:screenshot_compliance_un_integrate_aip_labels.png["Capture d'écran montrant comment supprimer les intégrations AIP avec Cloud Data Sense."]
+image:screenshot_compliance_un_integrate_aip_labels.png["Copie d'écran montrant comment supprimer les intégrations d'AIP avec la classification BlueXP."]
 
 . Cliquez sur *Supprimer l'intégration* dans la boîte de dialogue de confirmation.
 
@@ -168,12 +168,12 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Capture d'écran montra
 
 Vous pouvez ajouter une balise aux fichiers que vous souhaitez marquer pour un type de suivi. Par exemple, vous avez peut-être trouvé des fichiers en double et vous voulez en supprimer un, mais vous devez vérifier lequel supprimer. Vous pouvez ajouter une balise « vérifier pour supprimer » au fichier afin que vous sachiez que ce fichier nécessite une recherche et un certain type d'action future.
 
-Data Sense vous permet d'afficher les balises affectées aux fichiers, d'ajouter ou de supprimer des balises des fichiers et de modifier le nom ou de supprimer une balise existante.
+La classification BlueXP vous permet d'afficher les balises attribuées aux fichiers, d'ajouter ou de supprimer des balises des fichiers, et de modifier le nom ou de supprimer une balise existante.
 
-Notez que la balise n'est pas ajoutée au fichier de la même manière que les étiquettes AIP font partie des métadonnées du fichier. La balise vient d'être visible par les utilisateurs de BlueXP à l'aide de Cloud Data SENSE. Ainsi, vous pouvez voir si un fichier doit être supprimé ou vérifié pour un certain type de suivi.
+Notez que la balise n'est pas ajoutée au fichier de la même manière que les étiquettes AIP font partie des métadonnées du fichier. La balise est visible par les utilisateurs BlueXP via la classification BlueXP. Vous pouvez ainsi voir si un fichier doit être supprimé ou vérifié pour un certain type de suivi.
 
 
-TIP: Les balises attribuées aux fichiers dans Cloud Data SENSE ne sont pas liées aux balises que vous pouvez ajouter aux ressources, telles que des volumes ou des instances de machines virtuelles. Des balises de détection de données sont appliquées au niveau du fichier.
+TIP: Les balises attribuées aux fichiers de la classification BlueXP ne sont pas liées aux balises que vous pouvez ajouter à des ressources, telles que des volumes ou des instances de machines virtuelles. Les balises de classification BlueXP sont appliquées au niveau des fichiers.
 
 
 
@@ -181,7 +181,7 @@ TIP: Les balises attribuées aux fichiers dans Cloud Data SENSE ne sont pas lié
 
 Vous pouvez afficher tous les fichiers auxquels des étiquettes spécifiques sont attribuées.
 
-. Cliquez sur l'onglet *Investigation* dans Cloud Data Sense.
+. Cliquez sur l'onglet *Investigation* de la classification BlueXP.
 . Dans la page recherche de données, cliquez sur *balises* dans le volet filtres, puis sélectionnez les balises requises.
 +
 image:screenshot_compliance_filter_status.png["Capture d'écran indiquant comment sélectionner des balises dans le volet filtres."]
@@ -261,7 +261,7 @@ Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusi
 
 Par exemple, vous pouvez avoir un fichier contenant certaines données personnelles qui autorise un trop grand nombre d'utilisateurs à accéder en lecture et en écriture (autorisations ouvertes). Vous pouvez donc attribuer l'étiquette d'état « Modifier les autorisations » et attribuer ce fichier à l'utilisateur « Joan Smith » afin qu'il puisse décider comment résoudre le problème. Lorsqu'ils ont résolu le problème, ils peuvent changer l'étiquette d'état en « terminé ».
 
-Notez que le nom d'utilisateur n'est pas ajouté au fichier dans le cadre des métadonnées du fichier. Il est simplement visible par les utilisateurs de BlueXP lors de l'utilisation de Cloud Data Sense.
+Notez que le nom d'utilisateur n'est pas ajouté au fichier dans le cadre des métadonnées de fichier. Il est vu juste par les utilisateurs BlueXP lors de l'utilisation de la classification BlueXP.
 
 Un nouveau filtre dans la page Investigation vous permet d'afficher facilement tous les fichiers qui ont la même personne dans le champ « assigné à ».
 

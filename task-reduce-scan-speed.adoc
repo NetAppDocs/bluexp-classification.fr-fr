@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-reduce-scan-speed.html 
 keywords: slow scans, reduce speed 
-summary: 'L"analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Cependant, si vous êtes préoccupé par un impact même très faible, vous pouvez configurer Data Sense pour effectuer des acquisitions « lentes ».' 
+summary: 'L"analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Toutefois, si vous êtes préoccupé, même par un très faible impact, vous pouvez configurer la classification BlueXP pour effectuer des analyses « lentes ».' 
 ---
-= Réduction de la vitesse d'acquisition de détection de données
+= Réduction de la vitesse d'analyse de la classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'L"analyse des données a un impact négligeable sur vos systèmes de s
 
 
 [role="lead"]
-L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Cependant, si vous êtes préoccupé par un impact même très faible, vous pouvez configurer Data Sense pour effectuer des acquisitions « lentes ».
+L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Toutefois, si vous êtes préoccupé, même par un très faible impact, vous pouvez configurer la classification BlueXP pour effectuer des analyses « lentes ».
 
 Lorsqu'elle est activée, l'analyse lente est utilisée sur toutes les sources de données ; vous ne pouvez pas configurer la numérisation lente pour un environnement de travail unique ou une source de données.
 

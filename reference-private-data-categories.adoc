@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-private-data-categories.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
-summary: Il existe de nombreux types de données privées que Cloud Data sens détecte dans vos volumes, compartiments Amazon S3, bases de données, dossiers OneDrive, comptes SharePoint, Et les comptes Google Drive. 
+summary: Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes, dans des compartiments Amazon S3, dans des bases de données, des dossiers OneDrive, des comptes SharePoint, Et Google Drive. 
 ---
 = Catégories de données privées
 :hardbreaks:
@@ -14,20 +14,20 @@ summary: Il existe de nombreux types de données privées que Cloud Data sens d�
 
 
 [role="lead"]
-Il existe de nombreux types de données privées que Cloud Data sens détecte dans vos volumes, compartiments Amazon S3, bases de données, dossiers OneDrive, comptes SharePoint, Et les comptes Google Drive. Voir les catégories ci-dessous.
+Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes, dans des compartiments Amazon S3, dans des bases de données, des dossiers OneDrive, des comptes SharePoint, Et Google Drive. Voir les catégories ci-dessous.
 
 
-TIP: Si vous avez besoin que les données cloud soient utiles pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de santé, envoyez un e-mail à l'adresse ng-contact-data-sense@netapp.com avec votre demande.
+TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de santé, envoyez un e-mail à ng-contact-data-sense@netapp.com à votre demande.
 
 
 
 == Types de données personnelles
 
-Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous identifie si Cloud Data SENSE utilise ou non link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
+Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
 Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
 
-Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous scannez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir des identifiants supplémentaires que Cloud Data Sense recherche dans ses ' scans en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos acquisitions de détection de données"^] pour plus d'informations.
+Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous analysez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir des identificateurs supplémentaires que la classification BlueXP recherche dans ses analyses en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos analyses de classification BlueXP"^] pour plus d'informations.
 
 [cols="13,37,10,8,8,8,8,8"]
 |===
@@ -217,7 +217,7 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 
 == Types de données personnelles sensibles
 
-Les données personnelles sensibles que Cloud Data Sense peuvent trouver dans les fichiers incluent la liste suivante.
+La liste suivante répertorie les données personnelles sensibles que la classification BlueXP peut trouver dans des fichiers.
 
 Les éléments de cette catégorie ne peuvent être reconnus qu'en anglais pour le moment.
 
@@ -236,7 +236,7 @@ Référence de la vie sexuelle ou de l'orientation:: Données concernant la vie 
 
 == Types de catégories
 
-Il classe les données dans le cloud comme suit.
+La classification BlueXP classe vos données comme suit.
 
 La plupart de ces catégories peuvent être reconnues en anglais, allemand et espagnol.
 
@@ -317,7 +317,7 @@ Les métadonnées suivantes sont également classées en catégories et identifi
 * Code
 * Corrompu
 * Base de données et fichiers d'index
-* Fil d'Ariane de détection des données
+* Fil d'Ariane de la classification BlueXP
 * Fichiers de conception
 * Données d'application de messagerie
 * Crypté (fichiers avec un score d'entropie élevé)
@@ -340,9 +340,9 @@ Les métadonnées suivantes sont également classées en catégories et identifi
 
 == Types de fichiers
 
-Cloud Data SENSE analyse tous les fichiers pour chaque catégorie et chaque métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.
+La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.
 
-Mais lorsque Data SENSE détecte des informations à caractère personnel (PII) ou lorsqu'il effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
+Toutefois, lorsque la classification BlueXP détecte des informations à caractère personnel (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
 
 `+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
@@ -350,15 +350,15 @@ Mais lorsque Data SENSE détecte des informations à caractère personnel (PII) 
 
 == Exactitude des informations trouvées
 
-NetApp ne garantit pas une précision de 100 % des données personnelles et des données personnelles sensibles que Cloud Data sens identifie. Vous devez toujours valider les informations en examinant les données.
+NetApp ne peut pas garantir l'exactitude à 100 % des données personnelles et des données personnelles sensibles identifiées par la classification BlueXP. Vous devez toujours valider les informations en examinant les données.
 
-Selon nos tests, le tableau ci-dessous montre la précision des informations que Data Sense trouve. Nous la décomposent par _Precision_ et _rappel_:
+D'après nos tests, le tableau ci-dessous précise les informations trouvées par la classification BlueXP. Nous la décomposent par _Precision_ et _rappel_:
 
-Précision:: La probabilité que le détection de données ait été correctement identifié. Par exemple, un taux de précision de 90 % pour les données personnelles signifie que 9 fichiers sur 10 identifiés comme contenant des renseignements personnels, contiennent en fait des renseignements personnels. 1 fichier sur 10 serait un faux positif.
-Rappel:: La probabilité pour le sens des données de trouver ce qu'il devrait. Par exemple, un taux de rappel de 70 % pour les données personnelles signifie que Data Sense peut identifier 7 fichiers sur 10 qui contiennent réellement des informations personnelles dans votre organisation. 30 % des données semblent manquer le sens où elles ne seront pas affichées dans le tableau de bord.
+Précision:: La probabilité que la classification BlueXP trouve ait été correctement identifiée. Par exemple, un taux de précision de 90 % pour les données personnelles signifie que 9 fichiers sur 10 identifiés comme contenant des renseignements personnels, contiennent en fait des renseignements personnels. 1 fichier sur 10 serait un faux positif.
+Rappel:: Probabilité que la classification BlueXP trouve ce qu'elle doit. Par exemple, un taux de rappel de 70 % pour les données personnelles signifie que la classification BlueXP peut identifier 7 fichiers sur 10 qui contiennent réellement des données personnelles dans votre entreprise. 30 % des données sont classifiées et n'apparaîtront pas dans le tableau de bord.
 
 
-Nous améliorons constamment la précision de nos résultats. Ces améliorations seront automatiquement disponibles dans les prochaines versions de Data Sense.
+Nous améliorons constamment la précision de nos résultats. Ces améliorations seront automatiquement disponibles dans les futures versions de classification BlueXP.
 
 [cols="25,20,20"]
 |===

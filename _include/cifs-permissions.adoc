@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-+ si vous voulez vous assurer que les « dernières heures d'accès » de vos fichiers ne sont pas modifiées par les analyses de classification Data Sense, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes dans CIFS ou d'écrire dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
++ si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.

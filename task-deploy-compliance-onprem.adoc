@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 'Procédez en quelques étapes pour installer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet. Dans le cadre de cette installation, vous devrez déployer l"hôte Linux manuellement sur votre réseau ou dans le cloud.' 
+summary: 'Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet. Dans le cadre de cette installation, vous devrez déployer l"hôte Linux manuellement sur votre réseau ou dans le cloud.' 
 ---
-= Installez Data Sense sur un hôte disposant d'un accès Internet
+= Installez la classification BlueXP sur un hôte disposant d'un accès Internet
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 'Procédez en quelques étapes pour installer Data Sense sur un hôte L
 
 
 [role="lead"]
-Procédez en quelques étapes pour installer Data Sense sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet. Dans le cadre de cette installation, vous devrez déployer l'hôte Linux manuellement sur votre réseau ou dans le cloud.
+Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet. Dans le cadre de cette installation, vous devrez déployer l'hôte Linux manuellement sur votre réseau ou dans le cloud.
 
-L'installation sur site peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance Data Sense également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
+L'installation sur site peut être une bonne option si vous préférez analyser les systèmes ONTAP sur site à l'aide d'une instance de classification BlueXP également située sur site, mais ce n'est pas une exigence. Le logiciel fonctionne exactement de la même manière quelle que soit la méthode d'installation choisie.
 
-Le script d'installation de Data Sense commence par vérifier si le système et l'environnement répondent aux conditions requises. Si les conditions préalables sont toutes remplies, l'installation démarre. Si vous souhaitez vérifier les conditions préalables indépendamment de l'installation de Data Sense, vous pouvez télécharger un progiciel distinct qui teste uniquement les conditions préalables. link:task-test-linux-system.html["Découvrez comment vérifier si votre hôte Linux est prêt à installer Data Sense"].
+Le script d'installation de la classification BlueXP commence par vérifier si le système et l'environnement répondent aux prérequis requis. Si les conditions préalables sont toutes remplies, l'installation démarre. Si vous souhaitez vérifier les prérequis indépendamment de l'installation de la classification BlueXP, vous pouvez télécharger un pack logiciel distinct qui teste uniquement les prérequis. link:task-test-linux-system.html["Découvrez comment vérifier si votre hôte Linux est prêt à installer la classification BlueXP"].
 
 L'installation typique sur un hôte Linux _dans vos locaux_ comporte les composants et les connexions suivants.
 
@@ -30,7 +30,7 @@ image:diagram_deploy_onprem_cloud_instance.png["Schéma des composants BlueXP et
 
 Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
-Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Installez Data Sense sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
 
 
 
@@ -47,31 +47,31 @@ Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir h
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Passer en revue les prérequis
 [role="quick-margin-para"]
-Assurez-vous que votre environnement est conforme aux conditions préalables. Cela inclut l'accès Internet sortant pour l'instance, la connectivité entre le connecteur et Cloud Data SENSE sur le port 443, etc. <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,Voir la liste complète>>.
+Assurez-vous que votre environnement est conforme aux conditions préalables. Notamment l'accès Internet sortant pour l'instance, la connectivité entre le connecteur et la classification BlueXP via le port 443, etc. <<Assurez un accès Internet sortant à partir de la classification BlueXP,Voir la liste complète>>.
 
 [role="quick-margin-para"]
 Vous avez également besoin d'un système Linux qui répond à <<Préparez le système hôte Linux,exigences suivantes>>.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Téléchargez et déployez Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Téléchargez et déployez la classification BlueXP
 [role="quick-margin-para"]
-Téléchargez le logiciel Cloud Data SENSE sur le site de support NetApp et copiez le fichier d'installation sur l'hôte Linux que vous prévoyez d'utiliser. Lancez ensuite l'assistant d'installation et suivez les invites pour déployer l'instance de détection de données.
+Téléchargez le logiciel de classification Cloud BlueXP depuis le site de support NetApp et copiez le fichier d'installation sur l'hôte Linux que vous souhaitez utiliser. Lancez ensuite l'assistant d'installation et suivez les invites pour déployer l'instance de classification BlueXP.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
 [role="quick-margin-para"]
-Les 1 premiers To de données analysés par Cloud Data Sense dans BlueXP sont gratuits pendant 30 jours. Un abonnement à votre fournisseur cloud Marketplace, ou une licence BYOL de NetApp, est nécessaire pour continuer l'analyse des données après ce point.
+Les 1 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement à votre fournisseur cloud Marketplace, ou une licence BYOL de NetApp, est nécessaire pour continuer l'analyse des données après ce point.
 
 
 
 == Créer un connecteur
 
-Un connecteur BlueXP est nécessaire avant de pouvoir installer et utiliser Data Sense. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer le cloud Data SENSE https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
 Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
-* Pour l'analyse des données dans Cloud Volumes ONTAP dans AWS, Amazon FSX pour ONTAP ou dans des compartiments AWS S3, vous utilisez un connecteur dans AWS.
-* Pour analyser les données dans Cloud Volumes ONTAP dans Azure ou dans Azure NetApp Files, vous utilisez un connecteur dans Azure.
+* Lors de l'analyse des données dans Cloud Volumes ONTAP dans AWS, Amazon FSX pour ONTAP ou dans des compartiments AWS S3, vous utilisez un connecteur dans AWS.
+* Lorsque vous analysez des données dans Cloud Volumes ONTAP dans Azure ou dans Azure NetApp Files, vous utilisez un connecteur dans Azure.
 +
 Pour Azure NetApp Files, il doit être déployé dans la même région que les volumes que vous souhaitez analyser.
 
@@ -80,21 +80,24 @@ Pour Azure NetApp Files, il doit être déployé dans la même région que les v
 
 Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
 
-Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer Data Sense sur site peuvent également choisir d'installer le connecteur sur site.
+Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
 Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
 
-Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur lors de l'installation de Data Sense. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
+Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur pour installer la classification BlueXP. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
 
 
 == Préparez le système hôte Linux
 
-Le logiciel de détection des données doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des exigences logicielles, etc. L'hôte Linux peut se trouver sur votre réseau ou dans le cloud. Data Sense n'est pas pris en charge sur un hôte partagé avec d'autres applications ; l'hôte doit être un hôte dédié.
+Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à des exigences spécifiques en termes de système d'exploitation, de RAM, de logiciels, etc. L'hôte Linux peut se trouver sur votre réseau ou dans le cloud.
 
-Assurez-vous de continuer d'exécuter le contrôle des données cloud. Le serveur Cloud Data Sense doit rester activé pour analyser en continu vos données.
+Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution. La machine de classification BlueXP doit continuer à analyser vos données en continu.
 
-* Lors de la création du système hôte sur votre site, vous pouvez choisir entre trois tailles de système en fonction de la taille du jeu de données que vous prévoyez d'utiliser pour l'analyse Data Sense :
+* La classification BlueXP n'est pas prise en charge sur un hôte partagé avec d'autres applications : l'hôte doit être un hôte dédié.
+
+
+* Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système selon la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
 +
 [cols="18,18,26,30"]
 |===
@@ -112,28 +115,29 @@ Assurez-vous de continuer d'exécuter le contrôle des données cloud. Le serveu
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
-* Lors du déploiement d'une instance cloud pour votre installation Data Sense, nous recommandons un système qui répond à la « grande » configuration requise ci-dessus :
+* Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
 ** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
 ** *Taille de VM Azure*: Nous recommandons "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["Consultez la section autres types d'instances Azure"^].
 ** *Type de machine GCP*: Nous recommandons "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["Voir autres types d'instances GCP"^].
 
 
-* *Système d'exploitation* : Red Hat Enterprise Linux ou CentOS versions 8.0 à 8.7
+* *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
 +
-** CentOS Stream 8 est également pris en charge
+** Red Hat Enterprise Linux versions 8.0 à 8.7
+** CentOS versions 8.0 à 8.7
+** CentOS Stream 8
 ** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
-** Le système d'exploitation doit pouvoir installer le moteur docker
 
 
-* *Gestion des abonnements Red Hat* : un système Red Hat Enterprise Linux doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis au cours de l'installation.
-* *Logiciel supplémentaire*: Vous devez installer le logiciel suivant sur l'hôte avant d'installer Data Sense:
+* *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
+* *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 +
 ** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
 ** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
-* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer Data Sense. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec Data Sense :
+* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -144,7 +148,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-Si vous prévoyez d'utiliser des hôtes Data Sense supplémentaires comme nœuds de scanner, ajoutez ces règles à votre système principal à l'heure actuelle :
+Si vous prévoyez d'utiliser des hôtes de classification BlueXP supplémentaires comme nœuds d'analyse, ajoutez ces règles à votre système principal à ce moment :
 
 +
 ....
@@ -154,18 +158,18 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Si vous activez `firewalld` Après avoir installé Data Sense, vous devez redémarrer docker.
+Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
 
 
 
 
-NOTE: L'adresse IP du système hôte Data Sense ne peut pas être modifiée après l'installation.
+NOTE: L'adresse IP du système hôte de classification BlueXP ne peut pas être modifiée après l'installation.
 
 
 
-== Activation de l'accès Internet sortant à partir du Cloud Data SENSE
+== Assurez un accès Internet sortant à partir de la classification BlueXP
 
-Cloud Data Sense requiert un accès Internet sortant. Si votre réseau virtuel ou physique utilise un serveur proxy pour l'accès à Internet, assurez-vous que l'instance de détection de données dispose d'un accès Internet sortant pour contacter les points de terminaison suivants.
+La classification BlueXP nécessite un accès Internet sortant. Si votre réseau physique ou virtuel utilise un serveur proxy pour l'accès à Internet, assurez-vous que l'instance de classification BlueXP dispose d'un accès Internet sortant pour contacter les terminaux suivants.
 
 [cols="43,57"]
 |===
@@ -190,14 +194,14 @@ Cloud Data Sense requiert un accès Internet sortant. Si votre réseau virtuel o
 
 == Vérifiez que tous les ports requis sont activés
 
-Vous devez vous assurer que tous les ports requis sont ouverts pour la communication entre le connecteur, Data Sense, Active Directory et vos sources de données.
+Vous devez vous assurer que tous les ports requis sont ouverts pour la communication entre le connecteur, la classification BlueXP, Active Directory et vos sources de données.
 
 [cols="25,25,50"]
 |===
 | Type de connexion | Ports | Description 
 
 
-| Connecteur <> détection des données | 8080 (TCP), 443 (TCP) et 80 | Le pare-feu ou les règles de routage du connecteur doivent autoriser le trafic entrant et sortant via le port 443 vers et depuis l'instance de détection des données. Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. 
+| Classification de Connector <> BlueXP | 8080 (TCP), 443 (TCP) et 80 | Les règles de pare-feu ou de routage du connecteur doivent autoriser le trafic entrant et sortant via le port 443 vers et depuis l'instance de classification BlueXP. Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. 
 
 
 | Connecteur <> cluster ONTAP (NAS) | 443 (TCP)  a| 
@@ -209,25 +213,25 @@ BlueXP détecte les clusters ONTAP via HTTPS. Si vous utilisez des stratégies d
 
 
 
-| Cluster de détection des données <> ONTAP  a| 
+| Classification BlueXP <> cluster ONTAP  a| 
 * Pour NFS - 111 (TCP/UDP) et 2049 (TCP/UDP)
 * Pour CIFS - 139 (TCP/UDP) et 445 (TCP/UDP)
 
  a| 
-La détection des données requiert une connexion réseau à chaque sous-réseau Cloud Volumes ONTAP ou système ONTAP sur site. Les pare-feu ou les règles de routage de Cloud Volumes ONTAP doivent autoriser les connexions entrantes depuis l'instance Data Sense.
+La classification BlueXP nécessite une connexion réseau à chaque sous-réseau Cloud Volumes ONTAP ou système ONTAP sur site. Les pare-feu ou les règles de routage pour Cloud Volumes ONTAP doivent autoriser les connexions entrantes à partir de l'instance de classification BlueXP.
 
-Assurez-vous que ces ports sont ouverts à l'instance de détection de données :
+Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP :
 
 * Pour NFS - 111 et 2049
 * Pour CIFS : 139 et 445
 
 
-Les règles d'exportation de volumes NFS doivent autoriser l'accès à partir de l'instance Data Sense.
+Les règles d'exportation des volumes NFS doivent autoriser l'accès à partir de l'instance de classification BlueXP.
 
 
 
-| Détection de données <> Active Directory | 389 (TCP ET UDP), 636 (TCP), 3268 (TCP) ET 3269 (TCP)  a| 
-Un Active Directory doit déjà être configuré pour les utilisateurs de votre entreprise. En outre, Data Sense nécessite des identifiants Active Directory pour analyser les volumes CIFS.
+| Classification BlueXP <> Active Directory | 389 (TCP ET UDP), 636 (TCP), 3268 (TCP) ET 3269 (TCP)  a| 
+Un Active Directory doit déjà être configuré pour les utilisateurs de votre entreprise. De plus, la classification BlueXP requiert des informations d'identification Active Directory pour analyser les volumes CIFS.
 
 Vous devez disposer des informations pour Active Directory :
 
@@ -239,32 +243,32 @@ Vous devez disposer des informations pour Active Directory :
 
 
 |===
-Si vous utilisez plusieurs hôtes Data Sense pour fournir une puissance de traitement supplémentaire pour analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Voir la configuration de port supplémentaire requise"].
+Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la puissance de traitement afin d'analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Voir la configuration de port supplémentaire requise"].
 
 
 
-== Installez Data Sense sur l'hôte Linux
+== Installez la classification BlueXP sur l'hôte Linux
 
 Pour les configurations standard, le logiciel est installé sur un système hôte unique. <<Installation à un seul hôte pour les configurations courantes,Découvrez ces étapes ici>>.
 
-image:diagram_deploy_onprem_single_host_internet.png["Diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lors de l'utilisation d'une seule instance Data Sense déployée sur site avec accès à Internet."]
+image:diagram_deploy_onprem_single_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser avec une seule instance de classification BlueXP déployée sur site avec un accès Internet."]
 
 Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. <<Installation de plusieurs hôtes pour de grandes configurations,Découvrez ces étapes ici>>.
 
-image:diagram_deploy_onprem_multi_host_internet.png["Un diagramme indiquant l'emplacement des sources de données que vous pouvez analyser lors de l'utilisation de plusieurs instances de détection de données déployées sur site avec accès à Internet."]
+image:diagram_deploy_onprem_multi_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lorsque vous utilisez plusieurs instances de classification BlueXP déployées sur site avec un accès Internet."]
 
-Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> et <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,Vérification des prérequis>> Avant de déployer Cloud Data Sense, vous devez consulter la liste complète des exigences.
+Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> et <<Assurez un accès Internet sortant à partir de la classification BlueXP,Vérification des prérequis>> Liste complète des exigences avant de déployer la classification BlueXP.
 
-Les mises à niveau du logiciel Data Sense sont automatisées tant que l'instance est connectée à Internet.
+Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
-NOTE: Cloud Data Sense n'est actuellement pas en mesure d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devez déployer un connecteur et une instance de Data Sense dans le cloud et https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Basculer entre les connecteurs"^] pour les différentes sources de données.
+NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Basculer entre les connecteurs"^] pour les différentes sources de données.
 
 
 
 === Installation à un seul hôte pour les configurations courantes
 
-Suivez ces étapes pour installer le logiciel Data Sense sur un hôte sur site unique.
+Suivez ces étapes lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
@@ -273,14 +277,14 @@ Suivez ces étapes pour installer le logiciel Data Sense sur un hôte sur site u
 * Si vous utilisez un proxy pour accéder à Internet :
 +
 ** Vous aurez besoin des informations du serveur proxy (adresse IP ou nom d'hôte, port de connexion, schéma de connexion : https ou http, nom d'utilisateur et mot de passe).
-** Si le proxy exécute l'interception TLS, vous devez connaître le chemin d'accès sur le système Data Sense Linux où sont stockés les certificats TLS CA.
+** Si le proxy effectue l'interception TLS, vous devez connaître le chemin d'accès au système de classification BlueXP Linux où sont stockés les certificats TLS CA.
 
 
-* Vérifiez que votre environnement hors ligne répond aux besoins <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,autorisations et connectivité>>.
+* Vérifiez que votre environnement hors ligne répond aux besoins <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
 
 
 .Étapes
-. Téléchargez le logiciel Cloud Data SENSE sur le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
+. Téléchargez le logiciel de classification BlueXP depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
 . Copiez le fichier d'installation sur l'hôte Linux que vous envisagez d'utiliser (à l'aide de `scp` ou une autre méthode).
 . Décompressez le fichier d'installation sur la machine hôte, par exemple :
 +
@@ -291,11 +295,11 @@ tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
 . Dans BlueXP, sélectionnez *gouvernance > Classification*.
 . Cliquez sur *Activer détection de données*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran indiquant de sélectionner le bouton pour activer le détection de données cloud."]
+image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
 
-. Selon que vous installez Data Sense sur une instance préparée dans le cloud ou sur une instance préparée dans votre environnement sur site, cliquez sur le bouton *Deploy* approprié pour démarrer l'installation de Data Sense.
+. Selon que vous installez la classification BlueXP sur une instance préparée dans le cloud ou sur une instance préparée dans votre environnement sur site, cliquez sur le bouton *Deploy* approprié pour démarrer l'installation de la classification BlueXP.
 +
-image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran du bouton de déploiement de Cloud Data SENSE sur une machine dans le cloud ou sur site."]
+image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran de sélection du bouton pour déployer la classification BlueXP sur une machine dans le cloud ou sur site."]
 
 . La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie (par exemple : `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) et collez-le dans un fichier texte pour pouvoir l'utiliser ultérieurement. Cliquez ensuite sur *Fermer* pour fermer la boîte de dialogue.
 . Sur la machine hôte, entrez la commande que vous avez copiée, puis suivez une série d'invites, ou vous pouvez fournir la commande complète incluant tous les paramètres requis comme arguments de ligne de commande.
@@ -314,9 +318,9 @@ Notez que le programme d'installation effectue une pré-vérification afin de s'
 +
 Si vous installez sur une instance cloud (pas sur site), ajoutez `--manual-cloud-install <cloud_provider>`.
 
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte Data Sense afin qu'elle soit accessible par l'instance de connecteur.
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte BlueXP Connector afin qu'elle soit accessible par l'instance Data Sense.
-.. Entrez les détails du proxy comme vous y êtes invité. Si votre connecteur BlueXP utilise déjà un proxy, il n'est pas nécessaire de saisir à nouveau ces informations ici car Data Sense utilisera automatiquement le proxy utilisé par le connecteur.
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte de classification BlueXP afin qu'elle soit accessible par l'instance du connecteur.
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte du connecteur BlueXP afin qu'elle soit accessible par l'instance de classification BlueXP.
+.. Entrez les détails du proxy comme vous y êtes invité. Si votre connecteur BlueXP utilise déjà un proxy, il n'est pas nécessaire de saisir à nouveau ces informations ici, car la classification BlueXP utilisera automatiquement le proxy utilisé par le connecteur.
 
 | Vous pouvez également créer l'ensemble de la commande à l'avance, en fournissant les paramètres d'hôte et de proxy nécessaires :
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
@@ -328,7 +332,7 @@ Valeurs variables :
 ** _Account_ID_ = ID du compte NetApp
 ** _Agent_ID_ = ID connecteur
 ** _token_ = jeton utilisateur jwt
-** _Ds_host_ = adresse IP ou nom d'hôte du système Data Sense Linux.
+** _Ds_host_ = adresse IP ou nom d'hôte du système de classification BlueXP Linux.
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs BlueXP.
 ** _Cloud_Provider_ = lors de l'installation sur une instance cloud, entrez « AWS », « Azure » ou « GCP » en fonction du fournisseur de cloud.
 ** _Proxy_host_ = IP ou nom d'hôte du serveur proxy si l'hôte est derrière un serveur proxy.
@@ -336,20 +340,20 @@ Valeurs variables :
 ** _Proxy_schéma_ = schéma de connexion : https ou http (par défaut : http).
 ** _Proxy_user_ = utilisateur authentifié pour se connecter au serveur proxy, si une authentification de base est requise.
 ** _Proxy_password_ = Mot de passe pour le nom d'utilisateur que vous avez spécifié.
-** _CA_cert_dir_ = chemin sur le système Data Sense Linux contenant des bundles de certificat d'autorité de certification TLS supplémentaires. Requis uniquement si le proxy effectue une interception TLS.
+** _Ca_cert_dir_ = chemin du système de classification BlueXP Linux contenant des bundles de certificats TLS CA supplémentaires. Requis uniquement si le proxy effectue une interception TLS.
 
 
 
 
 .Résultat
-Le programme d'installation de Cloud Data Sense installe les packages, enregistre l'installation et installe Data Sense. L'installation peut prendre entre 10 et 20 minutes.
+Le programme d'installation de classification BlueXP installe les packages, enregistre l'installation et installe la classification BlueXP. L'installation peut prendre entre 10 et 20 minutes.
 
-S'il y a une connectivité sur le port 8080 entre la machine hôte et l'instance de connecteur, vous verrez la progression de l'installation dans l'onglet détection de données de BlueXP.
+En cas de connectivité sur le port 8080 entre la machine hôte et l'instance de connecteur, vous verrez la progression de l'installation dans l'onglet de classification BlueXP.
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
 
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour Cloud Data Sense"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
+Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
 
 
 
@@ -365,7 +369,7 @@ Il existe deux façons d'ajouter des nœuds de scanner supplémentaires :
 
 Par défaut, tous les nouveaux nœuds de scanner que vous ajoutez sont ajoutés au pool général de ressources de numérisation. Il s'agit du « groupe de scanner par défaut ». Dans l'image ci-dessous, il y a 1 nœud Manager et 3 nœuds de scanner dans le groupe « par défaut » qui sont tous des données de numérisation provenant des 6 sources de données.
 
-image:diagram_onprem_scanner_groups_default.png["Schéma de la façon dont les scanners de détection de données numérise les sources de données dans le groupe de lecteurs par défaut."]
+image:diagram_onprem_scanner_groups_default.png["Diagramme illustrant comment les scanners de classification BlueXP scanne les sources de données lorsque ces dernières se trouvent dans le groupe d'analyse par défaut."]
 
 Si vous souhaitez analyser certaines sources de données par des nœuds de scanner qui sont physiquement plus proches des sources de données, vous pouvez définir un nœud de scanner, ou un groupe de nœuds de scanner, pour analyser une source de données spécifique ou un groupe de sources de données. Dans l'image ci-dessous, il y a 1 nœud Manager et 3 nœuds scanner.
 
@@ -374,13 +378,13 @@ Si vous souhaitez analyser certaines sources de données par des nœuds de scann
 * Les nœuds du scanner 2 et 3 se trouvent dans le groupe « europe » et partagent les tâches de numérisation pour 3 sources de données
 
 
-image:diagram_onprem_scanner_groups.png["Schéma de la façon dont les scanners de détection de données scannent les sources de données lorsqu'ils sont affectés à différents groupes de lecteurs."]
+image:diagram_onprem_scanner_groups.png["Diagramme illustrant comment les scanners de classification BlueXP scanne les sources de données lorsqu'ils sont attribués à différents groupes de scanner."]
 
-Les groupes de lecteurs de détection de données peuvent être définis comme des zones géographiques distinctes où vos données sont stockées. Vous pouvez déployer plusieurs nœuds de scanner Data Sense dans le monde entier et choisir un groupe de scanner pour chaque nœud. De cette façon, chaque nœud du scanner analyse les données qui lui sont les plus proches. Plus le nœud du scanner est proche des données, mieux c'est, car il réduit la latence du réseau autant que possible lors de l'acquisition des données.
+Les groupes d'analyse de classification BlueXP peuvent être définis comme des zones géographiques distinctes où vos données sont stockées. Vous pouvez déployer plusieurs nœuds d'analyse de classification BlueXP à travers le monde et choisir un groupe de scanner pour chaque nœud. De cette façon, chaque nœud du scanner analyse les données qui lui sont les plus proches. Plus le nœud du scanner est proche des données, mieux c'est, car il réduit la latence du réseau autant que possible lors de l'acquisition des données.
 
-Vous pouvez choisir les groupes de scanner à ajouter à Data Sense et choisir leur nom. Data Sense ne fait pas valoir qu'un nœud mappé à un groupe de scanner nommé « europe » sera déployé en Europe.
+Vous pouvez choisir les groupes de scanner à ajouter à la classification BlueXP et choisir leur nom. La classification BlueXP n'applique pas qu'un nœud mappé à un groupe de scanner nommé « europe » soit déployé en Europe.
 
-Procédez comme suit pour installer d'autres nœuds du scanner Data Sense :
+Pour installer d'autres nœuds d'analyse de classification BlueXP, procédez comme suit :
 
 . Préparez les systèmes hôtes Linux qui feront office de nœuds de scanner
 . Téléchargez le logiciel Data Sense sur ces systèmes Linux
@@ -398,9 +402,9 @@ Procédez comme suit pour installer d'autres nœuds du scanner Data Sense :
 * Vérifiez que tous vos systèmes Linux pour les nœuds du scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
 * Assurez-vous que les deux packages logiciels prérequis sont installés sur les systèmes (Docker Engine et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
-* Vérifiez que votre environnement répond aux exigences requises <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,autorisations et connectivité>>.
+* Vérifiez que votre environnement répond aux exigences requises <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
 * Vous devez disposer des adresses IP des hôtes du nœud scanner que vous ajoutez.
-* Vous devez disposer de l'adresse IP du système hôte du nœud Data Sense Manager
+* Vous devez disposer de l'adresse IP du système hôte du nœud BlueXP classification Manager
 * Vous devez disposer de l'adresse IP ou du nom d'hôte du système Connector, de votre ID de compte NetApp, de votre ID de client Connector et du jeton d'accès utilisateur. Si vous prévoyez d'utiliser des groupes de scanner, vous devrez connaître l'ID de l'environnement de travail pour chaque source de données de votre compte. Voir *_étapes préalables_* ci-dessous pour obtenir ces informations.
 * Les ports et protocoles suivants doivent être activés sur tous les hôtes :
 +
@@ -426,7 +430,7 @@ Procédez comme suit pour installer d'autres nœuds du scanner Data Sense :
 
 | 2049 | TCP, UDP | Serveur NFS pour le partage de fichiers entre les hôtes (requis de chaque nœud de scanner vers le nœud gestionnaire) 
 |===
-* Si vous utilisez `firewalld` Sur vos machines Data Sense, nous vous recommandons de l'activer avant d'installer Data Sense. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec Data Sense :
+* Si vous utilisez `firewalld` Sur vos machines de classification BlueXP, nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -441,7 +445,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-Si vous activez `firewalld` Après avoir installé Data Sense, vous devez redémarrer docker.
+Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
 
 
 
@@ -458,9 +462,9 @@ image:screenshot_account_id.png["Une capture d'écran des détails du compte Blu
 image:screenshot_connector_client_id.png["Capture d'écran des paramètres de configuration du connecteur BlueXP."]
 
 . Copiez le connecteur _ID client_ et le _Nom du serveur_.
-. Si vous prévoyez d'utiliser des groupes de scanner, dans l'onglet Configuration de la détection de données, copiez l'ID de l'environnement de travail pour chaque environnement de travail que vous envisagez d'ajouter à un groupe de scanner.
+. Si vous prévoyez d'utiliser des groupes de scanner, dans l'onglet Configuration de la classification BlueXP, copiez l'ID d'environnement de travail de chaque environnement de travail que vous prévoyez d'ajouter à un groupe de scanner.
 +
-image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail à partir de la page Configuration du capteur de données."]
+image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
 
 . Accédez au https://services.cloud.netapp.com/developer-hub["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
 +
@@ -471,7 +475,7 @@ image:screenshot_client_access_token.png["Capture d'écran de la page Documentat
 
 
 .Étapes
-. Sur le nœud Data Sense Manager, exécutez le script "add_scanner_node.sh". Par exemple, cette commande ajoute 2 nœuds de scanner :
+. Sur le nœud du gestionnaire de classification BlueXP, exécutez le script « add_scanner_node.sh ». Par exemple, cette commande ajoute 2 nœuds de scanner :
 +
 `sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
 
@@ -482,8 +486,8 @@ Valeurs variables :
 ** _Account_ID_ = ID du compte NetApp
 ** _Client_ID_ = ID client du connecteur
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs
-** _Ds_Manager_ip_ = adresse IP privée du système de nœuds Data Sense Manager
-** _Node_private_ip_ = adresses IP des systèmes de nœuds du scanner de détection de données (plusieurs adresses IP du nœud du scanner sont séparées par une virgule)
+** _Ds_Manager_ip_ = adresse IP privée du système de nœuds BlueXP classification Manager
+** _Node_private_ip_ = adresses IP des systèmes de nœuds du scanner de classification BlueXP (les adresses IP de plusieurs nœuds du scanner sont séparées par une virgule)
 ** _User_token_ = jeton d'accès utilisateur JWT
 
 
@@ -524,20 +528,20 @@ Tout environnement de travail qui n'est pas ajouté à la liste est analysé par
 
 
 .Résultat
-Data Sense est configuré avec les nœuds Manager et scanner pour analyser toutes vos sources de données.
+La classification BlueXP est configurée avec des nœuds Manager et scanner pour analyser toutes vos sources de données.
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données que vous souhaitez numériser, si vous ne l'avez pas déjà fait. Si vous avez créé des groupes de scanner, chaque source de données est analysée par les nœuds du scanner dans le groupe correspondant.
 
 Vous pouvez voir le nom du groupe de lecteurs pour chaque environnement de travail dans la page Configuration.
 
-image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail à partir de la page Configuration du capteur de données."]
+image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
 
 Vous pouvez également afficher la liste de tous les groupes de scanner, ainsi que l'adresse IP et l'état de chaque nœud de scanner du groupe, en bas de la page Configuration.
 
 image:screenshot_scanner_groups.png["Capture d'écran répertoriant tous les groupes de scanner ainsi que l'adresse IP de chaque nœud de scanner du groupe."]
 
-C'est possible link:task-licensing-datasense.html["Configurez les licences pour Cloud Data Sense"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
+C'est possible link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
 
 
 
@@ -545,13 +549,13 @@ C'est possible link:task-licensing-datasense.html["Configurez les licences pour 
 
 Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_ et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
-Procédez comme suit lors de l'installation simultanée du logiciel Data Sense sur plusieurs hôtes sur site. Notez que vous ne pouvez pas utiliser de « groupes de scanner » lors du déploiement de plusieurs hôtes de cette façon.
+Suivez ces étapes lors de l'installation simultanée du logiciel de classification BlueXP sur plusieurs hôtes sur site. Notez que vous ne pouvez pas utiliser de « groupes de scanner » lors du déploiement de plusieurs hôtes de cette façon.
 
 .Ce dont vous avez besoin
 * Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
 * Assurez-vous que les deux packages logiciels prérequis sont installés sur les systèmes (Docker Engine et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
-* Vérifiez que votre environnement répond aux exigences requises <<Activation de l'accès Internet sortant à partir du Cloud Data SENSE,autorisations et connectivité>>.
+* Vérifiez que votre environnement répond aux exigences requises <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
 * Vous devez disposer des adresses IP des hôtes du nœud de scanner que vous prévoyez d'utiliser.
 * Les ports et protocoles suivants doivent être activés sur tous les hôtes :
 +
@@ -603,9 +607,9 @@ Une fois l'installation terminée sur tous les nœuds du scanner et qu'ils ont �
 
 
 .Résultat
-Le programme d'installation de Cloud Data Sense termine l'installation des packages et enregistre l'installation. L'installation peut prendre entre 10 et 20 minutes.
+Le programme d'installation de classification BlueXP termine l'installation des packages et enregistre l'installation. L'installation peut prendre entre 10 et 20 minutes.
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
 
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour Cloud Data Sense"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
+Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.

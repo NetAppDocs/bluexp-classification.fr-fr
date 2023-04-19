@@ -4,7 +4,7 @@ permalink: faq-cloud-compliance.html
 keywords: faq, frequently asked questions, questions, cloud compliance, data sense 
 summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
 ---
-= Les questions les plus fréquemment posées à propos des données du cloud sont pertinentes
+= Forum aux questions sur la classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,31 +18,31 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
-== Service cloud Data Sense
+== Service de classification BlueXP
 
-Les questions suivantes présentent une compréhension générale du sens des données du cloud.
-
-
-
-=== Qu'est-ce que les données cloud sont sensé ?
-
-Cloud Data Sense est une offre cloud qui utilise la technologie d'intelligence artificielle (IA) pour vous aider à comprendre le contexte des données et à identifier les données sensibles dans vos systèmes de stockage. Les systèmes peuvent être des environnements de travail que vous avez ajoutés à BlueXP Canvas et de nombreux types de sources de données que Data Sense peut accéder sur vos réseaux. link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-data-sense["Voir la liste complète ci-dessous"].
-
-Cloud Data SENSE fournit des paramètres prédéfinis (par exemple, des types d'informations sensibles et des catégories) pour respecter les nouvelles réglementations en matière de conformité des données concernant la confidentialité et la sensibilité des données, notamment le RGPD, la loi CCPA, HIPAA.
+Les questions suivantes présentent des généralités sur la classification BlueXP.
 
 
 
-=== Comment fonctionne Cloud Data Sense ?
+=== Qu'est-ce que la classification BlueXP ?
 
-Cloud Data Sense déploie une autre couche d'intelligence artificielle avec votre système et vos systèmes de stockage BlueXP. Il analyse ensuite les données sur des volumes, des compartiments, des bases de données, ainsi que d'autres comptes de stockage, et indexe les informations exploitables concernant les données. Data Sense exploite à la fois l'intelligence artificielle et le traitement du langage naturel, contrairement aux solutions alternatives habituellement développées autour d'expressions régulières et de la mise en correspondance de modèles.
+La classification BlueXP est une offre cloud qui utilise la technologie basée sur l'intelligence artificielle (IA) pour vous aider à comprendre le contexte des données et à identifier les données sensibles dans vos systèmes de stockage. Les systèmes peuvent être des environnements de travail que vous avez ajoutés à BlueXP Canvas et de nombreux types de sources de données auxquels la classification BlueXP peut accéder via vos réseaux. link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-bluexp-classification["Voir la liste complète ci-dessous"].
 
-Cloud Data Sense utilise l'IA pour comprendre les données de façon contextuelle et assurer une détection et une classification précises. Elle est axée sur l'IA, car elle est conçue pour répondre aux besoins de types et d'évolutivité des données modernes. Il comprend également le contexte des données afin d'assurer une découverte et une classification solides et précises.
-
-link:concept-cloud-compliance.html["Découvrez le fonctionnement de Cloud Data SENSE"^].
+La classification BlueXP fournit des paramètres prédéfinis (tels que les types et catégories d'informations sensibles) pour répondre aux nouvelles réglementations de conformité en matière de confidentialité et de sensibilité des données, notamment le RGPD, la CCPA et l'HIPAA.
 
 
 
-=== Quelles sont les utilisations courantes du Cloud Data Sense ?
+=== Fonctionnement de la classification BlueXP
+
+La classification BlueXP déploie une autre couche d'intelligence artificielle en parallèle avec votre système et vos systèmes de stockage BlueXP. Il analyse ensuite les données sur des volumes, des compartiments, des bases de données, ainsi que d'autres comptes de stockage, et indexe les informations exploitables concernant les données. La classification BlueXP exploite à la fois l'intelligence artificielle et le traitement du langage naturel, contrairement aux autres solutions généralement construites autour d'expressions régulières et de la mise en correspondance de modèles.
+
+La classification BlueXP utilise l'IA pour fournir une compréhension contextuelle des données pour une détection et une classification précises. Elle est axée sur l'IA, car elle est conçue pour répondre aux besoins de types et d'évolutivité des données modernes. Il comprend également le contexte des données afin d'assurer une découverte et une classification solides et précises.
+
+link:concept-cloud-compliance.html["Découvrez le fonctionnement de la classification BlueXP"^].
+
+
+
+=== Quels sont les cas d'utilisation les plus courants pour la classification BlueXP ?
 
 * Identifier les informations à caractère personnel
 * Localiser et créer facilement des rapports sur des données spécifiques en réponse à des sujets de données, conformément aux exigences du RGPD, de la loi CCPA, de l'HIPAA et d'autres réglementations en matière de confidentialité des données.
@@ -52,67 +52,67 @@ link:concept-cloud-compliance.html["Découvrez le fonctionnement de Cloud Data S
 * Respectez les règles de conservation des données.
 
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["Pour en savoir plus sur les utilisations de Cloud Data Sense"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["En savoir plus sur les utilisations de la classification BlueXP"^].
 
 
 
-=== Qu'en est-il de l'architecture de données cloud SENSE ?
+=== Qu'en est-il de l'architecture de la classification BlueXP ?
 
-Cloud Data Sense déploie un seul serveur ou un seul cluster, où que vous choisissiez, dans le cloud ou sur site. Les serveurs se connectent via des protocoles standard aux sources de données et indexent les résultats dans un cluster Elasticsearch, qui est également déployé sur les mêmes serveurs. Cette prise en charge permet la prise en charge d'environnements multicloud, interclouds, clouds privés et sur site.
+La classification BlueXP déploie un serveur ou un cluster unique, où que vous soyez, dans le cloud ou sur site. Les serveurs se connectent via des protocoles standard aux sources de données et indexent les résultats dans un cluster Elasticsearch, qui est également déployé sur les mêmes serveurs. Cette prise en charge permet la prise en charge d'environnements multicloud, interclouds, clouds privés et sur site.
 
 
 
 === Quels sont les fournisseurs de cloud pris en charge ?
 
-Cloud Data Sense fonctionne dans le cadre de BlueXP et prend en charge AWS, Azure et GCP. Votre entreprise peut ainsi bénéficier d'une visibilité unifiée sur la confidentialité des données entre les différents fournisseurs de cloud.
+La classification BlueXP fonctionne avec BlueXP et prend en charge AWS, Azure et GCP. Votre entreprise peut ainsi bénéficier d'une visibilité unifiée sur la confidentialité des données entre les différents fournisseurs de cloud.
 
 
 
-=== Cloud Data SENSE propose-t-il une API REST qui est compatible avec des outils tiers ?
+=== La classification BlueXP utilise-t-elle une API REST et des outils tiers ?
 
-BlueXP prend en charge les fonctionnalités d'API REST pour ses services. Si BlueXP n'est pas le point de gestion préféré, il est également possible d'utiliser des services comme Cloud Data Sense via une API REST. Chaque action utilisateur dispose d'une API REST qui peut être intégrée à des systèmes tiers.
-
-
-
-=== Est-il logique que les données cloud soient disponibles sur tous les marchés ?
-
-Oui, BlueXP et Cloud Data Sense sont disponibles sur les marchés AWS, Azure et GCP.
+BlueXP prend en charge les fonctionnalités d'API REST pour ses services. Si BlueXP n'est pas le point de gestion privilégié, des services tels que la classification BlueXP peuvent également être utilisés via une API REST. Chaque action utilisateur dispose d'une API REST qui peut être intégrée à des systèmes tiers.
 
 
 
-== Analyse et analyse des données détecter les clouds
+=== La classification BlueXP est-elle disponible sur les marchés ?
 
-Les questions suivantes concernent les performances d'analyse de Cloud Data Sense et l'analytique disponible pour les utilisateurs.
+Oui, la classification BlueXP et BlueXP est disponible sur les marchés AWS, Azure et GCP.
 
 
 
-=== Quelle est la fréquence d'analyse de mes données par Cloud Data SENSE ?
+== Analyse de classification et analytique BlueXP
 
-Comme les données changent fréquemment, Cloud Data SENSE analyse vos données en continu, sans aucune incidence sur vos données. Alors que l'analyse initiale de vos données peut prendre plus de temps, les analyses suivantes ne scannent que les modifications incrémentielles, ce qui réduit les temps d'analyse du système.
+Les questions suivantes se rapportent aux performances de l'analyse de classification BlueXP et aux analyses disponibles pour les utilisateurs.
+
+
+
+=== À quelle fréquence la classification BlueXP analyse-t-elle mes données ?
+
+Les données changent fréquemment. La classification BlueXP analyse vos données en continu sans aucune incidence sur vos données. Alors que l'analyse initiale de vos données peut prendre plus de temps, les analyses suivantes ne scannent que les modifications incrémentielles, ce qui réduit les temps d'analyse du système.
 
 link:concept-cloud-compliance.html#how-scans-work["Découvrez le fonctionnement des acquisitions"].
 
-L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Cependant, si vous êtes préoccupé par un impact même très faible, vous pouvez configurer Data Sense pour effectuer des acquisitions « lentes ». link:task-reduce-scan-speed.html["Découvrez comment réduire la vitesse de numérisation"].
+L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Toutefois, si vous êtes préoccupé, même par un très faible impact, vous pouvez configurer la classification BlueXP pour effectuer des analyses « lentes ». link:task-reduce-scan-speed.html["Découvrez comment réduire la vitesse de numérisation"].
 
 
 
-=== Puis-je rechercher des données à l'aide du logiciel Cloud Data SENSE ?
+=== Puis-je effectuer des recherches dans mes données à l'aide de la classification BlueXP ?
 
-Cloud Data Sense offre une fonctionnalité de recherche complète qui permet de rechercher facilement un fichier ou une pièce de données spécifique dans toutes les sources connectées. Le sens des données permet aux utilisateurs d'effectuer des recherches plus approfondies que ce que les métadonnées reflètent. Il s'agit d'un service indépendant de la langue qui peut également lire les fichiers et analyser une multitude de types de données sensibles, tels que les noms et les ID. Par exemple, les utilisateurs peuvent effectuer des recherches dans des magasins de données structurés et non structurées pour trouver des données qui peuvent s'être divulguées des bases de données aux fichiers des utilisateurs, en violation de la stratégie de l'entreprise. Les recherches peuvent être enregistrées ultérieurement et des règles peuvent être créées pour rechercher et prendre des mesures sur les résultats à une fréquence définie.
+Les fonctionnalités de recherche étendues de la classification BlueXP facilitent la recherche d'un fichier ou d'un élément de données spécifique dans l'ensemble des sources connectées. La classification BlueXP permet aux utilisateurs d'effectuer des recherches plus approfondies que les métadonnées ne reflètent. Il s'agit d'un service indépendant de la langue qui peut également lire les fichiers et analyser une multitude de types de données sensibles, tels que les noms et les ID. Par exemple, les utilisateurs peuvent effectuer des recherches dans des magasins de données structurés et non structurées pour trouver des données qui peuvent s'être divulguées des bases de données aux fichiers des utilisateurs, en violation de la stratégie de l'entreprise. Les recherches peuvent être enregistrées ultérieurement et des règles peuvent être créées pour rechercher et prendre des mesures sur les résultats à une fréquence définie.
 
-Une fois les fichiers qui vous intéressent trouvés, les caractéristiques peuvent être listées, y compris les balises, le compte de l'environnement de travail, le compartiment, le chemin du fichier, catégorie (à partir de la classification), taille du fichier, dernière modification, statut d'autorisation, doublons, niveau de sensibilité, données personnelles, types de données sensibles dans le fichier, propriétaire, type de fichier, taille de fichier, heure de création, hachage de fichier, si les données ont été attribuées à une personne demandant son attention, et plus encore. Les filtres peuvent être appliqués aux caractéristiques de tramage qui ne sont pas pertinentes. Data Sense possède également des contrôles RBAC permettant de déplacer ou de supprimer des fichiers, si les autorisations appropriées sont présentes. Si les autorisations appropriées ne sont pas présentes, les tâches peuvent être affectées à une personne de l'entreprise qui dispose des autorisations appropriées.
-
-
-
-=== Quels types d'analyses Cloud Data SENSE apporte-t-il ?
-
-Les sources de données peuvent être représentées visuellement, et les relations définies et représentées graphiquement. Par exemple, les administrateurs peuvent visualiser toutes les données obsolètes, dupliquées et non liées à l'activité dans l'ensemble des sources de données de l'entreprise (systèmes sur site, bases de données, partages de fichiers, magasins S3, OneDrive, etc.). Elles peuvent ensuite copier, déplacer, supprimer et gérer des données afin d'optimiser les coûts de stockage et de réduire les risques. Les utilisateurs peuvent réduire les risques en voyant les données sensibles et créer des tâches de gestion des autorisations pour une protection renforcée des données. Data Sense classe également tous les différents types de données, afin que les administrateurs puissent analyser des données par type et voir les actions qui ont été effectuées sur les données et quand.
+Une fois les fichiers qui vous intéressent trouvés, les caractéristiques peuvent être listées, y compris les balises, le compte de l'environnement de travail, le compartiment, le chemin du fichier, catégorie (à partir de la classification), taille du fichier, dernière modification, statut d'autorisation, doublons, niveau de sensibilité, données personnelles, types de données sensibles dans le fichier, propriétaire, type de fichier, taille de fichier, heure de création, hachage de fichier, si les données ont été attribuées à une personne demandant son attention, et plus encore. Les filtres peuvent être appliqués aux caractéristiques de tramage qui ne sont pas pertinentes. La classification BlueXP dispose également de contrôles RBAC pour permettre le déplacement ou la suppression de fichiers si les autorisations appropriées sont présentes. Si les autorisations appropriées ne sont pas présentes, les tâches peuvent être affectées à une personne de l'entreprise qui dispose des autorisations appropriées.
 
 
 
-=== Cloud Data SENSE propose-t-il des rapports ?
+=== Quel type d'analytique la classification BlueXP fournit-elle ?
 
-Oui. Les informations offertes par Cloud Data SENSE peuvent être pertinentes pour les autres parties prenantes de votre entreprise. Nous vous permettons donc de générer des rapports pour partager les informations exploitables. Les rapports suivants sont disponibles pour Data Sense :
+Les sources de données peuvent être représentées visuellement, et les relations définies et représentées graphiquement. Par exemple, les administrateurs peuvent visualiser toutes les données obsolètes, dupliquées et non liées à l'activité dans l'ensemble des sources de données de l'entreprise (systèmes sur site, bases de données, partages de fichiers, magasins S3, OneDrive, etc.). Elles peuvent ensuite copier, déplacer, supprimer et gérer des données afin d'optimiser les coûts de stockage et de réduire les risques. Les utilisateurs peuvent réduire les risques en voyant les données sensibles et créer des tâches de gestion des autorisations pour une protection renforcée des données. La classification BlueXP classe également tous les types de données. Les administrateurs peuvent ainsi étudier les données par type et voir quelles actions ont été effectuées sur les données, et quand.
+
+
+
+=== La classification BlueXP propose-t-elle des rapports ?
+
+Oui. Les informations offertes par la classification BlueXP peuvent être pertinentes pour les autres parties prenantes de votre entreprise. Nous vous aidons à générer des rapports pour partager les informations exploitables. Les rapports suivants sont disponibles pour la classification BlueXP :
 
 Rapport d'évaluation des risques pour la confidentialité:: Fournit des informations sur la confidentialité à partir de vos données et un score de risque lié à la confidentialité. link:task-generating-compliance-reports.html#privacy-risk-assessment-report["En savoir plus >>"^].
 Rapport de demande d'accès au sujet des données:: Vous permet d'extraire un rapport de tous les fichiers contenant des informations concernant le nom spécifique ou l'identifiant personnel d'un sujet de données. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["En savoir plus >>"^].
@@ -127,45 +127,45 @@ Rapports sur un type d'information spécifique:: Des rapports sont disponibles, 
 
 === Les performances d'acquisition varient-t-elles ?
 
-Les performances de l'analyse peuvent varier en fonction de la bande passante réseau et de la taille moyenne des fichiers dans votre environnement. Elle peut également dépendre des caractéristiques de taille du système hôte (dans le cloud ou sur site). Voir link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Instance Cloud Data SENSE"^] et link:task-deploy-cloud-compliance.html["Déployer des solutions Cloud Data est logique"^] pour en savoir plus.
+Les performances de l'analyse peuvent varier en fonction de la bande passante réseau et de la taille moyenne des fichiers dans votre environnement. Elle peut également dépendre des caractéristiques de taille du système hôte (dans le cloud ou sur site). Voir link:concept-cloud-compliance.html#the-bluexp-classification-instance["Instance de classification BlueXP"^] et link:task-deploy-cloud-compliance.html["Classification BlueXP : déploiement"^] pour en savoir plus.
 
 Lors de l'ajout initial de nouvelles sources de données, vous pouvez également choisir d'effectuer uniquement une analyse de « mappage » au lieu d'une analyse de « classification » complète. Le mappage peut être effectué très rapidement sur vos sources de données car il n'accède pas aux fichiers pour voir les données à l'intérieur. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Voir la différence entre une acquisition de cartographie et une acquisition de classification"^].
 
 
 
-== Gestion et confidentialité des données cloud SENSE
+== Gestion de la classification et confidentialité BlueXP
 
-Les questions suivantes fournissent des informations sur la façon de gérer les paramètres de détection et de confidentialité des données dans le cloud.
+Les questions suivantes expliquent comment gérer les paramètres de classification et de confidentialité BlueXP.
 
 
 
-=== Comment activer le sens des données du cloud ?
+=== Comment activer la classification BlueXP ?
 
-Il vous faut tout d'abord déployer une instance de Cloud Data Sense dans BlueXP ou sur un système sur site. Une fois l'instance en cours d'exécution, vous pouvez activer le service sur les environnements de travail existants, les bases de données et d'autres sources de données à partir de l'onglet *Data Sense* ou en sélectionnant un environnement de travail spécifique.
+Vous devez tout d'abord déployer une instance de classification BlueXP dans BlueXP ou dans un système sur site. Une fois l'instance en cours d'exécution, vous pouvez activer le service sur les environnements de travail, les bases de données et d'autres sources de données existants à partir de l'onglet *Configuration* ou en sélectionnant un environnement de travail spécifique.
 
 link:task-getting-started-compliance.html["Découvrez comment démarrer"^].
 
 
-NOTE: L'activation de Cloud Data Sense sur une source de données entraîne une analyse initiale immédiate. Les résultats de l'analyse s'affichent peu de temps après.
+NOTE: L'activation de la classification BlueXP sur une source de données entraîne une analyse initiale immédiate. Les résultats de l'analyse s'affichent peu de temps après.
 
 
 
-=== Comment désactiver le détection des données dans le cloud ?
+=== Comment désactiver la classification BlueXP ?
 
-Vous pouvez désactiver Cloud Data Sense lors de l'analyse d'un environnement de travail, d'une base de données, d'un groupe de partage de fichiers, d'un compte OneDrive ou d'un compte SharePoint individuel à partir de la page Data Sense Configuration.
+Vous pouvez désactiver la classification BlueXP pour empêcher l'analyse d'un environnement de travail individuel, d'une base de données, d'un groupe de partage de fichiers, d'un compte OneDrive ou d'un compte SharePoint à partir de la page Configuration de la classification BlueXP.
 
 link:task-managing-compliance.html["En savoir plus >>"^].
 
 
-NOTE: Pour supprimer complètement l'instance Cloud Data SENSE, vous pouvez supprimer manuellement l'instance Data Sense du portail de votre fournisseur cloud ou sur site.
+NOTE: Pour supprimer complètement l'instance de classification BlueXP, vous pouvez supprimer manuellement l'instance de classification BlueXP du portail de votre fournisseur cloud ou de l'emplacement sur site.
 
 
 
 === Puis-je personnaliser le service en fonction des besoins de mon entreprise ?
 
-Cloud Data Sense fournit des informations prêtes à l'emploi pour vos données. Ces informations peuvent être extraites et utilisées en fonction des besoins de votre entreprise.
+La classification BlueXP fournit des informations exploitables clé en main à vos données. Ces informations peuvent être extraites et utilisées en fonction des besoins de votre entreprise.
 
-En outre, Data Sense offre de nombreuses façons d'ajouter une liste personnalisée de « données personnelles » que Data Sense identifiera dans les analyses, ce qui vous donne une idée complète de l'emplacement des données potentiellement sensibles dans les fichiers _All_ de votre entreprise.
+En outre, la classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée de « données personnelles » que la classification BlueXP identifiera lors des analyses, ce qui vous donne une vue d'ensemble de l'emplacement des données potentiellement sensibles dans _tous_ les fichiers de votre entreprise.
 
 * Vous pouvez ajouter des identificateurs uniques basés sur des colonnes spécifiques dans les bases de données que vous scannez -- nous appelons cela *Data Fusion*.
 * Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte.
@@ -176,31 +176,31 @@ link:task-managing-data-fusion.html["En savoir plus >>"^].
 
 
 
-=== Est-il possible de limiter les informations SENSE relatives aux données cloud à des utilisateurs spécifiques ?
+=== Puis-je limiter les informations de classification BlueXP à des utilisateurs spécifiques ?
 
-Oui, Cloud Data SENSE est entièrement intégré à BlueXP. Les utilisateurs de BlueXP ne peuvent voir que les informations pour les environnements de travail qu'ils peuvent afficher en fonction de leurs privilèges d'espace de travail.
+Oui, la classification BlueXP est entièrement intégrée avec BlueXP. Les utilisateurs de BlueXP ne peuvent voir que les informations pour les environnements de travail qu'ils peuvent afficher en fonction de leurs privilèges d'espace de travail.
 
-En outre, si vous souhaitez autoriser certains utilisateurs à simplement afficher les résultats d'analyse de détection de données sans pouvoir gérer les paramètres de détection de données, vous pouvez attribuer à ces utilisateurs le rôle Cloud Compliance Viewer.
+En outre, si vous souhaitez permettre à certains utilisateurs d'afficher simplement les résultats de l'analyse de classification BlueXP sans pouvoir gérer les paramètres de classification BlueXP, vous pouvez attribuer à ces utilisateurs le rôle Cloud Compliance Viewer.
 
 link:concept-cloud-compliance.html#user-access-to-compliance-information["En savoir plus >>"^].
 
 
 
-=== Quelqu'un peut-il accéder aux données privées envoyées entre mon navigateur et Data Sense ?
+=== Est-il possible d'accéder aux données privées envoyées entre mon navigateur et la classification BlueXP ?
 
-Non Les données privées envoyées entre votre navigateur et l'instance Data Sense sont sécurisées par un cryptage de bout en bout, ce qui signifie que NetApp et des tiers ne peuvent pas les lire. Il est inutile de communiquer des données ou des résultats à NetApp, sauf si vous en faites la demande et approuvez les demandes d'accès.
+Non Les données privées envoyées entre votre navigateur et l'instance de classification BlueXP sont sécurisées via un chiffrement de bout en bout. Ainsi, NetApp et les tiers ne peuvent pas les lire. La classification BlueXP ne partage aucune donnée ou résultat avec NetApp que si vous demandez et approuvez l'accès.
 
 
 
 === Que se passe-t-il si le Tiering des données est activé sur vos volumes ONTAP ?
 
-Lorsque Data Sense analyse les volumes dont les données inactives sont envoyées vers le stockage objet, il analyse toutes les données, c'est-à-dire les données qui se trouvent sur des disques locaux et les données inactives envoyées vers le stockage objet. C'est également le cas pour les produits non-NetApp qui implémentent la hiérarchisation.
+Lorsque la classification BlueXP analyse les volumes pour lesquels les données inactives sont envoyées vers le stockage objet, il analyse toutes les données, c'est-à-dire les données qui se trouvent sur des disques locaux et les données inactives envoyées vers le stockage objet. C'est également le cas pour les produits non-NetApp qui implémentent la hiérarchisation.
 
 L'analyse ne chauffe pas les données inactives, elles restent inactives et restent dans le stockage objet.
 
 
 
-=== Cloud Data SENSE peut-il envoyer des notifications à mon entreprise ?
+=== La classification BlueXP peut-elle envoyer des notifications à mon entreprise ?
 
 Oui. En association avec la fonction stratégies, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP (tous les jours, toutes les semaines ou tous les mois) ou à toute autre adresse e-mail lorsqu'une police renvoie des résultats pour que vous puissiez obtenir des notifications afin de protéger vos données. En savoir plus sur link:task-using-policies.html["Stratégies"^].
 
@@ -208,9 +208,9 @@ Vous pouvez également télécharger des rapports de statut à partir de la page
 
 
 
-=== Cloud Data Sense peut-il fonctionner avec les étiquettes AIP que j'ai intégrées dans mes fichiers ?
+=== La classification BlueXP peut-elle fonctionner avec les étiquettes AIP que j'ai intégrées dans mes fichiers ?
 
-Oui. Vous pouvez gérer les étiquettes AIP dans les fichiers que Cloud Data SENSE analyse si vous vous êtes abonné https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. Vous pouvez afficher les libellés déjà affectés aux fichiers, ajouter des libellés aux fichiers et modifier les libellés existants.
+Oui. Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. Vous pouvez afficher les libellés déjà affectés aux fichiers, ajouter des libellés aux fichiers et modifier les libellés existants.
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["En savoir plus >>"^].
 
@@ -222,9 +222,9 @@ Les questions suivantes se rapportent aux types de stockage pouvant être analys
 
 
 
-=== Quelles sources de données peuvent être analysées à l'aide de Data Sense ?
+=== Quelles sources de données peuvent être analysées avec la classification BlueXP ?
 
-Cloud Data SENSE peut analyser les données à partir d'environnements de travail que vous avez ajoutés à BlueXP Canvas et à partir de nombreux types de sources de données structurées et non structurées auxquelles Data Sense peut accéder sur vos réseaux.
+La classification BlueXP peut analyser les données à partir des environnements de travail que vous avez ajoutés à BlueXP Canvas et de nombreux types de sources de données structurées et non structurées auxquels la classification BlueXP peut accéder sur vos réseaux.
 
 *Environnements de travail:*
 
@@ -245,13 +245,13 @@ Cloud Data SENSE peut analyser les données à partir d'environnements de travai
 * Comptes Google Drive
 
 
-Data Sense prend en charge les versions NFS 3.x, 4.0 et 4.1 et CIFS 1.x, 2.0, 2.1 et 3.0.
+La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi que les versions CIFS 1.x, 2.0, 2.1 et 3.0.
 
 
 
 === Y a-t-il des restrictions lorsqu'elles sont déployées dans une région gouvernementale?
 
-Cloud Data Sense est pris en charge lorsque le connecteur est déployé dans une région gouvernementale (AWS GovCloud, Azure Government ou Azure DoD). Lorsqu'il est déployé de cette manière, Data SENSE présente les restrictions suivantes :
+La classification BlueXP est prise en charge lorsque le connecteur est déployé dans une région gouvernementale (AWS GovCloud, Azure Gov ou Azure DoD). Lorsqu'il est déployé de cette manière, la classification BlueXP présente les restrictions suivantes :
 
 * Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.
 * Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
@@ -259,9 +259,9 @@ Cloud Data Sense est pris en charge lorsque le connecteur est déployé dans une
 
 
 
-=== Quelles sources de données puis-je analyser si j'installe Data SENSE sur un site sans accès à Internet ?
+=== Quelles sources de données puis-je analyser si j'installe la classification BlueXP dans un site sans accès à Internet ?
 
-Data Sense peut analyser uniquement les données à partir de sources locales vers le site. À l'heure actuelle, Data Sense peut analyser les sources de données locales suivantes dans un site « sombre » :
+La classification BlueXP ne peut analyser les données qu'à partir de sources de données locales. À ce stade, la classification BlueXP peut analyser les sources de données locales suivantes sur un site « invisible » :
 
 * Systèmes ONTAP sur site
 * Schémas de base de données
@@ -274,31 +274,31 @@ Data Sense peut analyser uniquement les données à partir de sources locales ve
 
 === Quels types de fichiers sont pris en charge ?
 
-Cloud Data SENSE analyse tous les fichiers pour chaque catégorie et métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.
+La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.
 
-Lorsque Data SENSE détecte des informations à caractère personnel (PII) ou lorsqu'il effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
+Lorsque la classification BlueXP détecte des informations à caractère personnel (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
 
 `+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 
-=== Quels types de données et de métadonnées Cloud Data détecte-t-il ?
+=== Quels types de données et de métadonnées sont capturés par la classification BlueXP ?
 
-Cloud Data SENSE vous permet d'exécuter une analyse « mapping » générale ou une analyse « complète » des sources de données. La cartographie ne fournit qu'une vue d'ensemble de haut niveau de vos données, tandis que Classification permet une analyse approfondie de vos données. Le mappage peut être effectué très rapidement sur vos sources de données car il n'accède pas aux fichiers pour voir les données à l'intérieur.
+La classification BlueXP vous permet d'exécuter une analyse générale du « mappage » ou une analyse complète de la « classification » de vos sources de données. La cartographie ne fournit qu'une vue d'ensemble de haut niveau de vos données, tandis que Classification permet une analyse approfondie de vos données. Le mappage peut être effectué très rapidement sur vos sources de données car il n'accède pas aux fichiers pour voir les données à l'intérieur.
 
 * Acquisition de mappage de données.
 +
-L'analyse des métadonnées uniquement. Ce qui est utile pour la gestion et la gouvernance globales des données, la définition rapide des projets, les gros domaines et la définition des priorités. Le mappage de données est basé sur les métadonnées et est considéré comme une acquisition *FAST*.
+La classification BlueXP analyse uniquement les métadonnées. Ce qui est utile pour la gestion et la gouvernance globales des données, la définition rapide des projets, les gros domaines et la définition des priorités. Le mappage de données est basé sur les métadonnées et est considéré comme une acquisition *FAST*.
 
 +
 Après une acquisition rapide, vous pouvez générer un rapport de mappage de données. Ce rapport présente les données stockées dans vos sources de données d'entreprise et vous aide à prendre les bonnes décisions en matière d'utilisation des ressources, de migration, de sauvegarde, de sécurité et de conformité.
 
 * Analyse de classification des données (approfondie).
 +
-Analyse de la détection de données à l'aide de protocoles standard et d'autorisations en lecture seule dans l'ensemble de vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
+La classification BlueXP s'analyse à l'aide de protocoles standard et d'autorisations en lecture seule dans l'ensemble de vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
 
 +
-Après une analyse complète, vous pouvez appliquer de nombreuses fonctions de détection de données supplémentaires à vos données, telles que la consultation et le raffinage des données dans la page recherche de données, la recherche de noms dans des fichiers, la copie, le déplacement et la suppression de fichiers source, etc.
+Après une analyse complète, vous pouvez appliquer de nombreuses fonctionnalités de classification BlueXP supplémentaires à vos données, telles que l'affichage et le raffinage des données dans la page Data Investigation, la recherche de noms dans les fichiers, la copie, le déplacement et la suppression des fichiers source, etc.
 
 
 
@@ -306,13 +306,13 @@ Après une analyse complète, vous pouvez appliquer de nombreuses fonctions de d
 
 == Licences et coût
 
-Les questions suivantes se rapportent aux licences et aux coûts pour utiliser Cloud Data SENSE.
+Les questions suivantes concernent les licences et les coûts d'utilisation de la classification BlueXP.
 
 
 
-=== Quel est le coût des données cloud ?
+=== Combien coûte la classification BlueXP ?
 
-Le coût d'utilisation des données du cloud SENSE dépend de la quantité de données que vous scannez. Les 1 premiers To de données analysés par Data Sense dans un espace de travail BlueXP sont gratuits pendant 30 jours. Après avoir atteint l'une ou l'autre limite, vous aurez besoin de l'une des options suivantes pour poursuivre l'acquisition des données :
+Le coût d'utilisation de la classification BlueXP dépend de la quantité de données que vous analysez. Les 1 premiers To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP sont gratuits pendant 30 jours. Après avoir atteint l'une ou l'autre limite, vous aurez besoin de l'une des options suivantes pour poursuivre l'acquisition des données :
 
 * Un abonnement à la liste BlueXP Marketplace de votre fournisseur cloud, ou
 * Modèle BYOL (Bring Your Own License) de NetApp
@@ -324,7 +324,7 @@ Voir https://bluexp.netapp.com/pricing["tarifs"^] pour plus d'informations.
 
 === Que se passe-t-il si la limite de capacité BYOL est atteinte ?
 
-Si vous atteignez une limite de capacité BYOL, Data Sense continue à fonctionner, mais l'accès aux tableaux de bord est bloqué de sorte que vous ne puissiez afficher aucune information concernant vos données scannées. Seule la page de configuration est disponible au cas où vous souhaitez réduire le nombre de volumes analysés afin d'augmenter votre capacité de stockage sous la limite de licence. Vous devez renouveler votre licence BYOL pour rétablir l'accès complet à Data Sense.
+Si vous atteignez une limite de capacité BYOL, la classification BlueXP continue de s'exécuter, mais l'accès aux tableaux de bord est bloqué afin que vous ne puissiez pas afficher les informations sur vos données analysées. Seule la page de configuration est disponible au cas où vous souhaitez réduire le nombre de volumes analysés afin d'augmenter votre capacité de stockage sous la limite de licence. Vous devez renouveler votre licence BYOL pour rétablir l'accès complet à la classification BlueXP.
 
 
 
@@ -336,7 +336,7 @@ Les questions suivantes concernent le connecteur BlueXP.
 
 === Quel est le connecteur ?
 
-Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte cloud ou sur site, permettant ainsi à BlueXP de gérer les ressources cloud de manière sécurisée. Vous devez déployer un connecteur pour utiliser le Cloud Data SENSE.
+Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte cloud ou sur site, permettant ainsi à BlueXP de gérer les ressources cloud de manière sécurisée. Vous devez déployer un connecteur pour utiliser la classification BlueXP.
 
 
 
@@ -354,49 +354,49 @@ Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez
 
 === Puis-je déployer le connecteur sur mon propre hôte ?
 
-Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous envisagez de déployer Data Sense sur site, vous pouvez aussi installer le connecteur sur site, mais ce n'est pas obligatoire.
+Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous prévoyez de déployer la classification BlueXP sur site, vous pouvez également installer le connecteur sur site, mais ce n'est pas obligatoire.
 
 
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pouvez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales et analyser les données à l'aide de Data Sense.
+Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.
 
 
 
-== Le déploiement du sens des données
+== Le déploiement de la classification BlueXP
 
-Les questions suivantes se rapportent à l'instance séparée de détection de données.
-
-
-
-=== Quels sont les modèles de déploiement pris en charge par Cloud Data ?
-
-BlueXP permet à l'utilisateur d'effectuer des analyses et des rapports sur des systèmes pratiquement n'importe où, y compris sur site, dans le cloud et dans les environnements hybrides. Cloud Data SENSE est généralement déployé à l'aide d'un modèle SaaS dans lequel le service est activé via l'interface BlueXP, et ne nécessite aucune installation matérielle ou logicielle. Même en ce mode de déploiement cliquer-exécuter, il est possible de gérer les données, que les datastores soient sur site ou dans le cloud public.
+Les questions suivantes concernent l'instance de classification BlueXP séparée.
 
 
 
-=== Quel type d'instance ou de machine virtuelle est requis pour le contrôle de données dans le cloud ?
+=== Quels modèles de déploiement la classification BlueXP prend-elle en charge ?
+
+BlueXP permet à l'utilisateur d'effectuer des analyses et des rapports sur des systèmes pratiquement n'importe où, y compris sur site, dans le cloud et dans les environnements hybrides. La classification BlueXP est généralement déployée à l'aide d'un modèle SaaS, dans lequel le service est activé via l'interface BlueXP et ne nécessite aucune installation matérielle ou logicielle. Même en ce mode de déploiement cliquer-exécuter, il est possible de gérer les données, que les datastores soient sur site ou dans le cloud public.
+
+
+
+=== Quel type d'instance ou de machine virtuelle est requis pour la classification BlueXP ?
 
 Quand link:task-deploy-cloud-compliance.html["déploiement dans le cloud"]:
 
-* Dans AWS, Cloud Data Sense s'exécute sur une instance m6i.4xlarge avec un disque GP2 de 500 Gio. Vous pouvez sélectionner un type d'instance plus petit pendant le déploiement.
-* Dans Azure, Cloud Data Sense s'exécute sur une VM Standard_D16s_v3 avec un disque de 500 Gio.
-* Dans GCP, Cloud Data Sense s'exécute sur une machine virtuelle n2-standard-16 avec un disque persistant standard de 500 Gio.
+* Dans AWS, le classement BlueXP s'exécute sur une instance m6i.4xlarge avec un disque GP2 de 500 Gio. Vous pouvez sélectionner un type d'instance plus petit pendant le déploiement.
+* Dans Azure, la classification BlueXP s'exécute sur une VM Standard_D16s_v3 avec un disque de 500 Gio.
+* Dans GCP, la classification BlueXP s'exécute sur une machine virtuelle n2-standard-16 avec un disque persistant standard de 500 Gio.
 
 
-Notez que vous pouvez déployer Data Sense sur un système avec moins de processeurs et moins de RAM, mais il y a des limites lors de l'utilisation de ces systèmes. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
+Notez que vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM, mais que l'utilisation de ces systèmes est limitée. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
-link:concept-cloud-compliance.html["Découvrez le fonctionnement de Cloud Data SENSE"^].
+link:concept-cloud-compliance.html["Découvrez le fonctionnement de la classification BlueXP"^].
 
 
 
-=== Puis-je déployer l'analyse des données sur mon propre hôte ?
+=== Puis-je déployer la classification BlueXP sur mon propre hôte ?
 
-Oui. Vous pouvez installer le logiciel Data Sense sur un hôte Linux qui a accès à Internet dans votre réseau ou dans le cloud. Tout fonctionne de la même façon et vous continuez à gérer votre configuration de numérisation et vos résultats via BlueXP. Voir link:task-deploy-compliance-onprem.html["Déploiement de Cloud Data SENSE sur site"] pour connaître la configuration système requise et les détails de l'installation.
+Oui. Vous pouvez installer le logiciel de classification BlueXP sur un hôte Linux disposant d'un accès Internet sur votre réseau ou dans le cloud. Tout fonctionne de la même façon et vous continuez à gérer votre configuration de numérisation et vos résultats via BlueXP. Voir link:task-deploy-compliance-onprem.html["Déploiement de la classification BlueXP sur site"] pour connaître la configuration système requise et les détails de l'installation.
 
 
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible link:task-deploy-compliance-dark-site.html["Déployer Data Sense dans un site sur site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+Oui, cela est également pris en charge. C'est possible link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
