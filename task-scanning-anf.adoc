@@ -24,7 +24,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Découvrez les systèmes Azure NetApp Files que vous souhaitez analyser
 [role="quick-margin-para"]
-Avant de pouvoir analyser des volumes Azure NetApp Files, https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["BlueXP doit être configuré pour détecter la configuration"^].
+Avant de pouvoir analyser des volumes Azure NetApp Files, https://["BlueXP doit être configuré pour détecter la configuration"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
@@ -63,7 +63,7 @@ Sélectionnez ou désélectionnez les volumes à analyser ; la classification Bl
 
 Si le système Azure NetApp Files que vous voulez numériser n'est pas déjà dans BlueXP comme environnement de travail, vous pouvez l'ajouter au canevas pour le moment.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Découvrez comment découvrir le système Azure NetApp Files dans BlueXP"^].
+https://["Découvrez comment découvrir le système Azure NetApp Files dans BlueXP"^].
 
 
 
@@ -136,7 +136,7 @@ image:screenshot_cifs_credentials.gif["Capture d'écran de l'onglet conformité 
 Les identifiants peuvent être en lecture seule, mais il est possible de fournir des identifiants d'administrateur pour que la classification BlueXP puisse lire toutes les données qui nécessitent des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
 +
-Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations d'écriture d'attributs dans CIFS ou d'autorisations d'écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 +
 Une fois les informations d'identification saisies, un message indiquant que tous les volumes CIFS ont été authentifiés avec succès s'affiche.

@@ -26,10 +26,10 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas encore de connecteur, créez-en un maintenant. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
+Si vous n'avez pas encore de connecteur, créez-en un maintenant. Voir https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
 
 [role="quick-margin-para"]
-Vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud.
+Vous pouvez également https://["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Passer en revue les prérequis
 [role="quick-margin-para"]
@@ -47,7 +47,7 @@ Les 1 premiers To de données analysés par le système de classification BlueXP
 
 == Créer un connecteur
 
-Si vous n'avez pas encore de connecteur, créez-en un chez votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^] ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^]. Dans la plupart des cas, un connecteur sera probablement configuré avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Si vous n'avez pas encore de connecteur, créez-en un chez votre fournisseur cloud. Voir https://["Création d'un connecteur dans AWS"^] ou https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^]. Dans la plupart des cas, un connecteur sera probablement configuré avant d'essayer d'activer la classification BlueXP, car la plupart https://["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
@@ -62,9 +62,9 @@ Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisse
 
 Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
 
-Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
+Notez que vous pouvez également https://["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
+Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://["Plusieurs connecteurs"].
 
 
 
@@ -76,7 +76,7 @@ La classification BlueXP est prise en charge lorsque le connecteur est déployé
 * Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-mode.html["Voir plus d'informations sur le déploiement du connecteur dans une région gouvernementale"^].
+https://["Voir plus d'informations sur le déploiement du connecteur dans une région gouvernementale"^].
 
 
 
@@ -155,13 +155,13 @@ Consultez le tableau approprié ci-dessous selon que vous déployez ou non la cl
 |===
 --
 ====
-Assurez-vous que BlueXP dispose des autorisations requises:: Assurez-vous que BlueXP dispose des autorisations nécessaires pour déployer les ressources et créer des groupes de sécurité pour l'instance de classification BlueXP. Vous trouverez les dernières autorisations BlueXP dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Règles fournies par NetApp"^].
+Assurez-vous que BlueXP dispose des autorisations requises:: Assurez-vous que BlueXP dispose des autorisations nécessaires pour déployer les ressources et créer des groupes de sécurité pour l'instance de classification BlueXP. Vous trouverez les dernières autorisations BlueXP dans https://["Règles fournies par NetApp"^].
 Assurez-vous que le connecteur BlueXP peut accéder à la classification BlueXP:: Assurez la connectivité entre le connecteur et l'instance de classification BlueXP. Le groupe de sécurité du connecteur doit autoriser le trafic entrant et sortant sur le port 443 vers et depuis l'instance de classification BlueXP. Cette connexion permet le déploiement de l'instance de classification BlueXP et vous permet d'afficher les informations des onglets conformité et gouvernance. La classification BlueXP est prise en charge dans les régions du gouvernement dans AWS et Azure.
 +
 --
-Des règles de groupes de sécurité supplémentaires sont nécessaires pour les déploiements AWS et AWS GovCloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Règles pour le connecteur dans AWS"^] pour plus d'informations.
+Des règles de groupes de sécurité supplémentaires sont nécessaires pour les déploiements AWS et AWS GovCloud. Voir https://["Règles pour le connecteur dans AWS"^] pour plus d'informations.
 
-Des règles de groupes de sécurité entrantes et sortantes supplémentaires sont nécessaires pour les déploiements d'Azure et d'Azure Government. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Règles pour le connecteur dans Azure"^] pour plus d'informations.
+Des règles de groupes de sécurité entrantes et sortantes supplémentaires sont nécessaires pour les déploiements d'Azure et d'Azure Government. Voir https://["Règles pour le connecteur dans Azure"^] pour plus d'informations.
 
 --
 Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution:: L'instance de classification BlueXP doit continuer à analyser vos données en continu.
@@ -176,9 +176,9 @@ Vérifiez les limites de vos CPU virtuels:: Assurez-vous que la limite de CPU vi
 --
 Pour plus de détails sur les limites des CPU virtuels, consultez les liens suivants :
 
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["Documentation AWS : quotas de service Amazon EC2"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Documentation Azure : quotas de vCPU de machine virtuelle"^]
-* https://cloud.google.com/compute/quotas["Documentation Google Cloud : quotas de ressources"^]
+* https://["Documentation AWS : quotas de service Amazon EC2"^]
+* https://["Documentation Azure : quotas de vCPU de machine virtuelle"^]
+* https://["Documentation Google Cloud : quotas de ressources"^]
 
 
 Notez que vous pouvez déployer la classification BlueXP sur une instance dans les environnements cloud AWS avec moins de processeurs et moins de RAM, mais que l'utilisation de ces systèmes est limitée. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.

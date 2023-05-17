@@ -40,10 +40,10 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas encore de connecteur, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud.
+Si vous n'avez pas encore de connecteur, https://["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud.
 
 [role="quick-margin-para"]
-Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
+Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Passer en revue les prérequis
 [role="quick-margin-para"]
@@ -64,9 +64,9 @@ Les 1 premiers To de données analysés par le système de classification BlueXP
 
 == Créer un connecteur
 
-Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
-Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
+Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
@@ -80,9 +80,9 @@ Pour Azure NetApp Files, il doit être déployé dans la même région que les v
 
 Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
 
-Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
+Notez que vous pouvez également https://["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
+Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://["Plusieurs connecteurs"].
 
 Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur pour installer la classification BlueXP. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
@@ -115,6 +115,24 @@ Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
+* *Autorisations de dossier UNIX* : les autorisations UNIX minimales suivantes sont requises :
++
+[cols="25,25"]
+|===
+| Dossier | Autorisations minimales 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
 ** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
@@ -123,21 +141,21 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
+
+
+* Red Hat Enterprise Linux versions 8.0 à 8.7
+* CentOS versions 8.0 à 8.7
+* CentOS Stream 8
+* RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
-** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
+** *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
+** *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 
 
-* *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
-* *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
+* Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
+* Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
-
-
-* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
+** *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -158,7 +176,9 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
+Notez que vous devez redémarrer Docker chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
+
+
 
 
 
@@ -188,7 +208,10 @@ La classification BlueXP nécessite un accès Internet sortant. Si votre réseau
 | \https://support.compliance.api.bluexp.netapp.com/ | Permet à NetApp de diffuser des données à partir d'enregistrements d'audit. 
 
 
-| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit les packages requis pour l'installation. 
+| \https://github.com/docker \https://download.docker.com | Fournit les packages prérequis pour l'installation de docker. 
+
+
+| \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit des packages prérequis pour l'installation de CentOS. 
 |===
 
 
@@ -262,7 +285,7 @@ Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
-NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Basculer entre les connecteurs"^] pour les différentes sources de données.
+NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://["Basculer entre les connecteurs"^] pour les différentes sources de données.
 
 
 
@@ -284,7 +307,7 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 
 
 .Étapes
-. Téléchargez le logiciel de classification BlueXP depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
+. Téléchargez le logiciel de classification BlueXP depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
 . Copiez le fichier d'installation sur l'hôte Linux que vous envisagez d'utiliser (à l'aide de `scp` ou une autre méthode).
 . Décompressez le fichier d'installation sur la machine hôte, par exemple :
 +
@@ -314,24 +337,24 @@ Notez que le programme d'installation effectue une pré-vérification afin de s'
 
  a| 
 .. Collez la commande que vous avez copiée à partir de l'étape 7 :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token>`
 +
 Si vous installez sur une instance cloud (pas sur site), ajoutez `--manual-cloud-install <cloud_provider>`.
 
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte de classification BlueXP afin qu'elle soit accessible par l'instance du connecteur.
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte du connecteur BlueXP afin qu'elle soit accessible par l'instance de classification BlueXP.
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte de classification BlueXP afin qu'elle soit accessible par le système de connecteurs.
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte du connecteur BlueXP afin que le système de classification BlueXP puisse y accéder.
 .. Entrez les détails du proxy comme vous y êtes invité. Si votre connecteur BlueXP utilise déjà un proxy, il n'est pas nécessaire de saisir à nouveau ces informations ici, car la classification BlueXP utilisera automatiquement le proxy utilisé par le connecteur.
 
 | Vous pouvez également créer l'ensemble de la commande à l'avance, en fournissant les paramètres d'hôte et de proxy nécessaires :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
 |===
 +
 Valeurs variables :
 
 +
 ** _Account_ID_ = ID du compte NetApp
-** _Agent_ID_ = ID connecteur
-** _token_ = jeton utilisateur jwt
+** _Client_ID_ = connecteur client ID (ajoutez le suffixe "clients" à l'ID client s'il n'y en a pas déjà)
+** _User_token_ = jeton d'accès utilisateur JWT
 ** _Ds_host_ = adresse IP ou nom d'hôte du système de classification BlueXP Linux.
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs BlueXP.
 ** _Cloud_Provider_ = lors de l'installation sur une instance cloud, entrez « AWS », « Azure » ou « GCP » en fonction du fournisseur de cloud.
@@ -445,7 +468,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
+Notez que vous devez redémarrer Docker chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
 
 
 
@@ -466,7 +489,7 @@ image:screenshot_connector_client_id.png["Capture d'écran des paramètres de co
 +
 image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
 
-. Accédez au https://services.cloud.netapp.com/developer-hub["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
+. Accédez au https://["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
 +
 image:screenshot_client_access_token.png["Capture d'écran de la page Documentation de l'API avec un lien vers les instructions d'authentification."]
 
@@ -484,7 +507,7 @@ Valeurs variables :
 
 +
 ** _Account_ID_ = ID du compte NetApp
-** _Client_ID_ = ID client du connecteur
+** _Client_ID_ = connecteur client ID (ajoutez le suffixe "clients" à l'ID client que vous avez copié dans les étapes préalables)
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs
 ** _Ds_Manager_ip_ = adresse IP privée du système de nœuds BlueXP classification Manager
 ** _Node_private_ip_ = adresses IP des systèmes de nœuds du scanner de classification BlueXP (les adresses IP de plusieurs nœuds du scanner sont séparées par une virgule)
@@ -591,7 +614,7 @@ En plus des variables disponibles pour une installation à un seul hôte, une no
 
 +
 Par exemple, cette commande ajoute 3 nœuds de scanner :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
 
 . Avant la fin de l'installation du nœud Manager, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple, `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) et enregistrez-le dans un fichier texte.
 . Sur *chaque hôte de nœud du scanner* :

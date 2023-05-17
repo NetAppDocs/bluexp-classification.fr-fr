@@ -57,17 +57,17 @@ image:screenshot_add_subscription.gif["Capture d'écran du menu de la page infor
 
 . Sélectionnez un abonnement existant et cliquez sur *associé*, ou cliquez sur *Ajouter un abonnement* et suivez les étapes.
 +
-La vidéo suivante montre comment associer un https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] Abonnement à un abonnement AWS :
+La vidéo suivante montre comment associer un https://["AWS Marketplace"^] Abonnement à un abonnement AWS :
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
-La vidéo suivante montre comment associer un https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] Abonnement à un abonnement Azure :
+La vidéo suivante montre comment associer un https://["Azure Marketplace"^] Abonnement à un abonnement Azure :
 
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-La vidéo suivante montre comment associer un https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Marketplace GCP"^] Abonnement à un abonnement GCP :
+La vidéo suivante montre comment associer un https://["Marketplace GCP"^] Abonnement à un abonnement GCP :
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -85,7 +85,7 @@ Si vous ne disposez pas d'une licence de classification BlueXP, contactez-nous p
 * Cliquez sur l'icône de chat dans le coin inférieur droit de BlueXP pour demander une licence.
 
 
-Si vous ne souhaitez pas utiliser de licence basée sur des nœuds non attribuée à Cloud Volumes ONTAP, vous pouvez la convertir en licence de classification BlueXP avec la même équivalence en dollars et la même date d'expiration. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Cliquez ici pour plus d'informations"^].
+Si vous ne souhaitez pas utiliser de licence basée sur des nœuds non attribuée à Cloud Volumes ONTAP, vous pouvez la convertir en licence de classification BlueXP avec la même équivalence en dollars et la même date d'expiration. https://["Cliquez ici pour plus d'informations"^].
 
 Vous utilisez la page du portefeuille digital BlueXP dans BlueXP pour gérer les licences BYOL de classification BlueXP. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
 
@@ -98,7 +98,7 @@ Après avoir acheté votre licence de classification BlueXP (Data Sense), vous a
 Si vous avez déployé la classification BlueXP sur un hôte d'un site sur site qui ne dispose pas d'un accès Internet, vous devez obtenir le fichier de licence à partir d'un système connecté à Internet. L'activation de la licence à l'aide du numéro de série et du compte NSS n'est pas disponible pour les installations sur site sombre.
 
 .Étapes
-. Connectez-vous au https://mysupport.netapp.com["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.
+. Connectez-vous au https://["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.
 . Entrez le numéro de série de votre licence de classification BlueXP.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Capture d'écran affichant une table de licences après une recherche par numéro de série."]
@@ -126,7 +126,7 @@ Après avoir acheté une licence de classification BlueXP (Data Sense) pour votr
 +
 ** Si vous disposez du numéro de série de la licence de classification BlueXP et que vous connaissez votre compte NSS, sélectionnez l'option *entrer le numéro de série* et entrez ces informations.
 +
-Si votre compte sur le site de support NetApp n'est pas disponible dans la liste déroulante, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Ajoutez le compte NSS à BlueXP"^].
+Si votre compte sur le site de support NetApp n'est pas disponible dans la liste déroulante, https://["Ajoutez le compte NSS à BlueXP"^].
 
 ** Si vous disposez du fichier de licence de classification BlueXP (requis lorsqu'il est installé sur un site invisible), sélectionnez l'option *Upload License File* et suivez les invites pour joindre le fichier.
 +

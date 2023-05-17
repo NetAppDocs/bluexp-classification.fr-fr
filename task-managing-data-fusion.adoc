@@ -138,7 +138,7 @@ Par exemple, vous pouvez voir où vos ID de produit internes sont mentionnés da
 
 Une fois le regex ajouté, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP, dans la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».
 
-Voir https://regex101.com/[] si vous avez besoin d'aide pour construire l'expression régulière que vous avez besoin.
+Voir https://[] si vous avez besoin d'aide pour construire l'expression régulière que vous avez besoin.
 
 .Étapes
 . Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.

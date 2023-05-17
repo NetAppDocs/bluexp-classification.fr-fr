@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
-summary: 'Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n"importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.' 
+summary: 'Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n"importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Linode, stockage cloud B2, Amazon S3, et bien plus encore.' 
 ---
 = Analyse du stockage objet à l'aide du protocole S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Procédez en quelques étapes pour commencer à analyser les données 
 
 
 [role="lead"]
-Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n'importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (via MiniO), Linode, B2 Cloud Storage, Amazon S3, et bien plus encore.
+Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n'importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Linode, stockage cloud B2, Amazon S3, et bien plus encore.
 
 
 
@@ -49,7 +49,6 @@ Vérifiez les conditions préalables suivantes pour vous assurer que votre confi
 
 * Vous devez disposer de l'URL du terminal pour vous connecter au service de stockage objet.
 * Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet pour que la classification BlueXP puisse accéder aux compartiments.
-* La prise en charge d'Azure Blob requiert que vous utilisiez le link:https://min.io/["Service MiniO"^].
 
 
 

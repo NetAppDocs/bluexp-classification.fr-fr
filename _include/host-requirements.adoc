@@ -23,6 +23,24 @@
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
+* *Autorisations de dossier UNIX* : les autorisations UNIX minimales suivantes sont requises :
++
+[cols="25,25"]
+|===
+| Dossier | Autorisations minimales 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
 ** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
@@ -31,18 +49,17 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
+
+
+* Red Hat Enterprise Linux versions 8.0 à 8.7
+* CentOS versions 8.0 à 8.7
+* CentOS Stream 8
+* RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
-** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
+** *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
+** *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 
 
-* *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
-* *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
-+
-** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
-
-
+* Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
+* Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
 

@@ -48,7 +48,7 @@ La plupart des fonctionnalités de classification BlueXP fonctionnent lorsqu'ell
 * Réception des commentaires de l'utilisateur
 * Mises à niveau logicielles automatisées depuis BlueXP
 +
-Le connecteur BlueXP et la classification BlueXP nécessitent toutes deux des mises à niveau manuelles périodiques pour activer de nouvelles fonctionnalités. La version de classification BlueXP est visible en bas des pages de l'interface de classification BlueXP. Vérifier le link:whats-new.html["Notes de version de la classification BlueXP"] pour voir les nouvelles fonctionnalités dans chaque version et si vous voulez ou non ces fonctionnalités. Vous pouvez ensuite suivre les étapes à https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Mettez à niveau le connecteur BlueXP"^] et <<Mettez à niveau le logiciel de classification BlueXP,Mettez à niveau votre logiciel de classification BlueXP>>.
+Le connecteur BlueXP et la classification BlueXP nécessitent toutes deux des mises à niveau manuelles périodiques pour activer de nouvelles fonctionnalités. La version de classification BlueXP est visible en bas des pages de l'interface de classification BlueXP. Vérifier le link:whats-new.html["Notes de version de la classification BlueXP"] pour voir les nouvelles fonctionnalités dans chaque version et si vous voulez ou non ces fonctionnalités. Vous pouvez ensuite suivre les étapes à https://["Mettez à niveau le connecteur BlueXP"^] et <<Mettez à niveau le logiciel de classification BlueXP,Mettez à niveau votre logiciel de classification BlueXP>>.
 
 
 
@@ -60,7 +60,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Installez le connecteur BlueXP
 [role="quick-margin-para"]
-Si aucun connecteur n'est déjà installé sur votre site hors ligne sur site, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployer le connecteur"^] Sur un hôte Linux.
+Si aucun connecteur n'est déjà installé sur votre site hors ligne sur site, https://["Déployer le connecteur"^] Sur un hôte Linux.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Examinez les conditions préalables à la classification BlueXP
 [role="quick-margin-para"]
@@ -78,7 +78,7 @@ Les 1 premiers To de données analysés par le système de classification BlueXP
 
 == Installez le connecteur BlueXP
 
-Si vous n'avez pas encore de connecteur BlueXP installé sur votre site hors ligne, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployer le connecteur"^] Sur un hôte Linux de votre site hors ligne.
+Si vous n'avez pas encore de connecteur BlueXP installé sur votre site hors ligne, https://["Déployer le connecteur"^] Sur un hôte Linux de votre site hors ligne.
 
 
 
@@ -107,6 +107,24 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
+* *Autorisations de dossier UNIX* : les autorisations UNIX minimales suivantes sont requises :
++
+[cols="25,25"]
+|===
+| Dossier | Autorisations minimales 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
 ** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
@@ -115,21 +133,21 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
+
+
+* Red Hat Enterprise Linux versions 8.0 à 8.7
+* CentOS versions 8.0 à 8.7
+* CentOS Stream 8
+* RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
-** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
+** *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
+** *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 
 
-* *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
-* *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
+* Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
+* Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
-
-
-* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
+** *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -140,12 +158,14 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
+Notez que vous devez redémarrer Docker chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
 
 
 
 
-NOTE: L'adresse IP du système hôte de classification BlueXP ne peut pas être modifiée après l'installation.
+
+
+TIP: L'adresse IP du système hôte de classification BlueXP ne peut pas être modifiée après l'installation.
 
 
 
@@ -153,7 +173,7 @@ NOTE: L'adresse IP du système hôte de classification BlueXP ne peut pas être 
 
 Vérifiez les conditions préalables suivantes afin de vous assurer que votre configuration est prise en charge avant de déployer la classification BlueXP.
 
-* Assurez-vous que le connecteur dispose des autorisations nécessaires pour déployer les ressources et créer des groupes de sécurité pour l'instance de classification BlueXP. Vous trouverez les dernières autorisations BlueXP dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Règles fournies par NetApp"^].
+* Assurez-vous que le connecteur dispose des autorisations nécessaires pour déployer les ressources et créer des groupes de sécurité pour l'instance de classification BlueXP. Vous trouverez les dernières autorisations BlueXP dans https://["Règles fournies par NetApp"^].
 * Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution. L'instance de classification BlueXP doit continuer à analyser vos données en continu.
 * Assurez la connectivité du navigateur web à la classification BlueXP. Une fois la classification BlueXP activée, assurez-vous que les utilisateurs accèdent à l'interface BlueXP depuis un hôte qui dispose d'une connexion à l'instance de classification BlueXP.
 +
@@ -242,7 +262,7 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 
 
 .Étapes
-. Sur un système configuré en ligne, téléchargez le logiciel de classification BlueXP depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DataSense-Offline-bundle-<version>.tar.gz*.
+. Sur un système configuré en ligne, téléchargez le logiciel de classification BlueXP depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DataSense-Offline-bundle-<version>.tar.gz*.
 . Copiez le pack d'installation sur l'hôte Linux que vous envisagez d'utiliser sur le site sombre.
 . Décompressez le programme d'installation sur la machine hôte, par exemple :
 +
@@ -281,21 +301,21 @@ Notez que le programme d'installation effectue une pré-vérification afin de s'
 
  a| 
 .. Collez les informations que vous avez copiées à partir de l'étape 8 :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte de classification BlueXP afin qu'elle soit accessible par l'instance du connecteur.
-.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte du connecteur BlueXP afin qu'elle soit accessible par l'instance de classification BlueXP.
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --darksite`
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte de classification BlueXP afin qu'elle soit accessible par le système de connecteurs.
+.. Entrez l'adresse IP ou le nom d'hôte de la machine hôte du connecteur BlueXP afin que le système de classification BlueXP puisse y accéder.
 
 | Vous pouvez également créer la commande entière à l'avance, en fournissant les paramètres d'hôte nécessaires :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --no-proxy --darksite` 
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --no-proxy --darksite` 
 |===
 +
 Valeurs variables :
 
 +
 ** _Account_ID_ = ID du compte NetApp
-** _Agent_ID_ = ID connecteur
-** _token_ = jeton utilisateur jwt
-** _Ds_host_ = adresse IP ou nom d'hôte du système de classification BlueXP Linux.
+** _Client_ID_ = connecteur client ID (ajoutez le suffixe "clients" à l'ID client s'il n'y en a pas déjà)
+** _User_token_ = jeton d'accès utilisateur JWT
+** _Ds_host_ = adresse IP ou nom d'hôte du système de classification BlueXP.
 ** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs BlueXP.
 
 
@@ -359,7 +379,7 @@ En plus des variables disponibles pour une installation à un seul hôte, une no
 
 +
 Par exemple, cette commande ajoute 3 nœuds de scanner :
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
 
 . Avant la fin de l'installation du nœud Manager, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple : `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) et enregistrez-le dans un fichier texte.
 . Sur *chaque hôte de nœud du scanner* :
@@ -390,11 +410,11 @@ Vous pouvez également link:task-licensing-datasense.html#use-a-bluexp-classific
 
 .Avant de commencer
 * Le logiciel de classification BlueXP peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.20.x est installée, vous ne pouvez mettre à niveau que vers la version 1.21.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
-* Vérifiez que votre logiciel On-site Connector a été mis à niveau vers la dernière version disponible. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Reportez-vous aux étapes de mise à niveau du connecteur"^].
+* Vérifiez que votre logiciel BlueXP Connector a été mis à niveau vers la dernière version disponible. https://["Reportez-vous aux étapes de mise à niveau du connecteur"^].
 
 
 .Étapes
-. Sur un système configuré en ligne, téléchargez le logiciel de classification BlueXP depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DataSense-Offline-bundle-<version>.tar.gz*.
+. Sur un système configuré en ligne, téléchargez le logiciel de classification BlueXP depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DataSense-Offline-bundle-<version>.tar.gz*.
 . Copiez le bundle logiciel sur l'hôte Linux où la classification BlueXP est installée sur le site invisible.
 . Décompressez le pack logiciel sur la machine hôte, par exemple :
 +

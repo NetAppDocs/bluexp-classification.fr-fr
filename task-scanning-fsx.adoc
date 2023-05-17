@@ -23,13 +23,13 @@ Suivez ces étapes pour commencer à analyser le volume Amazon FSX pour ONTAP av
 * Vous avez besoin d'un connecteur actif dans AWS pour déployer et gérer la classification BlueXP.
 * Le groupe de sécurité que vous avez sélectionné lors de la création de l'environnement de travail doit autoriser le trafic à partir de l'instance de classification BlueXP. Vous pouvez trouver le groupe de sécurité associé à l'aide de l'ENI connecté au système de fichiers FSX pour ONTAP et le modifier à l'aide de la console de gestion AWS.
 +
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Groupes de sécurité AWS pour les instances Linux"^]
+https://["Groupes de sécurité AWS pour les instances Linux"^]
 
 +
-https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Groupes de sécurité AWS pour les instances Windows"^]
+https://["Groupes de sécurité AWS pour les instances Windows"^]
 
 +
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces réseau flexibles AWS (ENI)"^]
+https://["Interfaces réseau flexibles AWS (ENI)"^]
 
 
 
@@ -41,7 +41,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler vers le bas pou
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Découvrez le FSX pour les systèmes de fichiers ONTAP que vous souhaitez analyser
 [role="quick-margin-para"]
-Avant de pouvoir analyser FSX pour des volumes ONTAP, https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["Vous devez disposer d'un environnement de travail FSX avec des volumes configurés"^].
+Avant de pouvoir analyser FSX pour des volumes ONTAP, https://["Vous devez disposer d'un environnement de travail FSX avec des volumes configurés"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
 [role="quick-margin-para"]
@@ -77,7 +77,7 @@ Sélectionnez ou désélectionnez les volumes à analyser ; la classification Bl
 
 Si le système de fichiers FSX pour ONTAP que vous souhaitez numériser n'est pas déjà dans BlueXP comme environnement de travail, vous pouvez l'ajouter au canevas à ce moment.
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Découvrez comment découvrir ou créer le système de fichiers FSX pour ONTAP dans BlueXP"^].
+https://["Découvrez comment découvrir ou créer le système de fichiers FSX pour ONTAP dans BlueXP"^].
 
 
 
@@ -156,7 +156,7 @@ NOTE: Dans le cas de FSX pour ONTAP, la classification BlueXP ne peut analyser l
 Les identifiants peuvent être en lecture seule, mais il est possible de fournir des identifiants d'administrateur pour que la classification BlueXP puisse lire toutes les données qui nécessitent des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
 +
-Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations d'écriture d'attributs dans CIFS ou d'autorisations d'écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
 +
 Une fois les informations d'identification saisies, un message indiquant que tous les volumes CIFS ont été authentifiés avec succès s'affiche.

@@ -78,12 +78,12 @@ Configurez un rôle IAM pour l'instance de classification BlueXP:: La classifica
 }
 ----
 --
-Connectivité de la classification BlueXP à Amazon S3:: La classification BlueXP doit être connectée à Amazon S3. Pour assurer cette connexion, le meilleur moyen consiste à utiliser un terminal VPC pour le service S3. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
+Connectivité de la classification BlueXP à Amazon S3:: La classification BlueXP doit être connectée à Amazon S3. Pour assurer cette connexion, le meilleur moyen consiste à utiliser un terminal VPC pour le service S3. Pour obtenir des instructions, reportez-vous à la section https://["Documentation AWS : création d'un terminal de passerelle"^].
 +
 --
 Lorsque vous créez le terminal VPC, veillez à sélectionner la région, le VPC et la table de routage correspondant à l'instance de classification BlueXP. Vous devez également modifier le groupe de sécurité pour ajouter une règle HTTPS sortante qui active le trafic vers le terminal S3. Sinon, la classification BlueXP ne peut pas se connecter au service S3.
 
-Si vous rencontrez des problèmes, reportez-vous à la section https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^]
+Si vous rencontrez des problèmes, reportez-vous à la section https://["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^]
 
 Une alternative consiste à fournir la connexion à l'aide d'une passerelle NAT.
 

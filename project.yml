@@ -181,6 +181,8 @@ homepage:
       url: task-managing-highlights.html#deleting-source-files
     - title: Créez des alertes par e-mail lorsque des données non conformes sont trouvées
       url: task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: Contrôlez et gérez les événements d'accès aux fichiers
+      url: task-manage-file-access-events.html
     - title: Répondre à une demande d'accès à un sujet de données
       url: task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports
   - title: Communauté sur les blogs
@@ -191,7 +193,7 @@ homepage:
       url: https://bluexp.netapp.com/netapp-cloud-data-sense
     - title: Blog BlueXP
       url: https://bluexp.netapp.com/blog
-    - title: Webinaires sur le cloud
+    - title: Webinaires BlueXP
       url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP

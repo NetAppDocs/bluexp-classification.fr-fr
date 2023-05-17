@@ -29,13 +29,13 @@ Dans les tableaux suivants, si le système marqué comme « par défaut » n'est
 | Taille du système | Caractéristiques | Type d'instance 
 
 
-| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] (par défaut) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://["m6i.4xlarge"^] (par défaut) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
-| Moyen | 8 processeurs, 32 Go de RAM, SSD de 200 Gio | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^] (par défaut) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+| Moyen | 8 processeurs, 32 Go de RAM, SSD de 200 Gio | https://["m6i.2xlarge"^] (par défaut) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
 
 
-| Petit | 8 processeurs, 16 Go de RAM, SSD de 100 Gio | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] (par défaut) c5a.2xlarge c5.2xlarge c4.2xlarge 
+| Petit | 8 processeurs, 16 Go de RAM, SSD de 100 Gio | https://["c6a.2xlarge"^] (par défaut) c5a.2xlarge c5.2xlarge c4.2xlarge 
 |===
 
 
@@ -46,7 +46,7 @@ Dans les tableaux suivants, si le système marqué comme « par défaut » n'est
 | Taille du système | Caractéristiques | Type d'instance 
 
 
-| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (valeur par défaut) 
+| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://["Standard_D16s_v3"^] (valeur par défaut) 
 |===
 
 
@@ -57,5 +57,5 @@ Dans les tableaux suivants, si le système marqué comme « par défaut » n'est
 | Taille du système | Caractéristiques | Type d'instance 
 
 
-| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16"^] (par défaut) n2d-standard-16 n1-standard-16 
+| Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://["n2-standard-16"^] (par défaut) n2d-standard-16 n1-standard-16 
 |===

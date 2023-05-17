@@ -37,9 +37,9 @@ Vous effectuerez les tâches suivantes.
 
 Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Vous pouvez cependant exécuter le script Prerequisites sans connecteur.
 
-C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
+C'est possible https://["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Pour créer un connecteur dans l'environnement de votre fournisseur de cloud, reportez-vous à la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
+Pour créer un connecteur dans l'environnement de votre fournisseur de cloud, reportez-vous à la section https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
 
 Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur lors de l'exécution du script Prerequisites. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
@@ -70,6 +70,24 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
+* *Autorisations de dossier UNIX* : les autorisations UNIX minimales suivantes sont requises :
++
+[cols="25,25"]
+|===
+| Dossier | Autorisations minimales 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
 ** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
@@ -78,21 +96,21 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
+
+
+* Red Hat Enterprise Linux versions 8.0 à 8.7
+* CentOS versions 8.0 à 8.7
+* CentOS Stream 8
+* RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
-** La version 7.8 ou 7.9 peut être utilisée, mais la version du noyau Linux doit être 4.0 ou supérieure
+** *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
+** *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 
 
-* *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
-* *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
+* Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
+* Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
-
-
-* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
+** *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -113,7 +131,9 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Si vous activez `firewalld` Après l'installation de la classification BlueXP, vous devez redémarrer docker.
+Notez que vous devez redémarrer Docker chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
+
+
 
 
 
@@ -123,8 +143,8 @@ Si vous activez `firewalld` Après l'installation de la classification BlueXP, v
 
 La classification BlueXP nécessite un accès Internet sortant. Si votre réseau physique ou virtuel utilise un serveur proxy pour l'accès à Internet, assurez-vous que l'instance de classification BlueXP dispose d'un accès Internet sortant pour contacter les terminaux suivants.
 
-CONSEIL:: Cette section n'est pas requise pour les systèmes hôtes installés sur des sites sans connexion Internet.
 
+TIP: Cette section n'est pas requise pour les systèmes hôtes installés sur des sites sans connexion Internet.
 
 [cols="43,57"]
 |===
@@ -143,7 +163,10 @@ CONSEIL:: Cette section n'est pas requise pour les systèmes hôtes installés s
 | \https://support.compliance.api.bluexp.netapp.com/ | Permet à NetApp de diffuser des données à partir d'enregistrements d'audit. 
 
 
-| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit les packages requis pour l'installation. 
+| \https://github.com/docker \https://download.docker.com | Fournit les packages prérequis pour l'installation de docker. 
+
+
+| \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit des packages prérequis pour l'installation de CentOS. 
 |===
 
 
@@ -176,7 +199,7 @@ Procédez comme suit pour exécuter le script BlueXP classification Prerequisite
 
 
 .Étapes
-. Téléchargez le script BlueXP classification Prerequisites depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *standalone-pre-tester-<version>*.
+. Téléchargez le script BlueXP classification Prerequisites depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *standalone-pre-tester-<version>*.
 . Copiez le fichier sur l'hôte Linux que vous souhaitez utiliser (à l'aide de `scp` ou une autre méthode).
 . Attribuez des autorisations pour exécuter le script.
 +

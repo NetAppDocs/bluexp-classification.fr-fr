@@ -60,7 +60,7 @@ Utilisez les filtres suivants pour afficher la quantité d'informations sensible
 | Données personnelles sensibles | Sélectionner link:reference-private-data-categories.html#types-of-sensitive-personal-data["types de données personnelles sensibles"^]. 
 
 
-| Sujet de données | Saisissez le nom complet ou l'identifiant connu d'un sujet de données. 
+| Sujet de données | Saisissez le nom complet ou l'identifiant connu d'un sujet de données. link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["Pour en savoir plus sur les sujets de données, cliquez ici"^]. 
 |===
 
 

@@ -35,6 +35,8 @@ La classification BlueXP collecte certaines métadonnées lors d'analyses de cla
 
 | *Utilisateurs/accès de groupe* | Les informations relatives aux utilisateurs et aux groupes sont extraites du protocole LDAP | Non disponible (les utilisateurs NFS sont généralement gérés localement sur le serveur, par conséquent, la même personne peut avoir un UID différent sur chaque serveur) 
 |===
+La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données suivantes : SharePoint Online, SharePoint on-pretlocale (SharePoint Server), OneDrive, Google Drive et Amazon S3.
+
 
 
 == Horodatage du dernier accès
@@ -57,4 +59,4 @@ Les sélections de filtre sont les suivantes :
 * « Heure du dernier accès classifiée et mise à jour » - affiche les fichiers classés et la classification BlueXP n'a pas pu rétablir l'heure du dernier accès à la date d'origine. Ce filtre n'est pertinent que pour les environnements dans lesquels vous avez activé *Scan lorsque vous ne disposez pas des autorisations d'écriture d'attributs*.
 
 
-Si nécessaire, vous pouvez exporter ces résultats dans un rapport afin de voir quels fichiers sont ou ne sont pas analysés en raison des autorisations. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["En savoir plus sur le rapport d'enquête sur les données"^].
+Si nécessaire, vous pouvez exporter ces résultats dans un rapport afin de voir quels fichiers sont ou ne sont pas analysés en raison des autorisations. https://["En savoir plus sur le rapport d'enquête sur les données"^].
