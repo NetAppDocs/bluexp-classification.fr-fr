@@ -104,7 +104,11 @@ Utilisez les filtres suivants pour afficher les données en fonction des critèr
 | Dernière modification | Sélectionnez une plage horaire pour la dernière modification du fichier. Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. 
 
 
-| Dernier accès | Sélectionnez une plage horaire lors du dernier accès au fichier ou au répertoire (CIFS ou NFS uniquement). Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par le système de classification BlueXP, il s'agit de la dernière fois que le fichier a été analysé par le système de classification BlueXP. 
+| Dernier accès  a| 
+Sélectionnez une plage horaire lors du dernier accès au fichier ou au répertoire (CIFS ou NFS uniquement). Vous pouvez également spécifier une plage horaire personnalisée pour affiner davantage les résultats de la recherche. Pour les types de fichiers analysés par le système de classification BlueXP, il s'agit de la dernière fois que le fichier a été analysé par le système de classification BlueXP.
+
+La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données suivantes : SharePoint Online, SharePoint on-pretlocale (SharePoint Server), OneDrive, Google Drive et Amazon S3.
+
 |===
 
 
