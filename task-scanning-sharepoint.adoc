@@ -63,7 +63,7 @@ Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 * Pour SharePoint sur site, la classification BlueXP peut être installée link:task-deploy-compliance-onprem.html["dans un emplacement sur site avec accès à internet"^] ou link:task-deploy-compliance-dark-site.html["dans un emplacement sur site qui ne dispose pas d'un accès internet"^].
 
 
-Lorsque la classification BlueXP est installée sur un site sans accès Internet, le connecteur BlueXP doit également être installé sur ce même site sans accès Internet. https://["En savoir plus >>"^].
+Lorsque la classification BlueXP est installée sur un site sans accès Internet, le connecteur BlueXP doit également être installé sur ce même site sans accès Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["En savoir plus >>"^].
 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 

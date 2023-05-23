@@ -16,7 +16,7 @@ summary: La classification BlueXP est un service de gouvernance des données pou
 [role="lead"]
 La classification BlueXP est un service de gouvernance des données pour BlueXP qui analyse vos sources de données cloud et sur site pour cartographier et classer les données, et identifier les informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données.
 
-https://["Découvrez les utilisations de la classification BlueXP"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["Découvrez les utilisations de la classification BlueXP"^].
 
 
 
@@ -48,7 +48,7 @@ La classification BlueXP permet d'identifier les données potentiellement menac�
 * Respectez les règles de conservation des données.
 * Utilisez _Policies_ pour avertir automatiquement le personnel de sécurité de nouveaux problèmes de sécurité afin qu'il puisse agir immédiatement.
 * Ajoutez des balises personnalisées aux fichiers (par exemple, "doit être déplacé") et affectez un utilisateur BlueXP pour que cette personne puisse posséder des mises à jour des fichiers.
-* Afficher et modifier https://["Étiquettes Azure information protection (AIP)"^] dans vos fichiers.
+* Afficher et modifier https://azure.microsoft.com/en-us/services/information-protection/["Étiquettes Azure information protection (AIP)"^] dans vos fichiers.
 
 
 
@@ -59,7 +59,7 @@ La classification BlueXP fournit des outils qui vous aideront à maîtriser votr
 
 * Amélioration de l'efficacité du stockage grâce à l'identification des données dupliquées ou non liées à l'activité. Vous pouvez utiliser ces informations pour décider si vous voulez déplacer ou supprimer certains fichiers.
 * Supprimez des fichiers qui semblent non sécurisés ou trop risqués pour l'éviter dans votre système de stockage, ou qui ont été identifiés en double. Vous pouvez utiliser _Policies_ pour supprimer automatiquement des fichiers qui correspondent à certains critères.
-* Réduisez les coûts du stockage en identifiant les données inactives que vous pouvez déplacer vers un stockage objet moins coûteux. https://["En savoir plus sur le Tiering des systèmes Cloud Volumes ONTAP"^]. https://["En savoir plus sur le Tiering à partir des systèmes ONTAP sur site"^].
+* Réduisez les coûts du stockage en identifiant les données inactives que vous pouvez déplacer vers un stockage objet moins coûteux. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["En savoir plus sur le Tiering des systèmes Cloud Volumes ONTAP"^]. https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["En savoir plus sur le Tiering à partir des systèmes ONTAP sur site"^].
 
 
 
@@ -124,12 +124,12 @@ La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi
 
 == Le coût
 
-* Le coût d'utilisation de la classification BlueXP dépend de la quantité de données que vous analysez. Les 1 premiers To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP sont gratuits pendant 30 jours. Cela inclut toutes les données issues de tous les environnements de travail et de toutes les sources de données. Un abonnement à AWS, Azure, GCP Marketplace ou une licence BYOL de NetApp est requis pour continuer l'analyse des données après ce point. Voir https://["tarifs"^] pour plus d'informations.
+* Le coût d'utilisation de la classification BlueXP dépend de la quantité de données que vous analysez. Les 1 premiers To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP sont gratuits pendant 30 jours. Cela inclut toutes les données issues de tous les environnements de travail et de toutes les sources de données. Un abonnement à AWS, Azure, GCP Marketplace ou une licence BYOL de NetApp est requis pour continuer l'analyse des données après ce point. Voir https://bluexp.netapp.com/netapp-cloud-data-sense["tarifs"^] pour plus d'informations.
 +
 link:task-licensing-datasense.html["Découvrez comment obtenir des licences pour la classification BlueXP"^].
 
 * L'installation de la classification BlueXP dans le cloud nécessite le déploiement d'une instance cloud, ce qui entraîne des frais du fournisseur cloud où il est déployé. Voir <<Instance de classification BlueXP,type d'instance déployé pour chaque fournisseur cloud>>. L'installation de la classification BlueXP sur un système sur site est gratuit.
-* Pour classification BlueXP, vous devez avoir déployé un connecteur BlueXP. Dans de nombreux cas, vous disposez déjà d'un connecteur en raison d'autres services et stockages que vous utilisez dans BlueXP. L'instance de connecteur entraîne des frais supplémentaires du fournisseur cloud sur lequel elle est déployée. Voir la https://["type d'instance déployé pour chaque fournisseur cloud"^]. L'installation du connecteur sur un système sur site est gratuite.
+* Pour classification BlueXP, vous devez avoir déployé un connecteur BlueXP. Dans de nombreux cas, vous disposez déjà d'un connecteur en raison d'autres services et stockages que vous utilisez dans BlueXP. L'instance de connecteur entraîne des frais supplémentaires du fournisseur cloud sur lequel elle est déployée. Voir la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["type d'instance déployé pour chaque fournisseur cloud"^]. L'installation du connecteur sur un système sur site est gratuite.
 
 
 
@@ -138,22 +138,22 @@ link:task-licensing-datasense.html["Découvrez comment obtenir des licences pour
 
 Les coûts de transfert de données dépendent de votre configuration. Si l'instance de classification BlueXP et la source de données se trouvent dans la même zone de disponibilité et dans la même région, aucun coût de transfert de données n'est applicable. Mais si la source de données, telle qu'un système Cloud Volumes ONTAP ou un compartiment S3, se trouve dans une _autre_ zone ou région de disponibilité, vous serez facturé par votre fournisseur cloud pour les coûts de transfert de données. Consultez ces liens pour en savoir plus :
 
-* https://["AWS : tarification Amazon EC2"^]
-* https://["Microsoft Azure : détails de la tarification de la bande passante"^]
-* https://["Google Cloud : tarification du service de transfert du stockage"^]
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS : tarification Amazon EC2"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure : détails de la tarification de la bande passante"^]
+* https://cloud.google.com/storage-transfer/pricing["Google Cloud : tarification du service de transfert du stockage"^]
 
 
 
 
 == Instance de classification BlueXP
 
-Lorsque vous déployez la classification BlueXP dans le cloud, BlueXP déploie l'instance dans le même sous-réseau que le connecteur. https://["En savoir plus sur les connecteurs."^]
+Lorsque vous déployez la classification BlueXP dans le cloud, BlueXP déploie l'instance dans le même sous-réseau que le connecteur. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs."^]
 
 image:diagram_cloud_compliance_instance.png["Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud."]
 
 Voici la liste des éléments suivants pour l'instance par défaut :
 
-* Dans AWS, la classification BlueXP s'exécute sur un https://["instance m6i.4xlarge"^] Avec un disque GP2 de 500 Gio. L'image du système d'exploitation est Amazon Linux 2. Lorsqu'elle est déployée dans AWS, vous pouvez choisir une instance de plus petite taille si vous analysez un petit volume de données.
+* Dans AWS, la classification BlueXP s'exécute sur un https://aws.amazon.com/ec2/instance-types/m6i/["instance m6i.4xlarge"^] Avec un disque GP2 de 500 Gio. L'image du système d'exploitation est Amazon Linux 2. Lorsqu'elle est déployée dans AWS, vous pouvez choisir une instance de plus petite taille si vous analysez un petit volume de données.
 * Dans Azure, la classification BlueXP s'exécute sur un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^] Avec un disque de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
 * Dans GCP, la classification BlueXP s'exécute dans un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] Avec un disque persistant standard de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
 * Dans les régions où l'instance par défaut n'est pas disponible, la classification BlueXP s'exécute sur une autre instance. link:reference-instance-types.html["Voir les autres types d'instances"].
@@ -311,4 +311,4 @@ Le rôle attribué à chaque utilisateur offre des fonctionnalités différentes
 * Les utilisateurs disposant du rôle *Compliance Viewer* peuvent uniquement afficher les informations de conformité et générer des rapports pour les systèmes auxquels ils sont autorisés à accéder. Ces utilisateurs ne peuvent pas activer/désactiver la lecture des volumes, compartiments ou schémas de base de données. Ces utilisateurs ne peuvent pas non plus copier, déplacer ou supprimer des fichiers.
 
 
-https://["En savoir plus sur les rôles BlueXP"^] et comment https://["ajoutez des utilisateurs avec des rôles spécifiques"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["En savoir plus sur les rôles BlueXP"^] et comment https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["ajoutez des utilisateurs avec des rôles spécifiques"^].

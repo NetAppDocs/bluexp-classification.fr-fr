@@ -18,7 +18,7 @@ Vous pouvez configurer la classification BlueXP pour consigner les événements 
 
 Par exemple, si vous souhaitez suivre les modifications apportées à vos fichiers personnels sensibles ou aux fichiers de paie, vous pouvez activer cette fonction sur les volumes où résident ces fichiers. Vous pouvez ensuite afficher le journal d'audit de l'accès aux fichiers pour voir si ces fichiers ont été modifiés. S'ils ont été modifiés, vous pourrez voir l'identifiant de sécurité (SID) de la personne qui a effectué la modification et la date à laquelle la modification a été effectuée.
 
-Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail qui exécutent le logiciel ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
+Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail qui exécutent le logiciel ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
 
 La classification BlueXP capture actuellement les événements pour les actions suivantes sur vos fichiers et répertoires :
 
@@ -135,9 +135,9 @@ Lorsque la classification BlueXP est déployée dans le cloud, vous devez établ
 
 Notez que vous devrez modifier les règles entrantes du groupe de sécurité pour accéder au système dans le cloud. Pour plus de détails, voir :
 
-* https://["Règles de groupe de sécurité dans AWS"^]
-* https://["Règles de groupe de sécurité dans Azure"^]
-* https://["Règles de pare-feu dans Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Règles de groupe de sécurité dans Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
 
 
 

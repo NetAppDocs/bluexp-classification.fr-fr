@@ -28,7 +28,7 @@ Avant de pouvoir numériser des volumes, vous devez ajouter les systèmes en tan
 
 [role="quick-margin-list"]
 * Pour les systèmes Cloud Volumes ONTAP, ces environnements de travail devraient déjà être disponibles dans BlueXP
-* Pour les systèmes ONTAP sur site, https://["BlueXP doit découvrir les clusters ONTAP"^]
+* Pour les systèmes ONTAP sur site, https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP doit découvrir les clusters ONTAP"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
@@ -69,7 +69,7 @@ Sélectionnez ou désélectionnez les volumes à analyser ; la classification Bl
 
 Si les sources de données que vous souhaitez numériser ne se trouvent pas déjà dans votre environnement BlueXP, vous pouvez les ajouter au canevas pour le moment.
 
-Vos systèmes Cloud Volumes ONTAP devraient déjà être disponibles dans la zone de travail de BlueXP. Dont vous avez besoin avec les systèmes ONTAP sur site https://["BlueXP découvre ces clusters"^].
+Vos systèmes Cloud Volumes ONTAP devraient déjà être disponibles dans la zone de travail de BlueXP. Dont vous avez besoin avec les systèmes ONTAP sur site https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP découvre ces clusters"^].
 
 
 

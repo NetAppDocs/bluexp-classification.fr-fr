@@ -37,9 +37,9 @@ Vous effectuerez les tâches suivantes.
 
 Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Vous pouvez cependant exécuter le script Prerequisites sans connecteur.
 
-C'est possible https://["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
+C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Pour créer un connecteur dans l'environnement de votre fournisseur de cloud, reportez-vous à la section https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
+Pour créer un connecteur dans l'environnement de votre fournisseur de cloud, reportez-vous à la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur lors de l'exécution du script Prerequisites. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
@@ -106,8 +106,8 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 * *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
 * *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
+** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
+** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
 * *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
@@ -197,7 +197,7 @@ Procédez comme suit pour exécuter le script BlueXP classification Prerequisite
 
 
 .Étapes
-. Téléchargez le script BlueXP classification Prerequisites depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *standalone-pre-tester-<version>*.
+. Téléchargez le script BlueXP classification Prerequisites depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *standalone-pre-tester-<version>*.
 . Copiez le fichier sur l'hôte Linux que vous souhaitez utiliser (à l'aide de `scp` ou une autre méthode).
 . Attribuez des autorisations pour exécuter le script.
 +

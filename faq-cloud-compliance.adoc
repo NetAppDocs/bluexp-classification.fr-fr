@@ -52,7 +52,7 @@ link:concept-cloud-compliance.html["Découvrez le fonctionnement de la classific
 * Respectez les règles de conservation des données.
 
 
-https://["En savoir plus sur les utilisations de la classification BlueXP"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["En savoir plus sur les utilisations de la classification BlueXP"^].
 
 
 
@@ -210,7 +210,7 @@ Vous pouvez également télécharger des rapports de statut à partir de la page
 
 === La classification BlueXP peut-elle fonctionner avec les étiquettes AIP que j'ai intégrées dans mes fichiers ?
 
-Oui. Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://["Protection des informations Azure (AIP)"^]. Vous pouvez afficher les libellés déjà affectés aux fichiers, ajouter des libellés aux fichiers et modifier les libellés existants.
+Oui. Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. Vous pouvez afficher les libellés déjà affectés aux fichiers, ajouter des libellés aux fichiers et modifier les libellés existants.
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["En savoir plus >>"^].
 
@@ -318,7 +318,7 @@ Le coût d'utilisation de la classification BlueXP dépend de la quantité de do
 * Modèle BYOL (Bring Your Own License) de NetApp
 
 
-Voir https://["tarifs"^] pour plus d'informations.
+Voir https://bluexp.netapp.com/pricing["tarifs"^] pour plus d'informations.
 
 
 
@@ -348,19 +348,19 @@ Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte c
 * Lors de l'analyse des données dans des systèmes ONTAP sur site, des partages de fichiers non NetApp, un stockage objet S3 générique, des bases de données, des dossiers OneDrive, des comptes SharePoint et des comptes Google Drive, vous pouvez utiliser un connecteur dans tous ces emplacements cloud.
 
 
-Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez peut-être les utiliser https://["Plusieurs connecteurs"^].
+Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez peut-être les utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Plusieurs connecteurs"^].
 
 
 
 === Puis-je déployer le connecteur sur mon propre hôte ?
 
-Oui. C'est possible https://["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous prévoyez de déployer la classification BlueXP sur site, vous pouvez également installer le connecteur sur site, mais ce n'est pas obligatoire.
+Oui. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous prévoyez de déployer la classification BlueXP sur site, vous pouvez également installer le connecteur sur site, mais ce n'est pas obligatoire.
 
 
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible https://["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.
+Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.
 
 
 

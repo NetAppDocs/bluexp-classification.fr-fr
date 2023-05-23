@@ -40,10 +40,10 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas encore de connecteur, https://["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud.
+Si vous n'avez pas encore de connecteur, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud.
 
 [role="quick-margin-para"]
-Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
+Vous pouvez également créer un connecteur avec votre fournisseur cloud. Voir https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Passer en revue les prérequis
 [role="quick-margin-para"]
@@ -64,9 +64,9 @@ Les 1 premiers To de données analysés par le système de classification BlueXP
 
 == Créer un connecteur
 
-Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
-Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://["Création d'un connecteur dans AWS"^], https://["Création d'un connecteur dans Azure"^], ou https://["Création d'un connecteur dans GCP"^].
+Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
@@ -80,9 +80,9 @@ Pour Azure NetApp Files, il doit être déployé dans la même région que les v
 
 Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
 
-Notez que vous pouvez également https://["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
+Notez que vous pouvez également https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://["Plusieurs connecteurs"].
+Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
 
 Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur pour installer la classification BlueXP. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
@@ -151,8 +151,8 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 * *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
 * *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://["Voir les instructions d'installation"^].
-** Python 3 version 3.6 ou ultérieure. https://["Voir les instructions d'installation"^].
+** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
+** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
 * *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
@@ -283,7 +283,7 @@ Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
-NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://["Basculer entre les connecteurs"^] pour les différentes sources de données.
+NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Basculer entre les connecteurs"^] pour les différentes sources de données.
 
 
 
@@ -305,7 +305,7 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 
 
 .Étapes
-. Téléchargez le logiciel de classification BlueXP depuis le https://["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
+. Téléchargez le logiciel de classification BlueXP depuis le https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de support NetApp"^]. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-<version>.tar.gz*.
 . Copiez le fichier d'installation sur l'hôte Linux que vous envisagez d'utiliser (à l'aide de `scp` ou une autre méthode).
 . Décompressez le fichier d'installation sur la machine hôte, par exemple :
 +
@@ -487,7 +487,7 @@ image:screenshot_connector_client_id.png["Capture d'écran des paramètres de co
 +
 image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
 
-. Accédez au https://["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
+. Accédez au https://services.cloud.netapp.com/developer-hub["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
 +
 image:screenshot_client_access_token.png["Capture d'écran de la page Documentation de l'API avec un lien vers les instructions d'authentification."]
 

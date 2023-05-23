@@ -16,7 +16,7 @@ summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et
 [role="lead"]
 La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
 
-* Si vous êtes abonné à https://["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.
+* Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.
 * Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.
 * Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.
 * Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous une comparaison du balisage de classification BlueXP e
 
 == Catégorisation de vos données à l'aide de libellés AIP
 
-Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. La classification BlueXP vous permet d'afficher les étiquettes déjà attribuées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
+Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. La classification BlueXP vous permet d'afficher les étiquettes déjà attribuées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
 
 La classification BlueXP prend en charge les étiquettes AIP dans les types de fichiers suivants : .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.
 
