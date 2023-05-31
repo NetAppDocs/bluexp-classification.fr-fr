@@ -59,7 +59,7 @@ La classification BlueXP fournit des outils qui vous aideront à maîtriser votr
 
 * Amélioration de l'efficacité du stockage grâce à l'identification des données dupliquées ou non liées à l'activité. Vous pouvez utiliser ces informations pour décider si vous voulez déplacer ou supprimer certains fichiers.
 * Supprimez des fichiers qui semblent non sécurisés ou trop risqués pour l'éviter dans votre système de stockage, ou qui ont été identifiés en double. Vous pouvez utiliser _Policies_ pour supprimer automatiquement des fichiers qui correspondent à certains critères.
-* Réduisez les coûts du stockage en identifiant les données inactives que vous pouvez déplacer vers un stockage objet moins coûteux. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["En savoir plus sur le Tiering des systèmes Cloud Volumes ONTAP"^]. https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["En savoir plus sur le Tiering à partir des systèmes ONTAP sur site"^].
+* Réduisez les coûts du stockage en identifiant les données inactives que vous pouvez déplacer vers un stockage objet moins coûteux. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["En savoir plus sur le Tiering des systèmes Cloud Volumes ONTAP"^]. https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["En savoir plus sur le Tiering à partir des systèmes ONTAP sur site"^].
 
 
 
@@ -129,7 +129,7 @@ La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi
 link:task-licensing-datasense.html["Découvrez comment obtenir des licences pour la classification BlueXP"^].
 
 * L'installation de la classification BlueXP dans le cloud nécessite le déploiement d'une instance cloud, ce qui entraîne des frais du fournisseur cloud où il est déployé. Voir <<Instance de classification BlueXP,type d'instance déployé pour chaque fournisseur cloud>>. L'installation de la classification BlueXP sur un système sur site est gratuit.
-* Pour classification BlueXP, vous devez avoir déployé un connecteur BlueXP. Dans de nombreux cas, vous disposez déjà d'un connecteur en raison d'autres services et stockages que vous utilisez dans BlueXP. L'instance de connecteur entraîne des frais supplémentaires du fournisseur cloud sur lequel elle est déployée. Voir la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["type d'instance déployé pour chaque fournisseur cloud"^]. L'installation du connecteur sur un système sur site est gratuite.
+* Pour classification BlueXP, vous devez avoir déployé un connecteur BlueXP. Dans de nombreux cas, vous disposez déjà d'un connecteur en raison d'autres services et stockages que vous utilisez dans BlueXP. L'instance de connecteur entraîne des frais supplémentaires du fournisseur cloud sur lequel elle est déployée. Voir la https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["type d'instance déployé pour chaque fournisseur cloud"^]. L'installation du connecteur sur un système sur site est gratuite.
 
 
 
@@ -147,7 +147,7 @@ Les coûts de transfert de données dépendent de votre configuration. Si l'inst
 
 == Instance de classification BlueXP
 
-Lorsque vous déployez la classification BlueXP dans le cloud, BlueXP déploie l'instance dans le même sous-réseau que le connecteur. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs."^]
+Lorsque vous déployez la classification BlueXP dans le cloud, BlueXP déploie l'instance dans le même sous-réseau que le connecteur. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs."^]
 
 image:diagram_cloud_compliance_instance.png["Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud."]
 
@@ -311,4 +311,4 @@ Le rôle attribué à chaque utilisateur offre des fonctionnalités différentes
 * Les utilisateurs disposant du rôle *Compliance Viewer* peuvent uniquement afficher les informations de conformité et générer des rapports pour les systèmes auxquels ils sont autorisés à accéder. Ces utilisateurs ne peuvent pas activer/désactiver la lecture des volumes, compartiments ou schémas de base de données. Ces utilisateurs ne peuvent pas non plus copier, déplacer ou supprimer des fichiers.
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["En savoir plus sur les rôles BlueXP"^] et comment https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["ajoutez des utilisateurs avec des rôles spécifiques"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["En savoir plus sur les rôles BlueXP"^] et comment https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["ajoutez des utilisateurs avec des rôles spécifiques"^].
