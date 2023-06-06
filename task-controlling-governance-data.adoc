@@ -198,6 +198,8 @@ image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du 
 .Résultat
 La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
+Si la taille du rapport est supérieure à 1 Mo, le fichier PDF est conservé dans l'instance de classification BlueXP et un message contextuel s'affiche pour vous informer de l'emplacement exact. Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier PDF. Lorsque la classification BlueXP est déployée dans le cloud, vous devez établir une connexion SSH avec l'instance de classification BlueXP pour télécharger le fichier PDF. link:task-audit-data-sense-actions.html#access-the-log-file["Voir comment accéder aux données sur l'instance de classification"^].
+
 Notez que vous pouvez personnaliser le nom de l'entreprise qui apparaît sur la première page du rapport en partant du haut de la page de classification BlueXP en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 

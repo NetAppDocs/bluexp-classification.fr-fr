@@ -142,9 +142,9 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
+** Ubuntu 22.04
+** Red Hat Enterprise Linux versions 8.0 à 8.5
+** CentOS versions 8.0 à 8.5
 ** RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 
 
@@ -210,6 +210,10 @@ La classification BlueXP nécessite un accès Internet sortant. Si votre réseau
 
 
 | \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit des packages prérequis pour l'installation de CentOS. 
+
+
+| \http://packages.ubuntu.com/
+\http://archive.ubuntu.com | Fournit les packages prérequis pour l'installation d'Ubuntu. 
 |===
 
 
@@ -299,6 +303,8 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 +
 ** Vous aurez besoin des informations du serveur proxy (adresse IP ou nom d'hôte, port de connexion, schéma de connexion : https ou http, nom d'utilisateur et mot de passe).
 ** Si le proxy effectue l'interception TLS, vous devez connaître le chemin d'accès au système de classification BlueXP Linux où sont stockés les certificats TLS CA.
+** Le proxy doit être non transparent - nous ne prenons actuellement pas en charge les proxys transparents.
+** L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
 
 
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
@@ -359,7 +365,7 @@ Valeurs variables :
 ** _Proxy_host_ = IP ou nom d'hôte du serveur proxy si l'hôte est derrière un serveur proxy.
 ** _Proxy_port_ = Port pour se connecter au serveur proxy (80 par défaut).
 ** _Proxy_schéma_ = schéma de connexion : https ou http (par défaut : http).
-** _Proxy_user_ = utilisateur authentifié pour se connecter au serveur proxy, si une authentification de base est requise.
+** _Proxy_user_ = utilisateur authentifié pour se connecter au serveur proxy, si une authentification de base est requise. L'utilisateur doit être un utilisateur local - les utilisateurs de domaine ne sont pas pris en charge.
 ** _Proxy_password_ = Mot de passe pour le nom d'utilisateur que vous avez spécifié.
 ** _Ca_cert_dir_ = chemin du système de classification BlueXP Linux contenant des bundles de certificats TLS CA supplémentaires. Requis uniquement si le proxy effectue une interception TLS.
 

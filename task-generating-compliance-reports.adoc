@@ -198,7 +198,7 @@ NOTE: La recherche de sujet de données n'est pas prise en charge actuellement d
 Recherchez le nom complet ou l'identifiant connu du sujet de données, puis téléchargez un rapport de liste de fichiers ou un rapport DSAR. Vous pouvez effectuer une recherche par link:reference-private-data-categories.html#types-of-personal-data["tout type d'informations personnelles"^].
 
 
-NOTE: L'anglais, l'allemand et l'espagnol sont pris en charge lors de la recherche de noms de sujets de données. La prise en charge d'autres langues sera ajoutée ultérieurement.
+NOTE: L'anglais, l'allemand, le japonais et l'espagnol sont pris en charge lors de la recherche des noms des sujets de données. La prise en charge d'autres langues sera ajoutée ultérieurement.
 
 .Étapes
 . Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.

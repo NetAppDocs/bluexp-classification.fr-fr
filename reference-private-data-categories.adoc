@@ -43,7 +43,7 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Adresse électronique | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Numéro IBAN (Numéro de compte bancaire international) | Non | ✓ | ✓ | ✓ |  | ✓ 
+| Numéro IBAN (numéro de compte bancaire international) | Non | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Adresse IP | Non | ✓ | ✓ | ✓ |  | ✓ 

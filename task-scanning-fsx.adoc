@@ -117,9 +117,13 @@ Voir <<Activation et désactivation des analyses de conformité sur les volumes,
 .Résultat
 La classification BlueXP démarre l'analyse des volumes sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que les analyses initiales seront terminées par la classification BlueXP. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
 
+[NOTE]
+====
+* Par défaut, si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers de vos volumes. En effet, la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Si vous ne vous souciez pas de réinitialiser l'heure du dernier accès, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*. La page résultante dispose d'un paramètre que vous pouvez activer afin que la classification BlueXP analyse les volumes indépendamment des autorisations.
+* La classification BlueXP analyse un seul partage de fichiers sous un volume. Si vous avez plusieurs partages dans vos volumes, vous devrez analyser ces autres partages séparément en tant que groupe de partages. link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["Pour en savoir plus sur cette limitation de classification BlueXP, consultez"^].
 
-NOTE: Par défaut, si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers de vos volumes. En effet, la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'heure d'origine. Si vous ne vous souciez pas de réinitialiser l'heure du dernier accès, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*. Cette page dispose d'un paramètre que vous pouvez activer afin que la classification BlueXP analyse les volumes indépendamment des autorisations.
 
+====
 
 
 == Vérification de l'accès aux volumes par la classification BlueXP

@@ -21,22 +21,27 @@ La classification BlueXP collecte certaines métadonnées lors d'analyses de cla
 |  | *Métadonnées* | *CIFS* | *NFS* 
 
 
-.3+| *Timbres horaires* | *Heure de création* | Disponibilité | Non disponible (non pris en charge sous Linux) 
+.3+| *Timbres horaires* | _Temps de création_ | Disponibilité | Non disponible (non pris en charge sous Linux) 
 
 
-| *Heure du dernier accès* | Disponibilité | Disponibilité 
+| _Heure du dernier accès_ | Disponibilité | Disponibilité 
 
 
-| *Dernière modification de l'heure* | Disponibilité | Disponibilité 
+| _Heure de la dernière modification_ | Disponibilité | Disponibilité 
 
 
-.2+| *Autorisations* | *Autorisations d'ouverture* | Si le groupe « TOUT LE MONDE » a accès au fichier, il est considéré comme « ouvert à l'entreprise ». | Si les « autres » ont accès au fichier, il est considéré comme « ouvert à l'entreprise ». 
+.2+| *Autorisations* | _Autorisations d'ouverture_ | Si le groupe « TOUT LE MONDE » a accès au fichier, il est considéré comme « ouvert à l'entreprise ». | Si les « autres » ont accès au fichier, il est considéré comme « ouvert à l'entreprise ». 
 
 
-| *Utilisateurs/accès de groupe* | Les informations relatives aux utilisateurs et aux groupes sont extraites du protocole LDAP | Non disponible (les utilisateurs NFS sont généralement gérés localement sur le serveur, par conséquent, la même personne peut avoir un UID différent sur chaque serveur) 
+| _Accès utilisateurs/groupe_ | Les informations relatives aux utilisateurs et aux groupes sont extraites du protocole LDAP | Non disponible (les utilisateurs NFS sont généralement gérés localement sur le serveur, par conséquent, la même personne peut avoir un UID différent sur chaque serveur) 
 |===
-La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données suivantes : SharePoint Online, SharePoint on-pretlocale (SharePoint Server), OneDrive, Google Drive et Amazon S3.
+[NOTE]
+====
+* La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données suivantes : SharePoint Online, SharePoint on-prest (SharePoint Server), OneDrive, Google Drive et Amazon S3.
+* Les versions antérieures du système d'exploitation Windows (par exemple, Windows 7 et Windows 8) désactivent la collection de l'attribut « heure du dernier accès » par défaut car elle peut avoir un impact sur les performances du système. Lorsque cet attribut n'est pas collecté, les analyses de classification BlueXP basées sur « l'heure du dernier accès » sont impactées. Vous pouvez activer la collecte de l'heure du dernier accès sur ces anciens systèmes Windows si nécessaire.
 
+
+====
 
 
 == Horodatage du dernier accès

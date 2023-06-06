@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, data sense, classification, scan shares 
+summary: Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui ne sont pas compatibles avec lui. Examinez attentivement ces limites. 
+---
+= Limites connues
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui ne sont pas compatibles avec lui. Examinez attentivement ces limites.
+
+
+
+== Limites de l'analyse de classification BlueXP
+
+
+
+=== La classification BlueXP analyse un seul partage sous un volume
+
+Si vous avez plusieurs partages de fichiers sous un seul volume, la classification BlueXP analyse le partage avec la hiérarchie la plus élevée. Par exemple, si vous avez des partages comme les suivants :
+
+* /A
+* /A/B.
+* /C
+* /D/E.
+
+
+Les données dans /A seront ensuite analysées. Les données dans /C et /D ne seront pas analysées.
+
+.Solution de contournement
+Il existe une solution pour vous assurer que vous analysez les données de tous les partages de votre volume. Voici la procédure à suivre :
+
+. Dans l'environnement de travail, ajoutez le volume à scanner.
+. Une fois que la classification BlueXP a terminé l'analyse du volume, accédez à la page _Data Investigation_ et créez un filtre pour voir quel partage est en cours d'analyse :
++
+Vous allez filtrer les données par « Nom de l'environnement de travail » et « Type de répertoire = partage » pour voir quel partage est analysé.
+
+. Obtenez la liste complète des partages qui existent dans le volume pour voir quels partages ne sont pas analysés.
+. link:task-scanning-file-shares.html["Ajoutez les partages restants à un groupe de partages"].
++
+Vous devrez ajouter tous les partages individuellement, par exemple :
+
++
+....
+/C
+/D
+....
+. Procédez comme suit pour chaque volume de l'environnement de travail qui a plusieurs partages.
+

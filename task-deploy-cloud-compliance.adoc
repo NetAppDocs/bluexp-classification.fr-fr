@@ -82,9 +82,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 
 == Passer en revue les prérequis
 
-Vérifiez les conditions préalables suivantes afin de vous assurer que votre configuration est prise en charge avant de déployer la classification BlueXP dans le cloud.
+Vérifiez les conditions préalables suivantes afin de vous assurer que votre configuration est prise en charge avant de déployer la classification BlueXP dans le cloud. Lorsque vous déployez la classification BlueXP dans le cloud, elle se trouve dans le même sous-réseau que le connecteur.
 
-Assurez un accès Internet sortant à partir de la classification BlueXP:: La classification BlueXP nécessite un accès Internet sortant. Si votre réseau physique ou virtuel utilise un serveur proxy pour l'accès à Internet, assurez-vous que l'instance de classification BlueXP dispose d'un accès Internet sortant pour contacter les terminaux suivants. Lorsque vous déployez la classification BlueXP dans le cloud, elle se trouve dans le même sous-réseau que le connecteur.
+Assurez un accès Internet sortant à partir de la classification BlueXP:: La classification BlueXP nécessite un accès Internet sortant. Si votre réseau physique ou virtuel utilise un serveur proxy pour l'accès à Internet, assurez-vous que l'instance de classification BlueXP dispose d'un accès Internet sortant pour contacter les terminaux suivants. Le proxy doit être non transparent - nous ne prenons actuellement pas en charge les proxys transparents.
 +
 --
 Consultez le tableau approprié ci-dessous selon que vous déployez ou non la classification BlueXP dans AWS, Azure ou GCP.

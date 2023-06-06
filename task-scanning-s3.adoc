@@ -129,7 +129,7 @@ image:screenshot_s3_compliance_iam_role.png["Capture d'écran d'entrée du rôle
 
 
 
-TIP: Vous pouvez également activer les analyses de conformité pour un environnement de travail à partir de la page Configuration en cliquant sur image:screenshot_gallery_options.gif[""] Et en sélectionnant *Activer la classification BlueXP*.
+TIP: Vous pouvez également activer les analyses de conformité pour un environnement de travail à partir de la page Configuration en cliquant sur image:screenshot_gallery_options.gif["trois points"] Et en sélectionnant *Activer la classification BlueXP*.
 
 .Résultat
 BlueXP affecte le rôle IAM à l'instance.

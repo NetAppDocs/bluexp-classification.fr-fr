@@ -134,9 +134,9 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
 +
-** Red Hat Enterprise Linux versions 8.0 à 8.7
-** CentOS versions 8.0 à 8.7
-** CentOS Stream 8
+** Ubuntu 22.04
+** Red Hat Enterprise Linux versions 8.0 à 8.5
+** CentOS versions 8.0 à 8.5
 ** RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
 
 
@@ -407,8 +407,8 @@ Vous pouvez également link:task-licensing-datasense.html#use-a-bluexp-classific
 Étant donné que le logiciel de classification BlueXP est régulièrement mis à jour avec les nouvelles fonctionnalités, il est conseillé de passer régulièrement en revue les nouvelles versions afin de vérifier que vous utilisez les logiciels et les fonctionnalités les plus récents. Vous devrez mettre à niveau le logiciel de classification BlueXP manuellement, car aucune connexion Internet ne permet d'effectuer la mise à niveau automatiquement.
 
 .Avant de commencer
+* Nous vous recommandons de mettre à niveau votre logiciel BlueXP Connector vers la dernière version disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Reportez-vous aux étapes de mise à niveau du connecteur"^].
 * Le logiciel de classification BlueXP peut être mis à niveau une version majeure à la fois. Par exemple, si la version 1.20.x est installée, vous ne pouvez mettre à niveau que vers la version 1.21.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.
-* Vérifiez que votre logiciel BlueXP Connector a été mis à niveau vers la dernière version disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Reportez-vous aux étapes de mise à niveau du connecteur"^].
 
 
 .Étapes
@@ -418,7 +418,7 @@ Vous pouvez également link:task-licensing-datasense.html#use-a-bluexp-classific
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 Ceci extrait le fichier d'installation *cc_onsite_installer.tar.gz*.
