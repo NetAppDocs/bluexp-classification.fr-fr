@@ -16,6 +16,8 @@ summary: Si nécessaire, vous pouvez empêcher la classification BlueXP de scann
 [role="lead"]
 Si nécessaire, vous pouvez empêcher la classification BlueXP de scanner un ou plusieurs environnements de travail, bases de données, groupes de partage de fichiers, comptes OneDrive, comptes Google Drive, Ou SharePoint.
 
+Le chargement pour l'analyse des données est interrompu lorsque la source de données est supprimée.
+
 
 
 == Désactivation des analyses de conformité pour un environnement de travail

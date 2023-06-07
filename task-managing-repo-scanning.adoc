@@ -67,7 +67,7 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 == Interruption et reprise de la numérisation pour un référentiel
 
-Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Ce n'est pas le même que la désactivation de la numérisation. Lorsque la numérisation est désactivée, toutes les informations et l'indexation relatives à ce volume sont supprimées du système. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système.
+Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Ce n'est pas le même que la désactivation de la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système. La mise en pause de la numérisation n'arrête pas la charge pour analyser les données car celles-ci existent toujours.
 
 Vous pouvez reprendre la numérisation à tout moment.
 

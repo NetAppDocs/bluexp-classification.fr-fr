@@ -111,7 +111,7 @@ Vous pouvez utiliser la page enquête de classification BlueXP pour rechercher l
 
 == Accédez aux fichiers journaux d'audit d'accès aux fichiers
 
-Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine de classification BlueXP dans : `/opt/netapp/file_access_audit_logs/`
+Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine de classification BlueXP dans : `/opt/netapp/fpolicy/logs`
 
 Chaque fichier est configuré par défaut pour contenir un maximum de 50,000 événements. <<Configurer les paramètres du journal d'audit de l'accès aux fichiers,Vous pouvez personnaliser cette valeur dans la page Configuration du journal d'audit de l'accès aux fichiers.>> Une fois ce maximum atteint, les entrées plus anciennes du fichier journal sont écrasées.
 
@@ -153,7 +153,7 @@ image:screenshot_compliance_file_access_audit_config.png["Capture d'écran montr
 | Option Journal d'audit | Description 
 
 
-| Emplacement du fichier journal | L'emplacement est actuellement codé en dur pour écrire les fichiers journaux dans `/opt/netapp/file_access_audit_logs/` 
+| Emplacement du fichier journal | L'emplacement est actuellement codé en dur pour écrire les fichiers journaux dans `/opt/netapp/fpolicy/logs` 
 
 
 | Allocation de stockage maximale pour les journaux d'audit | La taille totale de tous les fichiers journaux du répertoire est actuellement codée en dur sur une valeur par défaut de 50 Go. Lorsque cette limite est atteinte, les fichiers journaux les plus anciens sont automatiquement supprimés. 
