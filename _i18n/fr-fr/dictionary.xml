@@ -2297,11 +2297,8 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur lors de l'exécution du script Prerequisites. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">Vérifiez les besoins de l'hôte</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*Grand*</block>
-  <block id="f73b260a6cb60f48bc6d018192dfb51b" category="cell">500 Gio de SSD sur /, ou - 100 Gio disponible sur /opt - 395 Gio disponible sur /var - 5 Gio sur /tmp</block>
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*Moyen*</block>
-  <block id="63d284249a11c1390977c2b197c85419" category="cell">200 Gio de SSD sur /, ou - 50 Gio disponible sur /opt - 145 Gio disponible sur /var - 5 Gio sur /tmp</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*Petit*</block>
-  <block id="6798decba048766a66cd22d4442d7ec0" category="cell">100 Gio de SSD sur /, ou - 50 Gio disponible sur /opt - 45 Gio disponible sur /var - 5 Gio sur /tmp</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">Consultez la section autres types d'instances AWS</block>
   <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">*Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>.</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">Consultez la section autres types d'instances Azure</block>
@@ -3042,7 +3039,6 @@
   <block id="bfd2c96cae6d29697ceac4feda921426" category="inline-image-macro">Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lorsque vous utilisez plusieurs instances de classification BlueXP déployées sur site avec un accès Internet.</block>
   <block id="b1030a584c34dcb45c3a231937109e48" category="paragraph"><block ref="b1030a584c34dcb45c3a231937109e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0eb32e59a3574faaca63218c3f5922f" category="paragraph">Voir <block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block> et <block ref="2360c56931bf3d2d23fb74a3dc780c78" category="inline-xref-macro-rx"></block> Liste complète des exigences avant de déployer la classification BlueXP.</block>
-  <block id="86bb25ae4391f2558f38a5358121ae0d" category="paragraph">Suivez ces étapes lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">Si le proxy effectue l'interception TLS, vous devez connaître le chemin d'accès au système de classification BlueXP Linux où sont stockés les certificats TLS CA.</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">Vérifiez que votre environnement hors ligne répond aux besoins <block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>.</block>
   <block id="2fdc544d6ce29e3a29dd3b9cb532c792" category="list-text">Téléchargez le logiciel de classification BlueXP depuis le<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>. Le fichier que vous devez sélectionner est nommé *DATASESNSE-INSTALLER-&lt;version&gt;.tar.gz*.</block>
@@ -3390,4 +3386,20 @@
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 a été qualifié comme système d'exploitation pris en charge pour la classification BlueXP. Vous pouvez installer la classification BlueXP sur un hôte Ubuntu Linux de votre réseau ou sur un hôte Linux dans le cloud en utilisant la version 1.23 du programme d'installation.<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>.</block>
   <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">Les fichiers journaux d'audit d'accès aux fichiers se trouvent sur la machine de classification BlueXP dans :<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
   <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">L'emplacement est actuellement codé en dur pour écrire les fichiers journaux dans<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
+  <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500 Gio de SSD sur /, ou
+- 100 Gio disponible sur /opt
+- 395 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp</block>
+  <block id="7c2e343b426a44deea2cb9e6eb69e8af" category="cell">200 Gio de SSD sur /, ou
+- 50 Gio disponible sur /opt
+- 145 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp</block>
+  <block id="a8ec707d3d7dc0af4b9cce44343387b0" category="cell">100 Gio de SSD sur /, ou
+- 50 Gio disponible sur /opt
+- 45 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp</block>
+  <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">Regardez cette vidéo</block>
+  <block id="404a8e21de3fe2bfdd2e77b81889e5cb" category="paragraph"><block ref="21e1c490f7e7bc90ffb6dabbc263e6f2" category="inline-link-rx"></block> Pour une démonstration rapide de l'installation de Docker sur CentOS.</block>
+  <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">Étudiez la configuration requise et suivez les étapes ci-dessous lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.</block>
+  <block id="cf3d087ad95f213d839f606d398101ee" category="paragraph"><block ref="501f73c9c42bcec313b07a4d01108ec0" category="inline-link-rx"></block> Pour voir comment installer la classification BlueXP.</block>
 </blocks>

@@ -95,8 +95,6 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution. La machine de classification BlueXP doit continuer à analyser vos données en continu.
 
 * La classification BlueXP n'est pas prise en charge sur un hôte partagé avec d'autres applications : l'hôte doit être un hôte dédié.
-
-
 * Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système selon la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
 +
 [cols="18,18,26,30"]
@@ -104,13 +102,22 @@ Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution
 | Taille du système | CPU | RAM (la mémoire d'échange doit être désactivée) | Disque 
 
 
-| *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou - 100 Gio disponible sur /opt - 395 Gio disponible sur /var - 5 Gio sur /tmp 
+| *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou
+- 100 Gio disponible sur /opt
+- 395 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp 
 
 
-| *Moyen* | 8 processeurs | 32 GO DE RAM | 200 Gio de SSD sur /, ou - 50 Gio disponible sur /opt - 145 Gio disponible sur /var - 5 Gio sur /tmp 
+| *Moyen* | 8 processeurs | 32 GO DE RAM | 200 Gio de SSD sur /, ou
+- 50 Gio disponible sur /opt
+- 145 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp 
 
 
-| *Petit* | 8 processeurs | 16 GO DE RAM | 100 Gio de SSD sur /, ou - 50 Gio disponible sur /opt - 45 Gio disponible sur /var - 5 Gio sur /tmp 
+| *Petit* | 8 processeurs | 16 GO DE RAM | 100 Gio de SSD sur /, ou
+- 50 Gio disponible sur /opt
+- 45 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp 
 |===
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
@@ -152,6 +159,9 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 * *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 +
 ** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
++
+https://youtu.be/H1WS_-85pWA["Regardez cette vidéo"] Pour une démonstration rapide de l'installation de Docker sur CentOS.
+
 ** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
@@ -293,7 +303,9 @@ NOTE: La classification BlueXP est actuellement incapable d'analyser les compart
 
 === Installation à un seul hôte pour les configurations courantes
 
-Suivez ces étapes lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.
+Étudiez la configuration requise et suivez les étapes ci-dessous lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.
+
+https://youtu.be/gE-vrBLSJqw["Regardez cette vidéo"] Pour voir comment installer la classification BlueXP.
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
