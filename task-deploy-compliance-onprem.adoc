@@ -343,7 +343,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran de sélect
 . La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie (par exemple : `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) et collez-le dans un fichier texte pour pouvoir l'utiliser ultérieurement. Cliquez ensuite sur *Fermer* pour fermer la boîte de dialogue.
 . Sur la machine hôte, entrez la commande que vous avez copiée, puis suivez une série d'invites, ou vous pouvez fournir la commande complète incluant tous les paramètres requis comme arguments de ligne de commande.
 +
-Notez que le programme d'installation effectue une pré-vérification afin de s'assurer que vos exigences système et réseau sont en place pour une installation réussie.
+Notez que le programme d'installation effectue une pré-vérification afin de s'assurer que vos exigences système et réseau sont en place pour une installation réussie. https://youtu.be/UZtn_I0e1Ls["Regardez cette vidéo"] pour comprendre les messages de pré-vérification et les implications.
 
 +
 [cols="50a,50"]

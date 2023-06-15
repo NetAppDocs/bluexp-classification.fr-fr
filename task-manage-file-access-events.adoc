@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l"un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d"audit de l"accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.' 
+summary: 'Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l"un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier journal (le journal d"audit de l"accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.' 
 ---
 = Contrôlez et gérez les événements d'accès aux fichiers
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 'Vous pouvez configurer la classification BlueXP pour consigner les év
 
 
 [role="lead"]
-Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l'un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier (le journal d'audit de l'accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.
+Vous pouvez configurer la classification BlueXP pour consigner les événements dans un fichier chaque fois que l'un des fichiers que vous analysez a été accédé ou modifié. Vous pouvez ensuite afficher le contenu de ce fichier journal (le journal d'audit de l'accès aux fichiers) ou le télécharger pour voir les modifications de fichier qui ont eu lieu et par qui.
 
 Par exemple, si vous souhaitez suivre les modifications apportées à vos fichiers personnels sensibles ou aux fichiers de paie, vous pouvez activer cette fonction sur les volumes où résident ces fichiers. Vous pouvez ensuite afficher le journal d'audit de l'accès aux fichiers pour voir si ces fichiers ont été modifiés. S'ils ont été modifiés, vous pourrez voir l'identifiant de sécurité (SID) de la personne qui a effectué la modification et la date à laquelle la modification a été effectuée.
 
-Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail qui exécutent le logiciel ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP.
+Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail qui exécutent le logiciel ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP. La classification BlueXP peut traiter environ 990 événements par seconde dans ONTAP.
 
 La classification BlueXP capture actuellement les événements pour les actions suivantes sur vos fichiers et répertoires :
 
@@ -52,9 +52,6 @@ Les sources de données doivent exécuter le logiciel ONTAP version 9.11 ou ult�
 == Configurez les volumes pour la journalisation des audits d'accès aux fichiers
 
 Vous pouvez activer la journalisation d'audit d'accès aux fichiers sur des volumes individuels pour suivre les modifications apportées aux fichiers et aux répertoires.
-
-
-TIP: À ce stade, vous pouvez configurer l'audit de l'accès aux fichiers sur un maximum de 5 volumes sur chaque source de données.
 
 .Avant de commencer
 * Vous devez avoir configuré Active Directory pour les sources de données afin que la classification BlueXP puisse lister l'ID de la personne ayant accédé aux fichiers.
