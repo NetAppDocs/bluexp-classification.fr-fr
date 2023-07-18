@@ -104,10 +104,10 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 * *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
 +
-** Ubuntu 22.04
-** Red Hat Enterprise Linux versions 8.0 à 8.5
-** CentOS versions 8.0 à 8.5
-** RHEL ou CentOS version 7.8 ou 7.9 peut être utilisé, mais la version du noyau Linux doit être 4.0 ou supérieure
+** Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
+** CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
+** Rocky Linux 9 (requiert la classification BlueXP version 1.24 et supérieure)
+** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 
 * *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.

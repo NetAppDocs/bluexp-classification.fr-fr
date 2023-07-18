@@ -16,6 +16,8 @@ summary: Procédez en quelques étapes pour commencer à analyser vos schémas d
 [role="lead"]
 Procédez en quelques étapes pour commencer à analyser vos schémas de base de données avec la classification BlueXP.
 
+Notez qu'après avoir activé l'analyse des bases de données, vous pouvez ajouter des identifiants uniques identifiés par la classification BlueXP dans toutes vos sources de données en fonction de colonnes spécifiques de vos bases de données. Il s'agit de la fonction _Data Fusion_. link:task-managing-data-fusion.html#add-custom-personal-data-identifiers-from-your-databases["Apprenez à ajouter des identifiants de données personnelles personnalisés à partir de vos bases de données"^].
+
 
 
 == Démarrage rapide

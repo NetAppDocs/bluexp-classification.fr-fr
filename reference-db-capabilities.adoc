@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reference-db-capabilities.html 
+keywords: database actions, database filters, supported, unsupported 
+summary: Certaines fonctionnalités ne sont pas disponibles avec la classification BlueXP lorsque vous analysez des schémas de base de données. 
+---
+= Capacités de base de données prises en charge et non prises en charge
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Certaines fonctionnalités ne sont pas disponibles avec la classification BlueXP lorsque vous analysez des schémas de base de données. Voir la liste ci-dessous.
+
+Vous pouvez ajouter vos schémas de base de données à la classification BlueXP pour les analyser link:task-scanning-databases.html["comme décrit ici"^].
+
+[cols="12,25,9,9,9,9,9,9,9"]
+|===
+| Type | Description | MongoDB | SQL Server | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
+
+
+.9+| Actions | Création de la règle | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Balise | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Attribuer à | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Exporter les données | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Renumériser | x | x | x | x | x | x | x 
+
+
+| Supprimer | x | x | x | x | x | x | x 
+
+
+| Déplacer | x | x | x | x | x | x | x 
+
+
+| Copier | x | x | x | x | x | x | x 
+
+
+| Étiquette | x | x | x | x | x | x | x 
+
+
+.25+| Filtres | Stratégies | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| État de l'analyse d'acquisition | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Type d'environnement de travail | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Environnement de travail | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Référentiel de stockage | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Niveau de sensibilité | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Données personnelles sensibles | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Catégories | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Données personnelles | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Sujet des données | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Type de fichier | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Taille du fichier | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Heure découverte | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Étiquettes | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Attribuer à | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Événement d'analyse d'acquisition | x | x | x | x | x | x | x 
+
+
+| Chemin du fichier/répertoire | x | x | x | x | x | x | x 
+
+
+| Filtres d'autorisations | x | x | x | x | x | x | x 
+
+
+| Étiquette | x | x | x | x | x | x | x 
+
+
+| Nombre d'identificateurs | x | x | x | x | x | x | x 
+
+
+| Type de répertoire | x | x | x | x | x | x | x 
+
+
+| Heure de création | x | x | x | x | x | x | x 
+
+
+| Dernière modification | x | x | x | x | x | x | x 
+
+
+| Dernier accès | x | x | x | x | x | x | x 
+
+
+| Doublons | x | x | x | x | x | x | x 
+|===

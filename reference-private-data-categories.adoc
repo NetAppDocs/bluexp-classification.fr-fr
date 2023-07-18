@@ -52,7 +52,7 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 | Mot de passe | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.54+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
+.57+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Permis de conduire australien | Oui. | ✓ | ✓ | ✓ |  |  
@@ -119,6 +119,15 @@ Notez que vous pouvez ajouter à la liste des données personnelles qui se trouv
 
 
 | Numéro d'identification fiscale (SPI) | Oui. | ✓ | ✓ | ✓ | ✓ |  
+
+
+| ID allemand (Personalausweisnummer) | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| ID interne allemand pour les transferts bancaires | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Numéro de sécurité sociale allemand (Sozialversicherungsnummer) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Numéro d'identification fiscale allemand (identifiant Steierliche) | Oui. | ✓ | ✓ | ✓ |  |  

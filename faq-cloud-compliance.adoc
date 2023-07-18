@@ -251,7 +251,7 @@ La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi
 
 === Y a-t-il des restrictions lorsqu'elles sont déployées dans une région gouvernementale?
 
-La classification BlueXP est prise en charge lorsque le connecteur est déployé dans une région gouvernementale (AWS GovCloud, Azure Gov ou Azure DoD). Lorsqu'il est déployé de cette manière, la classification BlueXP présente les restrictions suivantes :
+La classification BlueXP est prise en charge lorsque le connecteur est déployé dans une région gouvernementale (AWS GovCloud, Azure Gov ou Azure DoD), également appelée « mode restreint ». Lorsqu'il est déployé de cette manière, la classification BlueXP présente les restrictions suivantes :
 
 * Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.
 * Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
@@ -261,7 +261,7 @@ La classification BlueXP est prise en charge lorsque le connecteur est déployé
 
 === Quelles sources de données puis-je analyser si j'installe la classification BlueXP dans un site sans accès à Internet ?
 
-La classification BlueXP ne peut analyser les données qu'à partir de sources de données locales. À ce stade, la classification BlueXP peut analyser les sources de données locales suivantes sur un site « invisible » :
+La classification BlueXP ne peut analyser les données qu'à partir de sources de données locales. À ce stade, la classification BlueXP peut analyser les sources de données locales suivantes en « mode privé », également appelé site « invisible » :
 
 * Systèmes ONTAP sur site
 * Schémas de base de données
@@ -360,7 +360,7 @@ Oui. C'est possible https://docs.netapp.com/us-en/bluexp-setup-admin/task-instal
 
 === Qu'en est-il des sites sécurisés sans accès à Internet ?
 
-Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.
+Oui, cela est également pris en charge. C'est possible https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Déployez le connecteur sur un hôte Linux sur site qui ne dispose pas d'un accès Internet"^]. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Il s'agit également du « mode privé »"^]. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.
 
 
 
