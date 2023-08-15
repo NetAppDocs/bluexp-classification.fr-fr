@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: 'Vous pouvez gérer les données en cours d"analyse dans chacun de vos environnements de travail et de vos sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.' 
+summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.' 
 ---
-= Modification des paramètres de numérisation de vos référentiels
+= Modifiez les paramètres de numérisation de vos référentiels
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Vous pouvez gérer les données en cours d"analyse dans chacun de vos 
 
 
 [role="lead"]
-Vous pouvez gérer les données en cours d'analyse dans chacun de vos environnements de travail et de vos sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.
+Vous pouvez gérer le mode d'analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.
 
 Vous pouvez modifier le type d'analyse d'un référentiel et déterminer si celui-ci exécute une link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["acquisition de mappage ou cartographie etamp ; acquisition de classification"]. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.
 
@@ -51,7 +51,7 @@ TIP: Les bases de données ne peuvent pas être définies pour des analyses de m
 +
 image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
 
-. Dans la page Configuration de l'acquisition, vous pouvez modifier n'importe quel référentiel (compartiments dans cet exemple) pour effectuer des acquisitions *Map* ou *Map & Classify*, ou sélectionner *Off* pour arrêter la numérisation pour un compartiment particulier.
+. Dans la page Configuration de l'analyse, vous pouvez modifier n'importe lequel des référentiels (rubriques dans cet exemple) pour effectuer des analyses *Map* ou *Map & Classify*.
 +
 image:screenshot_compliance_repo_scanning.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
 
@@ -65,9 +65,26 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 
 
+== Arrêt de l'analyse d'un référentiel
+
+Vous pouvez arrêter l'analyse d'un référentiel (par exemple, un volume) si vous n'avez plus besoin de le surveiller pour vérifier sa conformité. Pour ce faire, désactivez la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu.
+
+.Étapes
+. Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
++
+image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
+
+. Dans la page Configuration de l'acquisition, sélectionnez *Désactivé* pour arrêter l'analyse d'un compartiment particulier.
++
+image:screenshot_compliance_stop_repo_scanning.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
+
+
+
+
+
 == Interruption et reprise de la numérisation pour un référentiel
 
-Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Ce n'est pas le même que la désactivation de la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système. La mise en pause de la numérisation n'arrête pas la charge pour analyser les données car celles-ci existent toujours.
+Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système. La mise en pause de la numérisation ne cesse pas de charger les données scannées car elles existent toujours.
 
 Vous pouvez reprendre la numérisation à tout moment.
 
