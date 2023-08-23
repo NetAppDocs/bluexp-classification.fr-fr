@@ -279,9 +279,16 @@ TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette pag
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Vous pouvez enregistrer le rapport sur la machine locale en tant que fichier .CSV (qui peut inclure jusqu'à 5,000 lignes de données), ou en tant que fichier .JSON que vous exportez vers un partage NFS (qui peut inclure un nombre illimité de lignes). Si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) ou des bases de données (données structurées), il peut y avoir jusqu'à trois fichiers de rapport téléchargés.
+Vous pouvez enregistrer le rapport dans deux formats différents :
 
+* En tant que fichier .CSV vers la machine locale, qui peut inclure jusqu'à 5,000 lignes de données.
+* En tant que fichier .JSON que vous exportez vers un partage NFS, qui peut inclure jusqu'à 100,000 lignes de données. S'il y a plus de 100,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
++
 Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
+
+
+
+Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).
 
 
 
@@ -291,10 +298,10 @@ Lors de l'exportation vers un partage de fichiers, assurez-vous que la classific
 . Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
 . Indiquez si vous souhaitez télécharger un rapport .CSV ou .JSON de données, puis cliquez sur *Télécharger le rapport*.
 +
-image:screenshot_compliance_investigation_report.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
+Lors de la sélection d'un rapport .JSON, entrez le nom du partage NFS dans lequel le rapport sera téléchargé au format `<host_name>:/<share_path>`.
 
 +
-Lors de la sélection d'un rapport .JSON, entrez le nom du partage NFS dans lequel le rapport sera téléchargé au format `<host_name>:/<share_path>`.
+image:screenshot_compliance_investigation_report.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
 
 
 

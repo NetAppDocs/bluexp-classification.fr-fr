@@ -55,11 +55,12 @@ Notez que la classification BlueXP ne peut pas extraire les autorisations, ni l'
 ** Pour CIFS – ports 139 et 445.
 
 
-* Vous aurez besoin de la liste des partages que vous souhaitez ajouter au format `<host_name>:/<share_path>`. Vous pouvez entrer les partages individuellement ou fournir une liste séparée par des lignes des partages de fichiers que vous souhaitez scanner.
+* Vous pouvez ajouter un partage DFS (Distributed File System) en tant que partage CIFS standard. Cependant, la classification BlueXP n'ayant pas connaissance du fait que le partage repose sur plusieurs serveurs/volumes combinés en tant que partage CIFS unique, vous pouvez recevoir des erreurs d'autorisation ou de connectivité sur le partage lorsque le message ne s'applique qu'à l'un des dossiers/partages situés sur un autre serveur/volume.
 * Pour les partages CIFS (SMB), assurez-vous que vous disposez des identifiants Active Directory qui fournissent un accès en lecture aux partages. Les identifiants d'administration sont préférés si la classification BlueXP doit analyser les données nécessitant des autorisations élevées.
 +
 Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations d'écriture d'attributs dans CIFS ou d'autorisations d'écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
 
+* Vous aurez besoin de la liste des partages que vous souhaitez ajouter au format `<host_name>:/<share_path>`. Vous pouvez entrer les partages individuellement ou fournir une liste séparée par des lignes des partages de fichiers que vous souhaitez scanner.
 
 
 
