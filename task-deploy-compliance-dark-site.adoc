@@ -202,7 +202,9 @@ Vous devez vous assurer que tous les ports requis sont ouverts pour la communica
 | Type de connexion | Ports | Description 
 
 
-| Classification de Connector <> BlueXP | 8080 (TCP), 443 (TCP) et 80 | Le groupe de sécurité du connecteur doit autoriser le trafic entrant et sortant sur le port 443 vers et depuis l'instance de classification BlueXP. Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. 
+| Classification de Connector <> BlueXP | 8080 (TCP), 6000 (TCP), 443 (TCP) ET 80 | Le groupe de sécurité du connecteur doit autoriser le trafic entrant et sortant sur les ports 6000 et 443 vers et depuis l'instance de classification BlueXP.
+
+Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. 
 
 
 | Connecteur <> cluster ONTAP (NAS) | 443 (TCP)  a| 
