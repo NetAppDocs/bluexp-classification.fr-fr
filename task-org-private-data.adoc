@@ -226,8 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["Capture d'écran indiquant comm
 +
 ** Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (image:button_backup_1_volume.png[""]).
 ** Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]).
+** Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (image:button_select_all_files.png[""]), puis dans le message contextuel image:screenshot_select_all_items.png[""], Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.
 +
-À ce stade, vous pouvez appliquer des balises à un maximum de 20 fichiers à la fois - une page dans la page des résultats de l'enquête de données.
+Vous pouvez appliquer des balises à un maximum de 100,000 fichiers à la fois.
 
 
 

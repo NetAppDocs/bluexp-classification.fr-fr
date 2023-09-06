@@ -248,6 +248,8 @@ En outre, Vous pouvez cliquer sur le nom d'un utilisateur ou d'un groupe et la p
 
 Vous pouvez afficher si des fichiers dupliqués sont stockés dans vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il peut également être utile de s'assurer que certains fichiers possédant des autorisations spécifiques ou des informations sensibles ne sont pas inutilement dupliqués dans vos systèmes de stockage.
 
+Tous vos fichiers (à l'exception des bases de données) de 1 Mo ou plus, contenant des informations personnelles ou sensibles, sont comparés pour voir s'il y a des doublons. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine plage de tailles sont dupliqués dans votre environnement.
+
 La classification BlueXP utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
 
 Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#deleting-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
@@ -258,7 +260,7 @@ Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à vot
 
 Si vous voulez une liste de tous les fichiers dupliqués dans les environnements de travail et les sources de données que vous scannez, vous pouvez utiliser le filtre *Duplicates > a des doublons* dans la page recherche de données.
 
-Tous les fichiers avec des doublons de tous les types de fichiers (sans les bases de données), d'une taille minimale de 50 Mo et/ou contenant des informations personnelles ou sensibles, s'affichent dans la page Résultats.
+Tous les fichiers dupliqués sont affichés dans la page Résultats.
 
 
 

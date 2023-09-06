@@ -116,6 +116,13 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 +
 Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
+* Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
++
+** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
+** *Taille de VM Azure*: Nous recommandons "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["Consultez la section autres types d'instances Azure"^].
+** *Type de machine GCP*: Nous recommandons "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["Voir autres types d'instances GCP"^].
+
+
 * *Autorisations de dossier UNIX* : les autorisations UNIX minimales suivantes sont requises :
 +
 [cols="25,25"]
@@ -134,29 +141,32 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 
 | /user/lib/systemd/system | `rwxr-xr-x` 
 |===
-* Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
+* *Système d'exploitation* :
 +
-** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
-** *Taille de VM Azure*: Nous recommandons "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["Consultez la section autres types d'instances Azure"^].
-** *Type de machine GCP*: Nous recommandons "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["Voir autres types d'instances GCP"^].
+** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de mise en conteneurs Docker :
++
+*** Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
+*** CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
+*** Rocky Linux 9 (requiert la classification BlueXP version 1.24 ou supérieure)
+*** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 
-* *Système d'exploitation* : le système d'exploitation doit être capable d'installer le moteur docker.
-+
-** Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
-** CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
-** Rocky Linux 9 (requiert la classification BlueXP version 1.24 et supérieure)
-** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
+
+
 
 
 * *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.
 * *Logiciels supplémentaires* : vous devez installer les logiciels suivants sur l'hôte avant d'installer la classification BlueXP :
 +
-** Docker Engine version 19.3.1 ou ultérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
+** En fonction du système d'exploitation que vous utilisez, vous devrez installer l'un des moteurs de mise en conteneurs :
++
+*** Docker Engine version 19.3.1 ou supérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
 +
 https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
 
-** Python 3 version 3.6 ou ultérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
+
+
+** Python version 3.6 ou supérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
 * *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
@@ -270,7 +280,7 @@ Notez que toutes les activités d'installation sont consignées lors de l'instal
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifiez que vous avez installé les deux modules de prérequis logiciels (Docker Engine et Python 3).
+* Vérifiez que vous avez installé les deux logiciels prérequis (Docker Engine et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur le système Linux.
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Vérifiez les conditions préalables à la classification BlueXP et BlueXP,autorisations et connectivité>>.
 
@@ -282,7 +292,7 @@ Notez que toutes les activités d'installation sont consignées lors de l'instal
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.22.0.tar.gz
+tar -xzf DataSense-offline-bundle-v1.25.0.tar.gz
 ----
 +
 Ceci extrait le logiciel requis et le fichier d'installation réel *cc_onsite_installer.tar.gz*.
@@ -355,7 +365,7 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 
 .Ce dont vous avez besoin
 * Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifiez que vous avez installé les deux modules de prérequis logiciels (Docker Engine et Python 3).
+* Vérifiez que vous avez installé les deux logiciels prérequis (Docker Engine et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Vérifiez les conditions préalables à la classification BlueXP et BlueXP,autorisations et connectivité>>.
 * Vous devez disposer des adresses IP des hôtes du nœud de scanner que vous prévoyez d'utiliser.
@@ -437,7 +447,7 @@ Si votre logiciel de classification BlueXP exécute une version antérieure à 1
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.23.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.25.0.tar.gz
 ----
 +
 Ceci extrait le fichier d'installation *cc_onsite_installer.tar.gz*.
