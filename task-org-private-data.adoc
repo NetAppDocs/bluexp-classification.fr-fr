@@ -125,7 +125,7 @@ Le libellé apparaît dans les métadonnées du fichier.
 
 
 
-Pour attribuer un libellé AIP à plusieurs fichiers :
+Procédez comme suit pour attribuer une étiquette d'AIP à plusieurs fichiers. Notez que vous pouvez attribuer une étiquette AIP à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).
 
 .Étapes
 . Dans le volet Résultats de l'enquête de données, sélectionnez le ou les fichiers que vous souhaitez étiqueter.
@@ -269,7 +269,7 @@ Notez que le nom d'utilisateur n'est pas ajouté au fichier dans le cadre des m�
 
 Un nouveau filtre dans la page Investigation vous permet d'afficher facilement tous les fichiers qui ont la même personne dans le champ « assigné à ».
 
-Pour affecter un utilisateur à un seul fichier :
+Procédez comme suit pour attribuer un utilisateur à un seul fichier.
 
 .Étapes
 . Dans le volet Résultats de l'enquête de données, cliquez sur image:button_down_caret.png["le bas-caret"] pour que le fichier développe les détails des métadonnées du fichier.
@@ -282,7 +282,7 @@ Le nom d'utilisateur apparaît dans les métadonnées de fichier.
 
 
 
-Pour affecter un utilisateur à plusieurs fichiers :
+Procédez comme suit pour attribuer un utilisateur à plusieurs fichiers. Notez que vous pouvez affecter un utilisateur à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).
 
 .Étapes
 . Dans le volet Résultats de l'enquête de données, sélectionnez le ou les fichiers que vous souhaitez attribuer à un utilisateur.
