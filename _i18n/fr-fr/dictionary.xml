@@ -2208,8 +2208,6 @@
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link-macro">Voir les types d'instances et les limites disponibles</block>
   <block id="7df445bf0c34cf36a966141745590030" category="open-title">Déploiement dans AWS</block>
   <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">Sur la page _installation_, cliquez sur *déployer &gt; déployer* pour utiliser la taille d'instance « grande » et lancer l'assistant de déploiement cloud.</block>
-  <block id="479b6b65ac792693f50797fe579cc223" category="paragraph">Vous pouvez également cliquer sur *déployer &gt; Configuration* pour choisir parmi deux types d'instances plus petits si vous n'avez pas beaucoup de données à analyser. Cela permet de réduire les coûts du cloud si une instance de plus petite taille est utilisée. Une taille de ressource « moyenne » est indiquée ci-dessous.</block>
-  <block id="71cdc5961cdeced45790d6b0eddda4af" category="paragraph">Cliquez ensuite sur *Deploy* pour lancer l'assistant de déploiement du cloud.</block>
   <block id="125c9895b0de4086b75bd6de17240096" category="list-text">L'assistant affiche la progression au fur et à mesure des étapes de déploiement. Il s'arrête et vous invite à entrer s'il est en cours de problème.</block>
   <block id="699be6723175322ef727a933c7b42bbd" category="open-title">Déploiement dans Azure</block>
   <block id="12714d8579e39a7357fefed194511b8a" category="open-title">Déploiement dans Google Cloud</block>
@@ -2566,9 +2564,6 @@
   <block id="d33aba60d91a201fe7b4bce522f9deb7" category="inline-image-macro">Capture d'écran de sélection du bouton pour activer la classification BlueXP.</block>
   <block id="c48b9bad2a3a25d6dad223ab11c5a33e" category="paragraph"><block ref="c48b9bad2a3a25d6dad223ab11c5a33e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="473b6ff5a1c62a3a028f4dc37b9cbd6c" category="inline-image-macro">Capture d'écran de sélection du bouton pour déployer la classification BlueXP dans le cloud.</block>
-  <block id="3da6cac2700be9c7ac98eca813973ea5" category="paragraph"><block ref="3da6cac2700be9c7ac98eca813973ea5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac4153eee3b95ba06c1d210eaf07d1a5" category="inline-image-macro">Capture d'écran de la page de déploiement pour choisir la taille de l'instance sur laquelle la classification BlueXP sera déployée.</block>
-  <block id="eaa6152e0a0616ae6e971e06d3710c49" category="paragraph"><block ref="eaa6152e0a0616ae6e971e06d3710c49" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccd3462f51e144ba54924a76ff58ce8" category="inline-image-macro">Capture d'écran de l'assistant de classification BlueXP pour déployer une nouvelle instance.</block>
   <block id="f7b6e8ebd5557b7030e15d04046f60e7" category="paragraph"><block ref="f7b6e8ebd5557b7030e15d04046f60e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bdfca0a21ad4ec182fb0ff0fe7b8bc6b" category="list-text">Une fois l'instance déployée et la classification BlueXP installée, cliquez sur *Continuer à la configuration* pour accéder à la page _Configuration_.</block>
@@ -3348,9 +3343,6 @@
   <block id="26d411dfdee47762b69f79244d61895e" category="paragraph">Oui, cela est également pris en charge. C'est possible<block ref="1c270efcf36a8d1c2de58c1ed2ed7315" category="inline-link-rx"></block>.<block ref="93d53de7d74c2549b2ebf074270b753f" category="inline-link-rx"></block>. Vous pourrez ensuite détecter les clusters ONTAP sur site et d'autres sources de données locales, puis analyser les données à l'aide de la classification BlueXP.</block>
   <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">17 juillet 2023 (version 1.24)</block>
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">Deux nouveaux types de données personnelles allemandes sont identifiés par la classification BlueXP</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9 est désormais une distribution Linux prise en charge sur laquelle vous pouvez installer la classification BlueXP</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Découvrez comment installer la classification BlueXP sur un hôte avec Rocky Linux installé</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9 (9.0, 9.1 et 9.2) a été qualifié en tant que système d'exploitation pris en charge pour la classification BlueXP. Vous pouvez installer la classification BlueXP sur un hôte Rocky Linux de votre réseau ou sur un hôte Linux dans le cloud en utilisant la version 1.24 du programme d'installation.<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>.</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">La classification BlueXP est entièrement prise en charge en mode restreint et en mode privé</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">En savoir plus sur les modes de déploiement BlueXP pour Connector</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">La classification BlueXP est désormais entièrement prise en charge sur les sites sans accès Internet (mode privé) et avec un accès Internet sortant limité (mode restreint).<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
@@ -3447,7 +3439,6 @@
 Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP.</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">*Système d'exploitation* :</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de mise en conteneurs Docker :</block>
-  <block id="93dd08da8a4c0d472e885570798d74ab" category="list-text">Rocky Linux 9 (requiert la classification BlueXP version 1.24 ou supérieure)</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)</block>
   <block id="2a2958e5280a05650587dc8d454a5f8d" category="list-text">En fonction du système d'exploitation que vous utilisez, vous devrez installer l'un des moteurs de mise en conteneurs :</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engine version 19.3.1 ou supérieure.<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>.</block>
@@ -3464,7 +3455,6 @@ Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installat
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 septembre (version 1.25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Découvrez comment</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identifiez les fichiers dupliqués avec une taille de fichier minimale de 1 Mo</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Classification BlueXP utilisée pour identifier les fichiers dupliqués uniquement lorsque les fichiers étaient de 50 Mo ou plus. Désormais, les fichiers dupliqués commençant par 1 Mo peuvent être identifiés. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine taille sont dupliqués dans votre environnement.</block>
   <block id="a0b0397888c391cefadbe3fa028a49bc" category="list-text">Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>), puis dans le message contextuel <block ref="6d073c59586864da957e4fe8e0338e10" category="inline-image-macro-rx" type="image"></block>, Cliquez sur *Sélectionner tous les éléments de la liste (xxx items)*.</block>
@@ -3473,4 +3463,7 @@ Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installat
   <block id="6558368ee6073deea643cc8c934764fc" category="paragraph">Procédez comme suit pour attribuer une étiquette d'AIP à plusieurs fichiers. Notez que vous pouvez attribuer une étiquette AIP à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).</block>
   <block id="734926fafb1271c111d9404b81a2a40f" category="paragraph">Procédez comme suit pour attribuer un utilisateur à un seul fichier.</block>
   <block id="7cb00932323e74919350bd2ce54bb9db" category="paragraph">Procédez comme suit pour attribuer un utilisateur à plusieurs fichiers. Notez que vous pouvez affecter un utilisateur à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).</block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Petits et moyens déploiements temporairement indisponibles</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Lorsque vous déployez une instance de classification BlueXP dans AWS, l'option de sélectionner *Deploy &gt; Configuration* et de choisir une instance de petite ou moyenne taille n'est pas disponible pour le moment. Vous pouvez toujours déployer l'instance à l'aide de la grande taille d'instance en sélectionnant *déployer &gt; déployer*.</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
 </blocks>

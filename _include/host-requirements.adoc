@@ -61,7 +61,6 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 +
 *** Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
 *** CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
-*** Rocky Linux 9 (requiert la classification BlueXP version 1.24 ou supérieure)
 *** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 

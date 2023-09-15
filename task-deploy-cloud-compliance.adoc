@@ -204,19 +204,7 @@ Notez que lors du déploiement de la classification BlueXP à partir d'un connec
 image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
 
 . Cliquez sur *Activer détection de données*.
-+
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["Capture d'écran de sélection du bouton pour déployer la classification BlueXP dans le cloud."]
-
 . Sur la page _installation_, cliquez sur *déployer > déployer* pour utiliser la taille d'instance « grande » et lancer l'assistant de déploiement cloud.
-+
-Vous pouvez également cliquer sur *déployer > Configuration* pour choisir parmi deux types d'instances plus petits si vous n'avez pas beaucoup de données à analyser. Cela permet de réduire les coûts du cloud si une instance de plus petite taille est utilisée. Une taille de ressource « moyenne » est indiquée ci-dessous.
-
-+
-Cliquez ensuite sur *Deploy* pour lancer l'assistant de déploiement du cloud.
-
-+
-image:screenshot_cloud_deploy_resource_size.png["Capture d'écran de la page de déploiement pour choisir la taille de l'instance sur laquelle la classification BlueXP sera déployée."]
-
 . L'assistant affiche la progression au fur et à mesure des étapes de déploiement. Il s'arrête et vous invite à entrer s'il est en cours de problème.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Capture d'écran de l'assistant de classification BlueXP pour déployer une nouvelle instance."]
