@@ -205,11 +205,11 @@ Notez que certaines des opérations habituelles de copie et de synchronisation B
 
 == Déplacement des fichiers source vers un partage NFS
 
-Vous pouvez déplacer les fichiers source numérisés par la classification BlueXP vers n'importe quel partage NFS. Le partage NFS n'a pas besoin d'être intégré à la classification BlueXP (voir link:task-scanning-file-shares.html["Analyse des partages de fichiers"]).
+Vous pouvez déplacer les fichiers source numérisés par la classification BlueXP vers n'importe quel partage NFS. Le partage NFS n'a pas besoin d'être intégré à la classification BlueXP.
 
 Vous pouvez également laisser un fichier de navigation à l'emplacement du fichier déplacé. Un fichier de navigation permet à vos utilisateurs de comprendre pourquoi un fichier a été déplacé de son emplacement d'origine. Pour chaque fichier déplacé, le système crée un fichier de navigation à l'emplacement source nommé `<filename>-breadcrumb-<date>.txt`. Vous pouvez ajouter du texte dans la boîte de dialogue qui sera ajoutée au fichier de navigation pour indiquer l'emplacement où le fichier a été déplacé et l'utilisateur qui a déplacé le fichier.
 
-Si un fichier du même nom existe dans l'emplacement de destination, le fichier ne sera pas déplacé.
+Notez que la structure de sous-répertoires du fichier source est recréée sur le partage de destination lorsque le fichier est déplacé, de sorte qu'il est plus facile de comprendre l'emplacement d'où le fichier a été déplacé. Si un fichier du même nom existe dans l'emplacement de destination, le fichier ne sera pas déplacé.
 
 
 TIP: Vous ne pouvez pas déplacer les fichiers qui résident dans les bases de données.

@@ -16,7 +16,7 @@ summary: 'Lorsque vous exécutez une action à partir du volet Résultats de l"e
 [role="lead"]
 Lorsque vous exécutez une action asynchrone à partir du volet Résultats de l'enquête sur de nombreux fichiers, par exemple le déplacement ou la suppression de 100 fichiers, le processus peut prendre un certain temps. Vous pouvez contrôler l'état de ces actions dans le volet _action Status_ pour savoir quand elles ont été appliquées à tous les fichiers.
 
-Cela vous permet de voir les actions effectuées avec succès, celles en cours et celles qui ont échoué pour diagnostiquer et résoudre tout problème.
+Cela vous permet de voir les actions effectuées avec succès, celles en cours et celles qui ont échoué pour diagnostiquer et résoudre tout problème. Notez que les courtes opérations qui se sont terminées rapidement, telles que le déplacement d'un seul fichier, n'apparaissent pas dans le volet Statut des actions.
 
 Le statut peut être :
 
