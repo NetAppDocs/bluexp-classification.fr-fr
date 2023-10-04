@@ -18,6 +18,24 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 4 octobre (version 1.26)
+
+
+
+=== Prise en charge des installations sur site à l'aide de RHEL version 9
+
+Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le moteur Docker, requis pour l'installation de la classification BlueXP. Nous prenons désormais en charge l'installation sur RHEL 9.0, 9.1 et 9.2 en utilisant Podman version 4 ou ultérieure comme infrastructure de conteneurs. Si votre environnement requiert l'utilisation des dernières versions de RHEL, vous pouvez désormais installer la classification BlueXP (version 1.26 ou supérieure) lorsque vous utilisez Podman.
+
+Pour l'instant, nous ne prenons pas en charge les installations de sites invisibles ou les environnements de numérisation distribués (à l'aide de nœuds de scanner principaux et distants).
+
+
+
+=== Les résultats de la page d'enquête affichent désormais la taille totale en plus du nombre total d'éléments
+
+Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.
+
+
+
 == 5 septembre (version 1.25)
 
 

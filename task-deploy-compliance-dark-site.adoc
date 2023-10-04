@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification 
 summary: 'Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux dans un site sur site qui ne dispose pas d"un accès Internet, également appelé « mode privé ». Ce type d"installation est parfait pour vos sites sécurisés.' 
 ---
 = Installez la classification BlueXP sur un hôte sans accès Internet
@@ -150,6 +150,17 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 *** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 
+** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.26 ou supérieure :
++
+*** Red Hat Enterprise Linux version 9.0, 9.1 et 9.2
++
+Notez que les fonctionnalités suivantes ne sont pas prises en charge actuellement avec RHEL 9.x :
+
++
+**** Installation dans un site sombre
+**** Numérisation distribuée ; utilisation d'un nœud de scanner maître et de nœuds de scanner distants
+
+
 
 
 
@@ -163,6 +174,7 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 +
 https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
 
+*** Podman version 4 ou supérieure. Pour installer Podman, mettez à jour vos packages système (`sudo yum update -y`), puis installez Podman (`sudo yum install podman -y`).
 
 
 ** Python version 3.6 ou supérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
@@ -179,7 +191,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-Notez que vous devez redémarrer Docker chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
+Notez que vous devez redémarrer Docker ou Podman chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
 
 
 
@@ -279,7 +291,7 @@ Notez que toutes les activités d'installation sont consignées lors de l'instal
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifiez que vous avez installé les deux logiciels prérequis (Docker Engine et Python 3).
+* Vérifiez que vous avez installé les deux packages logiciels prérequis (Docker Engine ou Podman et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur le système Linux.
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Vérifiez les conditions préalables à la classification BlueXP et BlueXP,autorisations et connectivité>>.
 
@@ -364,7 +376,7 @@ Suivez ces étapes lors de l'installation du logiciel de classification BlueXP s
 
 .Ce dont vous avez besoin
 * Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifiez que vous avez installé les deux logiciels prérequis (Docker Engine et Python 3).
+* Vérifiez que vous avez installé les deux packages logiciels prérequis (Docker Engine ou Podman et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
 * Vérifiez que votre environnement hors ligne répond aux besoins <<Vérifiez les conditions préalables à la classification BlueXP et BlueXP,autorisations et connectivité>>.
 * Vous devez disposer des adresses IP des hôtes du nœud de scanner que vous prévoyez d'utiliser.
