@@ -96,7 +96,7 @@ Vous utilisez la page du portefeuille digital BlueXP dans BlueXP pour gérer les
 
 Après avoir acheté votre licence de classification BlueXP (Data Sense), vous activez la licence dans BlueXP en entrant le numéro de série de classification BlueXP et le compte NSS, ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
 
-Si vous avez déployé la classification BlueXP sur un hôte d'un site sur site qui ne dispose pas d'un accès Internet, vous devez obtenir le fichier de licence à partir d'un système connecté à Internet. L'activation de la licence à l'aide du numéro de série et du compte NSS n'est pas disponible pour les installations sur site sombre.
+Si vous avez déployé la classification BlueXP sur un hôte d'un site sur site qui ne dispose pas d'un accès Internet, ce qui signifie que vous avez déployé le connecteur BlueXP dans https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["mode privé"^], vous devez obtenir le fichier de licence à partir d'un système connecté à internet. L'activation de la licence à l'aide du numéro de série et du compte NSS n'est pas disponible pour les installations sur site sombre.
 
 .Avant de commencer
 Vous devez disposer des informations suivantes avant de commencer :
@@ -107,7 +107,7 @@ Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe char
 
 * ID de compte BlueXP
 +
-Vous pouvez trouver votre identifiant de compte BlueXP en sélectionnant le menu déroulant *compte* en haut de BlueXP, puis en cliquant sur *gérer compte* en regard de votre compte. Votre ID de compte se trouve dans l'onglet vue d'ensemble.
+Vous pouvez trouver votre identifiant de compte BlueXP en sélectionnant le menu déroulant *compte* en haut de BlueXP, puis en cliquant sur *gérer compte* en regard de votre compte. Votre ID de compte se trouve dans l'onglet vue d'ensemble. Pour les sites en mode privé sans accès à Internet, utilisez *account-DARKSITE1*.
 
 
 

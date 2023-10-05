@@ -88,9 +88,11 @@ Les questions suivantes se rapportent aux performances de l'analyse de classific
 
 === À quelle fréquence la classification BlueXP analyse-t-elle mes données ?
 
-Les données changent fréquemment. La classification BlueXP analyse vos données en continu sans aucune incidence sur vos données. Alors que l'analyse initiale de vos données peut prendre plus de temps, les analyses suivantes ne scannent que les modifications incrémentielles, ce qui réduit les temps d'analyse du système.
+L'analyse initiale de vos données peut prendre un peu de temps, mais les analyses suivantes ne permettent qu'd'examiner les modifications incrémentielles, ce qui réduit les temps d'analyse du système. La classification BlueXP analyse vos données de manière continue selon une séquence périodique, six référentiels à la fois, de sorte que toutes les données modifiées soient classifiées très rapidement.
 
 link:concept-cloud-compliance.html#how-scans-work["Découvrez le fonctionnement des acquisitions"].
+
+Notez que la classification BlueXP analyse les bases de données une seule fois par jour. Les bases de données ne sont pas continuellement analysées comme d'autres sources de données.
 
 L'analyse des données a un impact négligeable sur vos systèmes de stockage et sur vos données. Toutefois, si vous êtes préoccupé, même par un très faible impact, vous pouvez configurer la classification BlueXP pour effectuer des analyses « lentes ». link:task-reduce-scan-speed.html["Découvrez comment réduire la vitesse de numérisation"].
 

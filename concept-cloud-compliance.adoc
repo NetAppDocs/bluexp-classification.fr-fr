@@ -211,7 +211,7 @@ La classification BlueXP se connecte aux données comme n'importe quel autre cli
 
 image:diagram_cloud_compliance_scan.png["Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud. L'instance de classification BlueXP se connecte aux volumes NFS et CIFS, aux compartiments S3, aux comptes OneDrive et aux bases de données pour les analyser."]
 
-Après l'analyse initiale, la classification BlueXP analyse en continu vos données pour détecter les modifications incrémentielles (c'est pourquoi il est important de maintenir l'exécution de l'instance).
+Après l'analyse initiale, la classification BlueXP analyse en continu vos données à séquence périodique pour détecter les modifications incrémentielles (c'est pourquoi il est important de maintenir l'instance en fonctionnement).
 
 Vous pouvez activer et désactiver les analyses au niveau du volume, au niveau du compartiment, au niveau du schéma de la base de données, au niveau utilisateur OneDrive et au niveau du site SharePoint.
 

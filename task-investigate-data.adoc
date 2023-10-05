@@ -329,6 +329,7 @@ Le *non structuré fichier de données* contient les informations suivantes sur 
 * Heure de création
 * Dernière modification
 * Dernier accès
+* Ouvrez les autorisations
 * Propriétaire du fichier
 * Catégorie
 * Informations personnelles
