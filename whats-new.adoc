@@ -18,6 +18,18 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 6 novembre (version 1.26.3)
+
+
+
+=== Les problèmes suivants ont été résolus dans cette version
+
+* Correction d'une incohérence lors de la présentation du nombre de fichiers analysés par le système dans les tableaux de bord.
+* Amélioration du comportement de numérisation en gérant et en signalant les fichiers et répertoires avec des caractères spéciaux dans le nom et les métadonnées.
+
+
+
+
 == 4 octobre (version 1.26)
 
 
