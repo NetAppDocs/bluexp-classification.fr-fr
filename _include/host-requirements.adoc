@@ -59,8 +59,8 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 +
 ** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de mise en conteneurs Docker :
 +
-*** Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
-*** CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure
+*** Red Hat Enterprise Linux version 7.8 et 7.9
+*** CentOS versions 7.8 et 7.9
 *** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 

@@ -3235,8 +3235,6 @@
   <block id="d2a2c5ad694a196d91103a3db366503f" category="paragraph">Aucune prise en charge n'est actuellement prise en charge pour l'analyse de Cloud Volumes ONTAP, Azure NetApp Files, FSX pour ONTAP, AWS S3 ou Google Drive, Comptes OneDrive ou SharePoint Online lorsque la classification BlueXP est déployée en mode privé.</block>
   <block id="548a75d789202d935a1a2f04740b1caf" category="paragraph">Si aucun connecteur n'est déjà installé en mode privé,<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Sur un hôte Linux.</block>
   <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">Si aucun connecteur BlueXP n'est déjà installé en mode privé,<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Sur un hôte Linux de votre site hors ligne.</block>
-  <block id="ebd8af30c2bd1f5614199bd389919de2" category="list-text">Red Hat Enterprise Linux version 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure</block>
-  <block id="067032f0b3420d92b7bee458a84f9cb8" category="list-text">CentOS versions 7.8 et 7.9 - la version du noyau Linux doit être 4.0 ou supérieure</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">Pour en savoir plus, cliquez ici</block>
   <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>. <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>.</block>
   <block id="e441d0b06845e470533ecf90d990663b" category="list-text">Copiez l'ensemble d'installation sur l'hôte Linux que vous prévoyez d'utiliser en mode privé.</block>
@@ -3463,4 +3461,6 @@
   <block id="13d4946175fa2baa511a3731aec3cf3d" category="paragraph">Le groupe de sécurité du connecteur doit autoriser le trafic entrant et sortant sur les ports 6000 et 443 vers et depuis l'instance de classification BlueXP.</block>
   <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">Le port 6000 est requis pour que la licence BYOL de classification BlueXP fonctionne sur un site invisible.</block>
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">Le port 8080 doit être ouvert pour que vous puissiez voir la progression de l'installation dans BlueXP.</block>
+  <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linux version 7.8 et 7.9</block>
+  <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOS versions 7.8 et 7.9</block>
 </blocks>
