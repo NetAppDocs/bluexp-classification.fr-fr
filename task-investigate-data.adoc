@@ -283,7 +283,7 @@ Le rapport d'enquête de données est un téléchargement du contenu filtré de 
 
 Vous pouvez enregistrer le rapport dans deux formats différents :
 
-* En tant que fichier .CSV vers la machine locale, qui peut inclure jusqu'à 5,000 lignes de données.
+* En tant que fichier .CSV vers la machine locale, qui peut inclure jusqu'à 10,000 lignes de données.
 * En tant que fichier .JSON que vous exportez vers un partage NFS, qui peut inclure jusqu'à 100,000 lignes de données. S'il y a plus de 100,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
 +
 Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
