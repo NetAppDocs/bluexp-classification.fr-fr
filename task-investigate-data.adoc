@@ -281,10 +281,16 @@ TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette pag
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Vous pouvez enregistrer le rapport dans deux formats différents :
+Le rapport est disponible dans deux formats différents :
 
-* En tant que fichier .CSV vers la machine locale, qui peut inclure jusqu'à 10,000 lignes de données.
-* En tant que fichier .JSON que vous exportez vers un partage NFS, qui peut inclure jusqu'à 100,000 lignes de données. S'il y a plus de 100,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
+* En tant que fichier .CSV que vous pouvez enregistrer sur la machine locale.
++
+Ce rapport peut inclure un maximum de 10,000 lignes de données.
+
+* En tant que fichier .JSON que vous exportez vers un partage NFS.
++
+S'il y a plus de 250,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
+
 +
 Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
 
@@ -322,18 +328,19 @@ Le *non structuré fichier de données* contient les informations suivantes sur 
 * Type d'emplacement
 * Nom de l'environnement de travail
 * Référentiel de stockage (par exemple, un volume, un compartiment, des partages)
-* Type d'environnement de travail
+* Type de référentiel
 * Chemin des fichiers
 * Type de fichier
-* Taille du fichier
+* Taille du fichier (en Mo)
 * Heure de création
 * Dernière modification
 * Dernier accès
-* Ouvrez les autorisations
 * Propriétaire du fichier
 * Catégorie
 * Informations personnelles
 * Informations personnelles sensibles
+* Ouvrez les autorisations
+* Erreur d'analyse d'acquisition
 * Date de détection de suppression
 +
 Une date de détection de suppression identifie la date à laquelle le fichier a été supprimé ou déplacé. Cela vous permet d'identifier le moment où des fichiers sensibles ont été déplacés. Les fichiers supprimés ne font pas partie du nombre de fichiers qui s'affiche dans le tableau de bord ou sur la page Investigation. Les fichiers n'apparaissent que dans les rapports CSV.
@@ -342,11 +349,11 @@ Une date de détection de suppression identifie la date à laquelle le fichier a
 
 Le *Rapport de données de répertoires non structurés* inclut les informations suivantes sur vos dossiers et partages de fichiers :
 
-* Nom de l'environnement de travail
-* Référentiel de stockage (par exemple, un dossier ou des partages de fichiers)
 * Type d'environnement de travail
-* Chemin du fichier (nom du répertoire)
-* Propriétaire du fichier
+* Nom de l'environnement de travail
+* Nom du répertoire
+* Référentiel de stockage (par exemple, un dossier ou des partages de fichiers)
+* Propriétaire du répertoire
 * Heure de création
 * Heure découverte
 * Dernière modification

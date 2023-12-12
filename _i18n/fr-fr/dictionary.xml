@@ -1414,7 +1414,6 @@
   <block id="e81282c4a2e1620d17b120b1420664da" category="paragraph">Une date de détection de suppression identifie la date à laquelle le fichier a été supprimé ou déplacé. Cela vous permet d'identifier le moment où des fichiers sensibles ont été déplacés. Les fichiers supprimés ne font pas partie du nombre de fichiers qui s'affiche dans le tableau de bord ou sur la page Investigation. Les fichiers n'apparaissent que dans les rapports CSV.</block>
   <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">Le *Rapport de données de répertoires non structurés* inclut les informations suivantes sur vos dossiers et partages de fichiers :</block>
   <block id="76cbd87b5322b897c255d541785ad658" category="list-text">Référentiel de stockage (par exemple, un dossier ou des partages de fichiers)</block>
-  <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">Chemin du fichier (nom du répertoire)</block>
   <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="list-text">Heure découverte</block>
   <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">Ouvrez les autorisations</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">Type de répertoire</block>
@@ -3370,7 +3369,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">En savoir plus sur les API de classification BlueXP</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>.</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">Vous pouvez ajouter un partage DFS (Distributed File System) en tant que partage CIFS standard. Cependant, la classification BlueXP n'ayant pas connaissance du fait que le partage repose sur plusieurs serveurs/volumes combinés en tant que partage CIFS unique, vous pouvez recevoir des erreurs d'autorisation ou de connectivité sur le partage lorsque le message ne s'applique qu'à l'un des dossiers/partages situés sur un autre serveur/volume.</block>
-  <block id="8909a1f3cdd58859743896107e545477" category="list-text">En tant que fichier .JSON que vous exportez vers un partage NFS, qui peut inclure jusqu'à 100,000 lignes de données. S'il y a plus de 100,000 lignes de données, des fichiers .JSON supplémentaires sont créés.</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).</block>
   <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 (TCP), 6000 (TCP), 443 (TCP) ET 80</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">*Système d'exploitation* :</block>
@@ -3385,7 +3383,6 @@
   <block id="0cc4457720b5fe0dd1b8dc6667280ebb" category="list-text">Vérifiez que les deux packages logiciels prérequis sont installés sur les systèmes (Docker ou Podman Engine et Python 3).</block>
   <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">Tous vos fichiers (à l'exception des bases de données) de 1 Mo ou plus, contenant des informations personnelles ou sensibles, sont comparés pour voir s'il y a des doublons. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine plage de tailles sont dupliqués dans votre environnement.</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">Tous les fichiers dupliqués sont affichés dans la page Résultats.</block>
-  <block id="d4c414c875c5535df32b9c04f15b398d" category="paragraph">Vous pouvez enregistrer le rapport dans deux formats différents :</block>
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 septembre (version 1.25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Découvrez comment</block>
@@ -3462,5 +3459,14 @@
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">Le port 8080 doit être ouvert pour que vous puissiez voir la progression de l'installation dans BlueXP.</block>
   <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linux version 7.8 et 7.9</block>
   <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOS versions 7.8 et 7.9</block>
-  <block id="7d389403e7b93ff8a467567b0e19cd8a" category="list-text">En tant que fichier .CSV vers la machine locale, qui peut inclure jusqu'à 10,000 lignes de données.</block>
+  <block id="875fbf0a91ad95e1c95e1ac6fd492bc2" category="paragraph">Le rapport est disponible dans deux formats différents :</block>
+  <block id="238112e6876034d2f424b96b637afe8a" category="list-text">En tant que fichier .CSV que vous pouvez enregistrer sur la machine locale.</block>
+  <block id="604cde1447e130e4655296bd7bafa56a" category="paragraph">Ce rapport peut inclure un maximum de 10,000 lignes de données.</block>
+  <block id="0bcb699578dbf297d1eb8bc55c1d5ae8" category="list-text">En tant que fichier .JSON que vous exportez vers un partage NFS.</block>
+  <block id="9b90713ae6cde3bdbdd15b3cc3deed4f" category="paragraph">S'il y a plus de 250,000 lignes de données, des fichiers .JSON supplémentaires sont créés.</block>
+  <block id="96a4e4d64dfcd958a53c9d27cb6f9c81" category="list-text">Type de référentiel</block>
+  <block id="8d41341b04800c9b0f9269d35caefe50" category="list-text">Taille du fichier (en Mo)</block>
+  <block id="12863c4f3d21d132902517901137f0ce" category="list-text">Erreur d'analyse d'acquisition</block>
+  <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">Nom du répertoire</block>
+  <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">Propriétaire du répertoire</block>
 </blocks>
