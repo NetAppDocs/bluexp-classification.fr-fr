@@ -91,6 +91,8 @@ sidebar:
       url: "/task-managing-data-fusion.html"
     - title: Afficher l'état des actions de classification BlueXP
       url: "/task-view-compliance-actions.html"
+    - title: Définir les ID de groupe existants comme « ouverts à l'organisation »
+      url: "/task-add-group-id-as-open.html"
     - title: Vérifiez l'historique des actions de classification BlueXP
       url: "/task-audit-data-sense-actions.html"
     - title: Réduisez la vitesse d'analyse de la classification BlueXP
