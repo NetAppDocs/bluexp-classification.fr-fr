@@ -61,7 +61,7 @@ Vous devez disposer des numéros d'ID de groupe (GID) avant de commencer cette t
 +
 Ne modifiez rien d'autre dans ce fichier.
 
-. Accédez à « /opt/netapp/Datasense » et exécutez le script suivant :
+. Accédez à « /opt/netapp/Datasense/Tools/customer_configuration/Data_providers » et exécutez le script suivant :
 +
  update_data_providers_from_config_file.sh
 +
@@ -73,6 +73,6 @@ Toutes les analyses ultérieures de vos données permettront d'identifier les fi
 
 Vous pouvez modifier la liste des ID de groupe et supprimer les ID de groupe que vous avez ajoutés par le passé en procédant de la même manière. La liste révisée des ID de groupe sera mise à jour après l'exécution du script pour valider vos modifications.
 
-Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase » :
+Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :
 
  get_data_providers_configuration.sh

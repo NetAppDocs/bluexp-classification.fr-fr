@@ -30,7 +30,7 @@ Les résultats filtrés de la page Investigation affichent désormais la taille 
 
 === Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
 
-Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment https://task-add-group-id-as-open["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
+Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
 
 
 

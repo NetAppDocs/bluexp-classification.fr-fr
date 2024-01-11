@@ -406,8 +406,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Rejoignez la communauté BlueXP pour suivre des discussions en cours ou en créer de nouveaux.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentation</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">La documentation BlueXP que vous consultez actuellement.</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Courrier électronique :ng-cloudmanager-feedback@netapp.com[E-mail de commentaires]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Nous accordons une grande importance à vos commentaires. Envoyez vos commentaires pour nous aider à améliorer BlueXP.</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service* : sélectionnez le service auquel le problème est associé. Par exemple, BlueXP lorsqu'il est spécifique à un problème de support technique avec des flux de travail ou des fonctionnalités au sein du service.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Environnement de travail* : si applicable au stockage, sélectionnez *Cloud Volumes ONTAP* ou *sur site*, puis l'environnement de travail associé.</block>
@@ -3481,16 +3479,16 @@
   <block id="2783de23499f1b6912284079950af328" category="list-text">Sur le système de classification BlueXP, accédez à «/opt/netapp/config/custom_configuration » et ouvrez le fichier « data_Provider.yaml ».</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">Dans la ligne « id_groupe_organisation : [] », ajoutez les ID de groupe. Par exemple :</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">Ne modifiez rien d'autre dans ce fichier.</block>
-  <block id="fb448d942cb14f250d9497a3bb5f49dc" category="list-text">Accédez à « /opt/netapp/Datasense » et exécutez le script suivant :</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">Cette commande valide les autorisations d'ID de groupe révisées au moteur de classification.</block>
   <block id="fa72d06a2d710ef92a76614af32ec1f7" category="paragraph">Toutes les analyses ultérieures de vos données permettront d'identifier les fichiers ou dossiers auxquels ces ID de groupe sont associés comme « ouverts à l'organisation ».</block>
   <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">Vous pouvez modifier la liste des ID de groupe et supprimer les ID de groupe que vous avez ajoutés par le passé en procédant de la même manière. La liste révisée des ID de groupe sera mise à jour après l'exécution du script pour valider vos modifications.</block>
-  <block id="547ea5f0fcc4aedf35c256e9b5b85845" category="paragraph">Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase » :</block>
   <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">10 janvier (version 1.27)</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">Les résultats de la page d'enquête affichent désormais la taille totale en plus du nombre total d'éléments</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »</block>
-  <block id="883dea14e891e466e8184cc34b65bd17" category="paragraph">Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment<block ref="d0c1b51f12c2e361f70a1ff7d6038c44" category="inline-link-rx"></block>.</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Définir les ID de groupe existants comme « ouverts à l'organisation »</block>
+  <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Accédez à « /opt/netapp/Datasense/Tools/customer_configuration/Data_providers » et exécutez le script suivant :</block>
+  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :</block>
+  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>.</block>
 </blocks>
