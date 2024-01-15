@@ -18,7 +18,7 @@ Lorsque des ID de groupe (GID) sont attachés à des fichiers ou dossiers dans d
 
 Après avoir effectué cette modification et que la classification BlueXP analyse à nouveau vos fichiers et dossiers, tous les fichiers et dossiers auxquels ces ID de groupe sont associés affichent cette autorisation dans la page Détails de l'investigation et ils apparaissent également dans les rapports où vous affichez les autorisations de fichier.
 
-Vous devez vous connecter au système de classification BlueXP pour modifier un fichier de configuration et exécuter un script afin d'utiliser cette fonctionnalité.
+Pour activer cette fonctionnalité, vous devez vous connecter au système de classification BlueXP afin de modifier un fichier de configuration et d'exécuter un script.
 
 
 

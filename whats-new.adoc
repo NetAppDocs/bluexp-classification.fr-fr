@@ -30,7 +30,7 @@ Les résultats filtrés de la page Investigation affichent désormais la taille 
 
 === Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
 
-Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
+Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
 
 
 
@@ -317,33 +317,3 @@ Plusieurs améliorations ont été ajoutées à l'installation de Data Sense sur
 
 
 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["En savoir plus sur l'installation de Data Sense sur un serveur hôte unique et sur plusieurs hôtes"].
-
-
-
-== 13 novembre 2022 (version 1.17)
-
-
-
-=== Prise en charge de la numérisation des comptes SharePoint sur site
-
-Il est désormais possible d'analyser les comptes SharePoint Online et les comptes SharePoint sur site (SharePoint Server). Si vous devez installer SharePoint sur vos propres serveurs ou sur des sites sans accès à Internet, vous pouvez maintenant avoir Data Sense scan les fichiers utilisateur dans ces comptes. https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["En savoir plus >>"^].
-
-
-
-=== Possibilité de réanalyser plusieurs répertoires (dossiers ou partages)
-
-Vous pouvez désormais analyser plusieurs répertoires (dossiers ou partages) immédiatement afin que les modifications soient répercutées dans le système. Cela vous permet de hiérarchiser la réanalyse de certaines données avant d'autres données. https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Voir la procédure de nouvelle analyse d'un répertoire"^].
-
-
-
-=== Possibilité d'ajouter des nœuds de numérisation supplémentaires sur site pour analyser des sources de données spécifiques
-
-Si vous avez installé Data SENSE sur site et que vous avez besoin d'une puissance de traitement plus élevée pour analyser certaines sources de données, vous pouvez ajouter d'autres nœuds de « scanner » et les affecter pour analyser ces sources de données. Vous pouvez ajouter les nœuds du scanner immédiatement après avoir installé le nœud du gestionnaire, ou vous pouvez ajouter un nœud du scanner ultérieurement.
-
-Si nécessaire, les nœuds du scanner peuvent être installés sur des systèmes hôtes qui sont physiquement plus proches des sources de données que vous scannez. Plus le nœud du scanner est proche des données, mieux c'est, car il réduit la latence du réseau autant que possible lors de l'acquisition des données. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Découvrez comment installer des nœuds de scanner pour analyser d'autres sources de données"^].
-
-
-
-=== Les installateurs sur site effectuent désormais une pré-vérification avant de commencer l'installation
-
-Lors de l'installation de Data Sense sur un système Linux, le programme d'installation vérifie si le système répond à toutes les exigences nécessaires (CPU, RAM, capacité, réseau, etc.) avant de démarrer l'installation. Cela permet de détecter les problèmes *avant*, vous passez du temps sur l'installation.
