@@ -1667,30 +1667,7 @@
   <block id="6195c7a1534de8abb0c4706e15d24a3c" category="sidebar">Modifier les paramètres de numérisation</block>
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">Ajoutez des identifiants de données personnels personnalisés</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
-  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">Analysez vos environnements de travail</block>
-  <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Volumes Cloud Volumes ONTAP</block>
-  <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">Volumes ONTAP sur site</block>
-  <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Volumes Azure NetApp Files</block>
-  <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">Amazon FSX pour volumes ONTAP</block>
-  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">Analyser d'autres sources de données</block>
-  <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">Compartiments S3 génériques</block>
-  <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">Afficher les détails de vos données</block>
-  <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Afficher les fichiers contenant des informations privées</block>
-  <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Afficher les fichiers dupliqués dans votre espace de stockage</block>
-  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtrez vos données pour afficher des fichiers spécifiques</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">Créez des règles pour afficher vos meilleures recherches</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">Générer des rapports de conformité</block>
-  <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">Appliquez des balises et des propriétaires aux fichiers qui nécessitent une attention particulière</block>
-  <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">Catégoriser vos données à l'aide d'étiquettes AIP</block>
-  <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">Ajoutez vos propres identifiants de données personnels personnalisés</block>
-  <block id="503c49a3ccf62894992dc5b2f108ca21" category="sidebar">Copier les fichiers source</block>
-  <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">Déplacer les fichiers source</block>
-  <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="sidebar">Supprimer les fichiers source</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">Créez des alertes par e-mail lorsque des données non conformes sont trouvées</block>
-  <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">Répondre à une demande d'accès à un sujet de données</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Communauté sur les blogs</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si vous avez un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés en même temps que les comptes au niveau du client.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Recherchez le numéro de série de l'ID de compte sur la page d'inscription au support.</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte à l'étape 2 ci-dessus, vérifiez sa sécurité, puis lisez la Déclaration de confidentialité des données NetApp.</block>
@@ -1920,7 +1897,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-standard-16</block>
   <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">ajout d'un nœud pour faciliter l'analyse d'une source de données spécifique ou d'un groupe spécifique de sources de données (généralement basé sur l'emplacement)</block>
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">Vous devez disposer de l'adresse IP ou du nom d'hôte du système Connector, de votre ID de compte NetApp, de votre ID de client Connector et du jeton d'accès utilisateur. Si vous prévoyez d'utiliser des groupes de scanner, vous devrez connaître l'ID de l'environnement de travail pour chaque source de données de votre compte. Voir *_étapes préalables_* ci-dessous pour obtenir ces informations.</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Nouveautés</block>
   <block id="a9cb7c21103eb81a473453f19f0d7b20" category="list-text">*Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. <block ref="440fccf34bc4c2a440d9bf3f906df06d" category="inline-link-macro-rx"></block>.</block>
   <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">Cliquez sur <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> Pour en savoir plus sur les politiques.</block>
   <block id="f7e44fd8c27ddf80c242fb3dae245422" category="paragraph">La section _Data Overview_ fournit un aperçu rapide de toutes les données en cours d'acquisition. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous vos environnements de travail et toutes vos sources de données. Voir <block ref="53e5c76c1fe1c6ab36aa624f6960e384" category="inline-xref-macro-rx"></block> pour plus d'informations sur ce rapport.</block>
@@ -2965,9 +2941,6 @@
   <block id="3304fa5a3260dac4f8f51ddd7ca9e5f3" category="sidebar">Réduisez la vitesse d'analyse de la classification BlueXP</block>
   <block id="54892fa61b1eb6050fbd342fbf8e2218" category="sidebar">Supprimez les sources de données de la classification BlueXP</block>
   <block id="997bc9ee8834fdaee5b662f9a2bd743f" category="sidebar">Désinstallez la classification BlueXP</block>
-  <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">Installez la classification BlueXP sur un hôte Linux avec Internet</block>
-  <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">Installez la classification BlueXP sur site sans Internet</block>
-  <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">Utilisations de la classification BlueXP</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">Par exemple, si vous souhaitez suivre les modifications apportées à vos fichiers personnels sensibles ou aux fichiers de paie, vous pouvez activer cette fonction sur les volumes où résident ces fichiers. Vous pouvez ensuite afficher le journal d'audit de l'accès aux fichiers pour voir si ces fichiers ont été modifiés. S'ils ont été modifiés, vous pourrez voir l'identifiant de sécurité (SID) de la personne qui a effectué la modification et la date à laquelle la modification a été effectuée.</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">La classification BlueXP peut enregistrer les événements d'accès aux fichiers des volumes ONTAP dans les sources de données suivantes :</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX pour NetApp ONTAP</block>
@@ -3006,7 +2979,6 @@
   <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
   <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/docker</block>
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
-  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations Write Attributes en CIFS ou en écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">Pour en savoir plus sur les sujets de données, cliquez ici</block>
   <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">Saisissez le nom complet ou l'identifiant connu d'un sujet de données. <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>.</block>
@@ -3028,7 +3000,6 @@
   <block id="8a7af24665c107d42e27bf9f85872742" category="cell">Vous pouvez également créer l'ensemble de la commande à l'avance, en fournissant les paramètres d'hôte et de proxy nécessaires :<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
   <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_Client_ID_ = connecteur client ID (ajoutez le suffixe "clients" à l'ID client que vous avez copié dans les étapes préalables)</block>
   <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">Par exemple, cette commande ajoute 3 nœuds de scanner :<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
-  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">Webinaires BlueXP</block>
   <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
@@ -3320,7 +3291,6 @@
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">L'API de classification BlueXP est disponible</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">L'API de classification BlueXP vous permet d'effectuer des actions, de créer des requêtes et d'exporter des informations sur les données que vous analysez. La documentation interactive est disponible à l'aide de swagger. La documentation est divisée en plusieurs catégories, notamment Investigation, Compliance, Governance et Configuration. Chaque catégorie fait référence aux onglets de l'interface de classification BlueXP.</block>
-  <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">Vidéos sur la classification BlueXP</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3481,4 +3451,5 @@
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP prend en charge les fonctionnalités d'API REST pour ses services. Si BlueXP n'est pas le point de gestion privilégié, des services tels que la classification BlueXP peuvent également être utilisés via une API REST. Chaque action utilisateur dispose d'une API REST qui peut être intégrée à des systèmes tiers. Voir <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">Les copies Snapshot qui résident sur les volumes ONTAP sont-elles analysées ?</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">Non La classification BlueXP ne analyse pas les snapshots, car le contenu est identique au contenu du volume.</block>
+  <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
 </blocks>

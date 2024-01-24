@@ -53,7 +53,7 @@ Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petit
 | /var/lib/docker | `rwx------` 
 
 
-| /user/lib/systemd/system | `rwxr-xr-x` 
+| /usr/lib/systemd/system | `rwxr-xr-x` 
 |===
 * *Système d'exploitation* :
 +
