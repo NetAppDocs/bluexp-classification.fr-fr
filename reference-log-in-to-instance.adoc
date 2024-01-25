@@ -1,6 +1,22 @@
-= 
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: Il se peut que vous deviez vous connecter au système de classification BlueXP pour pouvoir accéder aux fichiers journaux ou modifier les fichiers de configuration. 
+---
+= Connectez-vous au système de classification BlueXP
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+Il se peut que vous deviez vous connecter au système de classification BlueXP pour pouvoir accéder aux fichiers journaux ou modifier les fichiers de configuration.
+
+Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier de configuration et au script.
 
 Lorsque la classification BlueXP est déployée dans le cloud, vous devez établir une connexion SSH avec l'instance de classification BlueXP. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
 

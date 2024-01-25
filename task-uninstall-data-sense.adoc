@@ -53,3 +53,5 @@ image:screenshot_compliance_uninstall.png["Une capture d'écran du bouton pour d
 cleanup.sh
 ----
 
+
+Découvrez comment link:reference-log-in-to-instance.html["Connectez-vous à la machine hôte de classification BlueXP"].

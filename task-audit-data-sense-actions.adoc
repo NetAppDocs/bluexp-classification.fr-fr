@@ -50,33 +50,16 @@ Par exemple, les lignes suivantes du fichier journal indiquent une opération de
 ....
 
 
-== Accédez au fichier journal
+== Emplacements des fichiers journaux
 
 Les fichiers journaux d'audit de gestion se trouvent sur la machine de classification BlueXP dans : `/opt/netapp/audit_logs/`
 
 Les fichiers journaux d'audit d'installation sont écrits dans `/opt/netapp/install_logs/`
 
-Chaque fichier journal peut avoir une taille maximale de 10 Mo. Lorsque cette limite est atteinte, un nouveau fichier journal démarre. Les fichiers journaux sont nommés « DataSense_audit.log », « DataSense_audit.log.1 », « DataSense_audit.log.2 », etc. Un maximum de 100 fichiers journaux sont conservés sur le système. Les anciens fichiers journaux sont supprimés automatiquement une fois le maximum atteint.
-
-Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier journal.
-
-Lorsque la classification BlueXP est déployée dans le cloud, vous devez établir une connexion SSH avec l'instance de classification BlueXP. Vous vous SSH dans le système en saisissant l'utilisateur et le mot de passe, ou en utilisant la clé SSH fournie lors de l'installation du connecteur BlueXP. La commande SSH est :
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = emplacement des clés d'authentification ssh
-* <machine_utilisateur> :
-+
-** Pour AWS : utilisez <utilisateur ec2>
-** Pour Azure : utilisez l'utilisateur créé pour l'instance BlueXP
-** Pour GCP : utilisez l'utilisateur créé pour l'instance BlueXP
+Chaque fichier journal peut avoir une taille maximale de 10 Mo. Lorsque cette limite est atteinte, un nouveau fichier journal démarre. Les fichiers journaux sont nommés « DataSense_audit.log », « DataSense_audit.log.1 », « DataSense_audit.log.2 », etc. Un maximum de 100 fichiers journaux sont conservés sur le système - les anciens fichiers journaux sont automatiquement supprimés une fois le maximum atteint.
 
 
-* <dataense_ip> = adresse IP de l'instance de la machine virtuelle
 
+== Accès aux fichiers journaux
 
-Notez que vous devrez modifier les règles entrantes du groupe de sécurité pour accéder au système dans le cloud. Pour plus de détails, voir :
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Règles de groupe de sécurité dans Azure"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
-
+Vous devez vous connecter au système de classification BlueXP pour accéder aux fichiers journaux. Découvrez comment link:reference-log-in-to-instance.html["Connectez-vous au système de classification BlueXP"] Selon que vous avez installé le logiciel manuellement sur une machine Linux ou si vous avez déployé l'instance dans le cloud.
