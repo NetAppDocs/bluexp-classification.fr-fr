@@ -20,6 +20,9 @@ Par exemple, si vous souhaitez suivre les modifications apportées à vos fichie
 
 Vous pouvez activer cette fonctionnalité sur tous les volumes stratégiques de vos environnements de travail qui exécutent le logiciel ONTAP. Lorsqu'il est activé sur un volume, les événements d'accès aux fichiers sont suivis pour tous les fichiers et répertoires du volume. Cette fonctionnalité est basée sur le https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Fonctionnalité FPolicy"^] Provenant de vos systèmes ONTAP, il utilise votre système de classification BlueXP en tant que serveur FPolicy pour recevoir des messages de notification (événements) de ONTAP. La classification BlueXP peut traiter environ 990 événements par seconde dans ONTAP.
 
+
+NOTE: La version de décembre 2023 (version 1.26.6) a temporairement supprimé l'option d'activation de la collecte des journaux d'audit.
+
 La classification BlueXP capture actuellement les événements pour les actions suivantes sur vos fichiers et répertoires :
 
 * Création

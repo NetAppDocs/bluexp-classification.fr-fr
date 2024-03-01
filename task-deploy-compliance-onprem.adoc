@@ -97,9 +97,15 @@ Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution
 * La classification BlueXP n'est pas prise en charge sur un hôte partagé avec d'autres applications : l'hôte doit être un hôte dédié.
 * Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système selon la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
 +
-[cols="18,18,26,30"]
+[cols="17,17,27,31"]
 |===
 | Taille du système | CPU | RAM (la mémoire d'échange doit être désactivée) | Disque 
+
+
+| *Très grand* | 32 processeurs | 128 GO DE RAM | 1 To SSD sur /, ou
+- 100 Gio disponible sur /opt
+- 895 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp 
 
 
 | *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou
@@ -120,7 +126,7 @@ Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution
 - 5 Gio sur /tmp 
 |===
 +
-Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
+Notez qu'il existe des limites lors de l'utilisation des systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
@@ -329,7 +335,7 @@ NOTE: La classification BlueXP est actuellement incapable d'analyser les compart
 
 https://youtu.be/rFpmekdbORc["Regardez cette vidéo"^] Pour voir comment installer la classification BlueXP.
 
-Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Pour en savoir plus, cliquez ici"].
+Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-files["Pour en savoir plus, cliquez ici"].
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.

@@ -20,8 +20,8 @@ Lorsque vous configurez certaines sources de données (répertoriées ci-dessous
 
 Cette intégration fournit des informations supplémentaires aux emplacements suivants de la classification BlueXP :
 
-* Vous pouvez utiliser le « propriétaire de fichier » link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["filtre"] Et voir les résultats dans les métadonnées du fichier dans le volet Investigation. Au lieu du propriétaire du fichier contenant le SID (identificateur de sécurité), il est renseigné avec le nom d'utilisateur réel.
-* Vous pouvez voir link:task-investigate-data.html#viewing-permissions-for-files-and-directories["autorisations complètes sur les fichiers"] Pour chaque fichier et répertoire lorsque vous cliquez sur le bouton « Afficher toutes les autorisations ».
+* Vous pouvez utiliser le « propriétaire de fichier » link:task-investigate-data.html#filter-data-in-the-data-investigation-page["filtre"] Et voir les résultats dans les métadonnées du fichier dans le volet Investigation. Au lieu du propriétaire du fichier contenant le SID (identificateur de sécurité), il est renseigné avec le nom d'utilisateur réel.
+* Vous pouvez voir link:task-investigate-data.html#view-permissions-for-files-and-directories["autorisations complètes sur les fichiers"] Pour chaque fichier et répertoire lorsque vous cliquez sur le bouton « Afficher toutes les autorisations ».
 * Dans le link:task-controlling-governance-data.html["Tableau de bord gouvernance"], Le panneau Ouvrir les autorisations affiche un niveau de détail plus élevé sur vos données.
 
 
@@ -47,7 +47,7 @@ Il n'est pas possible de prendre en charge l'identification des informations d'u
 
 
 
-== Connexion à votre serveur Active Directory
+== Connectez-vous à votre serveur Active Directory
 
 Une fois que vous avez déployé la classification BlueXP et activé l'analyse de vos sources de données, vous pouvez intégrer la classification BlueXP à votre Active Directory. Il est possible d'accéder à Active Directory à l'aide d'une adresse IP de serveur DNS ou d'une adresse IP de serveur LDAP.
 
@@ -114,7 +114,7 @@ image:screenshot_compliance_active_directory_added.png["Copie d'écran montrant 
 
 
 
-== Gestion de votre intégration à Active Directory
+== Gérez votre intégration Active Directory
 
 Si vous devez modifier des valeurs dans votre intégration Active Directory, cliquez sur le bouton *Modifier* et apportez les modifications nécessaires.
 

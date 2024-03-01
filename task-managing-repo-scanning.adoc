@@ -20,7 +20,7 @@ Vous pouvez modifier le type d'analyse d'un référentiel et déterminer si celu
 
 
 
-== Affichage de l'état de numérisation de vos référentiels
+== Afficher l'état d'analyse de vos référentiels
 
 Vous pouvez afficher les référentiels individuels que la classification BlueXP analyse (volumes, compartiments, etc.) pour chaque environnement de travail et source de données. De plus, vous pouvez voir combien ont été « mappés » et combien ont été « classés ». Le classement est plus rapide lorsque l'identification complète de l'IA est effectuée sur toutes les données.
 
@@ -39,7 +39,7 @@ Vous pouvez placer le curseur sur le graphique dans la colonne _Scan Status_ pou
 
 
 
-== Modification du type de numérisation d'un référentiel
+== Modifier le type de numérisation d'un référentiel
 
 Vous pouvez démarrer ou arrêter des analyses de mappage uniquement, ou des analyses de mappage et de classification, dans un environnement de travail à tout moment à partir de la page Configuration. Vous pouvez également passer des acquisitions avec mappage uniquement à des acquisitions avec mappage et classification, et inversement.
 
@@ -65,7 +65,7 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 
 
-== Arrêt de l'analyse d'un référentiel
+== Arrêter la recherche d'un référentiel
 
 Vous pouvez arrêter l'analyse d'un référentiel (par exemple, un volume) si vous n'avez plus besoin de le surveiller pour vérifier sa conformité. Pour ce faire, désactivez la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu.
 
@@ -82,7 +82,7 @@ image:screenshot_compliance_stop_repo_scanning.png["Capture d'écran montrant co
 
 
 
-== Interruption et reprise de la numérisation pour un référentiel
+== Mettre en pause et reprendre l'analyse d'un référentiel
 
 Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez arrêter temporairement la numérisation de certains contenus. Avec l'interruption de l'analyse, la classification BlueXP n'effectuera aucune analyse ultérieure en cas de modification ou d'ajout au référentiel, mais tous les résultats actuels seront toujours affichés dans le système. La mise en pause de la numérisation ne cesse pas de charger les données scannées car elles existent toujours.
 
@@ -107,7 +107,7 @@ image:screenshot_compliance_repo_pause_resume2.png["Capture d'écran montrant co
 
 
 
-== Renumérisation des données d'un référentiel existant
+== Renumériser les données pour un référentiel existant
 
 La classification BlueXP analyse en continu vos données pour détecter les modifications incrémentielles dans les référentiels que vous avez ajoutés. Cependant, il faut du temps pour analyser tous les environnements et il n'existe aucune méthode pour contrôler l'ordre des référentiels analysés. Si vous devez relancer une nouvelle analyse d'un référentiel particulier immédiatement afin que les modifications soient répercutées dans le système, vous pouvez sélectionner le référentiel et le relancer. Cela vous permet de hiérarchiser la numérisation de certaines données avant d'autres données. Après l'action de nouvelle analyse, le référentiel sélectionné revient à être analysé selon la planification de classification BlueXP normale.
 

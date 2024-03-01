@@ -52,9 +52,15 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 * La classification BlueXP n'est pas prise en charge sur un hôte partagé avec d'autres applications : l'hôte doit être un hôte dédié.
 * Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système selon la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
 +
-[cols="18,18,26,30"]
+[cols="17,17,27,31"]
 |===
 | Taille du système | CPU | RAM (la mémoire d'échange doit être désactivée) | Disque 
+
+
+| *Très grand* | 32 processeurs | 128 GO DE RAM | 1 To SSD sur /, ou
+- 100 Gio disponible sur /opt
+- 895 Gio disponible sur /var/lib/docker
+- 5 Gio sur /tmp 
 
 
 | *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou
@@ -75,7 +81,7 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 - 5 Gio sur /tmp 
 |===
 +
-Notez qu'il existe des limites lors de l'utilisation de ces systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
+Notez qu'il existe des limites lors de l'utilisation des systèmes plus petits. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
 
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +

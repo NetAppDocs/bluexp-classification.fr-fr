@@ -23,7 +23,7 @@ TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres ty
 
 == Types de données personnelles
 
-Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
+Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
 Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
 

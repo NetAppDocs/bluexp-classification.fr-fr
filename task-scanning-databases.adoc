@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: Procédez en quelques étapes pour commencer à analyser vos schémas de base de données avec la classification BlueXP. 
 ---
-= Analyse des schémas de base de données
+= Analyser les schémas de base de données
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -42,7 +42,7 @@ Sélectionnez les schémas à numériser.
 
 
 
-== Vérification des prérequis
+== Passer en revue les prérequis
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
@@ -83,7 +83,7 @@ Lors du choix d'un nom d'utilisateur et d'un mot de passe, il est important de c
 
 
 
-== Déploiement de l'instance de classification BlueXP
+== Déployez l'instance de classification BlueXP
 
 Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
@@ -95,7 +95,7 @@ Les mises à niveau du logiciel de classification BlueXP sont automatisées tant
 
 
 
-== Ajout du serveur de base de données
+== Ajoutez le serveur de base de données
 
 Ajoutez le serveur de base de données où se trouvent les schémas.
 
@@ -121,7 +121,7 @@ La base de données est ajoutée à la liste des environnements de travail.
 
 
 
-== Activation et désactivation des analyses de conformité sur les schémas de base de données
+== Activer et désactiver les analyses de conformité sur les schémas de base de données
 
 Vous pouvez arrêter ou démarrer la numérisation complète de vos schémas à tout moment.
 

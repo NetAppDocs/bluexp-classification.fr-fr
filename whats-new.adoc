@@ -18,7 +18,7 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
-== 10 janvier (version 1.27)
+== 10 janvier 2024 (version 1.27)
 
 
 
@@ -34,7 +34,20 @@ Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient c
 
 
 
-== 6 novembre (version 1.26.3)
+== Décembre 2023 (version 1.26.6)
+
+Cette version comprend quelques améliorations mineures.
+
+La version a également temporairement supprimé les options suivantes :
+
+* L'option permettant d'activer la collecte des journaux d'audit a été désactivée. Reportez-vous à la section link:task-manage-file-access-events.html["Contrôlez et gérez les événements d'accès aux fichiers"].
+* Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la section link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Examinez les données stockées dans votre organisation"].
+* L'option d'intégration des données à l'aide d'étiquettes Azure information protection (AIP) a été désactivée. Reportez-vous à la section link:task-org-private-data.html["Organisez vos données privées"].
+
+
+
+
+== 6 novembre 2023 (version 1.26.3)
 
 
 
@@ -46,7 +59,7 @@ Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient c
 
 
 
-== 4 octobre (version 1.26)
+== 4 octobre 2023 (version 1.26)
 
 
 
@@ -58,7 +71,7 @@ Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le mot
 
 
 
-== 5 septembre (version 1.25)
+== 5 septembre 2023 (version 1.25)
 
 
 
@@ -70,7 +83,7 @@ Lorsque vous déployez une instance de classification BlueXP dans AWS, l'option 
 
 === Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête
 
-Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Découvrez comment"].
+Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assign-tags-to-files["Découvrez comment"].
 
 
 
@@ -239,7 +252,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 Dans les versions précédentes de la classification BlueXP, vous pouviez envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines stratégies stratégiques renvoient des résultats. Cette fonction vous permet d'obtenir des notifications pour protéger vos données lorsque vous n'êtes pas en ligne. Vous pouvez désormais envoyer des alertes par e-mail à partir de stratégies à tous les autres utilisateurs - jusqu'à 20 adresses e-mail - qui ne sont pas dans votre compte BlueXP.
 
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
+https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
 
 
 
@@ -253,7 +266,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.ht
 
 === Possibilité de déplacer 15 millions de fichiers à l'aide de la classification BlueXP
 
-Par le passé, vous pouviez déplacer jusqu'à 100,000 fichiers source vers n'importe quel partage NFS grâce à la classification BlueXP. Vous pouvez désormais déplacer jusqu'à 15 millions de fichiers à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["En savoir plus sur le déplacement des fichiers source à l'aide de la classification BlueXP"].
+Par le passé, vous pouviez déplacer jusqu'à 100,000 fichiers source vers n'importe quel partage NFS grâce à la classification BlueXP. Vous pouvez désormais déplacer jusqu'à 15 millions de fichiers à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["En savoir plus sur le déplacement des fichiers source à l'aide de la classification BlueXP"].
 
 
 
@@ -288,7 +301,7 @@ De nouveaux filtres sont disponibles pour affiner les résultats affichés dans 
 * Le filtre "chemin du fichier" vous permet maintenant de spécifier les chemins que vous souhaitez exclure des résultats de la requête filtrée. Si vous entrez des chemins pour inclure et exclure certaines données, la classification BlueXP recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats.
 
 
-https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
+https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
 
 
 

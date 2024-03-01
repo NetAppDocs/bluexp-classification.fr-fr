@@ -4,7 +4,7 @@ permalink: task-managing-highlights.html
 keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
 summary: 'La classification BlueXP offre de nombreuses méthodes pour gérer vos données privées. Certaines fonctionnalités facilitent la préparation de la migration des données, tandis que d"autres vous permettent de modifier ces dernières.' 
 ---
-= La gestion de vos données privées
+= Gérez vos données privées
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -32,7 +32,7 @@ La classification BlueXP offre de nombreuses méthodes pour gérer vos données 
 ====
 
 
-== Copie des fichiers source
+== Copier les fichiers source
 
 Vous pouvez copier tous les fichiers source numérisés par la classification BlueXP. Il existe trois types d'opérations de copie en fonction de l'objectif que vous essayez d'effectuer :
 
@@ -52,7 +52,7 @@ Cette fonction est utile lorsque vous migrez des données d'un système source v
 
 
 
-=== Copie des fichiers source vers un partage NFS
+=== Copier les fichiers source vers un partage NFS
 
 Vous pouvez copier les fichiers source numérisés par la classification BlueXP vers n'importe quel partage NFS. Le partage NFS n'a pas besoin d'être intégré à la classification BlueXP, il vous suffit de connaître le nom du partage NFS où tous les fichiers sélectionnés seront copiés au format `<host_name>:/<share_path>`.
 
@@ -94,7 +94,7 @@ image:screenshot_compliance_copy_file.png["Capture d'écran montrant la sélecti
 
 
 
-=== Clonage de données de volume sur un nouveau volume
+=== Cloner des données de volume vers un nouveau volume
 
 Vous pouvez cloner un volume ONTAP existant que la classification BlueXP analyse à l'aide de la fonctionnalité NetApp _FlexClone_. Cela vous permet de dupliquer le volume rapidement tout en incluant uniquement les fichiers que vous avez sélectionnés. Cela est utile si vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine, ou si vous souhaitez créer une copie d'un volume pour le test.
 
@@ -203,7 +203,7 @@ Notez que certaines des opérations habituelles de copie et de synchronisation B
 
 
 
-== Déplacement des fichiers source vers un partage NFS
+== Déplacer les fichiers source vers un partage NFS
 
 Vous pouvez déplacer les fichiers source numérisés par la classification BlueXP vers n'importe quel partage NFS. Le partage NFS n'a pas besoin d'être intégré à la classification BlueXP.
 
@@ -248,11 +248,11 @@ image:screenshot_compliance_move_file.png["Capture d'écran montrant la sélecti
 
 
 
-== Suppression des fichiers source
+== Supprimer les fichiers source
 
 Vous pouvez supprimer de manière définitive les fichiers source qui semblent non sécurisés ou trop risqués pour laisser dans votre système de stockage, ou que vous avez identifiés comme un doublon. Cette action est permanente et il n'y a pas d'annulation ou de restauration.
 
-Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou link:task-using-policies.html#deleting-source-files-automatically-using-policies["Utiliser automatiquement des règles"^].
+Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou link:task-using-policies.html#delete-source-files-automatically-using-policies["Utiliser automatiquement des règles"^].
 
 
 TIP: Vous ne pouvez pas supprimer les fichiers qui résident dans les bases de données. Toutes les autres sources de données sont prises en charge.
@@ -266,7 +266,7 @@ La suppression de fichiers nécessite les autorisations suivantes :
 
 
 
-=== Suppression manuelle des fichiers source
+=== Supprimez les fichiers source manuellement
 
 .De formation
 * Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour supprimer des fichiers.

@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation. 
 ---
-= L'attribution de règles à vos données
+= Attribuez des règles à vos données
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -34,7 +34,7 @@ De plus, les polices apparaissent dans la liste des filtres de la page Investiga
 
 
 
-== Affichage des résultats de la police dans la page Investigation
+== Afficher les résultats de la police dans la page Investigation
 
 Pour afficher les résultats d'une police dans la page Investigation, cliquez sur le bouton image:screenshot_gallery_options.gif["Bouton plus"] Pour une stratégie spécifique, puis sélectionnez *étudier les résultats*.
 
@@ -42,7 +42,7 @@ image:screenshot_compliance_highlights_investigate.png["Capture d'écran de la s
 
 
 
-== Création de stratégies personnalisées
+== Création de règles personnalisées
 
 Vous pouvez créer vos propres stratégies personnalisées qui fournissent des résultats pour les recherches spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.
 
@@ -57,10 +57,10 @@ image:screenshot_compliance_save_as_highlight.png["Capture d'écran indiquant co
 . Nommez la stratégie et sélectionnez d'autres actions pouvant être effectuées par la stratégie :
 +
 .. Entrez un nom et une description uniques.
-.. Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers qui correspondent aux paramètres de la stratégie. En savoir plus sur <<Suppression automatique des fichiers source à l'aide de stratégies,suppression de fichiers source à l'aide d'une stratégie>>.
-.. Si vous voulez envoyer des e-mails de notification aux utilisateurs BlueXP de votre compte, cochez la case correspondante et choisissez l'intervalle d'envoi de l'e-mail. En savoir plus sur <<Envoi d'alertes par e-mail lorsque des données non conformes sont trouvées,envoi d'alertes par e-mail en fonction des résultats de règles>>.
+.. Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers qui correspondent aux paramètres de la stratégie. En savoir plus sur <<Supprimez automatiquement les fichiers source à l'aide des stratégies,suppression de fichiers source à l'aide d'une stratégie>>.
+.. Si vous voulez envoyer des e-mails de notification aux utilisateurs BlueXP de votre compte, cochez la case correspondante et choisissez l'intervalle d'envoi de l'e-mail. En savoir plus sur <<Envoyer des alertes par e-mail lorsque des données non conformes sont trouvées,envoi d'alertes par e-mail en fonction des résultats de règles>>.
 .. Si vous souhaitez envoyer des e-mails de notification à d'autres utilisateurs, cochez la case correspondante, saisissez jusqu'à 20 adresses e-mail et choisissez l'intervalle d'envoi de l'e-mail.
-.. Si vous le souhaitez, cochez la case pour attribuer automatiquement des libellés AIP aux fichiers qui correspondent aux paramètres de la stratégie, puis sélectionnez le libellé. (Uniquement si vous avez déjà intégré des étiquettes AIP. En savoir plus sur link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Libellés AIP"].)
+.. Si vous le souhaitez, cochez la case pour attribuer automatiquement des libellés AIP aux fichiers qui correspondent aux paramètres de la stratégie, puis sélectionnez le libellé. (Uniquement si vous avez déjà intégré des étiquettes AIP. En savoir plus sur link:task-org-private-data.html#categorize-your-data-using-aip-labels["Libellés AIP"].)
 .. Cliquez sur *Créer une stratégie*.
 +
 image:screenshot_compliance_save_highlight.png["Capture d'écran indiquant comment configurer la stratégie et l'enregistrer."]
@@ -74,7 +74,7 @@ La nouvelle stratégie s'affiche dans l'onglet stratégies.
 
 
 
-== Envoi d'alertes par e-mail lorsque des données non conformes sont trouvées
+== Envoyer des alertes par e-mail lorsque des données non conformes sont trouvées
 
 La classification BlueXP peut envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines règles stratégiques renvoient des résultats pour vous permettre d'obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois. Vous pouvez également choisir d'envoyer des alertes par e-mail à n'importe quelle adresse e-mail - jusqu'à 20 adresses e-mail - pas dans votre compte BlueXP.
 
@@ -104,7 +104,7 @@ Le premier e-mail est envoyé dès maintenant s'il y a des résultats de la poli
 
 
 
-== Suppression automatique des fichiers source à l'aide de stratégies
+== Supprimez automatiquement les fichiers source à l'aide des stratégies
 
 Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez supprimer des fichiers qui contiennent des informations sensibles et qui ont été découverts par la classification BlueXP au cours des 30 derniers jours.
 
@@ -135,7 +135,7 @@ Vous pouvez afficher la liste des fichiers qui ont été supprimés dans le link
 
 
 
-== Attribution automatique d'étiquettes AIP à l'aide de stratégies
+== Attribuez automatiquement des étiquettes d'AIP avec des stratégies
 
 Vous pouvez affecter un libellé AIP à tous les fichiers qui répondent aux critères de la stratégie. Vous pouvez spécifier l'étiquette AIP lors de la création de la stratégie ou ajouter l'étiquette lors de la modification d'une stratégie.
 
@@ -181,7 +181,7 @@ NOTE: Si une stratégie a été configurée avec un libellé, mais que le libell
 
 
 
-== Modification de stratégies
+== Modifier les règles
 
 Vous pouvez modifier les critères d'une stratégie existante que vous avez déjà créée. Cela peut être particulièrement utile si vous souhaitez modifier la requête (les éléments que vous avez définis à l'aide de filtres) pour ajouter ou supprimer certains paramètres.
 
@@ -210,7 +210,7 @@ La police est modifiée immédiatement. Toutes les actions définies pour cette 
 
 
 
-== Suppression de polices
+== Supprimer des règles
 
 Vous pouvez supprimer toute stratégie personnalisée que vous avez créée si vous n'en avez plus besoin. Vous ne pouvez supprimer aucune des stratégies prédéfinies.
 

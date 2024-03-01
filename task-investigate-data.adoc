@@ -21,7 +21,7 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 
 
-== Filtrage des données dans la page Data Investigation
+== Filtrez les données dans la page Data Investigation
 
 Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir. Il s'agit d'une fonctionnalité très puissante car une fois les données raffinées, vous pouvez utiliser la barre de boutons en haut de la page pour effectuer diverses actions, notamment copier des fichiers, déplacer des fichiers, ajouter une balise ou une étiquette AIP aux fichiers, et bien plus encore.
 
@@ -29,7 +29,7 @@ Si vous souhaitez télécharger le contenu de la page en tant que rapport après
 
 image:screenshot_compliance_investigation_filtered.png["Capture d'écran des filtres disponibles lors du raffinage des résultats dans la page d'enquête."]
 
-* Les onglets de niveau supérieur vous permettent d'afficher des données à partir de fichiers (données non structurées), de répertoires (dossiers et partages de fichiers) ou de bases de données (données structurées).
+* Les onglets de niveau supérieur vous permettent d'afficher les données issues de fichiers (données non structurées), de répertoires (dossiers et partages de fichiers) ou de bases de données (données structurées).
 * Les commandes situées en haut de chaque colonne vous permettent de trier les résultats par ordre numérique ou alphabétique.
 * Les filtres du volet gauche vous permettent d'affiner les résultats en sélectionnant les attributs décrits dans les sections suivantes.
 
@@ -51,7 +51,9 @@ Utilisez les filtres suivants pour afficher la quantité d'informations sensible
 | Niveau de sensibilité | Sélectionnez le niveau de sensibilité : personnel, personnel sensible ou non sensible. 
 
 
-| Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, la classification BlueXP totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers). 
+| Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, la classification BlueXP totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers).
+
+REMARQUE : la version de décembre 2023 (version 1.26.6) a temporairement supprimé l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires. 
 
 
 | Données personnelles | Sélectionner link:reference-private-data-categories.html#types-of-personal-data["types de données personnelles"^]. 
@@ -60,7 +62,7 @@ Utilisez les filtres suivants pour afficher la quantité d'informations sensible
 | Données personnelles sensibles | Sélectionner link:reference-private-data-categories.html#types-of-sensitive-personal-data["types de données personnelles sensibles"^]. 
 
 
-| Sujet de données | Saisissez le nom complet ou l'identifiant connu d'un sujet de données. link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["Pour en savoir plus sur les sujets de données, cliquez ici"^]. 
+| Sujet de données | Saisissez le nom complet ou l'identifiant connu d'un sujet de données. link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["Pour en savoir plus sur les sujets de données, cliquez ici"^]. 
 |===
 
 
@@ -168,10 +170,10 @@ Utilisez les filtres suivants pour afficher les données par étiquettes ou éti
 | Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-using-policies.html["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
 
 
-| Étiquette | Sélectionnez link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 
+| Étiquette | Sélectionnez link:task-org-private-data.html#categorize-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 
 
 
-| Étiquettes | Sélectionnez link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["la ou les balises"] qui sont affectés à vos fichiers. 
+| Étiquettes | Sélectionnez link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["la ou les balises"] qui sont affectés à vos fichiers. 
 
 
 | Affecté à | Sélectionnez le nom de la personne à laquelle le fichier est affecté. 
@@ -209,28 +211,28 @@ Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans v
 |===
 
 
-== Affichage des métadonnées de fichier
+== Afficher les métadonnées de fichier
 
 Dans le volet Résultats de l'enquête de données, vous pouvez cliquer sur image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit.
 
 image:screenshot_compliance_file_details.png["Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."]
 
-En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP intégré dans la classification BlueXP"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#creating-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
+En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP intégré dans la classification BlueXP"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#create-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
 Notez que toutes les informations ne sont pas disponibles pour toutes les sources de données, ce qui est juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume, les autorisations et les libellés AIP ne sont pas pertinents pour les fichiers de base de données.
 
 Lors de l'affichage des détails d'un seul fichier, vous pouvez effectuer quelques actions sur le fichier :
 
-* Vous pouvez déplacer ou copier le fichier dans n'importe quel partage NFS. Voir link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["Déplacement des fichiers source vers un partage NFS"] et link:task-managing-highlights.html#copying-source-files["Copie des fichiers source vers un partage NFS"] pour plus d'informations.
-* Vous pouvez supprimer le fichier. Voir link:task-managing-highlights.html#deleting-source-files["Suppression des fichiers source"] pour plus d'informations.
-* Vous pouvez affecter un certain état au fichier. Voir link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Application de balises"] pour plus d'informations.
-* Vous pouvez affecter le fichier à un utilisateur BlueXP pour être responsable de toutes les actions de suivi qui doivent être effectuées sur le fichier. Voir link:task-org-private-data.html#assigning-users-to-manage-certain-files["Affectation d'utilisateurs à un fichier"] pour plus d'informations.
-* Si vous avez intégré des étiquettes d'AIP à la classification BlueXP, vous pouvez attribuer une étiquette à ce fichier ou modifier cette étiquette s'il en existe déjà une. Voir link:task-org-private-data.html#assigning-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
+* Vous pouvez déplacer ou copier le fichier dans n'importe quel partage NFS. Voir link:task-managing-highlights.html#move-source-files-to-an-nfs-share["Déplacement des fichiers source vers un partage NFS"] et link:task-managing-highlights.html#copy-source-files["Copie des fichiers source vers un partage NFS"] pour plus d'informations.
+* Vous pouvez supprimer le fichier. Voir link:task-managing-highlights.html#delete-source-files["Suppression des fichiers source"] pour plus d'informations.
+* Vous pouvez affecter un certain état au fichier. Voir link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["Application de balises"] pour plus d'informations.
+* Vous pouvez affecter le fichier à un utilisateur BlueXP pour être responsable de toutes les actions de suivi qui doivent être effectuées sur le fichier. Voir link:task-org-private-data.html#assign-users-to-manage-certain-files["Affectation d'utilisateurs à un fichier"] pour plus d'informations.
+* Si vous avez intégré des étiquettes d'AIP à la classification BlueXP, vous pouvez attribuer une étiquette à ce fichier ou modifier cette étiquette s'il en existe déjà une. Voir link:task-org-private-data.html#assign-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
 
 
 
 
-== Affichage des autorisations pour les fichiers et les répertoires
+== Afficher les autorisations pour les fichiers et les répertoires
 
 Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est disponible uniquement pour les données des partages CIFS, SharePoint Online, SharePoint sur site et OneDrive.
 
@@ -244,7 +246,7 @@ En outre, Vous pouvez cliquer sur le nom d'un utilisateur ou d'un groupe et la p
 
 
 
-== Recherche de fichiers en double dans vos systèmes de stockage
+== Vérifiez la présence de fichiers en double dans vos systèmes de stockage
 
 Vous pouvez afficher si des fichiers dupliqués sont stockés dans vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il peut également être utile de s'assurer que certains fichiers possédant des autorisations spécifiques ou des informations sensibles ne sont pas inutilement dupliqués dans vos systèmes de stockage.
 
@@ -252,11 +254,11 @@ Tous vos fichiers (à l'exception des bases de données) de 1 Mo ou plus, conten
 
 La classification BlueXP utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
 
-Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#deleting-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
+Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#delete-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
 
 
 
-=== Affichage de tous les fichiers dupliqués
+=== Afficher tous les fichiers dupliqués
 
 Si vous voulez une liste de tous les fichiers dupliqués dans les environnements de travail et les sources de données que vous scannez, vous pouvez utiliser le filtre *Duplicates > a des doublons* dans la page recherche de données.
 
@@ -264,7 +266,7 @@ Tous les fichiers dupliqués sont affichés dans la page Résultats.
 
 
 
-=== Affichage si un fichier spécifique est dupliqué
+=== Permet d'afficher si un fichier spécifique est dupliqué
 
 Si vous souhaitez voir si un seul fichier contient des doublons, vous pouvez cliquer sur dans le volet Résultats de l'enquête de données image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit. Si un fichier est en double, ces informations apparaissent à côté du champ _Duplicates_.
 
@@ -300,7 +302,7 @@ Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classificatio
 
 
 
-=== Génération du rapport d'investigation des données
+=== Générer le rapport d'investigation de données
 
 .Étapes
 . Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.

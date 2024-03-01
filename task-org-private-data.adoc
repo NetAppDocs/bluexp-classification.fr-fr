@@ -4,7 +4,7 @@ permalink: task-org-private-data.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et d"organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.' 
 ---
-= Organiser vos données privées
+= Organisez vos données privées
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,6 +17,10 @@ summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et
 La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
 
 * Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.
++
+
+NOTE: La version de décembre 2023 (v1.26.6) a temporairement supprimé l'option d'intégration des données à l'aide des étiquettes Azure information protection (AIP).
+
 * Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.
 * Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.
 * Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.
@@ -53,7 +57,7 @@ Vous trouverez ci-dessous une comparaison du balisage de classification BlueXP e
 |===
 
 
-== Catégorisation de vos données à l'aide de libellés AIP
+== Catégoriser vos données à l'aide d'étiquettes AIP
 
 Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^]. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. La classification BlueXP vous permet d'afficher les étiquettes déjà attribuées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.
 
@@ -69,7 +73,7 @@ La classification BlueXP prend en charge les étiquettes AIP dans les types de f
 ====
 
 
-=== Intégration des libellés AIP dans votre espace de travail
+=== Intégrez les étiquettes d'AIP dans votre espace de travail
 
 Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous link:concept-cloud-compliance.html#supported-data-sources["sources des données"^] Dans votre espace de travail BlueXP.
 
@@ -98,7 +102,7 @@ Vous pouvez afficher et affecter des libellés AIP à partir du volet des résul
 
 
 
-=== Affichage des libellés AIP dans vos fichiers
+=== Afficher les étiquettes d'AIP dans vos fichiers
 
 Vous pouvez afficher le libellé AIP actuel attribué à un fichier.
 
@@ -108,7 +112,7 @@ image:screenshot_compliance_show_label.png["Capture d'écran présentant les dé
 
 
 
-=== Attribution manuelle d'étiquettes AIP
+=== Attribuez manuellement des étiquettes d'AIP
 
 Vous pouvez ajouter, modifier et supprimer des étiquettes d'AIP de vos fichiers à l'aide de la classification BlueXP.
 
@@ -148,7 +152,7 @@ L'étiquette AIP est ajoutée aux métadonnées pour tous les fichiers sélectio
 
 
 
-=== Suppression de l'intégration AIP
+=== Supprimez l'intégration AIP
 
 Si vous ne souhaitez plus pouvoir gérer les étiquettes AIP dans les fichiers, vous pouvez supprimer le compte AIP de l'interface de classification BlueXP.
 
@@ -164,7 +168,7 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Copie d'écran montrant
 
 
 
-== Application de balises pour gérer vos fichiers numérisés
+== Appliquez des balises pour gérer vos fichiers numérisés
 
 Vous pouvez ajouter une balise aux fichiers que vous souhaitez marquer pour un type de suivi. Par exemple, vous avez peut-être trouvé des fichiers en double et vous voulez en supprimer un, mais vous devez vérifier lequel supprimer. Vous pouvez ajouter une balise « vérifier pour supprimer » au fichier afin que vous sachiez que ce fichier nécessite une recherche et un certain type d'action future.
 
@@ -177,7 +181,7 @@ TIP: Les balises attribuées aux fichiers de la classification BlueXP ne sont pa
 
 
 
-=== Affichage des fichiers dont certaines balises sont appliquées
+=== Afficher les fichiers auxquels certaines balises sont appliquées
 
 Vous pouvez afficher tous les fichiers auxquels des étiquettes spécifiques sont attribuées.
 
@@ -193,7 +197,7 @@ Le volet Résultats de l'enquête affiche tous les fichiers auxquels ces balises
 
 
 
-=== Attribution de balises aux fichiers
+=== Attribuez des balises aux fichiers
 
 Vous pouvez ajouter des balises à un seul fichier ou à un groupe de fichiers.
 
@@ -247,7 +251,7 @@ image:screenshot_compliance_select_tags_multi.png["Capture d'écran indiquant co
 
 
 
-=== Suppression de balises de fichiers
+=== Supprimez les balises des fichiers
 
 Vous pouvez supprimer une balise si vous n'avez plus besoin de l'utiliser.
 
@@ -259,7 +263,7 @@ Si vous avez sélectionné plusieurs fichiers, la balise est supprimée de tous 
 
 
 
-== Affectation d'utilisateurs pour gérer certains fichiers
+== Affecter des utilisateurs à la gestion de certains fichiers
 
 Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que personne puisse être responsable des actions de suivi qui doivent être effectuées sur le fichier. Cette fonctionnalité est souvent utilisée avec la fonction pour ajouter des balises d'état personnalisées à un fichier.
 

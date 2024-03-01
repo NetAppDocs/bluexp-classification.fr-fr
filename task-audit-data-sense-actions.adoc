@@ -4,7 +4,7 @@ permalink: task-audit-data-sense-actions.html
 keywords: compliance, actions, view progress, audit, logs, installation 
 summary: 'Les activités de gestion des journaux de classification BlueXP qui ont été effectuées sur des fichiers depuis tous les environnements de travail et toutes les sources de données que la classification BlueXP analyse. La classification BlueXP consigne également les activités liées au déploiement de l"instance de classification BlueXP.' 
 ---
-= Audit de l'historique des actions de classification BlueXP
+= Vérifiez l'historique des actions de classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -60,6 +60,6 @@ Chaque fichier journal peut avoir une taille maximale de 10 Mo. Lorsque cette li
 
 
 
-== Accès aux fichiers journaux
+== Accédez aux fichiers journaux
 
 Vous devez vous connecter au système de classification BlueXP pour accéder aux fichiers journaux. Découvrez comment link:reference-log-in-to-instance.html["Connectez-vous au système de classification BlueXP"] Selon que vous avez installé le logiciel manuellement sur une machine Linux ou si vous avez déployé l'instance dans le cloud.
