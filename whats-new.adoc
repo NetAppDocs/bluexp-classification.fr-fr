@@ -18,6 +18,18 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 4 mars 2024 (version 1.29)
+
+
+
+=== Vous pouvez maintenant exclure les données de numérisation qui résident dans certains répertoires de sources de données
+
+Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration traité par la classification BlueXP. Cette fonction vous permet d'éviter d'analyser des répertoires qui ne sont pas nécessaires ou qui pourraient renvoyer de faux résultats positifs pour les données personnelles.
+
+https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["En savoir plus >>"].
+
+
+
 == 10 janvier 2024 (version 1.27)
 
 
@@ -34,7 +46,7 @@ Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient c
 
 
 
-== Décembre 2023 (version 1.26.6)
+== 14 décembre 2023 (version 1.26.6)
 
 Cette version comprend quelques améliorations mineures.
 
@@ -308,25 +320,3 @@ https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#f
 === La classification BlueXP peut identifier le numéro individuel japonais
 
 La classification BlueXP peut identifier et catégoriser les fichiers qui contiennent le numéro individuel japonais (également appelé mon numéro). Cela inclut à la fois le numéro mon personnel et celui de l'entreprise. https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consultez tous les types de données personnelles que la classification BlueXP peut identifier dans vos données"].
-
-
-
-== 11 décembre 2022 (version 1.18)
-
-
-
-=== Améliorations apportées à l'installation sur site
-
-Plusieurs améliorations ont été ajoutées à l'installation de Data Sense sur site :
-
-* Certaines conditions préalables supplémentaires sont maintenant vérifiées avant que l'installation ne démarre sur un hôte sur site. Ainsi, vous vous assurez que votre système hôte est 100 % prêt à installer le logiciel Data Sense :
-+
-** vérifiez que l'espace disponible est suffisant `/var/lib/docker`, `/tmp`, et `/opt`
-** testez les autorisations pertinentes sur tous les dossiers requis
-
-
-* Dans la page Configuration, la section environnements de travail affiche maintenant le _ID de l'environnement de travail_ et le _scanner Group_ name. Vous devrez connaître l'ID de l'environnement de travail si vous prévoyez d'utiliser plusieurs hôtes Data Sense pour fournir une puissance de traitement supplémentaire pour analyser vos sources de données.
-* La page Configuration affiche également les groupes de scanners que vous avez configurés et les nœuds de scanner de chaque groupe.
-
-
-https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["En savoir plus sur l'installation de Data Sense sur un serveur hôte unique et sur plusieurs hôtes"].

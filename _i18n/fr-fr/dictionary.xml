@@ -1654,13 +1654,6 @@
   <block id="6187258d3b87228cf977d535a5db1ea0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Sélectionnez le type de numérisation des fichiers utilisateur</block>
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">Grand (par défaut)</block>
   <block id="9868eea85c69d464c823a4c7e185121a" category="section-title">Quelle est la différence entre les acquisitions de mappage et de classification</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">11 décembre 2022 (version 1.18)</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">Améliorations apportées à l'installation sur site</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">Plusieurs améliorations ont été ajoutées à l'installation de Data Sense sur site :</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">Certaines conditions préalables supplémentaires sont maintenant vérifiées avant que l'installation ne démarre sur un hôte sur site. Ainsi, vous vous assurez que votre système hôte est 100 % prêt à installer le logiciel Data Sense :</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">testez les autorisations pertinentes sur tous les dossiers requis</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">Dans la page Configuration, la section environnements de travail affiche maintenant le _ID de l'environnement de travail_ et le _scanner Group_ name. Vous devrez connaître l'ID de l'environnement de travail si vous prévoyez d'utiliser plusieurs hôtes Data Sense pour fournir une puissance de traitement supplémentaire pour analyser vos sources de données.</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">En savoir plus sur l'installation de Data Sense sur un serveur hôte unique et sur plusieurs hôtes</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Avant de commencer</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Une fois que vous avez terminé</block>
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Examiner les prérequis en matière de stockage objet</block>
@@ -1672,8 +1665,6 @@
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">Exécutez le script suivant pour enregistrer ces informations de mappage avec tous les nœuds du scanner :<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">Étapes préalables</block>
   <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Configurez les exigences S3 dans votre environnement cloud</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">vérifiez que l'espace disponible est suffisant<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>,<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>, et<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">La page Configuration affiche également les groupes de scanners que vous avez configurés et les nœuds de scanner de chaque groupe.</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">L'hôte du connecteur doit autoriser l'accès HTTPS sortant via le port 443. Si le connecteur est dans le cloud, toutes les communications sortantes sont autorisées par le pare-feu ou les règles de routage prédéfinies.</block>
   <block id="be8e8316109467c39dd04940dda55d9c" category="list-text">Ouvrez le fichier «/opt/netapp/Datase/working_Environment_to_scanner_group_config.yml » et entrez le mappage pour lequel les groupes de lecteurs vont analyser des environnements de travail spécifiques. Vous devez avoir l'ID _Working Environment_ pour chaque source de données. Par exemple, les entrées suivantes ajoutent 2 environnements de travail au groupe de scanner « europe » et 2 au groupe de scanner « united_States » :</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">Dans la page Configuration, vous pouvez sélectionner les sources de données que vous souhaitez numériser, si vous ne l'avez pas déjà fait. Si vous avez créé des groupes de scanner, chaque source de données est analysée par les nœuds du scanner dans le groupe correspondant.</block>
@@ -2957,7 +2948,6 @@
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">Le nouvel état « réussite partielle » indique qu'une action de classification BlueXP est terminée, que certains éléments ont échoué et que certains éléments ont réussi, par exemple, lorsque vous déplacez ou supprimez des fichiers 100. De plus, le statut « terminé » a été renommé « succès ». Par le passé, l'état « terminé » peut lister les actions qui ont réussi et qui ont échoué. Désormais, le statut « réussite » signifie que toutes les actions ont réussi sur tous les éléments.<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>.</block>
   <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">Le tableau de bord gouvernance a ajouté une nouvelle zone données et autorisations larges_ qui fournit une carte thermique de fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles.<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>.</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">La classification BlueXP peut identifier et catégoriser les fichiers qui contiennent le numéro individuel japonais (également appelé mon numéro). Cela inclut à la fois le numéro mon personnel et celui de l'entreprise.<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>.</block>
-  <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>.</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">C'est possible<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">Pour créer un connecteur dans l'environnement de votre fournisseur de cloud, reportez-vous à la section<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>,<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>, ou<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3317,14 +3307,12 @@
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">Nom du répertoire</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">Propriétaire du répertoire</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">Lorsque les ID de groupe sont attachés à des fichiers ou dossiers dans des partages de fichiers NFS, ils définissent les autorisations pour le fichier ou le dossier, par exemple s'ils sont « ouverts à l'organisation ». Si certains ID de groupe (GID) ne sont pas initialement configurés avec le niveau d'autorisation « Ouvrir à l'organisation », vous pouvez ajouter cette autorisation au GID pour que tous les fichiers et dossiers auxquels ce GID est rattaché soient considérés comme « ouverts à l'organisation ».</block>
-  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">Définir des ID de groupe supplémentaires comme « ouverts à l'organisation »</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">Lorsque des ID de groupe (GID) sont attachés à des fichiers ou dossiers dans des partages de fichiers NFS, ils définissent les autorisations pour le fichier ou le dossier, par exemple s'ils sont « ouverts à l'organisation ». Si certains ID de groupe (GID) ne sont pas initialement configurés avec le niveau d'autorisation « Ouvrir à l'organisation », vous pouvez ajouter cette autorisation au GID pour que tous les fichiers et dossiers auxquels ce GID est rattaché soient considérés comme « ouverts à l'organisation ».</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">Après avoir effectué cette modification et que la classification BlueXP analyse à nouveau vos fichiers et dossiers, tous les fichiers et dossiers auxquels ces ID de groupe sont associés affichent cette autorisation dans la page Détails de l'investigation et ils apparaissent également dans les rapports où vous affichez les autorisations de fichier.</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">Connectez-vous au système de classification BlueXP</block>
   <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier de configuration et au script.</block>
   <block id="aea796c551760c123249c98597ef5dab" category="section-title">Ajoutez l'autorisation « Ouvrir à l'organisation » aux ID de groupe</block>
   <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">Vous devez disposer des numéros d'ID de groupe (GID) avant de commencer cette tâche.</block>
-  <block id="2783de23499f1b6912284079950af328" category="list-text">Sur le système de classification BlueXP, accédez à «/opt/netapp/config/custom_configuration » et ouvrez le fichier « data_Provider.yaml ».</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">Dans la ligne « id_groupe_organisation : [] », ajoutez les ID de groupe. Par exemple :</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">Ne modifiez rien d'autre dans ce fichier.</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">Cette commande valide les autorisations d'ID de groupe révisées au moteur de classification.</block>
@@ -3336,7 +3324,6 @@
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Définir les ID de groupe existants comme « ouverts à l'organisation »</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Accédez à « /opt/netapp/Datasense/Tools/customer_configuration/Data_providers » et exécutez le script suivant :</block>
-  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP prend en charge les fonctionnalités d'API REST pour ses services. Si BlueXP n'est pas le point de gestion privilégié, des services tels que la classification BlueXP peuvent également être utilisés via une API REST. Chaque action utilisateur dispose d'une API REST qui peut être intégrée à des systèmes tiers. Voir <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">Les copies Snapshot qui résident sur les volumes ONTAP sont-elles analysées ?</block>
@@ -3465,7 +3452,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a temporairement suppri
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">Ajoutez le serveur de base de données</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">Activer et désactiver les analyses de conformité sur les schémas de base de données</block>
   <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">10 janvier 2024 (version 1.27)</block>
-  <block id="c0aa452130abaadece0c71d90274bb8e" category="section-title">Décembre 2023 (version 1.26.6)</block>
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Cette version comprend quelques améliorations mineures.</block>
   <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">La version a également temporairement supprimé les options suivantes :</block>
   <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">L'option permettant d'activer la collecte des journaux d'audit a été désactivée. Reportez-vous à la section <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>.</block>
@@ -3512,7 +3498,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a temporairement suppri
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Afficher les fichiers contenant des informations privées</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Afficher les fichiers dupliqués dans votre espace de stockage</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtrez vos données pour afficher des fichiers spécifiques</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">Créez des règles pour afficher vos meilleures recherches</block>
   <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">Appliquez des balises et des propriétaires aux fichiers qui nécessitent une attention particulière</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">Ajoutez vos propres identifiants de données personnels personnalisés</block>
   <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">Déplacer les fichiers source</block>
@@ -3524,4 +3509,68 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a temporairement suppri
   <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">Vidéos sur la classification BlueXP</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">Webinaires BlueXP</block>
+  <block id="8180cc16c2c6f5d6b650c76944d52252" category="summary">Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration. Une fois cette modification appliquée, le moteur de classification BlueXP exclut les données d'analyse de ces répertoires.</block>
+  <block id="f6af5e23cd22bc5f1b7833ad602a5c38" category="doc">Excluez des répertoires spécifiques des analyses de classification BlueXP</block>
+  <block id="bea0fd574e5a5abde1c8262dbd6e2370" category="paragraph">Notez que la classification BlueXP est configurée par défaut pour exclure les données de snapshot du volume d'analyse car ce contenu est identique au contenu du volume.</block>
+  <block id="efebf801e240ae82ed1c434305548b38" category="paragraph">Cette fonctionnalité est disponible dans la classification BlueXP version 1.29 et supérieure (à partir de mars 2024).</block>
+  <block id="0abc7ce542155915b82311c6450bea62" category="paragraph">L'exclusion de répertoires spécifiques des analyses de classification BlueXP est prise en charge pour les partages NFS et CIFS dans les sources de données suivantes :</block>
+  <block id="49fe103d0a39e5feeddf772106a8122e" category="list-text">Partages de fichiers généraux</block>
+  <block id="cf2e31e61b9c0d3547f54fc506e4b383" category="section-title">Définissez les répertoires à exclure de l'analyse</block>
+  <block id="78e986fa820c103dbcc45ed24bd2f383" category="paragraph">Avant de pouvoir exclure des répertoires de l'analyse de classification, vous devez vous connecter au système de classification BlueXP pour pouvoir modifier un fichier de configuration et exécuter un script. Découvrez comment <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> Selon que vous avez installé le logiciel manuellement sur une machine Linux ou si vous avez déployé l'instance dans le cloud.</block>
+  <block id="bc6218284832af039faeb4c497e97a18" category="list-text">Vous pouvez exclure un maximum de 50 chemins de répertoire par système de classification BlueXP.</block>
+  <block id="66a7b6ae1af91171aaf4ecc7afd0b7d0" category="list-text">L'exclusion des chemins de répertoire peut affecter les temps de numérisation.</block>
+  <block id="2e19c6096e07e117219780aee7f88c45" category="list-text">Sur le système de classification BlueXP, accédez à «/opt/netapp/config/custom_configuration » et ouvrez le fichier<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>.</block>
+  <block id="6e0803e8653caacbe1a019f32eda00bb" category="list-text">Dans la section "Data_providers", sous la ligne "exclude:", entrez les chemins d'accès au répertoire à exclure. Par exemple :</block>
+  <block id="5a0dfd405c0424a01f42cdb7e596d91c" category="list-text">Enregistrez les modifications apportées au fichier.</block>
+  <block id="d661ab86a14960e8bcf6cdfa727299d1" category="paragraph">Cette commande valide les répertoires à exclure de l'analyse vers le moteur de classification.</block>
+  <block id="21f183efd2dff70b58a99d83fc4f0ce7" category="paragraph">Toutes les analyses ultérieures de vos données excluront l'analyse des répertoires spécifiés.</block>
+  <block id="a495b8035b743d8b7dea2d9d0918de77" category="paragraph">Vous pouvez ajouter, modifier ou supprimer des éléments de la liste d'exclusion en suivant ces mêmes étapes. La liste d'exclusion révisée sera mise à jour après l'exécution du script pour valider vos modifications.</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">Exemples</block>
+  <block id="0440227581515c72236de5a764242d5c" category="paragraph-title">Configuration 1 :</block>
+  <block id="8c0f7ed2eea737d19ff087745c78f4ae" category="paragraph">Chaque dossier contenant « folder1 » n'importe où dans le nom sera exclu de toutes les sources de données.</block>
+  <block id="d6d0a43c6c69d1f785258f09797e96a2" category="list-title">Résultats attendus pour les chemins qui seront exclus :</block>
+  <block id="0d30977fecaa90640135943496e20863" category="list-text">/CVO1/folder1</block>
+  <block id="8eb7d336cfc030df3afe89d5c289514d" category="list-text">/CVO1/folder1name</block>
+  <block id="9f2d1aa2824b0506dd1e80da3eaebd63" category="list-text">/CVO1/folder10</block>
+  <block id="15fb383027ef8fbe15d374b2efc33994" category="list-text">/CVO1/*folder1</block>
+  <block id="569806d3b5250620ff0f137d85df73c4" category="list-text">/CVO1/+folder1name</block>
+  <block id="d6f23bc30d0950bf24b440de3579ee1f" category="list-text">/CVO1/notfolder10</block>
+  <block id="7e3057c60782470bd7f0c765e4d614b9" category="list-text">/CVO22/folder1</block>
+  <block id="b18ea64bfd5aa27240193320e354bfeb" category="list-text">/CVO22/folder1name</block>
+  <block id="6fdf0a8d667f474107a56d7566260558" category="list-text">/CVO22/folder10</block>
+  <block id="7c9e22babb20d95a6ccacbc12c6e72db" category="list-title">Exemples de chemins qui ne seront pas exclus :</block>
+  <block id="ec2b190a955f29720921cc8e6a67731d" category="list-text">/CVO1/*dossier</block>
+  <block id="0856e33548ceb338ab56d993d8281098" category="list-text">/CVO1/foldername</block>
+  <block id="14b8fac51101a115be8405f9d25adf0c" category="list-text">/CVO22/*folder20</block>
+  <block id="ce6c202454d84db0a51ee3b673259d76" category="paragraph-title">Configuration 2 :</block>
+  <block id="cd10b67d6b72e9152aca54085862e630" category="paragraph">Chaque dossier qui contient "*folder1" seulement au début du nom sera exclu.</block>
+  <block id="33114d8cd4f5562094ea8f71798fab0c" category="list-text">/CVO/*folder1</block>
+  <block id="07099186c5910fc2467ae1b4757b70f3" category="list-text">/CVO/*folder1name</block>
+  <block id="b96768cc207dc3d7940a06aed4482e49" category="list-text">/CVO/*folder10</block>
+  <block id="129853dc73d0231d5c812823e2480cba" category="list-text">/CVO/folder1</block>
+  <block id="c855f79110a45e3cf4ee4a2e9f07d01c" category="list-text">/CVO/folder1name</block>
+  <block id="5b6734714cb7b0ac3b7b695994d18616" category="list-text">/CVO/NOT*folder10</block>
+  <block id="d3b9102bc3b45248bbfec3ec65c81ffd" category="paragraph-title">Configuration 3 :</block>
+  <block id="c962d247f3d6cbb96db748ddbc8947d0" category="paragraph">Tous les dossiers de la source de données "CVO22" qui contiennent "folder1" n'importe où dans le nom seront exclus.</block>
+  <block id="85aafa7a10a33b1a6b3edd3a981f3e09" category="section-title">Des caractères spéciaux s'échappant dans les noms de dossier</block>
+  <block id="555e1283533f2fd2406da22eb7c48543" category="paragraph">Si vous avez un nom de dossier contenant l'un des caractères spéciaux suivants et que vous souhaitez exclure les données de ce dossier de l'analyse, vous devez utiliser la séquence d'échappement \\ avant le nom du dossier.</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">Par exemple :</block>
+  <block id="f6b342a69edf320338b3f72b95931768" category="paragraph">Chemin dans la source :<block ref="4cd339ff39aca9d50d4472947a989dc1" prefix=" " category="inline-code"></block></block>
+  <block id="457d08b230361da11684b35702d5d114" category="paragraph">Syntaxe dans le fichier d'exclusion :<block ref="656c9e12809cee621e2abce3032674d0" prefix=" " category="inline-code"></block></block>
+  <block id="3d704d8a7dea04055fa8e435fb3ba4a4" category="section-title">Afficher la liste d'exclusion actuelle</block>
+  <block id="ce591271bee64e6f1ef9a4585a8a1142" category="paragraph">Il est possible pour le contenu du<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> le fichier de configuration doit être différent de ce qui a été réellement validé après l'exécution du<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> script. Pour afficher la liste actuelle des répertoires que vous avez exclus de l'analyse de classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :</block>
+  <block id="75377d4edffa6c8df90ec35a6c2955ae" category="section-title">Puis-je demander au service d'exclure les données d'analyse de certains répertoires ?</block>
+  <block id="140079c23bf99666acb52cc8f9b453cb" category="paragraph">Oui. Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez fournir cette liste au moteur de classification. Une fois cette modification appliquée, la classification BlueXP exclut les données d'analyse des répertoires spécifiés.</block>
+  <block id="cccdbfa223764cc2c6bbdf979c65ac39" category="paragraph"><block ref="8704cac21d49e5e6ff202bcfdaf0dcb0" category="inline-link-macro-rx"></block>.</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 mars 2024 (version 1.29)</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Vous pouvez maintenant exclure les données de numérisation qui résident dans certains répertoires de sources de données</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration traité par la classification BlueXP. Cette fonction vous permet d'éviter d'analyser des répertoires qui ne sont pas nécessaires ou qui pourraient renvoyer de faux résultats positifs pour les données personnelles.</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">14 décembre 2023 (version 1.26.6)</block>
+  <block id="a1663078538acf931413c4667ee4dc32" category="doc">Définissez des ID de groupe supplémentaires comme ouverts à l'organisation</block>
+  <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Afficher la liste actuelle des ID de groupe</block>
+  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">Il est possible pour le contenu du<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> le fichier de configuration doit être différent de ce qui a été réellement validé après l'exécution du<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> script. Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :</block>
+  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Créez des stratégies pour afficher les résultats de vos principales recherches</block>
+  <block id="3e01ecaa94897c14b8a0c8eb76bf0c93" category="sidebar">Exclure certains répertoires de l'analyse</block>
+  <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Exclure les répertoires de l'analyse</block>
 </blocks>

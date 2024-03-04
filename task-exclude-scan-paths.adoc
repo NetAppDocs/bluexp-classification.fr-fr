@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: 'Si vous souhaitez que la classification BlueXP exclut les données d"analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration. Une fois cette modification appliquée, le moteur de classification BlueXP exclut les données d"analyse de ces répertoires.' 
+---
+= Excluez des répertoires spécifiques des analyses de classification BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration. Une fois cette modification appliquée, le moteur de classification BlueXP exclut les données d'analyse de ces répertoires.
+
+Notez que la classification BlueXP est configurée par défaut pour exclure les données de snapshot du volume d'analyse car ce contenu est identique au contenu du volume.
+
+Cette fonctionnalité est disponible dans la classification BlueXP version 1.29 et supérieure (à partir de mars 2024).
+
+
+
+== Sources de données prises en charge
+
+L'exclusion de répertoires spécifiques des analyses de classification BlueXP est prise en charge pour les partages NFS et CIFS dans les sources de données suivantes :
+
+* ONTAP sur site
+* Cloud Volumes ONTAP
+* Amazon FSX pour NetApp ONTAP
+* Azure NetApp Files
+* Partages de fichiers généraux
+
+
+
+
+== Définissez les répertoires à exclure de l'analyse
+
+Avant de pouvoir exclure des répertoires de l'analyse de classification, vous devez vous connecter au système de classification BlueXP pour pouvoir modifier un fichier de configuration et exécuter un script. Découvrez comment link:reference-log-in-to-instance.html["Connectez-vous au système de classification BlueXP"] Selon que vous avez installé le logiciel manuellement sur une machine Linux ou si vous avez déployé l'instance dans le cloud.
+
+[NOTE]
+====
+* Vous pouvez exclure un maximum de 50 chemins de répertoire par système de classification BlueXP.
+* L'exclusion des chemins de répertoire peut affecter les temps de numérisation.
+
+
+====
+.Étapes
+. Sur le système de classification BlueXP, accédez à «/opt/netapp/config/custom_configuration » et ouvrez le fichier `data_provider.yaml`.
+. Dans la section "Data_providers", sous la ligne "exclude:", entrez les chemins d'accès au répertoire à exclure. Par exemple :
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+Ne modifiez rien d'autre dans ce fichier.
+
+. Enregistrez les modifications apportées au fichier.
+. Accédez à « /opt/netapp/Datasense/Tools/customer_configuration/Data_providers » et exécutez le script suivant :
++
+ update_data_providers_from_config_file.sh
++
+Cette commande valide les répertoires à exclure de l'analyse vers le moteur de classification.
+
+
+
+.Résultat
+Toutes les analyses ultérieures de vos données excluront l'analyse des répertoires spécifiés.
+
+Vous pouvez ajouter, modifier ou supprimer des éléments de la liste d'exclusion en suivant ces mêmes étapes. La liste d'exclusion révisée sera mise à jour après l'exécution du script pour valider vos modifications.
+
+
+
+== Exemples
+
+.Configuration 1 :
+Chaque dossier contenant « folder1 » n'importe où dans le nom sera exclu de toutes les sources de données.
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.Résultats attendus pour les chemins qui seront exclus :
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+* /CVO1/*folder1
+* /CVO1/+folder1name
+* /CVO1/notfolder10
+* /CVO22/folder1
+* /CVO22/folder1name
+* /CVO22/folder10
+
+
+.Exemples de chemins qui ne seront pas exclus :
+* /CVO1/*dossier
+* /CVO1/foldername
+* /CVO22/*folder20
+
+
+.Configuration 2 :
+Chaque dossier qui contient "*folder1" seulement au début du nom sera exclu.
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.Résultats attendus pour les chemins qui seront exclus :
+* /CVO/*folder1
+* /CVO/*folder1name
+* /CVO/*folder10
+
+
+.Exemples de chemins qui ne seront pas exclus :
+* /CVO/folder1
+* /CVO/folder1name
+* /CVO/NOT*folder10
+
+
+.Configuration 3 :
+Tous les dossiers de la source de données "CVO22" qui contiennent "folder1" n'importe où dans le nom seront exclus.
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.Résultats attendus pour les chemins qui seront exclus :
+* /CVO22/folder1
+* /CVO22/folder1name
+* /CVO22/folder10
+
+
+.Exemples de chemins qui ne seront pas exclus :
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+
+
+
+
+== Des caractères spéciaux s'échappant dans les noms de dossier
+
+Si vous avez un nom de dossier contenant l'un des caractères spéciaux suivants et que vous souhaitez exclure les données de ce dossier de l'analyse, vous devez utiliser la séquence d'échappement \\ avant le nom du dossier.
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+Par exemple :
+
+Chemin dans la source : `/project/*not_to_scan`
+
+Syntaxe dans le fichier d'exclusion : `"\\*not_to_scan"`
+
+
+
+== Afficher la liste d'exclusion actuelle
+
+Il est possible pour le contenu du `data_provider.yaml` le fichier de configuration doit être différent de ce qui a été réellement validé après l'exécution du `update_data_providers_from_config_file.sh` script. Pour afficher la liste actuelle des répertoires que vous avez exclus de l'analyse de classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :
+
+ get_data_providers_configuration.sh

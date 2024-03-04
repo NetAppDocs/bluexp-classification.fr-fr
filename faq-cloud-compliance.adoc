@@ -178,17 +178,25 @@ link:task-managing-data-fusion.html["En savoir plus >>"^].
 
 
 
-=== Que se passe-t-il si le Tiering des données est activé sur vos volumes ONTAP ?
+=== Puis-je demander au service d'exclure les données d'analyse de certains répertoires ?
 
-Lorsque la classification BlueXP analyse les volumes pour lesquels les données inactives sont envoyées vers le stockage objet, il analyse toutes les données, c'est-à-dire les données qui se trouvent sur des disques locaux et les données inactives envoyées vers le stockage objet. C'est également le cas pour les produits non-NetApp qui implémentent la hiérarchisation.
+Oui. Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez fournir cette liste au moteur de classification. Une fois cette modification appliquée, la classification BlueXP exclut les données d'analyse des répertoires spécifiés.
 
-L'analyse ne chauffe pas les données inactives, elles restent inactives et restent dans le stockage objet.
+link:task-exclude-scan-paths.html["En savoir plus >>"^].
 
 
 
 === Les copies Snapshot qui résident sur les volumes ONTAP sont-elles analysées ?
 
 Non La classification BlueXP ne analyse pas les snapshots, car le contenu est identique au contenu du volume.
+
+
+
+=== Que se passe-t-il si le Tiering des données est activé sur vos volumes ONTAP ?
+
+Lorsque la classification BlueXP analyse les volumes pour lesquels les données inactives sont envoyées vers le stockage objet, il analyse toutes les données, c'est-à-dire les données qui se trouvent sur des disques locaux et les données inactives envoyées vers le stockage objet. C'est également le cas pour les produits non-NetApp qui implémentent la hiérarchisation.
+
+L'analyse ne chauffe pas les données inactives, elles restent inactives et restent dans le stockage objet.
 
 
 
