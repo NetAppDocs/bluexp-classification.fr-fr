@@ -30,6 +30,14 @@ https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html
 
 
 
+=== La prise en charge des instances extra-volumineuses est désormais qualifiée
+
+Si vous avez besoin de la classification BlueXP pour analyser plus de 250 millions de fichiers, vous pouvez utiliser une très grande instance dans votre déploiement cloud ou votre installation sur site. Ce type de système peut analyser jusqu'à 500 millions de fichiers.
+
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["En savoir plus >>"].
+
+
+
 == 10 janvier 2024 (version 1.27)
 
 

@@ -29,6 +29,9 @@ Dans les tableaux suivants, si le système marqué comme « par défaut » n'est
 | Taille du système | Caractéristiques | Type d'instance 
 
 
+| Très grand | 32 processeurs, 128 Go de RAM, 1 Tio de SSD gp3 | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.8xlarge"^] (valeur par défaut) 
+
+
 | Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] (par défaut) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
@@ -44,6 +47,9 @@ Dans les tableaux suivants, si le système marqué comme « par défaut » n'est
 [cols="20,30,25"]
 |===
 | Taille du système | Caractéristiques | Type d'instance 
+
+
+| Très grand | 32 processeurs, 128 Go de RAM, SSD de 1 Tio (débit minimal de 750 Mo/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (valeur par défaut) 
 
 
 | Grand | 16 processeurs, 64 Go de RAM, SSD de 500 Gio | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (valeur par défaut) 
