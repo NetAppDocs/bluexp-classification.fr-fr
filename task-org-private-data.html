@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head class="at-element-marker">
+  <title>Organisez vos données privées | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Organisez vos données privées | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/fr-fr/bluexp-classification/task-org-private-data.html" />
+	<meta property="og:description" content="La classification BlueXP vous offre de nombreuses façons de gérer et d"organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données..." />
+  <meta property="og:image" content="https://docs.netapp.com/fr-fr/bluexp-classification/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="La classification BlueXP vous offre de nombreuses façons de gérer et d"organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données...">
+  <meta name="keywords" content=" compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense"><!-- Icons -->
+  <link rel="icon" href="/fr-fr/bluexp-classification/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/fr-fr/bluexp-classification/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/bluexp-classification/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/fr-fr/bluexp-classification/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/fr-fr/bluexp-classification/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/fr-fr/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-classification/task-org-private-data.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-classification/task-org-private-data.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/bluexp-classification/js/na-search.js'></script><script src='/fr-fr/bluexp-classification/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/fr-fr/bluexp-classification/js/custom-dropdown.js'></script>
+  <script src='/fr-fr/bluexp-classification/js/FileSaver.min.js'></script>
+  <script src='/fr-fr/bluexp-classification/js/jszip-utils.min.js'></script>
+  <script src='/fr-fr/bluexp-classification/js/jszip.min.js'></script><script src='/fr-fr/bluexp-classification/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/fr-fr/bluexp-classification/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/fr">
+                <image id="ie-header-logo" src="/fr-fr/bluexp-classification/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/fr/support-and-training/documentation/">Documents</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/fr-fr/bluexp-classification/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Français</span>
+                    <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-classification/task-org-private-data.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/fr-fr/bluexp-classification/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">Tout NetApp</span>
+                    <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/fr/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Base de connaissances</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/fr/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Formation</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/fr-fr/bluexp-classification/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/fr-fr/bluexp-classification/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Tous les documents</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Documents sur le cloud</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/fr-fr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/fr-fr/bluexp-classification/">-->
+      BlueXP classification
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/fr-fr/bluexp-classification/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/fr-fr/bluexp-classification/search.html" 
+        data-type="widget"
+        data-placeholder="Rechercher dans la documentation"
+        data-no-results-found="Aucun résultat trouvé pour : {query}"
+        data-did-you-mean="Rechercher {suggestion}."
+        data-no-results-found-did-you-mean="Aucun résultat n'a été trouvé pour {query}. Voulez-vous dire {suggestion} ?"
+        data-results-found="{hitCount} résultats"
+        data-error-message="Une erreur s'est produite. Merci de réessayer."
+        data-error-reset="Réinitialiser la recherche"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documents de classification BlueXP"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/fr-fr/bluexp-classification/index.html">
+        Documents de classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Notes de mise à jour"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Notes de mise à jour</div>-->
+         Notes de mise à jour
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quoi de neuf"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/whats-new.html">
+        Quoi de neuf
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limites connues"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/reference-limitations.html">
+        Limites connues
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Commencez"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Commencez</div>-->
+         Commencez
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Découvrez la classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/concept-cloud-compliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/concept-cloud-compliance.html">
+        Découvrez la classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Déployez la classification BlueXP"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Déployez la classification BlueXP</div>-->
+         Déployez la classification BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Déployez dans le cloud à l'aide de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-deploy-cloud-compliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-deploy-cloud-compliance.html">
+        Déployez dans le cloud à l'aide de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installez sur un hôte Linux avec accès à Internet"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-deploy-compliance-onprem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-deploy-compliance-onprem.html">
+        Installez sur un hôte Linux avec accès à Internet
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installation sur site sans accès à Internet"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-deploy-compliance-dark-site.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-deploy-compliance-dark-site.html">
+        Installation sur site sans accès à Internet
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Vérifiez que votre hôte Linux est prêt à installer la classification BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-test-linux-system.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-test-linux-system.html">
+        Vérifiez que votre hôte Linux est prêt à installer la classification BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Activez la numérisation sur vos sources de données"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Activez la numérisation sur vos sources de données</div>-->
+         Activez la numérisation sur vos sources de données
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP et ONTAP sur site"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-getting-started-compliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-getting-started-compliance.html">
+        Cloud Volumes ONTAP et ONTAP sur site
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure NetApp Files"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-anf.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-anf.html">
+        Azure NetApp Files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amazon FSX pour ONTAP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-fsx.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-fsx.html">
+        Amazon FSX pour ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Compartiments Amazon S3"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-s3.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-s3.html">
+        Compartiments Amazon S3
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Schémas de base de données"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-databases.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-databases.html">
+        Schémas de base de données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comptes OneDrive"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-onedrive.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-onedrive.html">
+        Comptes OneDrive
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comptes SharePoint"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-sharepoint.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-sharepoint.html">
+        Comptes SharePoint
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comptes Google Drive"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-google-drive.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-google-drive.html">
+        Comptes Google Drive
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Partages de fichiers"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-file-shares.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-file-shares.html">
+        Partages de fichiers
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Stockage objet"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-scanning-object-storage.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-classification/task-scanning-object-storage.html">
+        Stockage objet
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Intégrer Active Directory"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-add-active-directory-datasense.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-add-active-directory-datasense.html">
+        Intégrer Active Directory
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configuration des licences"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-licensing-datasense.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-licensing-datasense.html">
+        Configuration des licences
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/faq-cloud-compliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/faq-cloud-compliance.html">
+        FAQ
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Utilisez la classification BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Utilisez la classification BlueXP</div>-->
+         Utilisez la classification BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Afficher les détails de gouvernance de vos données"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-controlling-governance-data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-controlling-governance-data.html">
+        Afficher les détails de gouvernance de vos données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Affichez les détails de conformité de vos données"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-controlling-private-data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-controlling-private-data.html">
+        Affichez les détails de conformité de vos données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Catégories de données privées"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/reference-private-data-categories.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/reference-private-data-categories.html">
+        Catégories de données privées
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Examiner vos données"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-investigate-data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-investigate-data.html">
+        Examiner vos données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Organisez vos données privées"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-org-private-data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-org-private-data.html">
+        Organisez vos données privées
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Attribuez des règles à vos données"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-using-policies.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-using-policies.html">
+        Attribuez des règles à vos données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérez vos données privées"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-managing-highlights.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-managing-highlights.html">
+        Gérez vos données privées
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Contrôlez et gérez les événements d'accès aux fichiers"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-manage-file-access-events.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-manage-file-access-events.html">
+        Contrôlez et gérez les événements d'accès aux fichiers
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modifier les paramètres de numérisation"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="task-managing-repo-scanning.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-managing-repo-scanning.html">
+        Modifier les paramètres de numérisation
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Générer des rapports de conformité"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-generating-compliance-reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-generating-compliance-reports.html">
+        Générer des rapports de conformité
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérer la classification BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Gérer la classification BlueXP</div>-->
+         Gérer la classification BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ajoutez des identifiants de données personnels personnalisés"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-managing-data-fusion.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-managing-data-fusion.html">
+        Ajoutez des identifiants de données personnels personnalisés
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Exclure les répertoires de l'analyse"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-exclude-scan-paths.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-exclude-scan-paths.html">
+        Exclure les répertoires de l'analyse
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Afficher l'état des actions de classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-view-compliance-actions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-view-compliance-actions.html">
+        Afficher l'état des actions de classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Définir les ID de groupe existants comme « ouverts à l'organisation »"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-add-group-id-as-open.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-add-group-id-as-open.html">
+        Définir les ID de groupe existants comme « ouverts à l'organisation »
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Vérifiez l'historique des actions de classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-audit-data-sense-actions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-audit-data-sense-actions.html">
+        Vérifiez l'historique des actions de classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Réduisez la vitesse d'analyse de la classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-reduce-scan-speed.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-reduce-scan-speed.html">
+        Réduisez la vitesse d'analyse de la classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supprimez les sources de données de la classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-managing-compliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-managing-compliance.html">
+        Supprimez les sources de données de la classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Désinstallez la classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-uninstall-data-sense.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-uninstall-data-sense.html">
+        Désinstallez la classification BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Référence"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Référence</div>-->
+         Référence
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Types d'instances de classification BlueXP pris en charge"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/reference-instance-types.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/reference-instance-types.html">
+        Types d'instances de classification BlueXP pris en charge
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Métadonnées collectées à partir des sources de données"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/reference-collected-metadata.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/reference-collected-metadata.html">
+        Métadonnées collectées à partir des sources de données
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectez-vous au système de classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/reference-log-in-to-instance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/reference-log-in-to-instance.html">
+        Connectez-vous au système de classification BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="API de classification BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/api-classification.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/api-classification.html">
+        API de classification BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connaissances et support"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-classification/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-classification/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Connaissances et support</div>-->
+         Connaissances et support
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="S'inscrire pour obtenir de l'aide"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-support-registration.html">
+        S'inscrire pour obtenir de l'aide
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenez de l'aide"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-classification/task-get-help.html">
+        Obtenez de l'aide
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mentions légales"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-org-private-data.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/fr-fr/bluexp-classification/legal-notices.html">
+        Mentions légales
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/fr-fr/bluexp-classification"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/fr-fr/bluexp-classification"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/fr-fr/bluexp-classification/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> La version française est une traduction automatique. La version anglaise prévaut sur la française en cas de divergence. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Organisez vos données privées</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-07 03:53:46 +0000">03/07/2024</time>
+        
+    
+    
+        <span>Contributeurs
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/fr-fr/bluexp-classification/images/discuss-sm.svg" alt="" class="github-icon" />Suggérer des modifications</span>
+        <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-classification.fr-fr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/fr-fr/bluexp-classification/task-org-private-data.html&page-title=Organisez vos données privées" class="page-nav-contribute-link" role="button">Demander des modifications de la documentation</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-classification/blob/main/task-org-private-data.adoc" class="page-nav-contribute-link" role="button">Modifier cette page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >En savoir plus sur les contributions</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/fr-fr/bluexp-classification/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/fr-fr/bluexp-classification/pdfs/fullsite-sidebar/Documentation_sur_les_classifications_BlueXP.pdf" >
+                    <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>Un fichier PDF de toute la documentation</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Notes_de_mise_à_jour.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Notes de mise à jour
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Commencez.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Commencez
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Déployez_la_classification_BlueXP.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Déployez la classification BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Activez_la_numérisation_sur_vos_sources_de_données.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Activez la numérisation sur vos sources de données
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Utilisez_la_classification_BlueXP.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Utilisez la classification BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Gérer_la_classification_BlueXP.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Gérer la classification BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Référence.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Référence
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-classification/pdfs/sidebar/Connaissances_et_support.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-classification/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Connaissances et support
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/fr-fr/bluexp-classification/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Plusieurs fichiers PDF<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Si vous êtes abonné à <a href="https://azure.microsoft.com/en-us/services/information-protection/" target="_blank" rel="noopener">"Protection des informations Azure (AIP)"</a> Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-classification/images/note.svg" alt="Remarque">
+</td>
+<td class="content">
+La version de décembre 2023 (v1.26.6) a temporairement supprimé l'option d'intégration des données à l'aide des étiquettes Azure information protection (AIP).
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.</p>
+</li>
+<li>
+<p>Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.</p>
+</li>
+<li>
+<p>Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.</p>
+</li>
+<li>
+<p>Vous pouvez envoyer des alertes par e-mail à des utilisateurs BlueXP ou à toute autre adresse e-mail lorsque certaines stratégies critiques renvoient des résultats.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-classification/images/note.svg" alt="Remarque">
+</td>
+<td class="content">
+Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dois-je-utiliser-des-étiquettes-ou-des-étiquettes">Dois-je utiliser des étiquettes ou des étiquettes ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous trouverez ci-dessous une comparaison du balisage de classification BlueXP et de l'étiquetage Azure information protection.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Étiquettes</th>
+<th class="tableblock halign-left valign-top">Étiquettes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Les balises de fichier font partie intégrante du classement BlueXP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vous devez vous être abonné à Azure information protection (AIP).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La balise n'est conservée que dans la base de données de classification BlueXP, mais pas dans le fichier. Il ne modifie pas le fichier, ni les heures d'accès ou de modification du fichier.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Le libellé fait partie du fichier et, lorsque le libellé change, le fichier change. Cette modification modifie également les heures d'accès et de modification du fichier.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vous pouvez avoir plusieurs balises sur un seul fichier.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vous pouvez avoir une étiquette sur un seul fichier.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La balise peut être utilisée pour les actions de classification BlueXP internes, telles que la copie, le déplacement, la suppression, l'exécution d'une règle, etc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Les autres systèmes qui peuvent lire le fichier peuvent voir l'étiquette, qui peut être utilisée pour une automatisation supplémentaire.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Un seul appel API est utilisé pour voir si un fichier a une balise.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="catégoriser-vos-données-à-laide-détiquettes-aip">Catégoriser vos données à l'aide d'étiquettes AIP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous vous êtes abonné à, vous pouvez gérer les étiquettes AIP dans les fichiers que la classification BlueXP analyse <a href="https://azure.microsoft.com/en-us/services/information-protection/" target="_blank" rel="noopener">"Protection des informations Azure (AIP)"</a>. AIP vous permet de classer et de protéger les documents et les fichiers en appliquant des étiquettes au contenu. La classification BlueXP vous permet d'afficher les étiquettes déjà attribuées aux fichiers, d'ajouter des étiquettes aux fichiers et de modifier les étiquettes lorsqu'une étiquette existe déjà.</p>
+</div>
+<div class="paragraph">
+<p>La classification BlueXP prend en charge les étiquettes AIP dans les types de fichiers suivants : .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-classification/images/note.svg" alt="Remarque">
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Vous ne pouvez pas modifier actuellement les étiquettes dans des fichiers de plus de 30 Mo. Pour OneDrive, SharePoint et Google Drive, la taille maximale de fichier est de 4 Mo.</p>
+</li>
+<li>
+<p>Si un fichier possède une étiquette qui n'existe plus dans AIP, la classification BlueXP la considère comme un fichier sans étiquette.</p>
+</li>
+<li>
+<p>Si vous avez déployé la classification BlueXP dans une région gouvernementale ou dans un emplacement sur site qui n'a pas d'accès à Internet (également appelé site invisible), la fonctionnalité d'étiquette AIP n'est pas disponible.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="intégrez-les-étiquettes-daip-dans-votre-espace-de-travail">Intégrez les étiquettes d'AIP dans votre espace de travail</h3>
+<div class="paragraph">
+<p>Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous <a href="concept-cloud-compliance.html#supported-data-sources" target="_blank" rel="noopener">"sources des données"</a> Dans votre espace de travail BlueXP.</p>
+</div>
+<div class="ulist">
+<div class="title">De formation</div>
+<ul>
+<li>
+<p>Vous devez disposer d'un compte et d'une licence Azure information protection.</p>
+</li>
+<li>
+<p>Vous devez disposer des identifiants de connexion pour le compte Azure.</p>
+</li>
+<li>
+<p>Si vous prévoyez de modifier les étiquettes dans les fichiers qui résident dans les compartiments Amazon S3, assurez-vous que l'autorisation est requise <code>s3:PutObject</code> Est inclus dans le rôle IAM. Voir <a href="task-scanning-s3.html#reviewing-s3-prerequisites" target="_blank" rel="noopener">"Configuration du rôle IAM"</a>.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Sur la page Configuration de la classification BlueXP, cliquez sur <strong>intégrer les étiquettes d'AIP</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_integrate_aip_labels.png" alt="Capture d'écran montrant comment cliquer sur le bouton pour intégrer la fonctionnalité d'étiquettes AIP dans la classification BlueXP."></span></p>
+</div>
+</li>
+<li>
+<p>Dans la boîte de dialogue intégrer des libellés AIP, cliquez sur <strong>connexion à Azure</strong>.</p>
+</li>
+<li>
+<p>Sur la page Microsoft qui s'affiche, sélectionnez le compte et saisissez les informations d'identification requises.</p>
+</li>
+<li>
+<p>Revenez à l'onglet de classification BlueXP et le message «<em>AIP Labels ont été intégrés avec le compte &lt;account_name&gt;</em> » s'affiche.</p>
+</li>
+<li>
+<p>Cliquez sur <strong>Fermer</strong> et vous verrez le texte <em>AIP Labels Integrated</em> en haut de la page.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_aip_labels_int.png" alt="Une capture d'écran qui montre les étiquettes AIP a été intégrée avec succès."></span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Résultat</div>
+<p>Vous pouvez afficher et affecter des libellés AIP à partir du volet des résultats de la page Investigation. Vous pouvez également attribuer des libellés AIP aux fichiers à l'aide de stratégies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="afficher-les-étiquettes-daip-dans-vos-fichiers">Afficher les étiquettes d'AIP dans vos fichiers</h3>
+<div class="paragraph">
+<p>Vous pouvez afficher le libellé AIP actuel attribué à un fichier.</p>
+</div>
+<div class="paragraph">
+<p>Dans le volet Résultats de l'enquête de données, cliquez sur <span class="image"><img src="./media/button_down_caret.png" alt="le bas-caret"></span> pour que le fichier développe les détails des métadonnées du fichier.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_show_label.png" alt="Capture d'écran présentant les détails des métadonnées pour un seul fichier, y compris le libellé AIP affecté."></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="attribuez-manuellement-des-étiquettes-daip">Attribuez manuellement des étiquettes d'AIP</h3>
+<div class="paragraph">
+<p>Vous pouvez ajouter, modifier et supprimer des étiquettes d'AIP de vos fichiers à l'aide de la classification BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Procédez comme suit pour attribuer un libellé AIP à un seul fichier.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, cliquez sur <span class="image"><img src="./media/button_down_caret.png" alt="le bas-caret"></span> pour que le fichier développe les détails des métadonnées du fichier.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_add_label_manually.png" alt="Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."></span></p>
+</div>
+</li>
+<li>
+<p>Cliquez sur <strong>attribuer un libellé à ce fichier</strong>, puis sélectionnez le libellé.</p>
+<div class="paragraph">
+<p>Le libellé apparaît dans les métadonnées du fichier.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Procédez comme suit pour attribuer une étiquette d'AIP à plusieurs fichiers. Notez que vous pouvez attribuer une étiquette AIP à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, sélectionnez le ou les fichiers que vous souhaitez étiqueter.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_tag_multi_files.png" alt="Capture d'écran indiquant comment sélectionner les fichiers à étiqueter et le bouton libellé de la page recherche de données."></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (<span class="image"><img src="./media/button_backup_1_volume.png" alt=""></span>).</p>
+</li>
+<li>
+<p>Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (<span class="image"><img src="./media/button_select_all_files.png" alt=""></span>).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dans la barre de boutons, cliquez sur <strong>Label</strong> et sélectionnez le libellé AIP :</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_select_aip_label_multi.png" alt="Capture d'écran indiquant comment affecter une étiquette AIP à plusieurs fichiers dans la page Data Investigation."></span></p>
+</div>
+<div class="paragraph">
+<p>L'étiquette AIP est ajoutée aux métadonnées pour tous les fichiers sélectionnés.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supprimez-lintégration-aip">Supprimez l'intégration AIP</h3>
+<div class="paragraph">
+<p>Si vous ne souhaitez plus pouvoir gérer les étiquettes AIP dans les fichiers, vous pouvez supprimer le compte AIP de l'interface de classification BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Notez qu'aucune modification n'est apportée aux étiquettes que vous avez ajoutées à l'aide de la classification BlueXP. Les étiquettes qui existent dans les fichiers resteront telles qu'elles existent actuellement.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans la page <em>Configuration</em>, cliquez sur <strong>libellés AIP intégrés &gt; Supprimer intégration</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_un_integrate_aip_labels.png" alt="Copie d'écran montrant comment supprimer les intégrations d'AIP avec la classification BlueXP."></span></p>
+</div>
+</li>
+<li>
+<p>Cliquez sur <strong>Supprimer l'intégration</strong> dans la boîte de dialogue de confirmation.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appliquez-des-balises-pour-gérer-vos-fichiers-numérisés">Appliquez des balises pour gérer vos fichiers numérisés</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez ajouter une balise aux fichiers que vous souhaitez marquer pour un type de suivi. Par exemple, vous avez peut-être trouvé des fichiers en double et vous voulez en supprimer un, mais vous devez vérifier lequel supprimer. Vous pouvez ajouter une balise « vérifier pour supprimer » au fichier afin que vous sachiez que ce fichier nécessite une recherche et un certain type d'action future.</p>
+</div>
+<div class="paragraph">
+<p>La classification BlueXP vous permet d'afficher les balises attribuées aux fichiers, d'ajouter ou de supprimer des balises des fichiers, et de modifier le nom ou de supprimer une balise existante.</p>
+</div>
+<div class="paragraph">
+<p>Notez que la balise n'est pas ajoutée au fichier de la même manière que les étiquettes AIP font partie des métadonnées du fichier. La balise est visible par les utilisateurs BlueXP via la classification BlueXP. Vous pouvez ainsi voir si un fichier doit être supprimé ou vérifié pour un certain type de suivi.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-classification/images/tip.svg" alt="Astuce">
+</td>
+<td class="content">
+Les balises attribuées aux fichiers de la classification BlueXP ne sont pas liées aux balises que vous pouvez ajouter à des ressources, telles que des volumes ou des instances de machines virtuelles. Les balises de classification BlueXP sont appliquées au niveau des fichiers.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="afficher-les-fichiers-auxquels-certaines-balises-sont-appliquées">Afficher les fichiers auxquels certaines balises sont appliquées</h3>
+<div class="paragraph">
+<p>Vous pouvez afficher tous les fichiers auxquels des étiquettes spécifiques sont attribuées.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cliquez sur l'onglet <strong>Investigation</strong> de la classification BlueXP.</p>
+</li>
+<li>
+<p>Dans la page recherche de données, cliquez sur <strong>balises</strong> dans le volet filtres, puis sélectionnez les balises requises.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_filter_status.png" alt="Capture d'écran indiquant comment sélectionner des balises dans le volet filtres."></span></p>
+</div>
+<div class="paragraph">
+<p>Le volet Résultats de l'enquête affiche tous les fichiers auxquels ces balises sont affectées.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="attribuez-des-balises-aux-fichiers">Attribuez des balises aux fichiers</h3>
+<div class="paragraph">
+<p>Vous pouvez ajouter des balises à un seul fichier ou à un groupe de fichiers.</p>
+</div>
+<div class="paragraph">
+<p>Pour ajouter une balise à un seul fichier :</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, cliquez sur <span class="image"><img src="./media/button_down_caret.png" alt="le bas-caret"></span> pour que le fichier développe les détails des métadonnées du fichier.</p>
+</li>
+<li>
+<p>Cliquez sur le champ <strong>Tags</strong> pour afficher les balises actuellement affectées.</p>
+</li>
+<li>
+<p>Ajoutez la ou les balises :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour affecter une balise existante, cliquez dans le champ <strong>Nouvelle balise&#8230;&#8203;</strong> et commencez à taper le nom de la balise. Lorsque la balise que vous cherchez s'affiche, sélectionnez-la et appuyez sur <strong>entrée</strong>.</p>
+</li>
+<li>
+<p>Pour créer une nouvelle balise et l'affecter au fichier, cliquez dans le champ <strong>Nouvelle balise&#8230;&#8203;</strong>, saisissez le nom de la nouvelle balise et appuyez sur <strong>entrée</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_add_status_manually.png" alt="Capture d'écran indiquant comment affecter une balise à un fichier dans la page recherche de données."></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La balise s'affiche dans les métadonnées de fichier.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Pour ajouter une balise à plusieurs fichiers :</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, sélectionnez le ou les fichiers que vous souhaitez marquer.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_tag_multi_files.png" alt="Capture d'écran indiquant comment sélectionner les fichiers à étiqueter et le bouton Etiquettes dans la page recherche de données."></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (<span class="image"><img src="./media/button_backup_1_volume.png" alt=""></span>).</p>
+</li>
+<li>
+<p>Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (<span class="image"><img src="./media/button_select_all_files.png" alt=""></span>).</p>
+</li>
+<li>
+<p>Pour sélectionner tous les fichiers sur toutes les pages, cochez la case dans la ligne de titre (<span class="image"><img src="./media/button_select_all_files.png" alt=""></span>), puis dans le message contextuel <span class="image"><img src="./media/screenshot_select_all_items.png" alt=""></span>, Cliquez sur <strong>Sélectionner tous les éléments de la liste (xxx items)</strong>.</p>
+<div class="paragraph">
+<p>Vous pouvez appliquer des balises à un maximum de 100,000 fichiers à la fois.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dans la barre de boutons, cliquez sur <strong>Tags</strong> et les balises actuellement affectées sont affichées.</p>
+</li>
+<li>
+<p>Ajoutez la ou les balises :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour affecter une balise existante, cliquez dans le champ <strong>Nouvelle balise&#8230;&#8203;</strong> et commencez à taper le nom de la balise. Lorsque la balise que vous cherchez s'affiche, sélectionnez-la et appuyez sur <strong>entrée</strong>.</p>
+</li>
+<li>
+<p>Pour créer une nouvelle balise et l'affecter au fichier, cliquez dans le champ <strong>Nouvelle balise&#8230;&#8203;</strong>, saisissez le nom de la nouvelle balise et appuyez sur <strong>entrée</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_select_tags_multi.png" alt="Capture d'écran indiquant comment affecter une balise à plusieurs fichiers dans la page recherche de données."></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Approuver l'ajout des balises dans la boîte de dialogue de confirmation et les balises sont ajoutées aux métadonnées pour tous les fichiers sélectionnés.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supprimez-les-balises-des-fichiers">Supprimez les balises des fichiers</h3>
+<div class="paragraph">
+<p>Vous pouvez supprimer une balise si vous n'avez plus besoin de l'utiliser.</p>
+</div>
+<div class="paragraph">
+<p>Il vous suffit de cliquer sur <strong>x</strong> pour obtenir une balise existante.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/button_delete_datasense_file_tag.png" alt="Capture d'écran de l'emplacement du bouton de suppression de balise."></span></p>
+</div>
+<div class="paragraph">
+<p>Si vous avez sélectionné plusieurs fichiers, la balise est supprimée de tous les fichiers.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="affecter-des-utilisateurs-à-la-gestion-de-certains-fichiers">Affecter des utilisateurs à la gestion de certains fichiers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que personne puisse être responsable des actions de suivi qui doivent être effectuées sur le fichier. Cette fonctionnalité est souvent utilisée avec la fonction pour ajouter des balises d'état personnalisées à un fichier.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple, vous pouvez avoir un fichier contenant certaines données personnelles qui autorise un trop grand nombre d'utilisateurs à accéder en lecture et en écriture (autorisations ouvertes). Vous pouvez donc attribuer l'étiquette d'état « Modifier les autorisations » et attribuer ce fichier à l'utilisateur « Joan Smith » afin qu'il puisse décider comment résoudre le problème. Lorsqu'ils ont résolu le problème, ils peuvent changer l'étiquette d'état en « terminé ».</p>
+</div>
+<div class="paragraph">
+<p>Notez que le nom d'utilisateur n'est pas ajouté au fichier dans le cadre des métadonnées de fichier. Il est vu juste par les utilisateurs BlueXP lors de l'utilisation de la classification BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Un nouveau filtre dans la page Investigation vous permet d'afficher facilement tous les fichiers qui ont la même personne dans le champ « assigné à ».</p>
+</div>
+<div class="paragraph">
+<p>Procédez comme suit pour attribuer un utilisateur à un seul fichier.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, cliquez sur <span class="image"><img src="./media/button_down_caret.png" alt="le bas-caret"></span> pour que le fichier développe les détails des métadonnées du fichier.</p>
+</li>
+<li>
+<p>Cliquez sur le champ <strong>affecté à</strong> et sélectionnez le nom d'utilisateur.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_add_user_manually.png" alt="Capture d'écran indiquant comment affecter un utilisateur à un fichier dans la page Data Investigation."></span></p>
+</div>
+<div class="paragraph">
+<p>Le nom d'utilisateur apparaît dans les métadonnées de fichier.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Procédez comme suit pour attribuer un utilisateur à plusieurs fichiers. Notez que vous pouvez affecter un utilisateur à un maximum de 20 fichiers à la fois (une page dans l'interface utilisateur).</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Dans le volet Résultats de l'enquête de données, sélectionnez le ou les fichiers que vous souhaitez attribuer à un utilisateur.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_tag_multi_files.png" alt="Capture d'écran indiquant comment sélectionner les fichiers à affecter à un utilisateur, et le bouton affecter à, dans la page recherche de données."></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour sélectionner des fichiers individuels, cochez la case de chaque fichier (<span class="image"><img src="./media/button_backup_1_volume.png" alt=""></span>).</p>
+</li>
+<li>
+<p>Pour sélectionner tous les fichiers de la page en cours, cochez la case dans la ligne de titre (<span class="image"><img src="./media/button_select_all_files.png" alt=""></span>).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dans la barre de boutons, cliquez sur <strong>affecter à</strong> et sélectionnez le nom d'utilisateur :</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_select_user_multi.png" alt="Capture d'écran indiquant comment affecter un utilisateur à plusieurs fichiers dans la page recherche de données."></span></p>
+</div>
+<div class="paragraph">
+<p>L'utilisateur est ajouté aux métadonnées pour tous les fichiers sélectionnés.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/fr-fr/bluexp-classification/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/fr-fr/bluexp-classification/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">Sur cette page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Conditions d'utilisation</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Déclaration de confidentialité</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Déclaration sur les cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Paramètres des cookies</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Envoyer des commentaires à propos de cette page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/fr-fr/bluexp-classification/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/fr-fr/bluexp-classification/js/prism.js'></script>
+      <script type="text/javascript" src='/fr-fr/bluexp-classification/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/fr-fr/bluexp-classification/js/ie-tabbed-blocks.js'></script>
+    <script src='/fr-fr/bluexp-classification/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
