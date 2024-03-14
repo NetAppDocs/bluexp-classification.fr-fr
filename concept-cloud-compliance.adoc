@@ -297,7 +297,7 @@ Reconnaissance de l'entité de nom:: La classification BlueXP utilise l'IA pour 
 
 BlueXP déploie l'instance de classification BlueXP avec un groupe de sécurité qui active les connexions HTTP entrantes à partir de l'instance du connecteur.
 
-Lorsque vous utilisez BlueXP en mode SaaS, la connexion à BlueXP est desservie par HTTPS. Les données privées envoyées entre votre navigateur et l'instance de classification BlueXP sont sécurisées avec un chiffrement de bout en bout, ce qui signifie que NetApp et des tiers ne peuvent pas les lire.
+Lorsque vous utilisez BlueXP en mode SaaS, la connexion à BlueXP est desservie par HTTPS et les données privées envoyées entre votre navigateur et l'instance de classification BlueXP sont sécurisées avec un chiffrement de bout en bout à l'aide de TLS 1.2. NetApp et des tiers ne peuvent donc pas les lire.
 
 Les règles sortantes sont complètement ouvertes. Un accès à Internet est nécessaire pour installer et mettre à niveau le logiciel de classification BlueXP et pour envoyer des metrics d'utilisation.
 
