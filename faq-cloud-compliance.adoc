@@ -245,7 +245,7 @@ La classification BlueXP peut analyser les données à partir des environnements
 * Comptes Google Drive
 
 
-La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi que les versions CIFS 1.x, 2.0, 2.1 et 3.0.
+La classification BlueXP prend en charge les versions NFS 3.x et CIFS 1.x, 2.0, 2.1 et 3.0.
 
 
 
@@ -392,9 +392,23 @@ Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez
 
 
 
+=== La classification BlueXP requiert-elle l'accès aux identifiants ?
+
+La classification BlueXP elle-même ne récupère pas les identifiants du stockage. Elles sont plutôt stockées dans le connecteur BlueXP.
+
+La classification BlueXP utilise les identifiants du plan de données, par exemple les identifiants CIFS pour monter les partages avant l'analyse.
+
+
+
 === Puis-je déployer le connecteur sur mon propre hôte ?
 
 Oui. C'est possible https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte du cloud. Si vous prévoyez de déployer la classification BlueXP sur site, vous pouvez également installer le connecteur sur site, mais ce n'est pas obligatoire.
+
+
+
+=== La communication entre le service et le connecteur utilise-t-elle HTTP ?
+
+Oui, la classification BlueXP communique avec le connecteur BlueXP via HTTP.
 
 
 

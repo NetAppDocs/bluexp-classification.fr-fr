@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification 
 summary: 'Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet. Dans le cadre de cette installation, vous devrez déployer l"hôte Linux manuellement sur votre réseau ou dans le cloud.' 
 ---
 = Installez la classification BlueXP sur un hôte disposant d'un accès Internet
@@ -162,11 +162,11 @@ Notez qu'il existe des limites lors de l'utilisation des systèmes plus petits. 
 *** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
 
 
-** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.26 ou supérieure :
+** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.30 ou supérieure :
 +
-*** Red Hat Enterprise Linux version 9.0, 9.1 et 9.2
+*** Red Hat Enterprise Linux version 8.8, 9.0, 9.1, 9.2 et 9.3
 +
-Notez que les fonctionnalités suivantes ne sont pas prises en charge actuellement avec RHEL 9.x :
+Notez que les fonctionnalités suivantes ne sont actuellement pas prises en charge lors de l'utilisation de RHEL 8.x et RHEL 9.x :
 
 +
 **** Installation dans un site sombre
@@ -186,14 +186,17 @@ Notez que les fonctionnalités suivantes ne sont pas prises en charge actuelleme
 +
 https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
 
-*** Podman version 4 ou supérieure. Pour installer Podman, mettez à jour vos packages système (`sudo yum update -y`), puis installez Podman (`sudo yum install podman -y`).
+*** Podman version 4 ou supérieure. Pour installer Podman, mettez à jour vos packages système (`sudo yum update -y`), puis installez Podman (`sudo yum install netavark -y`).
 
 
-** Python version 3.6 ou supérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
 
 
-* *Considérations NTP* : NetApp recommande de configurer le système de classification BlueXP pour utiliser un service NTP (Network Time Protocol). L'heure doit être synchronisée entre le système de classification BlueXP et le système BlueXP Connector.
-* *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
+
+
+* Python version 3.6 ou supérieure. https://www.python.org/downloads/["Voir les instructions d'installation"^].
++
+** *Considérations NTP* : NetApp recommande de configurer le système de classification BlueXP pour utiliser un service NTP (Network Time Protocol). L'heure doit être synchronisée entre le système de classification BlueXP et le système BlueXP Connector.
+** *Firesund considérations*: Si vous prévoyez d'utiliser `firewalld`, Nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -215,6 +218,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 Notez que vous devez redémarrer Docker ou Podman chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
+
+
 
 
 
@@ -574,7 +579,7 @@ Une fois l'installation terminée sur tous les nœuds du scanner et qu'ils ont �
 
 . Si vous avez ajouté des nœuds de scanner à un scanner group, revenez au nœud Manager et effectuez les 2 tâches suivantes :
 +
-.. Ouvrez le fichier «/opt/netapp/Datase/working_Environment_to_scanner_group_config.yml » et entrez le mappage pour lequel les groupes de lecteurs vont analyser des environnements de travail spécifiques. Vous devez avoir l'ID _Working Environment_ pour chaque source de données. Par exemple, les entrées suivantes ajoutent 2 environnements de travail au groupe de scanner « europe » et 2 au groupe de scanner « united_States » :
+.. Ouvrez le fichier « /opt/netapp/config/custom_configuration/working_Environment_to_scanner_group_config.yml » et entrez le mappage pour lequel les groupes de scanner vont analyser des environnements de travail spécifiques. Vous devez avoir l'ID _Working Environment_ pour chaque source de données. Par exemple, les entrées suivantes ajoutent 2 environnements de travail au groupe de scanner « europe » et 2 au groupe de scanner « united_States » :
 +
 ....
 scanner_groups:

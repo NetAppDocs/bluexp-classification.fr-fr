@@ -35,7 +35,7 @@ image:screenshot_compliance_repo_scan_settings.png["Capture d'écran indiquant s
 
 
 
-Vous pouvez placer le curseur sur le graphique dans la colonne _Scan Status_ pour voir le nombre de fichiers qui restent à mapper ou à classer dans chaque référentiel (rubrique dans cet exemple).
+Vous pouvez placer le curseur sur le graphique dans la colonne _État de mappage_ pour voir le nombre de fichiers qui restent à mapper ou à classer dans chaque référentiel (rubrique dans cet exemple).
 
 
 
@@ -53,7 +53,7 @@ image:screenshot_compliance_config_button.png["Capture d'écran indiquant commen
 
 . Dans la page Configuration de l'analyse, vous pouvez modifier n'importe lequel des référentiels (rubriques dans cet exemple) pour effectuer des analyses *Map* ou *Map & Classify*.
 +
-image:screenshot_compliance_repo_scanning.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
+image:screenshot_compliance_repo_scan_settings.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
 
 
 

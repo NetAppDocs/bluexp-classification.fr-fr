@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: La classification BlueXP est un service de gouvernance des données pour BlueXP qui analyse vos sources de données cloud et sur site pour cartographier et classer les données, et identifier les informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données. 
 ---
 = Découvrez la classification BlueXP
@@ -14,15 +14,15 @@ summary: La classification BlueXP est un service de gouvernance des données pou
 
 
 [role="lead"]
-La classification BlueXP est un service de gouvernance des données pour BlueXP qui analyse vos sources de données cloud et sur site pour cartographier et classer les données, et identifier les informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données.
-
-https://bluexp.netapp.com/netapp-cloud-data-sense["Découvrez les utilisations de la classification BlueXP"^].
+La classification BlueXP (Cloud Data Sense) est un service de gouvernance des données pour BlueXP qui analyse vos sources de données cloud et sur site pour cartographier et classer les données, et identifier les informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données.
 
 
 
 == Caractéristiques
 
 La classification BlueXP utilise l'intelligence artificielle (IA), le traitement du langage naturel (NLP) et LE machine learning (ML) pour comprendre le contenu qu'il analyse afin d'extraire des entités et de répartir le contenu par catégorie. Ceci permet à la classification BlueXP de fournir les domaines de fonctionnalité suivants.
+
+https://bluexp.netapp.com/netapp-cloud-data-sense["En savoir plus sur les utilisations de la classification BlueXP"^].
 
 
 
@@ -118,7 +118,7 @@ La classification BlueXP peut analyser et analyser des données structurées et 
 * Serveur SQL (MSSQL)
 
 
-La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi que les versions CIFS 1.x, 2.0, 2.1 et 3.0.
+La classification BlueXP prend en charge les versions NFS 3.x et CIFS 1.x, 2.0, 2.1 et 3.0.
 
 
 
