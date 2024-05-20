@@ -1,0 +1,161 @@
+---
+sidebar: sidebar 
+permalink: reference-free-paid.html 
+keywords: bluexp, classification, cloud data sense, data sense, compliance, security 
+summary: Certaines fonctionnalités ne sont pas disponibles dans la version gratuite de classification BlueXP. 
+---
+= Fonctionnalités obsolètes de la classification BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La classification BlueXP est disponible en tant que fonctionnalité clé de BlueXP, sans frais supplémentaires. En incluant la classification BlueXP en tant que fonctionnalité BlueXP clé disponible pour tous les clients, NetApp vous permet d'accéder à une gestion des données personnalisée avec des fonctionnalités principales.
+
+Certaines fonctionnalités sont obsolètes dans la version principale de BlueXP depuis la version 1.31 et ultérieure et sont toujours prises en charge dans les versions 1.30 et antérieures.
+
+
+
+== Sources de données prises en charge
+
+[cols="60,20,20"]
+|===
+| Source des données | Anciennes versions 1.30 et antérieures | BlueXP core versions 1.31 et ultérieures 
+
+
+| Cloud Volumes ONTAP (déployé dans AWS, Azure ou GCP) | Oui. | Oui. 
+
+
+| Clusters ONTAP sur site | Oui. | Oui. 
+
+
+| StorageGRID | Oui. | Non 
+
+
+| Azure NetApp Files | Oui. | Oui. 
+
+
+| Amazon FSX pour ONTAP | Oui. | Oui. 
+
+
+| Google Cloud NetApp volumes | Oui. | Oui. 
+
+
+| Cloud Volumes Service pour Google Cloud | Oui. | Oui. 
+
+
+| Les bases de données | Oui. | Oui. 
+
+
+| Amazon S3 | Oui. | Non 
+
+
+| Google Cloud Storage | Oui. | Non 
+
+
+| OneDrive | Oui. | Non 
+
+
+| SharePoint Online | Oui. | Non 
+
+
+| SharePoint sur site (SharePoint Server) | Oui. | Non 
+
+
+| Google Drive | Oui. | Non 
+|===
+
+
+== Fonctionnalités de conformité
+
+[cols="60,20,20"]
+|===
+| Fonction | Anciennes versions 1.30 et antérieures | BlueXP core versions 1.31 et ultérieures 
+
+
+| Identifier les informations à caractère personnel | Oui. | Oui. 
+
+
+| Identifiez les informations personnelles sensibles | Oui. | Oui. 
+
+
+| Répondre aux demandes d'accès aux données (DSAR, Data Subject Access Requests) | Oui. | Oui. 
+
+
+| Créez une liste personnalisée des « données personnelles » identifiées | Oui. | Non 
+
+
+| Avertissez les utilisateurs par e-mail lorsque des fichiers contiennent certaines PII. (Vous définissez ces critères à l'aide de link:task-using-policies.html["Stratégies"^].) | Oui. | Oui. 
+
+
+| Utilisez des filtres au niveau des répertoires | Oui. | Oui. 
+
+
+| Utilisez l'analyse des RP au niveau du répertoire | Oui. | Non 
+|===
+
+
+== Fonctionnalités de gestion des données
+
+[cols="60,20,20"]
+|===
+| Fonction | Anciennes versions 1.30 et antérieures | BlueXP core versions 1.31 et ultérieures 
+
+
+| Déplacer, copier et supprimer des fichiers source | Oui. | Non 
+
+
+| Catégorisez les données à l'aide de balises d'état | Oui. | Non 
+
+
+| Catégorisez les données à l'aide d'étiquettes AIP | Oui. | Non 
+
+
+| Attribuer des fichiers aux utilisateurs | Oui. | Non 
+
+
+| Renumériser les données à la demande | Oui. | Non 
+
+
+| Créez des classificateurs personnalisés | Oui. | Non 
+
+
+| Exclure les répertoires de l'analyse | Oui. | Oui. 
+
+
+| Rechercher des noms dans les fichiers | Oui. | Oui. 
+
+
+| Exporter les données vers NFS à partir de l'investigation | Oui. | Non 
+
+
+| Prend en charge plusieurs scanners | Oui. | Non 
+
+
+| Intégrer Active Directory | Oui. | Oui. 
+
+
+| Utilisez l'analyse des autorisations et les filtres | Oui. | Oui. 
+
+
+| Utilisez la carte de fichier | Oui. | Oui. 
+
+
+| Utilisez la carte thermique | Oui. | Oui. 
+
+
+| Utilisez les actions du tableau de bord et de la carte de fichier | Oui. | Non 
+
+
+| Utiliser la journalisation des audits d'accès aux fichiers | Oui. | Non 
+
+
+| Activez l'accès aux fichiers à partir de la page Configuration | Oui. | Non 
+
+
+| Utilisez certaines règles prédéfinies | Oui. | Non 
+|===

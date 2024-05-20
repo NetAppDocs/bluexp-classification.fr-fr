@@ -41,7 +41,7 @@ Lancez l'assistant d'installation pour déployer l'instance de classification Bl
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
 [role="quick-margin-para"]
-Les 1 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement BlueXP via votre fournisseur cloud Marketplace, ou une licence BYOL auprès de NetApp, est nécessaire pour continuer à analyser les données après ce point.
+Les 500 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement BlueXP via votre fournisseur cloud Marketplace, ou une licence BYOL auprès de NetApp, est nécessaire pour continuer à analyser les données après ce point.
 
 
 
@@ -51,7 +51,7 @@ Si vous n'avez pas encore de connecteur, créez-en un chez votre fournisseur clo
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
-* Lors de l'analyse des données dans Cloud Volumes ONTAP dans AWS, Amazon FSX pour ONTAP ou dans des compartiments AWS S3, vous utilisez un connecteur dans AWS.
+* Lorsque vous analysez les données dans des compartiments Cloud Volumes ONTAP dans AWS ou Amazon FSX pour ONTAP, vous utilisez un connecteur dans AWS.
 * Lorsque vous analysez des données dans Cloud Volumes ONTAP dans Azure ou dans Azure NetApp Files, vous utilisez un connecteur dans Azure.
 +
 ** Pour Azure NetApp Files, il doit être déployé dans la même région que les volumes que vous souhaitez analyser.
@@ -60,7 +60,7 @@ Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisse
 * Pour l'analyse des données dans Cloud Volumes ONTAP dans GCP, vous utilisez un connecteur dans GCP.
 
 
-Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
+Les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique et les bases de données peuvent être analysés avec l'un de ces connecteurs cloud.
 
 Notez que vous pouvez également https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
@@ -71,10 +71,6 @@ Comme vous pouvez le voir, il peut y avoir des situations où vous devez utilise
 === Soutien de la région du gouvernement
 
 La classification BlueXP est prise en charge lorsque le connecteur est déployé dans une région gouvernementale (AWS GovCloud, Azure Gov ou Azure DoD). Lorsqu'il est déployé de cette manière, la classification BlueXP présente les restrictions suivantes :
-
-* Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.
-* Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
-
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["Voir plus d'informations sur le déploiement du connecteur dans une région gouvernementale"^].
 

@@ -45,11 +45,10 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 
 
 * *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#view-all-duplicated-files["Voir quels types de fichiers dupliqués sont affichés"].
-+
-REMARQUE:: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données obsolètes_.
 
 
 
+NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données obsolètes_.
 
 
 
@@ -82,23 +81,6 @@ Cliquez sur chaque zone pour afficher les résultats filtrés dans la page Inves
 
 
 
-=== Données répertoriées par sensibilité et par autorisations larges
-
-La zone « données sensibles » et « autorisations larges » fournit une carte thermique de fichiers contenant des données sensibles (y compris les données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles.
-
-Les fichiers sont classés en fonction du nombre d'utilisateurs autorisés à accéder aux fichiers sur l'axe X (le plus bas au plus haut) et du nombre d'identificateurs sensibles dans les fichiers de l'axe y (le plus bas au plus haut). Les blocs représentent le nombre de fichiers correspondant aux éléments des axes X et Y. Le bloc de couleur plus claire est bon, avec moins d'utilisateurs pouvant accéder aux fichiers et avec moins d'identificateurs sensibles par fichier. Les blocs plus sombres sont les éléments que vous pouvez souhaiter examiner. Par exemple, l'écran ci-dessous montre le texte de la souris pour le bloc bleu foncé. Il montre que vous avez 1,500 fichiers où 751-100 utilisateurs ont accès, et où il y a 501-100 identificateurs sensibles par fichier.
-
-image:screenshot_compliance_sensitive_data.png["Capture d'écran affichant les données affichées lorsque vous placez le curseur sur un élément de ce panneau."]
-
-Vous pouvez cliquer sur le bloc qui vous intéresse pour afficher les résultats filtrés des fichiers affectés dans la page Investigation afin que vous puissiez en rechercher davantage.
-
-Aucune donnée n'est affichée dans ce panneau si vous n'avez pas intégré de service d'identité avec la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec la classification BlueXP"^].
-
-
-TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Actuellement, il n'est pas compatible avec les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
-
-
-
 === Données répertoriées par type d'autorisations ouvertes
 
 La zone _Ouvrir autorisations_ affiche le pourcentage pour chaque type d'autorisations existant pour tous les fichiers en cours d'analyse. Le graphique montre les types d'autorisations suivants :
@@ -121,17 +103,16 @@ Vous pouvez passer le curseur sur un point dans les graphiques pour afficher des
 
 * *Age of Data Graph* - catégorise les données en fonction de l'heure de création, de la dernière fois où il a été accédé ou de la dernière fois qu'il a été modifié.
 * *Taille du graphique de données* - classe les données en fonction de leur taille.
-+
-REMARQUE:: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans le graphique _Age of Data_.
 
 
 
+NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans le graphique _Age of Data_.
 
 
 
 === Classification des données la plus identifiée
 
-La zone _Classification_ fournit une liste des plus identifiés link:task-controlling-private-data.html#view-files-by-categories["Catégories"^], link:task-controlling-private-data.html#view-files-by-file-types["Types de fichiers"^], et link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquettes AIP"^] dans vos données numérisées.
+La zone _Classification_ fournit une liste des plus identifiés link:task-controlling-private-data.html#view-files-by-categories["Catégories"^] et link:task-controlling-private-data.html#view-files-by-file-types["Types de fichiers"^] dans vos données numérisées.
 
 
 
@@ -148,14 +129,6 @@ Voir link:task-controlling-private-data.html#view-files-by-categories["Affichage
 La vérification de vos types de fichiers peut vous aider à contrôler vos données sensibles car il se peut que certains types de fichiers ne soient pas stockés correctement.
 
 Voir link:task-controlling-private-data.html#view-files-by-file-types["Affichage des types de fichiers"^] pour en savoir plus.
-
-
-
-==== Libellés AIP
-
-Si vous vous êtes abonné à Azure information protection (AIP), vous pouvez classer et protéger les documents et les fichiers en appliquant des étiquettes au contenu. La vérification des étiquettes AIP les plus utilisées qui sont attribuées aux fichiers vous permet de voir les étiquettes les plus utilisées dans vos fichiers.
-
-Voir link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquettes AIP"^] pour en savoir plus.
 
 
 
@@ -244,5 +217,3 @@ image:screenshot_compliance_data_discovery_report_button.png["Capture d'écran d
 
 .Résultat
 La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
-
-Notez que vous pouvez personnaliser le nom de l'entreprise qui apparaît sur la première page du rapport en partant du haut de la page de classification BlueXP en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.

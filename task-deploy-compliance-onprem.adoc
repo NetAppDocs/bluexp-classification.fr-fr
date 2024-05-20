@@ -28,9 +28,14 @@ L'installation typique sur un hôte Linux _dans le cloud_ comporte les composant
 
 image:diagram_deploy_onprem_cloud_instance.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 
-Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
+Pour les configurations très volumineuses où vous allez analyser des pétaoctets de données, sur les versions 1.30 et antérieures, vous pouvez inclure plusieurs hôtes pour fournir une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
 
-Notez que vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+Pour les versions 1.30 et antérieures, si vous devez installer la classification BlueXP sur plusieurs hôtes, reportez-vous à la section link:task-deploy-multi-host-install-dark-site.html["Installez la classification BlueXP sur plusieurs hôtes sans accès Internet"].
+
+Vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+
+
+NOTE: Pour les anciennes versions 1.30 et antérieures, pour ajouter des nœuds de scanner, reportez-vous à la section link:task-deploy-add-scanner-nodes.html["Ajoutez des nœuds de scanner à un déploiement existant"].
 
 
 
@@ -58,19 +63,19 @@ Téléchargez le logiciel de classification Cloud BlueXP depuis le site de suppo
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
 [role="quick-margin-para"]
-Les 1 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement à votre fournisseur cloud Marketplace, ou une licence BYOL de NetApp, est nécessaire pour continuer l'analyse des données après ce point.
+Les 500 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement à votre fournisseur cloud Marketplace, ou une licence BYOL de NetApp, est nécessaire pour continuer l'analyse des données après ce point.
 
 
 
 == Créer un connecteur
 
-Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
+Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Les fonctionnalités BlueXP nécessitent un connecteur"], mais il y a des cas où vous devrez en configurer un maintenant.
 
 Pour en créer un dans votre environnement de fournisseur cloud, consultez la section https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Création d'un connecteur dans AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Création d'un connecteur dans Azure"^], ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur dans GCP"^].
 
 Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisseur de cloud spécifique :
 
-* Lors de l'analyse des données dans Cloud Volumes ONTAP dans AWS, Amazon FSX pour ONTAP ou dans des compartiments AWS S3, vous utilisez un connecteur dans AWS.
+* Lorsque vous analysez les données dans Cloud Volumes ONTAP dans AWS ou Amazon FSX pour ONTAP, vous utilisez un connecteur dans AWS.
 * Lorsque vous analysez des données dans Cloud Volumes ONTAP dans Azure ou dans Azure NetApp Files, vous utilisez un connecteur dans Azure.
 +
 Pour Azure NetApp Files, il doit être déployé dans la même région que les volumes que vous souhaitez analyser.
@@ -78,11 +83,11 @@ Pour Azure NetApp Files, il doit être déployé dans la même région que les v
 * Pour l'analyse des données dans Cloud Volumes ONTAP dans GCP, vous utilisez un connecteur dans GCP.
 
 
-Vous pouvez analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique, les bases de données, les dossiers OneDrive, les comptes SharePoint et les comptes Google Drive à l'aide de ces connecteurs cloud.
+Ces connecteurs cloud permettent d'analyser les systèmes ONTAP sur site, les partages de fichiers non NetApp et les comptes de base de données.
 
 Notez que vous pouvez également https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Déployez le connecteur sur site"^] Sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
-Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
+Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Plusieurs connecteurs"].
 
 Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur pour installer la classification BlueXP. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.
 
@@ -311,7 +316,7 @@ Vous devez disposer des informations pour Active Directory :
 
 
 |===
-Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la puissance de traitement afin d'analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Voir la configuration de port supplémentaire requise"].
+Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la puissance de traitement afin d'analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-onprem.html["Voir la configuration de port supplémentaire requise"].
 
 
 
@@ -321,7 +326,7 @@ Pour les configurations standard, le logiciel est installé sur un système hôt
 
 image:diagram_deploy_onprem_single_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser avec une seule instance de classification BlueXP déployée sur site avec un accès Internet."]
 
-Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. <<Installation de plusieurs hôtes pour de grandes configurations,Découvrez ces étapes ici>>.
+Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. En savoir plus lien:task-Deploy-multi-host-install-dark-site.html> à propos de l'installation sur plusieurs hôtes pour de grandes configurations.
 
 image:diagram_deploy_onprem_multi_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lorsque vous utilisez plusieurs instances de classification BlueXP déployées sur site avec un accès Internet."]
 
@@ -330,7 +335,7 @@ Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
-NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Basculer entre les connecteurs"^] pour les différentes sources de données.
+NOTE: La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Basculer entre les connecteurs"^] pour les différentes sources de données.
 
 
 
@@ -340,7 +345,7 @@ NOTE: La classification BlueXP est actuellement incapable d'analyser les compart
 
 https://youtu.be/rFpmekdbORc["Regardez cette vidéo"^] Pour voir comment installer la classification BlueXP.
 
-Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-files["Pour en savoir plus, cliquez ici"].
+Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html["Pour en savoir plus, cliquez ici"].
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
@@ -427,263 +432,4 @@ En cas de connectivité sur le port 8080 entre la machine hôte et l'instance de
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
 
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
-
-
-
-=== Ajoutez des nœuds de scanner à un déploiement existant
-
-Vous pouvez ajouter d'autres nœuds de numérisation si vous trouvez que vous avez besoin d'une puissance de traitement plus élevée pour numériser vos sources de données. Vous pouvez ajouter les nœuds du scanner immédiatement après avoir installé le nœud du gestionnaire, ou vous pouvez ajouter un nœud du scanner ultérieurement. Par exemple, si vous réalisez que la quantité de données de l'une de vos sources de données a doublé ou triplé au bout de 6 mois, vous pouvez ajouter un nouveau nœud du scanner pour faciliter l'analyse des données.
-
-Il existe deux façons d'ajouter des nœuds de scanner supplémentaires :
-
-* ajoutez un nœud pour faciliter la numérisation de toutes les sources de données
-* ajout d'un nœud pour faciliter l'analyse d'une source de données spécifique ou d'un groupe spécifique de sources de données (généralement basé sur l'emplacement)
-
-
-Par défaut, tous les nouveaux nœuds de scanner que vous ajoutez sont ajoutés au pool général de ressources de numérisation. Il s'agit du « groupe de scanner par défaut ». Dans l'image ci-dessous, il y a 1 nœud Manager et 3 nœuds de scanner dans le groupe « par défaut » qui sont tous des données de numérisation provenant des 6 sources de données.
-
-image:diagram_onprem_scanner_groups_default.png["Diagramme illustrant comment les scanners de classification BlueXP scanne les sources de données lorsque ces dernières se trouvent dans le groupe d'analyse par défaut."]
-
-Si vous souhaitez analyser certaines sources de données par des nœuds de scanner qui sont physiquement plus proches des sources de données, vous pouvez définir un nœud de scanner, ou un groupe de nœuds de scanner, pour analyser une source de données spécifique ou un groupe de sources de données. Dans l'image ci-dessous, il y a 1 nœud Manager et 3 nœuds scanner.
-
-* Le nœud Manager se trouve dans le groupe « par défaut » et il analyse 1 source de données
-* Le nœud du scanner 1 se trouve dans le groupe États-unis et analyse 2 sources de données
-* Les nœuds du scanner 2 et 3 se trouvent dans le groupe « europe » et partagent les tâches de numérisation pour 3 sources de données
-
-
-image:diagram_onprem_scanner_groups.png["Diagramme illustrant comment les scanners de classification BlueXP scanne les sources de données lorsqu'ils sont attribués à différents groupes de scanner."]
-
-Les groupes d'analyse de classification BlueXP peuvent être définis comme des zones géographiques distinctes où vos données sont stockées. Vous pouvez déployer plusieurs nœuds d'analyse de classification BlueXP à travers le monde et choisir un groupe de scanner pour chaque nœud. De cette façon, chaque nœud du scanner analyse les données qui lui sont les plus proches. Plus le nœud du scanner est proche des données, mieux c'est, car il réduit la latence du réseau autant que possible lors de l'acquisition des données.
-
-Vous pouvez choisir les groupes de scanner à ajouter à la classification BlueXP et choisir leur nom. La classification BlueXP n'applique pas qu'un nœud mappé à un groupe de scanner nommé « europe » soit déployé en Europe.
-
-Pour installer d'autres nœuds d'analyse de classification BlueXP, procédez comme suit :
-
-. Préparez les systèmes hôtes Linux qui feront office de nœuds de scanner
-. Téléchargez le logiciel Data Sense sur ces systèmes Linux
-. Exécutez une commande sur le nœud Manager pour identifier les nœuds du scanner
-. Suivez les étapes de déploiement du logiciel sur les nœuds du scanner (et définissez éventuellement un « groupe de scanner » pour certains nœuds du scanner).
-. Si vous avez défini un scanner group, sur le nœud Manager :
-+
-.. Ouvrez le fichier « environnement_de_travail_vers_scanner_groupe_config.yml » et définissez les environnements de travail qui seront analysés par chaque groupe de scanner
-.. Exécutez le script suivant pour enregistrer ces informations de mappage avec tous les nœuds du scanner : `update_we_scanner_group_from_config_file.sh`
-
-
-
-
-.Ce dont vous avez besoin
-* Vérifiez que tous vos systèmes Linux pour les nœuds du scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifier que les deux logiciels prérequis sont installés sur les systèmes (Docker Engine ou Podman et Python 3).
-* Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
-* Vérifiez que votre environnement répond aux exigences requises <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
-* Vous devez disposer des adresses IP des hôtes du nœud scanner que vous ajoutez.
-* Vous devez disposer de l'adresse IP du système hôte du nœud BlueXP classification Manager
-* Vous devez disposer de l'adresse IP ou du nom d'hôte du système Connector, de votre ID de compte NetApp, de votre ID de client Connector et du jeton d'accès utilisateur. Si vous prévoyez d'utiliser des groupes de scanner, vous devrez connaître l'ID de l'environnement de travail pour chaque source de données de votre compte. Voir *_étapes préalables_* ci-dessous pour obtenir ces informations.
-* Les ports et protocoles suivants doivent être activés sur tous les hôtes :
-+
-[cols="15,20,55"]
-|===
-| Port | Protocoles | Description 
-
-
-| 2377 | TCP | Communications de gestion du cluster 
-
-
-| 7946 | TCP, UDP | Communication inter-nœuds 
-
-
-| 4789 | UDP | Superposition du trafic réseau 
-
-
-| 50 | ESP | Trafic du réseau de superposition IPSec chiffré (ESP) 
-
-
-| 111 | TCP, UDP | Serveur NFS pour le partage de fichiers entre les hôtes (requis de chaque nœud de scanner vers le nœud gestionnaire) 
-
-
-| 2049 | TCP, UDP | Serveur NFS pour le partage de fichiers entre les hôtes (requis de chaque nœud de scanner vers le nœud gestionnaire) 
-|===
-* Si vous utilisez `firewalld` Sur vos machines de classification BlueXP, nous vous recommandons de l'activer avant d'installer la classification BlueXP. Exécutez les commandes suivantes pour configurer `firewalld` Pour qu'il soit compatible avec la classification BlueXP :
-+
-....
-firewall-cmd --permanent --add-service=http
-firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-port=80/tcp
-firewall-cmd --permanent --add-port=8080/tcp
-firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7946/udp
-firewall-cmd --permanent --add-port=7946/tcp
-firewall-cmd --permanent --add-port=4789/udp
-firewall-cmd --reload
-....
-+
-Notez que vous devez redémarrer Docker ou Podman chaque fois que vous activez ou mettez à jour `firewalld` paramètres.
-
-
-
-.Étapes préalables
-Procédez comme suit pour obtenir l'ID de compte NetApp, l'ID client Connector, le nom du serveur Connector et le jeton d'accès utilisateur nécessaires à l'ajout de nœuds de scanner.
-
-. Dans la barre de menus BlueXP, cliquez sur *compte > gérer les comptes*.
-+
-image:screenshot_account_id.png["Une capture d'écran des détails du compte BlueXP."]
-
-. Copiez le _ID de compte_.
-. Dans la barre de menus BlueXP, cliquez sur *aide > support > connecteur BlueXP*.
-+
-image:screenshot_connector_client_id.png["Capture d'écran des paramètres de configuration du connecteur BlueXP."]
-
-. Copiez le connecteur _ID client_ et le _Nom du serveur_.
-. Si vous prévoyez d'utiliser des groupes de scanner, dans l'onglet Configuration de la classification BlueXP, copiez l'ID d'environnement de travail de chaque environnement de travail que vous prévoyez d'ajouter à un groupe de scanner.
-+
-image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
-
-. Accédez au https://services.cloud.netapp.com/developer-hub["API Documentation Developer Hub"^] Et cliquez sur *Apprenez à vous authentifier*.
-+
-image:screenshot_client_access_token.png["Capture d'écran de la page Documentation de l'API avec un lien vers les instructions d'authentification."]
-
-. Suivez les instructions d'authentification, en utilisant le nom d'utilisateur et le mot de passe de l'administrateur du compte dans les paramètres "nom d'utilisateur" et "mot de passe".
-. Copiez ensuite le _jeton d'accès_ de la réponse.
-
-
-.Étapes
-. Sur le nœud du gestionnaire de classification BlueXP, exécutez le script « add_scanner_node.sh ». Par exemple, cette commande ajoute 2 nœuds de scanner :
-+
-`sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
-
-+
-Valeurs variables :
-
-+
-** _Account_ID_ = ID du compte NetApp
-** _Client_ID_ = connecteur client ID (ajoutez le suffixe "clients" à l'ID client que vous avez copié dans les étapes préalables)
-** _Cm_host_ = adresse IP ou nom d'hôte du système de connecteurs
-** _Ds_Manager_ip_ = adresse IP privée du système de nœuds BlueXP classification Manager
-** _Node_private_ip_ = adresses IP des systèmes de nœuds du scanner de classification BlueXP (les adresses IP de plusieurs nœuds du scanner sont séparées par une virgule)
-** _User_token_ = jeton d'accès utilisateur JWT
-
-
-. Avant la fin du script add_scanner_node, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple : `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`) et enregistrez-le dans un fichier texte.
-. Sur *chaque hôte de nœud du scanner* :
-+
-.. Copiez le fichier d'installation de Data Sense (*DATASENNSE-INSTALLER-<version>.tar.gz*) sur la machine hôte (à l'aide de `scp` ou une autre méthode).
-.. Décompressez le fichier d'installation.
-.. Collez et exécutez la commande que vous avez copiée à l'étape 2.
-.. Si vous souhaitez ajouter un nœud de scanner à un « scanner group », ajoutez le paramètre *-r <scanner_group_name>* à la commande. Sinon, le nœud du scanner est ajouté au groupe « défaut ».
-+
-Une fois l'installation terminée sur tous les nœuds du scanner et qu'ils ont été associés au nœud du gestionnaire, le script « Add_scanner_node.sh » se termine également. L'installation peut prendre entre 10 et 20 minutes.
-
-
-
-. Si vous avez ajouté des nœuds de scanner à un scanner group, revenez au nœud Manager et effectuez les 2 tâches suivantes :
-+
-.. Ouvrez le fichier « /opt/netapp/config/custom_configuration/working_Environment_to_scanner_group_config.yml » et entrez le mappage pour lequel les groupes de scanner vont analyser des environnements de travail spécifiques. Vous devez avoir l'ID _Working Environment_ pour chaque source de données. Par exemple, les entrées suivantes ajoutent 2 environnements de travail au groupe de scanner « europe » et 2 au groupe de scanner « united_States » :
-+
-....
-scanner_groups:
- europe:
-   working_environments:
-     - "working_environment_id1"
-     - "working_environment_id2"
- united_states:
-   working_environments:
-     - "working_environment_id3"
-     - "working_environment_id4"
-....
-+
-Tout environnement de travail qui n'est pas ajouté à la liste est analysé par le groupe « par défaut ». Vous devez avoir au moins un gestionnaire ou un nœud de scanner dans le groupe « par défaut ».
-
-.. Exécutez le script suivant pour enregistrer ces informations de mappage avec tous les nœuds du scanner :
-`/opt/netapp/Datasense/tools/update_we_scanner_group_from_config_file.sh`
-
-
-
-
-.Résultat
-La classification BlueXP est configurée avec des nœuds Manager et scanner pour analyser toutes vos sources de données.
-
-.Et la suite
-Dans la page Configuration, vous pouvez sélectionner les sources de données que vous souhaitez numériser, si vous ne l'avez pas déjà fait. Si vous avez créé des groupes de scanner, chaque source de données est analysée par les nœuds du scanner dans le groupe correspondant.
-
-Vous pouvez voir le nom du groupe de lecteurs pour chaque environnement de travail dans la page Configuration.
-
-image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de travail sur la page Configuration de la classification BlueXP."]
-
-Vous pouvez également afficher la liste de tous les groupes de scanner, ainsi que l'adresse IP et l'état de chaque nœud de scanner du groupe, en bas de la page Configuration.
-
-image:screenshot_scanner_groups.png["Capture d'écran répertoriant tous les groupes de scanner ainsi que l'adresse IP de chaque nœud de scanner du groupe."]
-
-C'est possible link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
-
-
-
-=== Installation de plusieurs hôtes pour de grandes configurations
-
-Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_ et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
-
-Suivez ces étapes lors de l'installation simultanée du logiciel de classification BlueXP sur plusieurs hôtes sur site. Notez que vous ne pouvez pas utiliser de « groupes de scanner » lors du déploiement de plusieurs hôtes de cette façon.
-
-.Ce dont vous avez besoin
-* Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner sont conformes à la <<Préparez le système hôte Linux,configuration requise pour l'hôte>>.
-* Vérifiez que les deux packages logiciels prérequis sont installés sur les systèmes (Docker ou Podman Engine et Python 3).
-* Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.
-* Vérifiez que votre environnement répond aux exigences requises <<Assurez un accès Internet sortant à partir de la classification BlueXP,autorisations et connectivité>>.
-* Vous devez disposer des adresses IP des hôtes du nœud de scanner que vous prévoyez d'utiliser.
-* Les ports et protocoles suivants doivent être activés sur tous les hôtes :
-+
-[cols="15,20,55"]
-|===
-| Port | Protocoles | Description 
-
-
-| 2377 | TCP | Communications de gestion du cluster 
-
-
-| 7946 | TCP, UDP | Communication inter-nœuds 
-
-
-| 4789 | UDP | Superposition du trafic réseau 
-
-
-| 50 | ESP | Trafic du réseau de superposition IPSec chiffré (ESP) 
-
-
-| 111 | TCP, UDP | Serveur NFS pour le partage de fichiers entre les hôtes (requis de chaque nœud de scanner vers le nœud gestionnaire) 
-
-
-| 2049 | TCP, UDP | Serveur NFS pour le partage de fichiers entre les hôtes (requis de chaque nœud de scanner vers le nœud gestionnaire) 
-|===
-
-
-.Étapes
-. Suivez les étapes 1 à 7 du <<Installation à un seul hôte pour les configurations courantes,Installation avec un seul hôte>> sur le nœud gestionnaire.
-. Comme indiqué à l'étape 8, lorsque le programme d'installation vous le demande, vous pouvez entrer les valeurs requises dans une série d'invites, ou vous pouvez fournir les paramètres requis comme arguments de ligne de commande au programme d'installation.
-+
-En plus des variables disponibles pour une installation à un seul hôte, une nouvelle option *-n <node_ip>* est utilisée pour spécifier les adresses IP des nœuds du scanner. Plusieurs adresses IP de nœuds de scanner sont séparées par une virgule.
-
-+
-Par exemple, cette commande ajoute 3 nœuds de scanner :
-`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
-
-. Avant la fin de l'installation du nœud Manager, une boîte de dialogue affiche la commande d'installation requise pour les nœuds du scanner. Copiez la commande (par exemple, `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) et enregistrez-le dans un fichier texte.
-. Sur *chaque hôte de nœud du scanner* :
-+
-.. Copiez le fichier d'installation de Data Sense (*DATASENNSE-INSTALLER-<version>.tar.gz*) sur la machine hôte (à l'aide de `scp` ou une autre méthode).
-.. Décompressez le fichier d'installation.
-.. Collez et exécutez la commande que vous avez copiée à l'étape 3.
-+
-Une fois l'installation terminée sur tous les nœuds du scanner et qu'ils ont été associés au nœud du gestionnaire, l'installation du nœud du gestionnaire se termine également.
-
-
-
-
-
-.Résultat
-Le programme d'installation de classification BlueXP termine l'installation des packages et enregistre l'installation. L'installation peut prendre entre 10 et 20 minutes.
-
-.Et la suite
-Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
-
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
+Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez pas facturé même après la fin de votre essai gratuit de 30 jours.

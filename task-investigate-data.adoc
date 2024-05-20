@@ -53,7 +53,7 @@ Utilisez les filtres suivants pour afficher la quantité d'informations sensible
 
 | Nombre d'identificateurs | Sélectionnez la plage d'identificateurs sensibles détectés par fichier. Inclut des données personnelles et des données personnelles sensibles. Lors du filtrage dans les répertoires, la classification BlueXP totalise les correspondances de tous les fichiers de chaque dossier (et sous-dossiers).
 
-REMARQUE : la version de décembre 2023 (version 1.26.6) a temporairement supprimé l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires. 
+REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires. 
 
 
 | Données personnelles | Sélectionner link:reference-private-data-categories.html#types-of-personal-data["types de données personnelles"^]. 
@@ -158,9 +158,9 @@ Utilisez les filtres suivants pour afficher les données par type de stockage.
 |===
 
 
-=== Filtrez les données par balises, étiquettes, utilisateurs affectés et règles
+=== Filtrer les données par stratégies
 
-Utilisez les filtres suivants pour afficher les données par étiquettes ou étiquettes AIP.
+Utilisez le filtre suivant pour afficher les données par stratégie.
 
 [cols="30,60"]
 |===
@@ -168,15 +168,6 @@ Utilisez les filtres suivants pour afficher les données par étiquettes ou éti
 
 
 | Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-using-policies.html["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
-
-
-| Étiquette | Sélectionnez link:task-org-private-data.html#categorize-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 
-
-
-| Étiquettes | Sélectionnez link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["la ou les balises"] qui sont affectés à vos fichiers. 
-
-
-| Affecté à | Sélectionnez le nom de la personne à laquelle le fichier est affecté. 
 |===
 
 
@@ -217,24 +208,15 @@ Dans le volet Résultats de l'enquête de données, vous pouvez cliquer sur imag
 
 image:screenshot_compliance_file_details.png["Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."]
 
-En plus de vous indiquer l'environnement de travail et le volume où se trouve le fichier, les métadonnées affichent beaucoup plus d'informations, notamment les autorisations de fichier, le propriétaire du fichier, s'il existe des doublons de ce fichier et l'étiquette AIP attribuée (si vous disposez de link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP intégré dans la classification BlueXP"^]). Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#create-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
+En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de le faire link:task-using-policies.html#create-custom-policies["Créer des règles"] car vous pouvez voir toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
-Notez que toutes les informations ne sont pas disponibles pour toutes les sources de données, ce qui est juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume, les autorisations et les libellés AIP ne sont pas pertinents pour les fichiers de base de données.
-
-Lors de l'affichage des détails d'un seul fichier, vous pouvez effectuer quelques actions sur le fichier :
-
-* Vous pouvez déplacer ou copier le fichier dans n'importe quel partage NFS. Voir link:task-managing-highlights.html#move-source-files-to-an-nfs-share["Déplacement des fichiers source vers un partage NFS"] et link:task-managing-highlights.html#copy-source-files["Copie des fichiers source vers un partage NFS"] pour plus d'informations.
-* Vous pouvez supprimer le fichier. Voir link:task-managing-highlights.html#delete-source-files["Suppression des fichiers source"] pour plus d'informations.
-* Vous pouvez affecter un certain état au fichier. Voir link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["Application de balises"] pour plus d'informations.
-* Vous pouvez affecter le fichier à un utilisateur BlueXP pour être responsable de toutes les actions de suivi qui doivent être effectuées sur le fichier. Voir link:task-org-private-data.html#assign-users-to-manage-certain-files["Affectation d'utilisateurs à un fichier"] pour plus d'informations.
-* Si vous avez intégré des étiquettes d'AIP à la classification BlueXP, vous pouvez attribuer une étiquette à ce fichier ou modifier cette étiquette s'il en existe déjà une. Voir link:task-org-private-data.html#assign-aip-labels-manually["Attribution manuelle d'étiquettes AIP"] pour plus d'informations.
-
+Notez que toutes les informations ne sont pas disponibles pour toutes les sources de données, ce qui est juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume et les autorisations ne sont pas pertinents pour les fichiers de base de données.
 
 
 
 == Afficher les autorisations pour les fichiers et les répertoires
 
-Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est disponible uniquement pour les données des partages CIFS, SharePoint Online, SharePoint sur site et OneDrive.
+Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est uniquement disponible pour les données des partages CIFS.
 
 Notez que si vous voyez des SID (identificateurs de sécurité) au lieu des noms d'utilisateur et de groupe, vous devez intégrer votre Active Directory dans la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment faire"].
 
@@ -283,20 +265,7 @@ TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette pag
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Le rapport est disponible dans deux formats différents :
-
-* En tant que fichier .CSV que vous pouvez enregistrer sur la machine locale.
-+
-Ce rapport peut inclure un maximum de 10,000 lignes de données.
-
-* En tant que fichier .JSON que vous exportez vers un partage NFS.
-+
-S'il y a plus de 250,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
-
-+
-Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
-
-
+Le rapport est disponible sous la forme . Fichier CSV que vous pouvez enregistrer sur la machine locale.
 
 Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).
 
@@ -306,10 +275,7 @@ Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classificatio
 
 .Étapes
 . Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
-. Indiquez si vous souhaitez télécharger un rapport .CSV ou .JSON de données, puis cliquez sur *Télécharger le rapport*.
-+
-Lors de la sélection d'un rapport .JSON, entrez le nom du partage NFS dans lequel le rapport sera téléchargé au format `<host_name>:/<share_path>`.
-
+. Sélectionnez pour télécharger un . Rapport CSV des données, puis cliquez sur *Télécharger le rapport*.
 +
 image:screenshot_compliance_investigation_report.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
 
@@ -318,11 +284,9 @@ image:screenshot_compliance_investigation_report.png["Capture d'écran de la pag
 .Résultat
 Une boîte de dialogue affiche un message indiquant que les rapports sont en cours de téléchargement.
 
-Vous pouvez afficher la progression de la génération du rapport JSON dans le link:task-view-compliance-actions.html["Volet État des actions"].
 
 
-
-=== Ce qui est inclus dans chaque rapport d'enquête de données
+=== Ce qui est inclus dans le rapport d'enquête sur les données
 
 Le *non structuré fichier de données* contient les informations suivantes sur vos fichiers :
 

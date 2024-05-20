@@ -4,7 +4,7 @@ permalink: task-scanning-google-drive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
 summary: Procédez en quelques étapes pour commencer à analyser les fichiers utilisateur de vos comptes Google Drive avec la classification BlueXP. 
 ---
-= Numérisation de comptes Google Drive
+= Analyser les comptes Google Drive
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: Procédez en quelques étapes pour commencer à analyser les fichiers u
 [role="lead"]
 Procédez en quelques étapes pour commencer à analyser les fichiers utilisateur de vos comptes Google Drive avec la classification BlueXP.
 
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
 
 
 == Démarrage rapide
@@ -40,7 +45,7 @@ Sélectionnez le type de numérisation que vous souhaitez effectuer sur les fich
 
 
 
-== Vérification de la configuration requise pour Google Drive
+== Consultez les exigences relatives à Google Drive
 
 Vérifiez les conditions préalables suivantes pour vous assurer que vous êtes prêt à activer la classification BlueXP sur un compte Google Drive.
 
@@ -59,7 +64,7 @@ Les fonctionnalités de classification BlueXP suivantes ne sont actuellement pas
 
 
 
-== Classification BlueXP : déploiement
+== Déployez la classification BlueXP
 
 Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
@@ -69,7 +74,7 @@ Les mises à niveau du logiciel de classification BlueXP sont automatisées tant
 
 
 
-== Ajout du compte Google Drive
+== Ajoutez le compte Google Drive
 
 Ajoutez le compte Google Drive où résident les fichiers utilisateur. Si vous souhaitez analyser des fichiers de plusieurs utilisateurs, vous devez exécuter cette étape pour chaque utilisateur.
 
@@ -86,7 +91,7 @@ Le compte Google Drive est ajouté à la liste des environnements de travail.
 
 
 
-== Sélection du type de numérisation des données utilisateur
+== Sélectionnez le type de numérisation des données utilisateur
 
 Sélectionnez le type d'analyse que la classification BlueXP effectuera sur les données de l'utilisateur.
 
@@ -120,6 +125,6 @@ La classification BlueXP commence à analyser les fichiers du compte Google Driv
 
 
 
-== Suppression d'un compte Google Drive des analyses de conformité
+== Supprimez un compte Google Drive des analyses de conformité
 
-Étant donné que les fichiers Google Drive d'un seul utilisateur font partie d'un seul compte Google Drive, si vous voulez arrêter de numériser des fichiers à partir du compte Google Drive d'un utilisateur, alors vous devriez link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Supprimez le compte Google Drive de la classification BlueXP"].
+Étant donné que les fichiers Google Drive d'un seul utilisateur font partie d'un seul compte Google Drive, si vous voulez arrêter de numériser des fichiers à partir du compte Google Drive d'un utilisateur, alors vous devriez link:task-managing-compliance.html["Supprimez le compte Google Drive de la classification BlueXP"].

@@ -18,6 +18,11 @@ Lorsque vous exécutez une action asynchrone à partir du volet Résultats de l'
 
 Cela vous permet de voir les actions effectuées avec succès, celles en cours et celles qui ont échoué pour diagnostiquer et résoudre tout problème. Notez que les courtes opérations qui se sont terminées rapidement, telles que le déplacement d'un seul fichier, n'apparaissent pas dans le volet Statut des actions.
 
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
 Le statut peut être :
 
 * Réussite : Une action de classification BlueXP est terminée et tous les éléments ont réussi.

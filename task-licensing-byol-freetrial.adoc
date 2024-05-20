@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-licensing-datasense.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, data sense, cloud data sense 
+permalink: task-licensing-byol-freetrial.html 
+keywords: subscribe, trial, marketplace, subscription, byol, bring your own license, data sense, cloud data sense 
 summary: 'Les 1 premiers To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP sont gratuits. Une licence BYOL de NetApp, ou un abonnement depuis votre fournisseur cloud Marketplace, est nécessaire pour continuer l"analyse des données après ce point.' 
 ---
-= Configurez les licences avec paiement à l'utilisation pour la classification BlueXP
+= Configurez un essai gratuit ou utilisez votre propre licence pour la classification BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,16 @@ summary: 'Les 1 premiers To de données analysés par le système de classificat
 
 
 [role="lead"]
-L'analyse des données nécessite un abonnement PAYGO (paiement basé sur l'utilisation).
+Pour les versions 1.30 et antérieures, le premier To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP est gratuit pendant 30 jours. Une licence BYOL de NetApp, ou un abonnement depuis le marché de votre fournisseur cloud, est nécessaire pour continuer l'analyse des données après ce point.
 
 []
 ====
-*REMARQUE* ces informations ne concernent que les versions 1.31 et ultérieures du noyau de classification BlueXP.
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
 
 ====
 Quelques remarques avant de lire plus loin :
 
-* Si vous avez déjà souscrit à l'abonnement BlueXP avec paiement basé sur l'utilisation (PAYGO) sur le marché de votre fournisseur de cloud, vous êtes également automatiquement abonné à la classification BlueXP. Vous n'aurez pas besoin de vous abonner à nouveau.
-
-
+* BYOL (Bring Your Own License) de classification BlueXP (Data Sense) est une licence _flottante_ que vous pouvez utiliser dans l'ensemble des environnements de travail et des sources de données de l'espace de travail que vous souhaitez analyser. Un abonnement actif s'affiche dans le portefeuille digital BlueXP.
 * La quantité de données analysées est calculée en fonction de la taille de fichier logique, sans aucune efficacité du stockage.
 
 
@@ -35,64 +33,17 @@ link:concept-cloud-compliance.html#cost["En savoir plus sur les licences et les 
 
 == essai gratuit de 30 jours
 
-Un essai gratuit de 30 jours est disponible pour 500 To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP. Vous devrez acheter une licence BYOL auprès de NetApp, ou souscrire un abonnement auprès de votre fournisseur de cloud, pour continuer à analyser les données ultérieurement.
+Un essai gratuit de 30 jours est disponible pour 1 To de données que la classification BlueXP analyse dans un espace de travail BlueXP. Vous devrez acheter une licence BYOL auprès de NetApp, ou souscrire un abonnement auprès de votre fournisseur de cloud, pour continuer à analyser les données ultérieurement.
 
-Vous pouvez vous abonner à tout moment et vous ne serez pas facturé même après la fin de la période d'essai de 30 jours. Vous pouvez toujours voir la quantité totale de données analysées à partir du tableau de bord de gouvernance de classification BlueXP. Et le bouton _Subscribe Now_ permet de vous abonner facilement lorsque vous êtes prêt.
+Vous pouvez vous abonner à tout moment et vous ne serez facturé que lorsque l'essai de 30 jours se termine ou que la quantité de données dépasse 1 To. Vous pouvez toujours voir la quantité totale de données analysées à partir du tableau de bord de gouvernance de classification BlueXP. Et le bouton _Subscribe Now_ permet de vous abonner facilement lorsque vous êtes prêt.
 
 image:screenshot_compliance_subscribe.png["Une capture d'écran indiquant la quantité de données analysées et le bouton s'abonner pour s'abonner au service."]
 
 
 
-== Utilisez un abonnement PAYGO de classification BlueXP
-
-Les abonnements basés sur l'utilisation vous permettent d'obtenir une licence pour l'utilisation des systèmes Cloud Volumes ONTAP et de nombreux services BlueXP, comme la classification BlueXP, depuis le marché de votre fournisseur cloud. Vous paierez à votre fournisseur cloud la quantité de données que la classification BlueXP analyse toutes les heures, dans un seul abonnement.
-
-L'abonnement garantit l'absence de perturbation du service après la fin de votre essai gratuit. À la fin de la période d'essai, vous ne serez pas facturé pour la version principale de BlueXP 1.31 ou supérieure.
-
-.Étapes
-Ces étapes doivent être effectuées par un utilisateur qui a le rôle _Account Admin_.
-
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
-+
-image:screenshot_settings_icon.gif["Capture d'écran de la bannière supérieure droite de BlueXP où vous pouvez sélectionner l'icône Paramètres."]
-
-. Cliquez sur *informations d'identification*, puis recherchez les informations d'identification du profil d'instance AWS, de l'identité de service géré Azure ou de Google Project.
-+
-L'abonnement doit être ajouté au profil d'instance, à l'identité du service géré ou à Google Project. La charge ne fonctionnera pas autrement.
-
-+
-Si vous disposez déjà d'un abonnement BlueXP (comme illustré ci-dessous pour AWS), vous êtes paré. Rien d'autre à faire.
-
-+
-image:screenshot_profile_subscription.gif["Capture d'écran de la page informations d'identification affichant le profil d'instance avec un abonnement actif."]
-
-. Si vous n'avez pas encore d'abonnement, cliquez sur le menu action et cliquez sur *abonnement associé*.
-+
-image:screenshot_add_subscription.gif["Capture d'écran du menu de la page informations d'identification. Elle affiche un bouton permettant d'associer un abonnement aux informations d'identification."]
-
-. Sélectionnez un abonnement existant et cliquez sur *associé*, ou cliquez sur *Ajouter un abonnement* et suivez les étapes.
-+
-La vidéo suivante montre comment associer un https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^] Abonnement à un abonnement AWS :
-
-+
-video::video_subscribing_aws.mp4[width=848,height=480]
-+
-La vidéo suivante montre comment associer un https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] Abonnement à un abonnement Azure :
-
-+
-video::video_subscribing_azure.mp4[width=848,height=480]
-+
-La vidéo suivante montre comment associer un https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^] Abonnement à un abonnement GCP :
-
-+
-video::video_subscribing_gcp.mp4[width=848,height=480]
-
-
-
-
 == Utilisez un contrat annuel
 
-Bénéficier de la classification BlueXP chaque année en vous souscrivez un contrat annuel. Ils sont disponibles sur 1, 2 ou 3 ans.
+Payer chaque année pour la classification BlueXP via l'achat d'un contrat annuel. Ils sont disponibles sur 1, 2 ou 3 ans.
 
 Si vous avez un contrat annuel depuis un marché, toute l'analyse des données de classification BlueXP est facturée pour ce contrat. Vous ne pouvez pas combiner un contrat annuel de vente avec un contrat BYOL.
 
@@ -107,7 +58,7 @@ Si vous avez un contrat annuel depuis un marché, toute l'analyse des données d
 
 Modèle BYOL de 1, 2 ou 3 ans avec les licences Bring Your Own. La licence de classification BYOL BlueXP (Data Sense) est une licence _flottante_ pour laquelle la capacité totale est partagée entre *tous* de vos environnements de travail et sources de données, ce qui facilite le renouvellement et la licence initiale.
 
-Si vous ne disposez pas d'une licence de classification BlueXP, contactez-nous pour en obtenir une :
+Si vous ne disposez pas d'une licence de classification BlueXP, contactez-nous pour en acheter une :
 
 * Mailto:ng-contact-data-sense@netapp.com?subject=Licensing[Envoyer un e-mail pour acheter une licence].
 * Cliquez sur l'icône de chat dans le coin inférieur droit de BlueXP pour demander une licence.

@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: Procédez en quelques étapes pour commencer à analyser les fichiers dans les dossiers OneDrive de votre utilisateur avec la classification BlueXP. 
 ---
-= En analysant les comptes OneDrive
+= Analysez les comptes OneDrive
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: Procédez en quelques étapes pour commencer à analyser les fichiers d
 [role="lead"]
 Procédez en quelques étapes pour commencer à analyser les fichiers dans les dossiers OneDrive de votre utilisateur avec la classification BlueXP.
 
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
 
 
 == Démarrage rapide
@@ -133,5 +138,3 @@ La classification BlueXP commence à analyser les fichiers pour les utilisateurs
 Si des utilisateurs quittent l'entreprise ou si leur adresse e-mail change, vous pouvez supprimer à tout moment les utilisateurs OneDrive de faire analyser leurs fichiers. Il vous suffit de cliquer sur *Supprimer l'utilisateur OneDrive* dans la page de configuration.
 
 image:screenshot_compliance_onedrive_remove_user.png["Capture d'écran indiquant comment supprimer un utilisateur unique de la numérisation de ses fichiers."]
-
-Notez que vous pouvez link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Supprimez l'intégralité du compte OneDrive de la classification BlueXP"] Si vous ne souhaitez plus numériser de données utilisateur à partir du compte OneDrive.

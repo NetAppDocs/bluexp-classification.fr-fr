@@ -14,7 +14,7 @@ summary: Il existe de nombreux types de données privées que la classification 
 
 
 [role="lead"]
-Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes, dans des compartiments Amazon S3, dans des bases de données, des dossiers OneDrive, des comptes SharePoint, Et Google Drive. Voir les catégories ci-dessous.
+Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes et vos bases de données. Voir les catégories ci-dessous.
 
 
 TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de santé, envoyez un e-mail à ng-contact-data-sense@netapp.com à votre demande.
@@ -26,8 +26,6 @@ TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres ty
 Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
 Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
-
-Notez que vous pouvez ajouter à la liste des données personnelles qui se trouvent dans vos fichiers. Si vous analysez un serveur de base de données, la fonction _Data Fusion_ vous permet de choisir des identificateurs supplémentaires que la classification BlueXP recherche dans ses analyses en sélectionnant des colonnes dans une table de base de données. Vous pouvez également ajouter des mots-clés personnalisés à partir d'un fichier texte ou des motifs personnalisés à l'aide d'une expression régulière. Voir link:task-managing-data-fusion.html["Ajout d'identifiants de données personnels à vos analyses de classification BlueXP"^] pour plus d'informations.
 
 [cols="13,37,10,8,8,8,8,8"]
 |===

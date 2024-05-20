@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance-deprecated.html 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: Si nécessaire, vous pouvez empêcher la classification BlueXP de scanner un ou plusieurs environnements de travail, bases de données, groupes de partage de fichiers, comptes OneDrive, comptes Google Drive, Ou SharePoint. 
+---
+= Supprimez un compte OneDrive, SharePoint ou Google Drive de la classification BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous ne souhaitez plus analyser les fichiers utilisateur à partir d'un compte OneDrive spécifique, d'un compte SharePoint spécifique ou d'un compte Google Drive, vous pouvez supprimer le compte de l'interface de classification BlueXP et arrêter toutes les analyses.
+
+.Étapes
+. Dans la page _Configuration_, cliquez sur image:screenshot_gallery_options.gif["Bouton plus"] Dans la ligne du compte OneDrive, SharePoint ou Google Drive, puis cliquez sur *Supprimer le compte OneDrive*, *Supprimer le compte SharePoint* ou *Supprimer le compte Google Drive*.
++
+image:screenshot_compliance_remove_onedrive.png["Capture d'écran du bouton Supprimer OneDrive de la page Configuration de la numérisation."]
+
+. Cliquez sur *Supprimer le compte* dans la boîte de dialogue de confirmation.
+

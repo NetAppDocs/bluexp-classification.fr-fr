@@ -21,6 +21,11 @@ Lorsqu'elle est activée, l'analyse lente est utilisée sur toutes les sources d
 
 TIP: La vitesse de numérisation ne peut pas être réduite lors de la numérisation de bases de données.
 
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
 .Étapes
 . Depuis le bas de la _Configuration_ page, déplacez le curseur vers la droite pour activer la numérisation lente.
 +

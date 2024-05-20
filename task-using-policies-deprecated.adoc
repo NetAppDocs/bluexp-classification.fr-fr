@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-using-policies-deprecated.html 
+keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+summary: Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation. 
+---
+= Envoyer des alertes par e-mail lorsque des données non conformes sont trouvées
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La classification BlueXP peut envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines règles stratégiques renvoient des résultats pour vous permettre d'obtenir des notifications pour protéger vos données. Vous pouvez choisir d'envoyer les notifications par e-mail tous les jours, toutes les semaines ou tous les mois. Vous pouvez également choisir d'envoyer des alertes par e-mail à n'importe quelle adresse e-mail - jusqu'à 20 adresses e-mail - pas dans votre compte BlueXP.
+
+Vous pouvez configurer ce paramètre lors de la création de la stratégie ou lors de la modification d'une stratégie.
+
+Procédez comme suit pour ajouter des mises à jour par e-mail à une stratégie existante.
+
+.Étapes
+. Dans la page liste des stratégies, cliquez sur *Modifier* pour la stratégie dans laquelle vous souhaitez ajouter (ou modifier) le paramètre de messagerie.
++
+image:screenshot_compliance_add_email_alert_1.png["Capture d'écran montrant comment modifier une stratégie existante."]
+
+. Dans la page Modifier la stratégie :
++
+.. Cochez la case « Envoyer tous les utilisateurs dans ce compte » si vous souhaitez envoyer des e-mails de notification aux utilisateurs de votre compte BlueXP, puis choisissez l'intervalle d'envoi de l'e-mail (par exemple, *tous les jours*).
+.. Cochez la case « Envoyer un e-mail » si vous souhaitez envoyer des e-mails de notification à d'autres utilisateurs, choisissez l'intervalle d'envoi de l'e-mail et saisissez jusqu'à 20 adresses e-mail.
++
+image:screenshot_compliance_add_email_alert_2.png["Capture d'écran indiquant comment choisir les critères d'e-mail à envoyer pour la police."]
+
+
+
+. Cliquez sur *Enregistrer la stratégie* et l'intervalle d'envoi de l'e-mail apparaît dans la description de la stratégie.
+
+
+.Résultat
+Le premier e-mail est envoyé dès maintenant s'il y a des résultats de la police, mais uniquement si des fichiers répondent aux critères de la stratégie. Aucune information personnelle n'est envoyée dans les e-mails de notification. L'e-mail indique qu'il existe des fichiers qui correspondent aux critères de la stratégie et qu'il fournit un lien vers les résultats de la stratégie.
+
+
+
+== Supprimez automatiquement les fichiers source à l'aide de stratégies
+
+Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez supprimer des fichiers qui contiennent des informations sensibles et qui ont été découverts par la classification BlueXP au cours des 30 derniers jours.
+
+Seuls les administrateurs de compte peuvent créer une stratégie de suppression automatique des fichiers.
+
+
+NOTE: Tous les fichiers qui correspondent à la stratégie seront définitivement supprimés une fois par jour.
+
+.Étapes
+. Dans la page recherche de données, définissez votre recherche en sélectionnant tous les filtres que vous souhaitez utiliser. Voir link:task-investigate-data.html["Filtrage des données dans la page Data Investigation"^] pour plus d'informations.
+. Une fois que vous avez toutes les caractéristiques de filtre comme vous le souhaitez, cliquez sur *Créer une stratégie à partir de cette recherche*.
+. Nommez la règle et sélectionnez les autres actions pouvant être effectuées par la règle :
++
+.. Entrez un nom et une description uniques.
+.. Cochez la case "Supprimer automatiquement les fichiers qui correspondent à cette stratégie" et tapez *Supprimer définitivement* pour confirmer que vous voulez que les fichiers soient définitivement supprimés par cette stratégie.
+.. Cliquez sur *Créer une stratégie*.
++
+image:screenshot_compliance_delete_files_using_policies.png["Capture d'écran montrant comment configurer la stratégie et l'enregistrer."]
+
+
+
+
+
+.Résultat
+La nouvelle règle de gestion s'affiche dans l'onglet règles. Les fichiers qui correspondent à la stratégie sont supprimés une fois par jour au moment de l'exécution de la stratégie.
+
+Vous pouvez afficher la liste des fichiers qui ont été supprimés dans le link:task-view-compliance-actions.html["Volet État des actions"].
+
+
+
+== Attribuez automatiquement des étiquettes d'AIP aux stratégies
+
+Vous pouvez attribuer une étiquette AIP à tous les fichiers répondant aux critères de la stratégie. Vous pouvez spécifier le libellé AIP lors de la création de la stratégie ou ajouter le libellé lors de la modification d'une stratégie.
+
+Des étiquettes sont ajoutées ou mises à jour en continu dans les fichiers au fur et à mesure que le système de classification BlueXP analyse vos fichiers.
+
+Selon qu'une étiquette est déjà appliquée à un fichier et le niveau de classification de l'étiquette, les actions suivantes sont prises lors de la modification d'une étiquette :
+
+[cols="60,40"]
+|===
+| Si le fichier... | Alors... 
+
+
+| N'a pas d'étiquette | L'étiquette est ajoutée 
+
+
+| Possède une étiquette existante d'un niveau de classification inférieur | L'étiquette de niveau supérieur est ajoutée 
+
+
+| Possède un libellé existant d'un niveau de classification supérieur | L'étiquette de niveau supérieur est conservée 
+
+
+| Se voit attribuer un libellé à la fois manuellement et par une stratégie | L'étiquette de niveau supérieur est ajoutée 
+
+
+| Se voit attribuer deux étiquettes différentes par deux règles | L'étiquette de niveau supérieur est ajoutée 
+|===
+Procédez comme suit pour ajouter une étiquette AIP à une stratégie existante.
+
+.Étapes
+. Dans la page liste des stratégies, cliquez sur *Modifier* pour la stratégie dans laquelle vous souhaitez ajouter (ou modifier) le libellé du programme d'assurance-sécurité.
++
+image:screenshot_compliance_add_label_highlight_1.png["Capture d'écran indiquant comment modifier une police existante."]
+
+. Dans la page Modifier la stratégie, cochez la case pour activer les libellés automatiques des fichiers qui correspondent aux paramètres de la stratégie, puis sélectionnez l'étiquette (par exemple, *général*).
++
+image:screenshot_compliance_add_label_highlight_2.png["Capture d'écran indiquant comment sélectionner l'étiquette à attribuer aux fichiers correspondant à la stratégie."]
+
+. Cliquez sur *Enregistrer la stratégie* et le libellé apparaît dans la description de la stratégie.
+
+
+
+NOTE: Si une stratégie a été configurée avec une étiquette, mais que l'étiquette a depuis été supprimée de l'AIP, le nom de l'étiquette est mis sur OFF et l'étiquette n'est plus attribuée.

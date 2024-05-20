@@ -37,7 +37,7 @@ La classification BlueXP collecte certaines métadonnées lors d'analyses de cla
 |===
 [NOTE]
 ====
-* La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données suivantes : SharePoint Online, SharePoint on-prest (SharePoint Server), OneDrive, Google Drive et Amazon S3, et bases de données.
+* La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données de la base de données.
 * Les versions antérieures du système d'exploitation Windows (par exemple, Windows 7 et Windows 8) désactivent la collection de l'attribut « heure du dernier accès » par défaut car elle peut avoir un impact sur les performances du système. Lorsque cet attribut n'est pas collecté, les analyses de classification BlueXP basées sur « l'heure du dernier accès » sont impactées. Vous pouvez activer la collecte de l'heure du dernier accès sur ces anciens systèmes Windows si nécessaire.
 
 

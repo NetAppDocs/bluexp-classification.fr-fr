@@ -21,17 +21,13 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: Nouveautés
       url: whats-new.html
+    - title: Fonctionnalités disponibles en versions gratuites et payantes
+      url: reference-free-paid.html
     - title: Déployez la classification BlueXP dans le cloud à l'aide de BlueXP
       url: task-deploy-cloud-compliance.html
     - title: Installez la classification BlueXP sur un hôte Linux avec Internet
       url: task-deploy-compliance-onprem.html
-    - title: Installez la classification BlueXP sur site sans Internet
-      url: task-deploy-compliance-dark-site.html
-    - title: Intégrer Active Directory
-      url: task-add-active-directory-datasense.html
-    - title: Configuration des licences
-      url: task-licensing-datasense.html
-  - title: Analysez vos environnements de travail
+  - title: Analysez vos sources de données
     links:
     - title: Volumes Cloud Volumes ONTAP
       url: task-getting-started-compliance.html
@@ -41,22 +37,10 @@ indexpage:
       url: task-scanning-anf.html
     - title: Amazon FSX pour volumes ONTAP
       url: task-scanning-fsx.html
-    - title: Compartiments Amazon S3
-      url: task-scanning-s3.html
-  - title: Analyser d'autres sources de données
-    links:
-    - title: Compartiments S3 génériques
-      url: task-scanning-object-storage.html
     - title: Partages de fichiers non NetApp
       url: task-scanning-file-shares.html
     - title: Schémas de base de données
       url: task-scanning-databases.html
-    - title: Comptes OneDrive
-      url: task-scanning-onedrive.html
-    - title: Comptes SharePoint
-      url: task-scanning-sharepoint.html
-    - title: Comptes Google Drive
-      url: task-scanning-google-drive.html
   - title: Afficher les détails de vos données
     links:
     - title: Afficher les fichiers contenant des informations privées
@@ -69,29 +53,14 @@ indexpage:
       url: task-using-policies.html
     - title: Générer des rapports de conformité
       url: task-generating-compliance-reports.html
-  - title: Organisez vos données privées
-    links:
-    - title: Appliquez des balises et des propriétaires aux fichiers qui nécessitent
-        une attention particulière
-      url: task-org-private-data.html#apply-tags-to-manage-your-scanned-files
-    - title: Catégoriser vos données à l'aide d'étiquettes AIP
-      url: task-org-private-data.html#categorize-your-data-using-aip-labels
-    - title: Ajoutez vos propres identifiants de données personnels personnalisés
-      url: task-managing-data-fusion.html
-    - title: Exclure certains répertoires de l'analyse
-      url: task-exclude-scan-paths.html
-  - title: Gérez vos données privées
-    links:
-    - title: Copier les fichiers source
-      url: task-managing-highlights.html#copy-source-files
-    - title: Déplacer les fichiers source
-      url: task-managing-highlights.html#move-source-files-to-an-nfs-share
-    - title: Supprimer les fichiers source
-      url: task-managing-highlights.html#delete-source-files
     - title: Créez des alertes par e-mail lorsque des données non conformes sont trouvées
-      url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
+      url: task-using-policies.html
     - title: Répondre à une demande d'accès à un sujet de données
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+  - title: Fonctionnalités obsolètes
+    links:
+    - title: Liste des fonctionnalités obsolètes
+      url: reference-free-paid.html
   - title: Blogs et communauté
     links:
     - title: Communauté NetApp

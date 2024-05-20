@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-dashboard-deprecated.html 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux. 
+---
+= Affichez les détails de gouvernance de vos données à l'aide du tableau de bord gouvernance
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux.
+
+En outre, si vous prévoyez de migrer des données depuis des emplacements sur site vers le cloud, vous pouvez vérifier la taille des données et si chacune d'entre elles contient des informations sensibles avant de les transférer.
+
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
+
+
+== Données répertoriées par sensibilité et autorisations étendues dans le tableau de bord de gouvernance
+
+La zone _données sensibles et autorisations étendues_ du tableau de bord gouvernance fournit une carte thermique des fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissifs. Cela vous aide à déterminer les risques liés aux données sensibles.
+
+
+NOTE: Cela s'applique aux versions 1.30 et antérieures de la classification BlueXP.
+
+Les fichiers sont classés en fonction du nombre d'utilisateurs autorisés à accéder aux fichiers sur l'axe X (le plus bas au plus haut) et du nombre d'identificateurs sensibles dans les fichiers de l'axe y (le plus bas au plus haut). Les blocs représentent le nombre de fichiers correspondant aux éléments des axes X et Y. Le bloc de couleur plus claire est bon, avec moins d'utilisateurs pouvant accéder aux fichiers et avec moins d'identificateurs sensibles par fichier. Les blocs plus sombres sont les éléments que vous pouvez souhaiter examiner. Par exemple, l'écran ci-dessous montre le texte de la souris pour le bloc bleu foncé. Il montre que vous avez 1,500 fichiers où 751-100 utilisateurs ont accès, et où il y a 501-100 identificateurs sensibles par fichier.
+
+image:screenshot_compliance_sensitive_data.png["Capture d'écran affichant les données affichées lorsque vous placez le curseur sur un élément de ce panneau."]
+
+Vous pouvez cliquer sur le bloc qui vous intéresse pour afficher les résultats filtrés des fichiers affectés dans la page Investigation afin que vous puissiez en rechercher davantage.
+
+Aucune donnée n'est affichée dans ce panneau si vous n'avez pas intégré de service d'identité avec la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment intégrer votre service Active Directory avec la classification BlueXP"^].
+
+
+TIP: Ce panneau prend en charge les fichiers dans les partages CIFS, les sources de données OneDrive et SharePoint. Actuellement, il n'est pas compatible avec les bases de données, Google Drive, Amazon S3 et le stockage objet générique.
+
+
+
+== Zone de classification sur le tableau de bord affichant les étiquettes d'AIP
+
+La zone _Classification_ du tableau de bord fournit une liste des étiquettes Azure information protection (AIP) les plus identifiées dans vos données numérisées.
+
+Si vous vous êtes abonné à Azure information protection (AIP), vous pouvez classer et protéger les documents et les fichiers en appliquant des étiquettes au contenu. La vérification des étiquettes AIP les plus utilisées qui sont attribuées aux fichiers vous permet de voir les étiquettes les plus utilisées dans vos fichiers.
+
+Voir link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquettes AIP"^] pour en savoir plus.

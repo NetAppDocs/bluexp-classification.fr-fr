@@ -18,9 +18,9 @@ Les limitations connues identifient les fonctions qui ne sont pas prises en char
 
 
 
-== La version de classification BlueXP supprime temporairement les options
+== Options supprimées de la version de classification BlueXP
 
-La version de décembre 2023 (version 1.26.6) a temporairement supprimé les options suivantes :
+La version de décembre 2023 (version 1.26.6) a supprimé les options suivantes :
 
 * L'option permettant d'activer la collecte des journaux d'audit a été désactivée.
 * Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible.

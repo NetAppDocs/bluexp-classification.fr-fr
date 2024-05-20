@@ -17,6 +17,9 @@ summary: 'Procédez en quelques étapes pour commencer l"analyse des partages de
 Procédez en quelques étapes pour commencer l'analyse des partages de fichiers NFS ou CIFS non NetApp directement avec la classification BlueXP. Ces partages de fichiers peuvent résider sur site ou dans le cloud.
 
 
+TIP: L'ajout de partages de fichiers est le seul moyen d'analyser les données à partir de Google Cloud NetApp volumes.
+
+
 
 == Démarrage rapide
 

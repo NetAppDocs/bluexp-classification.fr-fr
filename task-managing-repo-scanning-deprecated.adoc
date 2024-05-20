@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning-deprecated.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
+summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.' 
+---
+= Renumériser les données pour un référentiel existant
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La classification BlueXP analyse en continu vos données pour détecter les modifications incrémentielles dans les référentiels que vous avez ajoutés. Cependant, il faut du temps pour analyser tous les environnements et il n'existe aucune méthode pour contrôler l'ordre des référentiels analysés. Si vous devez relancer une nouvelle analyse d'un référentiel particulier immédiatement afin que les modifications soient répercutées dans le système, vous pouvez sélectionner le référentiel et le relancer. Cela vous permet de hiérarchiser la numérisation de certaines données avant d'autres données. Après l'action de nouvelle analyse, le référentiel sélectionné revient à être analysé selon la planification de classification BlueXP normale.
+
+[]
+====
+*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+
+====
+La classification BlueXP prend en charge les répertoires d'analyse sur tous les types de sources de données, à l'exception d'Amazon S3 et des bases de données. Actuellement, nous prenons en charge la réanalyse d'un seul répertoire (dossier ou partage) ou de plusieurs répertoires. La prise en charge future comprendra la réanalyse de types de référentiel supplémentaires (fichiers, bases de données, etc.).
+
+* Lors de la recréation d'un répertoire, tous les fichiers du répertoire sont réarchivés, mais les sous-dossiers du répertoire ne sont pas réprédéfinis.
+* Lors du recanning d'un partage, seules les métadonnées du partage sont réprédéfinies.
+* Un maximum de 1 000 éléments peut être réanalysé à la fois.
+
+
+.Étapes
+. Dans le volet Résultats de l'enquête de données, sélectionnez les dossiers ou les partages que vous souhaitez relancer, puis cliquez sur *Rescan*.
++
+image:screenshot_compliance_rescan_directory.png["Capture d'écran montrant comment sélectionner et relancer un répertoire."]
+
+. Dans la boîte de dialogue _Rescan Directory_, cliquez sur *Rescan*.
+
+
+Notez que vous pouvez également relancer une analyse d'un répertoire individuel lors de l'affichage des détails de métadonnées. Cliquez simplement sur *Rescan*.
+
+image:screenshot_compliance_rescan_single_file.png["Capture d'écran indiquant comment réanalyser un seul dossier ou partage."]

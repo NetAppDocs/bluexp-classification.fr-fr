@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data-deprecated.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: 'Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu"à cette page à partir de plusieurs sections de l"interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.' 
+---
+= Examinez les données stockées sur la page enquête sur les données
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu'à cette page à partir de plusieurs sections de l'interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.
+
+
+NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
+
+
+
+== Filtrez les données dans la page Data Investigation
+
+Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir. Il s'agit d'une fonctionnalité très puissante car une fois les données raffinées, vous pouvez utiliser la barre de boutons en haut de la page pour effectuer diverses actions, notamment copier des fichiers, déplacer des fichiers, ajouter une balise ou une étiquette AIP aux fichiers, et bien plus encore.
+
+
+
+=== Filtrez les données par balises, étiquettes, utilisateurs affectés et règles
+
+Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou stratégies.
+
+[]
+====
+*REMARQUE* la possibilité de filtrer par balises, étiquettes et utilisateurs affectés n'est pertinente que pour les versions de classification BlueXP 1.30 et antérieures.
+
+====
+[cols="30,60"]
+|===
+| Filtre | Détails 
+
+
+| Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-using-policies.html["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
+
+
+| Étiquette | Sélectionnez link:task-org-private-data.html#categorize-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 
+
+
+| Étiquettes | Sélectionnez link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["la ou les balises"] qui sont affectés à vos fichiers. 
+
+
+| Affecté à | Sélectionnez le nom de la personne à laquelle le fichier est affecté. 
+|===
+
+
+== Créer le rapport d'enquête sur les données
+
+Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
+
+Le rapport est disponible dans deux formats différents :
+
+* En tant que fichier .CSV que vous pouvez enregistrer sur la machine locale.
++
+Ce rapport peut inclure un maximum de 10,000 lignes de données.
+
+* En tant que fichier .JSON que vous exportez vers un partage NFS.
++
+S'il y a plus de 250,000 lignes de données, des fichiers .JSON supplémentaires sont créés.
+
++
+Lors de l'exportation vers un partage de fichiers, assurez-vous que la classification BlueXP dispose des autorisations appropriées pour l'accès à l'exportation.
+
++
+[]
+====
+*NOTE* la capacité de générer le rapport dans . Le format JSON est pertinent uniquement pour les versions de classification BlueXP 1.30 et antérieures.
+
+====
+
+
+Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).
+
+.Étapes
+. Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
+. Indiquez si vous souhaitez télécharger un rapport .CSV ou .JSON de données, puis cliquez sur *Télécharger le rapport*.
++
+Lors de la sélection d'un rapport .JSON, entrez le nom du partage NFS dans lequel le rapport sera téléchargé au format `<host_name>:/<share_path>`.
+
++
+Vous pouvez afficher la progression de la génération du rapport JSON dans le link:task-view-compliance-actions.html["Volet État des actions"].
+
++
+[]
+====
+*REMARQUE* la possibilité de filtrer par balises, étiquettes et utilisateurs affectés n'est pertinente que pour les versions de classification BlueXP 1.30 et antérieures.
+
+====
+
