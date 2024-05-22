@@ -89,7 +89,7 @@ Certaines fonctionnalités sont obsolètes dans la version principale de BlueXP 
 | Créez une liste personnalisée des « données personnelles » identifiées | Oui. | Non 
 
 
-| Avertissez les utilisateurs par e-mail lorsque des fichiers contiennent certaines PII. (Vous définissez ces critères à l'aide de link:task-using-policies.html["Stratégies"^].) | Oui. | Oui. 
+| Avertissez les utilisateurs par e-mail lorsque des fichiers contiennent certaines PII. (Vous définissez ces critères à l'aide de link:task-using-policies.html["Stratégies"^].) | Oui. | Non 
 
 
 | Utilisez des filtres au niveau des répertoires | Oui. | Oui. 
@@ -131,6 +131,9 @@ Certaines fonctionnalités sont obsolètes dans la version principale de BlueXP 
 
 
 | Exporter les données vers NFS à partir de l'investigation | Oui. | Non 
+
+
+| Exporter les données au format CSV à partir de l'investigation | Oui. | Oui. 
 
 
 | Prend en charge plusieurs scanners | Oui. | Non 

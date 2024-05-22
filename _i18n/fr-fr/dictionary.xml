@@ -3545,4 +3545,5 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="08a8e0f5e4c7d91e565955cb7f30b215" category="sidebar">Affichez les détails de gouvernance relatifs aux données dans le tableau de bord gouvernance</block>
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">Supprimez un compte OneDrive, SharePoint ou Google Drive</block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="paragraph">La classification BlueXP est prise en charge si vous installez le connecteur sur un hôte RHEL 8 ou 9 résidant sur site. Elle n'est pas prise en charge si l'hôte RHEL 8 ou 9 réside dans AWS, Azure ou Google Cloud.</block>
+  <block id="cfe5d63c50c4794111fa6f65b931e130" category="cell">Exporter les données au format CSV à partir de l'investigation</block>
 </blocks>
