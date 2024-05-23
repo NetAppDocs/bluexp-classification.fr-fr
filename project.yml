@@ -85,7 +85,7 @@ sidebar:
     entries:
     - title: Liste des fonctions obsolètes
       url: "/reference-free-paid.html"
-    - title: Déployez la classification BlueXP
+    - title: Déployez les dérecommandations de classification BlueXP
       entries:
       - title: Installez la classification BlueXP sur plusieurs hôtes sans accès Internet
         url: "/task-deploy-multi-host-install-dark-site.html"
@@ -93,7 +93,7 @@ sidebar:
         url: "/task-deploy-add-scanner-nodes.html"
       - title: Configurez un essai gratuit ou apportez votre propre licence
         url: "/task-licensing-byol-freetrial.html"
-    - title: Données d'acquisition
+    - title: Dépercations des données d'acquisition
       entries:
       - title: Analyse des compartiments Amazon S3
         url: "/task-scanning-s3.html"
@@ -105,7 +105,7 @@ sidebar:
         url: "/task-scanning-google-drive.html"
       - title: Analysez le stockage objet à l'aide du protocole S3
         url: "/task-scanning-object-storage.html"
-    - title: Gérez vos données
+    - title: Gérer les opérations de données
       entries:
       - title: Affichez les détails de gouvernance relatifs aux données dans le tableau
           de bord gouvernance

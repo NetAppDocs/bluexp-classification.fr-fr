@@ -41,7 +41,7 @@ Lancez l'assistant d'installation pour déployer l'instance de classification Bl
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
 [role="quick-margin-para"]
-Les 500 premiers To de données analysés par le système de classification BlueXP dans BlueXP sont gratuits pendant 30 jours. Un abonnement BlueXP via votre fournisseur cloud Marketplace, ou une licence BYOL auprès de NetApp, est nécessaire pour continuer à analyser les données après ce point.
+Vous devez souscrire un abonnement BlueXP via votre fournisseur cloud Marketplace.
 
 
 
@@ -60,7 +60,7 @@ Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisse
 * Pour l'analyse des données dans Cloud Volumes ONTAP dans GCP, vous utilisez un connecteur dans GCP.
 
 
-Les systèmes ONTAP sur site, les partages de fichiers non NetApp, le stockage objet S3 générique et les bases de données peuvent être analysés avec l'un de ces connecteurs cloud.
+Les systèmes ONTAP sur site, les partages de fichiers NetApp, le stockage objet générique S3 et les bases de données peuvent être analysés avec l'un de ces connecteurs cloud.
 
 Notez que vous pouvez également https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 

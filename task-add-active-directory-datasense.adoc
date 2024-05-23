@@ -38,7 +38,6 @@ Une intégration d'Active Directory avec la classification BlueXP permet d'ident
 * Cloud Volumes ONTAP
 * Azure NetApp Files
 * FSX pour ONTAP
-* Partages de fichiers CIFS non NetApp (et non partages de fichiers NFS)
 * Comptes OneDrive et comptes SharePoint (pour anciennes versions 1.30 et antérieures)
 
 
