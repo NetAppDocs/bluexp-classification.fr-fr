@@ -185,7 +185,6 @@
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">Libellés AIP</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Cliquez sur *Créer une stratégie*.</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">Capture d'écran indiquant comment configurer la stratégie et l'enregistrer.</block>
-  <block id="23e34b6c117b6fd91abb568e48195e27" category="paragraph"><block ref="23e34b6c117b6fd91abb568e48195e27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">La nouvelle stratégie s'affiche dans l'onglet stratégies.</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">Capture d'écran indiquant comment choisir les critères d'e-mail à envoyer pour la police.</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
@@ -3498,7 +3497,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">La version a également supprimé les options suivantes :</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">Vous pouvez activer la collecte des journaux d'audit de l'accès aux fichiers sur votre système de classification BlueXP pour les événements d'accès aux fichiers détectés sur les volumes de vos environnements de travail. La classification BlueXP peut capturer les types d'événements FPolicy suivants et les utilisateurs qui ont effectué les actions sur vos fichiers : créer, lire, écrire, supprimer, renommer, Modifiez le propriétaire/les autorisations et modifiez SACL/DACL.</block>
   <block id="06e3e3e8a40062c8a44b3bead8f60ccb" category="list-text">Comptes OneDrive et comptes SharePoint (pour anciennes versions 1.30 et antérieures)</block>
-  <block id="a0c44cafcacc5478c539dba887219bc9" category="sidebar">Fonctionnalités disponibles en versions gratuites et payantes</block>
   <block id="2cb8839a5444b5db421bd5b52586dd24" category="sidebar">Analysez vos sources de données</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">Fonctionnalités obsolètes</block>
   <block id="dd6f713e594790101284e68ce9ae76f7" category="sidebar">Liste des fonctionnalités obsolètes</block>
@@ -3529,4 +3527,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">Déployez les dérecommandations de classification BlueXP</block>
   <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">Dépercations des données d'acquisition</block>
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">Gérer les opérations de données</block>
+  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">Fonctionnalités disponibles dans les versions principale et ancienne génération de BlueXP</block>
 </blocks>

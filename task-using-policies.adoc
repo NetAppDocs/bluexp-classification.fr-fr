@@ -55,7 +55,7 @@ image:screenshot_compliance_save_as_highlight.png["Capture d'écran indiquant co
 .. Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers correspondant aux paramètres de la stratégie.
 .. Cliquez sur *Créer une stratégie*.
 +
-image:screenshot_compliance_save_highlight.png["Capture d'écran indiquant comment configurer la stratégie et l'enregistrer."]
+image:screenshot_compliance_save_highlight2.png["Capture d'écran indiquant comment configurer la stratégie et l'enregistrer."]
 
 
 
