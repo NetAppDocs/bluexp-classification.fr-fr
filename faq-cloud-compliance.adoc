@@ -40,18 +40,6 @@ La classification BlueXP utilise l'IA pour fournir une compréhension contextuel
 
 link:concept-cloud-compliance.html["Découvrez le fonctionnement de la classification BlueXP"^].
 
-
-
-=== Quels sont les cas d'utilisation les plus courants pour la classification BlueXP ?
-
-* Identifier les informations à caractère personnel
-* Localiser et créer facilement des rapports sur des données spécifiques en réponse à des sujets de données, conformément aux exigences du RGPD, de la loi CCPA, de l'HIPAA et d'autres réglementations en matière de confidentialité des données.
-* Respectez les nouvelles réglementations sur la confidentialité des données, ainsi que celles à venir.
-* Respectez les réglementations en matière de conformité et de confidentialité des données.
-* Migrer les données des systèmes existants vers le cloud.
-* Respectez les règles de conservation des données.
-
-
 https://bluexp.netapp.com/netapp-cloud-data-sense["En savoir plus sur les utilisations de la classification BlueXP"^].
 
 
@@ -106,12 +94,6 @@ Une fois les fichiers qui vous intéressent trouvés, les caractéristiques peuv
 
 
 
-=== Quel type d'analytique la classification BlueXP fournit-elle ?
-
-Les sources de données peuvent être représentées visuellement, et les relations définies et représentées graphiquement. Par exemple, les administrateurs peuvent visualiser toutes les données obsolètes, dupliquées et non liées à l'activité dans l'ensemble des sources de données de l'entreprise (systèmes sur site, bases de données, partages de fichiers, magasins S3, OneDrive, etc.). Elles peuvent ensuite copier, déplacer, supprimer et gérer des données afin d'optimiser les coûts de stockage et de réduire les risques. Les utilisateurs peuvent réduire les risques en voyant les données sensibles et créer des tâches de gestion des autorisations pour une protection renforcée des données. La classification BlueXP classe également tous les types de données. Les administrateurs peuvent ainsi étudier les données par type et voir quelles actions ont été effectuées sur les données, et quand.
-
-
-
 === La classification BlueXP propose-t-elle des rapports ?
 
 Oui. Les informations offertes par la classification BlueXP peuvent être pertinentes pour les autres parties prenantes de votre entreprise. Nous vous aidons à générer des rapports pour partager les informations exploitables. Les rapports suivants sont disponibles pour la classification BlueXP :
@@ -154,7 +136,7 @@ NOTE: L'activation de la classification BlueXP sur une source de données entra�
 
 === Comment désactiver la classification BlueXP ?
 
-Vous pouvez désactiver la classification BlueXP pour empêcher l'analyse d'un environnement de travail individuel, d'une base de données, d'un groupe de partage de fichiers, d'un compte OneDrive ou d'un compte SharePoint à partir de la page Configuration de la classification BlueXP.
+Vous pouvez désactiver la classification BlueXP pour empêcher l'analyse d'un environnement de travail, d'une base de données ou d'un groupe de partage de fichiers individuels à partir de la page Configuration de la classification BlueXP.
 
 link:task-managing-compliance.html["En savoir plus >>"^].
 
@@ -340,10 +322,10 @@ Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte c
 
 === Où le connecteur doit-il être installé ?
 
-* Pour l'analyse des données dans Cloud Volumes ONTAP dans AWS, Amazon FSX pour ONTAP ou dans des compartiments AWS S3, vous utilisez un connecteur dans AWS.
+* Lorsque vous analysez les données dans Cloud Volumes ONTAP dans AWS ou Amazon FSX pour ONTAP, vous utilisez un connecteur dans AWS.
 * Pour analyser les données dans Cloud Volumes ONTAP dans Azure ou dans Azure NetApp Files, vous utilisez un connecteur dans Azure.
 * Pour l'analyse des données dans Cloud Volumes ONTAP dans GCP, vous utilisez un connecteur dans GCP.
-* Lors de l'analyse des données dans des systèmes ONTAP sur site, des partages de fichiers non NetApp, un stockage objet S3 générique, des bases de données, des dossiers OneDrive, des comptes SharePoint et des comptes Google Drive, vous pouvez utiliser un connecteur dans tous ces emplacements cloud.
+* Lors de l'analyse des données dans des systèmes ONTAP sur site, des partages de fichiers NetApp ou des bases de données, vous pouvez utiliser un connecteur dans l'un de ces emplacements cloud.
 
 
 Donc, si vous disposez de données à plusieurs de ces emplacements, vous devrez peut-être les utiliser https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Plusieurs connecteurs"^].

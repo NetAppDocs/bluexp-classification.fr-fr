@@ -18,7 +18,7 @@ L'analyse des données nécessite un abonnement PAYGO (paiement basé sur l'util
 
 []
 ====
-*REMARQUE* ces informations ne concernent que les versions 1.31 et ultérieures du noyau de classification BlueXP.
+*REMARQUE* ces informations ne concernent que les versions 1.31 et ultérieures du noyau de classification BlueXP. Pour les versions antérieures à la version 1.30, vous pouvez également utiliser une licence BYOL.
 
 ====
 Quelques remarques avant de lire plus loin :
@@ -35,7 +35,7 @@ link:concept-cloud-compliance.html#cost["En savoir plus sur les licences et les 
 
 == essai gratuit de 30 jours
 
-Un essai gratuit de 30 jours est disponible pour 500 To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP. Vous devrez acheter une licence BYOL auprès de NetApp, ou souscrire un abonnement auprès de votre fournisseur de cloud, pour continuer à analyser les données ultérieurement.
+Un essai gratuit de 30 jours est disponible pour 500 To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP. Vous devrez vous inscrire pour souscrire un abonnement sur le marché de votre fournisseur de cloud, afin de continuer à analyser les données après cette date.
 
 Vous pouvez vous abonner à tout moment et vous ne serez pas facturé même après la fin de la période d'essai de 30 jours. Vous pouvez toujours voir la quantité totale de données analysées à partir du tableau de bord de gouvernance de classification BlueXP. Et le bouton _Subscribe Now_ permet de vous abonner facilement lorsque vous êtes prêt.
 
@@ -90,7 +90,7 @@ video::video_subscribing_gcp.mp4[width=848,height=480]
 
 
 
-=== Mettez à jour une licence BYOL de classification BlueXP
+== Mettez à jour une licence BYOL de classification BlueXP pour les versions héritées
 
 Si votre période de licence approche de la date d'expiration ou si votre capacité sous licence atteint la limite, vous serez averti dans l'interface utilisateur de classification.
 
@@ -129,7 +129,7 @@ BlueXP met à jour la licence pour que votre service de classification BlueXP re
 
 
 
-=== Considérations relatives aux licences BYOL
+=== Considérations relatives aux licences BYOL pour les versions héritées
 
 Lors de l'utilisation d'une licence BYOL de classification BlueXP (Data Sense), BlueXP affiche un avertissement dans l'interface de classification BlueXP et dans l'interface du portefeuille digital BlueXP lorsque la taille de toutes les données que vous analysez approche de la limite de capacité ou de la date d'expiration de la licence.
 

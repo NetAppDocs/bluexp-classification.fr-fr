@@ -14,10 +14,10 @@ summary: 'Procédez en quelques étapes pour commencer l"analyse des partages de
 
 
 [role="lead"]
-Procédez en quelques étapes pour commencer l'analyse des partages de fichiers NFS ou CIFS non NetApp directement avec la classification BlueXP. Ces partages de fichiers peuvent résider sur site ou dans le cloud.
+Procédez en quelques étapes pour commencer l'analyse des partages de fichiers NFS ou CIFS à partir de Google Cloud NetApp volumes et d'anciens systèmes NetApp 7-mode. Ces partages de fichiers peuvent résider sur site ou dans le cloud.
 
 
-TIP: L'ajout de partages de fichiers est le seul moyen d'analyser les données à partir de Google Cloud NetApp volumes.
+NOTE: L'analyse des données à partir de partages de fichiers non NetApp n'est pas prise en charge dans la version principale de classification BlueXP.
 
 
 
@@ -47,7 +47,7 @@ Ajoutez la liste des partages de fichiers que vous souhaitez numériser et séle
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
-* Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Dans la plupart des cas, il s'agit de partages de fichiers qui résident sur des systèmes de stockage non NetApp. Toutefois, les partages CIFS d'anciens systèmes de stockage NetApp 7-mode peuvent être analysés en tant que partages de fichiers.
+* Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Les partages CIFS d'anciens systèmes de stockage NetApp 7-mode peuvent être analysés en tant que partages de fichiers.
 +
 Notez que la classification BlueXP ne peut pas extraire les autorisations, ni l'heure du dernier accès des systèmes 7-mode. En outre, en raison d'un problème connu entre certaines versions de Linux et certains partages CIFS sur les systèmes 7-mode, vous devez configurer le partage pour qu'il n'utilise que SMB v1 avec l'authentification NTLM activée.
 
@@ -71,10 +71,6 @@ Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos f
 == Déploiement de l'instance de classification BlueXP
 
 Déployez la classification BlueXP si aucune instance n'est déjà déployée.
-
-Si vous scannez des partages de fichiers NFS ou CIFS non NetApp accessibles via Internet, vous pouvez link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans le cloud"^] ou link:task-deploy-compliance-onprem.html["Déployez la classification BlueXP dans un emplacement sur site disposant d'un accès Internet"^].
-
-Si vous scannez des partages de fichiers NFS ou CIFS non NetApp installés dans un site sombre qui n'offrent pas d'accès à Internet, vous devez le faire link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
@@ -119,7 +115,7 @@ image:screenshot_compliance_fileshares_add_initial_shares.png["Capture d'écran 
 Si vous ajoutez des partages de fichiers à un groupe existant, cliquez sur *Ajouter des partages*.
 
 +
-image:screenshot_compliance_fileshares_add_more_shares.png["Capture d'écran affichant le bouton Ajouter des partages pour ajouter d'autres partages au groupe."]
+image:screenshot_compliance_fileshares_add_more_shares2.png["Capture d'écran affichant le bouton Ajouter des partages pour ajouter d'autres partages au groupe."]
 
 . Sélectionnez le protocole pour les partages de fichiers que vous ajoutez, ajoutez les partages de fichiers que vous souhaitez analyser - un partage de fichiers par ligne - et cliquez sur *Continuer*.
 +

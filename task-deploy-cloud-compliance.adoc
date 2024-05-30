@@ -60,7 +60,7 @@ Dans certains cas, vous devez utiliser un connecteur déployé dans un fournisse
 * Pour l'analyse des données dans Cloud Volumes ONTAP dans GCP, vous utilisez un connecteur dans GCP.
 
 
-Les systèmes ONTAP sur site, les partages de fichiers NetApp, le stockage objet générique S3 et les bases de données peuvent être analysés avec l'un de ces connecteurs cloud.
+Ces connecteurs cloud permettent d'analyser les systèmes ONTAP sur site, les partages de fichiers NetApp et les bases de données.
 
 Notez que vous pouvez également https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installer le connecteur sur site"^] Sur un hôte Linux de votre réseau ou dans le cloud. Certains utilisateurs qui prévoient d'installer la classification BlueXP sur site peuvent également choisir d'installer le connecteur sur site.
 
