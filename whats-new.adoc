@@ -18,6 +18,48 @@ Découvrez les nouveautés de la classification BlueXP (Cloud Data Sense).
 
 
 
+== 5 juin 2024 (version 1.32)
+
+Cette version inclut les mises à jour suivantes.
+
+
+
+=== Les analyses de mappage rassemblent les métadonnées
+
+Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage et sont affichées dans les tableaux de bord gouvernance, conformité et investigation :
+
+* Environnement de travail
+* Type d'environnement de travail
+* Référentiel de stockage
+* Type de fichier
+* Capacité utilisée
+* Nombre de fichiers
+* Taille du fichier
+* Création de fichier
+* Dernier accès au fichier
+* Dernier fichier modifié
+* Heure de découverte du fichier
+* Extraction des autorisations
+
+
+
+
+=== Données supplémentaires dans les tableaux de bord
+
+Cette version met à jour les données qui apparaissent dans les tableaux de bord gouvernance, conformité et investigation lors des analyses de mappage.
+
+Pour plus de détails, voir https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Quelle est la différence entre les analyses de cartographie et de classification"]
+
+
+
+=== Nouvelle colonne État de mappage de la page Configuration
+
+Cette version affiche désormais une nouvelle colonne d'état de mappage dans la page Configuration. La nouvelle colonne vous permet d'identifier si le mappage est en cours d'exécution, en file d'attente, en pause ou plus.
+
+Pour plus d'informations sur les États, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["Modifier les paramètres de numérisation"].
+
+
+
 == 15 mai 2024 (version 1.31)
 
 

@@ -147,7 +147,7 @@ NOTE: Pour supprimer complètement l'instance de classification BlueXP, vous pou
 
 === Puis-je personnaliser le service en fonction des besoins de mon entreprise ?
 
-La classification BlueXP fournit des informations exploitables clé en main à vos données. Ces informations peuvent être extraites et utilisées en fonction des besoins de votre entreprise.
+La classification BlueXP fournit des informations exploitables sur vos données. Ces informations peuvent être extraites et utilisées en fonction des besoins de votre entreprise.
 
 En outre, la classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée de « données personnelles » que la classification BlueXP identifiera lors des analyses, ce qui vous donne une vue d'ensemble de l'emplacement des données potentiellement sensibles dans _tous_ les fichiers de votre entreprise.
 
@@ -168,7 +168,7 @@ link:task-exclude-scan-paths.html["En savoir plus >>"^].
 
 
 
-=== Les copies Snapshot qui résident sur les volumes ONTAP sont-elles analysées ?
+=== Les copies Snapshot résidant sur les volumes ONTAP sont-elles analysées ?
 
 Non La classification BlueXP ne analyse pas les snapshots, car le contenu est identique au contenu du volume.
 

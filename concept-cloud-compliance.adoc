@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: La classification BlueXP est un service de gouvernance des données pour BlueXP qui analyse vos sources de données cloud et sur site pour cartographier et classer les données, et identifier les informations privées. Cela peut réduire les risques liés à la sécurité et à la conformité, diminuer les coûts de stockage et vous aider dans vos projets de migration des données. 
 ---
 = Découvrez la classification BlueXP
@@ -121,7 +121,7 @@ La classification BlueXP est désormais gratuite. Aucune licence de classificati
 
 Les coûts de transfert de données dépendent de votre configuration. Si l'instance de classification BlueXP et la source de données se trouvent dans la même zone de disponibilité et dans la même région, aucun coût de transfert de données n'est applicable. Mais si la source de données, comme un système Cloud Volumes ONTAP, se trouve dans une zone de disponibilité ou une région _différente_, les coûts de transfert des données vous seront facturés par votre fournisseur cloud. Consultez ces liens pour en savoir plus :
 
-* https://aws.amazon.com/ec2/pricing/on-demand/["AWS : tarification Amazon EC2"^]
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS : tarifs Amazon Elastic Compute Cloud (Amazon EC2)"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure : détails de la tarification de la bande passante"^]
 * https://cloud.google.com/storage-transfer/pricing["Google Cloud : tarification du service de transfert du stockage"^]
 
@@ -219,6 +219,12 @@ Le tableau ci-dessous présente certaines des différences :
 | Vitesse de numérisation | Lentes | Rapides 
 
 
+| Tarifs | Libre | Libre 
+
+
+| Puissance | Limité à 500 To | Limité à 500 To 
+
+
 | Liste des types de fichiers et de la capacité utilisée | Oui. | Oui. 
 
 
@@ -241,6 +247,178 @@ Le tableau ci-dessous présente certaines des différences :
 
 
 | Possibilité d'exécuter d'autres rapports | Oui. | Non 
+
+
+| Possibilité de voir les métadonnées des fichiers* | Non | Oui. 
+|===
+*Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage :
+
+* Environnement de travail
+* Type d'environnement de travail
+* Référentiel de stockage
+* Type de fichier
+* Capacité utilisée
+* Nombre de fichiers
+* Taille du fichier
+* Création de fichier
+* Dernier accès au fichier
+* Dernier fichier modifié
+* Heure de découverte du fichier
+* Extraction des autorisations
+
+
+*Différences du tableau de bord de gouvernance* :
+
+[cols="47,18,18"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Les données obsolètes | Oui. | Oui. 
+
+
+| Données non commerciales | Oui. | Oui. 
+
+
+| Fichiers dupliqués | Oui. | Non 
+
+
+| Des règles prédéfinies | Oui. | Non 
+
+
+| Règles personnalisées | Oui. | Oui. 
+
+
+| Rapport DDA | Oui. | Oui. 
+
+
+| Rapport de mappage | Oui. | Oui. 
+
+
+| Détection du niveau de sensibilité | Oui. | Non 
+
+
+| Données sensibles avec autorisations étendues | Oui. | Non 
+
+
+| Ouvrez les autorisations | Oui. | Oui. 
+
+
+| Âge des données | Oui. | Oui. 
+
+
+| Taille des données | Oui. | Oui. 
+
+
+| Catégories | Oui. | Non 
+
+
+| Types de fichiers | Oui. | Oui. 
+|===
+*Différences du tableau de bord de conformité* :
+
+[cols="47,18,18"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Informations personnelles | Oui. | Non 
+
+
+| Informations personnelles sensibles | Oui. | Non 
+
+
+| Rapport sur l'évaluation des risques en matière de confidentialité | Oui. | Non 
+
+
+| Rapport HIPAA | Oui. | Non 
+
+
+| Rapport PCI DSS | Oui. | Non 
+|===
+*Différences de filtres d'enquête* :
+
+[cols="47,18,18"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Stratégies | Oui. | Oui. 
+
+
+| Type d'environnement de travail | Oui. | Oui. 
+
+
+| Environnement de travail | Oui. | Oui. 
+
+
+| Référentiel de stockage | Oui. | Oui. 
+
+
+| Type de fichier | Oui. | Oui. 
+
+
+| Taille du fichier | Oui. | Oui. 
+
+
+| Heure de création | Oui. | Oui. 
+
+
+| Heure découverte | Oui. | Oui. 
+
+
+| Dernière modification | Oui. | Oui. 
+
+
+| Dernier accès | Oui. | Oui. 
+
+
+| Ouvrez les autorisations | Oui. | Oui. 
+
+
+| Chemin du répertoire de fichiers | Oui. | Oui. 
+
+
+| Catégorie | Oui. | Non 
+
+
+| Niveau de sensibilité | Oui. | Non 
+
+
+| Nombre d'identificateurs | Oui. | Non 
+
+
+| Données personnelles | Oui. | Non 
+
+
+| Données personnelles sensibles | Oui. | Non 
+
+
+| Sujet des données | Oui. | Non 
+
+
+| Doublons | Oui. | Non 
+
+
+| Statut de classification | Oui. | Le statut est toujours « informations limitées » 
+
+
+| Événement d'analyse d'acquisition | Oui. | Oui. 
+
+
+| Hachage de fichier | Oui. | Oui. 
+
+
+| Nombre d'utilisateurs ayant accès | Oui. | Oui. 
+
+
+| Autorisations utilisateur/groupe | Oui. | Oui. 
+
+
+| Propriétaire du fichier | Oui. | Oui. 
+
+
+| Type de répertoire | Oui. | Oui. 
 |===
 
 
@@ -263,7 +441,7 @@ Données personnelles:: Informations personnelles identifiables telles que les a
 Données personnelles sensibles:: Des types spéciaux d'informations sensibles, comme les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le RGPD et d'autres réglementations sur la confidentialité. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["En savoir plus sur les données personnelles sensibles"^].
 Catégories:: La classification BlueXP récupère les données qu'il a analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:task-controlling-private-data.html#view-files-by-categories["En savoir plus sur les catégories"^].
 Types:: La classification BlueXP répartit les données analysées par type de fichier. link:task-controlling-private-data.html#view-files-by-file-types["En savoir plus sur les types"^].
-Reconnaissance de l'entité de nom:: La classification BlueXP utilise l'IA pour extraire le nom des personnes physiques des documents. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Découvrez comment répondre aux demandes d'accès aux données"^].
+Reconnaissance de l'entité de nom:: La classification BlueXP utilise l'IA pour extraire les noms naturels des personnes des documents. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Découvrez comment répondre aux demandes d'accès aux données"^].
 
 
 

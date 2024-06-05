@@ -3,7 +3,7 @@
 
 
 * La classification BlueXP n'est pas prise en charge sur un hôte partagé avec d'autres applications : l'hôte doit être un hôte dédié.
-* Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système selon la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
+* Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système en fonction de la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.
 +
 [cols="17,17,27,31"]
 |===
@@ -18,19 +18,19 @@
 
 | *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou
 - 100 Gio disponible sur /opt
-- 395 Gio disponible sur /var/lib/docker
+- 395 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers ou pour Podman /var/lib/containers
 - 5 Gio sur /tmp 
 
 
 | *Moyen* | 8 processeurs | 32 GO DE RAM | 200 Gio de SSD sur /, ou
 - 50 Gio disponible sur /opt
-- 145 Gio disponible sur /var/lib/docker
+- 145 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers
 - 5 Gio sur /tmp 
 
 
 | *Petit* | 8 processeurs | 16 GO DE RAM | 100 Gio de SSD sur /, ou
 - 50 Gio disponible sur /opt
-- 45 Gio disponible sur /var/lib/docker
+- 45 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers
 - 5 Gio sur /tmp 
 |===
 +
@@ -38,7 +38,7 @@ Notez qu'il existe des limites lors de l'utilisation des systèmes plus petits. 
 
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +
-** *Type d'instance AWS EC2*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
+** *Type d'instance Amazon Elastic Compute Cloud (Amazon EC2)*: Nous recommandons "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consultez la section autres types d'instances AWS"^].
 ** *Taille de VM Azure*: Nous recommandons "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["Consultez la section autres types d'instances Azure"^].
 ** *Type de machine GCP*: Nous recommandons "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["Voir autres types d'instances GCP"^].
 
