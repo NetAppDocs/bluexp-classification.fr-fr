@@ -202,5 +202,3 @@ image:screenshot_work_env_id.png["Capture d'écran de l'ID de l'environnement de
 Vous pouvez également afficher la liste de tous les groupes de scanner, ainsi que l'adresse IP et l'état de chaque nœud de scanner du groupe, en bas de la page Configuration.
 
 image:screenshot_scanner_groups.png["Capture d'écran montrant tous les groupes de scanner ainsi que l'adresse IP de chaque nœud de scanner du groupe."]
-
-C'est possible link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.

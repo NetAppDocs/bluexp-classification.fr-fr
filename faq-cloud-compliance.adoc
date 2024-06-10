@@ -298,7 +298,7 @@ La classification BlueXP accède aux données stockées dans Elasticsearch via d
 
 == Licences et coût
 
-Les questions suivantes concernent les licences et les coûts d'utilisation de la classification BlueXP.
+La question suivante concerne les licences et les coûts d'utilisation de la classification BlueXP.
 
 
 

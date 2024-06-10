@@ -85,5 +85,3 @@ Le programme d'installation de classification BlueXP termine l'installation des 
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner local link:task-getting-started-compliance.html["Clusters ONTAP sur site"] et locales link:task-scanning-databases.html["les bases de données"] que vous voulez numériser.
-
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences BYOL pour la classification BlueXP"] À partir de la page du portefeuille digital BlueXP pour le moment. Vous ne serez pas facturé même après la fin de votre essai gratuit de 30 jours.

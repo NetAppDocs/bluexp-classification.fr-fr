@@ -69,10 +69,6 @@ Assurez-vous que votre système Linux est conforme au <<Préparez le système h�
 [role="quick-margin-para"]
 Téléchargez le logiciel de classification BlueXP depuis le site de support NetApp et copiez le fichier d'installation sur l'hôte Linux que vous prévoyez d'utiliser. Lancez ensuite l'assistant d'installation et suivez les invites pour déployer l'instance de classification BlueXP.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
-[role="quick-margin-para"]
-Vous devez souscrire un abonnement à Marketplace de votre fournisseur cloud.
-
 
 
 == Installez le connecteur BlueXP
@@ -375,8 +371,6 @@ En cas de connectivité sur le port 8080 entre la machine hôte et l'instance de
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner local link:task-getting-started-compliance.html["Clusters ONTAP sur site"] et link:task-scanning-databases.html["les bases de données"] que vous voulez numériser.
 
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences BYOL pour la classification BlueXP"] À partir de la page du portefeuille digital BlueXP pour le moment. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
-
 
 
 == Mettez à niveau le logiciel de classification BlueXP
@@ -422,7 +416,5 @@ start_darksite_upgrade.sh
 
 .Résultat
 Le logiciel de classification BlueXP est mis à niveau sur votre hôte. La mise à jour peut prendre entre 5 et 10 minutes.
-
-Notez qu'aucune mise à niveau n'est requise sur les nœuds d'analyse si vous avez déployé la classification BlueXP sur plusieurs systèmes hôtes pour l'analyse de très grandes configurations.
 
 Pour vérifier que le logiciel a été mis à jour, vérifiez la version en bas des pages de l'interface de classification BlueXP.

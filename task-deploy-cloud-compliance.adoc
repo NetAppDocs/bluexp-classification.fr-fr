@@ -39,10 +39,6 @@ Assurez-vous que votre environnement est conforme aux conditions préalables. No
 [role="quick-margin-para"]
 Lancez l'assistant d'installation pour déployer l'instance de classification BlueXP dans le cloud.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Abonnez-vous au service de classification BlueXP
-[role="quick-margin-para"]
-Vous devez souscrire un abonnement BlueXP via votre fournisseur cloud Marketplace.
-
 
 
 == Créer un connecteur
@@ -257,5 +253,3 @@ Les mises à niveau vers le connecteur BlueXP et le logiciel de classification B
 
 .Et la suite
 Dans la page Configuration, vous pouvez sélectionner les sources de données à numériser.
-
-Vous pouvez également link:task-licensing-datasense.html["Configurez les licences pour la classification BlueXP"] à ce moment-là. Vous ne serez facturé que lorsque votre essai gratuit de 30 jours se terminera.
