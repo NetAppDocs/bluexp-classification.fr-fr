@@ -1812,9 +1812,6 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">Grand</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 processeurs</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GO DE RAM</block>
-  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 processeurs</block>
-  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GO DE RAM</block>
-  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GO DE RAM</block>
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">Si vous utilisez un proxy pour accéder à Internet :</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">Vous aurez besoin des informations du serveur proxy (adresse IP ou nom d'hôte, port de connexion, schéma de connexion : https ou http, nom d'utilisateur et mot de passe).</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">L'installation typique sur un hôte Linux _dans vos locaux_ comporte les composants et les connexions suivants.</block>
@@ -1863,8 +1860,6 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">Vous aurez besoin de l'adresse IP ou du nom d'hôte du système de connecteur lors de l'exécution du script Prerequisites. Vous aurez ces informations si vous avez installé le connecteur sur votre site. Si le connecteur est déployé dans le cloud, vous pouvez trouver ces informations à partir de la console BlueXP : cliquez sur l'icône aide, sélectionnez *support* et cliquez sur *BlueXP Connector*.</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">Vérifiez les besoins de l'hôte</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">*Grand*</block>
-  <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*Moyen*</block>
-  <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*Petit*</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">Consultez la section autres types d'instances AWS</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">Consultez la section autres types d'instances Azure</block>
   <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">*Taille de VM Azure*: Nous recommandons "Standard_D16s_v3". <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>.</block>
@@ -3053,7 +3048,6 @@
 - 100 Gio disponible sur /opt
 - 895 Gio disponible sur /var/lib/docker
 - 5 Gio sur /tmp</block>
-  <block id="7e6ae7e8de71f1a36043487bc45a85eb" category="paragraph">Notez qu'il existe des limites lors de l'utilisation des systèmes plus petits. Voir <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="section-title">Catégoriser vos données à l'aide d'étiquettes AIP</block>
   <block id="0ed54f1d736772cdfa10d041612c19cc" category="section-title">Intégrez les étiquettes d'AIP dans votre espace de travail</block>
   <block id="dc868ca3e5d8a2a78f0a032d630be98e" category="section-title">Afficher les étiquettes d'AIP dans vos fichiers</block>
@@ -3126,7 +3120,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Afficher les fichiers contenant des informations privées</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Afficher les fichiers dupliqués dans votre espace de stockage</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtrez vos données pour afficher des fichiers spécifiques</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">Créez des alertes par e-mail lorsque des données non conformes sont trouvées</block>
   <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">Répondre à une demande d'accès à un sujet de données</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
@@ -3484,18 +3477,9 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">Si la taille du rapport est supérieure à 1 Mo, le fichier .PDF est conservé dans l'instance de classification BlueXP et un message contextuel s'affiche pour vous informer de l'emplacement exact. Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier .PDF. Lorsque la classification BlueXP est déployée dans le cloud, vous devez SSH vers l'instance de classification BlueXP pour télécharger le fichier .PDF. <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>.</block>
   <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de l'environnement analysé afin de mettre en évidence les résultats du système et de montrer les points préoccupants et les étapes de correction potentielles. Les résultats sont basés à la fois sur le mappage et la classification de vos données. L'objectif de ce rapport est de sensibiliser les clients à trois aspects importants de leur dataset :</block>
   <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">Cette fonctionnalité s'applique aux systèmes ONTAP sur site, à Cloud Volumes ONTAP, Azure NetApp Files, FSX pour ONTAP et aux partages de fichiers tiers.</block>
-  <block id="cd0e4d172a3c3cc49c7d48effd234198" category="list-text">Lors de la création du système hôte sur site, vous pouvez choisir entre trois tailles de système en fonction de la taille du dataset que vous prévoyez d'analyser par la classification BlueXP.</block>
   <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 Gio de SSD sur /, ou
 - 100 Gio disponible sur /opt
 - 395 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers ou pour Podman /var/lib/containers
-- 5 Gio sur /tmp</block>
-  <block id="fb7aa8c3ffe50126e6eca8378926faad" category="cell">200 Gio de SSD sur /, ou
-- 50 Gio disponible sur /opt
-- 145 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers
-- 5 Gio sur /tmp</block>
-  <block id="276dee9bc704113bddf51474d12b15ff" category="cell">100 Gio de SSD sur /, ou
-- 50 Gio disponible sur /opt
-- 45 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers
 - 5 Gio sur /tmp</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">*Type d'instance Amazon Elastic Compute Cloud (Amazon EC2)*: Nous recommandons "m6i.4xlarge". <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>.</block>
   <block id="797b21f4662c52d1572473764912397d" category="paragraph">Il est possible pour le contenu du<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> le fichier de configuration doit être différent de ce qui a été réellement validé après l'exécution du<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> script. Pour afficher la liste actuelle des ID de groupe que vous avez ajoutés à la classification BlueXP, exécutez la commande suivante depuis « /opt/netapp/Datase/Tools/customer_configuration/data_providers » :</block>
@@ -3559,4 +3543,5 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="ee817e39b08fa171d62efb8f7b4143b2" category="admonition">L'intégration avec Active Directory n'est pas prise en charge dans la version de base de classification BlueXP.</block>
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">Le connecteur BlueXP et la classification BlueXP nécessitent toutes deux des mises à niveau manuelles périodiques pour activer de nouvelles fonctionnalités. La version de classification BlueXP est visible en bas des pages de l'interface de classification BlueXP. Vérifier le <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> pour voir les nouvelles fonctionnalités dans chaque version et si vous voulez ou non ces fonctionnalités. Vous pouvez ensuite suivre les étapes à<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> et <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">Nous vous recommandons de mettre à niveau votre logiciel BlueXP Connector vers la dernière version disponible.<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>.</block>
+  <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">Lors de la création du système hôte sur site, vous pouvez choisir parmi ces tailles de système, en fonction de la taille du dataset sur lequel vous prévoyez d'effectuer l'analyse de classification BlueXP.</block>
 </blocks>
