@@ -14,7 +14,13 @@ summary: Il existe de nombreux types de données privées que la classification 
 
 
 [role="lead"]
-Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes et vos bases de données. Voir les catégories ci-dessous.
+Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes et vos bases de données.
+
+La classification BlueXP identifie deux types de données personnelles :
+
+* *Informations personnelles identifiables (PII)*
+* *Informations personnelles sensibles (SPII)*
+
 
 
 TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de santé, envoyez un e-mail à ng-contact-data-sense@netapp.com à votre demande.
@@ -23,7 +29,7 @@ TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres ty
 
 == Types de données personnelles
 
-Les données personnelles contenues dans les dossiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
+Les données personnelles, ou _informations personnelles identifiables_ (PII), qui se trouvent dans les fichiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
 Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
 
@@ -224,19 +230,19 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 
 == Types de données personnelles sensibles
 
-La liste suivante répertorie les données personnelles sensibles que la classification BlueXP peut trouver dans des fichiers.
+La classification BlueXP peut trouver les informations personnelles sensibles suivantes (SPII) dans des fichiers.
 
 Les éléments de cette catégorie ne peuvent être reconnus qu'en anglais pour le moment.
 
-Référence des procédures pénales:: Données concernant les condamnations et infractions pénales d'une personne physique.
-Référence ethnique:: Données concernant l'origine raciale ou ethnique d'une personne physique.
-Référence santé:: Données concernant la santé d'une personne physique.
-Codes médicaux ICD-9-cm:: Codes utilisés dans l'industrie médicale et de la santé.
-Codes médicaux ICD-10-cm:: Codes utilisés dans l'industrie médicale et de la santé.
-Références philosophiques:: Données concernant les croyances philosophiques d'une personne naturelle.
-Opinions politiques référence:: Données concernant les opinions politiques d'une personne physique.
-Croyances religieuses:: Données concernant les croyances religieuses d'une personne naturelle.
-Référence de la vie sexuelle ou de l'orientation:: Données concernant la vie sexuelle ou l'orientation sexuelle d'une personne naturelle.
+* *Référence pour les procédures pénales* : données concernant les condamnations et les infractions criminelles d'une personne physique.
+* *Référence ethnique* : données concernant l'origine raciale ou ethnique d'une personne physique.
+* * Référence en matière de santé* : données concernant la santé d'une personne physique.
+* *Codes médicaux CIM-9-cm* : codes utilisés dans l'industrie médicale et de la santé.
+* *Codes médicaux CIM-10-cm* : codes utilisés dans l'industrie médicale et de la santé.
+* *Croyances philosophiques référence*: Données concernant les croyances philosophiques d'une personne physique.
+* *Opinions politiques référence*: Données concernant les opinions politiques d'une personne physique.
+* *Croyances religieuses référence* : données concernant les croyances religieuses d'une personne physique.
+* *Sexe vie ou orientation référence* : données concernant la vie sexuelle ou l'orientation sexuelle d'une personne physique.
 
 
 
@@ -319,12 +325,12 @@ Les métadonnées suivantes sont également classées en catégories et identifi
 * Données applicatives
 * Archiver les fichiers
 * Audio
-* Données d'applications d'entreprise
+* Fils d'Ariane dans la classification BlueXP
+Données d'applications d'entreprise
 * Fichiers CAO
 * Code
 * Corrompu
 * Base de données et fichiers d'index
-* Fil d'Ariane de la classification BlueXP
 * Fichiers de conception
 * Données d'application de messagerie
 * Crypté (fichiers avec un score d'entropie élevé)

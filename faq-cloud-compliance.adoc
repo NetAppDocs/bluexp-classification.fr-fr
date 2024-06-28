@@ -238,17 +238,11 @@ Lorsque la classification BlueXP détecte des informations à caractère personn
 
 La classification BlueXP vous permet d'exécuter une analyse générale du « mappage » ou une analyse complète de la « classification » de vos sources de données. La cartographie ne fournit qu'une vue d'ensemble de haut niveau de vos données, tandis que Classification permet une analyse approfondie de vos données. Le mappage peut être effectué très rapidement sur vos sources de données car il n'accède pas aux fichiers pour voir les données à l'intérieur.
 
-* Acquisition de mappage de données.
-+
-La classification BlueXP analyse uniquement les métadonnées. Ce qui est utile pour la gestion et la gouvernance globales des données, la définition rapide des projets, les gros domaines et la définition des priorités. Le mappage de données est basé sur les métadonnées et est considéré comme une acquisition *FAST*.
-
+* *Analyse de mappage des données* : la classification BlueXP analyse uniquement les métadonnées. Ce qui est utile pour la gestion et la gouvernance globales des données, la définition rapide des projets, les gros domaines et la définition des priorités. Le mappage de données est basé sur les métadonnées et est considéré comme une acquisition *FAST*.
 +
 Après une acquisition rapide, vous pouvez générer un rapport de mappage de données. Ce rapport présente les données stockées dans vos sources de données d'entreprise et vous aide à prendre les bonnes décisions en matière d'utilisation des ressources, de migration, de sauvegarde, de sécurité et de conformité.
 
-* Analyse de classification des données (approfondie).
-+
-La classification BlueXP s'analyse à l'aide de protocoles standard et d'autorisations en lecture seule dans l'ensemble de vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
-
+* *Analyse de classification des données (approfondie)* : analyse de classification BlueXP à l'aide de protocoles standard et d'autorisations en lecture seule dans vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
 +
 Après une analyse complète, vous pouvez appliquer de nombreuses fonctionnalités de classification BlueXP supplémentaires à vos données, telles que l'affichage et le raffinage des données dans la page Data Investigation, la recherche de noms dans les fichiers, la copie, le déplacement et la suppression des fichiers source, etc.
 
@@ -256,7 +250,7 @@ Après une analyse complète, vous pouvez appliquer de nombreuses fonctionnalit�
 
 La classification BlueXP capture des métadonnées telles que le nom du fichier, les autorisations, l'heure de création, le dernier accès et la dernière modification. Cela inclut toutes les métadonnées qui apparaissent dans la page Détails de l'investigation de données et dans les rapports d'investigation de données.
 
-La classification BlueXP permet d'identifier de nombreux types de données privées, telles que les données personnelles et les données personnelles sensibles. Pour plus d'informations sur les données privées, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Catégories de données privées analysés par le système de classification BlueXP"].
+La classification BlueXP permet d'identifier de nombreux types de données privées, telles que des informations personnelles (PII) et des informations personnelles sensibles. Pour plus d'informations sur les données privées, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Catégories de données privées analysés par le système de classification BlueXP"].
 
 
 
