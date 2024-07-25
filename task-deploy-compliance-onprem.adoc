@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds, linux host 
 summary: 'Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d"un accès Internet. Dans le cadre de cette installation, vous devrez déployer l"hôte Linux manuellement sur votre réseau ou dans le cloud.' 
 ---
 = Installez la classification BlueXP sur un hôte disposant d'un accès Internet
@@ -171,7 +171,7 @@ Notez que les fonctionnalités suivantes ne sont actuellement pas prises en char
 +
 https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
 
-*** Podman version 4 ou supérieure. Pour installer Podman, mettez à jour vos packages système (`sudo yum update -y`), puis installez Podman (`sudo yum install netavark -y`).
+*** Podman version 4 ou supérieure. Pour installer Podman, entrez (`sudo yum install podman netavark -y`).
 
 
 

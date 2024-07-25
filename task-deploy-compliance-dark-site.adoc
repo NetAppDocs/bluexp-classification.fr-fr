@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install, cloud data sense, cds 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install, cloud data sense, cds, linux host 
 summary: 'Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux dans un site sur site qui ne dispose pas d"un accès Internet, également appelé « mode privé ». Ce type d"installation est parfait pour vos sites sécurisés.' 
 ---
 = Installez la classification BlueXP sur un hôte Linux sans accès Internet
@@ -158,7 +158,7 @@ Notez que les fonctionnalités suivantes ne sont actuellement pas prises en char
 +
 https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
 
-*** Podman version 4 ou supérieure. Pour installer Podman, mettez à jour vos packages système (`sudo yum update -y`), puis installez Podman (`sudo yum install netavark -y`).
+*** Podman version 4 ou supérieure. Pour installer Podman, entrez (`sudo yum install podman netavark -y`).
 
 
 
