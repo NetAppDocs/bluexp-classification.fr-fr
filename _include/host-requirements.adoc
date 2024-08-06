@@ -51,8 +51,8 @@
 ** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de mise en conteneurs Docker :
 +
 *** Red Hat Enterprise Linux version 7.8 et 7.9
-*** CentOS versions 7.8 et 7.9
 *** Ubuntu 22.04 (requiert la classification BlueXP version 1.23 ou supérieure)
+*** Ubuntu 24.04 (nécessite la classification BlueXP  version 1.23 ou supérieure)
 
 
 ** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.30 ou supérieure :
