@@ -213,11 +213,12 @@ Vous devez vous assurer que tous les ports requis sont ouverts pour la communica
 | Type de connexion | Ports | Description 
 
 
-| Classification de Connector <> BlueXP | 8080 (TCP), 6000 (TCP), 443 (TCP) ET 80  a| 
+| Classification de Connector <> BlueXP | 8080 (TCP), 6000 (TCP), 443 (TCP) ET 80. 9000  a| 
 Le groupe de sécurité du connecteur doit autoriser le trafic entrant et sortant sur les ports 6000 et 443 vers et depuis l'instance de classification BlueXP.
 
 * Le port 6000 est requis pour que la licence BYOL de classification BlueXP fonctionne sur un site invisible.
 * Le port 8080 doit être ouvert pour que vous puissiez voir la progression de l'installation dans BlueXP.
+* Si un pare-feu est utilisé sur l'hôte Linux, le port 9000 est requis pour les processus internes d'un serveur Ubuntu.
 
 
 
@@ -260,6 +261,9 @@ Vous devez disposer des informations pour Active Directory :
 * Port serveur LDAP (généralement 389 pour LDAP et 636 pour LDAP sécurisé)
 
 
+
+
+| Si un pare-feu est utilisé sur un hôte Linux | 9000 | Nécessaire pour les processus internes au sein d'un serveur Ubuntu. 
 |===
 Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la puissance de traitement afin d'analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-dark-site.html["Voir la configuration de port supplémentaire requise"].
 

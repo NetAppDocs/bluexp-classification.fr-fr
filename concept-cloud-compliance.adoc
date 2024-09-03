@@ -35,10 +35,7 @@ La classification BlueXP utilise l'intelligence artificielle (IA), le traitement
 
 https://bluexp.netapp.com/netapp-cloud-data-sense["En savoir plus sur les utilisations de la classification BlueXP"^].
 
-
-
-=== Préservez la conformité
-
+.Préservez la conformité
 La classification BlueXP offre plusieurs outils qui vous aident dans vos efforts de conformité. Vous pouvez utiliser la classification BlueXP pour :
 
 * Identifier les informations à caractère personnel
@@ -46,10 +43,7 @@ La classification BlueXP offre plusieurs outils qui vous aident dans vos efforts
 * Répondez aux demandes d'accès aux données (DSAR, Data Subject Access Requests) en fonction de votre nom ou de votre adresse e-mail.
 
 
-
-
-=== Renforcez la sécurité
-
+.Renforcez la sécurité
 La classification BlueXP permet d'identifier les données potentiellement menacées d'accès à des fins criminelles. Vous pouvez utiliser la classification BlueXP pour :
 
 * Identifiez tous les fichiers et répertoires (partages et dossiers) avec les autorisations ouvertes exposées à l'ensemble de votre organisation ou au public.
@@ -58,10 +52,7 @@ La classification BlueXP permet d'identifier les données potentiellement menac�
 * Utilisez _Policies_ pour détecter automatiquement les nouveaux problèmes de sécurité afin que le personnel de sécurité puisse agir immédiatement.
 
 
-
-
-=== Optimiser l'utilisation du stockage
-
+.Optimiser l'utilisation du stockage
 La classification BlueXP fournit des outils qui vous aideront à maîtriser votre TCO. Vous pouvez utiliser la classification BlueXP pour :
 
 * Amélioration de l'efficacité du stockage grâce à l'identification des données dupliquées ou non liées à l'activité.
@@ -78,6 +69,7 @@ La classification BlueXP peut analyser et analyser les données structurées et 
 
 * Cloud Volumes ONTAP (déployé dans AWS, Azure ou GCP)
 * Clusters ONTAP sur site
+* StorageGRID
 * Azure NetApp Files
 * Amazon FSX pour ONTAP
 * Google Cloud NetApp volumes
@@ -149,9 +141,7 @@ Vous pouvez également déployer la classification BlueXP sur un hôte Linux sur
 
 TIP: L'instance doit rester en cours d'exécution en permanence, car la classification BlueXP analyse les données en continu.
 
-
-
-=== Déploiement sur différents types d'instances
+*Déployer sur différents types d'instances*
 
 Vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM.
 
@@ -181,7 +171,7 @@ Lorsque vous déployez la classification BlueXP dans Azure ou GCP, envoyez un e-
 
 
 
-== Fonctionnement des acquisitions
+=== Fonctionnement des acquisitions
 
 Une fois que vous avez activé la classification BlueXP et sélectionné les référentiels à analyser (il s'agit des volumes, des schémas de base de données ou d'autres données utilisateur), l'analyse des données commence immédiatement pour identifier les données personnelles et sensibles. Dans la plupart des cas, il est préférable de se concentrer sur l'analyse des données de production en direct plutôt que sur des sauvegardes, des miroirs ou des sites de reprise sur incident. Ensuite, la classification BlueXP mappe vos données d'entreprise, classe chaque fichier, puis identifie et extrait des entités et des modèles prédéfinis dans les données. Le résultat de l'analyse est un index des informations personnelles, des données personnelles sensibles, des catégories de données et des types de fichiers.
 
@@ -259,9 +249,10 @@ Le tableau ci-dessous présente certaines des différences :
 * Extraction des autorisations
 
 
-*Différences du tableau de bord de gouvernance* :
-
-[cols="47,18,18"]
+.Différences entre les tableaux de bord de gouvernance :
+[%collapsible]
+====
+[cols="40,25,25"]
 |===
 | Fonction | Cartographiez et classez | Carte 
 
@@ -307,9 +298,11 @@ Le tableau ci-dessous présente certaines des différences :
 
 | Types de fichiers | Oui. | Oui. 
 |===
-*Différences du tableau de bord de conformité* :
-
-[cols="47,18,18"]
+====
+.Différences du tableau de bord de conformité :
+[%collapsible]
+====
+[cols="40,25,25"]
 |===
 | Fonction | Cartographiez et classez | Carte 
 
@@ -328,9 +321,11 @@ Le tableau ci-dessous présente certaines des différences :
 
 | Rapport PCI DSS | Oui. | Non 
 |===
-*Différences de filtres d'enquête* :
-
-[cols="47,18,18"]
+====
+.Différences entre les filtres d'investigation :
+[%collapsible]
+====
+[cols="40,25,25"]
 |===
 | Fonction | Cartographiez et classez | Carte 
 
@@ -412,6 +407,7 @@ Le tableau ci-dessous présente certaines des différences :
 
 | Type de répertoire | Oui. | Oui. 
 |===
+====
 
 
 === La rapidité avec laquelle la classification BlueXP analyse les données
@@ -424,11 +420,11 @@ La vitesse de analyse est affectée par la latence du réseau, la latence des di
 
 
 
-== Informations indexées par la classification BlueXP
+== Informations catégorisées par la classification BlueXP 
 
 La classification BlueXP collecte, indexe et attribue des catégories à vos données (fichiers). Les données index par classification BlueXP sont les suivantes :
 
-* *Métadonnées standard* la classification BlueXP collecte les métadonnées standard relatives aux fichiers : le type de fichier, sa taille, ses dates de création et de modification, etc.
+* *Métadonnées standard* à propos des fichiers : le type de fichier, sa taille, ses dates de création et de modification, etc.
 * *Données personnelles* : informations personnelles (PII) telles que les adresses électroniques, les numéros d'identification ou les numéros de carte de crédit. link:task-controlling-private-data.html#view-files-that-contain-personal-data["En savoir plus sur les données personnelles"^].
 * *Données personnelles sensibles* : types particuliers d'informations personnelles sensibles (SPII), telles que les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le RGPD et d'autres réglementations sur la confidentialité. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["En savoir plus sur les données personnelles sensibles"^].
 * *Catégories*: La classification BlueXP prend les données qu'il a analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:task-controlling-private-data.html#view-files-by-categories["En savoir plus sur les catégories"^].
@@ -450,7 +446,7 @@ Si vous avez des exigences de mise en réseau strictes, link:task-deploy-cloud-c
 
 
 
-== Accès des utilisateurs aux informations de conformité
+== Rôles d'utilisateur dans la classification BlueXP 
 
 Le rôle attribué à chaque utilisateur offre des fonctionnalités différentes dans BlueXP et dans la classification BlueXP :
 

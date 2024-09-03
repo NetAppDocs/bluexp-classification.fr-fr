@@ -40,16 +40,18 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: Activez la numérisation sur vos sources de données
       entries:
-      - title: Cloud Volumes ONTAP et ONTAP sur site
-        url: "/task-getting-started-compliance.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSX pour ONTAP
         url: "/task-scanning-fsx.html"
+      - title: Cloud Volumes ONTAP et ONTAP sur site
+        url: "/task-getting-started-compliance.html"
       - title: Schémas de base de données
         url: "/task-scanning-databases.html"
       - title: Partages de fichiers
         url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
     - title: Intégrer Active Directory
       url: "/task-add-active-directory-datasense.html"
     - title: FAQ

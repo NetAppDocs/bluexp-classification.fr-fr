@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: 'Procédez en quelques étapes pour commencer l"analyse des partages de fichiers NFS ou CIFS non NetApp directement avec la classification BlueXP. Ces partages de fichiers peuvent résider sur site ou dans le cloud.' 
 ---
-= Analyse des partages de fichiers
+= Analyser les partages de fichiers
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -43,7 +43,7 @@ Ajoutez la liste des partages de fichiers que vous souhaitez numériser et séle
 
 
 
-== Vérification des exigences relatives au partage de fichiers
+== Vérifiez les exigences en matière de partage de fichiers
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
@@ -68,15 +68,15 @@ Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos f
 
 
 
-== Déploiement de l'instance de classification BlueXP
+== Déployez l'instance de classification BlueXP
 
 Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
-Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
+Les mises à niveau vers le logiciel de classification BlueXP  sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 
-== Création du groupe pour les partages de fichiers
+== Créez le groupe pour les partages de fichiers
 
 Vous devez ajouter un « groupe » de partages de fichiers avant de pouvoir ajouter vos partages de fichiers. Le groupe est un conteneur pour les partages de fichiers que vous souhaitez analyser et le nom du groupe est utilisé comme nom d'environnement de travail pour ces partages de fichiers.
 
@@ -94,7 +94,7 @@ Le nouveau groupe de partages de fichiers est ajouté à la liste des environnem
 
 
 
-== Ajout de partages de fichiers à un groupe
+== Ajouter des partages de fichiers à un groupe
 
 Vous ajoutez des partages de fichiers au groupe partages de fichiers afin que les fichiers de ces partages soient analysés par la classification BlueXP. Vous ajoutez les partages au format `<host_name>:/<share_path>`.
 
@@ -155,7 +155,7 @@ La classification BlueXP commence à analyser les fichiers des partages de fichi
 
 
 
-== Suppression d'un partage de fichiers des analyses de conformité
+== Supprimez un partage de fichiers des analyses de conformité
 
 Si vous n'avez plus besoin d'analyser certains partages de fichiers, vous pouvez supprimer chaque partage de fichiers de l'analyse de leurs fichiers à tout moment. Il vous suffit de cliquer sur *Supprimer le partage* dans la page Configuration.
 

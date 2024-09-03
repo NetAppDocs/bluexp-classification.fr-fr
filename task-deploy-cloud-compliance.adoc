@@ -173,8 +173,6 @@ Pour plus de détails sur les limites des CPU virtuels, consultez les liens suiv
 * https://cloud.google.com/compute/quotas["Documentation Google Cloud : quotas de ressources"^]
 
 
-Notez que vous pouvez déployer la classification BlueXP sur une instance dans les environnements cloud AWS avec moins de processeurs et moins de RAM, mais que l'utilisation de ces systèmes est limitée. Voir link:concept-cloud-compliance.html#using-a-smaller-instance-type["Utilisation d'un type d'instance plus petit"] pour plus d'informations.
-
 --
 
 

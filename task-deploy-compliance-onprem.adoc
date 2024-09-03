@@ -254,7 +254,7 @@ Vous devez vous assurer que tous les ports requis sont ouverts pour la communica
 | Type de connexion | Ports | Description 
 
 
-| Classification de Connector <> BlueXP | 8080 (TCP), 443 (TCP) et 80 | Les règles de pare-feu ou de routage du connecteur doivent autoriser le trafic entrant et sortant via le port 443 vers et depuis l'instance de classification BlueXP. Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. 
+| Classification de Connector <> BlueXP | 8080 (TCP), 443 (TCP) et 80. 9000 | Les règles de pare-feu ou de routage du connecteur doivent autoriser le trafic entrant et sortant via le port 443 vers et depuis l'instance de classification BlueXP. Assurez-vous que le port 8080 est ouvert pour voir la progression de l'installation dans BlueXP. Si un pare-feu est utilisé sur l'hôte Linux, le port 9000 est requis pour les processus internes d'un serveur Ubuntu. 
 
 
 | Connecteur <> cluster ONTAP (NAS) | 443 (TCP)  a| 

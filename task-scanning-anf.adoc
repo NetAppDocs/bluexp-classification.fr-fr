@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Suivez ces étapes pour commencer à utiliser la classification BlueXP pour Azure NetApp Files. 
 ---
-= Mise en route de la classification BlueXP pour Azure NetApp Files
+= Découvrez la classification BlueXP  pour Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -59,7 +59,7 @@ Sélectionnez ou désélectionnez les volumes à analyser ; la classification Bl
 
 
 
-== Détection du système Azure NetApp Files que vous souhaitez numériser
+== Découvrez le système Azure NetApp Files que vous souhaitez analyser
 
 Si le système Azure NetApp Files que vous voulez numériser n'est pas déjà dans BlueXP comme environnement de travail, vous pouvez l'ajouter au canevas pour le moment.
 
@@ -67,7 +67,7 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["D
 
 
 
-== Déploiement de l'instance de classification BlueXP
+== Déployez l'instance de classification BlueXP
 
 link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
 
@@ -79,7 +79,7 @@ Les mises à niveau du logiciel de classification BlueXP sont automatisées tant
 
 
 
-== Activation de la classification BlueXP dans vos environnements de travail
+== Activez la classification BlueXP  dans vos environnements de travail
 
 Vous pouvez activer la classification BlueXP sur vos volumes Azure NetApp Files.
 
@@ -93,7 +93,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Capture d'écran de l'ong
 ** Pour mapper et classer tous les volumes, cliquez sur *cartographier et classer tous les volumes*.
 ** Pour personnaliser la numérisation de chaque volume, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*, puis choisissez les volumes que vous souhaitez mapper et/ou classer.
 +
-Voir <<Activation et désactivation des analyses de conformité sur les volumes,Activation et désactivation des analyses de conformité sur les volumes>> pour plus d'informations.
+Voir <<Activer et désactiver les analyses de conformité sur les volumes,Activer et désactiver les analyses de conformité sur les volumes>> pour plus de détails.
 
 
 
@@ -112,7 +112,7 @@ La classification BlueXP démarre l'analyse des volumes sélectionnés dans l'en
 ====
 
 
-== Vérification de l'accès aux volumes par la classification BlueXP
+== Vérifiez que la classification BlueXP  a accès aux volumes
 
 Assurez-vous que la classification BlueXP peut accéder aux volumes en vérifiant votre réseau, vos groupes de sécurité et vos règles d'exportation. Vous devez fournir une classification BlueXP avec des informations d'identification CIFS pour pouvoir accéder aux volumes CIFS.
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["Capture d'écran de la page Affi
 
 
 
-== Activation et désactivation des analyses de conformité sur les volumes
+== Activer et désactiver les analyses de conformité sur les volumes
 
 Vous pouvez démarrer ou arrêter des analyses de mappage uniquement, ou des analyses de mappage et de classification, dans un environnement de travail à tout moment à partir de la page Configuration. Vous pouvez également passer des acquisitions avec mappage uniquement à des acquisitions avec mappage et classification, et inversement. Nous vous recommandons de scanner tous les volumes.
 

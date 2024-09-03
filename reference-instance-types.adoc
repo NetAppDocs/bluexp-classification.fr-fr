@@ -16,7 +16,7 @@ summary: 'Le logiciel de classification BlueXP doit s"exécuter sur un hôte ré
 [role="lead"]
 Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à des exigences spécifiques en termes de système d'exploitation, de RAM, de logiciels, etc. Lors du déploiement de la classification BlueXP dans le cloud, nous vous recommandons d'utiliser un système présentant les caractéristiques « grandes » pour bénéficier de fonctionnalités complètes.
 
-Vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM, mais l'utilisation de systèmes moins puissants comporte certaines limitations. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Découvrez ces limites"^].
+Vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM, mais l'utilisation de systèmes moins puissants comporte certaines limitations. link:concept-cloud-compliance.html["Découvrez ces limites"^].
 
 Dans les tableaux suivants, si le système marqué comme « par défaut » n'est pas disponible dans la région dans laquelle vous installez la classification BlueXP, le système suivant du tableau sera déployé.
 

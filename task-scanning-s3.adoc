@@ -108,7 +108,7 @@ Vous devez déployer l'instance à l'aide d'un connecteur déployé dans AWS. Bl
 
 *Remarque :* le déploiement de la classification BlueXP dans un emplacement sur site n'est actuellement pas pris en charge lors de l'analyse des compartiments S3.
 
-Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
+Les mises à niveau vers le logiciel de classification BlueXP  sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
 
 

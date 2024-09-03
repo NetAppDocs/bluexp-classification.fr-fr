@@ -4,7 +4,7 @@ permalink: task-scanning-object-storage.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: 'Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n"importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Linode, stockage cloud B2, Amazon S3, et bien plus encore.' 
 ---
-= Analysez le stockage objet à l'aide du protocole S3
+= Analyser les données StorageGRID
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Procédez en quelques étapes pour commencer à analyser les données dans le st
 
 []
 ====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
+*REMARQUE* en utilisant la classification BlueXP  qui fait partie du BlueXP  principal, vous pouvez maintenant analyser les données StorageGRID. Voir link:task-scanning-storagegrid.html["Analyser les données StorageGRID"]. Les informations restantes ici ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
 
 ====
 
