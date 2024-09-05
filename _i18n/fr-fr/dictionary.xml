@@ -378,7 +378,6 @@
   <block id="db40121770270b95c73895598e6343b2" category="list-text">Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte.</block>
   <block id="d2e9b58709e185388c14e9b7f7c876b8" category="list-text">Vous pouvez ajouter des répétitions personnalisées à l'aide d'une expression régulière (regex).</block>
   <block id="6b0cdbce1552e1685f4b4095276b6078" category="paragraph"><block ref="4a5fd31f8eed80e720a59ea6d295b8eb" category="inline-link-macro-rx"></block>.</block>
-  <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>.</block>
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">Que se passe-t-il si le Tiering des données est activé sur vos volumes ONTAP ?</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="inline-link-macro">Stratégies</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">Types de systèmes source et de types de données</block>
@@ -834,19 +833,6 @@
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">Quelques remarques avant de lire plus loin :</block>
   <block id="8e8f343d4d11cb796ed5e3db94f54fe3" category="inline-image-macro">Une capture d'écran indiquant la quantité de données analysées et le bouton s'abonner pour s'abonner au service.</block>
   <block id="a503bdaee5c948e64f10ac7ae38b987f" category="paragraph"><block ref="a503bdaee5c948e64f10ac7ae38b987f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b2f44b30cb7b59e6531b838d2b079d16" category="paragraph">Ces étapes doivent être effectuées par un utilisateur qui a le rôle _Account Admin_.</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.</block>
-  <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">Capture d'écran de la bannière supérieure droite de BlueXP où vous pouvez sélectionner l'icône Paramètres.</block>
-  <block id="ec24fbf33d16fbcbcd5109403b3ac212" category="paragraph"><block ref="ec24fbf33d16fbcbcd5109403b3ac212" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8071861b8e3a5d88d5457ddd1596427a" category="paragraph">L'abonnement doit être ajouté au profil d'instance, à l'identité du service géré ou à Google Project. La charge ne fonctionnera pas autrement.</block>
-  <block id="62e5878faab04822cdc1e0afde654b25" category="inline-image-macro">Capture d'écran de la page informations d'identification affichant le profil d'instance avec un abonnement actif.</block>
-  <block id="960eb5524321a41f4a846cf6d41aa4ba" category="paragraph"><block ref="960eb5524321a41f4a846cf6d41aa4ba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="94364b77769acea99c5c0293eafd1ffd" category="inline-image-macro">Capture d'écran du menu de la page informations d'identification. Elle affiche un bouton permettant d'associer un abonnement aux informations d'identification.</block>
-  <block id="9be07eb065783de7ad65baf9740aa00d" category="paragraph"><block ref="9be07eb065783de7ad65baf9740aa00d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="84c405fea7c680f546bababbfc931ebf" category="list-text">Sélectionnez un abonnement existant et cliquez sur *associé*, ou cliquez sur *Ajouter un abonnement* et suivez les étapes.</block>
-  <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link">AWS Marketplace</block>
-  <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link">Azure Marketplace</block>
-  <block id="dac3b58a31768279a775cce1a0aec055" category="paragraph">La vidéo suivante montre comment associer un<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block> Abonnement à un abonnement Azure :</block>
   <block id="f6b0b01ee34208ec2e76e1fb8b0c7faf" category="list-text">Mailto:ng-contact-data-sense@netapp.com?subject=Licensing[Envoyer un e-mail pour acheter une licence].</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">Cliquez sur l'icône de chat dans le coin inférieur droit de BlueXP pour demander une licence.</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">Cliquez ici pour plus d'informations</block>
@@ -2055,11 +2041,9 @@
   <block id="6552f1048a3ae38a8cec0a3b3f0241d7" category="list-text">Assurez-vous qu'il existe une connexion réseau entre l'instance de classification BlueXP et chaque réseau incluant des volumes pour Azure NetApp Files.</block>
   <block id="f27267e8337bbab386f4c4d33a5066ab" category="admonition">Pour Azure NetApp Files, la classification BlueXP ne peut analyser que les volumes situés dans la même région que BlueXP.</block>
   <block id="2b72c8c8b6a53f0bd35a27c35e4b05f6" category="summary">Les 1 premiers To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP sont gratuits. Une licence BYOL de NetApp, ou un abonnement depuis votre fournisseur cloud Marketplace, est nécessaire pour continuer l'analyse des données après ce point.</block>
-  <block id="68e5dcb72ff057c8e24cce991d08f59a" category="list-text">Si vous avez déjà souscrit à l'abonnement BlueXP avec paiement basé sur l'utilisation (PAYGO) sur le marché de votre fournisseur de cloud, vous êtes également automatiquement abonné à la classification BlueXP. Vous n'aurez pas besoin de vous abonner à nouveau.</block>
   <block id="e19d11025f1d0db5b77507e8aaad17e1" category="list-text">BYOL (Bring Your Own License) de classification BlueXP (Data Sense) est une licence _flottante_ que vous pouvez utiliser dans l'ensemble des environnements de travail et des sources de données de l'espace de travail que vous souhaitez analyser. Un abonnement actif s'affiche dans le portefeuille digital BlueXP.</block>
   <block id="1fe75a0ab5171136a5ec6503ed9e85d1" category="inline-link-macro">En savoir plus sur les licences et les coûts liés à la classification BlueXP</block>
   <block id="e01ae5b37a34fb436f617365e020721a" category="paragraph"><block ref="5547e182cd4b08f09049a0606997f4a9" category="inline-link-macro-rx"></block>.</block>
-  <block id="46fe365a0513be6d3c89adc689d2a78f" category="section-title">Utilisez un abonnement PAYGO de classification BlueXP</block>
   <block id="defd0f223a0cf4f1e58e88bd1721d45e" category="paragraph">Vous pouvez vous abonner à tout moment et vous ne serez facturé que lorsque l'essai de 30 jours se termine ou que la quantité de données dépasse 1 To. Vous pouvez toujours voir la quantité totale de données analysées à partir du tableau de bord de gouvernance de classification BlueXP. Et le bouton _Subscribe Now_ permet de vous abonner facilement lorsque vous êtes prêt.</block>
   <block id="a64334705690e391576da973a9b22ed9" category="section-title">Utilisez une licence BYOL de classification BlueXP</block>
   <block id="c9532f19df489d117c681943ff72b47e" category="paragraph">Modèle BYOL de 1, 2 ou 3 ans avec les licences Bring Your Own. La licence de classification BYOL BlueXP (Data Sense) est une licence _flottante_ pour laquelle la capacité totale est partagée entre *tous* de vos environnements de travail et sources de données, ce qui facilite le renouvellement et la licence initiale.</block>
@@ -2113,7 +2097,6 @@
   <block id="9e354f6589446707ac0275ab903ced5e" category="list-text">Assurez-vous que la limite de CPU virtuels de votre fournisseur cloud permet le déploiement d'une instance avec le nombre de cœurs nécessaire. Vous devez vérifier la limite de CPU virtuels pour la famille d'instances concernée dans la région où BlueXP est en cours d'exécution. <block ref="717b51db682bab072e4faa318f683866" category="inline-link-macro-rx"></block>.</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="section-title">Déployez la classification BlueXP dans le cloud</block>
   <block id="bd10ebfff36e591031f9055715e81cbe" category="paragraph">Suivez ces étapes pour déployer une instance de classification BlueXP dans le cloud. Le connecteur va déployer l'instance dans le cloud, puis installer le logiciel de classification BlueXP sur cette instance.</block>
-  <block id="1387aca3016ca34e4eefec1995b863e8" category="paragraph">Notez que lors du déploiement de la classification BlueXP à partir d'un connecteur BlueXP dans un environnement AWS, vous pouvez sélectionner la taille d'instance par défaut ou choisir l'un des deux types d'instances les plus petits. <block ref="014512c6bb91f0e0099b18504a19e409" category="inline-link-macro-rx"></block>. Dans les régions où le type d'instance par défaut n'est pas disponible, la classification BlueXP s'exécute sur un <block ref="45910d58f60ef6c6ec6de81dc1fbd5cf" category="inline-link-macro-rx"></block>.</block>
   <block id="d33aba60d91a201fe7b4bce522f9deb7" category="inline-image-macro">Capture d'écran de sélection du bouton pour activer la classification BlueXP.</block>
   <block id="c48b9bad2a3a25d6dad223ab11c5a33e" category="paragraph"><block ref="c48b9bad2a3a25d6dad223ab11c5a33e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="473b6ff5a1c62a3a028f4dc37b9cbd6c" category="inline-image-macro">Capture d'écran de sélection du bouton pour déployer la classification BlueXP dans le cloud.</block>
@@ -2869,13 +2852,6 @@
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Amélioration du comportement de numérisation en gérant et en signalant les fichiers et répertoires avec des caractères spéciaux dans le nom et les métadonnées.</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">essai gratuit de 30 jours</block>
   <block id="ebca662192a78887713c7cdcbabfe424" category="paragraph">Un essai gratuit de 30 jours est disponible pour 1 To de données que la classification BlueXP analyse dans un espace de travail BlueXP. Vous devrez acheter une licence BYOL auprès de NetApp, ou souscrire un abonnement auprès de votre fournisseur de cloud, pour continuer à analyser les données ultérieurement.</block>
-  <block id="f9f1f4a9346cc2a4c14af1d77fcdfb80" category="paragraph">Les abonnements basés sur l'utilisation vous permettent d'obtenir une licence pour l'utilisation des systèmes Cloud Volumes ONTAP et de nombreux services BlueXP, comme la classification BlueXP, depuis le marché de votre fournisseur cloud. Vous paierez à votre fournisseur cloud la quantité de données que la classification BlueXP analyse toutes les heures, dans un seul abonnement.</block>
-  <block id="ea3d8cbacee1cddcca231123adb34272" category="list-text">Cliquez sur *informations d'identification*, puis recherchez les informations d'identification du profil d'instance AWS, de l'identité de service géré Azure ou de Google Project.</block>
-  <block id="dc2c7fe826170a31dcc530a37d1f3de8" category="paragraph">Si vous disposez déjà d'un abonnement BlueXP (comme illustré ci-dessous pour AWS), vous êtes paré. Rien d'autre à faire.</block>
-  <block id="a8d4bff09d9888aaa5a199e8654f95b5" category="list-text">Si vous n'avez pas encore d'abonnement, cliquez sur le menu action et cliquez sur *abonnement associé*.</block>
-  <block id="b954c3e60e010888d90a5bb99fb15f27" category="paragraph">La vidéo suivante montre comment associer un<block ref="60fa25c896f0169de9e5a75989c9f27f" category="inline-link-rx"></block> Abonnement à un abonnement AWS :</block>
-  <block id="98ad2c075d2fb10da4cf15c985c3f43f" category="inline-link">Google Cloud Marketplace</block>
-  <block id="f926c07d4bfaf1359371adb1adb67d14" category="paragraph">La vidéo suivante montre comment associer un<block ref="82ddec44156571798c68c5bde2400da5" category="inline-link-rx"></block> Abonnement à un abonnement GCP :</block>
   <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">Utilisez un contrat annuel</block>
   <block id="5eaba7c2dc62e15a7621fd6721ea170d" category="paragraph">Payer chaque année pour la classification BlueXP via l'achat d'un contrat annuel. Ils sont disponibles sur 1, 2 ou 3 ans.</block>
   <block id="5d88ecbc0b3e3130da7993534c150ab6" category="paragraph">Si vous avez un contrat annuel depuis un marché, toute l'analyse des données de classification BlueXP est facturée pour ce contrat. Vous ne pouvez pas combiner un contrat annuel de vente avec un contrat BYOL.</block>
@@ -3291,10 +3267,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="19d4814f3bce80460384b97290bb64be" category="paragraph">Pour supprimer une stratégie, cliquez sur <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Pour une stratégie spécifique, cliquez sur *Supprimer la stratégie*, puis cliquez à nouveau sur *Supprimer la stratégie* dans la boîte de dialogue de confirmation.</block>
   <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">Liste des règles prédéfinies</block>
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">La classification BlueXP fournit les règles définies par le système suivantes :</block>
-  <block id="551ae439eb74eb4d9463c5592e518e13" category="doc">Configurez les licences avec paiement à l'utilisation pour la classification BlueXP</block>
-  <block id="bbf3f1b670e986bdd66666003ca90040" category="paragraph">L'analyse des données nécessite un abonnement PAYGO (paiement basé sur l'utilisation).</block>
-  <block id="bb0dfe0b54c3baac2c6710b8940b4744" category="paragraph">Vous pouvez vous abonner à tout moment et vous ne serez pas facturé même après la fin de la période d'essai de 30 jours. Vous pouvez toujours voir la quantité totale de données analysées à partir du tableau de bord de gouvernance de classification BlueXP. Et le bouton _Subscribe Now_ permet de vous abonner facilement lorsque vous êtes prêt.</block>
-  <block id="f5e624878bf9762aa2d37e975ce44226" category="paragraph">L'abonnement garantit l'absence de perturbation du service après la fin de votre essai gratuit. À la fin de la période d'essai, vous ne serez pas facturé pour la version principale de BlueXP 1.31 ou supérieure.</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Analyser les comptes Google Drive</block>
   <block id="08ad59dcccad79cacd26939ded6a4aaf" category="section-title">Consultez les exigences relatives à Google Drive</block>
   <block id="587344d853bf2178c36331b139134c53" category="section-title">Ajoutez le compte Google Drive</block>
@@ -3364,9 +3336,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="2930994d2cff6bdaceb544c2a0169659" category="paragraph">Voir <block ref="fb235327a04124182aad24d53e898b94" category="inline-link-macro-rx"></block>.</block>
   <block id="3270840fec1d1272ecdf8fa5dacfe375" category="paragraph">La classification BlueXP est une fonctionnalité clé de BlueXP qui n'est pas facturée.</block>
   <block id="178bf9bf543decf7d7b3739b703708f1" category="paragraph">Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous <block ref="9f69f043f42f5e941f29feed1ea9caea" category="inline-link-macro-rx"></block> Dans votre espace de travail BlueXP.</block>
-  <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">Vous pouvez obtenir le fichier de licence sur le site de support NetApp.</block>
-  <block id="5956d6a178701862e65cfb2557c264ca" category="paragraph">Lors de l'utilisation d'une licence BYOL de classification BlueXP (Data Sense), BlueXP affiche un avertissement dans l'interface de classification BlueXP et dans l'interface du portefeuille digital BlueXP lorsque la taille de toutes les données que vous analysez approche de la limite de capacité ou de la date d'expiration de la licence.</block>
-  <block id="c5225ba8742170a4ff16813a131d50d2" category="paragraph">Vous recevez ces avertissements :</block>
   <block id="c6f088f8c47d3f6f693b41a70370107f" category="paragraph">La classification BlueXP peut analyser et analyser les données structurées et non structurées à partir des types d'environnements de travail et de sources de données suivants :</block>
   <block id="4e74f624e4d0f3f558ca01aa93696658" category="paragraph">*Environnements de travail*</block>
   <block id="181c4b9812ec18a3c5280cac985783ed" category="paragraph">*Sources de données*</block>
@@ -3384,10 +3353,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="4ed8051d33f972fa0cc6d75e4ab1b870" category="list-text">Lors de l'analyse des données dans des systèmes ONTAP sur site, des partages de fichiers NetApp ou des bases de données, vous pouvez utiliser un connecteur dans l'un de ces emplacements cloud.</block>
   <block id="7d6fb1ca0011c57644b1d2a7f6e4b92f" category="paragraph">Ces connecteurs cloud permettent d'analyser les systèmes ONTAP sur site, les partages de fichiers NetApp et les bases de données.</block>
   <block id="45c3f94e2c6cdec1b996f63c1e4f35d4" category="paragraph">Les systèmes ONTAP sur site, les partages de fichiers NetApp et les comptes de base de données peuvent être analysés à l'aide de ces connecteurs cloud.</block>
-  <block id="66bad41fed356683067822a39c0f9de3" category="paragraph">*REMARQUE* ces informations ne concernent que les versions 1.31 et ultérieures du noyau de classification BlueXP. Pour les versions antérieures à la version 1.30, vous pouvez également utiliser une licence BYOL.</block>
-  <block id="354edbe327cd09667a9ea94c49b976f7" category="paragraph">Un essai gratuit de 30 jours est disponible pour 500 To de données analysés par le système de classification BlueXP dans un espace de travail BlueXP. Vous devrez vous inscrire pour souscrire un abonnement sur le marché de votre fournisseur de cloud, afin de continuer à analyser les données après cette date.</block>
-  <block id="e134a6a7927c694ae4d422caedd41a01" category="section-title">Mettez à jour une licence BYOL de classification BlueXP pour les versions héritées</block>
-  <block id="3001385112718c67b07ae5d62555bd7e" category="section-title">Considérations relatives aux licences BYOL pour les versions héritées</block>
   <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">Procédez en quelques étapes pour commencer l'analyse des partages de fichiers NFS ou CIFS à partir de Google Cloud NetApp volumes et d'anciens systèmes NetApp 7-mode. Ces partages de fichiers peuvent résider sur site ou dans le cloud.</block>
   <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">L'analyse des données à partir de partages de fichiers non NetApp n'est pas prise en charge dans la version principale de classification BlueXP.</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">Ils peuvent être hébergés partout, y compris dans le cloud ou sur site. Les partages CIFS d'anciens systèmes de stockage NetApp 7-mode peuvent être analysés en tant que partages de fichiers.</block>
@@ -3559,7 +3524,6 @@ Données d'applications d'entreprise</block>
   <block id="b7f5835679149c7ad528a93130c54fd2" category="paragraph">Si vous analysez des données à partir de StorageGRID qui a été installé dans un site sombre qui n'a pas d'accès à Internet, vous devez <block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.</block>
   <block id="8da203a5374e4d2ee4312dc1aafd619c" category="section-title">Ajoutez le service StorageGRID à la classification BlueXP </block>
   <block id="51fd71ec3cd52fe8a3a0c2ca75ecb69e" category="paragraph">Ajoutez le service StorageGRID.</block>
-  <block id="d995bd148592a1e3039fe0e3deaeeafc" category="list-text">Dans la boîte de dialogue Ajouter un service de stockage d'objet, entrez les détails du service StorageGRID et cliquez sur *Continuer*.</block>
   <block id="f153721d9ef26ee125af0b2bd9b6a3e4" category="list-text">Entrez le nom que vous souhaitez utiliser pour l'environnement de travail. Ce nom doit correspondre au nom du service StorageGRID auquel vous vous connectez.</block>
   <block id="9352a83c797b7c34cb58ee6504218644" category="list-text">Entrez la clé d'accès et la clé secrète pour que la classification BlueXP  puisse accéder aux compartiments dans StorageGRID.</block>
   <block id="33d7a3218c026536f68e6f9eb287287c" category="paragraph">StorageGRID est ajouté à la liste des environnements de travail.</block>
@@ -3571,4 +3535,18 @@ Données d'applications d'entreprise</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La classification BlueXP  peut maintenant analyser les données dans StorageGRID.</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Pour plus de détails, reportez-vous à <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
   <block id="a5ac20c838605b872613985f5c302c61" category="section-title">5 août 2024 (version 1.34)</block>
+  <block id="7618b35d0748b4efb66fc940006fadd5" category="paragraph"><block ref="83ed27e05a338173092039c2d8e0ae3b" category="inline-link-macro-rx"></block>.</block>
+  <block id="67103c15357d4cb02c120c2f07095363" category="paragraph">Dans les régions où le type d'instance par défaut n'est pas disponible, la classification BlueXP  s'exécute sur un <block ref="45910d58f60ef6c6ec6de81dc1fbd5cf" category="inline-link-macro-rx"></block>.</block>
+  <block id="59b7feee7c455334bdb5e4ec5e6894ed" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Consultez les conditions préalables de StorageGRID</block>
+  <block id="38717cae919e1e294cc3518a554d11f1" category="paragraph">Vous devez disposer de l'URL du noeud final pour vous connecter au service StorageGRID.</block>
+  <block id="1e296ed773c248e6872c66d3f89ebe11" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Ajoutez le service StorageGRID</block>
+  <block id="771f36ecee826264fd1ac1390344dbca" category="list-text">Dans la page Configuration des environnements de travail, cliquez sur *Ajouter une source de données* &gt; *Ajouter un StorageGRID*.</block>
+  <block id="a7796c18f1e58491acf905cde2f55b58" category="inline-image-macro">Capture d'écran de la page Configuration de numérisation dans laquelle vous pouvez cliquer sur le bouton Ajouter un StorageGRID.</block>
+  <block id="6c352ef7f53a039992102d86911d18fa" category="paragraph"><block ref="6c352ef7f53a039992102d86911d18fa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="31d1c614924f93f76d5d59b499ae01ba" category="list-text">Dans la boîte de dialogue Ajouter un service StorageGRID, entrez les détails du service StorageGRID et cliquez sur *Continuer*.</block>
+  <block id="780ada7e88da33155d8e1741033fefa2" category="inline-image-macro">Capture d'écran de la boîte de dialogue dans laquelle vous entrez les valeurs pour accéder au service StorageGRID.</block>
+  <block id="f0a329a1a31172f9c327937f7f02e88f" category="paragraph"><block ref="f0a329a1a31172f9c327937f7f02e88f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83a1ac14de85f87d0324d9f2a2d89105" category="paragraph"><block ref="83a1ac14de85f87d0324d9f2a2d89105" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48e1eb4f3a8c9056e5dc0d4943a84ada" category="inline-image-macro">Capture d'écran de la sélection des compartiments StorageGRID que vous souhaitez analyser.</block>
+  <block id="d63ea5297bdc582794b89a4fc7b492d8" category="paragraph"><block ref="d63ea5297bdc582794b89a4fc7b492d8" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

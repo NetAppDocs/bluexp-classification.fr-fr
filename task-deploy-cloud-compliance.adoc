@@ -182,7 +182,7 @@ Pour plus de détails sur les limites des CPU virtuels, consultez les liens suiv
 
 Suivez ces étapes pour déployer une instance de classification BlueXP dans le cloud. Le connecteur va déployer l'instance dans le cloud, puis installer le logiciel de classification BlueXP sur cette instance.
 
-Notez que lors du déploiement de la classification BlueXP à partir d'un connecteur BlueXP dans un environnement AWS, vous pouvez sélectionner la taille d'instance par défaut ou choisir l'un des deux types d'instances les plus petits. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Voir les types d'instances et les limites disponibles"]. Dans les régions où le type d'instance par défaut n'est pas disponible, la classification BlueXP s'exécute sur un link:reference-instance-types.html["autre type d'instance"].
+Dans les régions où le type d'instance par défaut n'est pas disponible, la classification BlueXP  s'exécute sur un link:reference-instance-types.html["autre type d'instance"].
 
 [role="tabbed-block"]
 ====
