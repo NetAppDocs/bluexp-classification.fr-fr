@@ -33,7 +33,7 @@ Certaines fonctionnalités sont obsolètes dans la version principale de BlueXP 
 | Clusters ONTAP sur site | Oui. | Oui. 
 
 
-| StorageGRID | Oui. | Non 
+| StorageGRID | Oui. | Oui. 
 
 
 | Azure NetApp Files | Oui. | Oui. 

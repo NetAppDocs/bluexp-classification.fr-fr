@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: Procédez en quelques étapes pour commencer à analyser vos schémas de base de données avec la classification BlueXP. 
 ---
-= Analyser les schémas de base de données
+= Analyser les schémas de base de données avec la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
