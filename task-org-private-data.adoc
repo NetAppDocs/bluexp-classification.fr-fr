@@ -74,9 +74,9 @@ La classification BlueXP prend en charge les étiquettes AIP dans les types de f
 ====
 
 
-=== Intégrez les étiquettes d'AIP dans votre espace de travail
+=== Intégrez les étiquettes d'AIP dans votre projet ou votre espace de travail
 
-Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois activée, vous pouvez gérer les libellés AIP dans les fichiers pour tous link:concept-cloud-compliance.html["sources des données"^] Dans votre espace de travail BlueXP.
+Avant de pouvoir gérer les étiquettes AIP, vous devez intégrer la fonctionnalité d'étiquette AIP dans la classification BlueXP en vous connectant à votre compte Azure existant. Une fois cette option activée, vous pouvez gérer les étiquettes d'AIP dans les fichiers pour tous les link:concept-cloud-compliance.html["sources des données"^] éléments de votre projet ou espace de travail BlueXP .
 
 .De formation
 * Vous devez disposer d'un compte et d'une licence Azure information protection.

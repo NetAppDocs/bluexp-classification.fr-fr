@@ -65,7 +65,7 @@ Vous pouvez copier les fichiers source numérisés par la classification BlueXP 
 TIP: Vous ne pouvez pas copier les fichiers qui résident dans les bases de données.
 
 .De formation
-* Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour copier des fichiers.
+* Vous devez disposer des autorisations nécessaires pour copier des fichiers. link:concept-cloud-compliance.html#user-roles["En savoir plus sur l'accès des utilisateurs aux informations de conformité"].
 * La copie de fichiers nécessite que le partage NFS de destination autorise l'accès à partir de l'instance de classification BlueXP.
 * Vous pouvez copier entre 1 et 100,000 fichiers à la fois.
 
@@ -108,7 +108,7 @@ Le nouveau volume est créé dans le même agrégat que le volume source. Assure
 *Remarque :* les volumes FlexGroup ne peuvent pas être clonés, car ils ne sont pas pris en charge par FlexClone.
 
 .De formation
-* Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour copier des fichiers.
+* Vous devez disposer des autorisations nécessaires pour copier des fichiers. link:concept-cloud-compliance.html#user-roles["En savoir plus sur l'accès des utilisateurs aux informations de conformité"].
 * Vous devez sélectionner au moins 20 fichiers.
 * Tous les fichiers sélectionnés doivent se trouver dans le même volume et le volume doit être en ligne.
 * Le volume doit correspondre à un système Cloud Volumes ONTAP ou ONTAP sur site. Aucune autre source de données n'est actuellement prise en charge.
@@ -162,7 +162,7 @@ Cette fonction est utile lorsque vous migrez des données d'un système source v
 TIP: Vous ne pouvez pas copier et synchroniser les fichiers qui résident dans les bases de données, les comptes OneDrive ou les comptes SharePoint.
 
 .De formation
-* Vous devez disposer du rôle Administrateur de compte ou Administrateur d'espace de travail pour copier et synchroniser les fichiers.
+* Vous devez disposer des autorisations nécessaires pour copier et synchroniser des fichiers. link:concept-cloud-compliance.html#user-roles["En savoir plus sur l'accès des utilisateurs aux informations de conformité"].
 * Vous devez sélectionner au moins 20 fichiers.
 * Tous les fichiers sélectionnés doivent se trouver dans le même référentiel source (volume ONTAP, compartiment S3, partage NFS ou CIFS, etc.).
 * Vous devrez activer le service de copie et de synchronisation BlueXP et configurer au moins un courtier de données pouvant être utilisé pour transférer les fichiers entre les systèmes source et cible. Vérifiez les exigences de copie et de synchronisation BlueXP depuis le https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Description de Quick Start"^].
@@ -220,7 +220,7 @@ Notez que la structure de sous-répertoires du fichier source est recréée sur 
 TIP: Vous ne pouvez pas déplacer les fichiers qui résident dans les bases de données.
 
 .De formation
-* Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour déplacer des fichiers.
+* Vous devez disposer des autorisations nécessaires pour déplacer des fichiers. link:concept-cloud-compliance.html#user-roles["En savoir plus sur l'accès des utilisateurs aux informations de conformité"].
 * Les fichiers source peuvent se trouver dans les sources de données suivantes : systèmes ONTAP sur site, Cloud Volumes ONTAP, Azure NetApp Files, partages de fichiers et SharePoint Online.
 * Vous pouvez déplacer jusqu'à 15 millions de fichiers à la fois.
 * Seuls les fichiers de 50 Mo ou moins sont déplacés.
@@ -274,7 +274,7 @@ La suppression de fichiers nécessite les autorisations suivantes :
 === Supprimez les fichiers source manuellement
 
 .De formation
-* Vous devez avoir le rôle Administrateur de compte ou Administrateur d'espace de travail pour supprimer des fichiers.
+* Vous devez disposer des autorisations nécessaires pour supprimer des fichiers. link:concept-cloud-compliance.html#user-roles["En savoir plus sur l'accès des utilisateurs aux informations de conformité"].
 * Vous pouvez supprimer un maximum de 100,000 fichiers à la fois.
 
 
