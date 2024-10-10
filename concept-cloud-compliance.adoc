@@ -129,8 +129,8 @@ image:diagram_cloud_compliance_instance.png["Diagramme illustrant une instance B
 Voici la liste des éléments suivants pour l'instance par défaut :
 
 * Dans AWS, la classification BlueXP s'exécute sur un https://aws.amazon.com/ec2/instance-types/m6i/["instance m6i.4xlarge"^] Avec un disque GP2 de 500 Gio. L'image du système d'exploitation est Amazon Linux 2. Lorsqu'elle est déployée dans AWS, vous pouvez choisir une instance de plus petite taille si vous analysez un petit volume de données.
-* Dans Azure, la classification BlueXP s'exécute sur un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^] Avec un disque de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
-* Dans GCP, la classification BlueXP s'exécute dans un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] Avec un disque persistant standard de 500 Gio. L'image du système d'exploitation est CentOS 7.9.
+* Dans Azure, la classification BlueXP  s'exécute sur un  avec un link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Machine virtuelle standard_D16s_v3"^]disque de 500 Gio. L'image du système d'exploitation est Ubuntu 22.04.
+* Dans GCP, la classification BlueXP  s'exécute sur un  avec un link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^]disque persistant standard de 500 Gio. L'image du système d'exploitation est Ubuntu 22.04.
 * Dans les régions où l'instance par défaut n'est pas disponible, la classification BlueXP s'exécute sur une autre instance. link:reference-instance-types.html["Voir les autres types d'instances"].
 * L'instance s'appelle _CloudCompliance_ avec un hachage (UUID) généré concaténé. Par exemple : _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Chaque connecteur ne déploie qu'une seule instance de classification BlueXP.

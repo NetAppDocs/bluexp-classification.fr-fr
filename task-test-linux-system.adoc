@@ -104,15 +104,7 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 
 ** Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.30 ou supérieure :
 +
-*** Red Hat Enterprise Linux version 8.8, 9.0, 9.1, 9.2 et 9.3
-+
-Notez que les fonctionnalités suivantes ne sont actuellement pas prises en charge lors de l'utilisation de RHEL 8.x et RHEL 9.x :
-
-+
-**** Installation dans un site sombre
-**** Numérisation distribuée ; utilisation d'un nœud de scanner maître et de nœuds de scanner distants
-
-
+*** Red Hat Enterprise Linux version 8.8, 9.0, 9.1, 9.2, 9.3, 9.4
 
 
 
@@ -123,9 +115,6 @@ Notez que les fonctionnalités suivantes ne sont actuellement pas prises en char
 ** En fonction du système d'exploitation que vous utilisez, vous devrez installer l'un des moteurs de mise en conteneurs :
 +
 *** Docker Engine version 19.3.1 ou supérieure. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^].
-+
-https://youtu.be/Ogoufel1q6c["Regardez cette vidéo"^] Pour une démonstration rapide de l'installation de Docker sur CentOS.
-
 *** Podman version 4 ou supérieure. Pour installer Podman, entrez (`sudo yum install podman netavark -y`).
 
 
@@ -190,9 +179,6 @@ TIP: Cette section n'est pas requise pour les systèmes hôtes installés sur de
 
 
 | \https://github.com/docker \https://download.docker.com | Fournit les packages prérequis pour l'installation de docker. 
-
-
-| \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Fournit des packages prérequis pour l'installation de CentOS. 
 
 
 | \http://packages.ubuntu.com/
