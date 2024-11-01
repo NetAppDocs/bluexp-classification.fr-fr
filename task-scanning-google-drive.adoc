@@ -97,8 +97,7 @@ Sélectionnez le type d'analyse que la classification BlueXP effectuera sur les 
 
 .Étapes
 . Dans la page _Configuration_, cliquez sur le bouton *Configuration* du compte Google Drive.
-+
-image:screenshot_compliance_google_drive_add_sites.png["Capture d'écran de la page Configuration dans laquelle vous pouvez sélectionner le bouton Configuration."]
+
 
 . Activez les analyses de mappage uniquement, ou les analyses de mappage et de classification, sur les fichiers du compte Google Drive.
 +

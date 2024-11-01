@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["Capture d'écran de l'onglet Configu
 ** Pour mapper et classer tous les volumes, cliquez sur *cartographier et classer tous les volumes*.
 ** Pour personnaliser la numérisation de chaque volume, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*, puis choisissez les volumes que vous souhaitez mapper et/ou classer.
 +
-Voir <<Activer et désactiver les analyses de conformité sur les volumes,Activation et désactivation des analyses de conformité sur les volumes>> pour plus de détails.
+Pour plus de détails, reportez-vous à la section Activer et désactiver les analyses de conformité sur les volumes.
 
 
 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Capture d'écran des deux optio
 
 
 
-. Activez chaque volume DP que vous souhaitez analyser <<Activation et désactivation des analyses de conformité sur les volumes,de la même façon que vous avez activé d'autres volumes>>.
+. Activez chaque volume DP que vous souhaitez analyser.
 
 
 .Résultat

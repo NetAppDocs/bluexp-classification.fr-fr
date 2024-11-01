@@ -36,9 +36,6 @@ NOTE: Pour les versions héritées 1.30 et antérieures, si vous devez installer
 Vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
 
 
-NOTE: Pour les anciennes versions 1.30 et antérieures, pour ajouter des nœuds de scanner, reportez-vous à la section link:task-deploy-add-scanner-nodes.html["Ajoutez des nœuds de scanner à un déploiement existant"].
-
-
 
 == Démarrage rapide
 

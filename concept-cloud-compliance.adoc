@@ -91,7 +91,7 @@ La classification BlueXP peut analyser et analyser les données structurées et 
 
 
 
-La classification BlueXP prend en charge les versions NFS 3.x et CIFS 1.x, 2.0, 2.1 et 3.0.
+La classification BlueXP prend en charge les versions NFS 3.x, 4.0 et 4.1, ainsi que les versions CIFS 1.x, 2.0, 2.1 et 3.0.
 
 
 

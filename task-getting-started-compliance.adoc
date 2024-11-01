@@ -226,7 +226,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Capture d'écran des deux optio
 
 
 
-. Activez chaque volume DP que vous souhaitez analyser <<Activation et désactivation des analyses de conformité sur les volumes,de la même façon que vous avez activé d'autres volumes>>.
+. Activez chaque volume DP que vous souhaitez analyser.
 
 
 .Résultat
