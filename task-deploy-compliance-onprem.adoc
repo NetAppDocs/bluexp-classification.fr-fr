@@ -28,12 +28,10 @@ L'installation typique sur un hôte Linux _dans le cloud_ comporte les composant
 
 image:diagram_deploy_onprem_cloud_instance.png["Schéma des composants BlueXP et réseau requis, ainsi que des connexions associées."]
 
-Pour les configurations très volumineuses où vous allez analyser des pétaoctets de données, sur les versions 1.30 et antérieures, vous pouvez inclure plusieurs hôtes pour fournir une puissance de traitement supplémentaire. Lors de l'utilisation de plusieurs systèmes hôtes, le système principal est appelé le _Manager node_, et les systèmes supplémentaires qui fournissent une puissance de traitement supplémentaire sont appelés _scanner nodes_.
-
 
 NOTE: Pour les versions héritées 1.30 et antérieures, si vous devez installer la classification BlueXP sur plusieurs hôtes, reportez-vous à la section link:task-deploy-multi-host-install-dark-site.html["Installez la classification BlueXP sur plusieurs hôtes sans accès Internet"].
 
-Vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"] pour des sites totalement sécurisés.
+Vous pouvez également link:task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un site qui ne dispose pas d'un accès Internet"].
 
 
 
@@ -286,10 +284,6 @@ Vous devez disposer des informations pour Active Directory :
 Pour les configurations standard, le logiciel est installé sur un système hôte unique. <<Installation à un seul hôte pour les configurations courantes,Découvrez ces étapes ici>>.
 
 image:diagram_deploy_onprem_single_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser avec une seule instance de classification BlueXP déployée sur site avec un accès Internet."]
-
-Pour les très grandes configurations dans lesquelles vous numérisez des pétaoctets de données, vous pouvez inclure plusieurs hôtes pour bénéficier d'une puissance de traitement supplémentaire. En savoir plus lien:task-Deploy-multi-host-install-dark-site.html> à propos de l'installation sur plusieurs hôtes pour de grandes configurations.
-
-image:diagram_deploy_onprem_multi_host_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lorsque vous utilisez plusieurs instances de classification BlueXP déployées sur site avec un accès Internet."]
 
 Voir <<Préparez le système hôte Linux,Préparation du système hôte Linux>> et <<Assurez un accès Internet sortant à partir de la classification BlueXP,Vérification des prérequis>> Liste complète des exigences avant de déployer la classification BlueXP.
 

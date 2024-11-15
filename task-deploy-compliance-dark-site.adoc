@@ -14,7 +14,7 @@ summary: 'Procédez en quelques étapes pour installer la classification BlueXP 
 
 
 [role="lead"]
-Suivez ces étapes pour installer la classification BlueXP sur un hôte Linux d'un site sur site qui ne dispose pas d'un accès à Internet, également appelé _mode privé_. Ce type d'installation est parfait pour vos sites sécurisés.
+Suivez ces étapes pour installer la classification BlueXP sur un hôte Linux d'un site sur site qui ne dispose pas d'un accès à Internet, également appelé _mode privé_. Ce type d'installation, qui utilise un script d'installation, n'a pas de connectivité avec la couche SaaS BlueXP .
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Découvrez les différents modes de déploiement pour le connecteur BlueXP et la classification BlueXP"^].
 
@@ -254,8 +254,6 @@ Vous devez disposer des informations pour Active Directory :
 
 | Si un pare-feu est utilisé sur un hôte Linux | 9000 | Nécessaire pour les processus internes au sein d'un serveur Ubuntu. 
 |===
-Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la puissance de traitement afin d'analyser vos sources de données, vous devez activer des ports/protocoles supplémentaires. link:task-deploy-compliance-dark-site.html["Voir la configuration de port supplémentaire requise"].
-
 
 
 == Installez la classification BlueXP sur l'hôte Linux sur site
@@ -263,8 +261,6 @@ Si vous utilisez plusieurs hôtes de classification BlueXP pour augmenter la pui
 Pour les configurations standard, le logiciel est installé sur un système hôte unique.
 
 image:diagram_deploy_onprem_single_host_no_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser avec une seule instance de classification BlueXP déployée sur site sans accès à Internet."]
-
-image:diagram_deploy_onprem_multi_host_no_internet.png["Un diagramme illustrant l'emplacement des sources de données que vous pouvez analyser lorsque plusieurs instances de classification BlueXP sont déployées sur site sans accès à Internet."]
 
 
 
