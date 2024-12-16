@@ -1,0 +1,9 @@
+= Version 1.38
+:allow-uri-read: 
+
+
+
+
+=== Version 1.38
+
+Cette version de classification BlueXP  inclut des améliorations générales et des correctifs.
