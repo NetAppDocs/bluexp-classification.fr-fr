@@ -23,7 +23,7 @@ La classification BlueXP identifie deux types de données personnelles :
 
 
 
-TIP: Si vous avez besoin de la classification BlueXP pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de santé, envoyez un e-mail à ng-contact-data-sense@netapp.com à votre demande.
+TIP: Si vous avez besoin de la classification BlueXP  pour identifier d'autres types de données privées, comme des numéros d'identification nationaux supplémentaires ou des identifiants de soins de santé, contactez votre gestionnaire de compte.
 
 
 

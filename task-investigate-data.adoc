@@ -14,7 +14,7 @@ summary: 'Vous pouvez examiner les données de votre organisation en affichant l
 
 
 [role="lead"]
-Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu'à cette page à partir de plusieurs sections de l'interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.
+Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu'à cette page à partir de plusieurs sections de l'interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité. Vous pouvez exporter les données dans un fichier CSV ou JSON pour une analyse plus approfondie ou pour les partager avec d'autres.
 
 
 NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.
@@ -238,17 +238,13 @@ La classification BlueXP utilise la technologie de hachage pour déterminer les 
 
 Vous pouvez télécharger la liste des fichiers dupliqués et les envoyer à votre administrateur de stockage afin qu'il puisse décider quels fichiers, le cas échéant, être supprimé. Ou vous le pouvez link:task-managing-highlights.html#delete-source-files["supprimez le fichier"] vous-même si vous êtes sûr qu'une version spécifique du fichier n'est pas nécessaire.
 
-
-
-=== Afficher tous les fichiers dupliqués
+*Afficher tous les fichiers dupliqués*
 
 Si vous voulez une liste de tous les fichiers dupliqués dans les environnements de travail et les sources de données que vous scannez, vous pouvez utiliser le filtre *Duplicates > a des doublons* dans la page recherche de données.
 
 Tous les fichiers dupliqués sont affichés dans la page Résultats.
 
-
-
-=== Permet d'afficher si un fichier spécifique est dupliqué
+*Afficher si un fichier spécifique est dupliqué*
 
 Si vous souhaitez voir si un seul fichier contient des doublons, vous pouvez cliquer sur dans le volet Résultats de l'enquête de données image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit. Si un fichier est en double, ces informations apparaissent à côté du champ _Duplicates_.
 
@@ -265,28 +261,11 @@ TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette pag
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Le rapport est disponible sous la forme . Fichier CSV que vous pouvez enregistrer sur la machine locale.
+Le rapport est disponible sous forme de fichier .CSV ou .JSON que vous pouvez enregistrer sur la machine locale.
 
 Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).
 
-
-
-=== Générer le rapport d'investigation de données
-
-.Étapes
-. Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
-. Sélectionnez pour télécharger un . Rapport CSV des données, puis cliquez sur *Télécharger le rapport*.
-+
-image:screenshot_compliance_investigation_report.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
-
-
-
-.Résultat
-Une boîte de dialogue affiche un message indiquant que les rapports sont en cours de téléchargement.
-
-
-
-=== Ce qui est inclus dans le rapport d'enquête sur les données
+*Ce qui est inclus dans le rapport d'enquête sur les données*
 
 Le *non structuré fichier de données* contient les informations suivantes sur vos fichiers :
 
@@ -339,3 +318,14 @@ Le *Rapport de données structurées* comprend les informations suivantes sur vo
 * Informations personnelles
 * Informations personnelles sensibles
 
+
+.Étapes de génération du rapport
+. Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
+. Sélectionnez pour télécharger un rapport .CSV ou .JSON des données, puis cliquez sur *Télécharger le rapport*.
++
+image:screenshot_compliance_investigation_report2.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
+
+
+
+.Résultat
+Une boîte de dialogue affiche un message indiquant que les rapports sont en cours de téléchargement.

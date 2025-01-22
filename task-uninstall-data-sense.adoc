@@ -46,7 +46,7 @@ Vous pouvez désinstaller la classification BlueXP d'un hôte si vous ne souhait
 image:screenshot_compliance_uninstall.png["Une capture d'écran du bouton pour désinstaller le logiciel de classification BlueXP."]
 
 . Dans la boîte de dialogue _Uninstall Data Sense_, tapez *uninstall* pour confirmer que vous souhaitez déconnecter l'instance de classification BlueXP du connecteur BlueXP, puis cliquez sur *Uninstall*.
-. Pour désinstaller le logiciel de l'hôte, exécutez `cleanup.sh` script sur la machine hôte, par exemple :
+. Pour désinstaller le logiciel de l'hôte, exécutez le `cleanup.sh` script sur la machine hôte de classification BlueXP , par exemple :
 +
 [source, cli]
 ----

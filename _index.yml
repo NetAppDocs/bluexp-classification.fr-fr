@@ -30,18 +30,20 @@ indexpage:
       url: task-deploy-compliance-onprem.html
   - title: Analysez vos sources de données
     links:
-    - title: Volumes Cloud Volumes ONTAP
-      url: task-getting-started-compliance.html
-    - title: Volumes ONTAP sur site
-      url: task-getting-started-compliance.html
-    - title: Volumes Azure NetApp Files
-      url: task-scanning-anf.html
     - title: Amazon FSX pour volumes ONTAP
       url: task-scanning-fsx.html
-    - title: Partages de fichiers non NetApp
-      url: task-scanning-file-shares.html
+    - title: Volumes Azure NetApp Files
+      url: task-scanning-anf.html
+    - title: Volumes Cloud Volumes ONTAP
+      url: task-getting-started-compliance.html
     - title: Schémas de base de données
       url: task-scanning-databases.html
+    - title: Partages de fichiers (CIFS, NFS)
+      url: task-scanning-file-shares.html
+    - title: Volumes ONTAP sur site
+      url: task-getting-started-compliance.html
+    - title: StorageGRID
+      url: task-scanning-storagegrid.html
   - title: Afficher les détails de vos données
     links:
     - title: Afficher les fichiers contenant des informations privées
