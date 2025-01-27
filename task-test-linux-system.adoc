@@ -14,7 +14,7 @@ summary: 'Avant d"installer manuellement la classification BlueXP sur un hôte L
 
 
 [role="lead"]
-Avant d'installer manuellement la classification BlueXP sur un hôte Linux, vous pouvez exécuter un script sur l'hôte pour vérifier que toutes les conditions préalables requises pour l'installation de la classification BlueXP sont en place. Vous pouvez exécuter ce script sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. L'hôte peut être connecté à Internet, ou l'hôte peut résider sur un site qui n'a pas accès à Internet (un _site sombre_).
+Avant d'installer manuellement la classification BlueXP  sur un hôte Linux, exécutez éventuellement un script sur l'hôte pour vérifier que toutes les conditions préalables sont en place pour l'installation de la classification BlueXP . Vous pouvez exécuter ce script sur un hôte Linux de votre réseau ou sur un hôte Linux du cloud. L'hôte peut être connecté à Internet, ou l'hôte peut résider sur un site qui n'a pas accès à Internet (un _site sombre_).
 
 Il existe également un script de test prérequis qui fait partie du script d'installation de la classification BlueXP. Le script décrit ici est spécialement conçu pour les utilisateurs qui souhaitent vérifier l'hôte Linux indépendamment de l'exécution du script d'installation de classification BlueXP.
 
@@ -57,16 +57,24 @@ Le logiciel de classification BlueXP doit s'exécuter sur un hôte répondant à
 | Taille du système | CPU | RAM (la mémoire d'échange doit être désactivée) | Disque 
 
 
-| *Très grand* | 32 processeurs | 128 GO DE RAM | 1 To SSD sur /, ou
-- 100 Gio disponible sur /opt
-- 895 Gio disponible sur /var/lib/docker
-- 5 Gio sur /tmp 
+| *Très grand* | 32 processeurs | 128 GO DE RAM  a| 
+** 1 Tio SSD sur / ou 100 Gio disponible sur /opt
+** 895 Gio disponible sur /var/lib/docker
+** 5 Gio sur /tmp
+** *Pour Podman, 5 Go sur /tmp*
+** *Pour Podman, 30 Go sur /var/tmp*
 
 
-| *Grand* | 16 processeurs | 64 GO DE RAM | 500 Gio de SSD sur /, ou
-- 100 Gio disponible sur /opt
-- 395 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers ou pour Podman /var/lib/containers
-- 5 Gio sur /tmp 
+
+
+| *Grand* | 16 processeurs | 64 GO DE RAM  a| 
+** 500 Gio de SSD sur /, ou 100 Gio disponible pour /opt
+** 395 Gio disponible sur /var/lib/docker ou pour Podman /var/lib/containers ou pour Podman /var/lib/containers
+** 5 Gio sur /tmp
+** *Pour Podman, 5 Go sur /tmp*
+** *Pour Podman, 30 Go sur /var/tmp*
+
+
 |===
 * Lors du déploiement d'une instance de calcul dans le cloud pour votre installation de classification BlueXP, nous vous recommandons de opter pour un système qui répond à la configuration requise pour les « grands » systèmes ci-dessus :
 +

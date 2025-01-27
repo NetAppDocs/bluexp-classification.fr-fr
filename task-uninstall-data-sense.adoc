@@ -14,7 +14,7 @@ summary: 'Vous pouvez désinstaller le logiciel de classification BlueXP pour r�
 
 
 [role="lead"]
-Vous pouvez désinstaller le logiciel de classification BlueXP pour résoudre des problèmes ou supprimer définitivement le logiciel de l'hôte. La suppression de l'instance supprime également les disques associés sur lesquels résident les données indexées. Toutes les informations analysées par BlueXP seront définitivement supprimées.
+Désinstallez le logiciel de classification BlueXP  pour résoudre les problèmes ou supprimer définitivement le logiciel de l'hôte. La suppression de l'instance supprime également les disques associés sur lesquels résident les données indexées. Toutes les informations analysées par BlueXP seront définitivement supprimées.
 
 Les étapes à suivre dépendent du déploiement de la classification BlueXP dans le cloud ou sur un hôte sur site.
 

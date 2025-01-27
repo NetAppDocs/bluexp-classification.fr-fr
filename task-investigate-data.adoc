@@ -23,7 +23,7 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 == Filtrez les données dans la page Data Investigation
 
-Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir. Il s'agit d'une fonctionnalité très puissante car une fois les données raffinées, vous pouvez utiliser la barre de boutons en haut de la page pour effectuer diverses actions, notamment copier des fichiers, déplacer des fichiers, ajouter une balise ou une étiquette AIP aux fichiers, et bien plus encore.
+Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir.
 
 Si vous souhaitez télécharger le contenu de la page en tant que rapport après l'avoir affiné, cliquez sur le bouton image:button_download.png["bouton télécharger"] bouton. <<Rapport d'enquête de données,Cliquez ici pour plus de détails sur le rapport d'enquête sur les données>>.
 
