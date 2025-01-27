@@ -3505,4 +3505,5 @@ Données d'applications d'entreprise</block>
   <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">Pour désinstaller le logiciel de l'hôte, exécutez le<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block> script sur la machine hôte de classification BlueXP , par exemple :</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 janvier 2025</block>
   <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">Partages de fichiers (CIFS, NFS)</block>
+  <block id="0476d890c406400d4a4b0337b0492ab6" category="paragraph">Le script se trouve dans le<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block> répertoire.</block>
 </blocks>
