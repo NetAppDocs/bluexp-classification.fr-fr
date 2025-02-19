@@ -186,15 +186,19 @@ Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau
 
 === Quelle est la différence entre les acquisitions de mappage et de classification
 
-La classification BlueXP vous permet d'exécuter une analyse générale du « mappage » sur des sources de données sélectionnées. La cartographie ne fournit qu'une vue d'ensemble de haut niveau de vos données, tandis que Classification permet une analyse approfondie de vos données. Le mappage peut être effectué très rapidement sur vos sources de données car il n'accède pas aux fichiers pour voir les données à l'intérieur.
+Vous pouvez effectuer deux types d'acquisitions dans la classification BlueXP  :
 
-De nombreux utilisateurs apprécient cette fonctionnalité car ils souhaitent analyser rapidement leurs données afin d'identifier les sources de données qui nécessitent davantage de recherche. Ils ne peuvent ensuite activer des analyses de classification que sur les sources ou volumes de données requis.
+* **Cartographie uniquement** les scannages ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectués sur des sources de données sélectionnées. Les analyses de mappage uniquement prennent moins de temps que les analyses de mappage et de classification car elles n'accèdent pas aux fichiers pour voir les données qu'elles contiennent.
+* **Les analyses Map and Classify** permettent une analyse approfondie de vos données.
+
+
+Les analyses de mappage uniquement vous permettent d'analyser rapidement vos données et d'identifier les sources de données susceptibles de nécessiter davantage de recherche. Vous pouvez ensuite effectuer une analyse de mappage et de classification.
 
 Le tableau ci-dessous présente certaines des différences :
 
 [cols="47,18,18"]
 |===
-| Fonction | Classement | Mappage 
+| Fonction | Cartographiez et classez les analyses | Analyses de mappage uniquement 
 
 
 | Vitesse de numérisation | Lentes | Rapides 
@@ -413,8 +417,8 @@ Le tableau ci-dessous présente certaines des différences :
 
 La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
 
-* Lors d'analyses de mappage, la classification BlueXP peut analyser entre 100-150 Tibs de données par jour.
-* Lors des analyses de classification, la classification BlueXP peut analyser entre 15-40 Tibs de données par jour.
+* Lors de l'exécution d'acquisitions de mappage uniquement, la classification BlueXP  peut analyser entre 100-150 Tibs de données par jour.
+* Lors d'analyses de cartes et de classifications, la classification BlueXP  peut analyser entre 15-40 000 Tibs de données par jour.
 
 
 

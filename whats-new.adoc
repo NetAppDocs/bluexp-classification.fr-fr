@@ -18,6 +18,48 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 19 février 2025
+
+
+
+=== Version 1.40
+
+Cette version de classification BlueXP  inclut les mises à jour suivantes.
+
+.Prise en charge de RHEL 9.5
+Cette version prend en charge Red Hat Enterprise Linux v9.5 en plus des versions précédemment prises en charge. Cela s'applique à toute installation manuelle sur site de la classification BlueXP , y compris les déploiements de sites invisibles.
+
+Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP  version 1.30 ou ultérieure : Red Hat Enterprise Linux version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 et 9.5.
+
+.Hiérarchiser les acquisitions
+Lorsque vous effectuez des acquisitions de mappage uniquement, vous pouvez hiérarchiser les acquisitions les plus importantes. Cette fonction vous aide lorsque vous disposez de nombreux environnements de travail et que vous souhaitez vous assurer que les numérisations à haute priorité sont effectuées en premier.
+
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
+
+La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
+
+La priorisation est limitée à link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
+
+Pour modifier la priorité :
+
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Sélectionnez les ressources à hiérarchiser.
+. Dans l'option actions ..., sélectionnez *hiérarchiser l'acquisition*.
+
+
+.Réessayez toutes les acquisitions
+La classification BlueXP  prend désormais en charge la possibilité de recommencer par lots toutes les acquisitions ayant échoué.
+
+Vous pouvez à présent relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
+
+Pour réessayer toutes les acquisitions :
+
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Pour réessayer toutes les acquisitions ayant échoué, sélectionnez *Réessayer toutes les acquisitions*.
+
+
+
+
 == 22 janvier 2025
 
 
@@ -155,7 +197,7 @@ Les métadonnées suivantes sont extraites des fichiers lors des analyses de map
 .Données supplémentaires dans les tableaux de bord
 Cette version met à jour les données qui apparaissent dans les tableaux de bord gouvernance, conformité et investigation lors des analyses de mappage.
 
-Pour plus de détails, voir https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Quelle est la différence entre les analyses de cartographie et de classification"]
+Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Quelle est la différence entre les analyses de cartographie et de classification"]
 
 
 
@@ -353,7 +395,7 @@ Ces versions ne sont pas prises en charge par les nouveaux déploiements, car Re
 Vous pouvez activer la collecte des journaux d'audit de l'accès aux fichiers sur votre système de classification BlueXP pour les événements d'accès aux fichiers détectés sur les volumes de vos environnements de travail. La classification BlueXP peut capturer les types d'événements FPolicy suivants et les utilisateurs qui ont effectué les actions sur vos fichiers : créer, lire, écrire, supprimer, renommer, Modifiez le propriétaire/les autorisations et modifiez SACL/DACL.
 
 .Les licences Data Sense BYOL sont désormais prises en charge sur les sites invisibles
-Vous pouvez désormais télécharger votre licence Data Sense BYOL dans le portefeuille digital BlueXP , dans un site invisible, pour être averti lorsque le niveau de licence est faible. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Découvrez comment obtenir et télécharger votre licence Data Sense BYOL"].
+Vous pouvez désormais télécharger votre licence Data Sense BYOL dans le portefeuille digital BlueXP , dans un site invisible, pour être averti lorsque le niveau de licence est faible. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["Découvrez comment obtenir et télécharger votre licence Data Sense BYOL"].
 
 
 

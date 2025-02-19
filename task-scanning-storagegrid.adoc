@@ -18,31 +18,6 @@ Procédez en quelques étapes pour commencer à numériser des données directem
 
 
 
-== Démarrage rapide
-
-Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux sections restantes pour obtenir de plus amples informations.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Consultez les conditions préalables de StorageGRID
-[role="quick-margin-para"]
-Vous devez disposer de l'URL du noeud final pour vous connecter au service StorageGRID.
-
-[role="quick-margin-para"]
-Vous devez disposer de la clé d'accès et de la clé secrète de StorageGRID pour que la classification BlueXP  puisse accéder aux compartiments.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP"^] si aucune instance n'est déjà déployée.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Ajoutez le service StorageGRID
-[role="quick-margin-para"]
-Ajoutez le service StorageGRID à la classification BlueXP .
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Sélectionnez les compartiments à numériser
-[role="quick-margin-para"]
-Sélectionnez les compartiments que vous souhaitez analyser et la classification BlueXP commencera à les analyser.
-
-
-
 == Vérifiez les conditions requises pour le StorageGRID
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
@@ -61,8 +36,6 @@ Si vous numérisez des données à partir de StorageGRID accessibles via Interne
 
 Si vous analysez des données à partir de StorageGRID qui a été installé dans un site sombre qui n'a pas d'accès à Internet, vous devez link:task-deploy-compliance-dark-site.html["Déployez la classification BlueXP sur le même emplacement sur site qui n'a pas d'accès Internet"^]. Cela nécessite également que le connecteur BlueXP soit déployé dans le même emplacement sur site.
 
-Les mises à niveau vers le logiciel de classification BlueXP  sont automatisées tant que l'instance dispose d'une connectivité Internet.
-
 
 
 == Ajoutez le service StorageGRID à la classification BlueXP 
@@ -70,10 +43,8 @@ Les mises à niveau vers le logiciel de classification BlueXP  sont automatisé
 Ajoutez le service StorageGRID.
 
 .Étapes
-. Dans la page Configuration des environnements de travail, cliquez sur *Ajouter une source de données* > *Ajouter un StorageGRID*.
-+
-image:screenshot-scanning-add-storagegrid.png["Capture d'écran de la page Configuration de numérisation dans laquelle vous pouvez cliquer sur le bouton Ajouter un StorageGRID."]
-
+. Dans le menu BlueXP  Classification, sélectionnez l'option *Configuration*.
+. Sur la page Configuration, sélectionnez *Ajouter un environnement de travail* > *Ajouter StorageGRID*.
 . Dans la boîte de dialogue Ajouter un service StorageGRID, entrez les détails du service StorageGRID et cliquez sur *Continuer*.
 +
 .. Entrez le nom que vous souhaitez utiliser pour l'environnement de travail. Ce nom doit correspondre au nom du service StorageGRID auquel vous vous connectez.
@@ -96,28 +67,18 @@ StorageGRID est ajouté à la liste des environnements de travail.
 Après avoir activé la classification BlueXP  sur StorageGRID, l'étape suivante consiste à configurer les compartiments que vous souhaitez analyser. La classification BlueXP détecte ces compartiments et les affiche dans l'environnement de travail que vous avez créé.
 
 .Étapes
-. Dans la page Configuration, cliquez sur *Configuration* dans l'environnement de travail StorageGRID.
-+
-image:screenshot-scanning-storagegrid-configuration.png["Capture d'écran de l'environnement de travail en cliquant sur Configuration pour vous permettre de choisir les compartiments à numériser."]
-
-. Activez les analyses de mappage uniquement ou les analyses de mappage et de classification sur vos compartiments.
+. Dans la page Configuration, recherchez l'environnement de travail StorageGRID.
+. Dans la mosaïque de l'environnement de travail StorageGRID, sélectionnez *Configuration*.
 +
 image:screenshot-scanning-add-storagegrid-buckets.png["Capture d'écran de la sélection des compartiments StorageGRID que vous souhaitez analyser."]
 
+. Effectuez l'une des étapes suivantes pour activer ou désactiver la numérisation :
 +
-[cols="45,45"]
-|===
-| À : | Procédez comme suit : 
+** Pour activer les acquisitions de mappage uniquement sur un compartiment, sélectionnez *Map*.
+** Pour activer les acquisitions complètes sur un compartiment, sélectionnez *Map & Classify*.
+** Pour désactiver la numérisation sur un compartiment, sélectionnez *Désactivé*.
 
 
-| Activez les acquisitions avec mappage uniquement sur un compartiment | Cliquez sur *carte* 
-
-
-| Activer les acquisitions complètes sur un compartiment | Cliquez sur *carte et classement* 
-
-
-| Désactiver l'acquisition sur un godet | Cliquez sur *Off* 
-|===
 
 
 .Résultat

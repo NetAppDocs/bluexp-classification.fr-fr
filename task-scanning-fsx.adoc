@@ -31,53 +31,13 @@ https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces réseau flexibles AWS (ENI)"^]
 
-
-
-
-
-== Démarrage rapide
-
-Pour commencer rapidement, suivez ces étapes ou faites défiler vers le bas pour obtenir plus de détails.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Découvrez le FSX pour les systèmes de fichiers ONTAP que vous souhaitez analyser
-[role="quick-margin-para"]
-Avant de pouvoir analyser FSX pour des volumes ONTAP, https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Vous devez disposer d'un environnement de travail FSX avec des volumes configurés"^].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez l'instance de classification BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans BlueXP"^] si aucune instance n'est déjà déployée.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Activez la classification BlueXP et sélectionnez les volumes à analyser
-[role="quick-margin-para"]
-Sélectionnez l'onglet *Configuration* et activez les analyses de conformité pour les volumes dans des environnements de travail spécifiques.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Vérifiez l'accès aux volumes
-[role="quick-margin-para"]
-Une fois la classification BlueXP activée, assurez-vous qu'elle peut accéder à tous les volumes.
-
-[role="quick-margin-list"]
-* L'instance de classification BlueXP nécessite une connexion réseau à chaque sous-réseau FSX pour ONTAP.
 * Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP :
 +
 ** Pour NFS – ports 111 et 2049.
 ** Pour CIFS – ports 139 et 445.
 
 
-* Les règles d'exportation des volumes NFS doivent autoriser l'accès à partir de l'instance de classification BlueXP.
-* La classification BlueXP requiert des informations d'identification Active Directory pour analyser les volumes CIFS. + cliquez sur *conformité* > *Configuration* > *Modifier les informations d'identification CIFS* et fournissez les informations d'identification.
 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinq"] Gérer les volumes à analyser
-[role="quick-margin-para"]
-Sélectionnez ou désélectionnez les volumes à analyser ; la classification BlueXP démarre ou arrête leur analyse.
-
-
-
-== Identifiez le système de fichiers FSX pour ONTAP que vous souhaitez analyser
-
-Si le système de fichiers FSX pour ONTAP que vous souhaitez numériser n'est pas déjà dans BlueXP comme environnement de travail, vous pouvez l'ajouter au canevas à ce moment.
-
-https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Découvrez comment découvrir ou créer le système de fichiers FSX pour ONTAP dans BlueXP"^].
 
 
 
@@ -97,7 +57,8 @@ Les mises à niveau du logiciel de classification BlueXP sont automatisées tant
 
 Vous pouvez activer la classification BlueXP pour les volumes FSX pour ONTAP.
 
-. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*, puis sélectionnez l'onglet *Configuration*.
+. Dans le menu de navigation de gauche BlueXP , sélectionnez *gouvernance > Classification*.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
 +
 image:screenshot_fsx_scanning_activate.png["Capture d'écran de l'onglet Configuration immédiatement après le déploiement de l'instance de classification BlueXP."]
 
@@ -106,9 +67,6 @@ image:screenshot_fsx_scanning_activate.png["Capture d'écran de l'onglet Configu
 ** Pour mapper tous les volumes, cliquez sur *mapper tous les volumes*.
 ** Pour mapper et classer tous les volumes, cliquez sur *cartographier et classer tous les volumes*.
 ** Pour personnaliser la numérisation de chaque volume, cliquez sur *ou sélectionnez le type de numérisation pour chaque volume*, puis choisissez les volumes que vous souhaitez mapper et/ou classer.
-+
-Pour plus de détails, reportez-vous à la section Activer et désactiver les analyses de conformité sur les volumes.
-
 
 
 . Dans la boîte de dialogue de confirmation, cliquez sur *Approve* pour que la classification BlueXP commence à analyser vos volumes.
@@ -133,7 +91,8 @@ Assurez-vous que la classification BlueXP peut accéder aux volumes en vérifian
 Vous devez fournir une classification BlueXP avec des informations d'identification CIFS pour pouvoir accéder aux volumes CIFS.
 
 .Étapes
-. Sur la page _Configuration_, cliquez sur *Afficher les détails* pour vérifier l'état et corriger les erreurs.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Sur la page Configuration, sélectionnez *Afficher les détails* pour vérifier l'état et corriger les erreurs éventuelles.
 +
 Par exemple, l'image suivante montre qu'une classification de volume BlueXP ne peut pas analyser en raison de problèmes de connectivité réseau entre l'instance de classification BlueXP et le volume.
 
@@ -145,17 +104,11 @@ image:screenshot_fsx_scanning_no_network_error.png["Capture d'écran de la page 
 
 NOTE: Dans le cas de FSX pour ONTAP, la classification BlueXP ne peut analyser les volumes que dans la même région que BlueXP.
 
-. Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP.
-+
-** Pour NFS – ports 111 et 2049.
-** Pour CIFS – ports 139 et 445.
-
-
 . Assurez-vous que les règles d'exportation des volumes NFS incluent l'adresse IP de l'instance de classification BlueXP afin qu'elle puisse accéder aux données de chaque volume.
 . Si vous utilisez CIFS, fournissez la classification BlueXP avec les informations d'identification Active Directory pour qu'il puisse analyser les volumes CIFS.
 +
-.. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*, puis sélectionnez l'onglet *Configuration*.
-.. Pour chaque environnement de travail, cliquez sur *Modifier les informations d'identification CIFS* et entrez le nom d'utilisateur et le mot de passe dont la classification BlueXP a besoin pour accéder aux volumes CIFS du système.
+.. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+.. Pour chaque environnement de travail, sélectionnez *Modifier les informations d'identification CIFS* et entrez le nom d'utilisateur et le mot de passe dont la classification BlueXP  a besoin pour accéder aux volumes CIFS du système.
 +
 Les identifiants peuvent être en lecture seule, mais il est possible de fournir des identifiants d'administrateur pour que la classification BlueXP puisse lire toutes les données qui nécessitent des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
@@ -179,31 +132,16 @@ Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture 
 
 image:screenshot_volume_compliance_selection.png["Capture d'écran de la page Configuration dans laquelle vous pouvez activer ou désactiver la numérisation de volumes individuels."]
 
-[cols="45,45"]
-|===
-| À : | Procédez comme suit : 
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Dans la page Configuration, recherchez l'environnement de travail avec les volumes à analyser.
+. Effectuez l'une des opérations suivantes :
++
+** Pour activer les acquisitions de mappage uniquement sur un volume, dans la zone de volume, sélectionnez *Map*. Ou, pour activer sur tous les volumes, dans la zone d'en-tête, sélectionnez *carte*. Pour activer la numérisation complète sur un volume, dans la zone de volume, sélectionnez *carte et classement*. Ou, pour activer sur tous les volumes, dans la zone d'en-tête, sélectionnez *carte et classement*.
+** Pour désactiver la numérisation sur un volume, dans la zone de volume, sélectionnez *Désactivé*. Pour désactiver la numérisation sur tous les volumes, dans la zone Cap, sélectionnez *Désactivé*.
 
 
-| Activez les acquisitions avec mappage uniquement sur un volume | Dans la zone du volume, cliquez sur *Map* 
 
 
-| Activer la numérisation complète sur un volume | Dans la zone de volume, cliquez sur *carte et classement* 
-
-
-| Désactiver la numérisation sur un volume | Dans la zone du volume, cliquez sur *Off* 
-
-
-|  |  
-
-
-| Activez les analyses de mappage uniquement sur tous les volumes | Dans la zone d'en-tête, cliquez sur *carte* 
-
-
-| Activez l'analyse complète sur tous les volumes | Dans la zone d'en-tête, cliquez sur *carte et classement* 
-
-
-| Désactiver l'analyse de tous les volumes | Dans la zone d'en-tête, cliquez sur *Off* 
-|===
 
 NOTE: Les nouveaux volumes ajoutés à l'environnement de travail sont automatiquement analysés uniquement lorsque vous avez défini le paramètre *Map* ou *Map & Classify* dans la zone d'en-tête. Lorsque vous sélectionnez *personnalisé* ou *Désactivé* dans la zone de titre, vous devez activer le mappage et/ou la numérisation complète sur chaque nouveau volume que vous ajoutez à l'environnement de travail.
 
@@ -220,8 +158,9 @@ image:screenshot_cloud_compliance_dp_volumes.png["Capture d'écran montrant le b
 .Étapes
 Pour analyser ces volumes de protection des données :
 
-. Cliquez sur *Activer l'accès aux volumes DP* en haut de la page.
-. Vérifiez le message de confirmation et cliquez à nouveau sur *Activer l'accès aux volumes DP*.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Sélectionnez *Activer l'accès aux volumes DP* en haut de la page.
+. Consultez le message de confirmation et sélectionnez de nouveau *Activer l'accès aux volumes DP*.
 +
 ** Les volumes initialement créés en tant que volumes NFS dans le système de fichiers FSX source pour ONTAP sont activés.
 ** Les volumes initialement créés en tant que volumes CIFS dans le système de fichiers FSX source pour ONTAP nécessitent que vous saisiez des informations d'identification CIFS pour scanner ces volumes DP. Si vous avez déjà saisi des informations d'identification Active Directory pour que la classification BlueXP puisse analyser les volumes CIFS, vous pouvez utiliser ces informations d'identification ou spécifier un autre ensemble d'informations d'identification d'administration.
@@ -236,7 +175,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Capture d'écran des deux optio
 .Résultat
 Une fois activé, la classification BlueXP crée un partage NFS à partir de chaque volume DP activé pour l'analyse. Les règles d'exportation de partage autorisent uniquement l'accès à partir de l'instance de classification BlueXP.
 
-*Remarque :* si vous ne aviez pas de volumes de protection des données CIFS lorsque vous avez activé l'accès initial aux volumes DP, puis en ajoutant d'autres, le bouton *Activer l'accès à CIFS DP* s'affiche en haut de la page Configuration. Cliquez sur ce bouton et ajoutez des identifiants CIFS pour permettre l'accès à ces volumes CIFS DP.
+Si vous n'aviez pas de volumes de protection de données CIFS lorsque vous avez activé l'accès aux volumes DP pour la première fois, puis ajoutez-en certains, le bouton *Activer l'accès à CIFS DP* s'affiche en haut de la page Configuration. Cliquez sur ce bouton et ajoutez des informations d'identification CIFS pour activer l'accès à ces volumes CIFS DP.
 
 
-NOTE: Les identifiants Active Directory sont uniquement enregistrés dans la machine virtuelle de stockage du premier volume CIFS DP, de sorte que tous les volumes DP de ce SVM soient analysés. Les volumes résidant sur d'autres SVM ne seront pas enregistrés pour les identifiants Active Directory, de sorte que ces volumes DP ne seront pas analysés.
+NOTE: Les informations d'identification Active Directory sont enregistrées uniquement sur la VM de stockage du premier volume CIFS DP, de sorte que tous les volumes DP de ce SVM soient analysés. Les volumes résidant sur d'autres SVM ne seront pas enregistrés pour les identifiants Active Directory, de sorte que ces volumes DP ne seront pas analysés.
