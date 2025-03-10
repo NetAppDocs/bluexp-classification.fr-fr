@@ -82,4 +82,4 @@ image:screenshot-scanning-add-storagegrid-buckets.png["Capture d'écran de la s�
 
 
 .Résultat
-La classification BlueXP commence à analyser les compartiments que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+La classification BlueXP commence à analyser les compartiments que vous avez activés. Vous pouvez suivre la progression de l'acquisition initiale en accédant au menu **Configuration** puis en sélectionnant la **Configuration de l'environnement de travail**. La progression de chaque acquisition est affichée sous la forme d'une barre de progression. Vous pouvez également passer le curseur de la souris sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.

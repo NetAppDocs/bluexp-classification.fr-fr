@@ -111,6 +111,6 @@ image:screenshot_compliance_select_schemas.png["Capture d'écran de la page Conf
 
 
 .Résultat
-La classification BlueXP commence à analyser les schémas de base de données que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+La classification BlueXP commence à analyser les schémas de base de données que vous avez activés. Vous pouvez suivre la progression de l'acquisition initiale en accédant au menu **Configuration** puis en sélectionnant la **Configuration de l'environnement de travail**. La progression de chaque acquisition est affichée sous la forme d'une barre de progression. Vous pouvez également passer le curseur de la souris sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
 
 La classification BlueXP  analyse vos bases de données une fois par jour. Les bases de données ne sont pas continuellement analysées comme d'autres sources de données.

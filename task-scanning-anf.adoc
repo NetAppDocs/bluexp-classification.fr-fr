@@ -59,7 +59,7 @@ Voir <<Activer et désactiver les analyses de conformité sur les volumes,Active
 
 
 .Résultat
-La classification BlueXP démarre l'analyse des volumes sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que les analyses initiales seront terminées par la classification BlueXP. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures.
+La classification BlueXP démarre l'analyse des volumes sélectionnés dans l'environnement de travail. Les résultats seront disponibles dans le tableau de bord de conformité dès que les analyses initiales seront terminées par la classification BlueXP. Le temps nécessaire dépend de la quantité de données--il peut être de quelques minutes ou heures. Vous pouvez suivre la progression de l'acquisition initiale en accédant au menu **Configuration** puis en sélectionnant la **Configuration de l'environnement de travail**. La progression de chaque acquisition est affichée sous la forme d'une barre de progression. Vous pouvez également passer le curseur de la souris sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume.
 
 [NOTE]
 ====

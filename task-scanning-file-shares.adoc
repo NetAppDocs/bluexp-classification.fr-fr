@@ -119,7 +119,7 @@ Si la boîte de dialogue répertorie tous les partages qui n'ont pas pu être aj
 Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 .Résultat
-La classification BlueXP commence à analyser les fichiers des partages de fichiers que vous avez ajoutés. Les résultats s'affichent dans le tableau de bord et à d'autres emplacements.
+La classification BlueXP commence à analyser les fichiers des partages de fichiers que vous avez ajoutés. Les résultats s'affichent dans le tableau de bord et à d'autres emplacements. Vous pouvez suivre la progression de l'acquisition initiale en accédant au menu **Configuration** puis en sélectionnant la **Configuration de l'environnement de travail**. La progression de chaque acquisition est affichée sous la forme d'une barre de progression. Vous pouvez également passer le curseur de la souris sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume.
 
 
 
