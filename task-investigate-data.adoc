@@ -25,7 +25,7 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir.
 
-Si vous souhaitez télécharger le contenu de la page en tant que rapport après l'avoir affiné, cliquez sur le bouton image:button_download.png["bouton télécharger"] bouton. <<Rapport d'enquête de données,Cliquez ici pour plus de détails sur le rapport d'enquête sur les données>>.
+Si vous souhaitez télécharger le contenu de la page sous forme de rapport après l'avoir affiné, sélectionnez le image:button_download.png["bouton télécharger"] bouton. <<Rapport d'enquête de données,Cliquez ici pour plus de détails sur le rapport d'enquête sur les données>>.
 
 image:screenshot_compliance_investigation_filtered.png["Capture d'écran des filtres disponibles lors du raffinage des résultats dans la page d'enquête."]
 
@@ -33,6 +33,9 @@ image:screenshot_compliance_investigation_filtered.png["Capture d'écran des fil
 * Les commandes situées en haut de chaque colonne vous permettent de trier les résultats par ordre numérique ou alphabétique.
 * Les filtres du volet gauche vous permettent d'affiner les résultats en sélectionnant les attributs décrits dans les sections suivantes.
 
+
+
+NOTE: Vous ne pouvez afficher que les 10,000 premiers résultats (ou les 500 premières pages) d'une analyse sur la page investigation de données.
 
 
 
@@ -204,7 +207,7 @@ Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans v
 
 == Afficher les métadonnées de fichier
 
-Dans le volet Résultats de l'enquête de données, vous pouvez cliquer sur image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit.
+Dans le volet Résultats de l'investigation de données, sélectionnez le bouton de la touche de navigation vers le bas image:button_down_caret.png["le bas-caret"]pour afficher les métadonnées du fichier.
 
 image:screenshot_compliance_file_details.png["Capture d'écran affichant les détails des métadonnées d'un fichier dans la page Data Investigation."]
 
@@ -216,15 +219,15 @@ Notez que toutes les informations ne sont pas disponibles pour toutes les source
 
 == Afficher les autorisations pour les fichiers et les répertoires
 
-Pour afficher la liste de tous les utilisateurs ou groupes qui ont accès à un fichier ou à un répertoire, ainsi que les types d'autorisations dont ils disposent, cliquez sur *Afficher toutes les autorisations*. Ce bouton est uniquement disponible pour les données des partages CIFS.
+Pour afficher la liste de tous les utilisateurs ou groupes ayant accès à un fichier ou à un répertoire et les types d'autorisations dont ils disposent, sélectionnez *Afficher toutes les autorisations*. Ce bouton est uniquement disponible pour les données des partages CIFS.
 
 Notez que si vous voyez des SID (identificateurs de sécurité) au lieu des noms d'utilisateur et de groupe, vous devez intégrer votre Active Directory dans la classification BlueXP. link:task-add-active-directory-datasense.html["Découvrez comment faire"].
 
 image:screenshot_compliance_permissions.png["Capture d'écran affichant des autorisations détaillées sur les fichiers."]
 
-Vous pouvez cliquer sur image:button_down_caret.png["le bas-caret"] pour tous les groupes pour voir la liste des utilisateurs qui font partie du groupe.
+Sélectionnez le bouton de la touche de direction vers le bas image:button_down_caret.png["le bas-caret"]de n'importe quel groupe pour afficher la liste des utilisateurs qui font partie du groupe.
 
-En outre, Vous pouvez cliquer sur le nom d'un utilisateur ou d'un groupe et la page Investigation s'affiche avec le nom de cet utilisateur ou groupe renseigné dans le filtre "autorisations utilisateur/groupe" pour que vous puissiez voir tous les fichiers et répertoires auxquels l'utilisateur ou le groupe a accès.
+La sélection du nom d'un utilisateur ou d'un groupe actualise la page Investigation pour vous permettre de voir tous les fichiers et répertoires auxquels l'utilisateur ou le groupe a accès.
 
 
 
@@ -246,9 +249,9 @@ Tous les fichiers dupliqués sont affichés dans la page Résultats.
 
 *Afficher si un fichier spécifique est dupliqué*
 
-Si vous souhaitez voir si un seul fichier contient des doublons, vous pouvez cliquer sur dans le volet Résultats de l'enquête de données image:button_down_caret.png["le bas-caret"] pour afficher les métadonnées de fichier, quel qu'il soit. Si un fichier est en double, ces informations apparaissent à côté du champ _Duplicates_.
+Si vous voulez voir si un seul fichier contient des doublons, dans le volet Résultats de l'investigation de données, sélectionnez image:button_down_caret.png["le bas-caret"] pour un seul fichier pour afficher les métadonnées du fichier. Si un fichier est en double, ces informations apparaissent à côté du champ _Duplicates_.
 
-Pour afficher la liste des fichiers dupliqués et leur emplacement, cliquez sur *Afficher les détails*. Dans la page suivante, cliquez sur *Afficher les doublons* pour afficher les fichiers de la page Investigation.
+Pour afficher la liste des fichiers en double et leur emplacement, sélectionnez *Afficher les détails*. Sur la page suivante, sélectionnez *Afficher les doublons* pour afficher les fichiers dans la page Investigation.
 
 image:screenshot_compliance_duplicate_file.png["Capture d'écran indiquant comment afficher l'emplacement des fichiers dupliqués."]
 
@@ -320,8 +323,9 @@ Le *Rapport de données structurées* comprend les informations suivantes sur vo
 
 
 .Étapes de génération du rapport
-. Dans la page Data Investigation, cliquez sur le bouton image:button_download.png["bouton télécharger"] en haut à droite de la page.
-. Sélectionnez pour télécharger un rapport .CSV ou .JSON des données, puis cliquez sur *Télécharger le rapport*.
+. Dans la page enquête sur les données, sélectionnez le image:button_download.png["bouton télécharger"] bouton en haut, à droite de la page.
+. Choisissez le type de rapport : CSV ou JSON et indiquez un **Nom de rapport**. Sélectionnez un **Environnement de travail** et **Volume** puis indiquez un **chemin du dossier de destination**.
+. Sélectionnez **Télécharger le rapport**.
 +
 image:screenshot_compliance_investigation_report2.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]
 
