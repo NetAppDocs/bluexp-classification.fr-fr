@@ -4,7 +4,7 @@ permalink: task-scanning-s3.html
 keywords: cloud compliance, amazon s3, s3 buckets, amazon s3 buckets, scan s3 buckets, scan amazon s3 buckets, enable compliance s3, enable compliance on s3, s3 working environment, data sense 
 summary: 'La classification BlueXP peut analyser vos compartiments Amazon S3 pour identifier les données personnelles et sensibles qui résident dans le stockage objet S3. La classification BlueXP peut analyser n"importe quel compartiment du compte, qu"il ait été créé pour une solution NetApp.' 
 ---
-= Analyse des compartiments Amazon S3
+= Analysez les compartiments Amazon S3 avec la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

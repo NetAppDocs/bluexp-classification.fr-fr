@@ -4,7 +4,7 @@ permalink: task-view-compliance-actions.html
 keywords: compliance, actions, view progress 
 summary: 'Lorsque vous exécutez une action à partir du volet Résultats de l"enquête sur de nombreux fichiers, par exemple la suppression de 100 fichiers, le processus peut prendre un certain temps. Vous pouvez surveiller l"état de ces actions asynchrones dans le volet Etat de l"action pour savoir quand elles ont été appliquées à tous les fichiers.' 
 ---
-= Affichage de l'état de vos actions de conformité
+= Consultez l'état de vos actions de conformité dans la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

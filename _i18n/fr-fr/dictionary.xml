@@ -510,7 +510,6 @@
   <block id="5b9fb0ae0b4de0994505f2df03117498" category="paragraph"><block ref="5b9fb0ae0b4de0994505f2df03117498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8afeb311b4ff23155bae9b80ec79273f" category="list-text">Vous pouvez désactiver la numérisation lente en cliquant sur *Désactiver* dans ce message.</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">Lorsque vous exécutez une action à partir du volet Résultats de l'enquête sur de nombreux fichiers, par exemple la suppression de 100 fichiers, le processus peut prendre un certain temps. Vous pouvez surveiller l'état de ces actions asynchrones dans le volet Etat de l'action pour savoir quand elles ont été appliquées à tous les fichiers.</block>
-  <block id="43ed2558da29e111d7b394e516d927d4" category="doc">Affichage de l'état de vos actions de conformité</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">Le statut peut être :</block>
   <block id="5cbd1d911aa6ea79882837fdb136a33c" category="paragraph">Notez que vous pouvez annuler toutes les actions ayant le statut « en attente » ou « en cours ».</block>
   <block id="b39cf2037c78736a4277e9a0bce85338" category="list-text">Cliquez sur ce bouton et les 20 actions les plus récentes sont répertoriées.</block>
@@ -2402,7 +2401,6 @@
   <block id="c28fe179e2385f26eb310f2d32183eea" category="list-text">À partir de la classification BlueXP version 1.24, vous pouvez effectuer des mises à niveau vers n'importe quelle version future du logiciel.</block>
   <block id="6d1c16ac15ccc187094a216f48771131" category="paragraph">Si votre logiciel de classification BlueXP exécute une version antérieure à 1.24, vous ne pouvez mettre à niveau qu'une seule version majeure à la fois. Par exemple, si la version 1.21.x est installée, vous ne pouvez mettre à niveau que vers la version 1.22.x. Si vous êtes quelques versions principales derrière, vous devrez mettre à niveau le logiciel à plusieurs reprises.</block>
   <block id="f02bee48d510d4c39a70c57e295d5f38" category="summary">Certaines fonctionnalités ne sont pas disponibles avec la classification BlueXP lorsque vous analysez des schémas de base de données.</block>
-  <block id="7aa098aa616e23b53a2f4243de4e4a07" category="doc">Capacités de base de données prises en charge et non prises en charge</block>
   <block id="f0061c0ade9d240d09f9bbadc2b27aa3" category="paragraph">Certaines fonctionnalités ne sont pas disponibles avec la classification BlueXP lorsque vous analysez des schémas de base de données. Voir la liste ci-dessous.</block>
   <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">comme décrit ici</block>
   <block id="f408878c9c22bd52607fe08b497546a4" category="paragraph">Vous pouvez ajouter vos schémas de base de données à la classification BlueXP pour les analyser <block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block>.</block>
@@ -2505,8 +2503,6 @@
   <block id="0ac331cece7c559ed07957dfa637e510" category="paragraph">Nous allons créer l'action de copie :</block>
   <block id="8ad0c8a225121bfff89f847893f0d610" category="paragraph">Cette API suivante est cette API d'action et elle vous permet de créer plusieurs actions.</block>
   <block id="87d1cd52d2ec66c4978b4d90f9069a04" category="paragraph">La réponse renvoie l'objet d'action, de sorte que vous pouvez utiliser les API GET et DELETE pour obtenir le statut de l'action ou pour l'annuler.</block>
-  <block id="fda538fb93989725ef231d5f156d3ee9" category="summary">Vous pouvez gérer le mode d'analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.</block>
-  <block id="43ec96609274e10e69e4ef1f50473aba" category="doc">Modifiez les paramètres de numérisation de vos référentiels</block>
   <block id="926f6a4e85f1593fffa7270c143e3ddb" category="paragraph">Vous pouvez modifier le type d'analyse d'un référentiel et déterminer si celui-ci exécute une <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.</block>
   <block id="5c7952df3d9c0233217acae5c6f1153d" category="list-text">Dans la page Configuration de l'analyse, vous pouvez modifier n'importe lequel des référentiels (rubriques dans cet exemple) pour effectuer des analyses *Map* ou *Map &amp; Classify*.</block>
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">Vous pouvez arrêter l'analyse d'un référentiel (par exemple, un volume) si vous n'avez plus besoin de le surveiller pour vérifier sa conformité. Pour ce faire, désactivez la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu.</block>
@@ -2612,7 +2608,6 @@
   <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">Comment accéder aux données ?</block>
   <block id="9e52028c48600512f13df2884f1ec709" category="paragraph">La classification BlueXP accède aux données stockées dans Elasticsearch via des appels API qui exigent une authentification et chiffrées à l'aide de AES-128. L'accès à Elasticsearch nécessite directement un accès racine.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d'identité pour les services d'authentification spécifiques à la prise en charge et à l'octroi de licences.</block>
-  <block id="b97835ec7267635dbdb6a030bb594b9b" category="doc">Afficher les détails de gouvernance sur les données stockées dans votre organisation</block>
   <block id="137856a117db72a4c07a63ed4622372f" category="section-title">Enregistrer les opportunités</block>
   <block id="747fb24cd2b94a7b0fc7076c4af2f2c2" category="paragraph">Voir <block ref="3648d3c4c92bd601fe477d66a90a40cd" category="inline-link-macro-rx"></block> pour en savoir plus.</block>
   <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">Voir <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> pour en savoir plus.</block>
@@ -2661,7 +2656,6 @@
   <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">Supprimez les fichiers source manuellement</block>
   <block id="a83bc0aa2bd876d7cc5a350879bd008c" category="section-title">Accédez aux fichiers journaux</block>
   <block id="ed6f72ce35fa37960b096efc305078ca" category="paragraph">Les résultats d'analyse sont stockés dans Elasticsearch dans votre instance de classification BlueXP.</block>
-  <block id="07b74cfb8b148331baaaa74d89dd4cec" category="doc">Afficher les rapports de conformité</block>
   <block id="8932e9435ce03fbb7ecf0b2f738ce66a" category="paragraph">Par défaut, les tableaux de bord de classification BlueXP affichent les données de conformité et de gouvernance pour tous les environnements de travail, bases de données et sources de données. Si vous souhaitez afficher des rapports contenant des données pour certains environnements de travail uniquement, <block ref="200c05d79644e6ad09afbf686b752513" category="inline-xref-macro-rx"></block>.</block>
   <block id="8fe6204e46726000832b41b57a8682fa" category="section-title">Générez le rapport d'évaluation des risques en matière de confidentialité</block>
   <block id="a278deb1b004bff80e79de1e339663d8" category="section-title">Générez le rapport PCI DSS</block>
@@ -2686,7 +2680,6 @@
   <block id="1a24f136700e7d996dbc845dbf267e7f" category="paragraph">Par le passé, vous pouviez déplacer jusqu'à 100,000 fichiers source vers n'importe quel partage NFS grâce à la classification BlueXP. Vous pouvez désormais déplacer jusqu'à 15 millions de fichiers à la fois.<block ref="51df0b03dbf1aa6425434a76a39934ae" category="inline-link-rx"></block>.</block>
   <block id="e8c2efb8e9d3b045395cb04412e0a901" category="paragraph"><block ref="3cbb63227aae75adda769f4ce4856356" category="inline-link-rx"></block>.</block>
   <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">Afficher les résultats de la police dans la page Investigation</block>
-  <block id="d78b3e7832ff9a2bb5655d9088bc9162" category="section-title">Envoyer des alertes par e-mail lorsque des données non conformes sont trouvées</block>
   <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">Modifier les règles</block>
   <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">Supprimer des règles</block>
   <block id="ea8e3558520841b9ad476460d59b798b" category="doc">Ajoutez des identifiants de données personnels à vos analyses de classification BlueXP</block>
@@ -2696,7 +2689,6 @@
   <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">Modifier le type de numérisation d'un référentiel</block>
   <block id="74a477b7e0bb4c7103127e1c4536e606" category="section-title">Arrêter la recherche d'un référentiel</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">Mettre en pause et reprendre l'analyse d'un référentiel</block>
-  <block id="86e9fad25d6f638eb7f7e437763b425e" category="section-title">Renumériser les données pour un référentiel existant</block>
   <block id="e3a146b1e8e087acabb6e5959293dcd8" category="sidebar">La classification BlueXP (Cloud Data Sense) vous permet d'analyser et de classer les données dans l'ensemble du multicloud hybride de votre entreprise. La classification BlueXP utilise le traitement du langage naturel (NLP) basé sur l'IA pour analyser vos données dans leur contexte et les catégoriser. Vous disposez ainsi d'informations exploitables pour répondre aux exigences de conformité, détecter les vulnérabilités, optimiser les coûts et accélérer la migration.</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Nouveautés</block>
   <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">Installez la classification BlueXP sur un hôte Linux avec Internet</block>
@@ -2771,7 +2763,6 @@
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Vous pouvez maintenant exclure les données de numérisation qui résident dans certains répertoires de sources de données</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration traité par la classification BlueXP. Cette fonction vous permet d'éviter d'analyser des répertoires qui ne sont pas nécessaires ou qui pourraient renvoyer de faux résultats positifs pour les données personnelles.</block>
   <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
-  <block id="a1663078538acf931413c4667ee4dc32" category="doc">Définissez des ID de groupe supplémentaires comme ouverts à l'organisation</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Afficher la liste actuelle des ID de groupe</block>
   <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Créez des stratégies pour afficher les résultats de vos principales recherches</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Exclure les répertoires de l'analyse</block>
@@ -2944,12 +2935,10 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="6848f77eb8f7353d0c3236059ebaaf21" category="inline-image-macro">Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud. L'instance de classification BlueXP se connecte aux volumes NFS et CIFS et aux bases de données pour les analyser.</block>
   <block id="f31407ab57663d0b8405a252cf603c20" category="paragraph"><block ref="f31407ab57663d0b8405a252cf603c20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b40a529e19b349b56269e632043e4fe8" category="paragraph">Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de la base de données.</block>
-  <block id="493287f21a2aa7f90cebc83c869352a4" category="doc">Examinez les données stockées sur la page enquête sur les données</block>
   <block id="df49368049d4a11c63d1acd4766aae12" category="paragraph">Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou stratégies.</block>
   <block id="3bebc15b7ececd939dbb2e1037e2bd21" category="paragraph">*REMARQUE* la possibilité de filtrer par balises, étiquettes et utilisateurs affectés n'est pertinente que pour les versions de classification BlueXP 1.30 et antérieures.</block>
   <block id="f14bc34b4556666076ab4085c418beac" category="section-title">Créer le rapport d'enquête sur les données</block>
   <block id="895e384b0c43f21c0943fc3c1bf729a0" category="paragraph">*NOTE* la capacité de générer le rapport dans . Le format JSON est pertinent uniquement pour les versions de classification BlueXP 1.30 et antérieures.</block>
-  <block id="c5ba748f583fe4223c75a9034de9dce2" category="doc">Affichez les détails de gouvernance de vos données à l'aide du tableau de bord gouvernance</block>
   <block id="adcf97e371b51b3ef5db6975bde3d5f6" category="section-title">Données répertoriées par sensibilité et autorisations étendues dans le tableau de bord de gouvernance</block>
   <block id="c931a13b5b1b3b46f4605e5202c47eb9" category="paragraph">La zone _données sensibles et autorisations étendues_ du tableau de bord gouvernance fournit une carte thermique des fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissifs. Cela vous aide à déterminer les risques liés aux données sensibles.</block>
   <block id="b532da7497718d74daf0199075ee34b0" category="admonition">Cela s'applique aux versions 1.30 et antérieures de la classification BlueXP.</block>
@@ -3102,7 +3091,6 @@ REMARQUE : la version de décembre 2023 (version 1.26.6) a supprimé l'option pe
   <block id="f614278f8ed5632a7d1b8328e4f9380e" category="list-text">*Sexe vie ou orientation référence* : données concernant la vie sexuelle ou l'orientation sexuelle d'une personne physique.</block>
   <block id="374b37a5e415f7edd5cf6f52521389b8" category="list-text">Fils d'Ariane dans la classification BlueXP
 Données d'applications d'entreprise</block>
-  <block id="1903cd6e75503b7859268e96d356ea13" category="doc">Afficher les détails de conformité des données privées stockées dans votre organisation</block>
   <block id="aa7740206cc512120060a1c060de9543" category="paragraph">Prenez le contrôle de vos données personnelles en consultant les informations relatives aux données personnelles (PII) et aux données personnelles sensibles (SPII) de votre entreprise. Vous pouvez également gagner en visibilité en passant en revue les catégories et les types de fichiers classés par BlueXP dans vos données.</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntu pris en charge</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">Cette version prend en charge la plate-forme Linux Ubuntu 24.04.</block>
@@ -3412,4 +3400,29 @@ Données d'applications d'entreprise</block>
   <block id="9dbaf2723509754918929e09594f8800" category="list-text">Dans la page enquête sur les données, sélectionnez le <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> bouton en haut, à droite de la page.</block>
   <block id="c290efd7814d022961f943c1af408a6f" category="list-text">Choisissez le type de rapport : CSV ou JSON et indiquez un **Nom de rapport**. Sélectionnez un **Environnement de travail** et **Volume** puis indiquez un **chemin du dossier de destination**.</block>
   <block id="8c574751ceb947fcd2a71198a9109d98" category="list-text">Sélectionnez **Télécharger le rapport**.</block>
+  <block id="ac388a00980404a1045abf70041973da" category="doc">Métadonnées collectées à partir de sources de données dans la classification BlueXP </block>
+  <block id="ded3f24219262642ca838641453e4d1b" category="doc">Fonctionnalités de base de données prises en charge et non prises en charge dans la classification BlueXP </block>
+  <block id="1c7cd9818fa418a74067072fbf72688f" category="doc">Limitations connues dans la classification BlueXP </block>
+  <block id="05dfdacc680b9436fb78de4fb656af88" category="doc">Catégories de données privées classées par BlueXP </block>
+  <block id="e8a464a220840b352197594e04661f3e" category="doc">Définissez des ID de groupe supplémentaires comme ouverts à l'organisation dans la classification BlueXP </block>
+  <block id="b5ec1360131f1e423a75324d0efc44f0" category="doc">Affichez les détails de gouvernance relatifs à vos données à l'aide du tableau de bord gouvernance de classification BlueXP </block>
+  <block id="76ef2414276f8879430858a21291789c" category="doc">Affichez les détails de gouvernance sur les données stockées dans votre entreprise avec la classification BlueXP </block>
+  <block id="511cd9560854198c9959a180d13c7867" category="doc">Affichez les détails de conformité sur les données privées stockées dans votre entreprise avec la classification BlueXP </block>
+  <block id="b5d93be173a184a4fb6db8a39efd574d" category="doc">Consultez les rapports de conformité à la classification BlueXP </block>
+  <block id="85d2f6a5391a9076821c031dc32f719c" category="doc">Obtenez de l'aide pour la classification BlueXP </block>
+  <block id="bc4afc67652efc7bb46ea216ef816335" category="doc">Examinez les données stockées sur la page enquête sur les données de classification BlueXP </block>
+  <block id="6b41c846432704bbeebdc71cd92e0ac2" category="doc">Analysez les données stockées dans votre entreprise avec la classification BlueXP </block>
+  <block id="26518067b705171b7a519040ef4d3e8d" category="doc">Gérez vos données privées grâce à la classification BlueXP </block>
+  <block id="f9a1c072a8a2ed1caed0ec764af24540" category="summary">Vous pouvez gérer le mode d'analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez apporter les modifications dans un référentiel, ce qui signifie que vous pouvez apporter des modifications à chaque volume, compartiment, partage, schéma, utilisateur, etc. En fonction du type de source de données que vous analysez.</block>
+  <block id="a57cc3ea6135535b80c7952038f60bd1" category="doc">Renumériser les données d'un référentiel existant avec classification BlueXP </block>
+  <block id="183d7397a151f6a26c073f1c6074c9ee" category="doc">Modifiez les paramètres d'analyse de classification BlueXP  pour vos référentiels</block>
+  <block id="c1d1bad1e287161eaa040e61fdc83bf4" category="doc">Organisez vos données privées avec la classification BlueXP </block>
+  <block id="6a518a4dfd914c13784b960912600ad9" category="doc">Analysez les comptes Google Drive avec la classification BlueXP </block>
+  <block id="2dbd2a514d84b364607087d77e299402" category="doc">Analysez les comptes OneDrive avec la classification BlueXP </block>
+  <block id="87df97a3437e4de140c071b1660bff5f" category="doc">Analysez les compartiments Amazon S3 avec la classification BlueXP </block>
+  <block id="6915401740d9460ed0e142b3fd0b402c" category="doc">Analysez les comptes SharePoint avec la classification BlueXP </block>
+  <block id="df3ac8bd169a771ea350cd5cc533e873" category="doc">S'inscrire au support BlueXP </block>
+  <block id="c0a6118312ef4878e08365a032d30e38" category="doc">Envoyer des alertes par e-mail lorsque la classification BlueXP  détecte des données non conformes</block>
+  <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">Attribuez des règles à vos données grâce à la classification BlueXP </block>
+  <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">Consultez l'état de vos actions de conformité dans la classification BlueXP </block>
 </blocks>

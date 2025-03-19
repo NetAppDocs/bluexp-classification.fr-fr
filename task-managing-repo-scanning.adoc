@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification, bluexp 
 summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vos environnements de travail et sources de données dans la classification BlueXP. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.' 
 ---
-= Modifiez les paramètres de numérisation de vos référentiels
+= Modifiez les paramètres d'analyse de classification BlueXP  pour vos référentiels
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

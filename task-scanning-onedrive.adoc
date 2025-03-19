@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: Procédez en quelques étapes pour commencer à analyser les fichiers dans les dossiers OneDrive de votre utilisateur avec la classification BlueXP. 
 ---
-= Analysez les comptes OneDrive
+= Analysez les comptes OneDrive avec la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

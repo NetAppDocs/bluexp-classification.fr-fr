@@ -4,7 +4,7 @@ permalink: task-using-policies-deprecated.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation. 
 ---
-= Envoyer des alertes par e-mail lorsque des données non conformes sont trouvées
+= Envoyer des alertes par e-mail lorsque la classification BlueXP  détecte des données non conformes
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

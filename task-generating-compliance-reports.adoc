@@ -4,7 +4,7 @@ permalink: task-generating-compliance-reports.html
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
 summary: 'La classification BlueXP fournit des rapports qui vous permettent de mieux comprendre l"état du programme de confidentialité des données de votre entreprise.' 
 ---
-= Afficher les rapports de conformité
+= Consultez les rapports de conformité à la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

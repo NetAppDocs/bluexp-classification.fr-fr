@@ -4,7 +4,7 @@ permalink: task-investigate-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: 'Vous pouvez examiner les données de votre organisation en affichant les détails dans la page recherche de données. Vous pouvez naviguer jusqu"à cette page à partir de plusieurs sections de l"interface de classification BlueXP, y compris les tableaux de bord gouvernance et conformité.' 
 ---
-= Examinez les données stockées dans votre organisation
+= Analysez les données stockées dans votre entreprise avec la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

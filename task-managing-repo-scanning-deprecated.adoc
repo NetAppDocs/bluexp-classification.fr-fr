@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning-deprecated.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications selon le référentiel ; vous pouvez donc modifier chaque volume, compartiment, partage, schéma, utilisateur, etc. selon le type de source de données que vous numérisez.' 
+summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez apporter les modifications dans un référentiel, ce qui signifie que vous pouvez apporter des modifications à chaque volume, compartiment, partage, schéma, utilisateur, etc. En fonction du type de source de données que vous analysez.' 
 ---
-= Renumériser les données pour un référentiel existant
+= Renumériser les données d'un référentiel existant avec classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
