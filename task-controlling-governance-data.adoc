@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux. 
 ---
 = Affichez les détails de gouvernance sur les données stockées dans votre entreprise avec la classification BlueXP 
@@ -20,121 +20,106 @@ En outre, si vous prévoyez de migrer des données depuis des emplacements sur s
 
 
 
-== Tableau de bord gouvernance
+== Passez en revue le tableau de bord gouvernance
 
 Le tableau de bord de gouvernance fournit des informations vous permettant d'améliorer votre efficacité et de contrôler les coûts liés aux données stockées sur vos ressources de stockage.
 
 image:screenshot_compliance_governance_dashboard.png["Capture d'écran du tableau de bord BlueXP classification Governance."]
 
-
-
-=== Enregistrer les opportunités
-
-Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir s'il y a des données que vous devez supprimer ou mettre en Tier vers un stockage objet moins coûteux. Cliquez sur chaque élément pour afficher les résultats filtrés dans la page Investigation.
-
-* *Données obsolètes* - données qui ont été modifiées pour la dernière fois il y a 3 ans.
-* *Données non commerciales* - données considérées comme non liées à l'entreprise, en fonction de leur catégorie ou de leur type de fichier. Les points suivants sont notamment :
+.Étapes
+. Dans le menu BlueXP , sélectionnez *gouvernance > Classification*.
+. Sélectionnez *gouvernance*.
 +
-** Données applicatives
-** Audio
-** Exécutables
-** Images
-** Journaux
-** Vidéos
-** Divers (catégorie « autre » générale)
-
-
-* *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#filter-data-by-duplicates["Voir quels types de fichiers dupliqués sont affichés"].
+Le tableau de bord gouvernance s'affiche.
 
 
 
-NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données obsolètes_.
+
+
+=== Consultez les opportunités d'économies
+
+Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir s'il y a des données que vous devez supprimer ou mettre en Tier vers un stockage objet moins coûteux.
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans chaque mosaïque opportunités d'économies du tableau de bord gouvernance, sélectionnez *optimiser le stockage* pour afficher les résultats filtrés dans la page Investigation.
++
+** *Données obsolètes* - données qui ont été modifiées pour la dernière fois il y a 3 ans.
+** *Données non commerciales* - données considérées comme non liées à l'entreprise, en fonction de leur catégorie ou de leur type de fichier. Les points suivants sont notamment :
++
+*** Données applicatives
+*** Audio
+*** Exécutables
+*** Images
+*** Journaux
+*** Vidéos
+*** Divers (catégorie « autre » générale)
+
+
+** *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#filter-data-by-duplicates["Voir quels types de fichiers dupliqués sont affichés"].
 
 
 
-=== Règles avec le plus grand nombre de résultats
 
-Dans la zone _Policies_, les politiques avec le plus grand nombre de résultats apparaissent en haut de la liste. Cliquez sur le nom d'une police pour afficher les résultats dans la page Investigation. Cliquez sur *Afficher tout* pour afficher la liste de toutes les stratégies disponibles.
 
-Cliquez sur link:task-using-policies.html["ici"] Pour en savoir plus sur les politiques.
+NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données_obsolètes.
 
 
 
-=== Présentation des données
+=== Examiner les politiques avec le plus grand nombre de résultats
 
-La section _Data Overview_ fournit un aperçu rapide de toutes les données en cours d'acquisition. Cliquez sur le bouton pour télécharger un rapport de mappage de données complet incluant la capacité d'utilisation, l'âge des données, la taille des données et les types de fichiers pour tous vos environnements de travail et toutes vos sources de données. Voir <<Rapport de mappage de données,Rapport de mappage de données>> pour plus d'informations sur ce rapport.
+Dans la zone _Policies_, les politiques affichant le plus grand nombre de résultats apparaissent en haut de la liste.
 
-
-
-=== Principaux référentiels de données répertoriés par sensibilité des données
-
-La zone _Top Data Repositories by Sensitivity Level_ répertorie les quatre principaux référentiels de données (environnements de travail et sources de données) qui contiennent les éléments les plus sensibles. Le graphique à barres de chaque environnement de travail est divisé en :
-
-* Données non sensibles
-* Données personnelles
-* Données personnelles sensibles
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans la mosaïque Tableau de bord Goverance > stratégies, sélectionnez le nom d'une règle dans le pour afficher les résultats dans la page Investigation.
+. Sélectionnez *Afficher tout* pour afficher la liste de toutes les stratégies disponibles.
 
 
-Vous pouvez placer votre curseur sur chaque section pour voir le nombre total d'éléments dans chaque catégorie.
-
-Cliquez sur chaque zone pour afficher les résultats filtrés dans la page Investigation afin que vous puissiez approfondir votre recherche.
+Pour plus de détails sur les stratégies, reportez-vous à link:task-using-policies.html["Attribuez des règles à vos données"]la section .
 
 
 
-=== Données répertoriées par type d'autorisations ouvertes
+== Créez le rapport d'évaluation de la découverte de données
 
-La zone _Ouvrir autorisations_ affiche le pourcentage pour chaque type d'autorisations existant pour tous les fichiers en cours d'analyse. Le graphique montre les types d'autorisations suivants :
+Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de l'environnement analysé afin de montrer les points préoccupants et les étapes de correction potentielles. Les résultats sont basés à la fois sur le mappage et la classification de vos données. L'objectif de ce rapport est de sensibiliser les clients à trois aspects importants de leur dataset :
 
-* Aucune autorisation ouverte
-* Ouvert à l'organisation
-* Ouvert au public
-* Accès inconnu
-
-
-Vous pouvez placer votre curseur sur chaque section pour voir le nombre total de fichiers dans chaque catégorie. Cliquez sur chaque zone pour afficher les résultats filtrés dans la page Investigation afin que vous puissiez approfondir votre recherche.
+[cols="25,65"]
+|===
+| Fonction | Description 
 
 
-
-=== Age des données et taille des données graphiques
-
-Vous pouvez étudier les éléments des graphiques _Age_ et _Size_ afin de voir s'il y a des données que vous devez supprimer ou placer dans un stockage objet moins coûteux.
-
-Vous pouvez placer votre curseur sur un point des graphiques pour afficher des détails sur l'âge ou la taille des données de cette catégorie. Cliquez pour afficher tous les fichiers filtrés en fonction de l'âge ou de la plage de tailles.
-
-* *Age of Data Graph* - catégorise les données en fonction de l'heure de création, de la dernière fois où il a été accédé ou de la dernière fois qu'il a été modifié.
-* *Taille du graphique de données* - classe les données en fonction de leur taille.
+| Problèmes de gouvernance des données | Une vue d'ensemble détaillée de toutes les données que vous possédez et des zones dans lesquelles vous pouvez réduire la quantité de données pour réduire les coûts. 
 
 
-
-NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans le graphique _Age of Data_.
-
+| Risques liés à la sécurité des données | Zones où vos données sont accessibles pour les attaques internes ou externes en raison d'autorisations d'accès étendues. 
 
 
-=== Classification des données la plus identifiée
+| Lacunes en matière de conformité des données | Où se trouvent vos informations personnelles ou sensibles à des fins de sécurité et pour les DSAR (demandes d'accès des sujets de données). 
+|===
+À l'aide de ce rapport, vous pouvez effectuer les actions suivantes :
 
-La zone _Classification_ fournit une liste des plus identifiés link:task-controlling-private-data.html#view-files-by-categories["Catégories"^] et link:task-controlling-private-data.html#view-files-by-file-types["Types de fichiers"^] dans vos données numérisées.
+* Réduisez les coûts du stockage en modifiant votre règle de conservation, ou en déplaçant ou en supprimant certaines données (obsolètes, dupliquées ou non stratégiques).
+* Protégez vos données qui disposent de larges autorisations en modifiant les stratégies de gestion de groupe globales.
+* Protégez vos données personnelles ou sensibles en déplaçant vos IIP vers des magasins de données plus sécurisés.
+
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans la section Tableau de bord gouvernance > vue d'ensemble des données, sélectionnez le bouton *Rapport d'évaluation de découverte des données*.
++
+image:screenshot-compliance-report-buttons.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport d'évaluation de découverte de données."]
 
 
 
-==== Catégories
-
-Les catégories peuvent vous aider à comprendre ce qui se passe avec vos données en vous montrant les types d'informations dont vous disposez. Par exemple, une catégorie telle que « CV » ou « contrats employés » peut inclure des données sensibles. Lorsque vous examinez les résultats, vous pouvez constater que les contrats d'employés sont stockés dans un emplacement non sécurisé. Vous pouvez ensuite corriger ce problème.
-
-Voir link:task-controlling-private-data.html#view-files-by-categories["Affichage des fichiers par catégories"^] pour en savoir plus.
+.Résultat
+La classification BlueXP génère un rapport au format .PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
 
 
 
-==== Types de fichiers
+== Créez le rapport de présentation du mappage de données
 
-La vérification de vos types de fichiers peut vous aider à contrôler vos données sensibles car il se peut que certains types de fichiers ne soient pas stockés correctement.
-
-Voir link:task-controlling-private-data.html#view-files-by-file-types["Affichage des types de fichiers"^] pour en savoir plus.
-
-
-
-== Rapport de mappage de données
-
-Le rapport de mappage de données offre une vue d'ensemble des données stockées dans les sources de données de votre entreprise pour vous aider à prendre des décisions concernant la migration, la sauvegarde, la sécurité et les processus de conformité. Le rapport répertorie d'abord une vue d'ensemble qui résume l'ensemble de vos environnements de travail et sources de données, puis fournit une analyse pour chaque environnement de travail.
+Le rapport de présentation du mappage de données fournit une vue d'ensemble des données stockées dans vos sources de données d'entreprise pour vous aider à prendre des décisions concernant les processus de migration, de sauvegarde, de sécurité et de conformité. Le rapport répertorie d'abord une vue d'ensemble qui résume l'ensemble de vos environnements de travail et sources de données, puis fournit une analyse pour chaque environnement de travail.
 
 Le rapport contient les informations suivantes :
 
@@ -154,18 +139,13 @@ Le rapport contient les informations suivantes :
 
 | Types de fichiers | Indique le nombre total de fichiers et la capacité utilisée pour chaque type de fichier stocké dans vos environnements de travail. 
 |===
-
-
-=== Générez le rapport de mappage de données
-
-Ce rapport est généré à partir de l'onglet gouvernance de la classification BlueXP.
-
 .Étapes
-. Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *gouvernance*, puis sur le bouton *Rapport de mappage des données*.
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans la section Tableau de bord gouvernance > vue d'ensemble des données, sélectionnez le bouton *Rapport de vue d'ensemble de la cartographie des données complètes*.
 +
-image:screenshot_compliance_data_mapping_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
+image:screenshot-compliance-report-buttons.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
 
+. Pour personnaliser le nom de la société qui apparaît sur la première page du rapport, dans le haut de la page de classification BlueXP , sélectionnez image:screenshot_gallery_options.gif["Le bouton plus"]. Sélectionnez ensuite *changer le nom de la société*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 
 .Résultat
@@ -173,47 +153,107 @@ La classification BlueXP génère un rapport au format .PDF que vous pouvez exam
 
 Si la taille du rapport est supérieure à 1 Mo, le fichier .PDF est conservé dans l'instance de classification BlueXP et un message contextuel s'affiche pour vous informer de l'emplacement exact. Lorsque la classification BlueXP est installée sur une machine Linux de votre site ou sur une machine Linux que vous avez déployée dans le cloud, vous pouvez accéder directement au fichier .PDF. Lorsque la classification BlueXP est déployée dans le cloud, vous devez SSH vers l'instance de classification BlueXP pour télécharger le fichier .PDF. link:task-audit-data-sense-actions.html#access-the-log-files["Voir comment accéder aux données sur l'instance de classification"^].
 
-Notez que vous pouvez personnaliser le nom de l'entreprise qui apparaît sur la première page du rapport en partant du haut de la page de classification BlueXP en cliquant sur image:screenshot_gallery_options.gif["Le bouton plus"] Puis cliquez sur *changer le nom de l'entreprise*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 
+== Consultez les principaux référentiels de données répertoriés par sensibilité des données
 
-== Rapport d'évaluation de découverte de données
+La zone _Top Data Repositories by Sensitivity Level_ répertorie les quatre principaux référentiels de données (environnements de travail et sources de données) qui contiennent les éléments les plus sensibles. Le graphique à barres de chaque environnement de travail est divisé en :
 
-Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de l'environnement analysé afin de mettre en évidence les résultats du système et de montrer les points préoccupants et les étapes de correction potentielles. Les résultats sont basés à la fois sur le mappage et la classification de vos données. L'objectif de ce rapport est de sensibiliser les clients à trois aspects importants de leur dataset :
+* Données non sensibles
+* Données personnelles
+* Données personnelles sensibles
 
-[cols="25,65"]
-|===
-| Fonction | Description 
-
-
-| Problèmes de gouvernance des données | Une vue d'ensemble détaillée de toutes les données que vous possédez et des zones dans lesquelles vous pouvez réduire la quantité de données pour réduire les coûts. 
-
-
-| Risques liés à la sécurité des données | Zones où vos données sont accessibles pour les attaques internes ou externes en raison d'autorisations d'accès étendues. 
-
-
-| Lacunes en matière de conformité des données | Où se trouvent vos informations personnelles ou sensibles à des fins de sécurité et pour les DSAR (demandes d'accès des sujets de données). 
-|===
-Après l'évaluation, ce rapport identifie les domaines dans lesquels vous pouvez :
-
-* Réduction des coûts du stockage en modifiant votre règle de conservation, ou en déplaçant ou en supprimant certaines données (obsolètes, dupliquées ou non stratégiques)
-* Protégez vos données qui disposent de larges autorisations en modifiant les stratégies de gestion de groupe globales
-* Protégez vos données personnelles ou sensibles en déplaçant vos IIP vers des magasins de données plus sécurisés
-
-
-
-
-=== Générez le rapport d'évaluation de la découverte de données
-
-Ce rapport est généré à partir de l'onglet gouvernance de la classification BlueXP.
 
 .Étapes
-. Dans le menu BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *gouvernance*, puis sur le bouton *Rapport d'évaluation de la découverte de données*.
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans la section Tableau de bord gouvernance > Présentation des données, pour voir le nombre total d'éléments dans chaque catégorie, placez votre curseur sur chaque section de la barre.
+. Pour filtrer les résultats qui apparaîtront dans la page Investigation, sélectionnez chaque zone ib dans la barre et examinez-les plus loin.
+
+
+
+
+== Passez en revue les données sensibles et les autorisations étendues
+
+La zone _données sensibles et autorisations étendues_ affiche le pourcentage de fichiers contenant des données sensibles et ayant des autorisations étendues. Le graphique montre les types d'autorisations suivants :
+
+* Des autorisations les plus restrictives aux restrictions les plus permissives sur l'axe horizontal.
+* Des données les moins sensibles aux données les plus sensibles de l'axe vertical.
+
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans la section Tableau de bord gouvernance > données sensibles et autorisations étendues, pour voir le nombre total de fichiers dans chaque catégorie, placez votre curseur sur chaque case.
+. Pour filtrer les résultats qui apparaîtront dans la page Investigation, sélectionnez une case et recherchez plus loin.
+
+
+
+
+== Consultez les données répertoriées par type d'autorisations ouvertes
+
+La zone _Ouvrir autorisations_ affiche le pourcentage pour chaque type d'autorisations existant pour tous les fichiers en cours d'analyse. Le graphique montre les types d'autorisations suivants :
+
+* Aucune autorisation ouverte
+* Ouvert à l'organisation
+* Ouvert au public
+* Accès inconnu
+
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans le tableau de bord gouvernance > Ouvrir les autorisations, pour voir le nombre total de fichiers dans chaque catégorie, placez votre curseur sur chaque case.
+. Pour filtrer les résultats qui apparaîtront dans la page Investigation, sélectionnez une case et recherchez plus loin.
+
+
+
+
+== Vérifiez l'âge et la taille des données
+
+Vous pouvez examiner les éléments des graphiques _Age_ et _Size_ pour voir s'il y a des données que vous devez supprimer ou transférer vers un stockage objet moins coûteux.
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans le tableau Age des données du tableau de bord gouvernance, pour afficher des détails sur l'âge des données, placez votre curseur sur un point du graphique.
+. Pour filtrer par tranche d'âge ou par plage de taille, sélectionnez cette taille ou cette taille.
 +
-image:screenshot_compliance_data_discovery_report_button.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport d'évaluation de découverte de données."]
+** *Age of Data Graph* - catégorise les données en fonction de l'heure de création, de la dernière fois où il a été accédé ou de la dernière fois qu'il a été modifié.
+** *Taille du graphique de données* - classe les données en fonction de leur taille.
 
 
 
-.Résultat
-La classification BlueXP génère un rapport au format .PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
+
+
+NOTE: Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans le graphique _Age of Data_.
+
+
+
+== Passez en revue les classifications de données les plus identifiées
+
+La zone _Classification_ fournit une liste des plus identifiés link:task-controlling-private-data.html#view-files-by-categories["Catégories"^] et link:task-controlling-private-data.html#view-files-by-file-types["Types de fichiers"^] dans vos données numérisées.
+
+
+
+=== Passez en revue les catégories de classification les plus identifiées
+
+Les catégories peuvent vous aider à comprendre ce qui se passe avec vos données en vous montrant les types d'informations dont vous disposez. Par exemple, une catégorie telle que « CV » ou « contrats employés » peut inclure des données sensibles. Lorsque vous examinez les résultats, vous pouvez constater que les contrats d'employés sont stockés dans un emplacement non sécurisé. Vous pouvez ensuite corriger ce problème.
+
+Voir link:task-controlling-private-data.html#view-files-by-categories["Affichage des fichiers par catégories"^] pour en savoir plus.
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans le tableau de bord gouvernance > section Classification > mosaïque catégories, pour afficher les détails d'une catégorie, sélectionnez-la. La page Investigation fournit des données filtrées pour cette catégorie uniquement.
+. Pour afficher toutes les catégories, sélectionnez *Afficher tout*.
+
+
+
+
+=== Consultez les types de fichiers les plus identifiés
+
+La vérification de vos types de fichiers peut vous aider à contrôler vos données sensibles car il se peut que certains types de fichiers ne soient pas stockés correctement.
+
+Voir link:task-controlling-private-data.html#view-files-by-file-types["Affichage des types de fichiers"^] pour en savoir plus.
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
+. Dans le tableau de bord gouvernance > section Classification > mosaïque types de fichiers, pour afficher des détails sur un type de fichier, sélectionnez-le dans la section types de fichiers du tableau de bord gouvernance. La page Investigation fournit des données filtrées pour ce type de fichier uniquement.
+. Pour afficher tous les types de fichiers, sélectionnez *Afficher tout*.
+
