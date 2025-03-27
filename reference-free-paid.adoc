@@ -130,7 +130,7 @@ Certaines fonctionnalités sont obsolètes dans la version principale de BlueXP 
 | Rechercher des noms dans les fichiers | Oui. | Oui. 
 
 
-| Exporter les données vers NFS à partir de l'investigation | Oui. | Non 
+| Exportation des données vers NFS/CIFS depuis l'investigation | Oui. | Oui. 
 
 
 | Exporter les données au format CSV à partir de l'investigation | Oui. | Oui. 

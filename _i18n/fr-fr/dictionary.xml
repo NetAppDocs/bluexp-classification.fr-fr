@@ -2808,7 +2808,6 @@
   <block id="e733fac5486f188071518c3c8ce9b02a" category="cell">Attribuer des fichiers aux utilisateurs</block>
   <block id="6505506a35d1d959ffb20a74a4238de6" category="cell">Renumériser les données à la demande</block>
   <block id="5f571f0f56802124061d64f7f5dac503" category="cell">Créez des classificateurs personnalisés</block>
-  <block id="46771ec1582c3b0b4aebfc19d6356451" category="cell">Exporter les données vers NFS à partir de l'investigation</block>
   <block id="5b161cf169bcf6263a5f04b0a0b391d6" category="cell">Prend en charge plusieurs scanners</block>
   <block id="8c141aa1a70ce21adac81217b9589d0d" category="cell">Utilisez l'analyse des autorisations et les filtres</block>
   <block id="dc9ece481b86d8d5c76d638da3baebab" category="cell">Utilisez la carte de fichier</block>
@@ -3441,4 +3440,8 @@ Données d'applications d'entreprise</block>
   <block id="ca304384fad03eae82a8e99a165128d0" category="section-title">Consultez les types de fichiers les plus identifiés</block>
   <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">Dans le tableau de bord gouvernance &gt; section Classification &gt; mosaïque types de fichiers, pour afficher des détails sur un type de fichier, sélectionnez-le dans la section types de fichiers du tableau de bord gouvernance. La page Investigation fournit des données filtrées pour ce type de fichier uniquement.</block>
   <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">Pour afficher tous les types de fichiers, sélectionnez *Afficher tout*.</block>
+  <block id="93a41f9744586b4edf90898527b71531" category="cell">Exportation des données vers NFS/CIFS depuis l'investigation</block>
+  <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">Les fichiers sont divisés en fichiers avec un nombre fixe de lignes ou d'enregistrements :</block>
+  <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000 enregistrements</block>
+  <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100,000 enregistrements</block>
 </blocks>
