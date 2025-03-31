@@ -1,0 +1,258 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-overview.html 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
+summary: Analysez les sources de données avec la classification BlueXP . 
+---
+= Analyser les sources de données avec la classification BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La classification BlueXP  scrute les données des référentiels (les volumes, les schémas de base de données ou autres données utilisateur) que vous sélectionnez pour identifier les données personnelles et sensibles. La classification BlueXP  mappe ensuite vos données d'entreprise, classe chaque fichier et identifie des modèles prédéfinis dans les données. Le résultat de l'analyse est un index des informations personnelles, des données personnelles sensibles, des catégories de données et des types de fichiers.
+
+Après l'analyse initiale, la classification BlueXP  analyse en continu vos données selon une séquence périodique pour détecter les modifications incrémentielles. C'est pourquoi il est important de maintenir l'instance en cours d'exécution.
+
+Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de la base de données.
+
+
+
+== Quelle est la différence entre les acquisitions de mappage et de classification
+
+Vous pouvez effectuer deux types d'acquisitions dans la classification BlueXP  :
+
+* **Les acquisitions cartographiques uniquement** ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectuées sur des sources de données sélectionnées. Les analyses de mappage uniquement prennent moins de temps que les analyses de mappage et de classification car elles n'accèdent pas aux fichiers pour voir les données qu'elles contiennent. Vous pouvez commencer par identifier les domaines de recherche, puis effectuer une analyse carte et classification sur ces domaines.
+* **Cartographiez et classifiez les acquisitions** fournissent une analyse de niveau profond de vos données.
+
+
+Le tableau ci-dessous présente certaines des différences :
+
+[cols="47,18,18"]
+|===
+| Fonction | Cartographiez et classez les analyses | Analyses de mappage uniquement 
+
+
+| Vitesse de numérisation | Lentes | Rapides 
+
+
+| Tarifs | Libre | Libre 
+
+
+| Puissance | Limité à 500 To | Limité à 500 To 
+
+
+| Liste des types de fichiers et de la capacité utilisée | Oui. | Oui. 
+
+
+| Nombre de fichiers et capacité utilisée | Oui. | Oui. 
+
+
+| Âge et taille des fichiers | Oui. | Oui. 
+
+
+| Exécution d'un link:task-controlling-governance-data.html#data-mapping-report["Rapport de mappage de données"] | Oui. | Oui. 
+
+
+| Page Data Investigation pour afficher les détails du fichier | Oui. | Non 
+
+
+| Rechercher des noms dans les fichiers | Oui. | Non 
+
+
+| Création link:task-using-policies.html["stratégies"] fournissant des résultats de recherche personnalisés | Oui. | Non 
+
+
+| Possibilité d'exécuter d'autres rapports | Oui. | Non 
+
+
+| Possibilité de voir les métadonnées des fichiers* | Non | Oui. 
+|===
+*Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage :
+
+* Environnement de travail
+* Type d'environnement de travail
+* Référentiel de stockage
+* Type de fichier
+* Capacité utilisée
+* Nombre de fichiers
+* Taille du fichier
+* Création de fichier
+* Dernier accès au fichier
+* Dernier fichier modifié
+* Heure de découverte du fichier
+* Extraction des autorisations
+
+
+.Différences entre les tableaux de bord de gouvernance :
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Les données obsolètes | Oui. | Oui. 
+
+
+| Données non commerciales | Oui. | Oui. 
+
+
+| Fichiers dupliqués | Oui. | Oui. 
+
+
+| Des règles prédéfinies | Oui. | Non 
+
+
+| Règles personnalisées | Oui. | Oui. 
+
+
+| Rapport DDA | Oui. | Oui. 
+
+
+| Rapport de mappage | Oui. | Oui. 
+
+
+| Détection du niveau de sensibilité | Oui. | Non 
+
+
+| Données sensibles avec autorisations étendues | Oui. | Non 
+
+
+| Ouvrez les autorisations | Oui. | Oui. 
+
+
+| Âge des données | Oui. | Oui. 
+
+
+| Taille des données | Oui. | Oui. 
+
+
+| Catégories | Oui. | Non 
+
+
+| Types de fichiers | Oui. | Oui. 
+|===
+====
+.Différences du tableau de bord de conformité :
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Informations personnelles | Oui. | Non 
+
+
+| Informations personnelles sensibles | Oui. | Non 
+
+
+| Rapport sur l'évaluation des risques en matière de confidentialité | Oui. | Non 
+
+
+| Rapport HIPAA | Oui. | Non 
+
+
+| Rapport PCI DSS | Oui. | Non 
+|===
+====
+.Différences entre les filtres d'investigation :
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Fonction | Cartographiez et classez | Carte 
+
+
+| Stratégies | Oui. | Oui. 
+
+
+| Type d'environnement de travail | Oui. | Oui. 
+
+
+| Environnement de travail | Oui. | Oui. 
+
+
+| Référentiel de stockage | Oui. | Oui. 
+
+
+| Type de fichier | Oui. | Oui. 
+
+
+| Taille du fichier | Oui. | Oui. 
+
+
+| Heure de création | Oui. | Oui. 
+
+
+| Heure découverte | Oui. | Oui. 
+
+
+| Dernière modification | Oui. | Oui. 
+
+
+| Dernier accès | Oui. | Oui. 
+
+
+| Ouvrez les autorisations | Oui. | Oui. 
+
+
+| Chemin du répertoire de fichiers | Oui. | Oui. 
+
+
+| Catégorie | Oui. | Non 
+
+
+| Niveau de sensibilité | Oui. | Non 
+
+
+| Nombre d'identificateurs | Oui. | Non 
+
+
+| Données personnelles | Oui. | Non 
+
+
+| Données personnelles sensibles | Oui. | Non 
+
+
+| Sujet des données | Oui. | Non 
+
+
+| Doublons | Oui. | Oui. 
+
+
+| Statut de classification | Oui. | Le statut est toujours « informations limitées » 
+
+
+| Événement d'analyse d'acquisition | Oui. | Oui. 
+
+
+| Hachage de fichier | Oui. | Oui. 
+
+
+| Nombre d'utilisateurs ayant accès | Oui. | Oui. 
+
+
+| Autorisations utilisateur/groupe | Oui. | Oui. 
+
+
+| Propriétaire du fichier | Oui. | Oui. 
+
+
+| Type de répertoire | Oui. | Oui. 
+|===
+====
+
+
+== La rapidité avec laquelle la classification BlueXP analyse les données
+
+La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
+
+* Lors de l'exécution d'acquisitions de mappage uniquement, la classification BlueXP  peut analyser entre 100-150 Tibs de données par jour.
+* Lors d'analyses de cartes et de classifications, la classification BlueXP  peut analyser entre 15-40 000 Tibs de données par jour.
+

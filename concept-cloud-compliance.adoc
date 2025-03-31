@@ -20,7 +20,7 @@ La classification BlueXP (Cloud Data Sense) est un service de gouvernance des do
 ====
 IMPORTANT
 
-À partir de mai 2024 avec la version 1.31, la classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires. Aucune licence de classification ni aucun abonnement n'est requis. Nous avons également concentré la fonctionnalité de classification BlueXP sur les systèmes de stockage NetApp. Ainsi, certaines fonctionnalités inutilisées ou sous-utilisées ont été désapprouvées.
+À partir de mai 2024 avec la version 1.31, la classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires. Aucune licence de classification ni aucun abonnement n'est requis. Nous avons concentré la fonctionnalité de classification BlueXP  sur les systèmes de stockage NetApp, de sorte que certaines fonctionnalités inutilisées ou sous-utilisées ont été obsolètes.
 
 link:reference-free-paid.html["Voir la liste des fonctions obsolètes"].
 
@@ -158,19 +158,15 @@ Lorsque vous déployez la classification BlueXP dans Azure ou GCP, envoyez un e-
 
 
 
-== Fonctionnement de la classification BlueXP
+== Fonctionnement de la numérisation de classification BlueXP 
 
-À un niveau élevé, la classification BlueXP fonctionne comme suit :
+À un niveau élevé, la numérisation de classification BlueXP  fonctionne comme suit :
 
 . Déployez une instance de classification BlueXP dans BlueXP.
-. Vous activez la cartographie de haut niveau ou la numérisation de haut niveau sur une ou plusieurs sources de données.
+. Vous activez la cartographie de haut niveau (appelée _Mapping Only_ scans) ou la numérisation de niveau profond (appelée _Map & Classify_ scans) sur une ou plusieurs sources de données.
 . La classification BlueXP analyse les données à l'aide d'un processus d'apprentissage par l'IA.
 . Vous utilisez les tableaux de bord et les outils de génération de rapports fournis pour vous aider dans vos efforts de conformité et de gouvernance.
 
-
-
-
-=== Fonctionnement des acquisitions
 
 Une fois que vous avez activé la classification BlueXP et sélectionné les référentiels à analyser (il s'agit des volumes, des schémas de base de données ou d'autres données utilisateur), l'analyse des données commence immédiatement pour identifier les données personnelles et sensibles. Dans la plupart des cas, il est préférable de se concentrer sur l'analyse des données de production en direct plutôt que sur des sauvegardes, des miroirs ou des sites de reprise sur incident. Ensuite, la classification BlueXP mappe vos données d'entreprise, classe chaque fichier, puis identifie et extrait des entités et des modèles prédéfinis dans les données. Le résultat de l'analyse est un index des informations personnelles, des données personnelles sensibles, des catégories de données et des types de fichiers.
 
@@ -178,248 +174,21 @@ La classification BlueXP se connecte aux données comme n'importe quel autre cli
 
 image:diagram_cloud_compliance_scan.png["Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud. L'instance de classification BlueXP se connecte aux volumes NFS et CIFS et aux bases de données pour les analyser."]
 
-Après l'analyse initiale, la classification BlueXP analyse en continu vos données à séquence périodique pour détecter les modifications incrémentielles (c'est pourquoi il est important de maintenir l'instance en fonctionnement).
+Après l'analyse initiale, la classification BlueXP  analyse en continu vos données selon une séquence périodique pour détecter les modifications incrémentielles. C'est pourquoi il est important de maintenir l'instance en cours d'exécution.
 
 Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de la base de données.
 
 
 
-=== Quelle est la différence entre les acquisitions de mappage et de classification
+== Quelle est la différence entre les acquisitions de mappage et de classification
 
 Vous pouvez effectuer deux types d'acquisitions dans la classification BlueXP  :
 
-* **Cartographie uniquement** les scannages ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectués sur des sources de données sélectionnées. Les analyses de mappage uniquement prennent moins de temps que les analyses de mappage et de classification car elles n'accèdent pas aux fichiers pour voir les données qu'elles contiennent.
-* **Les analyses Map and Classify** permettent une analyse approfondie de vos données.
+* **Les acquisitions cartographiques uniquement** ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectuées sur des sources de données sélectionnées. Les analyses de mappage uniquement prennent moins de temps que les analyses de mappage et de classification car elles n'accèdent pas aux fichiers pour voir les données qu'elles contiennent. Vous pouvez commencer par identifier les domaines de recherche, puis effectuer une analyse carte et classification sur ces domaines.
+* **Cartographiez et classifiez les acquisitions** fournissent une analyse de niveau profond de vos données.
 
 
-Les analyses de mappage uniquement vous permettent d'analyser rapidement vos données et d'identifier les sources de données susceptibles de nécessiter davantage de recherche. Vous pouvez ensuite effectuer une analyse de mappage et de classification.
-
-Le tableau ci-dessous présente certaines des différences :
-
-[cols="47,18,18"]
-|===
-| Fonction | Cartographiez et classez les analyses | Analyses de mappage uniquement 
-
-
-| Vitesse de numérisation | Lentes | Rapides 
-
-
-| Tarifs | Libre | Libre 
-
-
-| Puissance | Limité à 500 To | Limité à 500 To 
-
-
-| Liste des types de fichiers et de la capacité utilisée | Oui. | Oui. 
-
-
-| Nombre de fichiers et capacité utilisée | Oui. | Oui. 
-
-
-| Âge et taille des fichiers | Oui. | Oui. 
-
-
-| Exécution d'un link:task-controlling-governance-data.html#data-mapping-report["Rapport de mappage de données"] | Oui. | Oui. 
-
-
-| Page Data Investigation pour afficher les détails du fichier | Oui. | Non 
-
-
-| Rechercher des noms dans les fichiers | Oui. | Non 
-
-
-| Création link:task-using-policies.html["stratégies"] fournissant des résultats de recherche personnalisés | Oui. | Non 
-
-
-| Possibilité d'exécuter d'autres rapports | Oui. | Non 
-
-
-| Possibilité de voir les métadonnées des fichiers* | Non | Oui. 
-|===
-*Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage :
-
-* Environnement de travail
-* Type d'environnement de travail
-* Référentiel de stockage
-* Type de fichier
-* Capacité utilisée
-* Nombre de fichiers
-* Taille du fichier
-* Création de fichier
-* Dernier accès au fichier
-* Dernier fichier modifié
-* Heure de découverte du fichier
-* Extraction des autorisations
-
-
-.Différences entre les tableaux de bord de gouvernance :
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Fonction | Cartographiez et classez | Carte 
-
-
-| Les données obsolètes | Oui. | Oui. 
-
-
-| Données non commerciales | Oui. | Oui. 
-
-
-| Fichiers dupliqués | Oui. | Oui. 
-
-
-| Des règles prédéfinies | Oui. | Non 
-
-
-| Règles personnalisées | Oui. | Oui. 
-
-
-| Rapport DDA | Oui. | Oui. 
-
-
-| Rapport de mappage | Oui. | Oui. 
-
-
-| Détection du niveau de sensibilité | Oui. | Non 
-
-
-| Données sensibles avec autorisations étendues | Oui. | Non 
-
-
-| Ouvrez les autorisations | Oui. | Oui. 
-
-
-| Âge des données | Oui. | Oui. 
-
-
-| Taille des données | Oui. | Oui. 
-
-
-| Catégories | Oui. | Non 
-
-
-| Types de fichiers | Oui. | Oui. 
-|===
-====
-.Différences du tableau de bord de conformité :
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Fonction | Cartographiez et classez | Carte 
-
-
-| Informations personnelles | Oui. | Non 
-
-
-| Informations personnelles sensibles | Oui. | Non 
-
-
-| Rapport sur l'évaluation des risques en matière de confidentialité | Oui. | Non 
-
-
-| Rapport HIPAA | Oui. | Non 
-
-
-| Rapport PCI DSS | Oui. | Non 
-|===
-====
-.Différences entre les filtres d'investigation :
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Fonction | Cartographiez et classez | Carte 
-
-
-| Stratégies | Oui. | Oui. 
-
-
-| Type d'environnement de travail | Oui. | Oui. 
-
-
-| Environnement de travail | Oui. | Oui. 
-
-
-| Référentiel de stockage | Oui. | Oui. 
-
-
-| Type de fichier | Oui. | Oui. 
-
-
-| Taille du fichier | Oui. | Oui. 
-
-
-| Heure de création | Oui. | Oui. 
-
-
-| Heure découverte | Oui. | Oui. 
-
-
-| Dernière modification | Oui. | Oui. 
-
-
-| Dernier accès | Oui. | Oui. 
-
-
-| Ouvrez les autorisations | Oui. | Oui. 
-
-
-| Chemin du répertoire de fichiers | Oui. | Oui. 
-
-
-| Catégorie | Oui. | Non 
-
-
-| Niveau de sensibilité | Oui. | Non 
-
-
-| Nombre d'identificateurs | Oui. | Non 
-
-
-| Données personnelles | Oui. | Non 
-
-
-| Données personnelles sensibles | Oui. | Non 
-
-
-| Sujet des données | Oui. | Non 
-
-
-| Doublons | Oui. | Oui. 
-
-
-| Statut de classification | Oui. | Le statut est toujours « informations limitées » 
-
-
-| Événement d'analyse d'acquisition | Oui. | Oui. 
-
-
-| Hachage de fichier | Oui. | Oui. 
-
-
-| Nombre d'utilisateurs ayant accès | Oui. | Oui. 
-
-
-| Autorisations utilisateur/groupe | Oui. | Oui. 
-
-
-| Propriétaire du fichier | Oui. | Oui. 
-
-
-| Type de répertoire | Oui. | Oui. 
-|===
-====
-
-
-=== La rapidité avec laquelle la classification BlueXP analyse les données
-
-La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.
-
-* Lors de l'exécution d'acquisitions de mappage uniquement, la classification BlueXP  peut analyser entre 100-150 Tibs de données par jour.
-* Lors d'analyses de cartes et de classifications, la classification BlueXP  peut analyser entre 15-40 000 Tibs de données par jour.
-
+Pour plus de détails sur les différences entre les analyses de mappage et de classification, voir link:task-scanning-overview.html["Quelle est la différence entre les acquisitions de mappage et de classification ?"].
 
 
 
@@ -439,9 +208,11 @@ La classification BlueXP collecte, indexe et attribue des catégories à vos don
 
 == Présentation du réseau
 
+La classification BlueXP déploie un serveur ou un cluster unique, où que vous soyez, dans le cloud ou sur site. Les serveurs se connectent via des protocoles standard aux sources de données et indexent les résultats dans un cluster Elasticsearch, qui est également déployé sur les mêmes serveurs. Cela permet la prise en charge des environnements multicloud, cross-cloud, cloud privé et sur site.
+
 BlueXP déploie l'instance de classification BlueXP avec un groupe de sécurité qui active les connexions HTTP entrantes à partir de l'instance du connecteur.
 
-Lorsque vous utilisez BlueXP en mode SaaS, la connexion à BlueXP est desservie par HTTPS et les données privées envoyées entre votre navigateur et l'instance de classification BlueXP sont sécurisées avec un chiffrement de bout en bout à l'aide de TLS 1.2. NetApp et des tiers ne peuvent donc pas les lire.
+Lorsque vous utilisez BlueXP  en mode SaaS, la connexion à BlueXP  est assurée via HTTPS et les données privées envoyées entre votre navigateur et l'instance de classification BlueXP  sont sécurisées avec un chiffrement de bout en bout à l'aide de TLS 1.2, ce qui signifie que NetApp et des tiers ne peuvent pas les lire.
 
 Les règles sortantes sont complètement ouvertes. Un accès à Internet est nécessaire pour installer et mettre à niveau le logiciel de classification BlueXP et pour envoyer des metrics d'utilisation.
 

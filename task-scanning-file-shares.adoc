@@ -21,7 +21,7 @@ NOTE: L'analyse des données à partir de partages de fichiers non NetApp n'est 
 
 
 
-== Vérifiez les exigences en matière de partage de fichiers
+== Prérequis
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
@@ -30,12 +30,6 @@ Vérifiez les conditions préalables suivantes pour vous assurer que votre confi
 Notez que la classification BlueXP ne peut pas extraire les autorisations, ni l'heure du dernier accès des systèmes 7-mode. En outre, en raison d'un problème connu entre certaines versions de Linux et certains partages CIFS sur les systèmes 7-mode, vous devez configurer le partage pour qu'il n'utilise que SMB v1 avec l'authentification NTLM activée.
 
 * Il doit y avoir une connectivité réseau entre l'instance de classification BlueXP et les partages.
-* Assurez-vous que les ports suivants sont ouverts pour l'instance de classification BlueXP :
-+
-** Pour NFS – ports 111 et 2049.
-** Pour CIFS – ports 139 et 445.
-
-
 * Vous pouvez ajouter un partage DFS (Distributed File System) en tant que partage CIFS standard. Cependant, la classification BlueXP n'ayant pas connaissance du fait que le partage repose sur plusieurs serveurs/volumes combinés en tant que partage CIFS unique, vous pouvez recevoir des erreurs d'autorisation ou de connectivité sur le partage lorsque le message ne s'applique qu'à l'un des dossiers/partages situés sur un autre serveur/volume.
 * Pour les partages CIFS (SMB), assurez-vous que vous disposez des identifiants Active Directory qui fournissent un accès en lecture aux partages. Les identifiants d'administration sont préférés si la classification BlueXP doit analyser les données nécessitant des autorisations élevées.
 +
@@ -46,17 +40,11 @@ Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos f
 
 
 
-== Déployez l'instance de classification BlueXP
-
-Déployez la classification BlueXP si aucune instance n'est déjà déployée.
-
-
-
 == Créez le groupe pour les partages de fichiers
 
 Vous devez ajouter un « groupe » de partages de fichiers avant de pouvoir ajouter vos partages de fichiers. Le groupe est un conteneur pour les partages de fichiers que vous souhaitez analyser et le nom du groupe est utilisé comme nom d'environnement de travail pour ces partages de fichiers.
 
-Vous pouvez mélanger des partages NFS et CIFS dans le même groupe, mais tous les partages de fichiers CIFS d'un groupe doivent utiliser les mêmes informations d'identification Active Directory. Si vous prévoyez d'ajouter des partages CIFS qui utilisent des identifiants différents, vous devez créer un groupe distinct pour chaque ensemble unique d'informations d'identification.
+Vous pouvez mélanger des partages NFS et CIFS dans le même groupe. Cependant, tous les partages de fichiers CIFS d'un groupe doivent utiliser les mêmes informations d'identification Active Directory. Si vous prévoyez d'ajouter des partages CIFS qui utilisent des identifiants différents, vous devez créer un groupe distinct pour chaque ensemble unique d'informations d'identification.
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
@@ -81,32 +69,30 @@ Lorsque vous ajoutez à la fois des partages NFS et CIFS au sein d'un seul group
 . Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
 . Dans la mosaïque environnements de travail de la page Configuration, sélectionnez le bouton *Configuration* du groupe partages de fichiers.
 +
-image:screenshot_compliance_fileshares_add_shares.png["Capture d'écran de la page Configuration de la numérisation dans laquelle vous pouvez sélectionner le bouton Configuration."]
+image:screen-cl-config-file-shares.png["Capture d'écran montrant le bouton Configuration du groupe partages de fichiers."]
 
 . S'il s'agit de la première fois que vous ajoutez des partages de fichiers pour ce groupe de partages de fichiers, sélectionnez *Ajouter vos premiers partages*.
 +
-image:screenshot_compliance_fileshares_add_initial_shares.png["Capture d'écran montrant le bouton Ajouter vos premiers partages pour ajouter des partages initiaux au groupe."]
+image:screen-cl-config-file-shares-addshares.png["Capture d'écran montrant le bouton Ajouter vos premiers partages pour ajouter des partages initiaux au groupe."]
 
 +
-Si vous ajoutez des partages de fichiers à un groupe existant, sélectionnez *Ajouter des partages*.
+Si vous ajoutez des partages de fichiers à un groupe existant, sélectionnez le groupe, sélectionnez *Configuration* et sélectionnez *Ajouter des partages*.
 
+. Sélectionnez le protocole des partages de fichiers que vous ajoutez.
 +
-image:screenshot_compliance_fileshares_add_more_shares2.png["Capture d'écran affichant le bouton Ajouter des partages pour ajouter d'autres partages au groupe."]
+image:screen-cl-config-shares-add.png["Capture d'écran affichant les options d'ajout de partages NFS ou CIFS au groupe"]
 
-. Sélectionnez le protocole des partages de fichiers que vous ajoutez, ajoutez les partages de fichiers que vous souhaitez analyser (un partage de fichiers par ligne) et sélectionnez *Continuer*.
+. Ajoutez les partages de fichiers que vous souhaitez analyser (un partage de fichiers par ligne).
 +
 Lors de l'ajout de partages CIFS (SMB), vous devez entrer les identifiants Active Directory qui fournissent un accès en lecture aux partages. Les identifiants d'administrateur sont privilégiés.
 
-+
-image:screenshot_compliance_fileshares_add_file_shares.png["Capture d'écran de la page Ajouter des partages de fichiers où vous pouvez ajouter les partages à scanner."]
-
+. Sélectionnez *Continuer*.
 +
 Une boîte de dialogue de confirmation affiche le nombre de partages ajoutés.
 
 +
 Si la boîte de dialogue répertorie tous les partages qui n'ont pas pu être ajoutés, capturez ces informations pour résoudre le problème. Dans certains cas, vous pouvez ajouter à nouveau le partage avec un nom d'hôte ou un nom de partage corrigé.
 
-. Activez les analyses de mappage uniquement, ou les analyses de mappage et de classification, sur chaque partage de fichiers.
 . Effectuez l'une des opérations suivantes pour activer ou désactiver les numérisations :
 +
 ** Pour activer les analyses de mappage uniquement sur les partages de fichiers, sélectionnez *Map*.
@@ -114,12 +100,28 @@ Si la boîte de dialogue répertorie tous les partages qui n'ont pas pu être aj
 ** Pour désactiver la numérisation sur les partages de fichiers, sélectionnez *Désactivé*.
 
 
+. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, ACTIVEZ l'option *Scan en cas d'autorisations d'écriture d'attributs manquantes* et tous les fichiers sont analysés, quelles que soient les autorisations.
++
+Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 
-Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. link:reference-collected-metadata.html#last-access-time-timestamp["En savoir plus >>"^].
 
 .Résultat
-La classification BlueXP commence à analyser les fichiers des partages de fichiers que vous avez ajoutés. Les résultats s'affichent dans le tableau de bord et à d'autres emplacements. Vous pouvez suivre la progression de l'acquisition initiale en accédant au menu **Configuration** puis en sélectionnant la **Configuration de l'environnement de travail**. La progression de chaque acquisition est affichée sous la forme d'une barre de progression. Vous pouvez également passer le curseur de la souris sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume.
+La classification BlueXP commence à analyser les fichiers des partages de fichiers que vous avez ajoutés. Les résultats s'affichent dans le tableau de bord et à d'autres emplacements.
+
+
+
+== Suivre la progression de l'acquisition
+
+Vous pouvez suivre la progression de l'acquisition initiale.
+
+. Sélectionnez le menu **Configuration**.
+. Sélectionnez la **Configuration de l'environnement de travail**.
++
+La progression de chaque acquisition s'affiche sous la forme d'une barre de progression.
+
+. Passez le curseur sur la barre de progression pour voir le nombre de fichiers analysés par rapport au nombre total de fichiers dans le volume.
+
 
 
 
@@ -129,8 +131,8 @@ Si vous n'avez plus besoin d'analyser certains partages de fichiers, vous pouvez
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
-. Sur la page Configuration, sélectionnez *Supprimer le partage*.
-+
-image:screenshot_compliance_fileshares_remove_share.png["Capture d'écran indiquant comment supprimer un partage de fichier unique de la numérisation de ses fichiers."]
-
+. Sélectionnez l'environnement de travail.
+. Sélectionnez *Configuration*.
+. Dans la page Configuration, sélectionnez les actions image:button-actions-horizontal.png["Icône actions"] du partage de fichiers à supprimer.
+. Dans le menu actions, sélectionnez *Supprimer le partage*.
 
