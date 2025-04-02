@@ -55,7 +55,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Âge et taille des fichiers | Oui. | Oui. 
 
 
-| Exécution d'un link:task-controlling-governance-data.html#data-mapping-report["Rapport de mappage de données"] | Oui. | Oui. 
+| Possibilité d'exécuter un link:task-controlling-governance-data.html["Rapport de mappage de données"] | Oui. | Oui. 
 
 
 | Page Data Investigation pour afficher les détails du fichier | Oui. | Non 

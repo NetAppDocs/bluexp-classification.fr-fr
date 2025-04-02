@@ -201,7 +201,7 @@ La classification BlueXP collecte, indexe et attribue des catégories à vos don
 * *Données personnelles sensibles* : types particuliers d'informations personnelles sensibles (SPII), telles que les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le RGPD et d'autres réglementations sur la confidentialité. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["En savoir plus sur les données personnelles sensibles"^].
 * *Catégories*: La classification BlueXP prend les données qu'il a analysées et les divise en différents types de catégories. Les catégories sont des rubriques basées sur l'analyse par IA du contenu et des métadonnées de chaque fichier. link:task-controlling-private-data.html#view-files-by-categories["En savoir plus sur les catégories"^].
 * *Types* : la classification BlueXP prend les données analysées et les répartit par type de fichier. link:task-controlling-private-data.html#view-files-by-file-types["En savoir plus sur les types"^].
-* *Reconnaissance des noms d'entités* : la classification BlueXP utilise l'IA pour extraire les noms naturels des personnes des documents. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Découvrez comment répondre aux demandes d'accès aux données"^].
+* *Reconnaissance des noms d'entités* : la classification BlueXP  utilise l'IA pour extraire les noms naturels des personnes des documents. link:task-generating-compliance-reports.html["Découvrez comment répondre aux demandes d'accès aux données"^].
 
 
 
@@ -222,8 +222,4 @@ Si vous avez des exigences de mise en réseau strictes, link:task-deploy-cloud-c
 
 == Rôles d'utilisateur dans la classification BlueXP 
 
-Le rôle attribué à chaque utilisateur fournit des fonctionnalités différentes dans BlueXP  et dans la classification BlueXP . Pour plus de détails, reportez-vous aux sections suivantes :
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Rôles IAM BlueXP "] (Lors de l'utilisation de BlueXP  en mode standard)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Rôles de compte BlueXP "^] (Lors de l'utilisation de BlueXP  en mode restreint ou privé)
-
+Le rôle attribué à chaque utilisateur fournit des fonctionnalités différentes dans BlueXP  et dans la classification BlueXP . Pour plus de détails, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Rôles IAM BlueXP "] (lors de l'utilisation de BlueXP  en mode standard).

@@ -20,7 +20,7 @@ Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre da
 
 La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
 
-La priorisation est limitée à link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
+La priorisation est limitée à link:concept-cloud-compliance.html["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
 
 Pour modifier la priorité :
 

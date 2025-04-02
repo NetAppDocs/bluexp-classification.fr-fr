@@ -57,7 +57,7 @@ indexpage:
     - title: Générer des rapports de conformité
       url: task-generating-compliance-reports.html
     - title: Répondre à une demande d'accès à un sujet de données
-      url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+      url: task-generating-compliance-reports.html
   - title: Fonctionnalités obsolètes
     links:
     - title: Liste des fonctionnalités obsolètes
