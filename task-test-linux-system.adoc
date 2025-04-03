@@ -219,7 +219,7 @@ BlueXP détecte les clusters ONTAP via HTTPS. Si vous utilisez des stratégies d
 
 Procédez comme suit pour exécuter le script BlueXP classification Prerequisites.
 
-https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["Regardez cette vidéo"^] Pour savoir comment exécuter le script Prerequisites et interpréter les résultats.
+https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["Regardez cette vidéo"^] Pour savoir comment exécuter le script Prerequisites et interpréter les résultats.
 
 .Ce dont vous avez besoin
 * Vérifiez que votre système Linux est conforme à la <<Vérifiez les besoins de l'hôte,configuration requise pour l'hôte>>.

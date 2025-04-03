@@ -309,7 +309,7 @@ NOTE: La classification BlueXP est actuellement incapable d'analyser les compart
 
 Étudiez la configuration requise et suivez les étapes ci-dessous lors de l'installation du logiciel de classification BlueXP sur un hôte sur site unique.
 
-https://youtu.be/rFpmekdbORc["Regardez cette vidéo"^] Pour voir comment installer la classification BlueXP.
+https://youtu.be/XiPLaJpfJEI["Regardez cette vidéo"^] Pour savoir comment installer la classification BlueXP .
 
 Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html["Pour en savoir plus, cliquez ici"].
 
@@ -349,7 +349,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["Capture d'écran de sélect
 . La boîte de dialogue _Deploy Data Sense on local_ s'affiche. Copiez la commande fournie (par exemple : `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) et collez-le dans un fichier texte pour pouvoir l'utiliser ultérieurement. Cliquez ensuite sur *Fermer* pour fermer la boîte de dialogue.
 . Sur la machine hôte, entrez la commande que vous avez copiée, puis suivez une série d'invites, ou vous pouvez fournir la commande complète incluant tous les paramètres requis comme arguments de ligne de commande.
 +
-Notez que le programme d'installation effectue une pré-vérification afin de s'assurer que vos exigences système et réseau sont en place pour une installation réussie. https://youtu.be/_RCYpuLXiV0["Regardez cette vidéo"^] pour comprendre les messages de pré-vérification et les implications.
+Notez que le programme d'installation effectue une pré-vérification pour s'assurer que votre système et vos exigences réseau sont en place pour une installation réussie. https://youtu.be/5ONowfPWkFs["Regardez cette vidéo"^] pour comprendre les messages de pré-vérification et les implications.
 
 +
 [cols="50a,50"]
