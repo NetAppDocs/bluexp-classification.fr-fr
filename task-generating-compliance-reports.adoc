@@ -45,10 +45,11 @@ Vous pouvez filtrer le contenu du tableau de bord BlueXP Classification Complian
 Lorsque vous filtrez le tableau de bord, la classification BlueXP évalue les données et les rapports de conformité pour les environnements de travail que vous avez sélectionnés.
 
 .Étapes
-. Sélectionnez la liste déroulante des filtres et sélectionnez les environnements de travail.
+. Dans le menu BlueXP  Classification, sélectionnez "*conformité*".
+. Sélectionnez la liste déroulante filtre environnements de travail et sélectionnez les environnements de travail.
 . Sélectionnez *Afficher*.
 +
-image:screenshot_cloud_compliance_filter.gif["Capture d'écran de la sélection des environnements de travail pour les rapports que vous souhaitez exécuter."]
+image:screenshot_cloud_compliance_filter.png["Capture d'écran de la sélection des environnements de travail pour les rapports que vous souhaitez exécuter."]
 
 
 
@@ -77,8 +78,8 @@ Recherchez le nom complet ou l'identifiant connu du sujet de données, puis tél
 NOTE: L'anglais, l'allemand, le japonais et l'espagnol sont pris en charge lors de la recherche des noms des sujets de données. La prise en charge d'autres langues sera ajoutée ultérieurement.
 
 .Étapes
-. Dans le menu BlueXP , sélectionnez *gouvernance > Classification*.
-. Sélectionnez *sujets de données*.
+. Dans le menu BlueXP  Classification, sélectionnez "*conformité*".
+. Dans la page conformité, faites défiler vers le bas et sélectionnez *sujets de données*.
 . Recherchez le nom complet ou l'identifiant connu du sujet de données.
 +
 Voici un exemple qui montre une recherche du nom _john Doe_:
@@ -125,8 +126,9 @@ Le rapport contient les informations suivantes :
 Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
-. Dans le menu BlueXP , sélectionnez *gouvernance > Classification*.
-. Sélectionnez *conformité*, puis sélectionnez l'icône de téléchargement en regard de *Rapport HIPAA* sous *Rapports*.
+. Dans le menu BlueXP  Classification, sélectionnez "*conformité*".
+. Faites défiler vers le bas et localisez le volet *Rapports*.
+. Sélectionnez l'icône de téléchargement en regard de *Rapport HIPAA*.
 +
 image:screenshot_hipaa.gif["Capture d'écran de l'onglet conformité dans BlueXP qui affiche le volet Rapports où vous pouvez cliquer sur HIPAA."]
 
@@ -155,8 +157,9 @@ Le rapport contient les informations suivantes :
 Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
-. Dans le menu BlueXP , sélectionnez *gouvernance > Classification*.
-. Sélectionnez *conformité*, puis sélectionnez l'icône de téléchargement en regard de *Rapport PCI DSS* sous *Rapports*.
+. Dans le menu BlueXP  Classification, sélectionnez "*conformité*".
+. Faites défiler vers le bas et localisez le volet *Rapports*.
+. Sélectionnez l'icône de téléchargement en regard de *PCI DSS Report*.
 +
 image:screenshot_pci_dss.gif["Capture d'écran de l'onglet conformité dans BlueXP qui affiche le volet Rapports, dans lequel vous pouvez cliquer sur évaluation des risques de confidentialité."]
 
@@ -183,8 +186,9 @@ Le rapport contient les informations suivantes :
 Accédez à l'onglet conformité pour générer le rapport.
 
 .Étapes
-. Dans le menu BlueXP , sélectionnez *gouvernance > Classification*.
-. Sélectionnez *conformité*, puis sélectionnez l'icône de téléchargement en regard de *évaluation des risques pour la confidentialité* sous *Rapports*.
+. Dans le menu BlueXP  Classification, sélectionnez "*conformité*".
+. Faites défiler vers le bas et localisez le volet *Rapports*.
+. Sélectionnez l'icône de téléchargement en regard de *évaluation des risques liés à la confidentialité*.
 +
 image:screenshot_privacy_risk_assessment.gif["Capture d'écran de l'onglet conformité dans BlueXP qui affiche le volet Rapports, dans lequel vous pouvez cliquer sur évaluation des risques de confidentialité."]
 

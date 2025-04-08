@@ -16,7 +16,7 @@ summary: 'Vous pouvez gérer le mode d"analyse de vos données dans chacun de vo
 [role="lead"]
 Vous pouvez gérer le mode d'analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications sur une base de « référentiel », ce qui signifie que vous pouvez apporter des modifications à chaque volume, schéma, utilisateur, etc. En fonction du type de source de données que vous analysez.
 
-Vous pouvez modifier le type d'analyse d'un référentiel et déterminer si celui-ci exécute une link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["acquisition de mappage ou cartographie etamp ; acquisition de classification"]. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.
+Certaines choses que vous pouvez modifier sont si un référentiel est scanné ou non, et si la classification BlueXP  exécute un link:concept-cloud-compliance.html["acquisition de mappage ou cartographie etamp ; acquisition de classification"]. Vous pouvez également interrompre et reprendre la numérisation, par exemple si vous devez arrêter la numérisation d'un volume pendant un certain temps.
 
 
 
@@ -37,17 +37,17 @@ Vous pouvez afficher l'état de numérisation de chaque environnement de travail
 
 
 .Étapes
-. Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
 +
 image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
 
-. Dans la page Configuration de la numérisation, vous pouvez afficher les paramètres de numérisation de tous les référentiels.
+. Dans l'onglet Configuration, sélectionnez le bouton *Configuration* de l'environnement de travail.
+. Dans la page Configuration de la numérisation, affichez les paramètres de numérisation de tous les référentiels.
 +
 image:screenshot_compliance_repo_scan_settings.png["Capture d'écran indiquant si vos compartiments sont en cours de numérisation et l'état actuel de la numérisation."]
 
+. Placez le curseur sur le graphique dans la colonne _Mapping Status_ pour voir le nombre de fichiers qui restent à mapper ou à classer dans chaque référentiel (compartiment dans cet exemple).
 
-
-Vous pouvez placer le curseur sur le graphique dans la colonne _État de mappage_ pour voir le nombre de fichiers qui restent à mapper ou à classer dans chaque référentiel (rubrique dans cet exemple).
 
 
 
@@ -59,21 +59,25 @@ Vous pouvez démarrer ou arrêter des analyses de mappage uniquement, ou des ana
 TIP: Les bases de données ne peuvent pas être définies pour des analyses de mappage uniquement. L'analyse de la base de données peut être désactivée ou activée, où on équivaut à la cartographie et à la classification.
 
 .Étapes
-. Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Dans l'onglet Configuration, sélectionnez le bouton *Configuration* de l'environnement de travail.
 +
 image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
 
-. Dans la page Configuration de l'analyse, vous pouvez modifier n'importe lequel des référentiels (rubriques dans cet exemple) pour effectuer des analyses *Map* ou *Map & Classify*.
+. Dans la page Configuration de l'analyse, modifiez l'un des référentiels (rubriques dans cet exemple) pour effectuer des analyses *Map* ou *Map & Classify*.
 +
 image:screenshot_compliance_repo_scan_settings.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
 
-
-
++
 Certains types d'environnements de travail vous permettent de modifier le type de numérisation global pour tous les référentiels à l'aide d'une barre de boutons située en haut de la page. Valable pour les systèmes Cloud Volumes ONTAP, ONTAP sur site, Azure NetApp Files et Amazon FSX pour ONTAP.
 
++
 L'exemple ci-dessous montre cette barre de boutons pour un système Azure NetApp Files.
 
++
 image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant comment configurer le même paramètre de numérisation pour tous les volumes d'un environnement de travail."]
+
+
 
 
 
@@ -82,13 +86,14 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 Vous pouvez arrêter l'analyse d'un référentiel (par exemple, un volume) si vous n'avez plus besoin de le surveiller pour vérifier sa conformité. Pour ce faire, désactivez la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu.
 
 .Étapes
-. Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Dans l'onglet Configuration, sélectionnez le bouton *Configuration* de l'environnement de travail.
 +
 image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
 
 . Dans la page Configuration de l'acquisition, sélectionnez *Désactivé* pour arrêter l'analyse d'un compartiment particulier.
 +
-image:screenshot_compliance_stop_repo_scanning.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
+image:screenshot_compliance_repo_scan_settings.png["Capture d'écran montrant comment sélectionner le type de numérisation pour un compartiment."]
 
 
 
@@ -101,18 +106,11 @@ Vous pouvez interrompre la numérisation dans un référentiel si vous souhaitez
 Vous pouvez reprendre la numérisation à tout moment.
 
 .Étapes
-. Dans l'onglet Configuration, cliquez sur le bouton *Configuration* de l'environnement de travail.
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Dans l'onglet Configuration, sélectionnez le bouton *Configuration* de l'environnement de travail.
 +
 image:screenshot_compliance_config_button.png["Capture d'écran indiquant comment cliquer sur le bouton Configuration pour un environnement de travail."]
 
-. Sur la page Configuration de la numérisation, cliquez sur le bouton Pause pour interrompre l'acquisition d'un volume ou appuyez sur le bouton reprise pour reprendre l'acquisition d'un volume précédemment mis en pause.
-+
-image:screenshot_compliance_repo_pause_resume.png["Capture d'écran montrant comment interrompre et reprendre la numérisation sur un volume."]
-
-+
-Notez que certaines sources de données fournissent la fonctionnalité Pause et reprise dans un menu, comme indiqué ci-dessous pour les sites SharePoint.
-
-+
-image:screenshot_compliance_repo_pause_resume2.png["Capture d'écran montrant comment interrompre et reprendre la numérisation sur un site SharePoint."]
-
+. Dans la page Configuration de la numérisation, sélectionnez l'icône actionsimage:button-actions-horizontal.png["Icône actions"].
+. Sélectionnez *Pause* pour interrompre le balayage d'un volume ou sélectionnez *reprendre* pour reprendre le balayage d'un volume précédemment interrompu.
 

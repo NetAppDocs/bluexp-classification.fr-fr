@@ -71,7 +71,7 @@ sidebar:
     - title: Attribuez des règles à vos données
       url: "/task-using-policies.html"
     - title: Modifier les paramètres de numérisation
-      url: task-managing-repo-scanning.html
+      url: "/task-managing-repo-scanning.html"
     - title: Générer des rapports de conformité
       url: "/task-generating-compliance-reports.html"
   - title: Gérer la classification BlueXP
