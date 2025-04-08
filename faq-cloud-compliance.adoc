@@ -164,7 +164,7 @@ La classification BlueXP vous permet d'exécuter une analyse générale du « ma
 +
 Après une acquisition rapide, vous pouvez générer un rapport de mappage de données. Ce rapport présente les données stockées dans vos sources de données d'entreprise et vous aide à prendre les bonnes décisions en matière d'utilisation des ressources, de migration, de sauvegarde, de sécurité et de conformité.
 
-* *Analyse de classification des données (profonde) (analyse de carte et de classification)* : analyses de classification BlueXP  utilisant des protocoles standard et une autorisation en lecture seule dans tous vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
+* *Analyse approfondie de la classification des données (analyse cartographique et de classification)*: Acquisitions de classification BlueXP  utilisant des protocoles standard et autorisation en lecture seule dans vos environnements. Les fichiers sélectionnés sont ouverts et analysés afin de détecter toute donnée sensible concernant l'entreprise, des informations privées et des problèmes liés aux attaques par ransomware.
 +
 Après une analyse complète, vous pouvez appliquer de nombreuses fonctionnalités de classification BlueXP supplémentaires à vos données, telles que l'affichage et le raffinage des données dans la page Data Investigation, la recherche de noms dans les fichiers, la copie, le déplacement et la suppression des fichiers source, etc.
 
