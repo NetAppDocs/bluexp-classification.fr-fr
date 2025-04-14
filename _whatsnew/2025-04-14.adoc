@@ -1,0 +1,22 @@
+= Version 1.42
+:allow-uri-read: 
+
+
+
+
+=== Version 1.42
+
+Cette version de classification BlueXP  inclut :
+
+.Balayage en vrac pour les environnements de travail
+La classification BlueXP  prend désormais en charge les opérations en bloc pour les environnements de travail. Vous pouvez choisir d'activer les analyses de mappage, d'activer les analyses de mappage et de classification, de désactiver les analyses ou de créer une configuration personnalisée sur l'ensemble des volumes de l'environnement de travail. Si vous effectuez une sélection pour un volume individuel, elle remplace la sélection en bloc. Pour effectuer une opération en bloc, accédez à la page **Configuration** et faites votre sélection.
+
+.Télécharger le rapport d'enquête localement
+La classification BlueXP  prend désormais en charge la possibilité de télécharger des rapports d'enquête de données localement pour les afficher dans le navigateur. Si vous choisissez l'option locale, l'investigation de données est uniquement disponible au format CSV et n'affiche que les 10,000 premières lignes de données.
+
+Pour plus d'informations, voir link:task-investigate-data.html#create-the-data-investigation-report["Analysez les données stockées dans votre entreprise avec la classification BlueXP "].
+
+.Hiérarchiser les analyses de classification
+La classification BlueXP  prend désormais en charge la possibilité de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.
+
+Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].

@@ -283,8 +283,12 @@ Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classificatio
 
 Les fichiers sont divisés en fichiers avec un nombre fixe de lignes ou d'enregistrements :
 
-* CSV - 200,000 enregistrements
 * JSON - 100,000 enregistrements
+* CSV - 200,000 enregistrements
++
+
+NOTE: Vous pouvez télécharger une version du fichier CSV à afficher dans ce navigateur. Cette version est limitée à 10,000 enregistrements.
+
 
 
 *Ce qui est inclus dans le rapport d'enquête sur les données*
@@ -344,9 +348,11 @@ Le *Rapport de données structurées* comprend les informations suivantes sur vo
 .Étapes de génération du rapport
 . Dans la page enquête sur les données, sélectionnez le image:button_download.png["bouton télécharger"] bouton en haut, à droite de la page.
 . Choisissez le type de rapport : CSV ou JSON.
-. Fournir un **Nom du rapport**.
-. Sélectionnez un **Environnement de travail** et un **Volume**
-. Indiquez un chemin d'accès ** au dossier de destination**.
+. Entrez un **Nom du rapport**.
+. Si vous choisissez CSV comme type de rapport, sélectionnez **local** pour télécharger le rapport dans le navigateur. Remarque cette option limite le rapport aux 10,000 premières lignes. Aucune autre option n'est requise avec cette option.
++
+Pour le rapport complet, sélectionnez **Environnement de travail** puis choisissez **Environnement de travail** et **Volume** dans les menus déroulants respectifs. Indiquez un chemin d'accès ** au dossier de destination**.
+
 . Sélectionnez **Télécharger le rapport**.
 +
 image:screenshot_compliance_investigation_report2.png["Capture d'écran de la page Télécharger le rapport d'enquête avec plusieurs options."]

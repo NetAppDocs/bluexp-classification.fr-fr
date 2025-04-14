@@ -22,12 +22,7 @@ La priorité est accordée une fois. Les nouvelles analyses automatiques des don
 
 La priorisation est limitée à link:concept-cloud-compliance.html["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
 
-Pour modifier la priorité :
-
-. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
-. Sélectionnez les ressources à hiérarchiser.
-. Dans l'option actions ..., sélectionnez *hiérarchiser l'acquisition*.
-
+Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Réessayez toutes les acquisitions
 La classification BlueXP  prend désormais en charge la possibilité de recommencer par lots toutes les acquisitions ayant échoué.

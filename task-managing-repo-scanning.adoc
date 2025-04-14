@@ -81,6 +81,22 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 
 
+== Hiérarchiser les acquisitions
+
+Vous pouvez hiérarchiser les acquisitions les plus importantes--mappage-uniquement ou carte et classification. La possibilité de hiérarchiser les acquisitions vous permet de vous assurer que les acquisitions à haute priorité sont effectuées en premier.
+
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
+
+La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
+
+.Étapes
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Sélectionnez les ressources à hiérarchiser.
+. Dans l'option actions `...`, sélectionnez *hiérarchiser l'acquisition*.
+
+
+
+
 == Arrêter la recherche d'un référentiel
 
 Vous pouvez arrêter l'analyse d'un référentiel (par exemple, un volume) si vous n'avez plus besoin de le surveiller pour vérifier sa conformité. Pour ce faire, désactivez la numérisation. Lorsque la numérisation est désactivée, l'indexation et les informations relatives à ce volume sont supprimées du système et le chargement pour la numérisation des données est interrompu.
