@@ -349,9 +349,9 @@ Le *Rapport de données structurées* comprend les informations suivantes sur vo
 . Dans la page enquête sur les données, sélectionnez le image:button_download.png["bouton télécharger"] bouton en haut, à droite de la page.
 . Choisissez le type de rapport : CSV ou JSON.
 . Entrez un **Nom du rapport**.
-. Si vous choisissez CSV comme type de rapport, sélectionnez **local** pour télécharger le rapport dans le navigateur. Remarque cette option limite le rapport aux 10,000 premières lignes. Aucune autre option n'est requise avec cette option.
+. Pour télécharger le rapport complet, sélectionnez **Environnement de travail** puis choisissez **Environnement de travail** et **Volume** dans les menus déroulants respectifs. Indiquez un chemin d'accès ** au dossier de destination**.
 +
-Pour le rapport complet, sélectionnez **Environnement de travail** puis choisissez **Environnement de travail** et **Volume** dans les menus déroulants respectifs. Indiquez un chemin d'accès ** au dossier de destination**.
+Pour télécharger le rapport dans le navigateur, sélectionnez **local** . Remarque cette option limite le rapport aux 10,000 premières lignes et est limitée au format **CSV**. Vous n'avez pas besoin de remplir d'autres champs si vous sélectionnez **local**.
 
 . Sélectionnez **Télécharger le rapport**.
 +
