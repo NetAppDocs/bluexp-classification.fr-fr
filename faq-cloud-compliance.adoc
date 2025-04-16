@@ -152,7 +152,7 @@ La classification BlueXP analyse tous les fichiers pour rechercher des informati
 
 Lorsque la classification BlueXP détecte des informations à caractère personnel (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
 
-`+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+`+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 

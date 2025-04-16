@@ -367,7 +367,6 @@
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">Y a-t-il des restrictions lorsqu'elles sont déployées dans une région gouvernementale?</block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">Quels types de fichiers sont pris en charge ?</block>
-  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph"><block ref="0b3e64f511542d0a580dfbeb6d666614" prefix="" category="inline-code"></block></block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">Après une acquisition rapide, vous pouvez générer un rapport de mappage de données. Ce rapport présente les données stockées dans vos sources de données d'entreprise et vous aide à prendre les bonnes décisions en matière d'utilisation des ressources, de migration, de sauvegarde, de sécurité et de conformité.</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">Licences et coût</block>
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">Déploiement de connecteurs</block>
@@ -3440,4 +3439,5 @@ Données d'applications d'entreprise</block>
   <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">création de règles</block>
   <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les <block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>.</block>
+  <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
 </blocks>
