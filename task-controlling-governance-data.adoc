@@ -58,7 +58,7 @@ Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir 
 *** Divers (catégorie « autre » générale)
 
 
-** *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html#filter-data-by-duplicates["Voir quels types de fichiers dupliqués sont affichés"].
+** *Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. link:task-investigate-data.html["Voir quels types de fichiers dupliqués sont affichés"].
 
 
 

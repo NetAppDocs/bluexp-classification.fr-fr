@@ -329,7 +329,7 @@ Cette version comprend quelques améliorations mineures.
 La version a également supprimé les options suivantes :
 
 * L'option permettant d'activer la collecte des journaux d'audit a été désactivée.
-* Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la section link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Examinez les données stockées dans votre organisation"].
+* Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la link:task-investigate-data.html["Examinez les données stockées dans votre organisation"].
 * L'option d'intégration des données à l'aide d'étiquettes Azure information protection (AIP) a été désactivée. Reportez-vous à la section link:task-org-private-data.html["Organisez vos données privées"].
 
 

@@ -30,7 +30,7 @@ Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les ré
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Investigation*.
 . Sur la page enquête sur les données, effectuez l'une des opérations suivantes :
-. Pour télécharger le contenu de la page sous forme de rapport après l'avoir affiné, sélectionnez le image:button_download.png["bouton télécharger"] bouton. <<Data Investigation Report,Cliquez ici pour plus de détails sur le rapport d'enquête sur les données>>.
+. Pour télécharger le contenu de la page sous forme de rapport après l'avoir affiné, sélectionnez le image:button_download.png["bouton télécharger"] bouton.
 +
 image:screenshot_compliance_investigation_filtered.png["Capture d'écran des filtres disponibles lors du raffinage des résultats dans la page d'enquête."]
 
@@ -161,7 +161,7 @@ Utilisez le filtre suivant pour afficher les données par stratégie.
 | Filtre | Détails 
 
 
-| Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-using-policies.html["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
+| Stratégies | Sélectionnez une ou plusieurs stratégies. Accédez link:task-using-policies.html["ici"] à pour afficher la liste des stratégies existantes et créer vos propres stratégies personnalisées. 
 |===
 *Filtrer les données par état d'analyse*
 
@@ -194,7 +194,7 @@ Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans v
 
 == Afficher les métadonnées de fichier
 
-En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les link:task-using-policies.html["Créer des règles"]utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.
+En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les link:task-using-policies.html["création de règles"]utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
 Toutes les informations ne sont pas disponibles pour toutes les sources de données - juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume et les autorisations ne sont pas pertinents pour les fichiers de base de données.
 
