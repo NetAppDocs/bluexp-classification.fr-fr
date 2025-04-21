@@ -56,7 +56,7 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 | Mot de passe | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.57+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
+.88+| Identifiants nationaux | TFN australien (Numéro de dossier fiscal) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Permis de conduire australien | Oui. | ✓ | ✓ | ✓ |  |  
@@ -87,6 +87,99 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 
 
 | ID bulgare (UCN) | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| Numéros d'information bancaires canadiens - Numéro de compte | Oui. | ✓ |  |  |  |  
+
+
+| Numéros d'information bancaires canadiens - Numéro de transit | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de citoyenneté canadienne/de résident permanent - Numéro de carte RP (UCI) | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Alberta | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Colombie-Britannique | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Manitoba | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Nouveau-Brunswick | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Terre-Neuve-et-Labrador | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Territoires du Nord-Ouest | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Nouvelle-Écosse | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Nunavut | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Ontario | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Île-du-Prince-Édouard | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Québec | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Saskatchewan | Oui. | ✓ |  |  |  |  
+
+
+| Permis de conduire canadien - Yukon | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de carte Santé canadienne - Alberta PHIN | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - PHIN de la Colombie-Britannique | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - PHIN du Manitoba | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de carte Santé canadienne - PHIN | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de carte Santé canadienne - RISP de Terre-Neuve-et-Labrador | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de carte Santé canadienne - Territoires du Nord-Ouest PHIN | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - PHIN de la Nouvelle-Écosse | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - RISP du Nunavut | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - PHIN de l'Ontario | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - Île-du-Prince-Édouard PHIN | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - RISP du Québec | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de la carte Santé canadienne - Numéro d'identification du personnel médical de la Saskatchewan | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de carte Santé canadienne - Yukon PHIN | Oui. | ✓ |  |  |  |  
+
+
+| Numéro de passeport canadien | Oui. | ✓ |  |  |  |  
+
+
+| Numéro canadien d'assurance sociale (NAS) | Oui. | ✓ |  |  |  |  
 
 
 | ID croate (OIB) | Oui. | ✓ | ✓ | ✓ |  |  
@@ -209,10 +302,7 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 | Carte d'identité suédoise | Oui. | ✓ | ✓ | ✓ |  |  
 
 
-| Permis de conduire Texas | Oui. | ✓ | ✓ | ✓ |  |  
-
-
-| ROYAUME-UNI ID (NINO) | Oui. | ✓ | ✓ | ✓ |  |  
+| ID ROYAUME-UNI (NINO) | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Permis de conduire de Californie aux États-Unis | Oui. | ✓ | ✓ | ✓ |  |  
@@ -222,6 +312,9 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 
 
 | Permis de conduire New York aux États-Unis | Oui. | ✓ | ✓ | ✓ |  |  
+
+
+| USA Texas permis de conduire | Oui. | ✓ | ✓ | ✓ |  |  
 
 
 | Numéro de sécurité sociale des États-Unis (SSN) | Oui. | ✓ | ✓ | ✓ |  |  
