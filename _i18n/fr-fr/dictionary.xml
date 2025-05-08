@@ -178,8 +178,6 @@
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">Vous pouvez créer vos propres stratégies personnalisées qui fournissent des résultats pour les recherches spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">Filtrage des données dans la page Data Investigation</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">Une fois que vous avez toutes les caractéristiques de filtre comme vous le souhaitez, cliquez sur *Créer une stratégie à partir de cette recherche*.</block>
-  <block id="96a46d654233ac39fd6e31dda8fc4dae" category="inline-image-macro">Capture d'écran indiquant comment enregistrer une requête filtrée en tant que stratégie.</block>
-  <block id="9f769a1d4cd3d0c8d7378f6050100e35" category="paragraph"><block ref="9f769a1d4cd3d0c8d7378f6050100e35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">Entrez un nom et une description uniques.</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">Libellés AIP</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Cliquez sur *Créer une stratégie*.</block>
@@ -187,18 +185,12 @@
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">La nouvelle stratégie s'affiche dans l'onglet stratégies.</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">Capture d'écran indiquant comment choisir les critères d'e-mail à envoyer pour la police.</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">Vous pouvez modifier les critères d'une stratégie existante que vous avez déjà créée. Cela peut être particulièrement utile si vous souhaitez modifier la requête (les éléments que vous avez définis à l'aide de filtres) pour ajouter ou supprimer certains paramètres.</block>
-  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">Dans la page liste des stratégies, cliquez sur *Modifier* pour la stratégie que vous souhaitez modifier.</block>
   <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">Capture d'écran indiquant comment lancer une modification vers une police existante.</block>
   <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">Si vous souhaitez simplement modifier les éléments de cette page (le Nom, la Description, si les notifications par e-mail sont envoyées et si des étiquettes AIP sont ajoutées), effectuez la modification et cliquez sur *Enregistrer la stratégie*.</block>
-  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">Si vous souhaitez modifier les filtres de la requête enregistrée, cliquez sur *Modifier la requête*.</block>
   <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">Capture d'écran indiquant la sélection du bouton Modifier la requête sur la page Modifier la stratégie.</block>
   <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">Dans la page Investigation qui définit cette requête, modifiez la requête en ajoutant, supprimant ou personnalisant les filtres, puis cliquez sur *Enregistrer les modifications* .</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">Capture d'écran indiquant comment modifier la requête en modifiant les paramètres du filtre.</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">La police est modifiée immédiatement. Toutes les actions définies pour cette stratégie pour envoyer un e-mail, ajouter des étiquettes AIP ou supprimer des fichiers seront effectuées à l'interne suivant.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">Nom</block>
   <block id="35ba1271dff4019593d3034c929e1bbc" category="cell">Logique</block>
   <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">Fichiers contenant des données personnelles ou sensibles, modifié pour la dernière fois il y a plus de 7 ans.</block>
@@ -2637,15 +2629,11 @@
   <block id="223d722e1cb33bb8a31e8cc8d6efcb10" category="list-text"><block ref="3708ee7d5604e21bcf79306c2b6928c3" category="inline-xref-macro-rx"></block> De NetApp en fonction des demandes des utilisateurs</block>
   <block id="649da6c1fa710a382a388e465871a680" category="list-text">Possibilité de créer vos propres règles personnalisées</block>
   <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">L'onglet *stratégies* du tableau de bord de conformité répertorie toutes les règles prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP.</block>
-  <block id="351501516e0a13df2ed4813f5d93864d" category="paragraph">En outre, les stratégies apparaissent dans la liste des filtres de la page Investigation.</block>
-  <block id="fb5c8861ae16ebacc4ef4cf4a3f9746a" category="paragraph">Pour afficher les résultats d'une stratégie dans la page Investigation, cliquez sur <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Pour une stratégie spécifique, puis sélectionnez *examiner les résultats*.</block>
   <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">Capture d'écran de la sélection de l'option examiner les résultats pour une stratégie spécifique dans l'onglet stratégies.</block>
   <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">Création de règles personnalisées</block>
   <block id="19948385b78770f8de2200aa21288a6a" category="list-text">Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers correspondant aux paramètres de la stratégie.</block>
-  <block id="7037cf1f24072122891243e88abfb12e" category="paragraph">Pour les stratégies prédéfinies, vous pouvez uniquement modifier si les notifications par e-mail sont envoyées et si les étiquettes d'AIP sont ajoutées. Aucune autre valeur ne peut être modifiée.</block>
   <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">Vous pouvez supprimer toute stratégie personnalisée que vous avez créée si vous n'en avez plus besoin. Vous ne pouvez pas supprimer les règles prédéfinies.</block>
-  <block id="19d4814f3bce80460384b97290bb64be" category="paragraph">Pour supprimer une stratégie, cliquez sur <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Pour une stratégie spécifique, cliquez sur *Supprimer la stratégie*, puis cliquez à nouveau sur *Supprimer la stratégie* dans la boîte de dialogue de confirmation.</block>
   <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">Liste des règles prédéfinies</block>
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">La classification BlueXP fournit les règles définies par le système suivantes :</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Analyser les comptes Google Drive</block>
@@ -3471,4 +3459,19 @@ Données d'applications d'entreprise</block>
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">Numéro canadien d'assurance sociale (NAS)</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">ID ROYAUME-UNI (NINO)</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">USA Texas permis de conduire</block>
+  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">Les filtres personnalisés des stratégies qui fournissent les résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. Le classement BlueXP  propose un ensemble de règles prédéfinies basées sur des demandes courantes ou vous pouvez créer votre propre classification.</block>
+  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">Les stratégies apparaissent également dans la liste des filtres de la page Investigation.</block>
+  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">Pour afficher les résultats d'une police dans la page Investigation, sélectionnez le  bouton d'une règle spécifique, <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>puis sélectionnez *examiner les résultats*.</block>
+  <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">Filtrage des données dans la page Investigation</block>
+  <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">Dans l'onglet Investigation, définissez une recherche en sélectionnant les filtres à utiliser. Voir <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> pour plus de détails.</block>
+  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">Une fois que vous avez défini toutes les caractéristiques de filtre à votre convenance, sélectionnez *Créer une stratégie à partir de cette recherche*.</block>
+  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">Capture d'écran montrant comment enregistrer une requête filtrée en tant que stratégie.</block>
+  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">Vous pouvez modifier les critères d'une stratégie existante pour modifier la requête (les éléments que vous avez définis à l'aide de filtres) afin d'ajouter ou de supprimer certains paramètres.</block>
+  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">Vous ne pouvez pas modifier les règles prédéfinies.</block>
+  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">Dans la page liste des polices, sélectionnez *Modifier la stratégie* pour la règle que vous souhaitez modifier.</block>
+  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">Apportez les modifications aux champs Nom et Description. Pour modifier uniquement ces champs, sélectionnez *Enregistrer la stratégie*.</block>
+  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">Pour modifier les filtres de la requête enregistrée, sélectionnez *Modifier la requête*.</block>
+  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">Dans la page Investigation qui définit cette requête, modifiez la requête en ajoutant, en supprimant ou en personnalisant les filtres, puis sélectionnez *Enregistrer les modifications* .</block>
+  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">Pour supprimer une stratégie, sélectionnez le <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> bouton correspondant à une stratégie spécifique, sélectionnez *Supprimer la stratégie*, puis sélectionnez *Supprimer la stratégie* à nouveau dans la boîte de dialogue de confirmation.</block>
 </blocks>
