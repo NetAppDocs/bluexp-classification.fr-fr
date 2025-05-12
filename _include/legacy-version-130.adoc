@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+NOTE: Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .

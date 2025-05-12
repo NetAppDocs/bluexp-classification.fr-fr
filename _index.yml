@@ -52,7 +52,7 @@ indexpage:
       url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
     - title: Filtrez vos données pour afficher des fichiers spécifiques
       url: task-investigate-data.html
-    - title: Créez des stratégies pour afficher les résultats de vos principales recherches
+    - title: Créer une recherche enregistrée
       url: task-using-policies.html
     - title: Générer des rapports de conformité
       url: task-generating-compliance-reports.html

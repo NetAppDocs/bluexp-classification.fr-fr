@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: 'La classification BlueXP  vous permet de personnaliser la recherche d"informations sensibles et d"adapter le service à des modèles et des mots clés spécifiques à votre entreprise.' 
+---
+= Créer une classification personnalisée dans la classification BlueXP 
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avec la classification BlueXP , vous pouvez créer une recherche personnalisée pour les informations sensibles. La recherche peut être étendue à une expression régulière ou à un ensemble de mots-clés de proximité.
+
+
+
+== Créer une classification personnalisée
+
+La classification personnalisée n'est disponible que pour les acquisitions Map & Classify, et non pour les acquisitions de mappage uniquement. Cette fonction est actuellement en aperçu.
+
+.Étapes
+. Sélectionnez l'onglet **Classification personnalisée**.
+. Sélectionnez le **Ajouter un nouveau classificateur**.
+. Ajoutez le nom et la description du nouveau classificateur.
+. Pour ajouter la personnalisation en tant qu'expression régulière, sélectionnez **expression régulière personnalisée** puis **Suivant**.
++
+.. Pour une expression régulière, ajoutez le modèle pour détecter les informations spécifiques de vos données. Par exemple, l'ID à 12 chiffres commençant par 201 serait \b201\f\d(9)b. sélectionnez **Valider** pour confirmer la syntaxe de votre entrée.
+
+
+
+
+La nouvelle personnalisation est capturée lors de la prochaine analyse programmée. Pour afficher les résultats, voir xref:task-generating-compliance-reports.html[Générer des rapports de conformité].

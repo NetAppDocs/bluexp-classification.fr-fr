@@ -16,11 +16,12 @@ summary: 'La classification BlueXP offre de nombreuses façons d"ajouter une lis
 [role="lead"]
 La classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée des « données personnelles » que la classification BlueXP identifiera dans les analyses futures. Vous disposez ainsi d'une vue d'ensemble sur l'emplacement des données potentiellement sensibles dans _tous_ les fichiers de votre entreprise.
 
-[]
-====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
 
-====
+IMPORTANT: Pour créer une classification personnalisée dans la version 1.43 et les versions ultérieures, reportez-vous à xref:task-custom-classification.adoc[Créer une classification personnalisée]la section .
+
+
+NOTE: Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
 * Vous pouvez ajouter des identificateurs uniques basés sur des colonnes spécifiques dans les bases de données que vous numérisez.
 * Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte -- ces mots sont identifiés dans vos données.
 * Vous pouvez ajouter un motif personnel à l'aide d'une expression régulière (regex) -- le regex est ajouté aux motifs prédéfinis existants.
@@ -36,7 +37,7 @@ NOTE: Les fonctionnalités décrites dans cette section ne sont disponibles que 
 
 == Ajoutez des identifiants de données personnelles personnalisés à partir de vos bases de données
 
-Une fonctionnalité que nous appelons _Data Fusion_ vous permet d'analyser les données de votre organisation pour identifier si des identificateurs uniques de vos bases de données sont trouvés dans l'une de vos autres sources de données. Vous pouvez choisir les identifiants supplémentaires que recherche la classification BlueXP dans ses analyses en sélectionnant une ou plusieurs colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.
+_Data Fusion_ vous permet d'analyser les données de votre organisation pour déterminer si des identificateurs uniques de vos bases de données se trouvent dans l'une de vos autres sources de données. Vous pouvez choisir les identificateurs supplémentaires que la classification BlueXP  recherche dans ses analyses en sélectionnant une ou plusieurs colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.
 
 image:diagram_compliance_data_fusion.png["Un diagramme montrant comment le contenu de vos bases de données peut être utilisé comme source pour identifier les fichiers qui contiennent les mêmes données."]
 

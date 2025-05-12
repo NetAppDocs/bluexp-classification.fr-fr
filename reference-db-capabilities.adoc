@@ -23,7 +23,7 @@ Vous pouvez ajouter vos schémas de base de données à la classification BlueXP
 | Type | Description | MongoDB | SQL Server | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
 
 
-.9+| Actions | Création de la règle | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.9+| Actions | Créer une recherche enregistrée | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | Balise | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
@@ -50,7 +50,7 @@ Vous pouvez ajouter vos schémas de base de données à la classification BlueXP
 | Étiquette | x | x | x | x | x | x | x 
 
 
-.25+| Filtres | Stratégies | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.25+| Filtres | Recherches enregistrées | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | État de l'analyse d'acquisition | ✓ | ✓ | ✓ | ✓ | ✓ |  |  

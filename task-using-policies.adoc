@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Les filtres personnalisés des stratégies qui fournissent les résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. Le classement BlueXP  propose un ensemble de règles prédéfinies basées sur des demandes courantes ou vous pouvez créer votre propre classification. 
+summary: Les recherches enregistrées sont des filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité couramment demandées. La classification BlueXP  fournit un ensemble de recherches enregistrées par défaut basées sur des demandes courantes ou vous pouvez créer vos propres recherches. 
 ---
-= Attribuez des règles à vos données grâce à la classification BlueXP 
+= Gestion des recherches enregistrées avec la classification BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,75 +14,66 @@ summary: Les filtres personnalisés des stratégies qui fournissent les résulta
 
 
 [role="lead"]
-Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur des demandes client courantes. Vous pouvez créer des stratégies personnalisées qui fournissent des résultats pour des recherches spécifiques à votre organisation.
-
-Les règles offrent les fonctionnalités suivantes :
-
-* <<Liste des règles prédéfinies,Des règles prédéfinies>> De NetApp en fonction des demandes des utilisateurs
-* Possibilité de créer vos propres règles personnalisées
-* Lancez la page Investigation avec les résultats de vos polices en un seul clic
+La classification BlueXP  prend en charge l'enregistrement de vos requêtes de recherche. Avec une recherche enregistrée, vous pouvez créer des filtres personnalisés pour trier les requêtes fréquentes de votre page d'investigation de données. La classification BlueXP  inclut également des recherches enregistrées prédéfinies basées sur des demandes courantes.
 
 
-L'onglet *stratégies* du tableau de bord de conformité répertorie toutes les règles prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP.
+NOTE: Dans les versions de la classification BlueXP  antérieures à 1.43, les recherches enregistrées étaient appelées xref:task-using-policies-deprecated.adoc[stratégies].
 
-Les stratégies apparaissent également dans la liste des filtres de la page Investigation.
+L'onglet *recherches enregistrées* du tableau de bord de conformité répertorie toutes les recherches enregistrées prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP .
 
-image:screenshot_compliance_highlights_tab.png["Capture d'écran de l'onglet règles du tableau de bord de classification BlueXP."]
+Les recherches enregistrées apparaissent également dans la liste des filtres de la page Investigation.
+
+image:screenshot_compliance_highlights_tab.png["Capture d'écran de l'onglet recherches enregistrées dans le tableau de bord de classification BlueXP ."]
 
 
 
-== Afficher les résultats de la police dans la page Investigation
+== Afficher les résultats des recherches enregistrées dans la page Investigation
 
-Pour afficher les résultats d'une police dans la page Investigation, sélectionnez le  bouton d'une règle spécifique, image:screenshot_gallery_options.gif["Bouton plus"]puis sélectionnez *examiner les résultats*.
+Pour afficher les résultats d'une recherche enregistrée dans la page Investigation, sélectionnez le  bouton correspondant à une recherche spécifique, image:screenshot_gallery_options.gif["Bouton plus"]puis sélectionnez *examiner les résultats*.
 
-image:screenshot_compliance_highlights_investigate.png["Capture d'écran de la sélection de l'option examiner les résultats pour une stratégie spécifique dans l'onglet stratégies."]
+image:screenshot_compliance_highlights_investigate.png["Capture d'écran de la sélection de l'option examiner les résultats pour une recherche spécifique dans l'onglet recherche en tabulation."]
 
 
 
-== Création de règles personnalisées
+== Créer des recherches enregistrées personnalisées
 
-Vous pouvez créer vos propres stratégies personnalisées qui fournissent des résultats pour les recherches spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.
+Vous pouvez créer vos propres recherches enregistrées personnalisées qui fournissent des résultats pour des requêtes spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.
 
 .Étapes
 . Dans l'onglet Investigation, définissez une recherche en sélectionnant les filtres à utiliser. Voir link:task-investigate-data.html["Filtrage des données dans la page Investigation"] pour plus de détails.
-. Une fois que vous avez défini toutes les caractéristiques de filtre à votre convenance, sélectionnez *Créer une stratégie à partir de cette recherche*.
+. Une fois que vous avez défini toutes les caractéristiques de filtre à votre convenance, sélectionnez *Créer une recherche enregistrée*.
 +
-image:screenshot_compliance_save_as_highlight.png["Capture d'écran montrant comment enregistrer une requête filtrée en tant que stratégie."]
+image:screenshot_compliance_save_as_highlight.png["Capture d'écran montrant comment enregistrer une requête filtrée en tant que recherche enregistrée."]
 
-. Nommez la règle et sélectionnez les autres actions pouvant être effectuées par la règle :
+. Nommez la recherche enregistrée et ajoutez une description. Le nom doit être unique.
+. Sélectionnez *Créer une recherche enregistrée*.
 +
-.. Entrez un nom et une description uniques.
-.. Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers correspondant aux paramètres de la stratégie.
-.. Sélectionnez *Créer une stratégie*.
-+
-image:screenshot_compliance_save_highlight2.png["Capture d'écran indiquant comment configurer la stratégie et l'enregistrer."]
-
-
+image:screenshot_compliance_save_highlight2.png["Capture d'écran qui montre comment configurer la recherche enregistrée et l'enregistrer."]
 
 
 
 .Résultat
-La nouvelle stratégie s'affiche dans l'onglet stratégies.
+La nouvelle recherche enregistrée apparaît dans l'onglet recherches enregistrées.
 
 
 
-== Modifier les règles
+== Modifier les recherches enregistrées
 
-Vous pouvez modifier les critères d'une stratégie existante pour modifier la requête (les éléments que vous avez définis à l'aide de filtres) afin d'ajouter ou de supprimer certains paramètres.
+Vous pouvez modifier les critères d'une recherche enregistrée personnalisée pour modifier la requête (les éléments que vous avez définis à l'aide de filtres) afin d'ajouter ou de supprimer certains paramètres.
 
-Vous ne pouvez pas modifier les règles prédéfinies.
+Vous ne pouvez pas modifier les recherches enregistrées par défaut.
 
 .Étapes
-. Dans la page liste des polices, sélectionnez *Modifier la stratégie* pour la règle que vous souhaitez modifier.
+. Sur la page des recherches enregistrées, sélectionnez *Modifier la recherche enregistrée* pour la recherche que vous souhaitez modifier.
 +
-image:screenshot_compliance_edit_policy_button.png["Capture d'écran indiquant comment lancer une modification vers une police existante."]
+image:screenshot_compliance_edit_policy_button.png["Capture d'écran montrant Modifier la recherche enregistrée."]
 
-. Apportez les modifications aux champs Nom et Description. Pour modifier uniquement ces champs, sélectionnez *Enregistrer la stratégie*.
+. Apportez les modifications aux champs Nom et Description. Pour modifier uniquement ces champs, sélectionnez *Enregistrer*.
 +
 Pour modifier les filtres de la requête enregistrée, sélectionnez *Modifier la requête*.
 
 +
-image:screenshot_compliance_edit_policy_dialog.png["Capture d'écran indiquant la sélection du bouton Modifier la requête sur la page Modifier la stratégie."]
+image:screenshot_compliance_edit_policy_dialog.png["Capture d'écran de la sélection du bouton Modifier la requête sur la page Modifier la recherche enregistrée."]
 
 . Dans la page Investigation qui définit cette requête, modifiez la requête en ajoutant, en supprimant ou en personnalisant les filtres, puis sélectionnez *Enregistrer les modifications* .
 +
@@ -92,34 +83,48 @@ image:screenshot_compliance_edit_policy_query.png["Capture d'écran indiquant co
 
 
 
-== Supprimer des règles
+== Supprimer les recherches enregistrées
 
-Vous pouvez supprimer toute stratégie personnalisée que vous avez créée si vous n'en avez plus besoin. Vous ne pouvez pas supprimer les règles prédéfinies.
+Vous pouvez supprimer toute recherche enregistrée personnalisée si vous n'en avez plus besoin. Vous ne pouvez pas supprimer les recherches enregistrées par défaut
 
-Pour supprimer une stratégie, sélectionnez le image:screenshot_gallery_options.gif["Bouton plus"] bouton correspondant à une stratégie spécifique, sélectionnez *Supprimer la stratégie*, puis sélectionnez *Supprimer la stratégie* à nouveau dans la boîte de dialogue de confirmation.
-
-
-
-== Liste des règles prédéfinies
-
-La classification BlueXP fournit les règles définies par le système suivantes :
-
-[cols="25,40,40"]
-|===
-| Nom | Description | Logique 
+Pour supprimer une recherche enregistrée, sélectionnez le image:screenshot_gallery_options.gif["Bouton plus"] bouton correspondant à une recherche spécifique, sélectionnez *Supprimer la recherche enregistrée*, puis sélectionnez de nouveau *Supprimer la recherche* dans la boîte de dialogue de confirmation.
 
 
-| Les données privées ont déjà dépassé les 7 ans | Fichiers contenant des données personnelles ou sensibles, modifié pour la dernière fois il y a plus de 7 ans. | Fichiers contenant des données personnelles ou sensibles, modifié pour la dernière fois il y a plus de 7 ans 
+
+== Recherches par défaut
+
+La classification BlueXP  fournit les requêtes de recherche définies par le système suivantes :
+
+* **Noms des sujets de données - risque élevé**
++
+Fichiers avec plus de 50 noms de sujet de données
+
+* **Adresses de courriel - risque élevé**
++
+Fichiers contenant plus de 50 adresses e-mail ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des adresses e-mail
+
+* **Données personnelles - risque élevé**
++
+Fichiers contenant plus de 20 identificateurs de données personnelles ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des identificateurs de données personnelles
+
+* **Données privées - périmées sur 7 ans**
++
+Les fichiers contenant des renseignements personnels ou sensibles, modifiés il y a plus de 7 ans
+
+* **Protéger - élevé**
++
+Fichiers ou colonnes de base de données contenant un mot de passe, des informations de carte de crédit, un numéro IBAN ou un numéro de sécurité sociale
+
+* **Protéger - faible**
++
+Fichiers qui n'ont pas été utilisés depuis plus de 3 ans
+
+* **Protéger - Moyen**
++
+Fichiers contenant des fichiers ou des colonnes de base de données avec des identificateurs de données personnels, notamment des numéros d'identification, des numéros d'identification fiscale, des numéros de permis de conduire, des ID médicaux ou des numéros de passeport
+
+* **Données personnelles sensibles - risque élevé**
++
+Fichiers contenant plus de 20 identificateurs de données personnelles sensibles ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles
 
 
-| Noms des sujets de données - risque élevé | Fichiers avec plus de 50 noms de sujet de données. | Fichiers avec plus de 50 noms de sujet de données 
-
-
-| Adresses e-mail - risque élevé | Fichiers contenant plus de 50 adresses électroniques ou colonnes DB contenant plus de 50 % de leurs lignes contenant des adresses électroniques | Fichiers contenant plus de 50 adresses électroniques ou colonnes DB contenant plus de 50 % de leurs lignes contenant des adresses électroniques 
-
-
-| Données personnelles - risque élevé | Fichiers contenant plus de 20 identificateurs de données personnelles, ou colonnes de bases de données contenant plus de 50 % de leurs lignes contenant des identificateurs de données personnelles. | Fichiers avec plus de 20 colonnes personnelles ou DB avec plus de 50 % de leurs lignes contenant des colonnes personnelles 
-
-
-| Données personnelles sensibles - risque élevé | Fichiers contenant plus de 20 identificateurs de données personnelles sensibles, ou colonnes de bases de données contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles. | Les fichiers contenant plus de 20 colonnes personnelles sensibles ou DB contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles 
-|===

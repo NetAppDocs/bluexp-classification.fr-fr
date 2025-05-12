@@ -29,7 +29,7 @@ TIP: Si vous avez besoin de la classification BlueXP  pour identifier d'autres 
 
 == Types de données personnelles
 
-Les données personnelles, ou _informations personnelles identifiables_ (PII), qui se trouvent dans les fichiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
+Les données personnelles, ou _informations personnelles identifiables_ (PII), qui se trouvent dans les fichiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP  utilise link:task-controlling-private-data.html#view-files-that-contain-personal-data["validation de proximité"^] pour valider ses résultats pour l'identificateur.
 
 Les langues dans lesquelles ces éléments peuvent être reconnus sont identifiées dans le tableau.
 
@@ -323,7 +323,7 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 
 == Types de données personnelles sensibles
 
-La classification BlueXP peut trouver les informations personnelles sensibles suivantes (SPII) dans des fichiers.
+La classification BlueXP  peut trouver les renseignements personnels sensibles suivants (SPII) dans les fichiers.
 
 Les éléments de cette catégorie ne peuvent être reconnus qu'en anglais pour le moment.
 

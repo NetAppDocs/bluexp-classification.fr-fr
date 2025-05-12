@@ -152,16 +152,16 @@ Utilisez les filtres suivants pour afficher les données par type de stockage.
 
 | Référentiel de stockage | Sélectionnez le référentiel de stockage, par exemple un volume ou un schéma. 
 |===
-*Filtrer les données par stratégies*
+*Filtrer les données par recherches enregistrées*
 
-Utilisez le filtre suivant pour afficher les données par stratégie.
+Utilisez le filtre suivant pour afficher les données des recherches enregistrées.
 
 [cols="30,60"]
 |===
 | Filtre | Détails 
 
 
-| Stratégies | Sélectionnez une ou plusieurs stratégies. Accédez link:task-using-policies.html["ici"] à pour afficher la liste des stratégies existantes et créer vos propres stratégies personnalisées. 
+| Recherche enregistrée | Sélectionnez une ou plusieurs recherches enregistrées. Accédez au link:task-using-policies.html["onglet recherches enregistrées"] pour afficher la liste des recherches enregistrées existantes et en créer de nouvelles. 
 |===
 *Filtrer les données par état d'analyse*
 
@@ -194,7 +194,7 @@ Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans v
 
 == Afficher les métadonnées de fichier
 
-En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les link:task-using-policies.html["création de règles"]utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.
+En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les link:task-using-policies.html["créer des recherches enregistrées"]utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
 Toutes les informations ne sont pas disponibles pour toutes les sources de données - juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume et les autorisations ne sont pas pertinents pour les fichiers de base de données.
 
@@ -267,7 +267,7 @@ image:screenshot_compliance_duplicate_file.png["Capture d'écran indiquant comme
 
 +
 
-TIP: Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette page et la saisir directement dans la page Investigation pour rechercher un fichier en double spécifique à tout moment, ou vous pouvez l'utiliser dans une police.
+TIP: Vous pouvez utiliser la valeur « hachage de fichier » fournie dans cette page et la saisir directement dans la page Investigation pour rechercher un fichier en double spécifique à tout moment, ou vous pouvez l'utiliser dans une recherche enregistrée.
 
 
 
@@ -364,24 +364,18 @@ Une boîte de dialogue affiche un message indiquant que les rapports sont en cou
 
 
 
-== Créer une stratégie basée sur les filtres sélectionnés
+== Créer une recherche enregistrée en fonction des filtres sélectionnés
 
-Il peut être utile d'enregistrer les filtres que vous avez sélectionnés dans la page enquête de données en tant que stratégie. De cette façon, vous pouvez exécuter les mêmes filtres à tout moment sans avoir à les resélectionner.
+Vous pouvez créer une recherche enregistrée pour les filtres de recherche fréquemment utilisés dans la page investigation de données pour répliquer facilement ces requêtes de recherche.
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Investigation*.
-. Sur la page Investigation des données, sélectionnez les filtres que vous souhaitez utiliser pour créer une stratégie.
-. En bas du volet filtre, sélectionnez *Créer une stratégie à partir de cette recherche*.
-. Entrez un nom et une description pour la stratégie.
+. Sur la page investigation de données, sélectionnez les filtres que vous souhaitez utiliser pour créer une recherche enregistrée.
+. En bas du volet filtre, sélectionnez *Créer une recherche enregistrée dans cette recherche*.
+. Entrez un nom et une description pour la recherche enregistrée.
 . Choisissez l'une des options suivantes :
-+
-** *Supprimer automatiquement les fichiers correspondant à cette stratégie (tous les jours) : sélectionnez cette option si vous souhaitez supprimer les fichiers correspondant à la stratégie.
-** *Envoyer des mises à jour par e-mail à propos de cette stratégie aux utilisateurs BlueXP  sur ce compte chaque <day/week/month>* : sélectionnez cette option si vous souhaitez envoyer des mises à jour par e-mail à propos de la stratégie aux utilisateurs BlueXP  sur ce compte.
-** *Envoyer chaque <Day> à <email address>*: Sélectionnez cette option si vous voulez envoyer un email chaque <Day> à une adresse email spécifique.
-
-
-. Sélectionnez *Créer une stratégie*.
+. Sélectionnez *Créer une recherche enregistrée*.
 
 
 
-TIP: L'affichage des résultats sur la page règles peut prendre jusqu'à 15 minutes.
+TIP: L'affichage des résultats sur la page recherches enregistrées peut prendre jusqu'à 15 minutes.

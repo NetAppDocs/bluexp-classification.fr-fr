@@ -49,7 +49,7 @@ La classification BlueXP permet d'identifier les données potentiellement menac�
 * Identifiez tous les fichiers et répertoires (partages et dossiers) avec les autorisations ouvertes exposées à l'ensemble de votre organisation ou au public.
 * Identifiez les données sensibles qui se trouvent en dehors de l'emplacement initial dédié.
 * Respectez les règles de conservation des données.
-* Utilisez _Policies_ pour détecter automatiquement les nouveaux problèmes de sécurité afin que le personnel de sécurité puisse agir immédiatement.
+* Utilisez __Policies__ pour détecter automatiquement les nouveaux problèmes de sécurité afin que le personnel de sécurité puisse agir immédiatement.
 
 
 .Optimiser l'utilisation du stockage

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-org-private-data.html 
-keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, saved searches 
 summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et d"organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.' 
 ---
 = Organisez vos données privées avec la classification BlueXP 
@@ -16,15 +16,13 @@ summary: 'La classification BlueXP vous offre de nombreuses façons de gérer et
 [role="lead"]
 La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.
 
-[]
-====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP. La version de décembre 2023 (v1.26.6) a supprimé l'option d'intégration des données à l'aide des étiquettes Azure information protection (AIP).
 
-====
-* Si vous êtes abonné à https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.
+NOTE: Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
+* Si vous êtes abonné à link:https://azure.microsoft.com/en-us/services/information-protection/["Protection des informations Azure (AIP)"^] pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP  pour gérer les étiquettes d'AIP.
 * Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.
 * Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.
-* Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.
+* Grâce à la fonction de recherche enregistrée, vous pouvez créer vos propres requêtes de recherche personnalisées afin de voir facilement les résultats en cliquant sur un bouton.
 * Vous pouvez envoyer des alertes par e-mail à des utilisateurs BlueXP ou à toute autre adresse e-mail lorsque certaines stratégies critiques renvoient des résultats.
 
 

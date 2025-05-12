@@ -18,6 +18,48 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 12 mai 2025
+
+
+
+=== Version 1.43
+
+Cette version de classification BlueXP  inclut :
+
+.Hiérarchiser les analyses de classification
+La classification BlueXP  permet désormais de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement, ce qui vous permet de sélectionner les acquisitions qui sont effectuées en premier. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.
+
+Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
+
+.Prise en charge des catégories de données canadiennes d'information à caractère personnel (IIP)
+Les analyses de classification BlueXP  identifient maintenant les catégories de données des RP canadiennes pour les renseignements bancaires, le numéro de passeport, le numéro d'assurance sociale, le numéro de permis de conduire et le numéro de carte santé pour toutes les provinces et tous les territoires.
+
+Pour plus d'informations, voir xref:reference-private-data-categories.adoc#types-of-personal-data[Catégories de données personnelles].
+
+.Classification personnalisée (aperçu)
+La classification BlueXP  prend désormais en charge les classifications personnalisées pour les analyses Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise et garantir leur conformité avec les expressions régulières. Cette fonction est actuellement en aperçu.
+
+Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des classifications personnalisées].
+
+.Onglet recherches enregistrées
+L'onglet **politiques** a été renommé xref:task-using-policies.html[**Recherches enregistrées**]. La fonctionnalité est la même.
+
+.Envoyer les événements d'analyse au journal d'audit
+Les événements de numérisation BlueXP  peuvent maintenant être envoyés à xref:task-audit-data-sense-actions.html[journal d'audit]. La classification BlueXP  prend également en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP "^]. L'envoi d'événements d'acquisition de classification à la chronologie BlueXP  est uniquement pris en charge pour les environnements de travail.
+
+.Mises à jour de sécurité
+* Le paquet Keras a été mis à jour, atténuant les vulnérabilités (BDSA-2025-0107 et BDSA-2025-1984).
+* La configuration des containers Docker a été mise à jour. Le conteneur n'a plus accès aux interfaces réseau de l'hôte pour l'élaboration de paquets réseau bruts. En réduisant les accès inutiles, la mise à jour limite les risques potentiels pour la sécurité.
+
+
+.Amélioration des performances
+Des améliorations de code ont été mises en œuvre pour réduire l'utilisation de la mémoire RAM et améliorer les performances globales de la classification BlueXP .
+
+.Correctifs de bogues
+Les bugs ayant provoqué l'échec des analyses StorageGRID, les options de filtre de la page d'enquête ne se chargent pas et l'évaluation de découverte de données ne pouvant pas être téléchargée pour les évaluations de volume élevé ont été corrigés.
+
+
+
 == 14 avril 2025
 
 

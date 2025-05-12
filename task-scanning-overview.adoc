@@ -64,7 +64,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Rechercher des noms dans les fichiers | Oui. | Non 
 
 
-| Création link:task-using-policies.html["stratégies"] fournissant des résultats de recherche personnalisés | Oui. | Non 
+| Créer link:task-using-policies.html["recherches enregistrées"] qui fournit des résultats de recherche personnalisés | Oui. | Non 
 
 
 | Possibilité d'exécuter d'autres rapports | Oui. | Non 
@@ -105,10 +105,10 @@ Le tableau ci-dessous présente certaines des différences :
 | Fichiers dupliqués | Oui. | Oui. 
 
 
-| Des règles prédéfinies | Oui. | Non 
+| Recherches enregistrées prédéfinies | Oui. | Non 
 
 
-| Règles personnalisées | Oui. | Oui. 
+| Recherches enregistrées par défaut | Oui. | Oui. 
 
 
 | Rapport DDA | Oui. | Oui. 
@@ -169,7 +169,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Fonction | Cartographiez et classez | Carte 
 
 
-| Stratégies | Oui. | Oui. 
+| Recherches enregistrées | Oui. | Oui. 
 
 
 | Type d'environnement de travail | Oui. | Oui. 

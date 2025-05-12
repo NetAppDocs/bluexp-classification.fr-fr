@@ -75,7 +75,6 @@
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link-macro">Protection des informations Azure (AIP)</block>
   <block id="892f73595a08cb4eef7c3e6319b7f807" category="list-text">Vous pouvez ajouter des balises aux fichiers que vous souhaitez marquer pour une organisation ou pour un type de suivi.</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">Vous pouvez affecter un utilisateur BlueXP à un fichier spécifique ou à plusieurs fichiers, de sorte que cette personne puisse être responsable de la gestion du fichier.</block>
-  <block id="f9f3ed5f443ba769e31426ba3b322b22" category="list-text">Grâce à la fonctionnalité « Stratégie », vous pouvez créer vos propres requêtes de recherche personnalisées afin de pouvoir voir facilement les résultats en cliquant sur un bouton.</block>
   <block id="6dd2018793ec98bc5468877b15393d0a" category="admonition">Les fonctionnalités décrites dans cette section ne sont disponibles que si vous avez choisi d'effectuer une analyse de classification complète sur vos sources de données. Les sources de données qui ont une analyse avec mappage uniquement n'affichent pas de détails au niveau des fichiers.</block>
   <block id="a8d43af62606e8592f9d1aabd661626f" category="section-title">Dois-je utiliser des étiquettes ou des étiquettes ?</block>
   <block id="189f63f277cd73395561651753563065" category="cell">Étiquettes</block>
@@ -172,36 +171,17 @@
   <block id="3583bc2d65526450df9c5552c02b3ac6" category="inline-image-macro">Capture d'écran indiquant comment affecter un utilisateur à plusieurs fichiers dans la page recherche de données.</block>
   <block id="06c7f127f0b35251877a753f103b3d87" category="paragraph"><block ref="06c7f127f0b35251877a753f103b3d87" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19883fe918db5ff3a855bc0016acd36c" category="paragraph">L'utilisateur est ajouté aux métadonnées pour tous les fichiers sélectionnés.</block>
-  <block id="1404233f94f23148f7634e161761230b" category="paragraph">Les règles offrent les fonctionnalités suivantes :</block>
-  <block id="bee2f666032ac3e06ad966dc6a8febf4" category="list-text">Lancez la page Investigation avec les résultats de vos polices en un seul clic</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">Bouton plus</block>
-  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">Vous pouvez créer vos propres stratégies personnalisées qui fournissent des résultats pour les recherches spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">Filtrage des données dans la page Data Investigation</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">Une fois que vous avez toutes les caractéristiques de filtre comme vous le souhaitez, cliquez sur *Créer une stratégie à partir de cette recherche*.</block>
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">Entrez un nom et une description uniques.</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">Libellés AIP</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Cliquez sur *Créer une stratégie*.</block>
-  <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">Capture d'écran indiquant comment configurer la stratégie et l'enregistrer.</block>
-  <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">La nouvelle stratégie s'affiche dans l'onglet stratégies.</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">Capture d'écran indiquant comment choisir les critères d'e-mail à envoyer pour la police.</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">Capture d'écran indiquant comment lancer une modification vers une police existante.</block>
-  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">Capture d'écran indiquant la sélection du bouton Modifier la requête sur la page Modifier la stratégie.</block>
-  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">Capture d'écran indiquant comment modifier la requête en modifiant les paramètres du filtre.</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="49ee3087348e8d44e1feda1917443987" category="cell">Nom</block>
   <block id="35ba1271dff4019593d3034c929e1bbc" category="cell">Logique</block>
-  <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">Fichiers contenant des données personnelles ou sensibles, modifié pour la dernière fois il y a plus de 7 ans.</block>
-  <block id="2e54b6ea8f6706e7beb9350d62e23178" category="cell">Fichiers contenant des données personnelles ou sensibles, modifié pour la dernière fois il y a plus de 7 ans</block>
-  <block id="dc33521f475dd5a7293f3917bf0af42f" category="cell">Fichiers avec plus de 50 noms de sujet de données.</block>
-  <block id="803f715ed99c292cad7695adc28eb9d6" category="cell">Fichiers avec plus de 50 noms de sujet de données</block>
-  <block id="692c6580584ac112966355c5be17619f" category="cell">Fichiers contenant plus de 50 adresses électroniques ou colonnes DB contenant plus de 50 % de leurs lignes contenant des adresses électroniques</block>
-  <block id="f01867afcb6e04d62f44ff0ba1bea1a8" category="cell">Fichiers contenant plus de 20 identificateurs de données personnelles, ou colonnes de bases de données contenant plus de 50 % de leurs lignes contenant des identificateurs de données personnelles.</block>
-  <block id="8f08d4145d6e3a493a3fa4cd9e22247f" category="cell">Fichiers avec plus de 20 colonnes personnelles ou DB avec plus de 50 % de leurs lignes contenant des colonnes personnelles</block>
-  <block id="9b81ccdb2be13f884e301547dfac52b2" category="cell">Fichiers contenant plus de 20 identificateurs de données personnelles sensibles, ou colonnes de bases de données contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles.</block>
-  <block id="d3566f9763235eb9dbff68cd1220088a" category="cell">Les fichiers contenant plus de 20 colonnes personnelles sensibles ou DB contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles</block>
   <block id="c442f433b878bcb44759d46bd9921901" category="list-text">Vous pouvez ajouter des identificateurs uniques basés sur des colonnes spécifiques dans les bases de données que vous numérisez.</block>
   <block id="aadddcc55c6a2a76a433b97a4366f53f" category="list-text">Vous pouvez ajouter des mots-clés personnalisés à partir d'un fichier texte -- ces mots sont identifiés dans vos données.</block>
   <block id="68bd9fa0417b646f5dcd316727b11be1" category="list-text">Vous pouvez ajouter un motif personnel à l'aide d'une expression régulière (regex) -- le regex est ajouté aux motifs prédéfinis existants.</block>
@@ -665,10 +645,8 @@
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">Date et heure : horodatage complet de l'événement</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">État - INFO, AVERTISSEMENT</block>
-  <block id="79bd49250e598bf53655f50c83b04044" category="list-text">Type d'action (supprimer, copier, déplacer, créer la stratégie, mettre à jour la stratégie, Analyse des fichiers, téléchargement du rapport JSON, etc.)</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">Nom du fichier (si l'action est pertinente pour un fichier)</block>
   <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">Détails de l'action - ce qui a été fait : dépend de l'action</block>
-  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">Nom de la règle</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">Pour déplacer - Source et destination</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">Pour la copie - Source et destination</block>
   <block id="8022db3692364177695fce2a133b526b" category="list-text">Pour balise - nom de balise</block>
@@ -816,7 +794,6 @@
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">Catégories de données privées</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">Types de données personnelles</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">validation de proximité</block>
-  <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Ajout d'identifiants de données personnels à l'aide de Data Fusion</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">Type</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">Identificateur</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">Validation de proximité ?</block>
@@ -1099,7 +1076,6 @@
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">supprimez le fichier</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">Capture d'écran indiquant comment afficher l'emplacement des fichiers dupliqués.</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">Vous pouvez utiliser la valeur de hachage de fichier fournie dans cette page et la saisir directement dans la page Investigation pour rechercher un fichier en double spécifique à tout moment, ou vous pouvez l'utiliser dans une police.</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les résultats que vous souhaitez voir. Il s'agit d'une fonctionnalité très puissante car une fois les données raffinées, vous pouvez utiliser la barre de boutons en haut de la page pour effectuer diverses actions, notamment copier des fichiers, déplacer des fichiers, ajouter une balise ou une étiquette AIP aux fichiers, et bien plus encore.</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">Capture d'écran des filtres disponibles lors du raffinage des résultats dans la page d'enquête.</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
@@ -1236,11 +1212,6 @@
   <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">Vous pouvez envoyer des alertes par e-mail à des utilisateurs BlueXP ou à toute autre adresse e-mail lorsque certaines stratégies critiques renvoient des résultats.</block>
   <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">Dans la page Modifier la stratégie :</block>
   <block id="8e77c496ba7cea76c0e1e5ce3797b5fd" category="list-text">Cochez la case « Envoyer tous les utilisateurs dans ce compte » si vous souhaitez envoyer des e-mails de notification aux utilisateurs de votre compte BlueXP, puis choisissez l'intervalle d'envoi de l'e-mail (par exemple, *tous les jours*).</block>
-  <block id="88a8fc10a4a6b28d78fc1e400182ead7" category="cell">Les données privées ont déjà dépassé les 7 ans</block>
-  <block id="85198c4138d424a195c0c9dd0b22bd8f" category="cell">Noms des sujets de données - risque élevé</block>
-  <block id="688de20ddbb7b2207a9c3999989be28b" category="cell">Adresses e-mail - risque élevé</block>
-  <block id="d55a6a9af72cb1355db97941acafb865" category="cell">Données personnelles - risque élevé</block>
-  <block id="39dcf805c803eacb6e35a6ea5e8cb25d" category="cell">Données personnelles sensibles - risque élevé</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="section-title">Trois nouveaux filtres sont disponibles dans la page Data Investigation</block>
   <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">De nouveaux filtres sont disponibles pour affiner les résultats affichés dans la page recherche de données :</block>
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">Le filtre « nombre d'utilisateurs avec accès » indique quels fichiers et dossiers sont ouverts à un certain nombre d'utilisateurs. Vous pouvez choisir une plage de nombres pour affiner les résultats, par exemple pour voir quels fichiers sont accessibles par 51-100 utilisateurs.</block>
@@ -1314,7 +1285,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-standard-16</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données.</block>
   <block id="d8cea64df56dbd6c2f05daa03963a550" category="list-text">Dans la page recherche de données, définissez votre recherche en sélectionnant tous les filtres que vous souhaitez utiliser. Voir <block ref="e79f6c0a50d03630f8bf728699f2d526" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
-  <block id="330f8b46c48484fc9016a8247fb99ba3" category="inline-link-macro">Utiliser automatiquement des règles</block>
   <block id="80ce077edb1be50ba22951913b78148c" category="doc">Métadonnées collectées à partir des sources de données</block>
   <block id="f22df8f0b5591e83e42546cc1ff8a3d7" category="cell">*Métadonnées*</block>
   <block id="4e7da840816931928beff62cd45584f2" category="cell">*CIFS*</block>
@@ -1333,13 +1303,10 @@
   <block id="8999d4891e9704c8ef8ab57f28c53a69" category="paragraph">Utilisez les filtres suivants pour afficher les données en fonction des critères de temps.</block>
   <block id="f20fdaad431988cc576541dc5f1e5aa1" category="paragraph">Utilisez les filtres suivants pour afficher les données en fonction de l'emplacement, de la taille et du répertoire ou du type de fichier.</block>
   <block id="f0eecb698de174ba50c884e569ff3bf3" category="paragraph">Utilisez les filtres suivants pour afficher les données par type de stockage.</block>
-  <block id="b3c7c4e0f0d5f23cefa1d143f9a57eb7" category="section-title">Filtrez les données par balises, étiquettes, utilisateurs affectés et règles</block>
-  <block id="b6fb796ef2b473f220b609812d519181" category="cell">Sélectionnez une ou plusieurs stratégies. Aller <block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block> pour afficher la liste des règles existantes et créer vos propres règles personnalisées.</block>
   <block id="9c7541a95b9333c21b847910917cc789" category="paragraph">Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans votre espace de stockage.</block>
   <block id="f29d7c200ca42589e2a229aaea31ee81" category="paragraph">Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.</block>
   <block id="1bfc9901c2c53bbd2c3b887e04b0729a" category="inline-image-macro">Capture d'écran de l'emplacement du bouton de suppression de balise.</block>
   <block id="40a535759cb359e9c73b128ff3596ce9" category="paragraph"><block ref="40a535759cb359e9c73b128ff3596ce9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="45bb3a28f3aa6feb29d3e208dcf8e08c" category="cell">Création <block ref="70f775217afdc5846c2e8494b632caaf" category="inline-link-macro-rx"></block> fournissant des résultats de recherche personnalisés</block>
   <block id="9ece336caf3d2b843dafc984e27b323e" category="paragraph">La vitesse de analyse est affectée par la latence du réseau, la latence des disques, la bande passante réseau, la taille de l'environnement et la taille de la distribution de fichiers.</block>
   <block id="09b61ae5e654064fda3d13d13cddb19e" category="inline-link">Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?</block>
   <block id="2843dd9a7ccb37a6a7f02e5de57c2919" category="paragraph">Si vous rencontrez des problèmes, reportez-vous à la section<block ref="969536d6ca318f8457b68ae4d9531c7e" category="inline-link-rx"></block></block>
@@ -1347,7 +1314,6 @@
   <block id="1c30d6a3b54fde82807f5962774d68d0" category="paragraph"><block ref="1c30d6a3b54fde82807f5962774d68d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79ef1979db95fea8f788488be1660ddb" category="paragraph">Vous pouvez répondre à un DSAR en recherchant le nom complet ou l'identifiant connu d'un sujet (par exemple une adresse e-mail), puis en téléchargeant un rapport. Ce rapport est conçu pour aider votre entreprise à respecter le RGPD ou les autres lois similaires sur la confidentialité des données.</block>
   <block id="949195768b714c50c6fc8c9385a74cc5" category="sidebar">Examiner vos données</block>
-  <block id="8ca194e9f33f192ece200a8c9ed9e621" category="sidebar">Attribuez des règles à vos données</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Référence</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilisation d'options de support en libre-service</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créez un dossier de demande de support auprès du support NetApp</block>
@@ -1803,7 +1769,6 @@
   <block id="878e6c42479d1f6a6495aba58949d3c5" category="paragraph">Si des problèmes ont été découverts, ils sont classés comme « recommandés » ou « obligatoires » pour être résolus. Les problèmes recommandés sont généralement des éléments qui ralentiraient l'analyse de classification BlueXP et les tâches de catégorisation. Ces éléments n'ont pas besoin d'être corrigés, mais vous pouvez les corriger.</block>
   <block id="5fb0f117c2a88f7d54ef4fad5aba8527" category="summary">La classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée des « données personnelles » que la classification BlueXP identifiera dans les analyses futures. Vous disposez ainsi d'une vue d'ensemble sur l'emplacement des données potentiellement sensibles dans tous les fichiers de votre entreprise.</block>
   <block id="b65f3e108ef152bd59fffc2955d2d547" category="paragraph">La classification BlueXP offre de nombreuses façons d'ajouter une liste personnalisée des « données personnelles » que la classification BlueXP identifiera dans les analyses futures. Vous disposez ainsi d'une vue d'ensemble sur l'emplacement des données potentiellement sensibles dans _tous_ les fichiers de votre entreprise.</block>
-  <block id="e88adea3b212c154801612c8605db6d5" category="paragraph">Une fonctionnalité que nous appelons _Data Fusion_ vous permet d'analyser les données de votre organisation pour identifier si des identificateurs uniques de vos bases de données sont trouvés dans l'une de vos autres sources de données. Vous pouvez choisir les identifiants supplémentaires que recherche la classification BlueXP dans ses analyses en sélectionnant une ou plusieurs colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.</block>
   <block id="905a4962b323594ff4605a44781efa64" category="paragraph">Notez que, puisque vous scannez vos propres bases de données, quelle que soit la langue dans laquelle vos données sont stockées, elles seront utilisées pour identifier les données lors des futures analyses de classification BlueXP.</block>
   <block id="7c655988789d416c5a4a87e462cfe874" category="paragraph">Vous pouvez ajouter des mots-clés personnalisés à la classification BlueXP pour identifier l'emplacement où se trouvent les informations. Pour ajouter ces mots-clés, entrez simplement les mots que vous souhaitez que la classification BlueXP reconnaisse. Les mots-clés sont ajoutés aux mots-clés prédéfinis que la classification BlueXP utilise déjà et les résultats sont visibles dans la section modèles personnels.</block>
   <block id="ddebf200916f487e633020a034f5904d" category="paragraph">Après la mise à jour des mots-clés personnalisés, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP, dans la section « Résultats personnels », et dans la page Investigation du filtre « données personnelles ».</block>
@@ -1946,8 +1911,6 @@
   <block id="def03cca1b6cd44fc1ef14e712a6c792" category="inline-link-macro">Découvrez les terminaux que la classification BlueXP contacte</block>
   <block id="80cef547cabd3e510ea56f58ec10a12e" category="paragraph">Si vous avez des exigences de mise en réseau strictes, <block ref="a5023c570d3c1110eead6b3e84b02871" category="inline-link-macro-rx"></block>.</block>
   <block id="bf9282cd68ceb267317aa336c787020b" category="summary">Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur les demandes courantes des clients. Vous pouvez créer des stratégies personnalisées fournissant des résultats de recherches spécifiques à votre organisation.</block>
-  <block id="967b04771a3458159d11dd8932d09129" category="inline-image-macro">Capture d'écran de l'onglet règles du tableau de bord de classification BlueXP.</block>
-  <block id="d44d997087e7d999102d47f4839b74ac" category="paragraph"><block ref="d44d997087e7d999102d47f4839b74ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b1a6cef9d9c4c8a2827dbad6747aa84" category="paragraph">Vous pouvez créer une stratégie personnalisée pour supprimer des fichiers qui correspondent à la stratégie. Par exemple, vous pouvez supprimer des fichiers qui contiennent des informations sensibles et qui ont été découverts par la classification BlueXP au cours des 30 derniers jours.</block>
   <block id="9ea11244a8e35bf5161f9201266edc49" category="paragraph">Des étiquettes sont ajoutées ou mises à jour en continu dans les fichiers au fur et à mesure que le système de classification BlueXP analyse vos fichiers.</block>
   <block id="7d2b76399031094bccc00e1ddb38ac56" category="summary">Procédez en quelques étapes pour installer la classification BlueXP sur un hôte Linux de votre réseau ou sur un hôte Linux dans le cloud disposant d'un accès Internet. Dans le cadre de cette installation, vous devrez déployer l'hôte Linux manuellement sur votre réseau ou dans le cloud.</block>
@@ -1984,7 +1947,6 @@
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">Désinstallez la classification BlueXP d'un déploiement sur site</block>
   <block id="19699e7aed7e972e489e53b7a581039d" category="paragraph">Vous pouvez désinstaller la classification BlueXP d'un hôte si vous ne souhaitez plus utiliser la classification BlueXP ou si vous rencontrez un problème qui nécessite une réinstallation.</block>
   <block id="0b139c0236cbbe51386a48380dccef80" category="summary">La classification BlueXP vous offre de nombreuses façons de gérer et d'organiser vos données privées. Vous pouvez ainsi consulter plus facilement les données qui vous sont les plus importantes.</block>
-  <block id="866b468ee4470d23fb5549ba61fadfa8" category="list-text">Si vous êtes abonné à<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block> Pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP afin de gérer ces étiquettes d'AIP.</block>
   <block id="3ad72e369e1a6f6b2b9b64eb74a1d971" category="paragraph">Vous trouverez ci-dessous une comparaison du balisage de classification BlueXP et de l'étiquetage Azure information protection.</block>
   <block id="5020eb13612ce249003703cc69ad6434" category="cell">Les balises de fichier font partie intégrante du classement BlueXP.</block>
   <block id="4a1d8080f22d9eb13693aea693c4e64c" category="cell">La balise n'est conservée que dans la base de données de classification BlueXP, mais pas dans le fichier. Il ne modifie pas le fichier, ni les heures d'accès ou de modification du fichier.</block>
@@ -2186,7 +2148,6 @@
   <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQL Server</block>
   <block id="35686630aa3baddc18c904374e570233" category="cell">Amazon RDS</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">Actions</block>
-  <block id="af4141cf3fb8179af4deac9547c01278" category="cell">Création de la règle</block>
   <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">Balise</block>
   <block id="773ecc684d98231f8f23773727622446" category="cell">Attribuer à</block>
   <block id="5e20646580da584d76435da00d6face4" category="cell">Exporter les données</block>
@@ -2420,9 +2381,6 @@
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Cette version comprend quelques améliorations mineures.</block>
   <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">L'option d'intégration des données à l'aide d'étiquettes Azure information protection (AIP) a été désactivée. Reportez-vous à la section <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>.</block>
   <block id="f9be4df42ee71d8a46fc32f8b40e0b1b" category="paragraph">Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois.<block ref="46e19d501a7aeb47676677c6786cd6a8" category="inline-link-rx"></block>.</block>
-  <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">Afficher les résultats de la police dans la page Investigation</block>
-  <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">Modifier les règles</block>
-  <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">Supprimer des règles</block>
   <block id="ea8e3558520841b9ad476460d59b798b" category="doc">Ajoutez des identifiants de données personnels à vos analyses de classification BlueXP</block>
   <block id="8ebfdc752250ae84fbace65f427cdb3f" category="paragraph">Vous devez avoir <block ref="bbfd14f1fba46892c6cec16b4233f355" category="inline-link-macro-rx"></block> À la classification BlueXP avant d'ajouter des sources de données Fusion.</block>
   <block id="63237392f6a02b88aeb414ad83b2e4f4" category="paragraph">Après la mise à jour des catégories personnalisées, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP sous la section « catégories » et dans la page Investigation du filtre « Catégorie ». <block ref="aa135715447fa7e396ac4a2dc64b02cf" category="inline-link-macro-rx"></block>.</block>
@@ -2502,7 +2460,6 @@
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration traité par la classification BlueXP. Cette fonction vous permet d'éviter d'analyser des répertoires qui ne sont pas nécessaires ou qui pourraient renvoyer de faux résultats positifs pour les données personnelles.</block>
   <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Afficher la liste actuelle des ID de groupe</block>
-  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Créez des stratégies pour afficher les résultats de vos principales recherches</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Exclure les répertoires de l'analyse</block>
   <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">La prise en charge des instances extra-volumineuses est désormais qualifiée</block>
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Si vous avez besoin de la classification BlueXP pour analyser plus de 250 millions de fichiers, vous pouvez utiliser une très grande instance dans votre déploiement cloud ou votre installation sur site. Ce type de système peut analyser jusqu'à 500 millions de fichiers.</block>
@@ -2582,14 +2539,12 @@
   <block id="83444d9d636df8a4ce2375f52930d565" category="cell">Activez l'accès aux fichiers à partir de la page Configuration</block>
   <block id="1210bbe7e275bcc8150b9ac54d65c761" category="cell">Utilisez certaines règles prédéfinies</block>
   <block id="e32bdff502d5f24b8e2b7d5291d9fe6a" category="list-text">Lorsque vous analysez les données dans des compartiments Cloud Volumes ONTAP dans AWS ou Amazon FSX pour ONTAP, vous utilisez un connecteur dans AWS.</block>
-  <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP. La version de décembre 2023 (v1.26.6) a supprimé l'option d'intégration des données à l'aide des étiquettes Azure information protection (AIP).</block>
   <block id="13871df601ad6fe31ca70129438c5986" category="list-text">La classification BlueXP n'extrait pas l'heure du dernier accès des sources de données de la base de données.</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">Installez la classification BlueXP sur plusieurs hôtes sans accès Internet</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">Un connecteur BlueXP est requis avant de pouvoir installer et utiliser la classification BlueXP. Dans la plupart des cas, vous aurez probablement configuré un connecteur avant d'essayer d'activer la classification BlueXP, car la plupart<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>, mais il y a des cas où vous devrez en configurer un maintenant.</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">Lorsque vous analysez les données dans Cloud Volumes ONTAP dans AWS ou Amazon FSX pour ONTAP, vous utilisez un connecteur dans AWS.</block>
   <block id="758de85e3f025a37293713e5735825a9" category="admonition">La classification BlueXP est actuellement incapable d'analyser les compartiments S3, Azure NetApp Files ou FSX pour ONTAP lorsque le logiciel est installé sur site. Dans ce cas, vous devrez déployer un connecteur et une instance séparés de la classification BlueXP dans le cloud et<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block> pour les différentes sources de données.</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">Notez que toutes les activités d'installation sont consignées lors de l'installation de la classification BlueXP. Si vous rencontrez des problèmes lors de l'installation, vous pouvez afficher le contenu du journal d'audit d'installation. Il est écrit dans<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>. <block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>.</block>
-  <block id="19797a891bd45c541e59f0948f6e102b" category="paragraph">Utilisez le filtre suivant pour afficher les données par stratégie.</block>
   <block id="6d6f3f8c3e87f4e41fd51dc3695310ba" category="doc">Analyser les comptes SharePoint</block>
   <block id="16976b9bcf6240cdf0301678ba12a525" category="section-title">Passez en revue les exigences liées à SharePoint</block>
   <block id="13fed9c014904fd1b4e1eb85a98610e8" category="section-title">Ajoutez un compte SharePoint Online</block>
@@ -2624,18 +2579,6 @@
   <block id="f2a38a886f233571decf9ce6bf113922" category="section-title">Désactiver les analyses de conformité pour un environnement de travail</block>
   <block id="29c23a4578d5d41743894525117283bb" category="section-title">Supprimez une base de données de la classification BlueXP</block>
   <block id="2cc15b4049873c916d856924a44717cd" category="section-title">Supprimez un groupe de partages de fichiers de la classification BlueXP</block>
-  <block id="7abddc2fd9a072ced7e028f1d716b729" category="paragraph">Les stratégies sont comme une liste de favoris de filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. La classification BlueXP offre un ensemble de règles prédéfinies basées sur des demandes client courantes. Vous pouvez créer des stratégies personnalisées qui fournissent des résultats pour des recherches spécifiques à votre organisation.</block>
-  <block id="172504408a355f366017244a5b384ba8" category="inline-xref">Des règles prédéfinies</block>
-  <block id="223d722e1cb33bb8a31e8cc8d6efcb10" category="list-text"><block ref="3708ee7d5604e21bcf79306c2b6928c3" category="inline-xref-macro-rx"></block> De NetApp en fonction des demandes des utilisateurs</block>
-  <block id="649da6c1fa710a382a388e465871a680" category="list-text">Possibilité de créer vos propres règles personnalisées</block>
-  <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">L'onglet *stratégies* du tableau de bord de conformité répertorie toutes les règles prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP.</block>
-  <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">Capture d'écran de la sélection de l'option examiner les résultats pour une stratégie spécifique dans l'onglet stratégies.</block>
-  <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">Création de règles personnalisées</block>
-  <block id="19948385b78770f8de2200aa21288a6a" category="list-text">Si vous le souhaitez, cochez la case pour supprimer automatiquement les fichiers correspondant aux paramètres de la stratégie.</block>
-  <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">Vous pouvez supprimer toute stratégie personnalisée que vous avez créée si vous n'en avez plus besoin. Vous ne pouvez pas supprimer les règles prédéfinies.</block>
-  <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">Liste des règles prédéfinies</block>
-  <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">La classification BlueXP fournit les règles définies par le système suivantes :</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Analyser les comptes Google Drive</block>
   <block id="08ad59dcccad79cacd26939ded6a4aaf" category="section-title">Consultez les exigences relatives à Google Drive</block>
   <block id="587344d853bf2178c36331b139134c53" category="section-title">Ajoutez le compte Google Drive</block>
@@ -2649,7 +2592,6 @@
   <block id="9b17860ccc87d28d839931769a5af6ee" category="inline-link-macro">Voir la liste des fonctions obsolètes</block>
   <block id="e8f4baffb4918527d8701a12a84b8d92" category="paragraph"><block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>.</block>
   <block id="705e8077ff3af41dc9b8a84050d869d1" category="paragraph">Les utilisateurs qui utilisent des versions 1.30 ou antérieures héritées pourront continuer à utiliser cette version jusqu'à expiration de leur abonnement.</block>
-  <block id="c43934763319d8b34916e416e6cab93d" category="list-text">Utilisez _Policies_ pour détecter automatiquement les nouveaux problèmes de sécurité afin que le personnel de sécurité puisse agir immédiatement.</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">Amélioration de l'efficacité du stockage grâce à l'identification des données dupliquées ou non liées à l'activité.</block>
   <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">Bases de données :</block>
   <block id="bcf2e25b0a67b74f2ef04fa33cb52b61" category="section-title">Coûts d'infrastructure</block>
@@ -2658,7 +2600,6 @@
   <block id="6848f77eb8f7353d0c3236059ebaaf21" category="inline-image-macro">Diagramme illustrant une instance BlueXP et une instance de classification BlueXP exécutée dans votre fournisseur cloud. L'instance de classification BlueXP se connecte aux volumes NFS et CIFS et aux bases de données pour les analyser.</block>
   <block id="f31407ab57663d0b8405a252cf603c20" category="paragraph"><block ref="f31407ab57663d0b8405a252cf603c20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b40a529e19b349b56269e632043e4fe8" category="paragraph">Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de la base de données.</block>
-  <block id="df49368049d4a11c63d1acd4766aae12" category="paragraph">Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou stratégies.</block>
   <block id="3bebc15b7ececd939dbb2e1037e2bd21" category="paragraph">*REMARQUE* la possibilité de filtrer par balises, étiquettes et utilisateurs affectés n'est pertinente que pour les versions de classification BlueXP 1.30 et antérieures.</block>
   <block id="f14bc34b4556666076ab4085c418beac" category="section-title">Créer le rapport d'enquête sur les données</block>
   <block id="895e384b0c43f21c0943fc3c1bf729a0" category="paragraph">*NOTE* la capacité de générer le rapport dans . Le format JSON est pertinent uniquement pour les versions de classification BlueXP 1.30 et antérieures.</block>
@@ -2678,7 +2619,6 @@
   <block id="c01242a219d7b0beaf6377621fd10547" category="doc">Analysez le stockage objet à l'aide du protocole S3</block>
   <block id="1ba8a6d88a1ff9a34215586899b08a1e" category="paragraph">Vous pouvez gérer le mode d'analyse de vos données dans chacun de vos environnements de travail et sources de données. Vous pouvez effectuer les modifications sur une base de « référentiel », ce qui signifie que vous pouvez apporter des modifications à chaque volume, schéma, utilisateur, etc. En fonction du type de source de données que vous analysez.</block>
   <block id="4cf46b88592b20071552593714707a46" category="paragraph">Si vous avez initialement sélectionné *Mapper tous les volumes* ou *Mapper et classer tous les volumes* lorsque vous avez activé la classification BlueXP pour l'environnement de travail où réside le volume source, la classification BlueXP analyse automatiquement le nouveau volume cloné. Si vous n'avez pas utilisé l'une ou l'autre de ces sélections au départ, vous devrez effectuer une acquisition pour ce nouveau volume <block ref="9c238ad6b45b928020692cb5de74fd06" category="inline-link-macro-rx"></block>.</block>
-  <block id="c63897b00e1bb7484e004dc2e1337d94" category="paragraph">Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou <block ref="189dcbbb5debf653b5fc0860b1c881e2" category="inline-link-macro-rx"></block>.</block>
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">La classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires pour un maximum de 500 To de données numérisées. Aucune licence de classification ou abonnement payant n'est nécessaire. Alors que nous nous concentrons sur la fonctionnalité de classification BlueXP lors de l'analyse des systèmes de stockage NetApp avec cette nouvelle version, certaines fonctionnalités héritées ne seront disponibles que pour les clients qui avaient déjà payé pour une licence. L'utilisation de ces fonctions héritées expirera lorsque le contrat payé atteindra sa date de fin.</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">En savoir plus sur les fonctionnalités obsolètes</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>.</block>
@@ -2705,7 +2645,6 @@
   <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">Déployez les dérecommandations de classification BlueXP</block>
   <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">Dépercations des données d'acquisition</block>
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">Gérer les opérations de données</block>
-  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">Fonctionnalités disponibles dans les versions principale et ancienne génération de BlueXP</block>
   <block id="7d6fb1ca0011c57644b1d2a7f6e4b92f" category="paragraph">Ces connecteurs cloud permettent d'analyser les systèmes ONTAP sur site, les partages de fichiers NetApp et les bases de données.</block>
   <block id="45c3f94e2c6cdec1b996f63c1e4f35d4" category="paragraph">Les systèmes ONTAP sur site, les partages de fichiers NetApp et les comptes de base de données peuvent être analysés à l'aide de ces connecteurs cloud.</block>
@@ -2741,7 +2680,6 @@
   <block id="58f9985309ad441d05540492b96a7afd" category="cell">Les données obsolètes</block>
   <block id="60ba2191f39b045b2e7dd2bc96654d1c" category="cell">Données non commerciales</block>
   <block id="959cab1cb99ef2d51c2197ef17b2105b" category="cell">Fichiers dupliqués</block>
-  <block id="0b0168bee54c0e61b8aa5a962967a322" category="cell">Règles personnalisées</block>
   <block id="369cd14037692c6f09dcfda1b4ac8ed3" category="cell">Rapport DDA</block>
   <block id="ea8d76cdda2904dcca99873fc91b4643" category="cell">Rapport de mappage</block>
   <block id="31b12a0b18d3e31cef5bf330060e1485" category="cell">Détection du niveau de sensibilité</block>
@@ -2781,10 +2719,6 @@
   <block id="0fbd08a5b8412239310f1e6624aeaf6c" category="list-text">*Types* : la classification BlueXP prend les données analysées et les répartit par type de fichier. <block ref="a23a1c3a68ab723cb619be8574a4637d" category="inline-link-macro-rx"></block>.</block>
   <block id="dccdebfeec8fafe3af210e0af17af320" category="paragraph">Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes et vos bases de données.</block>
   <block id="3b6b18ad7909031011a3960e81ac99e4" category="paragraph">La classification BlueXP identifie deux types de données personnelles :</block>
-  <block id="85542d81e9687ba10d962e859cdaf35a" category="list-text">*Informations personnelles identifiables (PII)*</block>
-  <block id="874a594310f3c66b96cad8a1ef4af095" category="list-text">*Informations personnelles sensibles (SPII)*</block>
-  <block id="185a6c810ca281a80052f73d8e326953" category="paragraph">Les données personnelles, ou _informations personnelles identifiables_ (PII), qui se trouvent dans les fichiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP utilise <block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block> pour valider ses résultats pour l'identificateur.</block>
-  <block id="22535a9e2a33599f897498d121038146" category="paragraph">La classification BlueXP peut trouver les informations personnelles sensibles suivantes (SPII) dans des fichiers.</block>
   <block id="0327f9ba6d0f4d1eac4f3812d1dcc54d" category="list-text">*Référence pour les procédures pénales* : données concernant les condamnations et les infractions criminelles d'une personne physique.</block>
   <block id="5082eafb320441003f6c8b58c5b11b66" category="list-text">*Référence ethnique* : données concernant l'origine raciale ou ethnique d'une personne physique.</block>
   <block id="c8c0005ddc44c030f46554f4bc13d30e" category="list-text">* Référence en matière de santé* : données concernant la santé d'une personne physique.</block>
@@ -3096,7 +3030,6 @@ Données d'applications d'entreprise</block>
   <block id="6915401740d9460ed0e142b3fd0b402c" category="doc">Analysez les comptes SharePoint avec la classification BlueXP </block>
   <block id="df3ac8bd169a771ea350cd5cc533e873" category="doc">S'inscrire au support BlueXP </block>
   <block id="c0a6118312ef4878e08365a032d30e38" category="doc">Envoyer des alertes par e-mail lorsque la classification BlueXP  détecte des données non conformes</block>
-  <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">Attribuez des règles à vos données grâce à la classification BlueXP </block>
   <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">Consultez l'état de vos actions de conformité dans la classification BlueXP </block>
   <block id="87259e291cf73ff3b26cf61342184d7a" category="section-title">Passez en revue le tableau de bord gouvernance</block>
   <block id="d930cabf64be47e8e8836a7ffce60dbd" category="list-text">Dans le menu BlueXP , sélectionnez *gouvernance &gt; Classification*.</block>
@@ -3105,9 +3038,6 @@ Données d'applications d'entreprise</block>
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">Consultez les opportunités d'économies</block>
   <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir s'il y a des données que vous devez supprimer ou mettre en Tier vers un stockage objet moins coûteux.</block>
   <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.</block>
-  <block id="b425c4e4b41334f19572d1e9e51d7b9a" category="section-title">Examiner les politiques avec le plus grand nombre de résultats</block>
-  <block id="e026e06fb0f6082b58b19e0ae90f9015" category="paragraph">Dans la zone _Policies_, les politiques affichant le plus grand nombre de résultats apparaissent en haut de la liste.</block>
-  <block id="24c741c03fc84375fc7935a70023d0ac" category="paragraph">Pour plus de détails sur les stratégies, reportez-vous à <block ref="eb4899a5ae2ad655555b425171c60bf8" category="inline-link-macro-rx"></block>la section .</block>
   <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">Créez le rapport d'évaluation de la découverte de données</block>
   <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">Le rapport d'évaluation de la découverte de données fournit une analyse de haut niveau de l'environnement analysé afin de montrer les points préoccupants et les étapes de correction potentielles. Les résultats sont basés à la fois sur le mappage et la classification de vos données. L'objectif de ce rapport est de sensibiliser les clients à trois aspects importants de leur dataset :</block>
   <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">À l'aide de ce rapport, vous pouvez effectuer les actions suivantes :</block>
@@ -3176,8 +3106,6 @@ Données d'applications d'entreprise</block>
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">C'est là que vous devriez commencer votre recherche. Dans le tableau de bord gouvernance, vous pouvez sélectionner une zone pour une investigation plus approfondie.</block>
   <block id="56bcd47afb74823d33fc490b9ced87a3" category="list-text">Dans chaque mosaïque opportunités d'économies du tableau de bord gouvernance, sélectionnez *optimiser le stockage* pour afficher les résultats filtrés dans la page Investigation. Vous pouvez étudier les éléments de la zone _Saving Opportunities_ pour voir s'il y a des données que vous devez supprimer ou mettre en Tier vers un stockage objet moins coûteux.</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">Si l'une de vos sources de données implémente le Tiering des données, les anciennes données qui résident déjà dans le stockage objet peuvent être identifiées dans la catégorie _données obsolètes_.</block>
-  <block id="7c0b28ab5d3d14007833c883687fb63e" category="list-text">Dans la mosaïque Tableau de bord Goverance &gt; stratégies, sélectionnez le nom d'une règle pour afficher les résultats dans la page Investigation.</block>
-  <block id="0dc58fd3e83f0422da065df1d7c6bd4e" category="list-text">Sélectionnez *Afficher tout* pour afficher la liste de toutes les stratégies disponibles. Dans la zone _Policies_, les politiques affichant le plus grand nombre de résultats apparaissent en haut de la liste.</block>
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">Réduction des coûts du stockage en modifiant votre règle de conservation, ou en déplaçant ou en supprimant certaines données (obsolètes, dupliquées ou non stratégiques)</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">Protégez vos données qui disposent de larges autorisations en modifiant les stratégies de gestion de groupe globales</block>
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">Protégez vos données personnelles ou sensibles en déplaçant vos IIP vers des magasins de données plus sécurisés</block>
@@ -3307,7 +3235,6 @@ Données d'applications d'entreprise</block>
   <block id="f073b9ddb57cf4112d6b8af2be152237" category="paragraph">Par défaut, le tableau de bord de classification BlueXP affiche les données de conformité pour tous les environnements de travail et bases de données. Pour afficher les données de certains environnements de travail uniquement, sélectionnez-les.</block>
   <block id="b9578c21a6204e25cdc3223630386356" category="paragraph">Filtrez les résultats de la page enquête de données et téléchargez un rapport des résultats sous forme de fichier CSV. Voir <block ref="70fd9e5a2e3fb16954088b6ec652d9bc" category="inline-link-macro-rx"></block> pour plus de détails.</block>
   <block id="2a23e42a903ba0977e9c64da39e06413" category="paragraph">La classification BlueXP identifie automatiquement des mots, des chaînes et des modèles spécifiques (Regex) à l'intérieur des données. Par exemple, les renseignements d'identification personnelle (RP), les numéros de carte de crédit, les numéros de sécurité sociale, les numéros de compte bancaire, les mots de passe, entre autres. <block ref="b85650e1ded260986da01a502b58ab3e" category="inline-link-macro-rx"></block>. La classification BlueXP identifie ce type d'informations dans des fichiers individuels, dans des fichiers dans des répertoires (partages et dossiers) et dans des tables de bases de données.</block>
-  <block id="d1823de7c38686a26a0767920238f395" category="paragraph">De plus, si vous avez ajouté un serveur de base de données à analyser, la fonction _Data Fusion_ analyse vos fichiers pour déterminer si des identificateurs uniques de vos bases de données se trouvent dans ces fichiers ou dans d'autres bases de données. Voir <block ref="fb1b570cbcf76e8205708b1c55761831" category="inline-link-macro-rx"></block> pour plus de détails.</block>
   <block id="678a3da74b0f8445758bf6169c988967" category="paragraph">Pour certains types de données personnelles, la classification BlueXP utilise la _validation de proximité_ pour valider ses résultats. La validation se produit en recherchant un ou plusieurs mots clés prédéfinis à proximité des données personnelles trouvées. Par exemple, la classification BlueXP  identifie un numéro de sécurité sociale américain (SSN) comme un SSN s'il voit un mot de proximité à côté de lui--par exemple, _SSN_ ou _social Security_. <block ref="8379e1454990bf850576c11a6bba2bd5" category="inline-link-macro-rx"></block> Indique quand la classification BlueXP  utilise la validation de proximité.</block>
   <block id="a38e6da6efb7dc004c87e00dfcfe4fc2" category="list-text">Dans le menu BlueXP  Classification, sélectionnez l'onglet *conformité*.</block>
   <block id="b6ec249a34e065ff70b013a6023d50e9" category="list-text">Pour examiner les détails de toutes les données personnelles, sélectionnez l'icône en regard du pourcentage de données personnelles.</block>
@@ -3364,7 +3291,6 @@ Données d'applications d'entreprise</block>
   <block id="93df112866b7972d001a7d5a43ee807d" category="paragraph">*Filtrer les données par métadonnées*</block>
   <block id="8e1a5e11bb2fb28b8b6dcec568a360c4" category="cell">Sélectionnez le <block ref="e1626033bf44d9df7edfb5f14619672b" category="inline-link-macro-rx"></block>.</block>
   <block id="bf49fd74a7f1e071ae8d9037d850229b" category="paragraph">*Filtrer les données par type de stockage*</block>
-  <block id="1931b0be2f819fbc984873eab7604c0e" category="paragraph">*Filtrer les données par stratégies*</block>
   <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">*Filtrer les données par état d'analyse*</block>
   <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block> Pour plus d'informations sur les éléments qui apparaissent dans la page Investigation lors du filtrage à l'aide de l'événement Scan Analysis.</block>
   <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">*Filtrer les données par doublons*</block>
@@ -3385,17 +3311,7 @@ Données d'applications d'entreprise</block>
   <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">Pour afficher la liste des fichiers en double et leur emplacement, sélectionnez *Afficher les détails*.</block>
   <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">Sur la page suivante, sélectionnez *Afficher les doublons* pour afficher les fichiers dans la page Investigation.</block>
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">Choisissez le type de rapport : CSV ou JSON.</block>
-  <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">Créer une stratégie basée sur les filtres sélectionnés</block>
-  <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">Il peut être utile d'enregistrer les filtres que vous avez sélectionnés dans la page enquête de données en tant que stratégie. De cette façon, vous pouvez exécuter les mêmes filtres à tout moment sans avoir à les resélectionner.</block>
-  <block id="461f18298523b9780c64f7622a558e72" category="list-text">Sur la page Investigation des données, sélectionnez les filtres que vous souhaitez utiliser pour créer une stratégie.</block>
-  <block id="7b3efd4315afe81c069931074b6b2bcf" category="list-text">En bas du volet filtre, sélectionnez *Créer une stratégie à partir de cette recherche*.</block>
-  <block id="02732823805cfd3fcc35939ca3602379" category="list-text">Entrez un nom et une description pour la stratégie.</block>
   <block id="aac46765e6c078c569d11a06fa32886b" category="list-text">Choisissez l'une des options suivantes :</block>
-  <block id="7a93f17737c434a658952da4ac61c2e7" category="list-text">*Supprimer automatiquement les fichiers correspondant à cette stratégie (tous les jours) : sélectionnez cette option si vous souhaitez supprimer les fichiers correspondant à la stratégie.</block>
-  <block id="03679c9c05b6548cd278d5dc9b22d06d" category="list-text">*Envoyer des mises à jour par e-mail à propos de cette stratégie aux utilisateurs BlueXP  sur ce compte chaque &lt;day/week/month&gt;* : sélectionnez cette option si vous souhaitez envoyer des mises à jour par e-mail à propos de la stratégie aux utilisateurs BlueXP  sur ce compte.</block>
-  <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">*Envoyer chaque &lt;Day&gt; à &lt;email address&gt;*: Sélectionnez cette option si vous voulez envoyer un email chaque &lt;Day&gt; à une adresse email spécifique.</block>
-  <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">Sélectionnez *Créer une stratégie*.</block>
-  <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">L'affichage des résultats sur la page règles peut prendre jusqu'à 15 minutes.</block>
   <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">Lorsque vous effectuez des acquisitions de mappage uniquement, vous pouvez hiérarchiser les acquisitions les plus importantes. Cette fonction vous aide lorsque vous disposez de nombreux environnements de travail et que vous souhaitez vous assurer que les numérisations à haute priorité sont effectuées en premier.</block>
   <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">Pour plus d'informations, voir <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>.</block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">Version 1.42</block>
@@ -3412,8 +3328,6 @@ Données d'applications d'entreprise</block>
   <block id="e23f3c5ee576a6a524db07af25fc5e88" category="list-text">Pour télécharger le rapport complet, sélectionnez **Environnement de travail** puis choisissez **Environnement de travail** et **Volume** dans les menus déroulants respectifs. Indiquez un chemin d'accès ** au dossier de destination**.</block>
   <block id="b28b21b6561b4b84c07adb24f4618993" category="paragraph">Pour télécharger le rapport dans le navigateur, sélectionnez **local** . Remarque cette option limite le rapport aux 10,000 premières lignes et est limitée au format **CSV**. Vous n'avez pas besoin de remplir d'autres champs si vous sélectionnez **local**.</block>
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">Prioriser les acquisitions de mappage uniquement</block>
-  <block id="9267a4a221ce8d9176ea70d45543abf5" category="paragraph">Vous pouvez hiérarchiser les acquisitions de mappage uniquement les plus importantes pour vous assurer que les acquisitions de haute priorité sont effectuées en premier.</block>
-  <block id="f869ba288edefcc198633bd9bda2d3b8" category="paragraph">Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc. Cette fonction est limitée aux acquisitions de mappage uniquement. Elle n'est pas disponible pour les analyses de cartes et de catégories.</block>
   <block id="038d75fbb28c2dd7e9ed9904fea7fadc" category="paragraph">La classification BlueXP  collecte, indexe et attribue des catégories aux données suivantes :</block>
   <block id="16e3e664a20bb6964ad08fde07c76933" category="list-text">*Données personnelles* : informations personnelles identifiables (IIP) telles que les adresses électroniques, les numéros d'identification ou les numéros de carte de crédit, que la classification BlueXP  identifie en utilisant des mots, des chaînes et des modèles spécifiques dans les fichiers. <block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>.</block>
   <block id="e60672f803602bf222f416a6205b3b39" category="list-text">*Données personnelles sensibles* : types particuliers d'informations personnelles sensibles (SPII), telles que les données de santé, l'origine ethnique ou les opinions politiques, tels que définis par le Règlement général sur la protection des données (RGPD) et d'autres réglementations sur la confidentialité. <block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>.</block>
@@ -3421,9 +3335,6 @@ Données d'applications d'entreprise</block>
   <block id="5c2ead81821547f3130352184807c230" category="list-text">Vous pouvez voir <block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block> pour chaque fichier et répertoire lorsque vous cliquez sur le bouton « Afficher toutes les autorisations ».</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*Dupliquer les fichiers* - fichiers qui sont dupliqués à d'autres emplacements dans les sources de données que vous numérisez. <block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block>.</block>
   <block id="3cdcb2a793341ff20e0d4057a0538e49" category="list-text">Pour télécharger le contenu de la page sous forme de rapport après l'avoir affiné, sélectionnez le <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> bouton.</block>
-  <block id="115993abd6a23a5a17d07cec8fbc4b6e" category="cell">Sélectionnez une ou plusieurs stratégies. Accédez <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> à pour afficher la liste des stratégies existantes et créer vos propres stratégies personnalisées.</block>
-  <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">création de règles</block>
-  <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les <block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>.</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="c70458770b484ae39f3759b69683ab6b" category="cell">Numéros d'information bancaires canadiens - Numéro de compte</block>
@@ -3459,19 +3370,142 @@ Données d'applications d'entreprise</block>
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">Numéro canadien d'assurance sociale (NAS)</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">ID ROYAUME-UNI (NINO)</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">USA Texas permis de conduire</block>
-  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">Les filtres personnalisés des stratégies qui fournissent les résultats de recherche dans la page Investigation pour les requêtes de conformité les plus fréquemment demandées. Le classement BlueXP  propose un ensemble de règles prédéfinies basées sur des demandes courantes ou vous pouvez créer votre propre classification.</block>
-  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">Les stratégies apparaissent également dans la liste des filtres de la page Investigation.</block>
-  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">Pour afficher les résultats d'une police dans la page Investigation, sélectionnez le  bouton d'une règle spécifique, <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>puis sélectionnez *examiner les résultats*.</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">Filtrage des données dans la page Investigation</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">Dans l'onglet Investigation, définissez une recherche en sélectionnant les filtres à utiliser. Voir <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> pour plus de détails.</block>
-  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">Une fois que vous avez défini toutes les caractéristiques de filtre à votre convenance, sélectionnez *Créer une stratégie à partir de cette recherche*.</block>
-  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">Capture d'écran montrant comment enregistrer une requête filtrée en tant que stratégie.</block>
-  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">Vous pouvez modifier les critères d'une stratégie existante pour modifier la requête (les éléments que vous avez définis à l'aide de filtres) afin d'ajouter ou de supprimer certains paramètres.</block>
-  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">Vous ne pouvez pas modifier les règles prédéfinies.</block>
-  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">Dans la page liste des polices, sélectionnez *Modifier la stratégie* pour la règle que vous souhaitez modifier.</block>
-  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">Apportez les modifications aux champs Nom et Description. Pour modifier uniquement ces champs, sélectionnez *Enregistrer la stratégie*.</block>
   <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">Pour modifier les filtres de la requête enregistrée, sélectionnez *Modifier la requête*.</block>
   <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">Dans la page Investigation qui définit cette requête, modifiez la requête en ajoutant, en supprimant ou en personnalisant les filtres, puis sélectionnez *Enregistrer les modifications* .</block>
-  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">Pour supprimer une stratégie, sélectionnez le <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> bouton correspondant à une stratégie spécifique, sélectionnez *Supprimer la stratégie*, puis sélectionnez *Supprimer la stratégie* à nouveau dans la boîte de dialogue de confirmation.</block>
+  <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .</block>
+  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">Version 1.43</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">Hiérarchiser les analyses de classification</block>
+  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">La classification BlueXP  permet désormais de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement, ce qui vous permet de sélectionner les acquisitions qui sont effectuées en premier. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.</block>
+  <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">Prise en charge des catégories de données canadiennes d'information à caractère personnel (IIP)</block>
+  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">Les analyses de classification BlueXP  identifient maintenant les catégories de données des RP canadiennes pour les renseignements bancaires, le numéro de passeport, le numéro d'assurance sociale, le numéro de permis de conduire et le numéro de carte santé pour toutes les provinces et tous les territoires.</block>
+  <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">Catégories de données personnelles</block>
+  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">Pour plus d'informations, voir <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>.</block>
+  <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">Classification personnalisée (aperçu)</block>
+  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">La classification BlueXP  prend désormais en charge les classifications personnalisées pour les analyses Map &amp; Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise et garantir leur conformité avec les expressions régulières. Cette fonction est actuellement en aperçu.</block>
+  <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">Ajouter des classifications personnalisées</block>
+  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">Pour plus d'informations, voir <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>.</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">Onglet recherches enregistrées</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**Recherches enregistrées**</block>
+  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">L'onglet **politiques** a été renommé <block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>. La fonctionnalité est la même.</block>
+  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">Envoyer les événements d'analyse au journal d'audit</block>
+  <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">Chronologie BlueXP </block>
+  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">journal d'audit</block>
+  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">Les événements de numérisation BlueXP  peuvent maintenant être envoyés à <block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>. La classification BlueXP  prend également en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>. L'envoi d'événements d'acquisition de classification à la chronologie BlueXP  est uniquement pris en charge pour les environnements de travail.</block>
+  <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">Mises à jour de sécurité</block>
+  <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Le paquet Keras a été mis à jour, atténuant les vulnérabilités (BDSA-2025-0107 et BDSA-2025-1984).</block>
+  <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">La configuration des containers Docker a été mise à jour. Le conteneur n'a plus accès aux interfaces réseau de l'hôte pour l'élaboration de paquets réseau bruts. En réduisant les accès inutiles, la mise à jour limite les risques potentiels pour la sécurité.</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">Amélioration des performances</block>
+  <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">Des améliorations de code ont été mises en œuvre pour réduire l'utilisation de la mémoire RAM et améliorer les performances globales de la classification BlueXP .</block>
+  <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">Correctifs de bogues</block>
+  <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">Les bugs ayant provoqué l'échec des analyses StorageGRID, les options de filtre de la page d'enquête ne se chargent pas et l'évaluation de découverte de données ne pouvant pas être téléchargée pour les évaluations de volume élevé ont été corrigés.</block>
+  <block id="ca5877ce323984fac661618517ce77b9" category="list-text">Utilisez __Policies__ pour détecter automatiquement les nouveaux problèmes de sécurité afin que le personnel de sécurité puisse agir immédiatement.</block>
+  <block id="b71c2ba4a810400f9f3761ce1f55bca2" category="cell">Créer une recherche enregistrée</block>
+  <block id="8f539b81d82236bcc672cf86864b0879" category="cell">Recherches enregistrées</block>
+  <block id="e1739395d36bb1f742ef31b1924e9399" category="list-text">*Informations personnelles identifiables (PII)*</block>
+  <block id="c5c4df42720cbeb98f763efd903ab45b" category="list-text">*Informations personnelles sensibles (SPII)*</block>
+  <block id="0c9d119c9d8ada956aeab1aa6be77ebb" category="paragraph">Les données personnelles, ou _informations personnelles identifiables_ (PII), qui se trouvent dans les fichiers peuvent être des données personnelles générales ou des identificateurs nationaux. La troisième colonne du tableau ci-dessous indique si la classification BlueXP  utilise <block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block> pour valider ses résultats pour l'identificateur.</block>
+  <block id="b847d85a2efd08f20797ad45602e61e9" category="paragraph">La classification BlueXP  peut trouver les renseignements personnels sensibles suivants (SPII) dans les fichiers.</block>
+  <block id="16e486f23dded8263d11848df3764b93" category="list-text">Type d'action (supprimer, copier, déplacer, créer une recherche enregistrée, mettre à jour la recherche enregistrée, relancer les fichiers, télécharger le rapport JSON, etc.)</block>
+  <block id="3c60fc446538a7e633556a56c0270a7b" category="list-text">Nom de recherche enregistré</block>
+  <block id="3d8e42b0b0efcc9caab1fb0b9309b99c" category="section-title">Examinez les recherches enregistrées avec le plus grand nombre de résultats</block>
+  <block id="32362fe63acb7ffc63175566121ad596" category="paragraph">Dans l'onglet _saved recherchs_, les recherches avec le plus grand nombre de résultats apparaissent en haut de la liste.</block>
+  <block id="1a2cb7ec85630ab674f28989b04d5180" category="inline-link-macro">Créer des recherches enregistrées</block>
+  <block id="bb3af25bd7c0b9f324e3747796764e22" category="paragraph">Pour plus d'informations sur les recherches enregistrées, reportez-vous à <block ref="c97fce4c2b55d75df91ca91c522727ac" category="inline-link-macro-rx"></block>la section .</block>
+  <block id="4e4a6277c9744cd4cca07da9aa9ccae0" category="list-text">Dans le tableau de bord Goverance, localisez la mosaïque de recherches enregistrées. Sélectionnez le nom d'une recherche enregistrée pour afficher les résultats dans la page Investigation.</block>
+  <block id="315e89aa08d31a5d6e5b7e5ee124e27f" category="list-text">Sélectionnez *Afficher tout* pour afficher la liste de toutes les recherches enregistrées disponibles. Dans la zone _saved recherchts_, les recherches avec le plus grand nombre de résultats apparaissent en haut de la liste.</block>
+  <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">Créer une classification personnalisée</block>
+  <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">Vous pouvez également créer des termes de recherche personnalisés pour identifier les données personnelles spécifiques à votre entreprise. Pour plus d'informations, voir <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>.</block>
+  <block id="8158b41ed99f0be207895156b4fd03bd" category="summary">La classification BlueXP  vous permet de personnaliser la recherche d'informations sensibles et d'adapter le service à des modèles et des mots clés spécifiques à votre entreprise.</block>
+  <block id="926b3e1d2d3aa955040f8e96a0925024" category="doc">Créer une classification personnalisée dans la classification BlueXP </block>
+  <block id="af7f216eaafef04c270699dedfe55516" category="paragraph">Avec la classification BlueXP , vous pouvez créer une recherche personnalisée pour les informations sensibles. La recherche peut être étendue à une expression régulière ou à un ensemble de mots-clés de proximité.</block>
+  <block id="166182078c23275fb3140bd76772894f" category="paragraph">La classification personnalisée n'est disponible que pour les acquisitions Map &amp; Classify, et non pour les acquisitions de mappage uniquement. Cette fonction est actuellement en aperçu.</block>
+  <block id="b89901231bd925d9935358eec83c9df7" category="list-text">Sélectionnez l'onglet **Classification personnalisée**.</block>
+  <block id="5d432ccfd60759dfe3a05c1d88a50e46" category="list-text">Sélectionnez le **Ajouter un nouveau classificateur**.</block>
+  <block id="ea013d14af755e66761c80272239aa1e" category="list-text">Ajoutez le nom et la description du nouveau classificateur.</block>
+  <block id="325f2f8229424a3bb88f7fe6dd21f8b4" category="list-text">Pour ajouter la personnalisation en tant qu'expression régulière, sélectionnez **expression régulière personnalisée** puis **Suivant**.</block>
+  <block id="ddd5fb759ffdfbba04862c2c259765f4" category="list-text">Pour une expression régulière, ajoutez le modèle pour détecter les informations spécifiques de vos données. Par exemple, l'ID à 12 chiffres commençant par 201 serait \b201\f\d(9)b. sélectionnez **Valider** pour confirmer la syntaxe de votre entrée.</block>
+  <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">La nouvelle personnalisation est capturée lors de la prochaine analyse programmée. Pour afficher les résultats, voir <block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e7f93c0af13ca637e6c3fbeb56fe4b0e" category="section-title">Filtrer les données par balises, étiquettes, utilisateurs affectés et recherches enregistrées</block>
+  <block id="aee7ea78cb12c6ff572cb9b321122abb" category="paragraph">Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou recherches enregistrées.</block>
+  <block id="fd853c5dbcb2e016325507bb9c17e98d" category="cell">Sélectionnez une ou plusieurs recherches enregistrées. Accédez <block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block> à pour afficher la liste des recherches existantes ou en créer une nouvelle.</block>
+  <block id="e1022cbccc3b15345c155a6a38bad6a8" category="paragraph">*Filtrer les données par recherches enregistrées*</block>
+  <block id="32a458cdfb998f0db54c4e4f42f4dbfa" category="paragraph">Utilisez le filtre suivant pour afficher les données des recherches enregistrées.</block>
+  <block id="b7758f20982aa452a9724c32f034dccd" category="cell">Recherche enregistrée</block>
+  <block id="e43b31fd42478b64143ed2d6ade8317f" category="inline-link-macro">onglet recherches enregistrées</block>
+  <block id="da44bb3119708f27655d4d058f465d00" category="cell">Sélectionnez une ou plusieurs recherches enregistrées. Accédez au <block ref="fbc8a675a3cef48a8a5a04b84f6b3b22" category="inline-link-macro-rx"></block> pour afficher la liste des recherches enregistrées existantes et en créer de nouvelles.</block>
+  <block id="98c6270eede2fc9afab11bef62e63c1d" category="inline-link-macro">créer des recherches enregistrées</block>
+  <block id="708e6da2377236d5fdba15f26dc3eadf" category="paragraph">En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les <block ref="e31c67e4781eca01921238806a0e651d" category="inline-link-macro-rx"></block>utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.</block>
+  <block id="67737d68864b72c63e2f74e27992ac71" category="admonition">Vous pouvez utiliser la valeur « hachage de fichier » fournie dans cette page et la saisir directement dans la page Investigation pour rechercher un fichier en double spécifique à tout moment, ou vous pouvez l'utiliser dans une recherche enregistrée.</block>
+  <block id="15d6f274b3e2c9c50fee5297805bd7d0" category="section-title">Créer une recherche enregistrée en fonction des filtres sélectionnés</block>
+  <block id="51586951624f32f69f3b928cba0173d0" category="paragraph">Vous pouvez créer une recherche enregistrée pour les filtres de recherche fréquemment utilisés dans la page investigation de données pour répliquer facilement ces requêtes de recherche.</block>
+  <block id="064f3515d1ddd57fc2fa8a2f4ef91909" category="list-text">Sur la page investigation de données, sélectionnez les filtres que vous souhaitez utiliser pour créer une recherche enregistrée.</block>
+  <block id="5eb846a7b1e1d54f3b18d4bd4573326a" category="list-text">En bas du volet filtre, sélectionnez *Créer une recherche enregistrée dans cette recherche*.</block>
+  <block id="8537255c641557154572c329fc69cdf8" category="list-text">Entrez un nom et une description pour la recherche enregistrée.</block>
+  <block id="3fa4e71b6c9c6e7df1000aba4aac222f" category="list-text">Sélectionnez *Créer une recherche enregistrée*.</block>
+  <block id="375745e627783aeb215c99a31a08813f" category="admonition">L'affichage des résultats sur la page recherches enregistrées peut prendre jusqu'à 15 minutes.</block>
+  <block id="88fc2a8ac10191e5b98a67bc9886a8bf" category="admonition">Pour créer une classification personnalisée dans la version 1.43 et les versions ultérieures, reportez-vous à <block ref="a756d19e50a3a2b56dcc07bcc3dd1be2" category="inline-xref-macro-rx"></block>la section .</block>
+  <block id="f308766a5fb2a6b060e24d82fd98f8a4" category="paragraph">_Data Fusion_ vous permet d'analyser les données de votre organisation pour déterminer si des identificateurs uniques de vos bases de données se trouvent dans l'une de vos autres sources de données. Vous pouvez choisir les identificateurs supplémentaires que la classification BlueXP  recherche dans ses analyses en sélectionnant une ou plusieurs colonnes spécifiques dans une table de base de données. Par exemple, le diagramme ci-dessous montre comment Data Fusion est utilisé pour analyser vos volumes, compartiments et bases de données pour rechercher les occurrences de tous vos identifiants client à partir de votre base de données Oracle.</block>
+  <block id="7d6398cfd29c80719b420b6d5a303f4d" category="paragraph">Vous pouvez hiérarchiser les acquisitions de mappage uniquement les plus importantes ou les analyses de mappage et de classification afin de vous assurer que les acquisitions à haute priorité sont effectuées en premier.</block>
+  <block id="29c15ffcc2bccc722e71606daa052e48" category="list-text">Si vous êtes abonné à <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block> pour classer et protéger vos fichiers, vous pouvez utiliser la classification BlueXP  pour gérer les étiquettes d'AIP.</block>
+  <block id="0959b79de30b89504431013e0aece077" category="list-text">Grâce à la fonction de recherche enregistrée, vous pouvez créer vos propres requêtes de recherche personnalisées afin de voir facilement les résultats en cliquant sur un bouton.</block>
+  <block id="cc567bbc742f39d182a6b82ce016f5fa" category="inline-link-macro">recherches enregistrées</block>
+  <block id="af1b68eec0a5b97f0bf7b522de5c3fd0" category="cell">Créer <block ref="9937a648cd09b9880b5d850846c6a6cc" category="inline-link-macro-rx"></block> qui fournit des résultats de recherche personnalisés</block>
+  <block id="d3c2ae407b41f887c6ec43d35c6d5d1d" category="cell">Recherches enregistrées prédéfinies</block>
+  <block id="7034142182abbd946a14064d9a115c26" category="cell">Recherches enregistrées par défaut</block>
+  <block id="29b76c227002fe0d59cb97d33a0faeb2" category="summary">Les recherches enregistrées sont des filtres personnalisés qui fournissent des résultats de recherche dans la page Investigation pour les requêtes de conformité couramment demandées. La classification BlueXP  fournit un ensemble de recherches enregistrées par défaut basées sur des demandes courantes ou vous pouvez créer vos propres recherches.</block>
+  <block id="bd3a41529bc49b592df10902c99718df" category="doc">Gestion des recherches enregistrées avec la classification BlueXP </block>
+  <block id="3b330f91942905fd9358ccf088010a7b" category="paragraph">La classification BlueXP  prend en charge l'enregistrement de vos requêtes de recherche. Avec une recherche enregistrée, vous pouvez créer des filtres personnalisés pour trier les requêtes fréquentes de votre page d'investigation de données. La classification BlueXP  inclut également des recherches enregistrées prédéfinies basées sur des demandes courantes.</block>
+  <block id="cab50bfa3c1b0c473d5a06102b369f65" category="admonition">Dans les versions de la classification BlueXP  antérieures à 1.43, les recherches enregistrées étaient appelées <block ref="d181d1e4d544a4211066b470d1020a95" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4d6dee7b2501600c4b2689bc1cebdb78" category="paragraph">L'onglet *recherches enregistrées* du tableau de bord de conformité répertorie toutes les recherches enregistrées prédéfinies et personnalisées disponibles sur cette instance de classification BlueXP .</block>
+  <block id="1dc48068205abd4498c6b51623ce236a" category="paragraph">Les recherches enregistrées apparaissent également dans la liste des filtres de la page Investigation.</block>
+  <block id="fe486103d58cea4a39fc7665524d91e6" category="inline-image-macro">Capture d'écran de l'onglet recherches enregistrées dans le tableau de bord de classification BlueXP .</block>
+  <block id="dd41d48f516ceca9030eb4c406ca3b2e" category="paragraph"><block ref="dd41d48f516ceca9030eb4c406ca3b2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c11c94eebf65aa39aa6d92e551d37495" category="section-title">Afficher les résultats des recherches enregistrées dans la page Investigation</block>
+  <block id="4b6b79df55f75139d5245dc368dd69d7" category="paragraph">Pour afficher les résultats d'une recherche enregistrée dans la page Investigation, sélectionnez le  bouton correspondant à une recherche spécifique, <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>puis sélectionnez *examiner les résultats*.</block>
+  <block id="01ce7df905c02100d7e171845d5a1d11" category="inline-image-macro">Capture d'écran de la sélection de l'option examiner les résultats pour une recherche spécifique dans l'onglet recherche en tabulation.</block>
+  <block id="e664b44f91d2913f94b75e8da606bb74" category="paragraph"><block ref="e664b44f91d2913f94b75e8da606bb74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d060dc50372bab90fa0b80c2aadbfc5" category="section-title">Créer des recherches enregistrées personnalisées</block>
+  <block id="2dea09c1d3d4ee9b98ba67f3ee736c6a" category="paragraph">Vous pouvez créer vos propres recherches enregistrées personnalisées qui fournissent des résultats pour des requêtes spécifiques à votre organisation. Les résultats sont renvoyés pour tous les fichiers et répertoires (partages et dossiers) qui correspondent aux critères de recherche.</block>
+  <block id="edb2c0af042dce0faebc0fd23a6ea82a" category="list-text">Une fois que vous avez défini toutes les caractéristiques de filtre à votre convenance, sélectionnez *Créer une recherche enregistrée*.</block>
+  <block id="18485bc3e0b2a31412421f44a7d13cd5" category="inline-image-macro">Capture d'écran montrant comment enregistrer une requête filtrée en tant que recherche enregistrée.</block>
+  <block id="06295084cb3f7c9942a8ae945182ab11" category="paragraph"><block ref="06295084cb3f7c9942a8ae945182ab11" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2b24c965e18291acdf6309cabec1d801" category="list-text">Nommez la recherche enregistrée et ajoutez une description. Le nom doit être unique.</block>
+  <block id="acc1c25043aba44082aef8a6ae1f7bb7" category="inline-image-macro">Capture d'écran qui montre comment configurer la recherche enregistrée et l'enregistrer.</block>
+  <block id="781917d30539d353b2392b65ccd962ee" category="paragraph"><block ref="781917d30539d353b2392b65ccd962ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcc0446437d20a68ade85cece45a944d" category="paragraph">La nouvelle recherche enregistrée apparaît dans l'onglet recherches enregistrées.</block>
+  <block id="3abded291c3a14b09750019f607a5b6a" category="section-title">Modifier les recherches enregistrées</block>
+  <block id="25ab9ca41b65162f7d35a80b0fc2b62f" category="paragraph">Vous pouvez modifier les critères d'une recherche enregistrée personnalisée pour modifier la requête (les éléments que vous avez définis à l'aide de filtres) afin d'ajouter ou de supprimer certains paramètres.</block>
+  <block id="f2fb75e2f90578baaf8bd1c45bde6750" category="paragraph">Vous ne pouvez pas modifier les recherches enregistrées par défaut.</block>
+  <block id="8d5758ea88aa628e96b2a9850a9a3e84" category="list-text">Sur la page des recherches enregistrées, sélectionnez *Modifier la recherche enregistrée* pour la recherche que vous souhaitez modifier.</block>
+  <block id="58fd62d6cd14d93ae1f32c61f323f99b" category="inline-image-macro">Capture d'écran montrant Modifier la recherche enregistrée.</block>
+  <block id="800f72354e7a5ac3462a802bf4f659e0" category="paragraph"><block ref="800f72354e7a5ac3462a802bf4f659e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8c30944f6cac36547bcb3821964aeb1" category="list-text">Apportez les modifications aux champs Nom et Description. Pour modifier uniquement ces champs, sélectionnez *Enregistrer*.</block>
+  <block id="78b0d515ab4a6a13088dd6bd09b0146e" category="inline-image-macro">Capture d'écran de la sélection du bouton Modifier la requête sur la page Modifier la recherche enregistrée.</block>
+  <block id="e25b5282c5072b0a5171d238083a696e" category="paragraph"><block ref="e25b5282c5072b0a5171d238083a696e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60f69955f740d1c69cb05d0a389fa16f" category="section-title">Supprimer les recherches enregistrées</block>
+  <block id="c3f66c3ed396df4f45cc4a2247c6ff1a" category="paragraph">Vous pouvez supprimer toute recherche enregistrée personnalisée si vous n'en avez plus besoin. Vous ne pouvez pas supprimer les recherches enregistrées par défaut</block>
+  <block id="0fa5b5589241b6543c9b17d2f21e75ca" category="paragraph">Pour supprimer une recherche enregistrée, sélectionnez le <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> bouton correspondant à une recherche spécifique, sélectionnez *Supprimer la recherche enregistrée*, puis sélectionnez de nouveau *Supprimer la recherche* dans la boîte de dialogue de confirmation.</block>
+  <block id="c073cb4c943cd12dd3dc252f8b94f4f4" category="section-title">Recherches par défaut</block>
+  <block id="408f496a5a85521adc16cc6b351cc71a" category="paragraph">La classification BlueXP  fournit les requêtes de recherche définies par le système suivantes :</block>
+  <block id="e2824fba3c46b207f277094775a6de03" category="list-text">**Noms des sujets de données - risque élevé**</block>
+  <block id="2c2426ec28fe38c5a3d7589069fe8265" category="paragraph">Fichiers avec plus de 50 noms de sujet de données</block>
+  <block id="98082caf654b3a87faa12c97d6e5fef0" category="list-text">**Adresses de courriel - risque élevé**</block>
+  <block id="195ca90a6bdb7a590918ea6359e71f01" category="paragraph">Fichiers contenant plus de 50 adresses e-mail ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des adresses e-mail</block>
+  <block id="0e7fbf33b52073f6bc8f18d55796a211" category="list-text">**Données personnelles - risque élevé**</block>
+  <block id="5197b44c8d7d1e69dc7e95558ebe5b62" category="paragraph">Fichiers contenant plus de 20 identificateurs de données personnelles ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des identificateurs de données personnelles</block>
+  <block id="a89e4564535d2510e52bd6e6d1c99ac0" category="list-text">**Données privées - périmées sur 7 ans**</block>
+  <block id="f7eca6ddef457d0fdf1335d5c4ada293" category="paragraph">Les fichiers contenant des renseignements personnels ou sensibles, modifiés il y a plus de 7 ans</block>
+  <block id="967750771e3d93ad96804feaaa489729" category="list-text">**Protéger - élevé**</block>
+  <block id="53532655a36720e6e89d0ee34a4b6bb5" category="paragraph">Fichiers ou colonnes de base de données contenant un mot de passe, des informations de carte de crédit, un numéro IBAN ou un numéro de sécurité sociale</block>
+  <block id="c5bcbe698a08e29f3a73f73b33178fe7" category="list-text">**Protéger - faible**</block>
+  <block id="8942b8664e055291e5e39d816e5d46e7" category="paragraph">Fichiers qui n'ont pas été utilisés depuis plus de 3 ans</block>
+  <block id="7b67d7b1e7fb500aff7c6f34e99b281b" category="list-text">**Protéger - Moyen**</block>
+  <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">Fichiers contenant des fichiers ou des colonnes de base de données avec des identificateurs de données personnels, notamment des numéros d'identification, des numéros d'identification fiscale, des numéros de permis de conduire, des ID médicaux ou des numéros de passeport</block>
+  <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">**Données personnelles sensibles - risque élevé**</block>
+  <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">Fichiers contenant plus de 20 identificateurs de données personnelles sensibles ou colonnes de base de données contenant plus de 50 % de leurs lignes contenant des données personnelles sensibles</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 mai 2025</block>
+  <block id="60be04fe141df250bce893e57d19600d" category="sidebar">Créer une recherche enregistrée</block>
+  <block id="cbace44a9d78dedfcb62fa58fee0378f" category="sidebar">Créer une numérisation personnalisée</block>
 </blocks>

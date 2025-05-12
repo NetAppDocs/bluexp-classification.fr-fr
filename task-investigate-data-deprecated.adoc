@@ -27,9 +27,9 @@ Vous pouvez filtrer le contenu de la page d'enquête pour n'afficher que les ré
 
 
 
-=== Filtrez les données par balises, étiquettes, utilisateurs affectés et règles
+=== Filtrer les données par balises, étiquettes, utilisateurs affectés et recherches enregistrées
 
-Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou stratégies.
+Utilisez les filtres suivants pour afficher les données par balises, étiquettes d'AIP, utilisateurs affectés ou recherches enregistrées.
 
 []
 ====
@@ -41,7 +41,7 @@ Utilisez les filtres suivants pour afficher les données par balises, étiquette
 | Filtre | Détails 
 
 
-| Stratégies | Sélectionnez une ou plusieurs stratégies. Aller link:task-using-policies.html["ici"^] pour afficher la liste des règles existantes et créer vos propres règles personnalisées. 
+| Recherches enregistrées | Sélectionnez une ou plusieurs recherches enregistrées. Accédez link:task-using-policies.html["ici"^] à pour afficher la liste des recherches existantes ou en créer une nouvelle. 
 
 
 | Étiquette | Sélectionnez link:task-org-private-data.html#categorize-your-data-using-aip-labels["Libellés AIP"] qui sont affectés à vos fichiers. 

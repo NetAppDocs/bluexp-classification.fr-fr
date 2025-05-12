@@ -83,9 +83,9 @@ image:screenshot_compliance_repo_scan_all.png["Capture d'écran indiquant commen
 
 == Hiérarchiser les acquisitions
 
-Vous pouvez hiérarchiser les acquisitions de mappage uniquement les plus importantes pour vous assurer que les acquisitions de haute priorité sont effectuées en premier.
+Vous pouvez hiérarchiser les acquisitions de mappage uniquement les plus importantes ou les analyses de mappage et de classification afin de vous assurer que les acquisitions à haute priorité sont effectuées en premier.
 
-Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc. Cette fonction est limitée aux acquisitions de mappage uniquement. Elle n'est pas disponible pour les analyses de cartes et de catégories.
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
 
 La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
 

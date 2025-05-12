@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-dashboard-deprecated.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights 
 summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux. 
 ---
 = Affichez les détails de gouvernance relatifs à vos données à l'aide du tableau de bord gouvernance de classification BlueXP 

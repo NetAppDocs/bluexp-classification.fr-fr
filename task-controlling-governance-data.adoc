@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Maîtrisez les coûts liés aux données stockées sur les ressources de stockage de votre entreprise. La classification BlueXP identifie la quantité de données obsolètes, de données non stratégiques, de fichiers en double et de fichiers très volumineux présents dans vos systèmes. Vous pouvez ainsi décider de supprimer ou de déplacer certains fichiers vers un stockage objet moins coûteux. 
 ---
 = Affichez les détails de gouvernance sur les données stockées dans votre entreprise avec la classification BlueXP 
@@ -68,16 +68,16 @@ NOTE: Si l'une de vos sources de données implémente le Tiering des données, l
 
 
 
-=== Examiner les politiques avec le plus grand nombre de résultats
+=== Examinez les recherches enregistrées avec le plus grand nombre de résultats
 
-Dans la zone _Policies_, les politiques affichant le plus grand nombre de résultats apparaissent en haut de la liste.
+Dans l'onglet _saved recherchs_, les recherches avec le plus grand nombre de résultats apparaissent en haut de la liste.
 
-Pour plus de détails sur les stratégies, reportez-vous à link:task-using-policies.html["Attribuez des règles à vos données"]la section .
+Pour plus d'informations sur les recherches enregistrées, reportez-vous à link:task-using-policies.html["Créer des recherches enregistrées"]la section .
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *gouvernance*.
-. Dans la mosaïque Tableau de bord Goverance > stratégies, sélectionnez le nom d'une règle pour afficher les résultats dans la page Investigation.
-. Sélectionnez *Afficher tout* pour afficher la liste de toutes les stratégies disponibles. Dans la zone _Policies_, les politiques affichant le plus grand nombre de résultats apparaissent en haut de la liste.
+. Dans le tableau de bord Goverance, localisez la mosaïque de recherches enregistrées. Sélectionnez le nom d'une recherche enregistrée pour afficher les résultats dans la page Investigation.
+. Sélectionnez *Afficher tout* pour afficher la liste de toutes les recherches enregistrées disponibles. Dans la zone _saved recherchts_, les recherches avec le plus grand nombre de résultats apparaissent en haut de la liste.
 
 
 
@@ -116,7 +116,7 @@ image:screenshot-compliance-report-buttons.png["Capture d'écran du tableau de b
 
 
 .Résultat
-La classification BlueXP génère un rapport au format .PDF que vous pouvez examiner et envoyer à d'autres groupes si nécessaire.
+La classification BlueXP génère un rapport PDF que vous pouvez examiner et envoyer à d'autres groupes selon les besoins.
 
 
 

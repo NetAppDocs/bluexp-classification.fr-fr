@@ -16,11 +16,9 @@ summary: 'La classification BlueXP offre de nombreuses méthodes pour gérer vos
 [role="lead"]
 La classification BlueXP offre de nombreuses méthodes pour gérer vos données privées. Certaines fonctionnalités facilitent la préparation de la migration des données, tandis que d'autres vous permettent de modifier ces dernières.
 
-[]
-====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
 
-====
+NOTE: Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
 * Vous pouvez copier des fichiers vers un partage NFS de destination si vous souhaitez effectuer une copie de certaines données et les déplacer vers un autre emplacement NFS.
 * Vous pouvez cloner un volume ONTAP sur un nouveau volume, tout en incluant uniquement les fichiers sélectionnés du volume source dans le nouveau volume cloné. Cette fonction est utile lorsque vous migrez des données et que vous souhaitez exclure certains fichiers du volume d'origine.
 * Vous pouvez copier et synchroniser des fichiers d'un référentiel source vers un répertoire dans un emplacement de destination spécifique. Cette fonction s'avère utile dans les cas où vous migrez des données d'un système source vers un autre alors que les fichiers source continuent à avoir une activité finale.
@@ -256,8 +254,6 @@ image:screenshot_compliance_move_file.png["Capture d'écran montrant la sélecti
 == Supprimer les fichiers source
 
 Vous pouvez supprimer de manière définitive les fichiers source qui semblent non sécurisés ou trop risqués pour laisser dans votre système de stockage, ou que vous avez identifiés comme un doublon. Cette action est permanente et il n'y a pas d'annulation ou de restauration.
-
-Vous pouvez supprimer des fichiers manuellement à partir du volet Investigation, ou link:task-using-policies.html["Utiliser automatiquement des règles"^].
 
 
 TIP: Vous ne pouvez pas supprimer les fichiers qui résident dans les bases de données. Toutes les autres sources de données sont prises en charge.

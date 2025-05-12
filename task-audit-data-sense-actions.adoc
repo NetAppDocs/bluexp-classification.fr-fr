@@ -18,11 +18,9 @@ Les activités de gestion des journaux de classification BlueXP qui ont été ef
 
 Vous pouvez afficher le contenu des fichiers journaux d'audit de classification BlueXP ou les télécharger pour voir quelles modifications de fichier ont été apportées et à quelle date. Par exemple, vous pouvez voir quelle demande a été émise, l'heure de la demande et des détails tels que l'emplacement source en cas de suppression d'un fichier ou l'emplacement source et de destination en cas de déplacement d'un fichier.
 
-[]
-====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
 
-====
+NOTE: Ces informations ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
 
 
 == Contenu du fichier journal
@@ -33,11 +31,11 @@ Chaque ligne du journal d'audit contient des informations dans ce format :
 
 * Date et heure : horodatage complet de l'événement
 * État - INFO, AVERTISSEMENT
-* Type d'action (supprimer, copier, déplacer, créer la stratégie, mettre à jour la stratégie, Analyse des fichiers, téléchargement du rapport JSON, etc.)
+* Type d'action (supprimer, copier, déplacer, créer une recherche enregistrée, mettre à jour la recherche enregistrée, relancer les fichiers, télécharger le rapport JSON, etc.)
 * Nom du fichier (si l'action est pertinente pour un fichier)
 * Détails de l'action - ce qui a été fait : dépend de l'action
 +
-** Nom de la règle
+** Nom de recherche enregistré
 ** Pour déplacer - Source et destination
 ** Pour la copie - Source et destination
 ** Pour balise - nom de balise
