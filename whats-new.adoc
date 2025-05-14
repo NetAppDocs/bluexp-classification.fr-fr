@@ -27,17 +27,17 @@ Découvrez les nouveautés de la classification BlueXP.
 Cette version de classification BlueXP  inclut :
 
 .Hiérarchiser les analyses de classification
-La classification BlueXP  permet désormais de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement, ce qui vous permet de sélectionner les acquisitions qui sont effectuées en premier. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.
+La classification BlueXP  permet de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement, ce qui vous permet de sélectionner les acquisitions qui sont effectuées en premier. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.
 
 Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Prise en charge des catégories de données canadiennes d'information à caractère personnel (IIP)
-Les analyses de classification BlueXP  identifient maintenant les catégories de données des RP canadiennes pour les renseignements bancaires, le numéro de passeport, le numéro d'assurance sociale, le numéro de permis de conduire et le numéro de carte santé pour toutes les provinces et tous les territoires.
+Les analyses de classification BlueXP  identifient les catégories de données des RP canadiennes pour les renseignements bancaires, le numéro de passeport, le numéro d'assurance sociale, le numéro de permis de conduire et le numéro de carte santé pour toutes les provinces et tous les territoires.
 
 Pour plus d'informations, voir xref:reference-private-data-categories.adoc#types-of-personal-data[Catégories de données personnelles].
 
 .Classification personnalisée (aperçu)
-La classification BlueXP  prend désormais en charge les classifications personnalisées pour les analyses Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise et garantir leur conformité avec les expressions régulières. Cette fonction est actuellement en aperçu.
+La classification BlueXP  prend en charge les classifications personnalisées pour les acquisitions Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise et garantir leur conformité avec les expressions régulières. Cette fonction est actuellement en aperçu.
 
 Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des classifications personnalisées].
 
@@ -45,7 +45,7 @@ Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des 
 L'onglet **politiques** a été renommé xref:task-using-policies.html[**Recherches enregistrées**]. La fonctionnalité est la même.
 
 .Envoyer les événements d'analyse à la chronologie BlueXP 
-La classification BlueXP  prend désormais en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP "^].
+La classification BlueXP  prend en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et qu'elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP "^].
 
 .Mises à jour de sécurité
 * Le paquet Keras a été mis à jour, atténuant les vulnérabilités (BDSA-2025-0107 et BDSA-2025-1984).
@@ -69,10 +69,10 @@ Les bugs ayant provoqué l'échec des analyses StorageGRID, les options de filtr
 Cette version de classification BlueXP  inclut :
 
 .Balayage en vrac pour les environnements de travail
-La classification BlueXP  prend désormais en charge les opérations en bloc pour les environnements de travail. Vous pouvez choisir d'activer les analyses de mappage, d'activer les analyses de mappage et de classification, de désactiver les analyses ou de créer une configuration personnalisée sur l'ensemble des volumes de l'environnement de travail. Si vous effectuez une sélection pour un volume individuel, elle remplace la sélection en bloc. Pour effectuer une opération en bloc, accédez à la page **Configuration** et faites votre sélection.
+La classification BlueXP  prend en charge les opérations en bloc pour les environnements de travail. Vous pouvez choisir d'activer les analyses de mappage, d'activer les analyses de mappage et de classification, de désactiver les analyses ou de créer une configuration personnalisée sur l'ensemble des volumes de l'environnement de travail. Si vous effectuez une sélection pour un volume individuel, elle remplace la sélection en bloc. Pour effectuer une opération en bloc, accédez à la page **Configuration** et faites votre sélection.
 
 .Télécharger le rapport d'enquête localement
-La classification BlueXP  prend désormais en charge la possibilité de télécharger des rapports d'enquête de données localement pour les afficher dans le navigateur. Si vous choisissez l'option locale, l'investigation de données est uniquement disponible au format CSV et n'affiche que les 10,000 premières lignes de données.
+La classification BlueXP  permet de télécharger des rapports d'enquête de données localement à afficher dans le navigateur. Si vous choisissez l'option locale, l'investigation de données est uniquement disponible au format CSV et n'affiche que les 10,000 premières lignes de données.
 
 Pour plus d'informations, voir link:task-investigate-data.html#create-the-data-investigation-report["Analysez les données stockées dans votre entreprise avec la classification BlueXP "].
 
@@ -87,7 +87,7 @@ Pour plus d'informations, voir link:task-investigate-data.html#create-the-data-i
 Cette version de classification BlueXP  inclut des améliorations générales et des correctifs. Elle comprend également :
 
 .État de l'acquisition
-La classification BlueXP  suit désormais la progression en temps réel des acquisitions de cartographie et de classification _initial_ sur un volume. Des barres progressives séparées suivent les analyses de cartographie et de classification, présentant un pourcentage du total des fichiers analysés. Vous pouvez également passer le curseur de la souris sur une barre de progression pour afficher le nombre de fichiers analysés et le nombre total de fichiers. Le suivi de l'état de vos analyses permet d'obtenir des informations plus détaillées sur la progression de l'analyse, ce qui vous permet de mieux planifier vos analyses et de comprendre l'allocation des ressources.
+La classification BlueXP  suit la progression en temps réel des acquisitions de cartographie et de classification _initial_ sur un volume. Des barres progressives séparées suivent les analyses de cartographie et de classification, présentant un pourcentage du total des fichiers analysés. Vous pouvez également passer le curseur de la souris sur une barre de progression pour afficher le nombre de fichiers analysés et le nombre total de fichiers. Le suivi de l'état de vos analyses permet d'obtenir des informations plus détaillées sur la progression de l'analyse, ce qui vous permet de mieux planifier vos analyses et de comprendre l'allocation des ressources.
 
 Pour afficher l'état de vos acquisitions, accédez à **Configuration** dans la classification BlueXP , puis sélectionnez la **Configuration de l'environnement de travail**. La progression est affichée en ligne pour chaque volume.
 
@@ -109,7 +109,7 @@ Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de co
 .Prioriser les acquisitions de mappage uniquement
 Lorsque vous effectuez des acquisitions de mappage uniquement, vous pouvez hiérarchiser les acquisitions les plus importantes. Cette fonction vous aide lorsque vous disposez de nombreux environnements de travail et que vous souhaitez vous assurer que les numérisations à haute priorité sont effectuées en premier.
 
-Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
 
 La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
 
@@ -118,9 +118,9 @@ La priorisation est limitée à link:concept-cloud-compliance.html["analyses de 
 Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Réessayez toutes les acquisitions
-La classification BlueXP  prend désormais en charge la possibilité de recommencer par lots toutes les acquisitions ayant échoué.
+La classification BlueXP  prend en charge la possibilité de répéter par lots toutes les acquisitions ayant échoué.
 
-Vous pouvez à présent relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
+Vous pouvez relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
 
 Pour réessayer toutes les acquisitions :
 
@@ -220,7 +220,7 @@ Cette version offre des performances de numérisation améliorées.
 === Version 1.35
 
 .Analyser les données StorageGRID
-La classification BlueXP  peut maintenant analyser les données dans StorageGRID.
+La classification BlueXP  prend en charge les données de numérisation dans StorageGRID.
 
 Pour plus de détails, reportez-vous à link:task-scanning-storagegrid.html["Analyser les données StorageGRID"].
 
@@ -352,8 +352,8 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 === Version 1.27
 
-.Les résultats de la page d'enquête affichent désormais la taille totale en plus du nombre total d'éléments
-Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.
+.Les résultats de la page d'enquête affichent la taille totale en plus du nombre total d'éléments
+Les résultats filtrés de la page Investigation affichent la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.
 
 .Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
 Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].

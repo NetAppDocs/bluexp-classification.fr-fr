@@ -16,14 +16,14 @@ summary: 'Procédez en quelques étapes pour commencer à analyser les données 
 [role="lead"]
 Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n'importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Linode, stockage cloud B2, Amazon S3, et bien plus encore.
 
+
+IMPORTANT: Les informations suivantes ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
++ à partir de la version 1.31, la classification BlueXP  fait partie de l'offre BlueXP  de base. Pour plus d'informations, voir link:task-scanning-storagegrid.html["Analyser les données StorageGRID"].
+
 []
 ====
-*REMARQUE* en utilisant la classification BlueXP  qui fait partie du BlueXP  principal, vous pouvez maintenant analyser les données StorageGRID. Voir link:task-scanning-storagegrid.html["Analyser les données StorageGRID"]. Les informations restantes ici ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
-
-====
-
-
-== Démarrage rapide
+== démarrage rapide
 
 Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux sections restantes pour obtenir de plus amples informations.
 
@@ -46,9 +46,7 @@ Ajoutez le service de stockage objet à la classification BlueXP.
 [role="quick-margin-para"]
 Sélectionnez les compartiments que vous souhaitez analyser et la classification BlueXP commencera à les analyser.
 
-
-
-== Examen des besoins en stockage objet
+== examen des exigences en matière de stockage objet
 
 Vérifiez les conditions préalables suivantes pour vous assurer que votre configuration est prise en charge avant d'activer la classification BlueXP.
 
@@ -56,9 +54,7 @@ Vérifiez les conditions préalables suivantes pour vous assurer que votre confi
 * Vous devez disposer de la clé d'accès et de la clé secrète du fournisseur de stockage objet pour que la classification BlueXP puisse accéder aux compartiments.
 
 
-
-
-== Déploiement de l'instance de classification BlueXP
+== déploiement de l'instance de classification BlueXP 
 
 Déployez la classification BlueXP si aucune instance n'est déjà déployée.
 
@@ -68,9 +64,7 @@ Si vous analysant les données à partir du stockage objet S3 qui a été instal
 
 Les mises à niveau du logiciel de classification BlueXP sont automatisées tant que l'instance dispose d'une connectivité Internet.
 
-
-
-== Ajout du service de stockage objet à la classification BlueXP
+== Ajout du service de stockage objet à la classification BlueXP 
 
 Ajoutez le service de stockage objet.
 
@@ -94,9 +88,7 @@ image:screenshot_compliance_add_object_storage.png["Capture d'écran de la boît
 .Résultat
 Le nouveau service de stockage objet est ajouté à la liste des environnements de travail.
 
-
-
-== Activation et désactivation des analyses de conformité dans les compartiments de stockage objet
+== activation et désactivation des analyses de conformité sur les compartiments de stockage objet
 
 Après avoir activé la classification BlueXP sur votre service de stockage objet, l'étape suivante consiste à configurer les compartiments à analyser. La classification BlueXP détecte ces compartiments et les affiche dans l'environnement de travail que vous avez créé.
 
@@ -127,3 +119,5 @@ image:screenshot_compliance_object_storage_select_buckets.png["Capture d'écran 
 
 .Résultat
 La classification BlueXP commence à analyser les compartiments que vous avez activés. En cas d'erreur, elles apparaîtront dans la colonne État, ainsi que l'action requise pour corriger l'erreur.
+
+====

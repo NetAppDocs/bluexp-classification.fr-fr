@@ -16,7 +16,7 @@ Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de co
 .Prioriser les acquisitions de mappage uniquement
 Lorsque vous effectuez des acquisitions de mappage uniquement, vous pouvez hiérarchiser les acquisitions les plus importantes. Cette fonction vous aide lorsque vous disposez de nombreux environnements de travail et que vous souhaitez vous assurer que les numérisations à haute priorité sont effectuées en premier.
 
-Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
 
 La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
 
@@ -25,9 +25,9 @@ La priorisation est limitée à link:concept-cloud-compliance.html["analyses de 
 Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Réessayez toutes les acquisitions
-La classification BlueXP  prend désormais en charge la possibilité de recommencer par lots toutes les acquisitions ayant échoué.
+La classification BlueXP  prend en charge la possibilité de répéter par lots toutes les acquisitions ayant échoué.
 
-Vous pouvez à présent relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
+Vous pouvez relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
 
 Pour réessayer toutes les acquisitions :
 

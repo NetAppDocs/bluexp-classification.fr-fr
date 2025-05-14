@@ -21,7 +21,7 @@ Vous pouvez configurer ce paramètre lors de la création de la stratégie ou lo
 Procédez comme suit pour ajouter des mises à jour par e-mail à une stratégie existante.
 
 .Étapes
-. Dans la page liste des stratégies, cliquez sur *Modifier* pour la stratégie dans laquelle vous souhaitez ajouter (ou modifier) le paramètre de messagerie.
+. Sur la page liste des stratégies, sélectionnez *Modifier* pour la stratégie dans laquelle vous souhaitez ajouter (ou modifier) le paramètre de messagerie.
 +
 image:screenshot_compliance_add_email_alert_1.png["Capture d'écran montrant comment modifier une stratégie existante."]
 
@@ -34,11 +34,11 @@ image:screenshot_compliance_add_email_alert_2.png["Capture d'écran indiquant co
 
 
 
-. Cliquez sur *Enregistrer la stratégie* et l'intervalle d'envoi de l'e-mail apparaît dans la description de la stratégie.
+. Sélectionnez *Enregistrer la stratégie* et l'intervalle d'envoi de l'e-mail apparaît dans la description de la stratégie.
 
 
 .Résultat
-Le premier e-mail est envoyé dès maintenant s'il y a des résultats de la police, mais uniquement si des fichiers répondent aux critères de la stratégie. Aucune information personnelle n'est envoyée dans les e-mails de notification. L'e-mail indique qu'il existe des fichiers qui correspondent aux critères de la stratégie et qu'il fournit un lien vers les résultats de la stratégie.
+Un e-mail est envoyé si des fichiers répondent aux critères de la stratégie. Aucune information personnelle n'est envoyée dans les e-mails de notification. L'e-mail indique qu'il existe des fichiers qui correspondent aux critères de la stratégie et qu'il fournit un lien vers les résultats de la stratégie.
 
 
 

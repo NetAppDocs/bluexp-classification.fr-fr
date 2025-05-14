@@ -144,7 +144,7 @@ Une fois le regex ajouté, la classification BlueXP redémarre l'analyse de tout
 Si vous avez besoin d'aide pour construire l'expression régulière, reportez-vous à la section https://regex101.com/["Expressions régulières 101"^]. Choisissez *Python* pour que la saveur puisse voir les types de résultats que la classification BlueXP correspond à l'expression régulière. Le https://pythonium.net/regex["Page Python Regex Tester"^] est également utile en affichant une représentation graphique de vos répétitions.
 
 
-NOTE: Actuellement, nous n'autorisons pas l'utilisation d'indicateurs de motif lors de la création d'un regex - cela signifie que vous ne devez pas utiliser "/".
+NOTE: La classification BlueXP  ne prend pas en charge les indicateurs de modèle lors de la création d'un regex. Cela signifie que vous ne devez pas utiliser "/".
 
 .Étapes
 . Dans l'onglet _Paramètres de classification_, cliquez sur *Ajouter un nouveau classificateur* pour lancer l'assistant _Ajouter un classificateur personnalisé_.

@@ -9,9 +9,9 @@
 Cette version de classification BlueXP  inclut :
 
 .Balayage en vrac pour les environnements de travail
-La classification BlueXP  prend désormais en charge les opérations en bloc pour les environnements de travail. Vous pouvez choisir d'activer les analyses de mappage, d'activer les analyses de mappage et de classification, de désactiver les analyses ou de créer une configuration personnalisée sur l'ensemble des volumes de l'environnement de travail. Si vous effectuez une sélection pour un volume individuel, elle remplace la sélection en bloc. Pour effectuer une opération en bloc, accédez à la page **Configuration** et faites votre sélection.
+La classification BlueXP  prend en charge les opérations en bloc pour les environnements de travail. Vous pouvez choisir d'activer les analyses de mappage, d'activer les analyses de mappage et de classification, de désactiver les analyses ou de créer une configuration personnalisée sur l'ensemble des volumes de l'environnement de travail. Si vous effectuez une sélection pour un volume individuel, elle remplace la sélection en bloc. Pour effectuer une opération en bloc, accédez à la page **Configuration** et faites votre sélection.
 
 .Télécharger le rapport d'enquête localement
-La classification BlueXP  prend désormais en charge la possibilité de télécharger des rapports d'enquête de données localement pour les afficher dans le navigateur. Si vous choisissez l'option locale, l'investigation de données est uniquement disponible au format CSV et n'affiche que les 10,000 premières lignes de données.
+La classification BlueXP  permet de télécharger des rapports d'enquête de données localement à afficher dans le navigateur. Si vous choisissez l'option locale, l'investigation de données est uniquement disponible au format CSV et n'affiche que les 10,000 premières lignes de données.
 
 Pour plus d'informations, voir link:task-investigate-data.html#create-the-data-investigation-report["Analysez les données stockées dans votre entreprise avec la classification BlueXP "].

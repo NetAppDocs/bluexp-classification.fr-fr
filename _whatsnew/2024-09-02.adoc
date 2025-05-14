@@ -7,6 +7,6 @@
 === Version 1.35
 
 .Analyser les données StorageGRID
-La classification BlueXP  peut maintenant analyser les données dans StorageGRID.
+La classification BlueXP  prend en charge les données de numérisation dans StorageGRID.
 
 Pour plus de détails, reportez-vous à link:task-scanning-storagegrid.html["Analyser les données StorageGRID"].

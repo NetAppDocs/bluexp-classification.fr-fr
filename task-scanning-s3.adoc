@@ -218,8 +218,8 @@ Assurez-vous de faire ce qui suit :
 
 . Accédez au compte AWS source sur lequel réside l'instance de classification BlueXP et sélectionnez le rôle IAM qui est associé à l'instance.
 +
-.. Modifiez la durée * maximale de la session CLI/API* de 1 heure à 12 heures et enregistrez cette modification.
-.. Cliquez sur *attacher des stratégies*, puis sur *Créer une stratégie*.
+.. Modifiez la *durée maximale de la session CLI/API* de 1 heure à 12 heures. Enregistrez la modification.
+.. Sélectionnez *joindre des stratégies* puis *Créer une stratégie*.
 .. Créez une stratégie qui inclut l'action « sts:AssumeRole » et spécifiez l'ARN du rôle que vous avez créé dans le compte cible.
 +
 [source, json]
@@ -248,11 +248,11 @@ Assurez-vous de faire ce qui suit :
 }
 ----
 +
-Le compte de profil d'instance de classification BlueXP a désormais accès au compte AWS supplémentaire.
+Le compte de profil d'instance de classification BlueXP  reçoit l'accès au compte AWS supplémentaire.
 
 
 
-. Accédez à la page *Amazon S3 Configuration* et le nouveau compte AWS s'affiche. Notez que la classification BlueXP peut prendre quelques minutes pour synchroniser l'environnement de travail du nouveau compte et afficher ces informations.
+. Accédez à la page *Configuration Amazon S3* pour afficher le nouveau compte AWS. Notez que la classification BlueXP peut prendre quelques minutes pour synchroniser l'environnement de travail du nouveau compte et afficher ces informations.
 +
 image:screenshot_activate_and_select_buckets.png["Copie d'écran montrant comment activer la classification BlueXP."]
 

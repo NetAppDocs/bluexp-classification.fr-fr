@@ -321,7 +321,7 @@ Notez que toutes les activités d'installation sont consignées lors de l'instal
 +
 ** Vous aurez besoin des informations du serveur proxy (adresse IP ou nom d'hôte, port de connexion, schéma de connexion : https ou http, nom d'utilisateur et mot de passe).
 ** Si le proxy effectue l'interception TLS, vous devez connaître le chemin d'accès au système de classification BlueXP Linux où sont stockés les certificats TLS CA.
-** Le proxy doit être non transparent - nous ne prenons actuellement pas en charge les proxys transparents.
+** Le proxy doit être non transparent. BlueXP  classificaiton ne prend actuellement pas en charge les proxys transparents.
 ** L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
 
 
