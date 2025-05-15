@@ -149,7 +149,7 @@ Le rapport contient les informations suivantes :
 +
 image:screenshot-compliance-report-buttons.png["Capture d'écran du tableau de bord de gouvernance qui montre comment lancer le rapport de mappage de données."]
 
-. Pour personnaliser le nom de la société qui apparaît sur la première page du rapport, dans le coin supérieur droit de la page de classification BlueXP , sélectionnez image:screenshot_gallery_options.gif["Le bouton plus"]. Sélectionnez ensuite *changer le nom de la société*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
+. Pour personnaliser le nom de la société qui apparaît sur la première page du rapport, dans le coin supérieur droit de la page de classification BlueXP , sélectionnez image:button-gallery-options.gif["Le bouton plus"]. Sélectionnez ensuite *changer le nom de la société*. La prochaine fois que vous générez le rapport, il inclura le nouveau nom.
 
 
 .Résultat

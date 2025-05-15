@@ -17,7 +17,7 @@ summary: Si nécessaire, vous pouvez empêcher la classification BlueXP de scann
 Si vous ne souhaitez plus analyser les fichiers utilisateur à partir d'un compte OneDrive spécifique, d'un compte SharePoint spécifique ou d'un compte Google Drive, vous pouvez supprimer le compte de l'interface de classification BlueXP et arrêter toutes les analyses.
 
 .Étapes
-. Dans la page _Configuration_, cliquez sur image:screenshot_gallery_options.gif["Bouton plus"] Dans la ligne du compte OneDrive, SharePoint ou Google Drive, puis cliquez sur *Supprimer le compte OneDrive*, *Supprimer le compte SharePoint* ou *Supprimer le compte Google Drive*.
+. Sur la page _Configuration_, sélectionnez le image:button-gallery-options.gif["Bouton plus"] bouton de la ligne correspondant au compte OneDrive, SharePoint ou Google Drive, puis sélectionnez *Supprimer le compte OneDrive*, *Supprimer le compte SharePoint* ou *Supprimer le compte Google Drive*.
 +
 image:screenshot_compliance_remove_onedrive.png["Capture d'écran du bouton Supprimer OneDrive de la page Configuration de la numérisation."]
 

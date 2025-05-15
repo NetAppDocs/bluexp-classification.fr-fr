@@ -14,12 +14,12 @@ La classification BlueXP  permet de hiérarchiser les analyses cartographiques 
 Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Prise en charge des catégories de données canadiennes d'information à caractère personnel (IIP)
-Les analyses de classification BlueXP  identifient les catégories de données des RP canadiennes pour les renseignements bancaires, le numéro de passeport, le numéro d'assurance sociale, le numéro de permis de conduire et le numéro de carte santé pour toutes les provinces et tous les territoires.
+Les analyses de classification BlueXP  identifient les catégories de données des RP au Canada. Ces catégories comprennent les renseignements bancaires, les numéros de passeport, les numéros d'assurance sociale, les numéros de permis de conduire et les numéros de carte santé pour toutes les provinces et tous les territoires du Canada.
 
 Pour plus d'informations, voir xref:reference-private-data-categories.adoc#types-of-personal-data[Catégories de données personnelles].
 
 .Classification personnalisée (aperçu)
-La classification BlueXP  prend en charge les classifications personnalisées pour les acquisitions Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise et garantir leur conformité avec les expressions régulières. Cette fonction est actuellement en aperçu.
+La classification BlueXP  prend en charge les classifications personnalisées pour les acquisitions Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise à l'aide d'expressions régulières. Cette fonction est actuellement en aperçu.
 
 Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des classifications personnalisées].
 

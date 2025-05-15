@@ -22,7 +22,7 @@ Si nécessaire, vous pouvez empêcher la classification BlueXP d'analyser un ou 
 
 Lorsque vous désactivez des analyses, la classification BlueXP ne analyse plus les données de l'environnement de travail et supprime les informations de conformité indexées de l'instance de classification BlueXP (les données de l'environnement de travail lui-même ne sont pas supprimées).
 
-. Dans la page _Configuration_, cliquez sur image:screenshot_gallery_options.gif["Bouton plus"] Dans la ligne de l'environnement de travail, puis cliquez sur *Désactiver la détection de données*.
+. Dans la page _Configuration_, sélectionnez le image:button-gallery-options.gif["Bouton plus"] bouton de la ligne pour l'environnement de travail, puis *Désactiver Data Sense*.
 
 
 image:screenshot_deactivate_compliance_scan.png["Capture d'écran de l'icône d'action dans laquelle vous pouvez sélectionner Désactiver la classification BlueXP. Cette option est disponible après avoir sélectionné un environnement de travail dans la page Canevas."]
@@ -36,7 +36,7 @@ TIP: Vous pouvez également désactiver les analyses de conformité pour un envi
 
 Si vous ne souhaitez plus analyser une base de données, vous pouvez la supprimer de l'interface de classification BlueXP et arrêter toutes les analyses.
 
-. Dans la page _Configuration_, cliquez sur image:screenshot_gallery_options.gif["Bouton plus"] Dans la ligne de la base de données, puis cliquez sur *Supprimer serveur DB*.
+. Dans la page _Configuration_, sélectionnez le image:button-gallery-options.gif["Bouton plus"] bouton de la ligne de la base de données, puis *Supprimer le serveur DB*.
 
 
 image:screenshot_compliance_remove_db.png["Capture d'écran du bouton Supprimer le serveur de BD de la page Configuration de la numérisation."]
@@ -48,7 +48,7 @@ image:screenshot_compliance_remove_db.png["Capture d'écran du bouton Supprimer 
 Si vous ne souhaitez plus analyser les fichiers utilisateur à partir d'un groupe de partages de fichiers, vous pouvez supprimer le groupe de partages de fichiers de l'interface de classification BlueXP et arrêter toutes les analyses.
 
 .Étapes
-. Dans la page _Configuration_, cliquez sur image:screenshot_gallery_options.gif["Bouton plus"] Dans la ligne du groupe de partages de fichiers, puis cliquez sur *Supprimer le groupe de partages de fichiers*.
+. Sur la page _Configuration_, sélectionnez le image:button-gallery-options.gif["Bouton plus"] bouton dans la ligne pour le groupe partages de fichiers, puis *Supprimer le groupe partages de fichiers*.
 +
 image:screenshot_compliance_remove_fileshare_group.png["Capture d'écran du bouton Supprimer le groupe de partage de fichiers de la page Configuration de la numérisation."]
 
