@@ -192,7 +192,7 @@ Par exemple, vous pouvez voir où se trouvent les fichiers d'installation compre
 
 Après la mise à jour des catégories personnalisées, la classification BlueXP redémarre l'analyse de toutes les sources de données. Une fois l'analyse terminée, les nouveaux résultats apparaissent dans le tableau de bord de conformité de classification BlueXP sous la section « catégories » et dans la page Investigation du filtre « Catégorie ». link:task-controlling-private-data.html#view-files-by-categories["Voir comment afficher les fichiers par catégories"].
 
-.Ce dont vous avez besoin
+.Avant de commencer
 Vous devez créer au moins 25 fichiers d'entraînement contenant des échantillons des catégories de données que vous voulez que la classification BlueXP reconnaisse. Les types de fichiers suivants sont pris en charge :
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`

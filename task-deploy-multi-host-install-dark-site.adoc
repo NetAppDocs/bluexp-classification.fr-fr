@@ -20,12 +20,10 @@ Dans le cas de configurations très volumineuses qui permettent d'analyser des p
 
 Suivez ces étapes lors de l'installation du logiciel de classification BlueXP sur plusieurs hôtes sur site dans un environnement hors ligne.
 
-[]
-====
-*REMARQUE* ces informations ne concernent que les versions 1.30 et antérieures de l'héritage de classification BlueXP.
 
-====
-.Ce dont vous avez besoin
+NOTE: Les informations suivantes ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
+
+.Avant de commencer
 * Vérifiez que tous vos systèmes Linux pour les nœuds Manager et scanner répondent aux exigences de l'hôte.
 * Vérifiez que vous avez installé les deux packages logiciels prérequis (Docker Engine ou Podman et Python 3).
 * Assurez-vous que vous disposez des privilèges root sur les systèmes Linux.

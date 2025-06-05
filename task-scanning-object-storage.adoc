@@ -17,9 +17,7 @@ summary: 'Procédez en quelques étapes pour commencer à analyser les données 
 Procédez en quelques étapes pour commencer à analyser les données dans le stockage objet directement avec la classification BlueXP. La classification BlueXP peut analyser les données à partir de n'importe quel service de stockage objet qui utilise le protocole simple Storage Service (S3). Notamment NetApp StorageGRID, IBM Cloud Object Store, Linode, stockage cloud B2, Amazon S3, et bien plus encore.
 
 
-IMPORTANT: Les informations suivantes ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP .
-
-+ à partir de la version 1.31, la classification BlueXP  fait partie de l'offre BlueXP  de base. Pour plus d'informations, voir link:task-scanning-storagegrid.html["Analyser les données StorageGRID"].
+IMPORTANT: Les informations suivantes ne concernent que les anciennes versions 1.30 et antérieures de la classification BlueXP . + à partir de la version 1.31, la classification BlueXP  fait partie de l'offre BlueXP  de base. Pour plus d'informations, voir link:task-scanning-storagegrid.html["Analyser les données StorageGRID"].
 
 
 
