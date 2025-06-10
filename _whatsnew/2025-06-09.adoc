@@ -1,0 +1,60 @@
+= Version 1.44
+:allow-uri-read: 
+
+
+
+
+=== Version 1.44
+
+Cette version de classification BlueXP  inclut :
+
+.Amélioration des temps de mise à jour du tableau de bord de gouvernance
+Les délais de mise à jour des différents composants du tableau de bord de gouvernance ont été améliorés. Le tableau suivant présente la fréquence de mise à jour de chaque composant.
+
+[cols="1,1"]
+|===
+| Composant | Heures de mise à jour 
+
+
+| Âge des données | 24 heures 
+
+
+| Catégories | 24 heures 
+
+
+| Présentation des données | 5 minutes 
+
+
+| Fichiers en double | 2 heures 
+
+
+| Types de fichiers | 24 heures 
+
+
+| Données non commerciales | 2 heures 
+
+
+| Ouvrez autorisations | 24 heures 
+
+
+| Recherches enregistrées | 2 heures 
+
+
+| Données sensibles et autorisations étendues | 24 heures 
+
+
+| Taille des données | 24 heures 
+
+
+| Données obsolètes | 2 heures 
+
+
+| Principaux référentiels de données par niveau de sensibilité | 2 heures 
+|===
+Vous pouvez consulter l'heure de la dernière mise à jour et mettre à jour manuellement les composants « Fichiers en double », « Données non commerciales », « Recherches enregistrées », « Données obsolètes » et « Principaux référentiels de données par niveau de sensibilité ». xref:task-controlling-governance-data.html[Afficher les détails de gouvernance sur les données stockées dans votre organisation] .
+
+.Améliorations des performances et de la sécurité
+Des améliorations ont été apportées pour améliorer les performances, la consommation de mémoire et la sécurité de la classification BlueXP.
+
+.Correctifs de bogues
+Redis a été mis à niveau pour améliorer la fiabilité de la classification BlueXP. Cette dernière utilise désormais Elasticsearch pour améliorer la précision des rapports de nombre de fichiers lors des analyses.
