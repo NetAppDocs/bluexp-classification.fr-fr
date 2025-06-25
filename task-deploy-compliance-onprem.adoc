@@ -155,7 +155,7 @@ Assurez-vous de pouvoir maintenir la classification BlueXP en cours d'exécution
 *** Red Hat Enterprise Linux version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 et 9.5
 
 
-** Les extensions AVX (Advanced Vector Extensions) doivent être activées sur le système hôte.
+** Les extensions vectorielles avancées (AVX2) doivent être activées sur le système hôte.
 
 
 * *Gestion des abonnements Red Hat* : l'hôte doit être enregistré auprès de la gestion des abonnements Red Hat. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation.

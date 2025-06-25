@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-limitations.html 
 keywords: limitations, data sense, classification, bluexp, scan shares 
-summary: Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui ne sont pas compatibles avec lui. Examinez attentivement ces limites. 
+summary: 'Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui n"interagissent pas correctement avec elle. Examinez attentivement ces limites.' 
 ---
 = Limitations connues dans la classification BlueXP 
 :hardbreaks:
@@ -14,22 +14,24 @@ summary: Les limitations connues identifient les fonctions qui ne sont pas prise
 
 
 [role="lead"]
-Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui ne sont pas compatibles avec lui. Examinez attentivement ces limites.
+Les limitations connues identifient les fonctions qui ne sont pas prises en charge ou qui n’interagissent pas correctement dans cette version. Examinez attentivement ces limites.
 
 
 
-== Options supprimées de la version de classification BlueXP
+== Options de classification BlueXP désactivées
 
 La version de décembre 2023 (version 1.26.6) a supprimé les options suivantes :
 
 * L'option permettant d'activer la collecte des journaux d'audit a été désactivée.
-* Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible.
+* Lors de l'enquête sur les annuaires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par annuaires n'est pas disponible.
 * L'option d'intégration des données à l'aide d'étiquettes Azure information protection (AIP) a été désactivée.
 
 
 
 
-== Limites de l'analyse de classification BlueXP
+== Analyse de classification BlueXP
+
+Les limitations suivantes se produisent avec les analyses de classification BlueXP.
 
 
 
@@ -43,7 +45,7 @@ Si vous avez plusieurs partages de fichiers sous un seul volume, la classificati
 * /D/E.
 
 
-Les données dans /A seront ensuite analysées. Les données dans /C et /D ne seront pas analysées.
+Dans cette configuration, seules les données de /A sont analysées. Les données de /C et /D ne le sont pas.
 
 .Solution de contournement
 Il existe une solution pour vous assurer que vous analysez les données de tous les partages de votre volume. Voici la procédure à suivre :
@@ -51,12 +53,12 @@ Il existe une solution pour vous assurer que vous analysez les données de tous 
 . Dans l'environnement de travail, ajoutez le volume à scanner.
 . Une fois que la classification BlueXP a terminé l'analyse du volume, accédez à la page _Data Investigation_ et créez un filtre pour voir quel partage est en cours d'analyse :
 +
-Vous allez filtrer les données par « Nom de l'environnement de travail » et « Type de répertoire = partage » pour voir quel partage est analysé.
+Filtrez les données par « Nom de l'environnement de travail » et « Type de répertoire = Partage » pour voir quel partage est analysé.
 
 . Obtenez la liste complète des partages qui existent dans le volume pour voir quels partages ne sont pas analysés.
 . link:task-scanning-file-shares.html["Ajoutez les partages restants à un groupe de partages"].
 +
-Vous devrez ajouter tous les partages individuellement, par exemple :
+Ajoutez toutes les actions individuellement, par exemple :
 
 +
 ....
@@ -65,3 +67,9 @@ Vous devrez ajouter tous les partages individuellement, par exemple :
 ....
 . Procédez comme suit pour chaque volume de l'environnement de travail qui a plusieurs partages.
 
+
+
+
+=== Horodatage du dernier accès
+
+Lorsque la classification BlueXP analyse un répertoire, l'analyse affecte le champ **Dernier accès** du répertoire. Lorsque vous consultez ce champ, les métadonnées reflètent soit la date et l'heure de l'analyse, soit la date du dernier accès au répertoire.
