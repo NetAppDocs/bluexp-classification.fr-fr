@@ -38,7 +38,7 @@ Les langues dans lesquelles ces éléments peuvent être reconnus sont identifi�
 | Type | Identificateur | Validation de proximité ? | Anglais | Allemand | Espagnol | Français | Japonais 
 
 
-.6+| Généralités | Numéro de carte de crédit | Non | ✓ | ✓ | ✓ |  | ✓ 
+.6+| Généralités | Numéro de carte de crédit | Oui. | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Sujets de données | Non | ✓ | ✓ | ✓ |  |  
@@ -413,7 +413,7 @@ La plupart de ces catégories peuvent être reconnues en anglais, allemand et es
 
 | Assistance | Plaintes et tickets | ✓ | ✓ | ✓ 
 |===
-Les métadonnées suivantes sont également classées en catégories et identifiées dans les mêmes langues prises en charge :
+Les métadonnées suivantes sont également catégorisées et identifiées dans les mêmes langues prises en charge :
 
 * Données applicatives
 * Archiver les fichiers
@@ -446,9 +446,7 @@ Données d'applications d'entreprise
 
 == Types de fichiers
 
-La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.
-
-Toutefois, lorsque la classification BlueXP détecte des informations à caractère personnel (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :
+La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord. Lorsque la classification BlueXP détecte des informations personnelles identifiables (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichiers suivants sont pris en charge :
 
 `+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 

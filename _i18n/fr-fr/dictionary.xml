@@ -869,7 +869,6 @@
   <block id="cf270e40d273f9e7fd7c3061729060c3" category="cell">Formation</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="cell">Assistance</block>
   <block id="1cdcde584710eee44415045aa08434f5" category="cell">Plaintes et tickets</block>
-  <block id="fd23f2a479ed0b74592359ca0f2e8fc1" category="paragraph">Les métadonnées suivantes sont également classées en catégories et identifiées dans les mêmes langues prises en charge :</block>
   <block id="0fa5a9c40f7f4a1f5dc486811f7a9a68" category="list-text">Archiver les fichiers</block>
   <block id="255b0d6720ed538171a7e78daf8f4feb" category="list-text">Fichiers CAO</block>
   <block id="ca0dbad92a874b2f69b549293387925e" category="list-text">Code</block>
@@ -1491,8 +1490,6 @@
   <block id="81242ae208378634d2437d68837ba560" category="paragraph">Le commutateur en haut de la page pour *Scan en cas d'autorisations d'écriture d'attributs manquantes* est désactivé par défaut. Cela signifie que si la classification BlueXP ne dispose pas d'autorisations d'attributs d'écriture dans CIFS ou d'autorisations d'écriture dans NFS, le système ne analyse pas les fichiers car la classification BlueXP ne peut pas rétablir l'heure du dernier accès à l'horodatage d'origine. Si vous ne vous souciez pas de la réinitialisation de l'heure du dernier accès, activez le commutateur et tous les fichiers sont analysés, quelles que soient les autorisations. <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
   <block id="6b3a75b3808f31da6754be1d099cbe3f" category="summary">Il existe de nombreux types de données privées que la classification BlueXP peut identifier dans vos volumes, dans des compartiments Amazon S3, dans des bases de données, des dossiers OneDrive, des comptes SharePoint, Et Google Drive.</block>
   <block id="b7dea65f9a155deeb2a423a4459776ee" category="paragraph">La classification BlueXP classe vos données comme suit.</block>
-  <block id="e28941ad3ee4450d4e082c1ed4ac7223" category="paragraph">La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord.</block>
-  <block id="e4ef3ccfa363c6ab883bef97f62feda4" category="paragraph">Toutefois, lorsque la classification BlueXP détecte des informations à caractère personnel (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichier suivants sont pris en charge :</block>
   <block id="28fda5ce8d3d029d75bd23c4faaf51cb" category="paragraph">NetApp ne peut pas garantir l'exactitude à 100 % des données personnelles et des données personnelles sensibles identifiées par la classification BlueXP. Vous devez toujours valider les informations en examinant les données.</block>
   <block id="9d203da310dab1f086a98748da39c625" category="paragraph">D'après nos tests, le tableau ci-dessous précise les informations trouvées par la classification BlueXP. Nous la décomposent par _Precision_ et _rappel_:</block>
   <block id="2dcc3f7c3a9c06e1e5cf6c6a0ae260c5" category="list-text">La probabilité que la classification BlueXP trouve ait été correctement identifiée. Par exemple, un taux de précision de 90 % pour les données personnelles signifie que 9 fichiers sur 10 identifiés comme contenant des renseignements personnels, contiennent en fait des renseignements personnels. 1 fichier sur 10 serait un faux positif.</block>
@@ -2798,39 +2795,26 @@ Données d'applications d'entreprise</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2 septembre 2024</block>
   <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">Version 1.35</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Pour plus de détails, reportez-vous à <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
-  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">5 août 2024</block>
   <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">Version 1.34</block>
-  <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">1er juillet 2024</block>
   <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">Version 1.33</block>
-  <block id="4497f9fd188a9629ea47d91a3f025c8c" category="section-title">5 juin 2024</block>
   <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">Version 1.32</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">15 mai 2024</block>
   <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">Version 1.31</block>
-  <block id="4434c8a49854e6484f6c158999be4e10" category="section-title">1er avril 2024</block>
   <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">Version 1.30</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="section-title">4 mars 2024</block>
   <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">Version 1.29</block>
   <block id="c630754f942c555264fff115d6b5e9b2" category="section-title">10 janvier 2024</block>
   <block id="536149161458a7a77ae5b72258f34e48" category="section-title">Version 1.27</block>
   <block id="3500d4b863ccad6f25298c3ab1519e74" category="section-title">14 décembre 2023</block>
   <block id="552c9ad11d5dffc1189fa270ca015445" category="section-title">Version 1.26.6</block>
-  <block id="c8684cf4ccd502e49d1d79ff9936bc98" category="section-title">6 novembre 2023</block>
   <block id="0778a32085af8830c408efb93cb7239f" category="section-title">Version 1.26.3</block>
-  <block id="e5899cce271b544ee6441231f3c8cb3f" category="section-title">4 octobre 2023</block>
   <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">Version 1.26</block>
-  <block id="133c04bb5f03e7d4a910bcf2f7193ebd" category="section-title">5 septembre 2023</block>
   <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">Version 1.25</block>
   <block id="deac043b98b13aa9a1a0d041a820ee2c" category="section-title">17 juillet 2023</block>
   <block id="314ecd7c1da8864532628a8aa4a6c85b" category="section-title">Version 1.24</block>
-  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">6 juin 2023</block>
   <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">Version 1.23</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 avril 2023</block>
   <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">Version 1.22</block>
-  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 mars 2023</block>
   <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">Version 1.21</block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 février 2023</block>
   <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">Version 1.20</block>
-  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">9 janvier 2023</block>
   <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">Version 1.19</block>
   <block id="d201913c731a2c485562d2197234ff40" category="paragraph">Suivez ces étapes pour installer la classification BlueXP sur un hôte Linux d'un site sur site qui ne dispose pas d'un accès à Internet, également appelé _mode privé_. Ce type d'installation, qui utilise un script d'installation, n'a pas de connectivité avec la couche SaaS BlueXP .</block>
   <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">Vous pouvez également <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>.</block>
@@ -3520,7 +3504,6 @@ Données d'applications d'entreprise</block>
   <block id="a68d116e41811f0ca6fb6aefa908afd9" category="list-text">Des autorisations les plus restrictives aux restrictions les plus permissives sur l'axe horizontal.</block>
   <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">Des données les moins sensibles aux données les plus sensibles sur l'axe vertical.</block>
   <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">Sélectionnez *Gouvernance* puis le bouton *Rapport d'évaluation de la découverte de données*.</block>
-  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">09 juin 2025</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">Les extensions vectorielles avancées (AVX2) doivent être activées sur le système hôte.</block>
   <block id="e07933db8e0e899d5b0b2536a835fbbe" category="summary">Les limitations connues identifient les fonctions qui ne sont pas prises en charge par cette version du produit ou qui n'interagissent pas correctement avec elle. Examinez attentivement ces limites.</block>
   <block id="74541a5ab63d560e7b65e9ce0447a3ab" category="paragraph">Les limitations connues identifient les fonctions qui ne sont pas prises en charge ou qui n’interagissent pas correctement dans cette version. Examinez attentivement ces limites.</block>
@@ -3533,4 +3516,20 @@ Données d'applications d'entreprise</block>
   <block id="13bb1a0d5dd0d8923eac81793d8de810" category="paragraph">Ajoutez toutes les actions individuellement, par exemple :</block>
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">Horodatage du dernier accès</block>
   <block id="ba9f5402880018fda0707ce102d53b4e" category="paragraph">Lorsque la classification BlueXP analyse un répertoire, l'analyse affecte le champ **Dernier accès** du répertoire. Lorsque vous consultez ce champ, les métadonnées reflètent soit la date et l'heure de l'analyse, soit la date du dernier accès au répertoire.</block>
+  <block id="f8479f3d69c2063127c42c5c37486b19" category="paragraph">Les métadonnées suivantes sont également catégorisées et identifiées dans les mêmes langues prises en charge :</block>
+  <block id="efb48152c99d5498d08b6785efe95423" category="paragraph">La classification BlueXP analyse tous les fichiers pour rechercher des informations par catégorie et par métadonnées, et affiche tous les types de fichiers dans la section types de fichiers du tableau de bord. Lorsque la classification BlueXP détecte des informations personnelles identifiables (PII) ou lorsqu'elle effectue une recherche DSAR, seuls les formats de fichiers suivants sont pris en charge :</block>
+  <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">10 juin 2025</block>
+  <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">05 août 2024</block>
+  <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">01 juillet 2024</block>
+  <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">05 juin 2024</block>
+  <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">01 avril 2024</block>
+  <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">4 mars 2024</block>
+  <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">06 novembre 2023</block>
+  <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">04 octobre 2023</block>
+  <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">05 septembre 2023</block>
+  <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">06 juin 2023</block>
+  <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">03 avril 2023</block>
+  <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">07 mars 2023</block>
+  <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">05 février 2023</block>
+  <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">09 janvier 2023</block>
 </blocks>

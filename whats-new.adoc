@@ -18,7 +18,7 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
-== 09 juin 2025
+== 10 juin 2025
 
 
 
@@ -287,7 +287,7 @@ Pour plus de détails, reportez-vous à link:task-scanning-storagegrid.html["Ana
 
 
 
-== 5 août 2024
+== 05 août 2024
 
 
 
@@ -302,7 +302,7 @@ Pour plus de détails sur le déploiement, reportez-vous à la section https://d
 
 
 
-== 1er juillet 2024
+== 01 juillet 2024
 
 
 
@@ -335,7 +335,7 @@ Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-classifica
 
 
 
-== 5 juin 2024
+== 05 juin 2024
 
 
 
@@ -361,7 +361,7 @@ link:reference-free-paid.html["En savoir plus sur les fonctionnalités obsolète
 
 
 
-== 1er avril 2024
+== 01 avril 2024
 
 
 
@@ -438,7 +438,7 @@ La version a également supprimé les options suivantes :
 
 
 
-== 6 novembre 2023
+== 06 novembre 2023
 
 
 
@@ -452,7 +452,7 @@ Les problèmes suivants ont été résolus dans cette version
 
 
 
-== 4 octobre 2023
+== 04 octobre 2023
 
 
 
@@ -465,7 +465,7 @@ Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le mot
 
 
 
-== 5 septembre 2023
+== 05 septembre 2023
 
 
 
@@ -510,7 +510,7 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["En 
 
 
 
-== 6 juin 2023
+== 06 juin 2023
 
 
 
@@ -533,7 +533,7 @@ Vous pouvez désormais charger votre licence Data Sense BYOL dans le portefeuill
 
 
 
-== 3 avril 2023
+== 03 avril 2023
 
 
 
@@ -550,7 +550,7 @@ Si vous souhaitez vérifier que votre système Linux répond à toutes les condi
 
 
 
-== 7 mars 2023
+== 07 mars 2023
 
 
 
@@ -595,7 +595,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-== 5 février 2023
+== 05 février 2023
 
 
 
@@ -622,7 +622,7 @@ Le nouvel état « réussite partielle » indique qu'une action de classificatio
 
 
 
-== 9 janvier 2023
+== 09 janvier 2023
 
 
 
