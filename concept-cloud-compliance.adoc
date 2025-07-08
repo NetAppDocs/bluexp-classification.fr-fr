@@ -134,7 +134,7 @@ TIP: L'instance doit rester en cours d'exécution en permanence, car la classifi
 
 *Déployer sur différents types d'instances*
 
-Vous pouvez déployer la classification BlueXP sur un système avec moins de processeurs et moins de RAM.
+Consultez les spécifications suivantes pour les types d’instances :
 
 [cols="18,31,51"]
 |===
@@ -168,7 +168,7 @@ image:diagram_cloud_compliance_scan.png["Diagramme illustrant une instance BlueX
 
 Après l'analyse initiale, la classification BlueXP  analyse en continu vos données selon une séquence périodique pour détecter les modifications incrémentielles. C'est pourquoi il est important de maintenir l'instance en cours d'exécution.
 
-Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de la base de données.
+Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de base de données.
 
 
 
@@ -176,7 +176,7 @@ Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau
 
 Vous pouvez effectuer deux types d'acquisitions dans la classification BlueXP  :
 
-* **Les acquisitions cartographiques uniquement** ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectuées sur des sources de données sélectionnées. Les analyses de mappage uniquement prennent moins de temps que les analyses de mappage et de classification car elles n'accèdent pas aux fichiers pour voir les données qu'elles contiennent. Vous pouvez commencer par identifier les domaines de recherche, puis effectuer une analyse carte et classification sur ces domaines.
+* **Les acquisitions cartographiques uniquement** ne fournissent qu'une vue d'ensemble de haut niveau de vos données et sont effectuées sur des sources de données sélectionnées. Les analyses de cartographie uniquement prennent moins de temps que les analyses de cartographie et de classification, car elles n'accèdent pas aux fichiers pour voir les données qu'ils contiennent. Vous pouvez commencer par identifier les domaines de recherche, puis effectuer une analyse carte et classification sur ces domaines.
 * **Cartographiez et classifiez les acquisitions** fournissent une analyse de niveau profond de vos données.
 
 
