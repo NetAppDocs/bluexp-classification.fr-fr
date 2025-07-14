@@ -18,6 +18,26 @@ Découvrez les nouveautés de la classification BlueXP.
 
 
 
+== 14 juillet 2025
+
+
+
+=== Version 1.45
+
+Cette version de BlueXP classification inclut des modifications de code qui optimisent l'utilisation des ressources et :
+
+.Flux de travail amélioré pour ajouter des partages de fichiers pour la numérisation
+Le flux de travail d'ajout de partages de fichiers à un groupe de partage de fichiers a été simplifié. Le processus différencie désormais la prise en charge du protocole CIFS selon le type d'authentification (Kerberos ou NTLM).
+
+Pour plus d'informations, voir xref:task-scanning-file-shares.html[Analyser les partages de fichiers].
+
+.Informations améliorées sur le propriétaire du fichier
+Vous pouvez désormais consulter plus d'informations sur les propriétaires des fichiers enregistrés dans l'onglet Investigation. Lorsque vous consultez les métadonnées d'un fichier dans l'onglet Investigation, localisez le propriétaire du fichier, puis sélectionnez **Afficher les détails** pour afficher son nom d'utilisateur, son adresse e-mail et le nom du compte SAM. Vous pouvez également consulter les autres éléments appartenant à cet utilisateur. Cette fonctionnalité est disponible uniquement pour les environnements de travail avec Active Directory.
+
+Pour plus d'informations, voir xref:task-investigate-data.html[Examinez les données stockées dans votre organisation].
+
+
+
 == 10 juin 2025
 
 

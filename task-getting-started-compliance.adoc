@@ -90,7 +90,7 @@ image:screen-cl-config-cvo-map-options.png["Capture d'écran de l'onglet Configu
 Les identifiants peuvent être en lecture seule, mais il est possible de fournir des identifiants d'administrateur pour que la classification BlueXP puisse lire toutes les données qui nécessitent des autorisations élevées. Les identifiants sont stockés sur l'instance de classification BlueXP.
 
 +
-Si vous souhaitez vous assurer que les « dernières heures d'accès » de vos fichiers restent inchangées par les analyses de classification BlueXP, nous recommandons à l'utilisateur de disposer des autorisations d'écriture d'attributs dans CIFS ou d'autorisations d'écriture dans NFS. Si possible, nous vous recommandons de faire en sorte que l'utilisateur configuré Active Directory fasse partie d'un groupe parent de l'organisation qui dispose des autorisations pour tous les fichiers.
+Pour garantir que les analyses de BlueXP classification ne modifient pas les « derniers accès » de vos fichiers, il est recommandé que l'utilisateur dispose des autorisations d'écriture sur les attributs dans CIFS ou NFS. Si possible, configurez l'utilisateur Active Directory comme membre d'un groupe parent de l'organisation disposant d'autorisations sur tous les fichiers.
 
 +
 Une fois les informations d'identification saisies, un message indiquant que tous les volumes CIFS ont été authentifiés avec succès s'affiche.

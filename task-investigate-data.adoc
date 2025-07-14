@@ -36,7 +36,7 @@ image:screenshot_compliance_investigation_filtered.png["Capture d'écran des fil
 
 . Pour afficher les données issues de fichiers (données non structurées), de répertoires (dossiers et partages de fichiers) ou de bases de données (données structurées), sélectionnez l'un des onglets situés en haut de l'écran.
 . Pour trier les résultats par ordre numérique ou alphabétique, sélectionnez le contrôle en haut de chaque colonne.
-. Pour affiner encore davantage les résultats, sélectionnez l'un des nombreux filtres dans le volet filtre de gauche.
+. Pour affiner encore plus les résultats, sélectionnez l’un des filtres dans le volet Filtre.
 
 
 
@@ -196,7 +196,7 @@ Utilisez le filtre suivant pour afficher les fichiers qui sont dupliqués dans v
 
 En plus de vous montrer l'environnement de travail et le volume où réside le fichier, les métadonnées affichent beaucoup plus d'informations, y compris les autorisations de fichier, le propriétaire du fichier, et s'il y a des doublons de ce fichier. Ces informations sont utiles si vous prévoyez de les link:task-using-policies.html["créer des recherches enregistrées"]utiliser car vous pouvez afficher toutes les informations que vous pouvez utiliser pour filtrer vos données.
 
-Toutes les informations ne sont pas disponibles pour toutes les sources de données - juste ce qui est approprié pour cette source de données. Par exemple, le nom du volume et les autorisations ne sont pas pertinents pour les fichiers de base de données.
+La disponibilité des informations dépend de la source de données. Par exemple, le nom du volume et les autorisations ne sont pas partagés pour les fichiers de base de données.
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Investigation*.
@@ -237,11 +237,11 @@ TIP: Vous pouvez développer un niveau du groupe pour voir les utilisateurs qui 
 
 == Vérifiez la présence de fichiers en double dans vos systèmes de stockage
 
-Vous pouvez afficher si des fichiers dupliqués sont stockés dans vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il peut également être utile de s'assurer que certains fichiers possédant des autorisations spécifiques ou des informations sensibles ne sont pas inutilement dupliqués dans vos systèmes de stockage.
+Vous pouvez vérifier si des fichiers en double sont stockés sur vos systèmes de stockage. Cette fonction s'avère utile pour identifier les domaines dans lesquels vous pouvez économiser de l'espace de stockage. Il est également judicieux de vous assurer que certains fichiers disposant d'autorisations spécifiques ou d'informations sensibles ne sont pas dupliqués inutilement sur vos systèmes de stockage.
 
 Tous vos fichiers (à l'exception des bases de données) de 1 Mo ou plus, ou contenant des informations personnelles ou sensibles, sont comparés pour voir s'il y a des doublons.
 
-La classification BlueXP utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier a le même code de hachage qu'un autre fichier, nous pouvons être 100 % sûrs que les fichiers sont des doublons exacts, même si les noms de fichier sont différents.
+La classification BlueXP utilise la technologie de hachage pour déterminer les fichiers en double. Si un fichier possède le même code de hachage qu’un autre fichier, vous pouvez être sûr à 100 % que les fichiers sont des doublons exacts, même si les noms de fichiers sont différents.
 
 .Étapes
 . Dans le menu BlueXP  Classification, sélectionnez *Investigation*.
@@ -277,7 +277,7 @@ TIP: Vous pouvez utiliser la valeur « hachage de fichier » fournie dans cette 
 
 Le rapport d'enquête de données est un téléchargement du contenu filtré de la page d'enquête de données.
 
-Le rapport est disponible sous forme de fichier .CSV ou .JSON que vous pouvez enregistrer sur la machine locale.
+Le rapport est disponible sous forme de fichier CSV ou JSON que vous pouvez enregistrer sur votre ordinateur local.
 
 Vous pouvez télécharger jusqu'à trois fichiers de rapport si la classification BlueXP analyse des fichiers (données non structurées), des répertoires (dossiers et partages de fichiers) et des bases de données (données structurées).
 
@@ -307,6 +307,10 @@ Le *non structuré fichier de données* contient les informations suivantes sur 
 * Dernière modification
 * Dernier accès
 * Propriétaire du fichier
++
+** Les données du propriétaire du fichier englobent le nom du compte, le nom du compte SAM et l'adresse e-mail lorsque Active Directory est configuré.
+
+
 * Catégorie
 * Informations personnelles
 * Informations personnelles sensibles
@@ -314,7 +318,7 @@ Le *non structuré fichier de données* contient les informations suivantes sur 
 * Erreur d'analyse d'acquisition
 * Date de détection de suppression
 +
-Une date de détection de suppression identifie la date à laquelle le fichier a été supprimé ou déplacé. Cela vous permet d'identifier le moment où des fichiers sensibles ont été déplacés. Les fichiers supprimés ne font pas partie du nombre de fichiers qui s'affiche dans le tableau de bord ou sur la page Investigation. Les fichiers n'apparaissent que dans les rapports CSV.
+La date de détection de suppression identifie la date à laquelle le fichier a été supprimé ou déplacé. Cela vous permet d'identifier le moment où des fichiers sensibles ont été déplacés. Les fichiers supprimés ne sont pas comptabilisés dans le nombre de fichiers affichés dans le tableau de bord ni sur la page « Investigation ». Les fichiers n'apparaissent que dans les rapports CSV.
 
 
 
