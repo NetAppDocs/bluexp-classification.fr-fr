@@ -26,7 +26,7 @@ Les analyses de mappage uniquement permettent d'analyser rapidement vos données
 
 La priorité est attribuée uniquement aux acquisitions de mappage uniquement, et non aux acquisitions de mappage et de classification.
 
-La priorité est définie sur 1 par défaut et vous pouvez la remplacer par un nombre compris entre 1 et 10. Plus le nombre est faible, plus la priorité est élevée. Si vous ne définissez pas de priorité, la numérisation se voit attribuer une priorité de 5.
+La priorité est définie sur 1 par défaut et vous pouvez la remplacer par un nombre compris entre 1 et 10. Plus le nombre est faible, plus la priorité est élevée. Si vous ne définissez pas de priorité, une priorité de 5 est attribuée à l'analyse.
 
 Pour modifier la priorité, procédez comme suit :
 

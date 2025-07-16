@@ -11,20 +11,20 @@ Cette version de classification BlueXP  inclut :
 .Hiérarchiser les analyses de classification
 La classification BlueXP  permet de hiérarchiser les analyses cartographiques et de les classer en plus des acquisitions de mappage uniquement, ce qui vous permet de sélectionner les acquisitions qui sont effectuées en premier. La définition des priorités pour les acquisitions de carte et de classification est prise en charge pendant et avant le début des acquisitions. Si vous choisissez de hiérarchiser une acquisition pendant qu'elle est en cours, les acquisitions de mappage et de classification sont classées par ordre de priorité.
 
-Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
 
 .Prise en charge des catégories de données canadiennes d'information à caractère personnel (IIP)
 Les analyses de classification BlueXP  identifient les catégories de données des RP au Canada. Ces catégories comprennent les renseignements bancaires, les numéros de passeport, les numéros d'assurance sociale, les numéros de permis de conduire et les numéros de carte santé pour toutes les provinces et tous les territoires du Canada.
 
-Pour plus d'informations, voir xref:reference-private-data-categories.adoc#types-of-personal-data[Catégories de données personnelles].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Catégories de données personnelles"].
 
 .Classification personnalisée (aperçu)
 La classification BlueXP  prend en charge les classifications personnalisées pour les acquisitions Map & Classify. Grâce aux classifications personnalisées, vous pouvez personnaliser les analyses BlueXP  pour capturer des données spécifiques à votre entreprise à l'aide d'expressions régulières. Cette fonction est actuellement en aperçu.
 
-Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des classifications personnalisées].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Ajouter des classifications personnalisées"].
 
 .Onglet recherches enregistrées
-L'onglet **politiques** a été renommé xref:task-using-policies.html[**Recherches enregistrées**]. La fonctionnalité est la même.
+L'onglet **politiques** a été renommé link:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Recherches enregistrées**"]. La fonctionnalité reste inchangée.
 
 .Envoyer les événements d'analyse à la chronologie BlueXP 
 La classification BlueXP  prend en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et qu'elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP "^].

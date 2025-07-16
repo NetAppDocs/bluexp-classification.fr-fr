@@ -51,7 +51,7 @@ Les délais de mise à jour des différents composants du tableau de bord de gou
 
 | Principaux référentiels de données par niveau de sensibilité | 2 heures 
 |===
-Vous pouvez consulter l'heure de la dernière mise à jour et mettre à jour manuellement les composants « Fichiers en double », « Données non commerciales », « Recherches enregistrées », « Données obsolètes » et « Principaux référentiels de données par niveau de sensibilité ». xref:task-controlling-governance-data.html[Afficher les détails de gouvernance sur les données stockées dans votre organisation] .
+Vous pouvez consulter l'heure de la dernière mise à jour et mettre à jour manuellement les composants « Fichiers en double », « Données non commerciales », « Recherches enregistrées », « Données obsolètes » et « Principaux référentiels de données par niveau de sensibilité ». link:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Afficher les détails de gouvernance sur les données stockées dans votre organisation"] .
 
 .Améliorations des performances et de la sécurité
 Des améliorations ont été apportées pour améliorer les performances, la consommation de mémoire et la sécurité de la classification BlueXP.

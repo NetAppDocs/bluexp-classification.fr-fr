@@ -20,9 +20,9 @@ Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre da
 
 La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
 
-La priorisation est limitée à link:concept-cloud-compliance.html["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
+La priorisation est limitée à link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["analyses de mappage uniquement"^]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
 
-Pour plus d'informations, voir link:task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Hiérarchiser les acquisitions"^].
 
 .Réessayez toutes les acquisitions
 La classification BlueXP  prend en charge la possibilité de répéter par lots toutes les acquisitions ayant échoué.
