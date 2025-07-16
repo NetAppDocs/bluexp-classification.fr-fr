@@ -375,7 +375,10 @@ Pour plus d'informations sur les États, reportez-vous à la section https://doc
 === Version 1.31
 
 .La classification est disponible en tant que service principal dans BlueXP
-La classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires pour un maximum de 500 To de données numérisées. Aucune licence de classification ou abonnement payant n'est nécessaire. Alors que nous nous concentrons sur la fonctionnalité de classification BlueXP lors de l'analyse des systèmes de stockage NetApp avec cette nouvelle version, certaines fonctionnalités héritées ne seront disponibles que pour les clients qui avaient déjà payé pour une licence. L'utilisation de ces fonctions héritées expirera lorsque le contrat payé atteindra sa date de fin.
+La BlueXP classification est désormais disponible en tant que fonctionnalité principale de BlueXP sans frais supplémentaires pour un maximum de 500 Tio de données numérisées par connecteur. Aucune licence de classification ou abonnement payant n'est nécessaire. Alors que nous nous concentrons sur la fonctionnalité de classification BlueXP lors de l'analyse des systèmes de stockage NetApp avec cette nouvelle version, certaines fonctionnalités héritées ne seront disponibles que pour les clients qui avaient déjà payé pour une licence. L'utilisation de ces fonctions héritées expirera lorsque le contrat payé atteindra sa date de fin.
+
+
+NOTE: La BlueXP classification n'impose aucune limite à la quantité de données pouvant être analysée. Chaque connecteur prend en charge l'analyse et l'affichage de 500 Tio de données. Pour analyser plus de 500 Tio de données, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["installer un autre connecteur"^] alors link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["déployer une autre instance de classification"] . + L'interface utilisateur BlueXP affiche les données d'un seul connecteur. Pour obtenir des conseils sur l'affichage des données de plusieurs connecteurs, consultez link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Utilisation de plusieurs connecteurs"^] .
 
 link:reference-free-paid.html["En savoir plus sur les fonctionnalités obsolètes"].
 

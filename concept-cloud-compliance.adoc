@@ -171,6 +171,9 @@ Après l'analyse initiale, la classification BlueXP  analyse en continu vos don
 Vous pouvez activer et désactiver les analyses au niveau du volume ou au niveau du schéma de base de données.
 
 
+NOTE: La BlueXP classification n'impose aucune limite à la quantité de données pouvant être analysée. Chaque connecteur prend en charge l'analyse et l'affichage de 500 Tio de données. Pour analyser plus de 500 Tio de données, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["installer un autre connecteur"^] alors link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["déployer une autre instance de classification"] . + L'interface utilisateur BlueXP affiche les données d'un seul connecteur. Pour obtenir des conseils sur l'affichage des données de plusieurs connecteurs, consultez link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Utilisation de plusieurs connecteurs"^] .
+
+
 
 == Quelle est la différence entre les acquisitions de mappage et de classification
 

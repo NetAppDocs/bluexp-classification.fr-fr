@@ -43,7 +43,7 @@ Le tableau ci-dessous présente certaines des différences :
 | Tarifs | Libre | Libre 
 
 
-| Puissance | Limité à 500 To | Limité à 500 To 
+| Puissance | Limité à 500 Tio* | Limité à 500 Tio* 
 
 
 | Liste des types de fichiers et de la capacité utilisée | Oui. | Oui. 
@@ -72,6 +72,8 @@ Le tableau ci-dessous présente certaines des différences :
 
 | Possibilité de voir les métadonnées des fichiers* | Non | Oui. 
 |===
+{astérisque} include::_include/connector-limit.adoc[]
+
 *Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage :
 
 * Environnement de travail

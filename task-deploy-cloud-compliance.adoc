@@ -63,6 +63,9 @@ Notez que vous pouvez également https://docs.netapp.com/us-en/bluexp-setup-admi
 Comme vous pouvez le voir, il peut y avoir des situations où vous devez utiliser https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Plusieurs connecteurs"].
 
 
+TIP: La BlueXP classification n'impose aucune limite à la quantité de données pouvant être analysée. Chaque connecteur prend en charge l'analyse et l'affichage de 500 Tio de données. Pour analyser plus de 500 Tio de données, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["installer un autre connecteur"^] alors link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["déployer une autre instance de classification"] . + L'interface utilisateur BlueXP affiche les données d'un seul connecteur. Pour obtenir des conseils sur l'affichage des données de plusieurs connecteurs, consultez link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Utilisation de plusieurs connecteurs"^] .
+
+
 
 === Soutien de la région du gouvernement
 
