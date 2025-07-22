@@ -192,29 +192,29 @@ Dans les régions où le type d'instance par défaut n'est pas disponible, la cl
 .Déploiement dans AWS
 --
 .Étapes
-. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*.
+. Dans le menu de navigation de gauche BlueXP , sélectionnez *gouvernance > Classification*.
+. Sélectionnez *Déployer la classification sur site ou dans le cloud*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
+image:screenshot-deploy-classification.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
 
-. Cliquez sur *Activer détection de données*.
-. Sur la page _installation_, cliquez sur *déployer > déployer* pour utiliser la taille d'instance « grande » et lancer l'assistant de déploiement cloud.
+. Depuis la page _Installation_, sélectionnez *Déployer > Déployer* pour utiliser la taille d'instance « Grande » et démarrer l'assistant de déploiement cloud.
 . L'assistant affiche la progression au fur et à mesure des étapes de déploiement. Il s'arrête et vous invite à entrer s'il est en cours de problème.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Capture d'écran de l'assistant de classification BlueXP pour déployer une nouvelle instance."]
 
-. Une fois l'instance déployée et la classification BlueXP installée, cliquez sur *Continuer à la configuration* pour accéder à la page _Configuration_.
+. Lorsque l'instance est déployée et que la BlueXP classification est installée, sélectionnez *Continuer vers la configuration* pour accéder à la page _Configuration_.
 
 
 --
 .Déploiement dans Azure
 --
 .Étapes
-. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *Activer détection de données*.
+. Dans le menu de navigation de gauche BlueXP , sélectionnez *gouvernance > Classification*.
+. Sélectionnez *Déployer la classification sur site ou dans le cloud*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
+image:screenshot-deploy-classification.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
 
-. Cliquez sur *déployer* pour démarrer l'assistant de déploiement de cloud.
+. Sélectionnez *Déployer* pour démarrer l’assistant de déploiement cloud.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Capture d'écran de sélection du bouton pour déployer la classification BlueXP dans le cloud."]
 
@@ -222,19 +222,19 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Capture d'écran de sélecti
 +
 image:screenshot_cloud_compliance_wizard_start.png["Capture d'écran de l'assistant de classification BlueXP pour déployer une nouvelle instance."]
 
-. Une fois l'instance déployée et la classification BlueXP installée, cliquez sur *Continuer à la configuration* pour accéder à la page _Configuration_.
+. Lorsque l'instance est déployée et que la BlueXP classification est installée, sélectionnez *Continuer vers la configuration* pour accéder à la page _Configuration_.
 
 
 --
 .Déploiement dans Google Cloud
 --
 .Étapes
-. Dans le menu de navigation de gauche BlueXP, cliquez sur *gouvernance > Classification*.
-. Cliquez sur *Activer détection de données*.
+. Dans le menu de navigation de gauche BlueXP , sélectionnez *gouvernance > Classification*.
+. Sélectionnez *Déployer la classification sur site ou dans le cloud*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
+image:screenshot-deploy-classification.png["Capture d'écran de sélection du bouton pour activer la classification BlueXP."]
 
-. Cliquez sur *déployer* pour démarrer l'assistant de déploiement de cloud.
+. Sélectionnez *Déployer* pour démarrer l’assistant de déploiement cloud.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Capture d'écran de sélection du bouton pour déployer la classification BlueXP dans le cloud."]
 
@@ -242,7 +242,7 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Capture d'écran de sélecti
 +
 image:screenshot_cloud_compliance_wizard_start.png["Capture d'écran de l'assistant de classification BlueXP pour déployer une nouvelle instance."]
 
-. Une fois l'instance déployée et la classification BlueXP installée, cliquez sur *Continuer à la configuration* pour accéder à la page _Configuration_.
+. Lorsque l'instance est déployée et que la BlueXP classification est installée, sélectionnez *Continuer vers la configuration* pour accéder à la page _Configuration_.
 
 
 --

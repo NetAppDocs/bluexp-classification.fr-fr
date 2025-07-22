@@ -25,6 +25,8 @@ sidebar:
     entries:
     - title: Découvrez la classification BlueXP
       url: "/concept-cloud-compliance.html"
+    - title: Accéder à la BlueXP classification
+      url: "/task-access.html"
     - title: Déployez la classification BlueXP
       entries:
       - title: Quel déploiement devez-vous utiliser
