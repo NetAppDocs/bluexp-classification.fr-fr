@@ -1981,7 +1981,6 @@
   <block id="db8769ab87872f8d19b54e22d54685fe" category="paragraph"><block ref="c29073dde35b7e3b513884b9c9e495a3" category="inline-link-rx"></block>.</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Il s'agit d'un ID généré par le système qui correspond à votre courrier électronique. Sur la page *NSS Management*, vous pouvez afficher votre courriel à partir du <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *mettre à jour les informations d'identification* dans le <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
@@ -3579,4 +3578,5 @@ Données d'applications d'entreprise</block>
   <block id="dcc769ed0ea98e366058422f08990e15" category="list-text">Depuis la page _Installation_, sélectionnez *Déployer &gt; Déployer* pour utiliser la taille d'instance « Grande » et démarrer l'assistant de déploiement cloud.</block>
   <block id="6082f95d47d2b6cd46c38a484f2b2e4f" category="list-text">Lorsque l'instance est déployée et que la BlueXP classification est installée, sélectionnez *Continuer vers la configuration* pour accéder à la page _Configuration_.</block>
   <block id="f08251ff59a66c2320f7263142413eac" category="list-text">Sélectionnez *Déployer* pour démarrer l’assistant de déploiement cloud.</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
 </blocks>
