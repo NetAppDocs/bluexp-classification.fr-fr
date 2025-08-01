@@ -212,9 +212,3 @@ Lorsque vous utilisez BlueXP  en mode SaaS, la connexion à BlueXP  est assur�
 Les règles sortantes sont complètement ouvertes. Un accès à Internet est nécessaire pour installer et mettre à niveau le logiciel de classification BlueXP et pour envoyer des metrics d'utilisation.
 
 Si vous avez des exigences de mise en réseau strictes, link:task-deploy-cloud-compliance.html#review-prerequisites["Découvrez les terminaux que la classification BlueXP contacte"^].
-
-
-
-== Rôles d'utilisateur dans la classification BlueXP 
-
-Le rôle attribué à chaque utilisateur fournit des fonctionnalités différentes dans BlueXP  et dans la classification BlueXP . Pour plus de détails, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Rôles IAM BlueXP "] (lors de l'utilisation de BlueXP  en mode standard).
