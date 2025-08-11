@@ -1,0 +1,19 @@
+= Version 1.46
+:allow-uri-read: 
+
+
+
+
+=== Version 1.46
+
+Cette version de BlueXP classification inclut des corrections de bogues et les mises à jour suivantes :
+
+.Informations améliorées sur les événements d'analyse dans la chronologie BlueXP
+La chronologie BlueXP prend désormais en charge des informations améliorées sur les événements d'analyse pour la BlueXP classification.  La chronologie affiche désormais le moment où l'analyse d'un environnement de travail commence, les statuts des environnements de travail et les éventuels problèmes.  Les statuts des partages et des environnements de travail ne sont disponibles que pour les analyses de mappage.
+
+Pour plus d'informations sur la chronologie BlueXP , voirlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Surveiller les opérations BlueXP"^] .
+
+.Prise en charge de RHEL 9.6
+Cette version ajoute la prise en charge de Red Hat Enterprise Linux v9.6 pour l'installation manuelle sur site de la BlueXP classification, y compris les déploiements de sites sombres.
+
+Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP  version 1.30 ou ultérieure : Red Hat Enterprise Linux version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 et 9.5.
